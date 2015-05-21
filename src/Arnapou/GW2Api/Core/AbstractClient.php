@@ -66,6 +66,12 @@ abstract class AbstractClient {
 
 	/**
 	 * 
+	 * @return string base url with ending slash
+	 */
+	abstract public function getBaseUrl();
+
+	/**
+	 * 
 	 * @param string $url
 	 * @param array $parameters
 	 * @param array $headers
@@ -73,10 +79,10 @@ abstract class AbstractClient {
 	 * @return array
 	 */
 	protected function request($url, $parameters = [], $headers = [], $cacheRetention = 300) {
-		if (!isset($parameters['lang'])) {
+		if (!isset($parameters['lang']) && !empty($this->lang)) {
 			$parameters['lang'] = $this->lang;
 		}
-		$requestUrl = \Arnapou\GW2Api\url_append($url, $parameters);
+		$requestUrl = \Arnapou\GW2Api\url_append($this->getBaseUrl() . $url, $parameters);
 		$this->lastRequestUrl = $requestUrl;
 
 		// try to retrieve from cache
