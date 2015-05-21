@@ -9,8 +9,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Arnapou\GW2Api\V2;
+namespace Arnapou\GW2Api\Exception;
 
-class Client extends \Arnapou\GW2Api\Core\AbstractClient {
+class RequestException extends Exception {
 	
 }

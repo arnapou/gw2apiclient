@@ -11,7 +11,7 @@
 
 namespace Arnapou\GW2Api;
 
-use Arnapou\GW2Api\Exception\Exception;
+use Arnapou\GW2Api\Exception\JsonException;
 
 /**
  * 
@@ -36,7 +36,54 @@ function json_decode($json) {
 			JSON_ERROR_INF_OR_NAN => 'Inf or NaN',
 			JSON_ERROR_UNSUPPORTED_TYPE => 'Unsupported type.',
 		);
-		throw new Exception('Json error : ' . (isset($errors[$jsonLastError]) ? $errors[$jsonLastError] : 'Unknown error'));
+		throw new JsonException('Json error : ' . (isset($errors[$jsonLastError]) ? $errors[$jsonLastError] : 'Unknown error'));
 	}
 	return $array;
+}
+
+/**
+ * 
+ * @param string $url
+ * @param string|array $params
+ * @return string
+ */
+function url_append($url, $params) {
+	if (empty($params)) {
+		return $url;
+	}
+	$url .= (strpos($url, '?') === false) ? '?' : '&';
+	if (is_array($params)) {
+		$url .= http_build_query($params);
+	}
+	else {
+		$url .= (string) $params;
+	}
+	return $url;
+}
+
+/**
+ * 
+ * @param string $path
+ */
+function directory_create_if_not_exists($path) {
+	if (!empty($path) && !is_dir($path)) {
+		$dir = dirname($path);
+		directory_create_if_not_exists($dir);
+		if (!is_writable($dir)) {
+			throw new Exception('Directory "' . $dir . '" is not writable.');
+		}
+		mkdir($path, 0777);
+		chmod($path, 0777);
+	}
+}
+
+/**
+ * Return whether the array is associative or not
+ * 
+ * @param string $array
+ */
+function is_associative_array($array) {
+	$values = array_values($array);
+	$diff = array_diff_key($values, $array);
+	return empty($diff) ? false : true;
 }

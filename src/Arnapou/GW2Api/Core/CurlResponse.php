@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Arnapou\GW2Api\Tool;
+namespace Arnapou\GW2Api\Core;
 
 class CurlResponse {
 
 	/**
 	 *
-	 * @var resource
+	 * @var Curl
 	 */
 	protected $curl;
 
@@ -141,20 +141,21 @@ class CurlResponse {
 
 	/**
 	 * 
-	 * @param resource $curl
+	 * @param Curl $curl
 	 */
-	public function __construct($curl) {
+	public function __construct(Curl $curl) {
 		$this->curl = $curl;
+		$resource = $curl->getCurl();
 
-		$response = curl_exec($this->curl);
+		$response = curl_exec($resource);
 		$this->parseResponse($response);
 
-		$this->info = curl_getinfo($this->curl);
-		$this->curlErrorCode = curl_errno($this->curl);
+		$this->info = curl_getinfo($resource);
+		$this->curlErrorCode = curl_errno($resource);
 		if ($this->curlErrorCode) {
-			$this->curlError = curl_error($this->curl);
+			$this->curlError = curl_error($resource);
 		}
-		@curl_close($this->curl);
+		@curl_close($resource);
 	}
 
 	/**

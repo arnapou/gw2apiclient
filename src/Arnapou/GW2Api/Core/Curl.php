@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Arnapou\GW2Api\Tool;
+namespace Arnapou\GW2Api\Core;
 
 class Curl {
 
@@ -20,34 +20,13 @@ class Curl {
 	protected $curl;
 
 	/**
-	 *
-	 * @var array
-	 */
-	protected $info = array();
-
-	/**
 	 * 
-	 * @param resource $curl
 	 */
-	public function __construct($curl = null) {
-		if (null === $curl) {
-			$this->curl = curl_init();
-		}
-		else {
-			$this->curl = $curl;
-		}
+	public function __construct() {
+		$this->curl = curl_init();
 		curl_setopt($this->curl, CURLOPT_HEADER, 1);
 		curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, 1);
 		$this->setFollowLocation();
-	}
-
-	/**
-	 * 
-	 * @param resource $curl
-	 * @return Curl
-	 */
-	public static function create($curl = null) {
-		return new static($curl);
 	}
 
 	/**
@@ -113,7 +92,7 @@ class Curl {
 	 * @return Curl
 	 */
 	public function setHeaders($array) {
-		if (\Bewoopi\Toolbox\is_associative_array($array)) {
+		if (\Arnapou\GW2Api\is_associative_array($array)) {
 			$tmp = array();
 			foreach ($array as $key => $value) {
 				if ("$value" !== '') {
@@ -174,8 +153,8 @@ class Curl {
 	 * 
 	 * @return CurlResponse
 	 */
-	public function getResponse() {
-		return new CurlResponse($this->curl);
+	public function execute() {
+		return new CurlResponse($this);
 	}
 
 }

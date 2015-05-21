@@ -9,8 +9,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Arnapou\GW2Api;
+namespace Arnapou\GW2Api\Exception;
 
-class ClientV2 extends V2\Client {
+class JsonException extends Exception {
 	
 }
