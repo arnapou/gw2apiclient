@@ -1,0 +1,17 @@
+{
+	"name": "arnapou/gw2apiclient",
+	"description": "Arnapou GW2 API Client",
+	"authors": [
+		{
+			"name": "Arnaud Buathier",
+			"email": "arnaud@arnapou.net",
+			"homepage": "http://arnapou.net"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"Arnapou": "src/"
+		},
+		"files": ["src/Arnapou/GWApi/functions.php"]
+	}
+}
