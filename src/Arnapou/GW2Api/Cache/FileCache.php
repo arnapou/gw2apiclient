@@ -141,11 +141,27 @@ class FileCache implements CacheInterface {
 		$content.= "/* key = $key */\n";
 		$content.= "\$expires = $expiration;" . ($expiration != 0 ? " // " . date('Y-m-d H:i:s', $expiration) : "") . "\n";
 		$content.= "\$data = " . var_export($value, true) . ";\n";
-		\Arnapou\GW2Api\directory_create_if_not_exists(dirname($filename));
+		$this->directoryCreateIfNotExists(dirname($filename));
 		file_put_contents($filename, $content, LOCK_EX);
 		if ($this->opcacheInvalidateExists) {
 			opcache_invalidate($filename, true);
 			@touch($filename);
+		}
+	}
+
+	/**
+	 * 
+	 * @param string $path
+	 */
+	protected function directoryCreateIfNotExists($path) {
+		if (!empty($path) && !is_dir($path)) {
+			$dir = dirname($path);
+			$this->directoryCreateIfNotExists($dir);
+			if (!is_writable($dir)) {
+				throw new Exception('Directory "' . $dir . '" is not writable.');
+			}
+			mkdir($path, 0777);
+			chmod($path, 0777);
 		}
 	}
 

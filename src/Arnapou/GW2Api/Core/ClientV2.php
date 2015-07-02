@@ -9,8 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Arnapou\GW2Api\V2;
+namespace Arnapou\GW2Api\Core;
 
-class Client extends \Arnapou\GW2Api\Core\AbstractClient {
-	
+class ClientV2 extends AbstractClient {
+
+	/**
+	 * 
+	 * @return string
+	 */
+	public function getBaseUrl() {
+		return 'https://api.guildwars2.com/v2/';
+	}
+
 }

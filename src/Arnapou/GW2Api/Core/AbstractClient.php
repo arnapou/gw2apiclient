@@ -11,7 +11,6 @@
 
 namespace Arnapou\GW2Api\Core;
 
-use Arnapou\GW2Api\Cache\CacheInterface;
 use Arnapou\GW2Api\Exception\RequestException;
 
 abstract class AbstractClient {
@@ -23,45 +22,34 @@ abstract class AbstractClient {
 
 	/**
 	 *
-	 * @var int
-	 */
-	protected $curlRequestTimeout = 10;
-
-	/**
-	 *
-	 * @var string
-	 */
-	protected $curlUserAgent = 'PHP Arnapou GW2 Api Client';
-
-	/**
-	 *
-	 * @var CurlResponse
-	 */
-	protected $lastResponse = null;
-
-	/**
-	 *
-	 * @var string
-	 */
-	protected $lastRequestUrl = null;
-
-	/**
-	 *
 	 * @var string
 	 */
 	protected $lang = null;
 
 	/**
 	 *
-	 * @var CacheInterface
+	 * @var RequestManager
 	 */
-	protected $cache = null;
+	protected $requestManager = null;
 
 	/**
 	 * 
 	 */
-	public function __construct() {
-		
+	public function __construct(RequestManager $requestManager = null) {
+		if ($requestManager === null) {
+			$this->requestManager = new RequestManager();
+		}
+		else {
+			$this->requestManager = $requestManager;
+		}
+	}
+
+	/**
+	 * 
+	 * @return RequestManager
+	 */
+	public function getRequestManager() {
+		return $this->requestManager;
 	}
 
 	/**
@@ -75,75 +63,13 @@ abstract class AbstractClient {
 	 * @param string $url
 	 * @param array $parameters
 	 * @param array $headers
-	 * @param array $cacheRetention retention: 5 min by default
-	 * @return array
+	 * @return Request
 	 */
-	protected function request($url, $parameters = [], $headers = [], $cacheRetention = 300) {
+	protected function request($url, $parameters = [], $headers = []) {
 		if (!isset($parameters['lang']) && !empty($this->lang)) {
 			$parameters['lang'] = $this->lang;
 		}
-		$requestUrl = \Arnapou\GW2Api\url_append($this->getBaseUrl() . $url, $parameters);
-		$this->lastRequestUrl = $requestUrl;
-
-		// try to retrieve from cache
-		$cacheKey = $requestUrl;
-		if ($this->cache) {
-			$data = $this->cache->get($cacheKey);
-			if ($data !== null) {
-				return $data;
-			}
-		}
-
-		$curl = new Curl();
-		$curl->setUrl($requestUrl);
-		$curl->setUserAgent($this->curlUserAgent);
-		$curl->setTimeout($this->curlRequestTimeout);
-		$curl->setHeaders($headers);
-		$curl->setGet();
-		$response = new CurlResponse($curl);
-		$this->lastResponse = $response;
-		if ($response->getErrorCode()) {
-			throw new RequestException($response->getErrorTitle() . ': ' . $response->getErrorDetail(), $response->getErrorCode());
-		}
-		$data = \Arnapou\GW2Api\json_decode($response->getContent());
-
-		// store in cache if needed
-		if ($this->cache) {
-			$this->cache->set($cacheKey, $data, $cacheRetention <= 0 ? 5 : $cacheRetention);
-		}
-		return $data;
-	}
-
-	/**
-	 * 
-	 * @return CacheInterface|null
-	 */
-	public function getCache() {
-		return $this->cache;
-	}
-
-	/**
-	 * 
-	 * @param CacheInterface $cache
-	 */
-	public function setCache(CacheInterface $cache) {
-		$this->cache = $cache;
-	}
-
-	/**
-	 * 
-	 * @return CurlResponse|null
-	 */
-	public function getLastResponse() {
-		return $this->lastResponse;
-	}
-
-	/**
-	 * 
-	 * @return string|null
-	 */
-	public function getLastRequestUrl() {
-		return $this->lastRequestUrl;
+		return new Request($this->requestManager, $this->getBaseUrl() . $url, $parameters, $headers);
 	}
 
 	/**
@@ -160,38 +86,6 @@ abstract class AbstractClient {
 	 */
 	public function setLang($lang) {
 		$this->lang = $lang;
-	}
-
-	/**
-	 * 
-	 * @return int
-	 */
-	public function getCurlRequestTimeout() {
-		return $this->curlRequestTimeout;
-	}
-
-	/**
-	 * 
-	 * @return string
-	 */
-	public function getCurlUserAgent() {
-		return $this->curlUserAgent;
-	}
-
-	/**
-	 * 
-	 * @param int $seconds
-	 */
-	public function setCurlRequestTimeout($seconds) {
-		$this->curlRequestTimeout = $seconds;
-	}
-
-	/**
-	 * 
-	 * @param string $userAgent
-	 */
-	public function setCurlUserAgent($userAgent) {
-		$this->curlUserAgent = $userAgent;
 	}
 
 }
