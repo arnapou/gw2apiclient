@@ -74,6 +74,28 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
+	 * @param int $worldId
+	 * @param int $mapId
+	 * @param int $eventId
+	 * @return Request
+	 */
+	public function apiEvents($worldId = null, $mapId = null, $eventId = null) {
+		throw new Exception('This api is currently deprecated.');
+		$parameters = [];
+		if ($worldId) {
+			$parameters['world_id'] = $worldId;
+		}
+		if ($mapId) {
+			$parameters['map_id'] = $mapId;
+		}
+		if ($eventId) {
+			$parameters['event_id'] = $eventId;
+		}
+		return $this->request('events.json', $parameters);
+	}
+
+	/**
+	 * 
 	 * @return Request
 	 */
 	public function apiFiles() {
@@ -202,6 +224,34 @@ class ClientV1 extends AbstractClient {
 	 */
 	public function apiWorldNames() {
 		return $this->request('world_names.json');
+	}
+
+	/**
+	 * 
+	 * @param string $matchId
+	 * @return Request
+	 */
+	public function apiWvwMatchDetails($matchId) {
+		$parameters = [
+			'match_id' => $matchId,
+		];
+		return $this->request('wvw/match_details.json', $parameters);
+	}
+
+	/**
+	 * 
+	 * @return Request
+	 */
+	public function apiWvwMatches() {
+		return $this->request('wvw/matches.json');
+	}
+
+	/**
+	 * 
+	 * @return Request
+	 */
+	public function apiWvwObjectiveNames() {
+		return $this->request('wvw/objective_names.json');
 	}
 
 }

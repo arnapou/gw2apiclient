@@ -60,7 +60,7 @@ class RequestManager {
 		$headers = $request->getHeaders();
 
 		$requestUrl = $this->urlAppend($url, $parameters);
-		
+
 		if ($cacheRetention === null) {
 			$cacheRetention = $this->defautCacheRetention;
 		}
@@ -124,7 +124,7 @@ class RequestManager {
 	protected function jsonDecode($json) {
 		$json = trim($json);
 		if ($json === '' || ($json[0] !== '{' && $json[0] !== '[' && $json[0] !== '"')) {
-			throw new Exception('Json not valid');
+			throw new JsonException('Json not valid : ' . $json);
 		}
 		$array = \json_decode($json, true);
 		$jsonLastError = json_last_error();

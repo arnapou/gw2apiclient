@@ -21,6 +21,7 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v1_continents()
  * @method array v1_event_details($eventId = null)
  * @method array v1_event_names()
+ * @method array v1_events($worldId = null, $mapId = null, $eventId = null) !!! DEPRECATED !!!
  * @method array v1_files()
  * @method array v1_guild_details($guildId = null, $guildName = null)
  * @method array v1_item_details($itemId = null)
@@ -33,6 +34,9 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v1_skin_details($skinId)
  * @method array v1_skins()
  * @method array v1_world_names()
+ * @method array v1_wvw_match_details($matchId)
+ * @method array v1_wvw_matches()
+ * @method array v1_wvw_objective_names()
  *
  */
 class SimpleClient {
