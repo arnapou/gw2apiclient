@@ -52,7 +52,7 @@ class RequestManager {
 	/**
 	 * 
 	 * @param Request $request
-	 * @return array
+	 * @return Response
 	 */
 	public function execute(Request $request, $cacheRetention = null) {
 		$url = $request->getUrl();
@@ -71,29 +71,49 @@ class RequestManager {
 		// try to retrieve from cache
 		$cacheKey = $requestUrl;
 		if ($this->cache && $cacheRetention > 0) {
-			$data = $this->cache->get($cacheKey);
-			if ($data !== null) {
-				return $data;
+			$cached = $this->cache->get($cacheKey);
+			if ($cached !== null) {
+				return new Response($request, $cached['headers'], $cached['data']);
 			}
 		}
 
-		$curl = new Curl();
-		$curl->setUrl($requestUrl);
-		$curl->setUserAgent($this->curlUserAgent);
-		$curl->setTimeout($this->curlRequestTimeout);
-		$curl->setHeaders($headers);
-		$curl->setGet();
-		$response = new CurlResponse($curl);
-		if ($response->getErrorCode()) {
-			throw new RequestException($response->getErrorTitle() . ': ' . $response->getErrorDetail(), $response->getErrorCode());
+		$tries = 10;
+		while (true) {
+
+			$curl = new Curl();
+			$curl->setUrl($requestUrl);
+			$curl->setUserAgent($this->curlUserAgent);
+			$curl->setTimeout($this->curlRequestTimeout);
+			$curl->setHeaders($headers);
+			$curl->setGet();
+
+			$response = new CurlResponse($curl);
+			$responseHeaders = $response->getHeaders();
+
+			if ($response->getErrorCode()) {
+				throw new RequestException($response->getErrorTitle() . ': ' . $response->getErrorDetail(), $response->getErrorCode());
+			}
+
+			if ($response->getInfoHttpCode() == 503) {
+				usleep(100000); // 100 ms
+				if ($tries-- == 0) {
+					throw new RequestException('HTTP Error 503. The service is unavailable.');
+				}
+				continue;
+			}
+			break;
 		}
+
 		$data = $this->jsonDecode($response->getContent());
 
 		// store in cache if needed
 		if ($this->cache && $cacheRetention > 0) {
-			$this->cache->set($cacheKey, $data, $cacheRetention);
+			$this->cache->set($cacheKey, [
+				'headers'	 => $responseHeaders,
+				'data'		 => $data,
+				], $cacheRetention);
 		}
-		return $data;
+		return new Response($request, $responseHeaders, $data);
 	}
 
 	/**
@@ -130,14 +150,14 @@ class RequestManager {
 		$jsonLastError = json_last_error();
 		if ($jsonLastError !== JSON_ERROR_NONE) {
 			$errors = array(
-				JSON_ERROR_DEPTH => 'Max depth reached.',
-				JSON_ERROR_STATE_MISMATCH => 'Mismatch modes or underflow.',
-				JSON_ERROR_CTRL_CHAR => 'Character control error.',
-				JSON_ERROR_SYNTAX => 'Malformed JSON.',
-				JSON_ERROR_UTF8 => 'Malformed UTF-8 characters, probably charset problem.',
-				JSON_ERROR_RECURSION => 'Recursion detected.',
-				JSON_ERROR_INF_OR_NAN => 'Inf or NaN',
-				JSON_ERROR_UNSUPPORTED_TYPE => 'Unsupported type.',
+				JSON_ERROR_DEPTH			 => 'Max depth reached.',
+				JSON_ERROR_STATE_MISMATCH	 => 'Mismatch modes or underflow.',
+				JSON_ERROR_CTRL_CHAR		 => 'Character control error.',
+				JSON_ERROR_SYNTAX			 => 'Malformed JSON.',
+				JSON_ERROR_UTF8				 => 'Malformed UTF-8 characters, probably charset problem.',
+				JSON_ERROR_RECURSION		 => 'Recursion detected.',
+				JSON_ERROR_INF_OR_NAN		 => 'Inf or NaN',
+				JSON_ERROR_UNSUPPORTED_TYPE	 => 'Unsupported type.',
 			);
 			throw new JsonException('Json error : ' . (isset($errors[$jsonLastError]) ? $errors[$jsonLastError] : 'Unknown error'));
 		}

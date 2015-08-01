@@ -49,7 +49,30 @@ class Request {
 
 	/**
 	 * 
-	 * @return array
+	 * @param string $param
+	 * @return integer
+	 */
+	public function getParameter($param) {
+		if (isset($this->parameters[$param])) {
+			return $this->parameters[$param];
+		}
+		return null;
+	}
+
+	/**
+	 * 
+	 * @param string $param
+	 * @param string $value
+	 * @return Request
+	 */
+	public function setParameter($param, $value) {
+		$this->parameters[$param] = $value;
+		return $this;
+	}
+
+	/**
+	 * 
+	 * @return Response
 	 */
 	public function execute($cacheRetention = null) {
 		return $this->manager->execute($this, $cacheRetention);

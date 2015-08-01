@@ -37,6 +37,34 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v1_wvw_match_details($matchId)
  * @method array v1_wvw_matches()
  * @method array v1_wvw_objective_names()
+ * 
+ * @method array v2_account()
+ * @method array v2_account_bank()
+ * @method array v2_account_materials()
+ * @method array v2_build()
+ * @method array v2_characters()
+ * @method array v2_colors($ids = null)
+ * @method array v2_commerce_exchange()
+ * @method array v2_commerce_exchange_coins($quantity)
+ * @method array v2_commerce_exchange_gems($quantity)
+ * @method array v2_commerce_listings($ids = null)
+ * @method array v2_commerce_prices($ids = null)
+ * @method array v2_commerce_transactions_current_buys()
+ * @method array v2_commerce_transactions_current_sells()
+ * @method array v2_commerce_transactions_history_buys()
+ * @method array v2_commerce_transactions_history_sells()
+ * @method array v2_continents($continentId = null, $floorId = null, $regionId = null, $mapId = null)
+ * @method array v2_files($ids = null)
+ * @method array v2_items($ids = null)
+ * @method array v2_maps($ids = null)
+ * @method array v2_materials($ids = null)
+ * @method array v2_quaggans($ids = null)
+ * @method array v2_recipes($ids = null)
+ * @method array v2_recipes_search($input = null, $output = null)
+ * @method array v2_skins($ids = null)
+ * @method array v2_specializations($ids = null)
+ * @method array v2_tokeninfo()
+ * @method array v2_worlds($ids = null)
  *
  */
 class SimpleClient {
@@ -64,6 +92,14 @@ class SimpleClient {
 
 		$this->clientV2 = new Core\ClientV2($requestManager);
 		$this->clientV2->setLang($lang);
+	}
+
+	/**
+	 * 
+	 * @param string $token
+	 */
+	public function setAccessToken($token) {
+		$this->clientV2->setAccessToken($token);
 	}
 
 	/**
@@ -145,7 +181,15 @@ class SimpleClient {
 			$method = 'api' . str_replace('_', '', str_replace('/', '', $m[2]));
 			if (method_exists($client, $method)) {
 				$request = call_user_func_array([$client, $method], $arguments); /* @var $request Core\Request */
-				return $request->execute();
+				$response = $request->execute();
+				$data = $response->getData();
+				while ($response->hasNextPage()) {
+					$response = $response->getNextPage();
+					foreach ($response->getData() as $value) {
+						$data[] = $value;
+					}
+				}
+				return $data;
 			}
 		}
 		throw new Exception('Uknown method ' . $name);
