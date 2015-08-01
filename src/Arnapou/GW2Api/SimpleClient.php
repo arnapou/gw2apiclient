@@ -110,7 +110,7 @@ class SimpleClient {
 	 */
 	private static function create($lang, $cachePath) {
 		$requestManager = new Core\RequestManager();
-		$client = new self($requestManager, $lang);
+		$client = new static($requestManager, $lang);
 		if ($cachePath !== null) {
 			$cache = new Cache\FileCache($cachePath);
 			$requestManager->setCache($cache);
@@ -124,7 +124,7 @@ class SimpleClient {
 	 * @return SimpleClient
 	 */
 	public static function DE($cachePath) {
-		return self::create(Core\AbstractClient::LANG_DE, $cachePath);
+		return static::create(Core\AbstractClient::LANG_DE, $cachePath);
 	}
 
 	/**
@@ -133,7 +133,7 @@ class SimpleClient {
 	 * @return SimpleClient
 	 */
 	public static function EN($cachePath) {
-		return self::create(Core\AbstractClient::LANG_EN, $cachePath);
+		return static::create(Core\AbstractClient::LANG_EN, $cachePath);
 	}
 
 	/**
@@ -142,7 +142,7 @@ class SimpleClient {
 	 * @return SimpleClient
 	 */
 	public static function ES($cachePath) {
-		return self::create(Core\AbstractClient::LANG_ES, $cachePath);
+		return static::create(Core\AbstractClient::LANG_ES, $cachePath);
 	}
 
 	/**
@@ -151,7 +151,7 @@ class SimpleClient {
 	 * @return SimpleClient
 	 */
 	public static function FR($cachePath) {
-		return self::create(Core\AbstractClient::LANG_FR, $cachePath);
+		return static::create(Core\AbstractClient::LANG_FR, $cachePath);
 	}
 
 	/**
