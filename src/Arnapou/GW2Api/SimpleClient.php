@@ -42,7 +42,7 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_account_bank()
  * @method array v2_account_materials()
  * @method array v2_build()
- * @method array v2_characters()
+ * @method array v2_characters($ids = null)
  * @method array v2_colors($ids = null)
  * @method array v2_commerce_exchange()
  * @method array v2_commerce_exchange_coins($quantity)

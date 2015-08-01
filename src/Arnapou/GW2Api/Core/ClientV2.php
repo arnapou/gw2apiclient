@@ -92,8 +92,15 @@ class ClientV2 extends AbstractClient {
 	 * 
 	 * @return Request
 	 */
-	public function apiCharacters() {
-		return $this->checkAccessToken($this->request('characters'));
+	public function apiCharacters($ids = null) {
+		$parameters = [];
+		if (is_array($ids)) {
+			$parameters['ids'] = implode(',', $ids);
+		}
+		elseif (!empty($ids)) {
+			$parameters['ids'] = $ids;
+		}
+		return $this->checkAccessToken($this->request('characters', $parameters));
 	}
 
 	/**
