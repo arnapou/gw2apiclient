@@ -11,6 +11,13 @@
 
 namespace Arnapou\GW2Api;
 
-/*
- *  file exists if we need global functions
+/**
+ * 
+ * @param array $array
+ * @return boolean
  */
+function is_associative_array($array) {
+	$values = array_values($array);
+	$diff = array_diff_key($values, $array);
+	return empty($diff) ? false : true;
+}

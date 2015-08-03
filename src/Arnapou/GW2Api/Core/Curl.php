@@ -87,23 +87,12 @@ class Curl {
 	}
 
 	/**
-	 * Return whether the array is associative or not
-	 * 
-	 * @param string $array
-	 */
-	protected function isAssociativeArray($array) {
-		$values = array_values($array);
-		$diff = array_diff_key($values, $array);
-		return empty($diff) ? false : true;
-	}
-
-	/**
 	 * 
 	 * @param array $array
 	 * @return Curl
 	 */
 	public function setHeaders($array) {
-		if ($this->isAssociativeArray($array)) {
+		if (\Arnapou\GW2Api\is_associative_array($array)) {
 			$tmp = array();
 			foreach ($array as $key => $value) {
 				if ("$value" !== '') {
