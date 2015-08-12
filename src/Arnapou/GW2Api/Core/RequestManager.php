@@ -13,8 +13,6 @@ namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Cache\CacheInterface;
 use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\Exception\JsonException;
-use Arnapou\GW2Api\Exception\RequestException;
 
 class RequestManager {
 
@@ -51,121 +49,6 @@ class RequestManager {
 
 	/**
 	 * 
-	 * @param Request $request
-	 * @return Response
-	 */
-	public function execute(Request $request, $cacheRetention = null) {
-		$url = $request->getUrl();
-		$parameters = $request->getParameters();
-		$headers = $request->getHeaders();
-
-		$requestUrl = $this->urlAppend($url, $parameters);
-
-		if ($cacheRetention === null) {
-			$cacheRetention = $this->defautCacheRetention;
-		}
-		if ($cacheRetention < 0) {
-			$cacheRetention = 0;
-		}
-
-		// try to retrieve from cache
-		$cacheKey = $requestUrl;
-		if ($this->cache && $cacheRetention > 0) {
-			$cached = $this->cache->get($cacheKey);
-			if ($cached !== null) {
-				return new Response($request, $cached['headers'], $cached['data']);
-			}
-		}
-
-		$tries = 10;
-		while (true) {
-
-			$curl = new Curl();
-			$curl->setUrl($requestUrl);
-			$curl->setUserAgent($this->curlUserAgent);
-			$curl->setTimeout($this->curlRequestTimeout);
-			$curl->setHeaders($headers);
-			$curl->setGet();
-
-			$response = new CurlResponse($curl);
-			$responseHeaders = $response->getHeaders();
-
-			if ($response->getErrorCode()) {
-				throw new RequestException($response->getErrorTitle() . ': ' . $response->getErrorDetail(), $response->getErrorCode());
-			}
-
-			if ($response->getInfoHttpCode() == 503) {
-				usleep(100000); // 100 ms
-				if ($tries-- == 0) {
-					throw new RequestException('HTTP Error 503. The service is unavailable.');
-				}
-				continue;
-			}
-			break;
-		}
-
-		$data = $this->jsonDecode($response->getContent());
-
-		// store in cache if needed
-		if ($this->cache && $cacheRetention > 0) {
-			$this->cache->set($cacheKey, [
-				'headers'	 => $responseHeaders,
-				'data'		 => $data,
-				], $cacheRetention);
-		}
-		return new Response($request, $responseHeaders, $data);
-	}
-
-	/**
-	 * 
-	 * @param string $url
-	 * @param string|array $params
-	 * @return string
-	 */
-	protected function urlAppend($url, $params) {
-		if (empty($params)) {
-			return $url;
-		}
-		$url .= (strpos($url, '?') === false) ? '?' : '&';
-		if (is_array($params)) {
-			$url .= http_build_query($params);
-		}
-		else {
-			$url .= (string) $params;
-		}
-		return $url;
-	}
-
-	/**
-	 * 
-	 * @param string $json
-	 * @return array
-	 */
-	protected function jsonDecode($json) {
-		$json = trim($json);
-		if ($json === '' || ($json[0] !== '{' && $json[0] !== '[' && $json[0] !== '"')) {
-			throw new JsonException('Json not valid : ' . $json);
-		}
-		$array = \json_decode($json, true);
-		$jsonLastError = json_last_error();
-		if ($jsonLastError !== JSON_ERROR_NONE) {
-			$errors = array(
-				JSON_ERROR_DEPTH			 => 'Max depth reached.',
-				JSON_ERROR_STATE_MISMATCH	 => 'Mismatch modes or underflow.',
-				JSON_ERROR_CTRL_CHAR		 => 'Character control error.',
-				JSON_ERROR_SYNTAX			 => 'Malformed JSON.',
-				JSON_ERROR_UTF8				 => 'Malformed UTF-8 characters, probably charset problem.',
-				JSON_ERROR_RECURSION		 => 'Recursion detected.',
-				JSON_ERROR_INF_OR_NAN		 => 'Inf or NaN',
-				JSON_ERROR_UNSUPPORTED_TYPE	 => 'Unsupported type.',
-			);
-			throw new JsonException('Json error : ' . (isset($errors[$jsonLastError]) ? $errors[$jsonLastError] : 'Unknown error'));
-		}
-		return $array;
-	}
-
-	/**
-	 * 
 	 * @return integer
 	 */
 	public function getDefautCacheRetention() {
@@ -185,7 +68,7 @@ class RequestManager {
 
 	/**
 	 * 
-	 * @return CacheInterface|null
+	 * @return CacheInterface
 	 */
 	public function getCache() {
 		return $this->cache;

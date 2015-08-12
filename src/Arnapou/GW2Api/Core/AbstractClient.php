@@ -60,15 +60,23 @@ abstract class AbstractClient {
 
 	/**
 	 * 
-	 * @param string $url
 	 * @param array $parameters
-	 * @param array $headers
-	 * @return Request
 	 */
-	protected function request($url, $parameters = [], $headers = []) {
+	protected function checkParameters(&$parameters) {
 		if (!isset($parameters['lang']) && !empty($this->lang)) {
 			$parameters['lang'] = $this->lang;
 		}
+	}
+
+	/**
+	 * 
+	 * @param string $url
+	 * @param array $parameters
+	 * @param array $headers
+	 * @return RequestInterface
+	 */
+	protected function request($url, $parameters = [], $headers = []) {
+		$this->checkParameters($parameters);
 		return new Request($this->requestManager, $this->getBaseUrl() . $url, $parameters, $headers);
 	}
 

@@ -15,7 +15,7 @@ class Response {
 
 	/**
 	 *
-	 * @var Request
+	 * @var RequestInterface
 	 */
 	protected $request;
 
@@ -62,18 +62,12 @@ class Response {
 	protected $pageSize;
 
 	/**
-	 *
-	 * @var \ArrayIterator
-	 */
-	protected $iterator;
-
-	/**
 	 * 
 	 */
-	public function __construct(Request $request, $headers, $data) {
+	public function __construct(RequestInterface $request, $headers, $data) {
 		$this->request = $request;
 		$this->data = $data;
-		$this->iterator = new \ArrayIterator($data);
+		$this->headers = $headers;
 
 		$this->page = $request->getParameter('page');
 		if (empty($this->page)) {
@@ -136,6 +130,22 @@ class Response {
 	 */
 	public function getData() {
 		return $this->data;
+	}
+
+	/**
+	 * 
+	 * @return array
+	 */
+	public function getAllData() {
+		$alldata = $this->getData();
+		$response = $this;
+		while ($response->hasNextPage()) {
+			$response = $this->getNextPage();
+			foreach ($response->getData() as $item) {
+				$alldata[] = $item;
+			}
+		}
+		return $alldata;
 	}
 
 }

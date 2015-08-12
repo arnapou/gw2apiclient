@@ -180,7 +180,7 @@ class SimpleClient {
 			}
 			$method = 'api' . str_replace('_', '', str_replace('/', '', $m[2]));
 			if (method_exists($client, $method)) {
-				$request = call_user_func_array([$client, $method], $arguments); /* @var $request Core\Request */
+				$request = call_user_func_array([$client, $method], $arguments); /* @var $request Core\RequestInterface */
 				return $request->execute()->getData();
 			}
 		}

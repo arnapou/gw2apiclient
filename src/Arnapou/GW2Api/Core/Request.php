@@ -11,7 +11,9 @@
 
 namespace Arnapou\GW2Api\Core;
 
-class Request {
+use Arnapou\GW2Api\Exception\RequestException;
+
+class Request implements RequestInterface {
 
 	/**
 	 *
@@ -75,7 +77,66 @@ class Request {
 	 * @return Response
 	 */
 	public function execute($cacheRetention = null) {
-		return $this->manager->execute($this, $cacheRetention);
+		$url = $this->url;
+		$parameters = $this->parameters;
+		$headers = $this->headers;
+		$cache = $this->manager->getCache();
+
+		$requestUrl = \Arnapou\GW2Api\url_append($url, $parameters);
+
+		if ($cacheRetention === null) {
+			$cacheRetention = $this->manager->getDefautCacheRetention();
+		}
+		if ($cacheRetention < 0) {
+			$cacheRetention = 0;
+		}
+
+		// try to retrieve from cache
+		$cacheKey = $requestUrl;
+		if ($cache && $cacheRetention > 0) {
+			$cached = $cache->get($cacheKey);
+			if ($cached !== null) {
+				return new Response($this, $cached['headers'], $cached['data']);
+			}
+		}
+
+		$tries = 10;
+		while (true) {
+
+			$curl = new Curl();
+			$curl->setUrl($requestUrl);
+			$curl->setUserAgent($this->manager->getCurlUserAgent());
+			$curl->setTimeout($this->manager->getCurlRequestTimeout());
+			$curl->setHeaders($headers);
+			$curl->setGet();
+
+			$response = new CurlResponse($curl);
+			$responseHeaders = $response->getHeaders();
+
+			if ($response->getErrorCode()) {
+				throw new RequestException($response->getErrorTitle() . ': ' . $response->getErrorDetail(), $response->getErrorCode());
+			}
+
+			if ($response->getInfoHttpCode() == 503) {
+				usleep(100000); // 100 ms
+				if ($tries-- == 0) {
+					throw new RequestException('HTTP Error 503. The service is unavailable.');
+				}
+				continue;
+			}
+			break;
+		}
+
+		$data = \Arnapou\GW2Api\json_decode($response->getContent());
+
+		// store in cache if needed
+		if ($cache && $cacheRetention > 0) {
+			$cache->set($cacheKey, [
+				'headers'	 => $responseHeaders,
+				'data'		 => $data,
+				], $cacheRetention);
+		}
+		return new Response($this, $responseHeaders, $data);
 	}
 
 	/**
@@ -84,22 +145,6 @@ class Request {
 	 */
 	public function getUrl() {
 		return $this->url;
-	}
-
-	/**
-	 * 
-	 * @return array
-	 */
-	public function getParameters() {
-		return $this->parameters;
-	}
-
-	/**
-	 * 
-	 * @return array
-	 */
-	public function getHeaders() {
-		return $this->headers;
 	}
 
 }

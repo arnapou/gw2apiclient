@@ -48,6 +48,23 @@ class ClientV2 extends AbstractClient {
 		return $request->setParameter('access_token', $this->accessToken);
 	}
 
+	protected function request($url, $parameters = array(), $headers = array()) {
+		if (isset($parameters['ids']) && is_array($parameters['ids']) && count($parameters['ids']) > 100) {
+			$this->checkParameters($parameters);
+
+			$request = new RequestBatch($this->requestManager, $this->getBaseUrl() . $url, $headers);
+			$chunks = array_chunk($parameters['ids'], 100);
+			foreach ($chunks as $chunk) {
+				$parameters['ids'] = $chunk;
+				$request->addParameterSet($parameters);
+			}
+			return $request;
+		}
+		else {
+			return parent::request($url, $parameters, $headers);
+		}
+	}
+
 	/**
 	 * 
 	 * @return string
@@ -58,7 +75,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiAccount() {
 		return $this->checkAccessToken($this->request('account'));
@@ -66,7 +83,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiAccountBank() {
 		return $this->checkAccessToken($this->request('account/bank'));
@@ -74,7 +91,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiAccountMaterials() {
 		return $this->checkAccessToken($this->request('account/materials'));
@@ -82,7 +99,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiBuild() {
 		return $this->request('build');
@@ -90,14 +107,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCharacters($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->checkAccessToken($this->request('characters', $parameters));
@@ -105,14 +119,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiColors($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('colors', $parameters);
@@ -120,7 +131,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommerceExchange() {
 		return $this->request('commerce/exchange');
@@ -128,7 +139,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommerceExchangeCoins($quantity) {
 		return $this->request('commerce/exchange/coins', ['quantity' => $quantity]);
@@ -136,7 +147,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommerceExchangeGems($quantity) {
 		return $this->request('commerce/exchange/gems', ['quantity' => $quantity]);
@@ -144,14 +155,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommerceListings($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('commerce/listings', $parameters);
@@ -159,14 +167,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommercePrices($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('commerce/prices', $parameters);
@@ -174,7 +179,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommerceTransactionsCurrentBuys() {
 		$parameters = [
@@ -186,7 +191,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommerceTransactionsCurrentSells() {
 		$parameters = [
@@ -198,7 +203,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommerceTransactionsHistoryBuys() {
 		$parameters = [
@@ -210,7 +215,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiCommerceTransactionsHistorySells() {
 		$parameters = [
@@ -222,7 +227,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiContinents($continentId = null, $floorId = null, $regionId = null, $mapId = null) {
 		$url = 'continents';
@@ -243,14 +248,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiFiles($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('files', $parameters);
@@ -258,14 +260,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiItems($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('items', $parameters);
@@ -273,14 +272,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiMaps($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('maps', $parameters);
@@ -288,14 +284,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiMaterials($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('materials', $parameters);
@@ -303,14 +296,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiQuaggans($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('quaggans', $parameters);
@@ -318,14 +308,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiRecipes($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('recipes', $parameters);
@@ -333,7 +320,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiRecipesSearch($input = null, $output = null) {
 		$parameters = [];
@@ -351,14 +338,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiSkins($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('skins', $parameters);
@@ -366,14 +350,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiSpecializations($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('specializations', $parameters);
@@ -381,7 +362,7 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiTokeninfo() {
 		return $this->checkAccessToken($this->request('tokeninfo'));
@@ -389,14 +370,11 @@ class ClientV2 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiWorlds($ids = null) {
 		$parameters = [];
-		if (is_array($ids)) {
-			$parameters['ids'] = implode(',', $ids);
-		}
-		elseif (!empty($ids)) {
+		if (!empty($ids)) {
 			$parameters['ids'] = $ids;
 		}
 		return $this->request('worlds', $parameters);

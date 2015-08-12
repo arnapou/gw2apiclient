@@ -29,7 +29,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiBuild() {
 		return $this->request('build.json');
@@ -37,7 +37,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiColors() {
 		return $this->request('colors.json');
@@ -45,7 +45,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiContinents() {
 		return $this->request('continents.json');
@@ -54,7 +54,7 @@ class ClientV1 extends AbstractClient {
 	/**
 	 * 
 	 * @param string $eventId
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiEventDetails($eventId = null) {
 		$parameters = [];
@@ -66,7 +66,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiEventNames() {
 		return $this->request('event_names.json');
@@ -77,7 +77,7 @@ class ClientV1 extends AbstractClient {
 	 * @param int $worldId
 	 * @param int $mapId
 	 * @param int $eventId
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiEvents($worldId = null, $mapId = null, $eventId = null) {
 		throw new Exception('This api is currently deprecated.');
@@ -96,7 +96,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiFiles() {
 		return $this->request('files.json');
@@ -106,7 +106,7 @@ class ClientV1 extends AbstractClient {
 	 * 
 	 * @param string $guildId
 	 * @param string $guildName
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiGuildDetails($guildId = null, $guildName = null) {
 		$parameters = [];
@@ -125,7 +125,7 @@ class ClientV1 extends AbstractClient {
 	/**
 	 * 
 	 * @param int $itemId
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiItemDetails($itemId = null) {
 		$parameters = [];
@@ -137,7 +137,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiItems() {
 		return $this->request('items.json');
@@ -147,19 +147,19 @@ class ClientV1 extends AbstractClient {
 	 * 
 	 * @param integer $continentId
 	 * @param integer $floor
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiMapFloor($continentId, $floor) {
 		$parameters = [
-			'continent_id' => $continentId,
-			'floor' => $floor,
+			'continent_id'	 => $continentId,
+			'floor'			 => $floor,
 		];
 		return $this->request('map_floor.json', $parameters);
 	}
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiMapNames() {
 		return $this->request('map_names.json');
@@ -168,7 +168,7 @@ class ClientV1 extends AbstractClient {
 	/**
 	 * 
 	 * @param int $mapId
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiMaps($mapId = null) {
 		$parameters = [];
@@ -181,7 +181,7 @@ class ClientV1 extends AbstractClient {
 	/**
 	 * 
 	 * @param int $recipeId
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiRecipeDetails($recipeId) {
 		$parameters = [
@@ -192,7 +192,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiRecipes() {
 		return $this->request('recipes.json');
@@ -201,7 +201,7 @@ class ClientV1 extends AbstractClient {
 	/**
 	 * 
 	 * @param int $skinId
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiSkinDetails($skinId) {
 		$parameters = [
@@ -212,7 +212,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiSkins() {
 		return $this->request('skins.json');
@@ -220,7 +220,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiWorldNames() {
 		return $this->request('world_names.json');
@@ -229,7 +229,7 @@ class ClientV1 extends AbstractClient {
 	/**
 	 * 
 	 * @param string $matchId
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiWvwMatchDetails($matchId) {
 		$parameters = [
@@ -240,7 +240,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiWvwMatches() {
 		return $this->request('wvw/matches.json');
@@ -248,7 +248,7 @@ class ClientV1 extends AbstractClient {
 
 	/**
 	 * 
-	 * @return Request
+	 * @return RequestInterface
 	 */
 	public function apiWvwObjectiveNames() {
 		return $this->request('wvw/objective_names.json');
