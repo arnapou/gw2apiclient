@@ -104,9 +104,7 @@ class Request implements RequestInterface {
 		$tries = 10;
 		while (true) {
 
-			$event = new Event();
-			$event['uri'] = $requestUrl;
-			$this->manager->getEventListener()->trigger(RequestManager::onRequest, $event);
+			$time = microtime(true);
 
 			$curl = new Curl();
 			$curl->setUrl($requestUrl);
@@ -129,6 +127,12 @@ class Request implements RequestInterface {
 				}
 				continue;
 			}
+
+			$event = new Event();
+			$event['uri'] = $requestUrl;
+			$event['time'] = microtime(true) - $time;
+			$this->manager->getEventListener()->trigger(RequestManager::onRequest, $event);
+
 			break;
 		}
 
