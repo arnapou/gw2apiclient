@@ -11,6 +11,7 @@
 
 namespace Arnapou\GW2Api\Core;
 
+use Arnapou\GW2Api\Event\Event;
 use Arnapou\GW2Api\Exception\RequestException;
 
 class Request implements RequestInterface {
@@ -102,6 +103,10 @@ class Request implements RequestInterface {
 
 		$tries = 10;
 		while (true) {
+
+			$event = new Event();
+			$event['uri'] = $requestUrl;
+			$this->manager->getEventListener()->trigger(RequestManager::onRequest, $event);
 
 			$curl = new Curl();
 			$curl->setUrl($requestUrl);

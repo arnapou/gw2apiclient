@@ -12,9 +12,12 @@
 namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Cache\CacheInterface;
+use Arnapou\GW2Api\Event\EventListener;
 use Arnapou\GW2Api\Exception\Exception;
 
 class RequestManager {
+
+	const onRequest = 'onRequest';
 
 	/**
 	 *
@@ -41,10 +44,24 @@ class RequestManager {
 	protected $curlUserAgent = 'PHP Arnapou GW2 Api Client';
 
 	/**
+	 *
+	 * @var EventListener
+	 */
+	protected $eventListener;
+
+	/**
 	 * 
 	 */
 	public function __construct() {
-		
+		$this->eventListener = new EventListener();
+	}
+
+	/**
+	 * 
+	 * @return EventListener
+	 */
+	public function getEventListener() {
+		return $this->eventListener;
 	}
 
 	/**
