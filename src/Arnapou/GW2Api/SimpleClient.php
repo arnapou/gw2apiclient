@@ -112,7 +112,7 @@ class SimpleClient {
 		$requestManager = new Core\RequestManager();
 		$client = new static($requestManager, $lang);
 		if ($cachePath !== null) {
-			$cache = new Cache\FileCache($cachePath);
+			$cache = new Cache\MemoryCacheDecorator(new Cache\FileCache($cachePath));
 			$requestManager->setCache($cache);
 		}
 		return $client;
