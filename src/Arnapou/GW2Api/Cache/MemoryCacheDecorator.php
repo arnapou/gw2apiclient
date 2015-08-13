@@ -23,7 +23,7 @@ class MemoryCacheDecorator implements CacheInterface {
 	 *
 	 * @var array
 	 */
-	protected $memory;
+	protected $memory = [];
 
 	/**
 	 * 
@@ -34,14 +34,14 @@ class MemoryCacheDecorator implements CacheInterface {
 	}
 
 	public function exists($key) {
-		if (isset($this->memory[$key])) {
+		if (array_key_exists($key, $this->memory)) {
 			return true;
 		}
 		return $this->cache->exists($key);
 	}
 
 	public function get($key) {
-		if (isset($this->memory[$key])) {
+		if (array_key_exists($key, $this->memory)) {
 			return $this->memory[$key];
 		}
 		$value = $this->cache->get($key);
