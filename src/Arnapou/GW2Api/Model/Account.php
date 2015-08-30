@@ -324,7 +324,7 @@ class Account extends AbstractObject {
      */
     public function getName() {
         $this->checkAccount();
-        return $this->data['name'];
+        return $this->getSubkey(['name']);
     }
 
     /**
