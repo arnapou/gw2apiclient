@@ -11,6 +11,7 @@
 
 namespace Arnapou\GW2Api;
 
+use Arnapou\GW2Api\Cache\CacheInterface;
 use Arnapou\GW2Api\Exception\Exception;
 
 /**
@@ -40,7 +41,10 @@ use Arnapou\GW2Api\Exception\Exception;
  * 
  * @method array v2_account()
  * @method array v2_account_bank()
+ * @method array v2_account_dyes()
  * @method array v2_account_materials()
+ * @method array v2_account_skins()
+ * @method array v2_account_wallet()
  * @method array v2_build()
  * @method array v2_characters($ids = null)
  * @method array v2_colors($ids = null)
@@ -54,6 +58,7 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_commerce_transactions_history_buys()
  * @method array v2_commerce_transactions_history_sells()
  * @method array v2_continents($continentId = null, $floorId = null, $regionId = null, $mapId = null)
+ * @method array v2_currencies($ids = null)
  * @method array v2_files($ids = null)
  * @method array v2_items($ids = null)
  * @method array v2_maps($ids = null)
@@ -64,6 +69,7 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_skins($ids = null)
  * @method array v2_specializations($ids = null)
  * @method array v2_tokeninfo()
+ * @method array v2_traits($ids = null)
  * @method array v2_worlds($ids = null)
  *
  */
@@ -86,7 +92,7 @@ class SimpleClient {
 	 * @param RequestManager $requestManager
 	 * @param string $lang
 	 */
-	private function __construct(Core\RequestManager $requestManager, $lang) {
+	public function __construct(Core\RequestManager $requestManager, $lang) {
 		$this->clientV1 = new Core\ClientV1($requestManager);
 		$this->clientV1->setLang($lang);
 
@@ -105,53 +111,55 @@ class SimpleClient {
 	/**
 	 * 
 	 * @param string $lang
-	 * @param string $cachePath
+	 * @param string|CacheInterface $cache
 	 * @return SimpleClient
 	 */
-	private static function create($lang, $cachePath) {
-		$requestManager = new Core\RequestManager();
-		$client = new static($requestManager, $lang);
-		if ($cachePath !== null) {
-			$cache = new Cache\MemoryCacheDecorator(new Cache\FileCache($cachePath));
+	public static function create($lang, $cache) {
+		$requestManager	 = new Core\RequestManager();
+		$client			 = new static($requestManager, $lang);
+		if ($cache instanceof CacheInterface) {
 			$requestManager->setCache($cache);
+		}
+		else {
+			$requestManager->setCache(new Cache\MemoryCacheDecorator(new Cache\FileCache($cache)));
 		}
 		return $client;
 	}
 
 	/**
 	 * 
-	 * @param string $cachePath
+	 * @param string|CacheInterface $cache
 	 * @return SimpleClient
 	 */
-	public static function DE($cachePath) {
-		return static::create(Core\AbstractClient::LANG_DE, $cachePath);
+	public static function createDE($cache) {
+		return static::create(Core\AbstractClient::LANG_DE, $cache);
 	}
 
 	/**
 	 * 
-	 * @param string $cachePath
+	 * @param string|CacheInterface $cache
 	 * @return SimpleClient
 	 */
-	public static function EN($cachePath) {
-		return static::create(Core\AbstractClient::LANG_EN, $cachePath);
+	public static function createEN($cache) {
+		return static::create(Core\AbstractClient::LANG_EN, $cache);
 	}
 
 	/**
 	 * 
-	 * @param string $cachePath
+	 * @param string|CacheInterface $cache
 	 * @return SimpleClient
 	 */
-	public static function ES($cachePath) {
-		return static::create(Core\AbstractClient::LANG_ES, $cachePath);
+	public static function createES($cache) {
+		return static::create(Core\AbstractClient::LANG_ES, $cache);
 	}
 
 	/**
 	 * 
-	 * @param string $cachePath
+	 * @param string|CacheInterface $cache
 	 * @return SimpleClient
 	 */
-	public static function FR($cachePath) {
-		return static::create(Core\AbstractClient::LANG_FR, $cachePath);
+	public static function createFR($cache) {
+		return static::create(Core\AbstractClient::LANG_FR, $cache);
 	}
 
 	/**
