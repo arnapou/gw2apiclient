@@ -26,7 +26,7 @@ class MemcachedCache implements CacheInterface {
 	}
 
 	public function exists($key) {
-		$value = $this->memcached->get($key);
+		$value = $this->memcached->get(hash('sha256', $key));
 		if ($this->memcached->getResultCode() == \Memcached::RES_NOTFOUND) {
 			return false;
 		}
@@ -34,7 +34,7 @@ class MemcachedCache implements CacheInterface {
 	}
 
 	public function get($key) {
-		$value = $this->memcached->get($key);
+		$value = $this->memcached->get(hash('sha256', $key));
 		if ($this->memcached->getResultCode() == \Memcached::RES_NOTFOUND) {
 			return null;
 		}
@@ -42,11 +42,11 @@ class MemcachedCache implements CacheInterface {
 	}
 
 	public function remove($key) {
-		$this->memcached->delete($key);
+		$this->memcached->delete(hash('sha256', $key));
 	}
 
 	public function set($key, $value, $expiration = 0) {
-		$this->memcached->set($key, $value, $expiration);
+		$this->memcached->set(hash('sha256', $key), $value, $expiration);
 	}
 
 }
