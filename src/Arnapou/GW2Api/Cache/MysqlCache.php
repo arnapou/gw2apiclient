@@ -57,6 +57,12 @@ class MysqlCache implements CacheInterface {
     protected $table;
 
     /**
+     *
+     * @var array
+     */
+    protected $prepared;
+
+    /**
      * 
      * @param \PDO $pdo
      */
@@ -105,43 +111,98 @@ class MysqlCache implements CacheInterface {
     }
 
     public function get($key) {
-        $hash = hash('sha256', $key);
-        $sql = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=" . $this->pdo->quote($hash);
-        try {
-            foreach ($this->pdo->query($sql, \PDO::FETCH_ASSOC) as $row) {
-                return unserialize($row['value']);
+        $prepared = $this->getPreparedGet();
+        $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->execute();
+
+        $row = $prepared->fetch(\PDO::FETCH_NUM);
+        if (isset($row[0])) {
+            try {
+                return unserialize($row[0]);
             }
-        }
-        catch (\Exception $e) {
-            
+            catch (\Exception $e) {
+                return null;
+            }
         }
         return null;
     }
 
-    public function set($key, $value, $expiration = 0) {
-        $hash = hash('sha256', $key);
-        if ($expiration != 0 && $expiration <= 30 * 86400) {
-            $expiration += time();
-        }
-
-        $sql = "REPLACE INTO `" . $this->table . "` (`hash`, `value`, `expiration` ) VALUES "
-            . "(" . $this->pdo->quote($hash) . "," . $this->pdo->quote(serialize($value)) . "," . $this->pdo->quote($expiration) . ")";
-        $this->pdo->exec($sql);
-    }
-
     public function exists($key) {
-        $hash = hash('sha256', $key);
-        $sql = "SELECT COUNT(`key`) as nb FROM `" . $this->table . "`  WHERE `hash`=" . $this->pdo->quote($hash);
-        foreach ($this->pdo->query($sql, \PDO::FETCH_ASSOC) as $row) {
-            return $row['nb'] == 1 ? true : false;
+        $prepared = $this->getPreparedGet();
+        $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->execute();
+
+        $row = $prepared->fetch(\PDO::FETCH_NUM);
+        if (isset($row[0])) {
+            return true;
         }
         return false;
     }
 
+    public function set($key, $value, $expiration = 0) {
+        if ($expiration != 0 && $expiration <= 30 * 86400) {
+            $expiration += time();
+        }
+
+        $prepared = $this->getPreparedSet();
+        $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->bindValue('value', serialize($value), \PDO::PARAM_LOB);
+        $prepared->bindValue('expiration', $expiration, \PDO::PARAM_INT);
+        $prepared->execute();
+    }
+
     public function remove($key) {
-        $hash = hash('sha256', $key);
-        $sql = "DELETE FROM `" . $this->table . "` WHERE `hash`=" . $this->pdo->quote($hash);
-        $this->pdo->exec($sql);
+        $prepared = $this->getPreparedGet();
+        $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->execute();
+    }
+
+    /**
+     * 
+     * @return \PDOStatement
+     */
+    protected function getPreparedRemove() {
+        if (empty($this->prepared['remove'])) {
+            $sql = "DELETE FROM `" . $this->table . "` WHERE `hash`=:hash";
+            $this->prepared['remove'] = $this->pdo->prepare($sql);
+        }
+        return $this->prepared['remove'];
+    }
+
+    /**
+     * 
+     * @return \PDOStatement
+     */
+    protected function getPreparedExists() {
+        if (empty($this->prepared['get'])) {
+            $sql = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=:hash";
+            $this->prepared['get'] = $this->pdo->prepare($sql);
+        }
+        return $this->prepared['get'];
+    }
+
+    /**
+     * 
+     * @return \PDOStatement
+     */
+    protected function getPreparedGet() {
+        if (empty($this->prepared['get'])) {
+            $sql = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=:hash";
+            $this->prepared['get'] = $this->pdo->prepare($sql);
+        }
+        return $this->prepared['get'];
+    }
+
+    /**
+     * 
+     * @return \PDOStatement
+     */
+    protected function getPreparedSet() {
+        if (!isset($this->prepared['set'])) {
+            $sql = "REPLACE INTO `" . $this->table . "` (`hash`, `value`, `expiration` ) VALUES (:hash, :value, :expiration)";
+            $this->prepared['set'] = $this->pdo->prepare($sql);
+        }
+        return $this->prepared['set'];
     }
 
 }
