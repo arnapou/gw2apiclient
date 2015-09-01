@@ -91,7 +91,7 @@ class MongoCache implements CacheInterface {
         $document = $this->collection->findOne(['key' => hash('sha256', $key)]);
         if ($document && isset($document['value'])) {
             try {
-                return unserialize($document['value']);
+                return $document['value'];
             }
             catch (\Exception $e) {
                 return null;
@@ -117,7 +117,7 @@ class MongoCache implements CacheInterface {
             'key' => hash('sha256', $key),
             ], [
             'key'        => hash('sha256', $key),
-            'value'      => serialize($value),
+            'value'      => $value,
             'expiration' => $expiration,
             ], [
             'upsert' => true
