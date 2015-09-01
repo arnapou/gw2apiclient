@@ -25,9 +25,6 @@
 
 namespace Arnapou\GW2Api\Cache;
 
-use \FilesystemIterator;
-use \RecursiveIteratorIterator;
-use \RecursiveDirectoryIterator;
 use Arnapou\GW2Api\Exception\Exception;
 
 class MysqlCache implements CacheInterface {
