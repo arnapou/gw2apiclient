@@ -110,6 +110,7 @@ class MysqlCache implements CacheInterface {
     public function get($key) {
         $prepared = $this->getPreparedGet();
         $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->bindValue('expiration', time(), \PDO::PARAM_INT);
         $prepared->execute();
 
         $row = $prepared->fetch(\PDO::FETCH_NUM);
@@ -127,6 +128,7 @@ class MysqlCache implements CacheInterface {
     public function exists($key) {
         $prepared = $this->getPreparedGet();
         $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->bindValue('expiration', time(), \PDO::PARAM_INT);
         $prepared->execute();
 
         $row = $prepared->fetch(\PDO::FETCH_NUM);
@@ -149,7 +151,7 @@ class MysqlCache implements CacheInterface {
     }
 
     public function remove($key) {
-        $prepared = $this->getPreparedGet();
+        $prepared = $this->getPreparedRemove();
         $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
         $prepared->execute();
     }
@@ -170,21 +172,9 @@ class MysqlCache implements CacheInterface {
      * 
      * @return \PDOStatement
      */
-    protected function getPreparedExists() {
-        if (empty($this->prepared['get'])) {
-            $sql = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=:hash";
-            $this->prepared['get'] = $this->pdo->prepare($sql);
-        }
-        return $this->prepared['get'];
-    }
-
-    /**
-     * 
-     * @return \PDOStatement
-     */
     protected function getPreparedGet() {
         if (empty($this->prepared['get'])) {
-            $sql = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=:hash";
+            $sql = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=:hash and `expiration`>=:expiration";
             $this->prepared['get'] = $this->pdo->prepare($sql);
         }
         return $this->prepared['get'];

@@ -83,12 +83,15 @@ class MongoCache implements CacheInterface {
         if ($gcDivisor < 0) {
             throw new Exception('gcProbability cannot be negative.');
         }
-        $this->gcDivisor     = $gcDivisor;
+        $this->gcDivisor = $gcDivisor;
         $this->gcProbability = $gcProbability;
     }
 
     public function get($key) {
-        $document = $this->collection->findOne(['key' => hash('sha256', $key)]);
+        $document = $this->collection->findOne([
+            'key'        => hash('sha256', $key),
+            'expiration' => ['$gte' => time()],
+        ]);
         if ($document && isset($document['value'])) {
             try {
                 return $document['value'];
@@ -101,7 +104,10 @@ class MongoCache implements CacheInterface {
     }
 
     public function exists($key) {
-        $document = $this->collection->findOne(['key' => hash('sha256', $key)]);
+        $document = $this->collection->findOne([
+            'key'        => hash('sha256', $key),
+            'expiration' => ['$gte' => time()],
+        ]);
         if ($document && isset($document['value'])) {
             return true;
         }
