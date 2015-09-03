@@ -96,7 +96,19 @@ class Character extends AbstractObject {
      *
      * @var array
      */
+    protected $bagsfilling;
+
+    /**
+     *
+     * @var array
+     */
     protected $bagsprice;
+
+    /**
+     *
+     * @var array
+     */
+    protected $inventoryStuff;
 
     /**
      * 
@@ -111,6 +123,30 @@ class Character extends AbstractObject {
             throw new Exception('Invalid received data.');
         }
         $this->data = $data;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getInventoryStuff() {
+        if (!isset($this->inventoryStuff)) {
+
+            $this->inventoryStuff = [];
+
+            foreach ($this->getEquipments() as /* @var $item InventorySlot */ $item) {
+                $this->inventoryStuff[$item->getSubType()][] = $item;
+            }
+
+            foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
+                foreach ($bag->getInventoryStuff() as $subtype => $items) {
+                    foreach ($items as /* @var $item InventorySlot */ $item) {
+                        $this->inventoryStuff[$subtype][] = $item;
+                    }
+                }
+            }
+        }
+        return $this->inventoryStuff;
     }
 
     /**
@@ -407,6 +443,30 @@ class Character extends AbstractObject {
             }
         }
         return $this->bagsprice;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getBagsFilling() {
+        if (!isset($this->bagsfilling)) {
+            $this->bagsfilling = [
+                'filled' => 0,
+                'size'   => 0,
+            ];
+            foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
+                if ($bag) {
+                    $this->bagsfilling['size'] += $bag->getSize();
+                    foreach ($bag->getInventory() as /* @var $item InventorySlot */ $item) {
+                        if ($item) {
+                            $this->bagsfilling['filled'] ++;
+                        }
+                    }
+                }
+            }
+        }
+        return $this->bagsfilling;
     }
 
 }

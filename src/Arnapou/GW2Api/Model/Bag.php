@@ -35,7 +35,7 @@ class Bag extends Item {
      *
      * @var array
      */
-    protected $stuff;
+    protected $inventoryStuff;
 
     /**
      *
@@ -84,11 +84,11 @@ class Bag extends Item {
      * @return array
      */
     public function getInventoryStuff() {
-        if (!isset($this->stuff)) {
+        if (!isset($this->inventoryStuff)) {
             $allowedRarities = [self::RARITY_ASCENDED, self::RARITY_EXOTIC];
             $allowedTypes    = [self::TYPE_ARMOR, self::TYPE_BACK, self::TYPE_WEAPON, self::TYPE_TRINKET];
 
-            $this->stuff = [];
+            $this->inventoryStuff = [];
             foreach ($this->inventory as /* @var $item InventorySlot */ $item) {
                 if (empty($item) ||
                     !in_array($item->getRarity(), $allowedRarities) ||
@@ -96,10 +96,10 @@ class Bag extends Item {
                 ) {
                     continue;
                 }
-                $this->stuff[] = $item;
+                $this->inventoryStuff[$item->getSubType()][] = $item;
             }
         }
-        return $this->stuff;
+        return $this->inventoryStuff;
     }
 
     /**

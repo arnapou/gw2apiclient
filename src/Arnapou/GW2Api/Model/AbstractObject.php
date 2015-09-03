@@ -44,11 +44,96 @@ abstract class AbstractObject {
     private $stackSkinIds = [];
 
     /**
+     *
+     * @var integer
+     */
+    public static $cacheDurationApiItems = 604000; // one week
+
+    /**
+     *
+     * @var integer
+     */
+    public static $cacheDurationApiSkins = 604000; // one week
+
+    /**
+     *
+     * @var integer
+     */
+    public static $cacheDurationApiPrices = 1800; // 30 min
+
+    /**
+     *
+     * @var integer
+     */
+    public static $cacheDurationApiCharacters = 1800; // 30 min
+
+    /**
+     *
+     * @var integer
+     */
+    public static $cacheDurationApiIcons = 604000; // one week
+
+    /**
      * 
      * @param SimpleClient $client
      */
+
     public function __construct(SimpleClient $client) {
         $this->client = $client;
+    }
+
+    /**
+     * 
+     * @param mixed $id
+     * @return string
+     */
+    protected function apiIcon($id) {
+        try {
+            $file = $this->client->getClientV2()->apiFiles($id)->execute(self::$cacheDurationApiIcons)->getData();
+            if (is_array($file) && isset($file[0]) && isset($file[0]['icon'])) {
+                return $file[0]['icon'];
+            }
+        }
+        catch (\Exception $e) {
+            
+        }
+        return null;
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
+    protected function apiCharacters($ids) {
+        return $this->client->getClientV2()->smartRequest('apiCharacters', $ids, self::$cacheDurationApiCharacters, 'name');
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
+    protected function apiItems($ids) {
+        return $this->client->getClientV2()->smartRequest('apiItems', $ids, self::$cacheDurationApiItems);
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
+    protected function apiSkins($ids) {
+        return $this->client->getClientV2()->smartRequest('apiSkins', $ids, self::$cacheDurationApiSkins);
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
+    protected function apiPrices($ids) {
+        return $this->client->getClientV2()->smartRequest('apiCommercePrices', $ids, self::$cacheDurationApiPrices);
     }
 
     /**
@@ -118,60 +203,6 @@ abstract class AbstractObject {
             $item = $item[$key];
         }
         return $item;
-    }
-
-    /**
-     * 
-     * @param mixed $id
-     * @return string
-     */
-    protected function apiIcon($id) {
-        try {
-            $file = $this->client->getClientV2()->apiFiles($id)->execute(7 * 86400)->getData();
-            if (is_array($file) && isset($file[0]) && isset($file[0]['icon'])) {
-                return $file[0]['icon'];
-            }
-        }
-        catch (\Exception $e) {
-            
-        }
-        return null;
-    }
-
-    /**
-     * 
-     * @param array $ids
-     * @return array
-     */
-    protected function apiCharacters($ids) {
-        return $this->client->getClientV2()->smartRequest('apiCharacters', $ids, 7 * 86400, 'name');
-    }
-
-    /**
-     * 
-     * @param array $ids
-     * @return array
-     */
-    protected function apiItems($ids) {
-        return $this->client->getClientV2()->smartRequest('apiItems', $ids, 7 * 86400);
-    }
-
-    /**
-     * 
-     * @param array $ids
-     * @return array
-     */
-    protected function apiSkins($ids) {
-        return $this->client->getClientV2()->smartRequest('apiSkins', $ids, 7 * 86400);
-    }
-
-    /**
-     * 
-     * @param array $ids
-     * @return array
-     */
-    protected function apiPrices($ids) {
-        return $this->client->getClientV2()->smartRequest('apiCommercePrices', $ids, 1800);
     }
 
     /**
