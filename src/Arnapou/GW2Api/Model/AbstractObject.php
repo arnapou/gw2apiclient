@@ -71,7 +71,24 @@ abstract class AbstractObject {
      *
      * @var integer
      */
+    public static $cacheDurationApiTradingPost = 300; // 5 min
+
+    /**
+     *
+     * @var integer
+     */
     public static $cacheDurationApiIcons = 604000; // one week
+    /**
+     *
+     * @var integer
+     */
+    public static $cacheDurationApiGuilds = 86400; // one day
+
+    /**
+     *
+     * @var integer
+     */
+    public static $cacheDurationApiColors = 604000; // one week
 
     /**
      * 
@@ -116,6 +133,15 @@ abstract class AbstractObject {
      */
     protected function apiItems($ids) {
         return $this->client->getClientV2()->smartRequest('apiItems', $ids, self::$cacheDurationApiItems);
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
+    protected function apiColors($ids) {
+        return $this->client->getClientV2()->smartRequest('apiColors', $ids, self::$cacheDurationApiSkins);
     }
 
     /**

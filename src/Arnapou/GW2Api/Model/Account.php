@@ -79,6 +79,24 @@ class Account extends AbstractObject {
 
     /**
      *
+     * @var Wardrobe
+     */
+    protected $wardrobe;
+
+    /**
+     *
+     * @var array
+     */
+    protected $dyes;
+
+    /**
+     *
+     * @var TradingPost
+     */
+    protected $tradingPost;
+
+    /**
+     *
      * @var string
      */
     protected $accessToken;
@@ -139,6 +157,54 @@ class Account extends AbstractObject {
             }
             $this->data = $this->client->v2_account();
         }
+    }
+
+    /**
+     * 
+     * @return TradingPost
+     */
+    public function getTradingPost() {
+        if (empty($this->tradingPost)) {
+
+            if (!$this->hasPermission(self::PERMISSION_TRADINGPOST)) {
+                throw new MissingPermissionException(self::PERMISSION_TRADINGPOST);
+            }
+
+            $this->tradingPost = new TradingPost($this->client);
+        }
+        return $this->tradingPost;
+    }
+
+    /**
+     * 
+     * @return Dyes
+     */
+    public function getDyes() {
+        if (empty($this->dyes)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $this->dyes = new Dyes($this->client, $this->client->v2_account_dyes());
+        }
+        return $this->dyes;
+    }
+
+    /**
+     * 
+     * @return Wardrobe
+     */
+    public function getWardrobe() {
+        if (empty($this->wardrobe)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $this->wardrobe = new Wardrobe($this->client, $this->client->v2_account_skins());
+        }
+        return $this->wardrobe;
     }
 
     /**

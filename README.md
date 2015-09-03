@@ -3,6 +3,9 @@ GW2 Api Client
 
 This project can be used to request GW2 api through PHP.
 
+The classes I wrote are very robust : retries when the api is not well responding, it manages long list of ids while manking several request and returning to you the whole response, and so on.
+
+
 ### Simple and fast use (no cache: bad idea)
 
     use Arnapou\GW2Api\Core\AbstractClient;

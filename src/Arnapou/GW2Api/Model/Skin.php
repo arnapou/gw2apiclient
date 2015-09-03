@@ -28,6 +28,10 @@ class Skin extends AbstractObject {
     const WEIGHT_CLASS_MEDIUM          = 'Medium';
     const WEIGHT_CLASS_LIGHT           = 'Light';
     const WEIGHT_CLASS_CLOTHING        = 'Clothing';
+    // FLAGS
+    const FLAG_SHOW_IN_WARDROBE        = 'ShowInWardrobe';
+    const FLAG_NO_COST                 = 'NoCost';
+    const FLAG_HIDE_IF_LOCKED          = 'HideIfLocked';
     // WEAPON_DAMAGE_TYPE
     const WEAPON_DAMAGE_TYPE_FIRE      = 'Fire';
     const WEAPON_DAMAGE_TYPE_ICE       = 'Ice';
@@ -37,25 +41,35 @@ class Skin extends AbstractObject {
 
     /**
      *
-     * @var Skin
-     */
-    protected $defaultSkin;
-
-    /**
-     *
      * @var array
      */
     protected $attributes;
 
     /**
+     *
+     * @var boolean
+     */
+    protected $unlocked;
+
+    /**
      * 
      * @param SimpleClient $client
      * @param array $id
+     * @param boolean $unlocked
      */
-    public function __construct(SimpleClient $client, $id) {
+    public function __construct(SimpleClient $client, $id, $unlocked = false) {
         parent::__construct($client);
 
-        $this->data = $this->apiSkins($id);
+        $this->data     = $this->apiSkins($id);
+        $this->unlocked = $unlocked;
+    }
+
+    /**
+     * 
+     * @return boolean
+     */
+    public function isUnlocked() {
+        return $this->unlocked;
     }
 
     /**

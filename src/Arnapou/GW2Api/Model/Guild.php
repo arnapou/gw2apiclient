@@ -27,7 +27,7 @@ class Guild extends AbstractObject {
     public function __construct(SimpleClient $client, $id) {
         parent::__construct($client);
 
-        $data = $this->client->v1_guild_details($id);
+        $data = $this->client->getClientV1()->apiGuildDetails($id)->execute(self::$cacheDurationApiGuilds)->getData();
         if (!is_array($data)) {
             throw new Exception('Invalid received data.');
         }

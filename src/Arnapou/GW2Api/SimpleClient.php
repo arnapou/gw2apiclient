@@ -75,124 +75,126 @@ use Arnapou\GW2Api\Exception\Exception;
  */
 class SimpleClient {
 
-	/**
-	 *
-	 * @var Core\ClientV1
-	 */
-	protected $clientV1;
+    /**
+     *
+     * @var Core\ClientV1
+     */
+    protected $clientV1;
 
-	/**
-	 *
-	 * @var Core\ClientV2
-	 */
-	protected $clientV2;
+    /**
+     *
+     * @var Core\ClientV2
+     */
+    protected $clientV2;
 
-	/**
-	 * 
-	 * @param RequestManager $requestManager
-	 * @param string $lang
-	 */
-	public function __construct(Core\RequestManager $requestManager, $lang) {
-		$this->clientV1 = new Core\ClientV1($requestManager);
-		$this->clientV1->setLang($lang);
+    /**
+     * 
+     * @param RequestManager $requestManager
+     * @param string $lang
+     */
+    public function __construct(Core\RequestManager $requestManager, $lang) {
+        $this->clientV1 = new Core\ClientV1($requestManager);
+        $this->clientV1->setLang($lang);
 
-		$this->clientV2 = new Core\ClientV2($requestManager);
-		$this->clientV2->setLang($lang);
-	}
+        $this->clientV2 = new Core\ClientV2($requestManager);
+        $this->clientV2->setLang($lang);
+    }
 
-	/**
-	 * 
-	 * @param string $token
-	 */
-	public function setAccessToken($token) {
-		$this->clientV2->setAccessToken($token);
-	}
+    /**
+     * 
+     * @param string $token
+     */
+    public function setAccessToken($token) {
+        $this->clientV2->setAccessToken($token);
+    }
 
-	/**
-	 * 
-	 * @param string $lang
-	 * @param string|CacheInterface $cache
-	 * @return SimpleClient
-	 */
-	public static function create($lang, $cache) {
-		$requestManager	 = new Core\RequestManager();
-		$client			 = new static($requestManager, $lang);
-		if ($cache instanceof CacheInterface) {
-			$requestManager->setCache($cache);
-		}
-		else {
-			$requestManager->setCache(new Cache\MemoryCacheDecorator(new Cache\FileCache($cache)));
-		}
-		return $client;
-	}
+    /**
+     * 
+     * @param string $lang
+     * @param string|CacheInterface $cache
+     * @return SimpleClient
+     */
+    public static function create($lang, $cache = null) {
+        $requestManager = new Core\RequestManager();
+        $client         = new static($requestManager, $lang);
+        if ($cache) {
+            if ($cache instanceof CacheInterface) {
+                $requestManager->setCache($cache);
+            }
+            else {
+                $requestManager->setCache(new Cache\MemoryCacheDecorator(new Cache\FileCache($cache)));
+            }
+        }
+        return $client;
+    }
 
-	/**
-	 * 
-	 * @param string|CacheInterface $cache
-	 * @return SimpleClient
-	 */
-	public static function createDE($cache) {
-		return static::create(Core\AbstractClient::LANG_DE, $cache);
-	}
+    /**
+     * 
+     * @param string|CacheInterface $cache
+     * @return SimpleClient
+     */
+    public static function createDE($cache) {
+        return static::create(Core\AbstractClient::LANG_DE, $cache);
+    }
 
-	/**
-	 * 
-	 * @param string|CacheInterface $cache
-	 * @return SimpleClient
-	 */
-	public static function createEN($cache) {
-		return static::create(Core\AbstractClient::LANG_EN, $cache);
-	}
+    /**
+     * 
+     * @param string|CacheInterface $cache
+     * @return SimpleClient
+     */
+    public static function createEN($cache) {
+        return static::create(Core\AbstractClient::LANG_EN, $cache);
+    }
 
-	/**
-	 * 
-	 * @param string|CacheInterface $cache
-	 * @return SimpleClient
-	 */
-	public static function createES($cache) {
-		return static::create(Core\AbstractClient::LANG_ES, $cache);
-	}
+    /**
+     * 
+     * @param string|CacheInterface $cache
+     * @return SimpleClient
+     */
+    public static function createES($cache) {
+        return static::create(Core\AbstractClient::LANG_ES, $cache);
+    }
 
-	/**
-	 * 
-	 * @param string|CacheInterface $cache
-	 * @return SimpleClient
-	 */
-	public static function createFR($cache) {
-		return static::create(Core\AbstractClient::LANG_FR, $cache);
-	}
+    /**
+     * 
+     * @param string|CacheInterface $cache
+     * @return SimpleClient
+     */
+    public static function createFR($cache) {
+        return static::create(Core\AbstractClient::LANG_FR, $cache);
+    }
 
-	/**
-	 * 
-	 * @return Core\ClientV1
-	 */
-	public function getClientV1() {
-		return $this->clientV1;
-	}
+    /**
+     * 
+     * @return Core\ClientV1
+     */
+    public function getClientV1() {
+        return $this->clientV1;
+    }
 
-	/**
-	 * 
-	 * @return Core\ClientV2
-	 */
-	public function getClientV2() {
-		return $this->clientV2;
-	}
+    /**
+     * 
+     * @return Core\ClientV2
+     */
+    public function getClientV2() {
+        return $this->clientV2;
+    }
 
-	public function __call($name, $arguments) {
-		if (preg_match('!^v([12])_([a-z0-9_]+)$!', $name, $m)) {
-			if ($m[1] == 1) {
-				$client = $this->getClientV1();
-			}
-			elseif ($m[1] == 2) {
-				$client = $this->getClientV2();
-			}
-			$method = 'api' . str_replace('_', '', str_replace('/', '', $m[2]));
-			if (method_exists($client, $method)) {
-				$request = call_user_func_array([$client, $method], $arguments); /* @var $request Core\RequestInterface */
-				return $request->execute()->getData();
-			}
-		}
-		throw new Exception('Uknown method ' . $name);
-	}
+    public function __call($name, $arguments) {
+        if (preg_match('!^v([12])_([a-z0-9_]+)$!', $name, $m)) {
+            if ($m[1] == 1) {
+                $client = $this->getClientV1();
+            }
+            elseif ($m[1] == 2) {
+                $client = $this->getClientV2();
+            }
+            $method = 'api' . str_replace('_', '', str_replace('/', '', $m[2]));
+            if (method_exists($client, $method)) {
+                $request = call_user_func_array([$client, $method], $arguments); /* @var $request Core\RequestInterface */
+                return $request->execute()->getData();
+            }
+        }
+        throw new Exception('Uknown method ' . $name);
+    }
 
 }
