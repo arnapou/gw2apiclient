@@ -48,69 +48,6 @@ class ClientV2 extends AbstractClient {
         return $request->setParameter('access_token', $this->accessToken);
     }
 
-    /**
-     * 
-     * @param string $method
-     * @param array $ids
-     * @param integer $retention
-     * @param string $pk
-     * @return array
-     */
-    public function smartRequest($method, $ids, $retention = null, $pk = 'id') {
-        if (empty($ids)) {
-            return [];
-        }
-        if ($retention === null) {
-            $retention = $this->requestManager->getDefautCacheRetention();
-        }
-        $cachePrefix = $this->lang . '/smartRequest/' . $method . '/';
-        $cache       = $this->requestManager->getCache();
-        if (!is_array($ids)) {
-            $result = $cache->get($cachePrefix . $ids);
-            if (is_array($result)) {
-                return $result;
-            }
-            return $this->smartRequest($method, [$ids], $retention)[$ids];
-        }
-        $ids              = array_unique($ids);
-        $objectsFromCache = [];
-        $idsToRequest     = [];
-        foreach ($ids as $id) {
-            $result = $cache->get($cachePrefix . $id);
-            if (is_array($result)) {
-                $objectsFromCache[$id] = $result;
-            }
-            else {
-                $idsToRequest[] = $id;
-            }
-        }
-        $return = $objectsFromCache;
-        if (!empty($idsToRequest)) {
-            $objects     = $this->$method($idsToRequest)->execute($retention)->getAllData();
-            $responseIds = [];
-            foreach ($objects as $object) {
-                if (isset($object[$pk])) {
-                    $cache->set($cachePrefix . $object[$pk], $object, $retention);
-                    $return[$object[$pk]] = $object;
-                    $responseIds[]        = $object[$pk];
-                }
-            }
-            if (empty($responseIds)) {
-                $notFoundIds = $idsToRequest;
-            }
-            else {
-                $notFoundIds = array_diff($idsToRequest, $responseIds);
-            }
-            if (!empty($notFoundIds)) {
-                foreach ($notFoundIds as $id) {
-                    $cache->set($cachePrefix . $id, [$pk => $id], $retention);
-                    $return[$id] = [$pk => $id];
-                }
-            }
-        }
-        return $return;
-    }
-
     protected function request($url, $parameters = array(), $headers = array()) {
         if (isset($parameters['ids']) && is_array($parameters['ids']) && count($parameters['ids']) > 100) {
             $this->checkParameters($parameters);

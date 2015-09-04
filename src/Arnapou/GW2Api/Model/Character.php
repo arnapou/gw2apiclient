@@ -119,10 +119,10 @@ class Character extends AbstractObject {
         parent::__construct($client);
 
         $data = $this->apiCharacters($name);
-        if (!is_array($data) || !isset($data['name'])) {
-            throw new Exception('Invalid received data.');
+        if (!is_array($data) || !isset($data[0])) {
+            throw new Exception('Invalid received character data.');
         }
-        $this->data = $data;
+        $this->data = $data[0];
     }
 
     /**

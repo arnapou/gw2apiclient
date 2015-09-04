@@ -11,7 +11,9 @@
 
 namespace Arnapou\GW2Api;
 
+use Arnapou\GW2Api\Cache\AbstractCacheDecorator;
 use Arnapou\GW2Api\Cache\CacheInterface;
+use Arnapou\GW2Api\Cache\MongoCache;
 use Arnapou\GW2Api\Exception\Exception;
 
 /**
@@ -76,6 +78,28 @@ use Arnapou\GW2Api\Exception\Exception;
 class SimpleClient {
 
     /**
+     * Apis with only 'ids' parameter
+     *
+     * @var array
+     */
+    protected $smartV2Apis = [
+        'v2_colors',
+        'v2_commerce_listings',
+        'v2_commerce_prices',
+        'v2_currencies',
+        'v2_files',
+        'v2_items',
+        'v2_maps',
+        'v2_materials',
+        'v2_quaggans',
+        'v2_recipes',
+        'v2_skins',
+        'v2_specializations',
+        'v2_traits',
+        'v2_worlds',
+    ];
+
+    /**
      *
      * @var Core\ClientV1
      */
@@ -88,11 +112,19 @@ class SimpleClient {
     protected $clientV2;
 
     /**
+     *
+     * @var Core\RequestManager
+     */
+    protected $requestManager;
+
+    /**
      * 
      * @param RequestManager $requestManager
      * @param string $lang
      */
     public function __construct(Core\RequestManager $requestManager, $lang) {
+        $this->requestManager = $requestManager;
+
         $this->clientV1 = new Core\ClientV1($requestManager);
         $this->clientV1->setLang($lang);
 
@@ -180,6 +212,12 @@ class SimpleClient {
         return $this->clientV2;
     }
 
+    /**
+     * 
+     * @param string $name
+     * @param array $arguments
+     * @return mixed
+     */
     public function __call($name, $arguments) {
         if (preg_match('!^v([12])_([a-z0-9_]+)$!', $name, $m)) {
             if ($m[1] == 1) {
@@ -188,13 +226,84 @@ class SimpleClient {
             elseif ($m[1] == 2) {
                 $client = $this->getClientV2();
             }
-            $method = 'api' . str_replace('_', '', str_replace('/', '', $m[2]));
+            $method = 'api' . str_replace('_', '', $m[2]);
             if (method_exists($client, $method)) {
+                if ($m[1] == 2 && isset($arguments[0]) && $this->requestManager->getCache() && in_array($name, $this->smartV2Apis)) {
+                    $retention = $this->requestManager->getCacheRetention('/' . str_replace('_', '/', $name));
+                    return $this->smartV2Caching(strtolower($method), $arguments[0], $retention);
+                }
+
                 $request = call_user_func_array([$client, $method], $arguments); /* @var $request Core\RequestInterface */
                 return $request->execute()->getData();
             }
         }
-        throw new Exception('Uknown method ' . $name);
+        throw new Exception('Unknown method ' . $name);
+    }
+
+    /**
+     * 
+     * @param string $method
+     * @param array $ids
+     * @param int $retention
+     * @return mixed
+     */
+    protected function smartV2Caching($method, $ids, $retention) {
+        if (empty($ids)) {
+            return [];
+        }
+        $clientV2    = $this->getClientV2();
+        $cache       = $this->requestManager->getCache();
+        $cachePrefix = 'smartCaching/' . $clientV2->getLang() . '_' . substr($method, 3) . '/';
+        $pk          = 'id';
+
+        // single id
+        if (!is_array($ids)) {
+            $result = $cache->get($cachePrefix . $ids);
+            if (!empty($result)) {
+                return [$ids => $result];
+            }
+            return $this->smartV2Caching($method, [$ids], $retention);
+        }
+
+        // multiple ids
+        $ids = array_unique($ids);
+
+        $objectsFromCache = [];
+        $idsToRequest     = [];
+        foreach ($ids as $id) {
+            $result = $cache->get($cachePrefix . $id);
+            if (is_array($result)) {
+                $objectsFromCache[$id] = $result;
+            }
+            else {
+                $idsToRequest[] = $id;
+            }
+        }
+        $return = $objectsFromCache;
+        if (!empty($idsToRequest)) {
+            $objects     = $clientV2->$method($idsToRequest)->execute($retention)->getAllData();
+            $responseIds = [];
+            foreach ($objects as $object) {
+                if (isset($object[$pk])) {
+                    $cache->set($cachePrefix . $object[$pk], $object, $retention);
+                    $return[$object[$pk]] = $object;
+                    $responseIds[]        = $object[$pk];
+                }
+            }
+            if (empty($responseIds)) {
+                $notFoundIds = $idsToRequest;
+            }
+            else {
+                $notFoundIds = array_diff($idsToRequest, $responseIds);
+            }
+            if (!empty($notFoundIds)) {
+                foreach ($notFoundIds as $id) {
+                    $cache->set($cachePrefix . $id, [$pk => $id], $retention);
+                    $return[$id] = [$pk => $id];
+                }
+            }
+        }
+        return $return;
     }
 
 }

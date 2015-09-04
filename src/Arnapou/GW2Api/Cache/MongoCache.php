@@ -29,6 +29,12 @@ class MongoCache implements CacheInterface {
 
     /**
      *
+     * @var string
+     */
+    protected $collectionPrefix;
+
+    /**
+     *
      * @var \MongoCollection
      */
     protected $collection;
@@ -37,18 +43,67 @@ class MongoCache implements CacheInterface {
      *
      * @var \MongoDB
      */
-    protected $mongo;
+    protected $mongoDB;
+
+    /**
+     *
+     * @var array
+     */
+    protected $objectCollections = [];
 
     /**
      * 
      * @param \MongoDB $mongoDB
-     * @param string $collectionName
+     * @param string $collectionPrefix
      */
-    public function __construct(\MongoDB $mongoDB, $collectionName = 'cache') {
-        $this->mongo = $mongoDB;
-        $this->collection = $mongoDB->selectCollection($collectionName);
-        $collection->ensureIndex(['key' => 1], ['unique' => true]);
-        $collection->ensureIndex(['expiration' => 1]);
+    public function __construct(\MongoDB $mongoDB, $collectionPrefix = 'cache') {
+        $this->collectionPrefix = $collectionPrefix;
+        $this->mongoDB          = $mongoDB;
+        $this->collection       = $mongoDB->selectCollection($collectionPrefix . '_requests');
+        $this->collection->ensureIndex(['key' => 1], ['unique' => true]);
+        $this->collection->ensureIndex(['expiration' => 1]);
+    }
+
+    /**
+     * 
+     * @param string $collectionSuffixName
+     * @return \MongoCollection
+     */
+    public function getMongoCollection($collectionSuffixName) {
+        if (!isset($this->objectCollections[$collectionSuffixName])) {
+            $collection                                     = $this->mongoDB->selectCollection($this->collectionPrefix . '_' . $collectionSuffixName);
+            $collection->ensureIndex(['key' => 1], ['unique' => true]);
+            $collection->ensureIndex(['expiration' => 1]);
+            $collection->ensureIndex(['value.id' => 1]);
+            $collection->ensureIndex(['value.type' => 1]);
+            $collection->ensureIndex(['value.skin' => 1]);
+            $collection->ensureIndex(['value.details.type' => 1]);
+            $this->objectCollections[$collectionSuffixName] = $collection;
+        }
+        return $this->objectCollections[$collectionSuffixName];
+    }
+
+    /**
+     * 
+     * @param string $key
+     * @return \MongoCollection
+     */
+    protected function detectCollection($key) {
+        if (strpos($key, 'smartCaching/') === 0) {
+            $elements = explode('/', $key);
+            return $this->getMongoCollection($elements[1]);
+        }
+        else {
+            return $this->collection;
+        }
+    }
+
+    /**
+     * 
+     * @return \MongoDB
+     */
+    public function getMongoDB() {
+        return $this->mongoDB;
     }
 
     /**
@@ -91,7 +146,7 @@ class MongoCache implements CacheInterface {
         if ($gcDivisor < 0) {
             throw new Exception('gcProbability cannot be negative.');
         }
-        $this->gcDivisor = $gcDivisor;
+        $this->gcDivisor     = $gcDivisor;
         $this->gcProbability = $gcProbability;
     }
 
@@ -100,7 +155,7 @@ class MongoCache implements CacheInterface {
     }
 
     public function get($key) {
-        $document = $this->collection->findOne([
+        $document = $this->detectCollection($key)->findOne([
             'key'        => $this->hash($key),
             'expiration' => ['$gte' => time()],
         ]);
@@ -116,7 +171,7 @@ class MongoCache implements CacheInterface {
     }
 
     public function exists($key) {
-        $document = $this->collection->findOne([
+        $document = $this->detectCollection($key)->findOne([
             'key'        => $this->hash($key),
             'expiration' => ['$gte' => time()],
         ]);
@@ -130,11 +185,11 @@ class MongoCache implements CacheInterface {
         if ($expiration != 0 && $expiration <= 30 * 86400) {
             $expiration += time();
         }
-
-        $this->collection->update([
-            'key' => $this->hash($key),
+        $hash = $this->hash($key);
+        $this->detectCollection($key)->update([
+            'key' => $hash,
             ], [
-            'key'        => $this->hash($key),
+            'key'        => $hash,
             'value'      => $value,
             'expiration' => $expiration,
             ], [
@@ -144,7 +199,7 @@ class MongoCache implements CacheInterface {
 
     public function remove($key) {
         try {
-            $this->collection->remove(['key' => $this->hash($key)]);
+            $this->detectCollection($key)->remove(['key' => $this->hash($key)]);
         }
         catch (\Exception $e) {
             return null;

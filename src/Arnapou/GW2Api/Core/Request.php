@@ -86,7 +86,7 @@ class Request implements RequestInterface {
         $requestUrl = \Arnapou\GW2Api\url_append($url, $parameters);
 
         if ($cacheRetention === null) {
-            $cacheRetention = $this->manager->getDefautCacheRetention();
+            $cacheRetention = $this->manager->getCacheRetention($url);
         }
         if ($cacheRetention < 0) {
             $cacheRetention = 0;

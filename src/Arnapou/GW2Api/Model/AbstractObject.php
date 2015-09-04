@@ -44,57 +44,9 @@ abstract class AbstractObject {
     private $stackSkinIds = [];
 
     /**
-     *
-     * @var integer
-     */
-    public static $cacheDurationApiItems = 604000; // one week
-
-    /**
-     *
-     * @var integer
-     */
-    public static $cacheDurationApiSkins = 604000; // one week
-
-    /**
-     *
-     * @var integer
-     */
-    public static $cacheDurationApiPrices = 1800; // 30 min
-
-    /**
-     *
-     * @var integer
-     */
-    public static $cacheDurationApiCharacters = 1800; // 30 min
-
-    /**
-     *
-     * @var integer
-     */
-    public static $cacheDurationApiTradingPost = 300; // 5 min
-
-    /**
-     *
-     * @var integer
-     */
-    public static $cacheDurationApiIcons = 604000; // one week
-    /**
-     *
-     * @var integer
-     */
-    public static $cacheDurationApiGuilds = 86400; // one day
-
-    /**
-     *
-     * @var integer
-     */
-    public static $cacheDurationApiColors = 604000; // one week
-
-    /**
      * 
      * @param SimpleClient $client
      */
-
     public function __construct(SimpleClient $client) {
         $this->client = $client;
     }
@@ -106,9 +58,9 @@ abstract class AbstractObject {
      */
     protected function apiIcon($id) {
         try {
-            $file = $this->client->getClientV2()->apiFiles($id)->execute(self::$cacheDurationApiIcons)->getData();
-            if (is_array($file) && isset($file[0]) && isset($file[0]['icon'])) {
-                return $file[0]['icon'];
+            $file = $this->client->v2_files($id);
+            if (is_array($file) && isset($file[$id]) && isset($file[$id]['icon'])) {
+                return $file[$id]['icon'];
             }
         }
         catch (\Exception $e) {
@@ -123,7 +75,8 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiCharacters($ids) {
-        return $this->client->getClientV2()->smartRequest('apiCharacters', $ids, self::$cacheDurationApiCharacters, 'name');
+        $result = $this->client->v2_characters($ids);
+        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
     }
 
     /**
@@ -132,7 +85,8 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiItems($ids) {
-        return $this->client->getClientV2()->smartRequest('apiItems', $ids, self::$cacheDurationApiItems);
+        $result = $this->client->v2_items($ids);
+        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
     }
 
     /**
@@ -141,7 +95,8 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiColors($ids) {
-        return $this->client->getClientV2()->smartRequest('apiColors', $ids, self::$cacheDurationApiSkins);
+        $result = $this->client->v2_colors($ids);
+        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
     }
 
     /**
@@ -150,7 +105,8 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiSkins($ids) {
-        return $this->client->getClientV2()->smartRequest('apiSkins', $ids, self::$cacheDurationApiSkins);
+        $result = $this->client->v2_skins($ids);
+        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
     }
 
     /**
@@ -159,7 +115,8 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiPrices($ids) {
-        return $this->client->getClientV2()->smartRequest('apiCommercePrices', $ids, self::$cacheDurationApiPrices);
+        $result = $this->client->v2_commerce_prices($ids);
+        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
     }
 
     /**

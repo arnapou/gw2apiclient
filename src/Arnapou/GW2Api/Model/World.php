@@ -32,10 +32,10 @@ class World extends AbstractObject {
         parent::__construct($client);
 
         $data = $this->client->v2_worlds($id);
-        if (!is_array($data) || !isset($data[0])) {
-            throw new Exception('Invalid received data.');
+        if (!is_array($data) || !isset($data[$id])) {
+            throw new Exception('Invalid received world data.');
         }
-        $this->data = $data[0];
+        $this->data = $data[$id];
     }
 
     /**

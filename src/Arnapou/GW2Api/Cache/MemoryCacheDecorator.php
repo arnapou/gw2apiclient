@@ -11,27 +11,13 @@
 
 namespace Arnapou\GW2Api\Cache;
 
-class MemoryCacheDecorator implements CacheInterface {
-
-    /**
-     *
-     * @var CacheInterface
-     */
-    protected $cache;
+class MemoryCacheDecorator extends AbstractCacheDecorator {
 
     /**
      *
      * @var array
      */
     protected $memory = [];
-
-    /**
-     * 
-     * @param CacheInterface $cache
-     */
-    public function __construct(CacheInterface $cache) {
-        $this->cache = $cache;
-    }
 
     public function exists($key) {
         if (array_key_exists($key, $this->memory)) {
