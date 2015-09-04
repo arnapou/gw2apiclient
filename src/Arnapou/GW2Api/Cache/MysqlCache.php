@@ -107,9 +107,13 @@ class MysqlCache implements CacheInterface {
         $this->gcProbability = $gcProbability;
     }
 
+    protected function hash($key) {
+        return hash('sha256', $key);
+    }
+
     public function get($key) {
         $prepared = $this->getPreparedGet();
-        $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->bindValue('hash', $this->hash($key), \PDO::PARAM_STR);
         $prepared->bindValue('expiration', time(), \PDO::PARAM_INT);
         $prepared->execute();
 
@@ -127,7 +131,7 @@ class MysqlCache implements CacheInterface {
 
     public function exists($key) {
         $prepared = $this->getPreparedGet();
-        $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->bindValue('hash', $this->hash($key), \PDO::PARAM_STR);
         $prepared->bindValue('expiration', time(), \PDO::PARAM_INT);
         $prepared->execute();
 
@@ -144,7 +148,7 @@ class MysqlCache implements CacheInterface {
         }
 
         $prepared = $this->getPreparedSet();
-        $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->bindValue('hash', $this->hash($key), \PDO::PARAM_STR);
         $prepared->bindValue('value', serialize($value), \PDO::PARAM_LOB);
         $prepared->bindValue('expiration', $expiration, \PDO::PARAM_INT);
         $prepared->execute();
@@ -152,7 +156,7 @@ class MysqlCache implements CacheInterface {
 
     public function remove($key) {
         $prepared = $this->getPreparedRemove();
-        $prepared->bindValue('hash', hash('sha256', $key), \PDO::PARAM_STR);
+        $prepared->bindValue('hash', $this->hash($key), \PDO::PARAM_STR);
         $prepared->execute();
     }
 

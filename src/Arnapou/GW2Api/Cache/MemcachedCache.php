@@ -15,38 +15,42 @@ use Arnapou\GW2Api\Exception\Exception;
 
 class MemcachedCache implements CacheInterface {
 
-	protected $memcached;
+    protected $memcached;
 
-	public function __construct($server = 'localhost', $port = 11211) {
-		if (!extension_loaded('memcached')) {
-			throw new Exception("The memcached PHP extension is not loaded.");
-		}
-		$this->memcached = new \Memcached();
-		$this->memcached->addServer($server, $port);
-	}
+    public function __construct($server = 'localhost', $port = 11211) {
+        if (!extension_loaded('memcached')) {
+            throw new Exception("The memcached PHP extension is not loaded.");
+        }
+        $this->memcached = new \Memcached();
+        $this->memcached->addServer($server, $port);
+    }
 
-	public function exists($key) {
-		$value = $this->memcached->get(hash('sha256', $key));
-		if ($this->memcached->getResultCode() == \Memcached::RES_NOTFOUND) {
-			return false;
-		}
-		return true;
-	}
+    protected function hash($key) {
+        return hash('sha256', $key);
+    }
 
-	public function get($key) {
-		$value = $this->memcached->get(hash('sha256', $key));
-		if ($this->memcached->getResultCode() == \Memcached::RES_NOTFOUND) {
-			return null;
-		}
-		return $value;
-	}
+    public function exists($key) {
+        $value = $this->memcached->get($this->hash($key));
+        if ($this->memcached->getResultCode() == \Memcached::RES_NOTFOUND) {
+            return false;
+        }
+        return true;
+    }
 
-	public function remove($key) {
-		$this->memcached->delete(hash('sha256', $key));
-	}
+    public function get($key) {
+        $value = $this->memcached->get($this->hash($key));
+        if ($this->memcached->getResultCode() == \Memcached::RES_NOTFOUND) {
+            return null;
+        }
+        return $value;
+    }
 
-	public function set($key, $value, $expiration = 0) {
-		$this->memcached->set(hash('sha256', $key), $value, $expiration);
-	}
+    public function remove($key) {
+        $this->memcached->delete($this->hash($key));
+    }
+
+    public function set($key, $value, $expiration = 0) {
+        $this->memcached->set($this->hash($key), $value, $expiration);
+    }
 
 }

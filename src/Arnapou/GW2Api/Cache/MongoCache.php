@@ -34,11 +34,19 @@ class MongoCache implements CacheInterface {
     protected $collection;
 
     /**
-     * 
-     * @param \MongoCollection $collection
+     *
+     * @var \MongoDB
      */
-    public function __construct(\MongoCollection $collection) {
-        $this->collection = $collection;
+    protected $mongo;
+
+    /**
+     * 
+     * @param \MongoDB $mongoDB
+     * @param string $collectionName
+     */
+    public function __construct(\MongoDB $mongoDB, $collectionName = 'cache') {
+        $this->mongo = $mongoDB;
+        $this->collection = $mongoDB->selectCollection($collectionName);
         $collection->ensureIndex(['key' => 1], ['unique' => true]);
         $collection->ensureIndex(['expiration' => 1]);
     }
@@ -87,9 +95,13 @@ class MongoCache implements CacheInterface {
         $this->gcProbability = $gcProbability;
     }
 
+    protected function hash($key) {
+        return hash('sha256', $key);
+    }
+
     public function get($key) {
         $document = $this->collection->findOne([
-            'key'        => hash('sha256', $key),
+            'key'        => $this->hash($key),
             'expiration' => ['$gte' => time()],
         ]);
         if ($document && isset($document['value'])) {
@@ -105,7 +117,7 @@ class MongoCache implements CacheInterface {
 
     public function exists($key) {
         $document = $this->collection->findOne([
-            'key'        => hash('sha256', $key),
+            'key'        => $this->hash($key),
             'expiration' => ['$gte' => time()],
         ]);
         if ($document && isset($document['value'])) {
@@ -120,9 +132,9 @@ class MongoCache implements CacheInterface {
         }
 
         $this->collection->update([
-            'key' => hash('sha256', $key),
+            'key' => $this->hash($key),
             ], [
-            'key'        => hash('sha256', $key),
+            'key'        => $this->hash($key),
             'value'      => $value,
             'expiration' => $expiration,
             ], [
@@ -132,7 +144,7 @@ class MongoCache implements CacheInterface {
 
     public function remove($key) {
         try {
-            $this->collection->remove(['key' => hash('sha256', $key)]);
+            $this->collection->remove(['key' => $this->hash($key)]);
         }
         catch (\Exception $e) {
             return null;
