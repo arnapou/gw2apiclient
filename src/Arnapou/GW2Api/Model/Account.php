@@ -308,6 +308,7 @@ class Account extends AbstractObject {
             }
 
             $this->collectibles = [];
+            ksort($materials);
             foreach ($materials as $category) {
                 $this->collectibles[] = new CollectibleCategory($this->client, $category);
             }
