@@ -49,7 +49,7 @@ abstract class AbstractCacheDecorator implements CacheInterface, MultipleGetCach
             foreach ($keys as $key) {
                 $value = $this->cache->get($key);
                 if ($value !== null) {
-                    $return[] = $value;
+                    $return[$key] = $value;
                 }
             }
             return $return;

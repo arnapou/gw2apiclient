@@ -47,4 +47,17 @@ class MemoryCacheDecorator extends AbstractCacheDecorator {
         $this->cache->set($key, $value, $expiration);
     }
 
+    /**
+     * 
+     * @param array $keys
+     * @return array
+     */
+    public function getMultiple($keys) {
+        $values = parent::getMultiple($keys);
+        foreach ($values as $key => $value) {
+            $this->memory[$key] = $value;
+        }
+        return $values;
+    }
+
 }

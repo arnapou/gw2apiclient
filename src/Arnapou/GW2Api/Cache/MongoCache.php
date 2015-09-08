@@ -191,11 +191,15 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
     public function getMultiple($keys) {
         $return           = [];
         $keysByCollection = [];
+        $hashsMap         = [];
         foreach ($keys as $key) {
-            $keysByCollection[$this->detectCollectionName($key)][] = $this->hash($key);
+            $suffix               = $this->detectCollectionName($key);
+            $hash                 = $this->hash($key);
+            $hashsMap[$hash]      = $key;
+            $keysByCollection[$suffix][] = $hash;
         }
-        foreach ($keysByCollection as $collectioName => $hashs) {
-            $documents = $this->getMongoCollection($collectioName)
+        foreach ($keysByCollection as $suffix => $hashs) {
+            $documents = $this->getMongoCollection($suffix)
                 ->find([
                 'key'        => ['$in' => $hashs],
                 'expiration' => ['$gte' => time()],
@@ -203,7 +207,7 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
             foreach ($documents as $document) {
                 if ($document && isset($document['value'])) {
                     try {
-                        $return[] = $document['value'];
+                        $return[$hashsMap[$document['key']]] = $document['value'];
                     }
                     catch (\Exception $e) {
                         
