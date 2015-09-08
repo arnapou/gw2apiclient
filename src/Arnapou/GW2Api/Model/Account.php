@@ -139,6 +139,10 @@ class Account extends AbstractObject {
         $this->accessToken   = $accessToken;
     }
 
+    public function getClientLang() {
+        return $this->client->getClientV2()->getLang();
+    }
+
     /**
      * 
      * @return string
@@ -233,8 +237,8 @@ class Account extends AbstractObject {
 
             $this->wallet = [];
             foreach ($currencies as $currency) {
-                $currency['quantity'] = isset($quantities[$currency['id']]) ? $quantities[$currency['id']] : 0;
-                $this->wallet[]       = new Currency($this->client, $currency);
+                $currency['quantity']          = isset($quantities[$currency['id']]) ? $quantities[$currency['id']] : 0;
+                $this->wallet[$currency['id']] = new Currency($this->client, $currency);
             }
         }
         return $this->wallet;

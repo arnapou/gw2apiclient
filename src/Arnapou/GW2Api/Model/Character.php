@@ -210,16 +210,16 @@ class Character extends AbstractObject {
                     }
                 }
             }
+            foreach ($attributes as $key => &$values) {
+                if ($values['WeaponA'] == $values['WeaponB'] && $values['WeaponA'] == $values['WeaponAquatic']) {
+                    $values = ['All' => $values['WeaponA']];
+                }
+            }
             foreach ($attributes['Precision'] as $set => $value) {
                 $attributes['PrecisionPct'][$set] = round(($value - 916) / 21);
             }
             foreach ($attributes['Ferocity'] as $set => $value) {
                 $attributes['FerocityPct'][$set] = round(150 + $value / 15);
-            }
-            foreach ($attributes as $key => &$values) {
-                if ($values['WeaponA'] == $values['WeaponB'] && $values['WeaponA'] == $values['WeaponAquatic']) {
-                    $values = ['All' => $values['WeaponA']];
-                }
             }
             $this->attributes = [
                 'unknown' => $unknown,
