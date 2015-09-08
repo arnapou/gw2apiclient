@@ -13,6 +13,7 @@ namespace Arnapou\GW2Api;
 
 use Arnapou\GW2Api\Cache\AbstractCacheDecorator;
 use Arnapou\GW2Api\Cache\CacheInterface;
+use Arnapou\GW2Api\Cache\MultipleGetCacheInterface;
 use Arnapou\GW2Api\Cache\MongoCache;
 use Arnapou\GW2Api\Exception\Exception;
 
@@ -270,13 +271,29 @@ class SimpleClient {
 
         $objectsFromCache = [];
         $idsToRequest     = [];
-        foreach ($ids as $id) {
-            $result = $cache->get($cachePrefix . $id);
-            if (is_array($result)) {
-                $objectsFromCache[$id] = $result;
+        if ($cache instanceof MultipleGetCacheInterface) {
+            $multipleIds = [];
+            foreach ($ids as $id) {
+                $multipleIds[] = $cachePrefix . $id;
             }
-            else {
-                $idsToRequest[] = $id;
+            $foundIds = [];
+            foreach ($cache->getMultiple($multipleIds) as $result) {
+                if (isset($result[$pk])) {
+                    $objectsFromCache[$result[$pk]] = $result;
+                    $foundIds[] = $result[$pk];
+                }
+            }
+            $idsToRequest = array_diff($ids, $foundIds);
+        }
+        else {
+            foreach ($ids as $id) {
+                $result = $cache->get($cachePrefix . $id);
+                if (is_array($result)) {
+                    $objectsFromCache[$id] = $result;
+                }
+                else {
+                    $idsToRequest[] = $id;
+                }
             }
         }
         $return = $objectsFromCache;

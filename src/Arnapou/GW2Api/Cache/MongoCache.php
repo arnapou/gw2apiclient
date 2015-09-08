@@ -13,7 +13,7 @@ namespace Arnapou\GW2Api\Cache;
 
 use Arnapou\GW2Api\Exception\Exception;
 
-class MongoCache implements CacheInterface {
+class MongoCache implements CacheInterface, MultipleGetCacheInterface {
 
     /**
      *
@@ -81,6 +81,19 @@ class MongoCache implements CacheInterface {
             $this->objectCollections[$collectionSuffixName] = $collection;
         }
         return $this->objectCollections[$collectionSuffixName];
+    }
+
+    /**
+     * 
+     * @param string $key
+     * @return string
+     */
+    protected function detectCollectionName($key) {
+        if (strpos($key, 'smartCaching/') === 0) {
+            $elements = explode('/', $key);
+            return $elements[1];
+        }
+        return 'requests';
     }
 
     /**
@@ -168,6 +181,37 @@ class MongoCache implements CacheInterface {
             }
         }
         return null;
+    }
+
+    /**
+     * 
+     * @param array $keys
+     * @return array
+     */
+    public function getMultiple($keys) {
+        $return           = [];
+        $keysByCollection = [];
+        foreach ($keys as $key) {
+            $keysByCollection[$this->detectCollectionName($key)][] = $this->hash($key);
+        }
+        foreach ($keysByCollection as $collectioName => $hashs) {
+            $documents = $this->getMongoCollection($collectioName)
+                ->find([
+                'key'        => ['$in' => $hashs],
+                'expiration' => ['$gte' => time()],
+            ]);
+            foreach ($documents as $document) {
+                if ($document && isset($document['value'])) {
+                    try {
+                        $return[] = $document['value'];
+                    }
+                    catch (\Exception $e) {
+                        
+                    }
+                }
+            }
+        }
+        return $return;
     }
 
     public function exists($key) {

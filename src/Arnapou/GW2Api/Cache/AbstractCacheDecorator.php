@@ -11,7 +11,7 @@
 
 namespace Arnapou\GW2Api\Cache;
 
-abstract class AbstractCacheDecorator implements CacheInterface {
+abstract class AbstractCacheDecorator implements CacheInterface, MultipleGetCacheInterface {
 
     /**
      *
@@ -33,6 +33,27 @@ abstract class AbstractCacheDecorator implements CacheInterface {
      */
     public function getCache() {
         return $this->cache;
+    }
+
+    /**
+     * 
+     * @param array $keys
+     * @return array
+     */
+    public function getMultiple($keys) {
+        if ($this->cache instanceof MultipleGetCacheInterface) {
+            return $this->cache->getMultiple($keys);
+        }
+        else {
+            $return = [];
+            foreach ($keys as $key) {
+                $value = $this->cache->get($key);
+                if ($value !== null) {
+                    $return[] = $value;
+                }
+            }
+            return $return;
+        }
     }
 
 }
