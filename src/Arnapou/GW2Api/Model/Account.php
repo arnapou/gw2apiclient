@@ -139,8 +139,12 @@ class Account extends AbstractObject {
         $this->accessToken   = $accessToken;
     }
 
-    public function getClientLang() {
-        return $this->client->getClientV2()->getLang();
+    /**
+     * 
+     * @return SimpleClient
+     */
+    public function getClient() {
+        return $this->client;
     }
 
     /**
