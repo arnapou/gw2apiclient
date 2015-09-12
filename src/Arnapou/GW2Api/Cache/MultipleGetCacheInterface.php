@@ -17,7 +17,8 @@ interface MultipleGetCacheInterface {
      * Retrieve the values stored. Returns array empty if none found.
      * 
      * @param array $keys
+     * @param string $prefix
      * @return array
      */
-    public function getMultiple($keys);
+    public function getMultiple($keys, $prefix = '');
 }

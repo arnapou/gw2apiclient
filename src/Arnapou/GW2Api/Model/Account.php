@@ -260,8 +260,7 @@ class Account extends AbstractObject {
             }
 
             $slots = $this->client->v2_account_bank();
-            $this->prepareSlots($slots);
-            $this->prepareFlush();
+            $this->preloadSlots($slots);
 
             $vaults           = array_chunk($slots, 30);
             $this->bankVaults = [];
@@ -288,9 +287,8 @@ class Account extends AbstractObject {
 
             $categories = $this->client->v2_materials($this->client->v2_materials());
             foreach ($categories as $category) {
-                $this->prepareItemIds($category['items']);
+                $this->preloadItemIds($category['items']);
             }
-            $this->prepareFlush();
 
             $materials = [];
             foreach ($categories as $category) {

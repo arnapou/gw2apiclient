@@ -142,6 +142,14 @@ class RequestManager {
 
     /**
      * 
+     * @return boolean
+     */
+    public function hasCache() {
+        return $this->cache ? true : false;
+    }
+
+    /**
+     * 
      * @return CacheInterface
      */
     public function getCache() {

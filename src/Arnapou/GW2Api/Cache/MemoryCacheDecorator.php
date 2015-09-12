@@ -50,10 +50,11 @@ class MemoryCacheDecorator extends AbstractCacheDecorator {
     /**
      * 
      * @param array $keys
+     * @param string $prefix
      * @return array
      */
-    public function getMultiple($keys) {
-        $values = parent::getMultiple($keys);
+    public function getMultiple($keys, $prefix = '') {
+        $values = parent::getMultiple($keys, $prefix);
         foreach ($values as $key => $value) {
             $this->memory[$key] = $value;
         }

@@ -119,10 +119,10 @@ class Character extends AbstractObject {
         parent::__construct($client);
 
         $data = $this->apiCharacters($name);
-        if (!is_array($data) || !isset($data[0])) {
+        if (!is_array($data) || !isset($data['name'])) {
             throw new Exception('Invalid received character data.');
         }
-        $this->data = $data[0];
+        $this->data = $data;
     }
 
     /**
@@ -250,8 +250,7 @@ class Character extends AbstractObject {
             $this->equipments = [];
             if (!empty($this->data['equipment']) && is_array($this->data['equipment'])) {
 
-                $this->prepareSlots($this->data['equipment']);
-                $this->prepareFlush();
+                $this->preloadSlots($this->data['equipment']);
 
                 foreach ($this->data['equipment'] as $equipment) {
                     if (!isset($equipment['id'], $equipment['slot'])) {
@@ -275,10 +274,9 @@ class Character extends AbstractObject {
 
                 foreach ($this->data['bags'] as $bag) {
                     if (isset($bag['inventory'])) {
-                        $this->prepareSlots($bag['inventory']);
+                        $this->preloadSlots($bag['inventory']);
                     }
                 }
-                $this->prepareFlush();
 
                 foreach ($this->data['bags'] as $bag) {
                     if (isset($bag['inventory'])) {

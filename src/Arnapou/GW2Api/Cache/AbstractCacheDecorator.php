@@ -38,18 +38,19 @@ abstract class AbstractCacheDecorator implements CacheInterface, MultipleGetCach
     /**
      * 
      * @param array $keys
+     * @param string $prefix
      * @return array
      */
-    public function getMultiple($keys) {
+    public function getMultiple($keys, $prefix = '') {
         if ($this->cache instanceof MultipleGetCacheInterface) {
-            return $this->cache->getMultiple($keys);
+            return $this->cache->getMultiple($keys, $prefix);
         }
         else {
             $return = [];
             foreach ($keys as $key) {
-                $value = $this->cache->get($key);
+                $value = $this->cache->get($prefix . $key);
                 if ($value !== null) {
-                    $return[$key] = $value;
+                    $return[$prefix . $key] = $value;
                 }
             }
             return $return;

@@ -66,8 +66,7 @@ class TradingPost extends AbstractObject {
         foreach ($items as $item) {
             $ids[] = $item['item_id'];
         }
-        $this->prepareItemIds($ids);
-        $this->prepareFlush();
+        $this->preloadItemIds($ids);
 
         foreach ($items as $item) {
             $key = $item['item_id'] . '_' . $item['price'];

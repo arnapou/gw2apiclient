@@ -186,17 +186,28 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
     /**
      * 
      * @param array $keys
+     * @param string $prefix
      * @return array
      */
-    public function getMultiple($keys) {
+    public function getMultiple($keys, $prefix = '') {
         $return           = [];
         $keysByCollection = [];
         $hashsMap         = [];
-        foreach ($keys as $key) {
-            $suffix               = $this->detectCollectionName($key);
-            $hash                 = $this->hash($key);
-            $hashsMap[$hash]      = $key;
-            $keysByCollection[$suffix][] = $hash;
+        $suffix           = $this->detectCollectionName($prefix);
+        if ($suffix === 'requests') {
+            foreach ($keys as $key) {
+                $suffix                      = $this->detectCollectionName($prefix . $key);
+                $hash                        = $this->hash($prefix . $key);
+                $hashsMap[$hash]             = $prefix . $key;
+                $keysByCollection[$suffix][] = $hash;
+            }
+        }
+        else {
+            foreach ($keys as $key) {
+                $hash                        = $this->hash($prefix . $key);
+                $hashsMap[$hash]             = $prefix . $key;
+                $keysByCollection[$suffix][] = $hash;
+            }
         }
         foreach ($keysByCollection as $suffix => $hashs) {
             $documents = $this->getMongoCollection($suffix)

@@ -35,13 +35,12 @@ abstract class AbstractObject {
      *
      * @var array
      */
-    private $stackItemIds = [];
-
-    /**
-     *
-     * @var array
-     */
-    private $stackSkinIds = [];
+    protected static $PRELOADS = [
+        'colors' => [],
+        'items'  => [],
+        'prices' => [],
+        'skins'  => [],
+    ];
 
     /**
      * 
@@ -76,7 +75,7 @@ abstract class AbstractObject {
      */
     protected function apiCharacters($ids) {
         $result = $this->client->v2_characters($ids);
-        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
     }
 
     /**
@@ -85,8 +84,12 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiItems($ids) {
+        if (!empty(self::$PRELOADS['items'])) {
+            $this->client->v2_items(self::$PRELOADS['items']);
+            self::$PRELOADS['items'] = [];
+        }
         $result = $this->client->v2_items($ids);
-        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
     }
 
     /**
@@ -95,8 +98,12 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiColors($ids) {
+        if (!empty(self::$PRELOADS['colors'])) {
+            $this->client->v2_items(self::$PRELOADS['colors']);
+            self::$PRELOADS['colors'] = [];
+        }
         $result = $this->client->v2_colors($ids);
-        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
     }
 
     /**
@@ -105,8 +112,12 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiSkins($ids) {
+        if (!empty(self::$PRELOADS['skins'])) {
+            $this->client->v2_skins(self::$PRELOADS['skins']);
+            self::$PRELOADS['skins'] = [];
+        }
         $result = $this->client->v2_skins($ids);
-        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
     }
 
     /**
@@ -115,32 +126,39 @@ abstract class AbstractObject {
      * @return array
      */
     protected function apiPrices($ids) {
+        if (!empty(self::$PRELOADS['prices'])) {
+            $this->client->v2_commerce_prices(self::$PRELOADS['prices']);
+            self::$PRELOADS['prices'] = [];
+        }
         $result = $this->client->v2_commerce_prices($ids);
-        return is_array($ids) ? $result : (isset($result[$ids]) ? $result[$ids] : $result);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
     }
 
     /**
      * 
      * @param array $slots
      */
-    protected function prepareSlots($slots) {
+    protected function preloadSlots($slots) {
         foreach ($slots as $equipment) {
             if (empty($equipment) || !isset($equipment['id'])) {
                 continue;
             }
-            $this->stackItemIds[] = $equipment['id'];
+            self::$PRELOADS['items'][]  = $equipment['id'];
+            self::$PRELOADS['prices'][] = $equipment['id'];
             if (isset($equipment['infusions'])) {
                 foreach ($equipment['infusions'] as $id) {
-                    $this->stackItemIds[] = $id;
+                    self::$PRELOADS['items'][]  = $id;
+                    self::$PRELOADS['prices'][] = $id;
                 }
             }
             if (isset($equipment['upgrades'])) {
                 foreach ($equipment['upgrades'] as $id) {
-                    $this->stackItemIds[] = $id;
+                    self::$PRELOADS['items'][]  = $id;
+                    self::$PRELOADS['prices'][] = $id;
                 }
             }
             if (isset($equipment['skin'])) {
-                $this->stackSkinIds[] = $equipment['skin'];
+                self::$PRELOADS['skins'][] = $equipment['skin'];
             }
         }
     }
@@ -149,25 +167,11 @@ abstract class AbstractObject {
      * 
      * @param array $ids
      */
-    protected function prepareItemIds($ids) {
+    protected function preloadItemIds($ids) {
         foreach ($ids as $id) {
-            $this->stackItemIds[] = $id;
+            self::$PRELOADS['items'][]  = $id;
+            self::$PRELOADS['prices'][] = $id;
         }
-    }
-
-    /**
-     * 
-     */
-    protected function prepareFlush() {
-        if (!empty($this->stackItemIds)) {
-            $this->apiItems($this->stackItemIds);
-            $this->apiPrices($this->stackItemIds);
-        }
-        if (!empty($this->stackSkinIds)) {
-            $this->apiSkins($this->stackSkinIds);
-        }
-        $this->stackItemIds = [];
-        $this->stackSkinIds = [];
     }
 
     /**

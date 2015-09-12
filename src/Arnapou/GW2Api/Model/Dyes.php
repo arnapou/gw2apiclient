@@ -53,7 +53,7 @@ class Dyes extends AbstractObject {
      *
      * @var boolean
      */
-    static protected $cacheInitialized = false;
+    static protected $preloadColorDone = false;
 
     /**
      * 
@@ -66,9 +66,9 @@ class Dyes extends AbstractObject {
         $this->unlocked = $data;
         $this->allIds   = $this->client->v2_colors();
 
-        if (!self::$cacheInitialized) {
-            $this->apiColors($this->allIds);
-            self::$cacheInitialized = true;
+        if (!self::$preloadColorDone) {
+            self::$PRELOADS['colors'] = $this->allIds;
+            self::$preloadColorDone   = true;
         }
     }
 

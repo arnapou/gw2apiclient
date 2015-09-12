@@ -84,20 +84,21 @@ class SimpleClient {
      * @var array
      */
     protected $smartV2Apis = [
-        'v2_colors',
-        'v2_commerce_listings',
-        'v2_commerce_prices',
-        'v2_currencies',
-        'v2_files',
-        'v2_items',
-        'v2_maps',
-        'v2_materials',
-        'v2_quaggans',
-        'v2_recipes',
-        'v2_skins',
-        'v2_specializations',
-        'v2_traits',
-        'v2_worlds',
+        'v2_characters'        => 'apicharacters',
+        'v2_colors'            => 'apicolors',
+        'v2_commerce_listings' => 'apicommercelistings',
+        'v2_commerce_prices'   => 'apicommerceprices',
+        'v2_currencies'        => 'apicurrencies',
+        'v2_files'             => 'apifiles',
+        'v2_items'             => 'apiitems',
+        'v2_maps'              => 'apimaps',
+        'v2_materials'         => 'apimaterials',
+        'v2_quaggans'          => 'apiquaggans',
+        'v2_recipes'           => 'apirecipes',
+        'v2_skins'             => 'apiskins',
+        'v2_specializations'   => 'apispecializations',
+        'v2_traits'            => 'apitraits',
+        'v2_worlds'            => 'apiworlds',
     ];
 
     /**
@@ -221,6 +222,10 @@ class SimpleClient {
      */
     public function __call($name, $arguments) {
         if (preg_match('!^v([12])_([a-z0-9_]+)$!', $name, $m)) {
+            if (isset($this->smartV2Apis[$name]) && isset($arguments[0]) && $this->requestManager->hasCache()) {
+                $retention = $this->requestManager->getCacheRetention('/' . str_replace('_', '/', $name));
+                return $this->smartV2Caching($this->smartV2Apis[$name], $arguments[0], $retention);
+            }
             if ($m[1] == 1) {
                 $client = $this->getClientV1();
             }
@@ -229,11 +234,6 @@ class SimpleClient {
             }
             $method = 'api' . str_replace('_', '', $m[2]);
             if (method_exists($client, $method)) {
-                if ($m[1] == 2 && isset($arguments[0]) && $this->requestManager->getCache() && in_array($name, $this->smartV2Apis)) {
-                    $retention = $this->requestManager->getCacheRetention('/' . str_replace('_', '/', $name));
-                    return $this->smartV2Caching(strtolower($method), $arguments[0], $retention);
-                }
-
                 $request = call_user_func_array([$client, $method], $arguments); /* @var $request Core\RequestInterface */
                 return $request->execute()->getData();
             }
@@ -242,6 +242,10 @@ class SimpleClient {
     }
 
     /**
+     * This "smart" method is able to pick up single items already in cache and calling the remaining in one call
+     * in order to optimize performance.
+     * 
+     * If you use MongoCache, it is optimized a step further because it can request all items directly in one mongo request.
      * 
      * @param string $method
      * @param array $ids
@@ -255,7 +259,7 @@ class SimpleClient {
         $clientV2    = $this->getClientV2();
         $cache       = $this->requestManager->getCache();
         $cachePrefix = 'smartCaching/' . $clientV2->getLang() . '_' . substr($method, 3) . '/';
-        $pk          = 'id';
+        $pk          = ($method == 'apicharacters') ? 'name' : 'id';
 
         // single id
         if (!is_array($ids)) {
@@ -272,15 +276,11 @@ class SimpleClient {
         $objectsFromCache = [];
         $idsToRequest     = [];
         if ($cache instanceof MultipleGetCacheInterface) {
-            $multipleIds = [];
-            foreach ($ids as $id) {
-                $multipleIds[] = $cachePrefix . $id;
-            }
             $foundIds = [];
-            foreach ($cache->getMultiple($multipleIds) as $result) {
+            foreach ($cache->getMultiple($ids, $cachePrefix) as $result) {
                 if (isset($result[$pk])) {
                     $objectsFromCache[$result[$pk]] = $result;
-                    $foundIds[] = $result[$pk];
+                    $foundIds[]                     = $result[$pk];
                 }
             }
             $idsToRequest = array_diff($ids, $foundIds);
