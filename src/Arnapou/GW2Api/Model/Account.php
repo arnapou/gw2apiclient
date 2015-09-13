@@ -141,14 +141,6 @@ class Account extends AbstractObject {
 
     /**
      * 
-     * @return SimpleClient
-     */
-    public function getClient() {
-        return $this->client;
-    }
-
-    /**
-     * 
      * @return string
      */
     public function getAccessToken() {

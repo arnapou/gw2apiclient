@@ -52,6 +52,14 @@ abstract class AbstractObject {
 
     /**
      * 
+     * @return SimpleClient
+     */
+    public function getClient() {
+        return $this->client;
+    }
+
+    /**
+     * 
      * @param mixed $id
      * @return string
      */
