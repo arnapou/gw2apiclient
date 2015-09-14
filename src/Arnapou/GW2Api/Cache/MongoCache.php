@@ -76,7 +76,7 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
             $collection->ensureIndex(['expiration' => 1]);
             $collection->ensureIndex(['value.id' => 1]);
             $collection->ensureIndex(['value.type' => 1]);
-            $collection->ensureIndex(['value.skin' => 1]);
+            $collection->ensureIndex(['value.default_skin' => 1]);
             $collection->ensureIndex(['value.details.type' => 1]);
             $collection->ensureIndex(['value.details.color_id' => 1]);
             $this->objectCollections[$collectionSuffixName] = $collection;
