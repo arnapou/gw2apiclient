@@ -511,6 +511,14 @@ class Item extends AbstractObject {
 
     /**
      * 
+     * @return array
+     */
+    public function getBagSize() {
+        return $this->getSubkey(['details', 'size']);
+    }
+
+    /**
+     * 
      * @return Item
      */
     public function getSuffixItem() {
