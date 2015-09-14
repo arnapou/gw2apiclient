@@ -105,7 +105,7 @@ class Wardrobe extends AbstractObject {
                         if (!isset($this->armors[$weightClass][$subtype])) {
                             $this->armors[$weightClass][$subtype] = $initData;
                         }
-                        $this->armors[$weightClass][$subtype]['skins'][] = $skin;
+                        $this->armors[$weightClass][$subtype]['skins'][$skin->getId()] = $skin;
                         $this->armors[$weightClass][$subtype]['count'] += $unlocked ? 1 : 0;
                         $this->armors[$weightClass][$subtype]['total'] ++;
                     }
@@ -114,7 +114,7 @@ class Wardrobe extends AbstractObject {
                     if (!isset($this->backs[$type])) {
                         $this->backs[$type] = $initData;
                     }
-                    $this->backs[$type]['skins'][] = $skin;
+                    $this->backs[$type]['skins'][$skin->getId()] = $skin;
                     $this->backs[$type]['count'] += $unlocked ? 1 : 0;
                     $this->backs[$type]['total'] ++;
                 }
@@ -123,7 +123,7 @@ class Wardrobe extends AbstractObject {
                         $this->weapons[$subtype] = $initData;
                     }
 
-                    $this->weapons[$subtype]['skins'][] = $skin;
+                    $this->weapons[$subtype]['skins'][$skin->getId()] = $skin;
                     $this->weapons[$subtype]['count'] += $unlocked ? 1 : 0;
                     $this->weapons[$subtype]['total'] ++;
                 }
