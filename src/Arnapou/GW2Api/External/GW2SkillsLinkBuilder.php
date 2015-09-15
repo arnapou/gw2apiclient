@@ -96,9 +96,13 @@ class GW2SkillsLinkBuilder {
         "Ascended.Rabid + Apothecary's"   => 194, // rabid_apo
         "Ascended.Cleric's"               => 195, // cleric
         "Ascended.Apothecary's"           => 196, // apothecary
+        "Ascended.Assassin's"             => 198, // assassin
         "Ascended.Celestial"              => 199, // celestial
         "Ascended.Sinister"               => 200, // sinister
         "Ascended.Nomad's"                => 201, // nomad
+        "Ascended.Sentinel's"             => 202, // sentinel
+        "Ascended.Carrion"                => 203, // carrion
+        "Ascended.Magi's"                 => 204, // magi
     ];
     protected $mapStatsArmors   = [
         "Exotic.Berserker's"    => 119, // berserker
