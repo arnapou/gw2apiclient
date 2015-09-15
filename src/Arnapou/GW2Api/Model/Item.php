@@ -11,6 +11,7 @@
 
 namespace Arnapou\GW2Api\Model;
 
+use Arnapou\GW2Api\Core\AbstractClient;
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\SimpleClient;
 
@@ -169,54 +170,57 @@ class Item extends AbstractObject {
      * @var array
      */
     protected static $STATS = [
-        'Power/Precision/Ferocity'      => "Berserker's",
-        'Power/Ferocity/Precision'      => "Berserker's",
-        'Power/Healing/Precision'       => "Zealot's",
-        'Power/Precision/Healing'       => "Zealot's",
-        'Power/Toughness/Vitality'      => "Soldier's",
-        'Power/Vitality/Toughness'      => "Soldier's",
-        'Power/Ferocity/Vitality'       => "Valkyrie",
-        'Power/Vitality/Ferocity'       => "Valkyrie",
-        'Power/Toughness/Healing'       => "Forsaken",
-        'Power/Healing/Toughness'       => "Forsaken",
-        'Precision/Toughness/Power'     => "Captain's",
-        'Precision/Power/Toughness'     => "Captain's",
-        'Precision/Condition/Power'     => "Rampager's",
-        'Precision/Power/Condition'     => "Rampager's",
-        'Precision/Ferocity/Power'      => "Assassin's",
-        'Precision/Power/Ferocity'      => "Assassin's",
-        'Toughness/Precision/Power'     => "Knight's",
-        'Toughness/Power/Precision'     => "Knight's",
-        'Toughness/Power/Ferocity'      => "Cavalier's",
-        'Toughness/Ferocity/Power'      => "Cavalier's",
-        'Toughness/Healing/Vitality'    => "Nomad's",
-        'Toughness/Vitality/Healing'    => "Nomad's",
-        'Toughness/Healing/Condition'   => "Settler's",
-        'Toughness/Condition/Healing'   => "Settler's",
-        'Toughness/Healing'             => "Giver's",
-        'Healing/Toughness'             => "Giver's",
-        'Vitality/Toughness/Power'      => "Sentinel's",
-        'Vitality/Toughness/Power'      => "Sentinel's",
-        'Vitality/Healing/Condition'    => "Shaman's",
-        'Vitality/Condition/Healing'    => "Shaman's",
-        'Vitality/Healing/Power'        => "of the shaman",
-        'Vitality/Power/Healing'        => "of the shaman",
-        'Condition/Precision/Power'     => "Sinister",
-        'Condition/Power/Precision'     => "Sinister",
-        'Condition/Vitality/Power'      => "Carrion",
-        'Condition/Power/Vitality'      => "Carrion",
-        'Condition/Toughness/Precision' => "Rabid",
-        'Condition/Precision/Toughness' => "Rabid",
-        'Condition/Vitality/Toughness'  => "Dire",
-        'Condition/Toughness/Vitality'  => "Dire",
-        'Condition/Healing/Toughness'   => "Apostate's",
-        'Condition/Toughness/Healing'   => "Apostate's",
-        'Healing/Toughness/Power'       => "Cleric's",
-        'Healing/Power/Toughness'       => "Cleric's",
-        'Healing/Vitality/Precision'    => "Magi's",
-        'Healing/Precision/Vitality'    => "Magi's",
-        'Healing/Condition/Toughness'   => "Apothecary's",
-        'Healing/Toughness/Condition'   => "Apothecary's",
+        'Power/Precision/Ferocity'               => "Berserker's",
+        'Power/Ferocity/Precision'               => "Berserker's",
+        'Power/Ferocity/Precision/Vitality'      => "Berserker's + Valkyrie",
+        'Power/Healing/Precision'                => "Zealot's",
+        'Power/Precision/Healing'                => "Zealot's",
+        'Power/Toughness/Vitality'               => "Soldier's",
+        'Power/Vitality/Toughness'               => "Soldier's",
+        'Power/Ferocity/Vitality'                => "Valkyrie",
+        'Power/Vitality/Ferocity'                => "Valkyrie",
+        'Power/Toughness/Healing'                => "Forsaken",
+        'Power/Healing/Toughness'                => "Forsaken",
+        'Precision/Toughness/Power'              => "Captain's",
+        'Precision/Power/Toughness'              => "Captain's",
+        'Precision/Condition/Power'              => "Rampager's",
+        'Precision/Power/Condition'              => "Rampager's",
+        'Precision/Ferocity/Power'               => "Assassin's",
+        'Precision/Power/Ferocity'               => "Assassin's",
+        'Toughness/Precision/Power'              => "Knight's",
+        'Toughness/Power/Precision'              => "Knight's",
+        'Toughness/Power/Ferocity'               => "Cavalier's",
+        'Toughness/Ferocity/Power'               => "Cavalier's",
+        'Toughness/Healing/Vitality'             => "Nomad's",
+        'Toughness/Vitality/Healing'             => "Nomad's",
+        'Toughness/Healing/Condition'            => "Settler's",
+        'Toughness/Condition/Healing'            => "Settler's",
+        'Toughness/Healing'                      => "Giver's",
+        'Healing/Toughness'                      => "Giver's",
+        'Vitality/Toughness/Power'               => "Sentinel's",
+        'Vitality/Toughness/Power'               => "Sentinel's",
+        'Vitality/Healing/Condition'             => "Shaman's",
+        'Vitality/Condition/Healing'             => "Shaman's",
+        'Vitality/Healing/Power'                 => "of the shaman",
+        'Vitality/Power/Healing'                 => "of the shaman",
+        'Condition/Precision/Power'              => "Sinister",
+        'Condition/Power/Precision'              => "Sinister",
+        'Condition/Vitality/Power'               => "Carrion",
+        'Condition/Power/Vitality'               => "Carrion",
+        'Condition/Toughness/Precision'          => "Rabid",
+        'Condition/Precision/Toughness'          => "Rabid",
+        'Condition/Toughness/Precision/Healing'  => "Rabid + Apothecary's",
+        'Condition/Vitality/Toughness'           => "Dire",
+        'Condition/Toughness/Vitality'           => "Dire",
+        'Condition/Toughness/Vitality/Precision' => "Dire + Rabid",
+        'Condition/Healing/Toughness'            => "Apostate's",
+        'Condition/Toughness/Healing'            => "Apostate's",
+        'Healing/Toughness/Power'                => "Cleric's",
+        'Healing/Power/Toughness'                => "Cleric's",
+        'Healing/Vitality/Precision'             => "Magi's",
+        'Healing/Precision/Vitality'             => "Magi's",
+        'Healing/Condition/Toughness'            => "Apothecary's",
+        'Healing/Toughness/Condition'            => "Apothecary's",
     ];
 
     /**
@@ -603,6 +607,43 @@ class Item extends AbstractObject {
                     $stats_name = 'Celestial';
                 }
                 else {
+                    if ($this->getRarity() == self::RARITY_ASCENDED) {
+                        $buff = $this->getBuffDescription();
+                        if ($buff) {
+                            $buff = $this->getItemEN()->getBuffDescription();
+                            if ($buff) {
+                                $stats_names = [
+                                    'Power'            => 'Power',
+                                    'Precision'        => 'Precision',
+                                    'Toughness'        => 'Toughness',
+                                    'Vitality'         => 'Vitality',
+                                    'Ferocity'         => 'Ferocity',
+                                    'Condition Damage' => 'Condition',
+                                    'Healing'          => 'Healing',
+                                ];
+                                $lines       = explode("\n", $buff);
+                                foreach ($lines as $line) {
+                                    if (preg_match('!^\+([0-9]+) (.+)$!i', $line, $m)) {
+                                        if (isset($stats_names[$m[2]])) {
+                                            if (isset($list[$stats_names[$m[2]]])) {
+                                                $list[$stats_names[$m[2]]] += $m[1];
+                                            }
+                                            else {
+                                                $list[$stats_names[$m[2]]] = $m[1];
+                                            }
+                                        }
+                                    }
+                                }
+                                uasort($list, function($a, $b) {
+                                    if ($a == $b) {
+                                        return 0;
+                                    }
+                                    return $a < $b ? 1 : -1;
+                                });
+                            }
+                        }
+                    }
+
                     $stats      = implode('/', array_keys($list));
                     $stats_name = isset(self::$STATS[$stats]) ? self::$STATS[$stats] : '';
                 }
@@ -614,6 +655,21 @@ class Item extends AbstractObject {
             }
         }
         return $this->attributes;
+    }
+
+    /**
+     * 
+     * @return Item
+     */
+    protected function getItemEN() {
+        $lang = $this->client->getLang();
+        if ($lang == AbstractClient::LANG_EN) {
+            return $this;
+        }
+        $this->client->setLang(AbstractClient::LANG_EN);
+        $object = new Item($this->client, $this->getId());
+        $this->client->setLang($lang);
+        return $object;
     }
 
     /**

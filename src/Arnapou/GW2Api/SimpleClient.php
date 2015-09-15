@@ -120,6 +120,12 @@ class SimpleClient {
     protected $requestManager;
 
     /**
+     *
+     * @var array
+     */
+    protected $clones = [];
+
+    /**
      * 
      * @param RequestManager $requestManager
      * @param string $lang
@@ -132,6 +138,23 @@ class SimpleClient {
 
         $this->clientV2 = new Core\ClientV2($requestManager);
         $this->clientV2->setLang($lang);
+    }
+
+    /**
+     * 
+     * @param string $lang
+     */
+    public function setLang($lang) {
+        $this->clientV1->setLang($lang);
+        $this->clientV2->setLang($lang);
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getLang() {
+        return $this->clientV2->getLang();
     }
 
     /**

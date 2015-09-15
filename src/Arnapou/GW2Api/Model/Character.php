@@ -12,6 +12,7 @@
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
+use Arnapou\GW2Api\External\GW2SkillsLinkBuilder;
 use Arnapou\GW2Api\SimpleClient;
 
 /**
@@ -286,6 +287,15 @@ class Character extends AbstractObject {
             }
         }
         return $this->bags;
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getGw2SkillsLink() {
+        $builder = new GW2SkillsLinkBuilder();
+        return $builder->getLink($this);
     }
 
     /**
