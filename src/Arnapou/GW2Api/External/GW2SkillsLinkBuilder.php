@@ -671,8 +671,8 @@ class GW2SkillsLinkBuilder {
             if ($upgrades[1]->getSubType() != Item::SUBTYPE_UPGRADE_COMPONENT_SIGIL) {
                 $code5 = '1';
             }
-            if (isset($this->mapUpgrades[$upgrades[0]->getId()])) {
-                $code6 = $this->mapUpgrades[$upgrades[0]->getId()];
+            if (isset($this->mapUpgrades[$upgrades[1]->getId()])) {
+                $code6 = $this->mapUpgrades[$upgrades[1]->getId()];
             }
         }
         $attributes = $weapon->getAttributes();
