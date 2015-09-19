@@ -284,7 +284,13 @@ class SimpleClient {
         $clientV2    = $this->getClientV2();
         $cache       = $this->requestManager->getCache();
         $cachePrefix = 'smartCaching/' . $clientV2->getLang() . '_' . substr($method, 3) . '/';
-        $pk          = ($method == 'apicharacters') ? 'name' : 'id';
+        if ($method == 'apicharacters') {
+            $pk = 'name';
+            $cachePrefix .= $clientV2->getAccessToken() . '/';
+        }
+        else {
+            $pk = 'id';
+        }
 
         // single id
         if (!is_array($ids)) {
