@@ -127,7 +127,7 @@ class SpecializationTrait extends AbstractObject {
      * @return integer
      */
     public function getTier() {
-        return $this->data['description'];
+        return $this->data['tier'];
     }
 
     /**

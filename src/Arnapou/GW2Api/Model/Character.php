@@ -338,9 +338,27 @@ class Character extends AbstractObject {
      * 
      * @return string
      */
-    public function getGw2SkillsLink() {
+    public function getGw2SkillsLinkPvp() {
         $builder = new GW2SkillsLinkBuilder();
-        return $builder->getLink($this);
+        return $builder->getLink($this, GW2SkillsLinkBuilder::MODE_PVP);
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getGw2SkillsLinkPve() {
+        $builder = new GW2SkillsLinkBuilder();
+        return $builder->getLink($this, GW2SkillsLinkBuilder::MODE_PVE);
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getGw2SkillsLinkWvw() {
+        $builder = new GW2SkillsLinkBuilder();
+        return $builder->getLink($this, GW2SkillsLinkBuilder::MODE_WVW);
     }
 
     /**
