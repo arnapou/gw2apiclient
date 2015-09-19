@@ -109,6 +109,12 @@ class Character extends AbstractObject {
      *
      * @var array
      */
+    protected $builds;
+
+    /**
+     *
+     * @var array
+     */
     protected $inventoryStuff;
 
     /**
@@ -124,6 +130,45 @@ class Character extends AbstractObject {
             throw new Exception('Invalid received character data.');
         }
         $this->data = $data;
+    }
+
+    /**
+     * 
+     * @param string $type
+     * @return Build
+     */
+    protected function getBuild($type) {
+        if (!isset($this->builds[$type])) {
+            $data = $this->getSubkey(['specializations', $type]);
+            if ($data) {
+                $this->builds[$type] = new Build($this->client, $data);
+            }
+        }
+        return $this->builds[$type];
+    }
+
+    /**
+     * 
+     * @return Build
+     */
+    public function getBuildPvp() {
+        return $this->getBuild('pvp');
+    }
+
+    /**
+     * 
+     * @return Build
+     */
+    public function getBuildPve() {
+        return $this->getBuild('pve');
+    }
+
+    /**
+     * 
+     * @return Build
+     */
+    public function getBuildWvw() {
+        return $this->getBuild('wvw');
     }
 
     /**

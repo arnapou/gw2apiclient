@@ -91,6 +91,20 @@ abstract class AbstractObject {
      * @param array $ids
      * @return array
      */
+    protected function apiMaps($ids) {
+        if (!empty(self::$PRELOADS['maps'])) {
+            $this->client->v2_maps(self::$PRELOADS['maps']);
+            self::$PRELOADS['maps'] = [];
+        }
+        $result = $this->client->v2_maps($ids);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
     protected function apiItems($ids) {
         if (!empty(self::$PRELOADS['items'])) {
             $this->client->v2_items(self::$PRELOADS['items']);
@@ -125,6 +139,34 @@ abstract class AbstractObject {
             self::$PRELOADS['skins'] = [];
         }
         $result = $this->client->v2_skins($ids);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
+    protected function apiTraits($ids) {
+        if (!empty(self::$PRELOADS['traits'])) {
+            $this->client->v2_traits(self::$PRELOADS['traits']);
+            self::$PRELOADS['traits'] = [];
+        }
+        $result = $this->client->v2_traits($ids);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
+    protected function apiSpecializations($ids) {
+        if (!empty(self::$PRELOADS['specializations'])) {
+            $this->client->v2_specializations(self::$PRELOADS['specializations']);
+            self::$PRELOADS['specializations'] = [];
+        }
+        $result = $this->client->v2_specializations($ids);
         return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
     }
 

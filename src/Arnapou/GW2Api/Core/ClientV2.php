@@ -125,6 +125,26 @@ class ClientV2 extends AbstractClient {
      * 
      * @return RequestInterface
      */
+    public function apiPvpStats() {
+        return $this->checkAccessToken($this->request('pvp/stats'));
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
+    public function apiPvpGames($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->checkAccessToken($this->request('pvp/games', $parameters));
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
     public function apiBuild() {
         return $this->request('build');
     }

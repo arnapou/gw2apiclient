@@ -28,6 +28,8 @@ class Account extends AbstractObject {
     const PERMISSION_TRADINGPOST = 'tradingpost';
     const PERMISSION_UNLOCKS     = 'unlocks';
     const PERMISSION_WALLET      = 'wallet';
+    const PERMISSION_PVP      = 'pvp';
+    const PERMISSION_BUILDS      = 'builds';
 
     /**
      *
@@ -102,6 +104,12 @@ class Account extends AbstractObject {
     protected $accessToken;
 
     /**
+     *
+     * @var Pvp
+     */
+    protected $pvp;
+
+    /**
      * 
      * @return array
      */
@@ -111,8 +119,10 @@ class Account extends AbstractObject {
             self::PERMISSION_CHARACTERS,
             self::PERMISSION_INVENTORIES,
             self::PERMISSION_TRADINGPOST,
-            self::PERMISSION_UNLOCKS,
             self::PERMISSION_WALLET,
+            self::PERMISSION_UNLOCKS,
+            self::PERMISSION_PVP,
+            self::PERMISSION_BUILDS,
         ];
     }
 
@@ -157,6 +167,22 @@ class Account extends AbstractObject {
             }
             $this->data = $this->client->v2_account();
         }
+    }
+
+    /**
+     * 
+     * @return Pvp
+     */
+    public function getPvp() {
+        if (empty($this->pvp)) {
+
+            if (!$this->hasPermission(self::PERMISSION_PVP)) {
+                throw new MissingPermissionException(self::PERMISSION_PVP);
+            }
+
+            $this->pvp = new Pvp($this->client);
+        }
+        return $this->pvp;
     }
 
     /**

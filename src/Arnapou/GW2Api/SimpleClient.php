@@ -66,6 +66,8 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_items($ids = null)
  * @method array v2_maps($ids = null)
  * @method array v2_materials($ids = null)
+ * @method array v2_pvp_stats()
+ * @method array v2_pvp_games($ids = null)
  * @method array v2_quaggans($ids = null)
  * @method array v2_recipes($ids = null)
  * @method array v2_recipes_search($input = null, $output = null)
