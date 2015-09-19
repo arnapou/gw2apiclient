@@ -63,7 +63,7 @@ class Specialization extends AbstractObject {
      * @return string
      */
     public function getName() {
-        return $this->data['name'];
+        return $this->getSubkey(['name']);
     }
 
     /**
@@ -132,6 +132,20 @@ class Specialization extends AbstractObject {
             $this->prepareTraits();
         }
         return $this->majorTraits;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getMajorSelected() {
+        $array = [null, null, null];
+        foreach ($this->getMajorTraits() as /* @var $trait SpecializationTrait */ $trait) {
+            if ($trait->isSelected()) {
+                $array[$trait->getTier() - 1] = $trait;
+            }
+        }
+        return $array;
     }
 
     /**
