@@ -198,7 +198,7 @@ class Pvp extends AbstractObject {
                 $this->games[] = new PvpGame($this->client, $game);
             }
             uasort($this->games, function($a, $b) {
-                return -strcmp($a->getDateEnded(), $a->getDateStarted());
+                return -strcmp($a->getDateEnded(), $b->getDateEnded());
             });
         }
         return $this->games;
