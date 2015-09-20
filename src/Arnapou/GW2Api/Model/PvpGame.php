@@ -97,7 +97,7 @@ class PvpGame extends AbstractObject {
      * @return string
      */
     public function getDateStarted() {
-        return gmdate('Y-m-d H:i:s', strtotime($this->data['started']));
+        return gmdate('Y-m-d H:i:s', strtotime($this->data['started']) - 8 * 3600);
     }
 
     /**
@@ -105,7 +105,7 @@ class PvpGame extends AbstractObject {
      * @return string
      */
     public function getDateEnded() {
-        return gmdate('Y-m-d H:i:s', strtotime($this->data['ended']));
+        return gmdate('Y-m-d H:i:s', strtotime($this->data['ended']) - 8 * 3600);
     }
 
     /**
