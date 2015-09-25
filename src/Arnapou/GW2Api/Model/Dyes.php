@@ -109,10 +109,7 @@ class Dyes extends AbstractObject {
      * @return integer
      */
     public function getCount() {
-        if (!isset($this->count)) {
-            $this->prepareObjects();
-        }
-        return $this->count;
+        return count($this->unlocked);
     }
 
     /**

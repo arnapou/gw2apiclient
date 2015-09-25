@@ -74,6 +74,14 @@ class Wardrobe extends AbstractObject {
 
     /**
      * 
+     * @return integer
+     */
+    public function getCount() {
+        return count($this->unlockedSkins);
+    }
+
+    /**
+     * 
      */
     protected function prepareObjects() {
         $this->armors  = [

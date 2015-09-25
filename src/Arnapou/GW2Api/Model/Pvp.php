@@ -108,7 +108,7 @@ class Pvp extends AbstractObject {
 
     /**
      * 
-     * @return array
+     * @return PvpStats
      */
     public function getLadderNone() {
         return $this->getLadderStats('none');
@@ -116,7 +116,7 @@ class Pvp extends AbstractObject {
 
     /**
      * 
-     * @return array
+     * @return PvpStats
      */
     public function getLadderRanked() {
         return $this->getLadderStats('ranked');
@@ -124,7 +124,7 @@ class Pvp extends AbstractObject {
 
     /**
      * 
-     * @return array
+     * @return PvpStats
      */
     public function getLadderUnranked() {
         return $this->getLadderStats('unranked');
@@ -132,7 +132,7 @@ class Pvp extends AbstractObject {
 
     /**
      * 
-     * @return array
+     * @return PvpStats
      */
     public function getLadderSoloArenaRated() {
         return $this->getLadderStats('soloarenarated');
@@ -140,7 +140,7 @@ class Pvp extends AbstractObject {
 
     /**
      * 
-     * @return array
+     * @return PvpStats
      */
     public function getLadderTeamArenaRated() {
         return $this->getLadderStats('teamarenarated');
