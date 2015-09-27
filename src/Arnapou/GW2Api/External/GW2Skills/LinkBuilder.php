@@ -20,6 +20,19 @@ use Arnapou\GW2Api\Model\InventorySlot;
 use Arnapou\GW2Api\Model\Specialization;
 use Arnapou\GW2Api\Model\SpecializationTrait;
 
+/* * ********************************************************************** *
+ *                                                                          *
+ *                               IMPORTANT                                  *
+ *                                                                          *
+ * ************************************************************************ *
+ *                                                                          *
+ *          In order to use this class without any problem, your IP         *
+ *                  should be whitelisted by gw2skills.net                  *
+ *                                                                          *
+ *                      contact: info@gw2skills.net                         *
+ *                                                                          *
+ * ************************************************************************ */
+
 class LinkBuilder {
 
     /**
