@@ -258,6 +258,30 @@ class Client {
         }
         ksort($mapped['traits']);
 
+        // buffs
+        foreach ($alldata['buffs'] as $item) {
+            $name  = strtolower($item['name']);
+            $name  = str_replace('nopalitos saute', 'nopalitos sauté', $name);
+            $name  = str_replace('plate of lemongrass poultry', 'plates of lemongrass poultry', $name);
+            $name  = str_replace('strawberries and biscuts', 'strawberries and biscuits', $name);
+            $pvx   = (int) $item['pvx'];
+            $found = false;
+            foreach ($this->modes as $mode => $int) {
+                if ($pvx & $int) {
+                    if (isset($gw2names['buffs'][$name])) {
+                        $gw2id                 = $gw2names['buffs'][$name];
+                        $key                   = $mode . '.' . $gw2id;
+                        $found                 = true;
+                        $mapped['buffs'][$key] = $item['id'];
+                    }
+                }
+            }
+            if (!$found) {
+                $unmapped['buffs'][] = $item;
+            }
+        }
+        ksort($mapped['buffs']);
+
         // upgrades
         foreach ($alldata['upgrades'] as $item) {
             $name       = strtolower($item['name']);
@@ -426,6 +450,17 @@ class Client {
                 ksort($submap);
             }
 
+            // buffs
+            $buffs      = [];
+            $collection = $cache->getMongoCollection('en_items');
+            foreach ($collection->find(['value.type' => 'Consumable', 'value.details.type' => ['$in' => ['Utility', 'Food']]]) as $row) {
+                if (isset($row['value']['name'])) {
+                    $name         = strtolower($row['value']['name']);
+                    $buffs[$name] = $row['value']['id'];
+                }
+            }
+            ksort($buffs);
+
             // traits
             $traits     = [];
             $collection = $cache->getMongoCollection('en_traits');
@@ -446,6 +481,7 @@ class Client {
                 'upgrades'        => $upgrades,
                 'specializations' => $specializations,
                 'traits'          => $traits,
+                'buffs'           => $buffs,
             ]);
             return true;
         }

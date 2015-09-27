@@ -13,6 +13,7 @@ namespace Arnapou\GW2Api\External\GW2Skills;
 
 use Arnapou\GW2Api\Core\Curl;
 use Arnapou\GW2Api\Exception\Exception;
+use Arnapou\GW2Api\Model\Bag;
 use Arnapou\GW2Api\Model\Build;
 use Arnapou\GW2Api\Model\Character;
 use Arnapou\GW2Api\Model\Item;
@@ -290,6 +291,54 @@ class LinkBuilder {
 
     /**
      * 
+     * @param Character $character
+     * @param string $mode
+     * @return string
+     */
+    protected function getBuffs(Character $character, $mode) {
+        $map = self::getClient()->getMap('buffs');
+
+        $parts     = ['0', '0'];
+        $utilities = [];
+        $foods     = [];
+        foreach ($character->getBags() as /* @var $bag Bag */ $bag) {
+            foreach ($bag->getInventory() as /* @var $item Item */ $item) {
+                if (empty($item)) {
+                    continue;
+                }
+                if ($item->getType() === Item::TYPE_CONSUMABLE && $item->getLevel()) {
+                    if ($item->getSubType() === Item::SUBTYPE_CONSUMABLE_FOOD) {
+                        $foods[$item->getLevel()][] = $item->getId();
+                    }
+                    elseif ($item->getSubType() === Item::SUBTYPE_CONSUMABLE_UTILITY) {
+                        $utilities[$item->getLevel()][] = $item->getId();
+                    }
+                }
+            }
+        }
+        krsort($foods);
+        krsort($utilities);
+
+        foreach ([$foods, $utilities] as $i => $array) {
+            foreach ($array as $level => $ids) {
+                foreach ($ids as $id) {
+                    $key = $mode . '.' . $id;
+                    if (isset($map[$key])) {
+                        $parts[$i] = $map[$key];
+                        break;
+                    }
+                }
+                if ($parts[$i] != 0) {
+                    break;
+                }
+            }
+        }
+
+        return implode('.', $parts);
+    }
+
+    /**
+     * 
      * @param string $mode
      * @param array $map
      * @param Item $item
@@ -380,9 +429,10 @@ class LinkBuilder {
      * 
      * @param Character $character
      * @param int $mode
+     * @param boolean $nocache
      * @return string
      */
-    public function getLink(Character $character, $mode) {
+    public function getLink(Character $character, $mode, $nocache = false) {
         try {
             $client   = $character->getClient();
             $lang     = $client->getLang();
@@ -390,7 +440,7 @@ class LinkBuilder {
             $cacheKey = 'gw2skills-link/' . $lang . '/' . $mode . '/' . $character->getName();
             if ($cache) {
                 $url = $cache->get($cacheKey);
-                if ($url) {
+                if ($url && !$nocache) {
                     return $url;
                 }
             }
@@ -420,7 +470,7 @@ class LinkBuilder {
                 'up_b' => $this->getUpgradesArmor($character, $mode),
                 'up_a' => $this->getUpgradesTrinkets($character, $mode),
                 'inf'  => $this->getInfusions($character, $mode),
-                'bf'   => '0.0', // buffs
+                'bf'   => $this->getBuffs($character, $mode),
             ];
 
             $curl     = new Curl();

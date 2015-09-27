@@ -1256,6 +1256,63 @@
       'number' => 9,
     ),
   ),
+  'buffs' => 
+  array (
+    0 => 
+    array (
+      'id' => 4,
+      'name' => 'Maintenance Oil Station',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    1 => 
+    array (
+      'id' => 21,
+      'name' => 'Sharpening Stone Station',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    2 => 
+    array (
+      'id' => 28,
+      'name' => 'Tuning Crystal Station',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    3 => 
+    array (
+      'id' => 74,
+      'name' => 'Cooked Fish Steak',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    4 => 
+    array (
+      'id' => 161,
+      'name' => 'Blessing Of Bear',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 41,
+      'pvx' => 6,
+    ),
+    5 => 
+    array (
+      'id' => 221,
+      'name' => 'Bowl of Ice Wurm Bisque',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+  ),
   'items' => 
   array (
     0 => 

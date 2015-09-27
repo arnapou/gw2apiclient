@@ -4036,6 +4036,76 @@
     ),
     258 => 
     array (
+      'id' => 1072,
+      'name' => 'Legendary Dwarf Stance',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => '',
+      'type' => 'Legend',
+      'pvx' => 7,
+    ),
+    259 => 
+    array (
+      'id' => 1073,
+      'name' => 'Legendary Demon Stance',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => '',
+      'type' => 'Legend',
+      'pvx' => 7,
+    ),
+    260 => 
+    array (
+      'id' => 1074,
+      'name' => 'Legendary Centaur Stance',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => '',
+      'type' => 'Legend',
+      'pvx' => 7,
+    ),
+    261 => 
+    array (
+      'id' => 1075,
+      'name' => 'Legendary Assassin Stance',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => '',
+      'type' => 'Legend',
+      'pvx' => 7,
+    ),
+    262 => 
+    array (
+      'id' => 1076,
+      'name' => 'Legendary Dragon Stance',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 54,
+      'specialization' => 'Herald',
+      'group' => '',
+      'type' => 'Legend',
+      'pvx' => 7,
+    ),
+    263 => 
+    array (
       'id' => 1127,
       'name' => 'Soothing Stone',
       'profession_id' => 9,
@@ -4048,7 +4118,7 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    259 => 
+    264 => 
     array (
       'id' => 1128,
       'name' => 'Empowering Misery',
@@ -4062,7 +4132,7 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    260 => 
+    265 => 
     array (
       'id' => 1129,
       'name' => 'Project Tranquility',
@@ -4076,7 +4146,7 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    261 => 
+    266 => 
     array (
       'id' => 1131,
       'name' => 'Facet of Light',
@@ -4090,7 +4160,7 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    262 => 
+    267 => 
     array (
       'id' => 1133,
       'name' => 'Enchanted Daggers',
@@ -4104,7 +4174,7 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    263 => 
+    268 => 
     array (
       'id' => 1134,
       'name' => 'Inspiring Reinforcement',
@@ -4118,7 +4188,7 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    264 => 
+    269 => 
     array (
       'id' => 1135,
       'name' => 'Forced Engagement',
@@ -4132,7 +4202,7 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    265 => 
+    270 => 
     array (
       'id' => 1136,
       'name' => 'Vengeful Hammers',
@@ -4146,7 +4216,7 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    266 => 
+    271 => 
     array (
       'id' => 1138,
       'name' => 'Pain Absorption',
@@ -4160,7 +4230,7 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    267 => 
+    272 => 
     array (
       'id' => 1139,
       'name' => 'Banish Enchantment',
@@ -4174,7 +4244,7 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    268 => 
+    273 => 
     array (
       'id' => 1140,
       'name' => 'Unyielding Anguish',
@@ -4188,7 +4258,7 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    269 => 
+    274 => 
     array (
       'id' => 1141,
       'name' => 'Protective Solace',
@@ -4202,7 +4272,7 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    270 => 
+    275 => 
     array (
       'id' => 1143,
       'name' => 'Natural Harmony',
@@ -4216,7 +4286,7 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    271 => 
+    276 => 
     array (
       'id' => 1144,
       'name' => 'Purifying Essence',
@@ -4230,7 +4300,7 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    272 => 
+    277 => 
     array (
       'id' => 1145,
       'name' => 'Facet of Darkness',
@@ -4244,7 +4314,7 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    273 => 
+    278 => 
     array (
       'id' => 1147,
       'name' => 'Facet of Elements',
@@ -4258,7 +4328,7 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    274 => 
+    279 => 
     array (
       'id' => 1149,
       'name' => 'Facet of Strength',
@@ -4272,7 +4342,7 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    275 => 
+    280 => 
     array (
       'id' => 1151,
       'name' => 'Riposting Shadows',
@@ -4286,7 +4356,7 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    276 => 
+    281 => 
     array (
       'id' => 1152,
       'name' => 'Phase Traversal',
@@ -4300,7 +4370,7 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    277 => 
+    282 => 
     array (
       'id' => 1153,
       'name' => 'Impossible Odds',
@@ -4314,7 +4384,7 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    278 => 
+    283 => 
     array (
       'id' => 1154,
       'name' => 'Rite of the Great Dwarf',
@@ -4328,7 +4398,7 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    279 => 
+    284 => 
     array (
       'id' => 1155,
       'name' => 'Embrace the Darkness',
@@ -4342,7 +4412,7 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    280 => 
+    285 => 
     array (
       'id' => 1157,
       'name' => 'Energy Expulsion',
@@ -4356,7 +4426,7 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    281 => 
+    286 => 
     array (
       'id' => 1158,
       'name' => 'Facet of Chaos',
@@ -4370,7 +4440,7 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    282 => 
+    287 => 
     array (
       'id' => 1160,
       'name' => 'Jade Winds',
@@ -4384,7 +4454,7 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    283 => 
+    288 => 
     array (
       'id' => 1161,
       'name' => 'Prayer to Dwayna',
@@ -4398,7 +4468,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    284 => 
+    289 => 
     array (
       'id' => 1163,
       'name' => 'Prayer to Kormir',
@@ -4412,7 +4482,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    285 => 
+    290 => 
     array (
       'id' => 1165,
       'name' => 'Prayer to Lyssa',
@@ -4426,7 +4496,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    286 => 
+    291 => 
     array (
       'id' => 1167,
       'name' => 'Reaper of Grenth',
@@ -4440,7 +4510,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    287 => 
+    292 => 
     array (
       'id' => 1168,
       'name' => 'Hounds of Balthazar',
@@ -4454,7 +4524,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    288 => 
+    293 => 
     array (
       'id' => 1169,
       'name' => 'Avatar of Melandru',
@@ -4468,7 +4538,7 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    289 => 
+    294 => 
     array (
       'id' => 1175,
       'name' => 'Shrapnel Mine',
@@ -4482,7 +4552,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    290 => 
+    295 => 
     array (
       'id' => 1177,
       'name' => 'Hidden Pistol',
@@ -4496,7 +4566,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    291 => 
+    296 => 
     array (
       'id' => 1179,
       'name' => 'Battle Roar',
@@ -4510,7 +4580,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    292 => 
+    297 => 
     array (
       'id' => 1181,
       'name' => 'Artillery Barrage',
@@ -4524,7 +4594,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    293 => 
+    298 => 
     array (
       'id' => 1182,
       'name' => 'Warband Support',
@@ -4538,7 +4608,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    294 => 
+    299 => 
     array (
       'id' => 1183,
       'name' => 'Charrzooka',
@@ -4552,7 +4622,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    295 => 
+    300 => 
     array (
       'id' => 1189,
       'name' => 'Pain Inverter',
@@ -4566,7 +4636,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    296 => 
+    301 => 
     array (
       'id' => 1191,
       'name' => 'Radiation Field',
@@ -4580,7 +4650,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    297 => 
+    302 => 
     array (
       'id' => 1193,
       'name' => 'Technobabble',
@@ -4594,7 +4664,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    298 => 
+    303 => 
     array (
       'id' => 1195,
       'name' => 'Summon D-Series Golem',
@@ -4608,7 +4678,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    299 => 
+    304 => 
     array (
       'id' => 1196,
       'name' => 'Summon 7-Series Golem',
@@ -4622,7 +4692,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    300 => 
+    305 => 
     array (
       'id' => 1197,
       'name' => 'Summon Power Suit',
@@ -4636,7 +4706,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    301 => 
+    306 => 
     array (
       'id' => 1203,
       'name' => 'Call Owl',
@@ -4650,7 +4720,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    302 => 
+    307 => 
     array (
       'id' => 1205,
       'name' => 'Call Wurm',
@@ -4664,7 +4734,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    303 => 
+    308 => 
     array (
       'id' => 1207,
       'name' => 'Become the Bear',
@@ -4678,7 +4748,7 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    304 => 
+    309 => 
     array (
       'id' => 1214,
       'name' => 'Become the Snow Leopard',
@@ -4692,7 +4762,7 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    305 => 
+    310 => 
     array (
       'id' => 1220,
       'name' => 'Become the Raven',
@@ -4706,7 +4776,7 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    306 => 
+    311 => 
     array (
       'id' => 1227,
       'name' => 'Become the Wolf',
@@ -4720,7 +4790,7 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    307 => 
+    312 => 
     array (
       'id' => 1234,
       'name' => 'Healing Seed',
@@ -4734,7 +4804,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    308 => 
+    313 => 
     array (
       'id' => 1236,
       'name' => 'Grasping Vines',
@@ -4748,7 +4818,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    309 => 
+    314 => 
     array (
       'id' => 1238,
       'name' => 'Seed Turret',
@@ -4762,7 +4832,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    310 => 
+    315 => 
     array (
       'id' => 1241,
       'name' => 'Take Root',
@@ -4776,7 +4846,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    311 => 
+    316 => 
     array (
       'id' => 1242,
       'name' => 'Summon Sylvan Hound',
@@ -4790,7 +4860,7 @@
       'type' => '',
       'pvx' => 6,
     ),
-    312 => 
+    317 => 
     array (
       'id' => 1243,
       'name' => 'Summon Druid Spirit',
@@ -4802,6 +4872,3474 @@
       'specialization' => '',
       'group' => 'Elite skills',
       'type' => '',
+      'pvx' => 6,
+    ),
+  ),
+  'buffs' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'name' => 'Potent Master Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'name' => 'Toxic Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'name' => 'Hylek Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    3 => 
+    array (
+      'id' => 4,
+      'name' => 'Maintenance Oil Station',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    4 => 
+    array (
+      'id' => 5,
+      'name' => 'Bountiful Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    5 => 
+    array (
+      'id' => 6,
+      'name' => 'Furious Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    6 => 
+    array (
+      'id' => 7,
+      'name' => 'Master Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    7 => 
+    array (
+      'id' => 8,
+      'name' => 'Quality Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    8 => 
+    array (
+      'id' => 9,
+      'name' => 'Artisan Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    9 => 
+    array (
+      'id' => 10,
+      'name' => 'Standard Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    10 => 
+    array (
+      'id' => 11,
+      'name' => 'Journeyman Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    11 => 
+    array (
+      'id' => 12,
+      'name' => 'Apprentice Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    12 => 
+    array (
+      'id' => 13,
+      'name' => 'Rough Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    13 => 
+    array (
+      'id' => 14,
+      'name' => 'Simple Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    14 => 
+    array (
+      'id' => 15,
+      'name' => 'Standard Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    15 => 
+    array (
+      'id' => 16,
+      'name' => 'Quality Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    16 => 
+    array (
+      'id' => 17,
+      'name' => 'Hardened Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    17 => 
+    array (
+      'id' => 18,
+      'name' => 'Superior Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    18 => 
+    array (
+      'id' => 19,
+      'name' => 'Toxic Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    19 => 
+    array (
+      'id' => 20,
+      'name' => 'Ogre Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    20 => 
+    array (
+      'id' => 21,
+      'name' => 'Sharpening Stone Station',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    21 => 
+    array (
+      'id' => 22,
+      'name' => 'Bountiful Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    22 => 
+    array (
+      'id' => 23,
+      'name' => 'Furious Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    23 => 
+    array (
+      'id' => 24,
+      'name' => 'Potent Superior Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    24 => 
+    array (
+      'id' => 25,
+      'name' => 'Potent Master Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    25 => 
+    array (
+      'id' => 26,
+      'name' => 'Toxic Focusing Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    26 => 
+    array (
+      'id' => 27,
+      'name' => 'Krait Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    27 => 
+    array (
+      'id' => 28,
+      'name' => 'Tuning Crystal Station',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    28 => 
+    array (
+      'id' => 29,
+      'name' => 'Bountiful Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    29 => 
+    array (
+      'id' => 30,
+      'name' => 'Furious Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    30 => 
+    array (
+      'id' => 31,
+      'name' => 'Master Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    31 => 
+    array (
+      'id' => 32,
+      'name' => 'Quality Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    32 => 
+    array (
+      'id' => 33,
+      'name' => 'Artisan Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    33 => 
+    array (
+      'id' => 34,
+      'name' => 'Standard Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    34 => 
+    array (
+      'id' => 35,
+      'name' => 'Journeyman Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    35 => 
+    array (
+      'id' => 36,
+      'name' => 'Apprentice Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    36 => 
+    array (
+      'id' => 37,
+      'name' => 'Onion Ring',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    37 => 
+    array (
+      'id' => 38,
+      'name' => 'Cinnamon Apple',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    38 => 
+    array (
+      'id' => 39,
+      'name' => 'Bowl of Apple Sauce',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    39 => 
+    array (
+      'id' => 40,
+      'name' => 'Beetletun Omelette',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    40 => 
+    array (
+      'id' => 41,
+      'name' => 'Meat Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    41 => 
+    array (
+      'id' => 42,
+      'name' => 'Blueberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    42 => 
+    array (
+      'id' => 43,
+      'name' => 'Strawberries and Biscuts',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    43 => 
+    array (
+      'id' => 44,
+      'name' => 'Lemon Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    44 => 
+    array (
+      'id' => 45,
+      'name' => 'Strawberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    45 => 
+    array (
+      'id' => 46,
+      'name' => 'Candy Corn Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    46 => 
+    array (
+      'id' => 47,
+      'name' => 'Clam Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    47 => 
+    array (
+      'id' => 48,
+      'name' => 'Caramel',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    48 => 
+    array (
+      'id' => 49,
+      'name' => 'Caramel Apple',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    49 => 
+    array (
+      'id' => 50,
+      'name' => 'Candied Apple',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    50 => 
+    array (
+      'id' => 51,
+      'name' => 'Chocolate Banana',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    51 => 
+    array (
+      'id' => 52,
+      'name' => 'Strawberry Ghost',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    52 => 
+    array (
+      'id' => 53,
+      'name' => 'Chocolate Cherry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    53 => 
+    array (
+      'id' => 54,
+      'name' => 'Chocolate Orange',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    54 => 
+    array (
+      'id' => 55,
+      'name' => 'Chocolate Raspberry Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    55 => 
+    array (
+      'id' => 56,
+      'name' => 'Chocolate Omnomberry Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    56 => 
+    array (
+      'id' => 57,
+      'name' => 'Cherry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    57 => 
+    array (
+      'id' => 58,
+      'name' => 'Ginger Pear Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    58 => 
+    array (
+      'id' => 59,
+      'name' => 'Glazed Pear Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    59 => 
+    array (
+      'id' => 60,
+      'name' => 'Peach Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    60 => 
+    array (
+      'id' => 61,
+      'name' => 'Glazed Peach Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    61 => 
+    array (
+      'id' => 62,
+      'name' => 'Dragonfly Cupcake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    62 => 
+    array (
+      'id' => 63,
+      'name' => 'Omnomberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    63 => 
+    array (
+      'id' => 64,
+      'name' => 'Yam Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    64 => 
+    array (
+      'id' => 65,
+      'name' => 'Chickpea Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    65 => 
+    array (
+      'id' => 66,
+      'name' => 'Eggplant Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    66 => 
+    array (
+      'id' => 67,
+      'name' => 'Cup of Lotus Fries',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    67 => 
+    array (
+      'id' => 68,
+      'name' => 'Spicy Pumpkin Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    68 => 
+    array (
+      'id' => 69,
+      'name' => 'Cherry Almond Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    69 => 
+    array (
+      'id' => 70,
+      'name' => 'Piece of Candy Corn Almond Brittle',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    70 => 
+    array (
+      'id' => 71,
+      'name' => 'Orange Coconut Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    71 => 
+    array (
+      'id' => 72,
+      'name' => 'Raspberry Peach Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    72 => 
+    array (
+      'id' => 73,
+      'name' => 'Omnomberry Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    73 => 
+    array (
+      'id' => 74,
+      'name' => 'Cooked Fish Steak',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    74 => 
+    array (
+      'id' => 75,
+      'name' => 'Cup of Potato Fries',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    75 => 
+    array (
+      'id' => 76,
+      'name' => 'Mashed Potato',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    76 => 
+    array (
+      'id' => 77,
+      'name' => 'Bowl of Outrider Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 24,
+      'pvx' => 6,
+    ),
+    77 => 
+    array (
+      'id' => 78,
+      'name' => 'Turnip Casserole',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    78 => 
+    array (
+      'id' => 79,
+      'name' => 'Bowl of Mashed Yams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    79 => 
+    array (
+      'id' => 80,
+      'name' => 'Bowl of Spiced Mashed Yams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    80 => 
+    array (
+      'id' => 81,
+      'name' => 'Roasted Rutabaga',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    81 => 
+    array (
+      'id' => 82,
+      'name' => 'Roasted Parsnip',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    82 => 
+    array (
+      'id' => 83,
+      'name' => 'Bowl of Roasted Lotus Root',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    83 => 
+    array (
+      'id' => 84,
+      'name' => 'Cooked Crawdad',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    84 => 
+    array (
+      'id' => 85,
+      'name' => 'Slice of Buttered Toast',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    85 => 
+    array (
+      'id' => 86,
+      'name' => 'Cheese Triangle',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    86 => 
+    array (
+      'id' => 87,
+      'name' => 'Slice of Cinnamon Toast',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    87 => 
+    array (
+      'id' => 88,
+      'name' => 'Slice of Garlic Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    88 => 
+    array (
+      'id' => 89,
+      'name' => 'Loaf of Rosemary Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    89 => 
+    array (
+      'id' => 90,
+      'name' => 'Slice of Spiced Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    90 => 
+    array (
+      'id' => 91,
+      'name' => 'Loaf of Tarragon Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    91 => 
+    array (
+      'id' => 92,
+      'name' => 'Loaf of Saffron Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    92 => 
+    array (
+      'id' => 93,
+      'name' => 'Grawl Snack',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    93 => 
+    array (
+      'id' => 94,
+      'name' => 'Bowl of Wurm Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    94 => 
+    array (
+      'id' => 95,
+      'name' => 'Jug of Autumn Nectar',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    95 => 
+    array (
+      'id' => 96,
+      'name' => 'Bowl of Basic Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    96 => 
+    array (
+      'id' => 97,
+      'name' => 'Bowl of Simple Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    97 => 
+    array (
+      'id' => 98,
+      'name' => 'Moa Egg Omelet',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 13,
+      'pvx' => 6,
+    ),
+    98 => 
+    array (
+      'id' => 99,
+      'name' => 'Spinach Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    99 => 
+    array (
+      'id' => 100,
+      'name' => 'Bowl of Clam Chowder',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    100 => 
+    array (
+      'id' => 101,
+      'name' => 'Bowl of Dilled Clam Chowder',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    101 => 
+    array (
+      'id' => 102,
+      'name' => 'Bowl of Chickpea and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    102 => 
+    array (
+      'id' => 103,
+      'name' => 'Bowl of Poultry and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    103 => 
+    array (
+      'id' => 104,
+      'name' => 'Bowl of Lemongrass Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    104 => 
+    array (
+      'id' => 105,
+      'name' => 'Bowl of Red Meat Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    105 => 
+    array (
+      'id' => 106,
+      'name' => 'Strip of Dolyak Jerky',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    106 => 
+    array (
+      'id' => 107,
+      'name' => 'Bowl of Simple Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    107 => 
+    array (
+      'id' => 108,
+      'name' => 'Bowl of Onion Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    108 => 
+    array (
+      'id' => 109,
+      'name' => 'Poached Griffon Egg',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 18,
+      'pvx' => 6,
+    ),
+    109 => 
+    array (
+      'id' => 110,
+      'name' => 'Bowl of Hearty Red Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    110 => 
+    array (
+      'id' => 111,
+      'name' => 'Bowl of Herbed Meat Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    111 => 
+    array (
+      'id' => 112,
+      'name' => 'Bowl of Meat and Cabbage Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    112 => 
+    array (
+      'id' => 113,
+      'name' => 'Bowl of Cabbage Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    113 => 
+    array (
+      'id' => 114,
+      'name' => 'Bowl of Spiced Meat and Cabbage Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    114 => 
+    array (
+      'id' => 115,
+      'name' => 'Bowl of Meat and Winter Vegetable Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    115 => 
+    array (
+      'id' => 116,
+      'name' => 'Bowl of Orrian Truffle and Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    116 => 
+    array (
+      'id' => 117,
+      'name' => 'Seraph Standard Ration',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    117 => 
+    array (
+      'id' => 118,
+      'name' => 'Stick of Cotton Candy',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    118 => 
+    array (
+      'id' => 119,
+      'name' => 'Apple Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    119 => 
+    array (
+      'id' => 120,
+      'name' => 'Bowl of Gelatinous Ooze Custard',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    120 => 
+    array (
+      'id' => 121,
+      'name' => 'Apple Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    121 => 
+    array (
+      'id' => 122,
+      'name' => 'Bowl of Candy Corn Custard',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    122 => 
+    array (
+      'id' => 123,
+      'name' => 'Heart-Shaped Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    123 => 
+    array (
+      'id' => 124,
+      'name' => 'Kastaz Roasted Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 17,
+      'pvx' => 6,
+    ),
+    124 => 
+    array (
+      'id' => 125,
+      'name' => 'Banana Cream Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    125 => 
+    array (
+      'id' => 126,
+      'name' => 'Shiverpeak Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    126 => 
+    array (
+      'id' => 127,
+      'name' => 'Grape Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    127 => 
+    array (
+      'id' => 128,
+      'name' => 'Pirate Hard Tack',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 41,
+      'pvx' => 6,
+    ),
+    128 => 
+    array (
+      'id' => 129,
+      'name' => 'Pumpkin Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    129 => 
+    array (
+      'id' => 130,
+      'name' => 'Raspberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    130 => 
+    array (
+      'id' => 131,
+      'name' => 'Glazed Pumpkin Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    131 => 
+    array (
+      'id' => 132,
+      'name' => 'Peach Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    132 => 
+    array (
+      'id' => 133,
+      'name' => 'Mango Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    133 => 
+    array (
+      'id' => 134,
+      'name' => 'Dragon\'s Revelry Starcake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    134 => 
+    array (
+      'id' => 135,
+      'name' => 'Grilled Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    135 => 
+    array (
+      'id' => 136,
+      'name' => 'Poultry Piccata',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    136 => 
+    array (
+      'id' => 137,
+      'name' => 'Strip of Venison Jerky',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    137 => 
+    array (
+      'id' => 138,
+      'name' => 'Sage Stuffed Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    138 => 
+    array (
+      'id' => 139,
+      'name' => 'Dilled Poultry Piccata',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    139 => 
+    array (
+      'id' => 140,
+      'name' => 'Plate of Citrus Poultry with Almonds',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    140 => 
+    array (
+      'id' => 141,
+      'name' => 'Tarragon Stuffed Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    141 => 
+    array (
+      'id' => 142,
+      'name' => 'Dragonfish Candy',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    142 => 
+    array (
+      'id' => 143,
+      'name' => 'Plate of Lemongrass Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    143 => 
+    array (
+      'id' => 144,
+      'name' => 'Rabbit Offering',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    144 => 
+    array (
+      'id' => 145,
+      'name' => 'Slice of Watermelon',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    145 => 
+    array (
+      'id' => 146,
+      'name' => 'Bowl of Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    146 => 
+    array (
+      'id' => 147,
+      'name' => 'Bowl of Bean Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    147 => 
+    array (
+      'id' => 148,
+      'name' => 'Bowl of Avocado Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    148 => 
+    array (
+      'id' => 149,
+      'name' => 'Bowl of Chickpea Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    149 => 
+    array (
+      'id' => 150,
+      'name' => 'Bowl of Mango Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    150 => 
+    array (
+      'id' => 151,
+      'name' => 'Bowl of Fire Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    151 => 
+    array (
+      'id' => 152,
+      'name' => 'Rice Ball',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    152 => 
+    array (
+      'id' => 153,
+      'name' => 'T-Bone Steak',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    153 => 
+    array (
+      'id' => 154,
+      'name' => 'Grilled Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    154 => 
+    array (
+      'id' => 155,
+      'name' => 'Eda\'s Apple Pie',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    155 => 
+    array (
+      'id' => 156,
+      'name' => 'Bowl of Cold Wurm Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    156 => 
+    array (
+      'id' => 157,
+      'name' => 'Spicy Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    157 => 
+    array (
+      'id' => 158,
+      'name' => 'Roasted Meaty Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    158 => 
+    array (
+      'id' => 159,
+      'name' => 'Pepper Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    159 => 
+    array (
+      'id' => 160,
+      'name' => 'Stick of Mystery Meat',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    160 => 
+    array (
+      'id' => 161,
+      'name' => 'Blessing Of Bear',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 41,
+      'pvx' => 6,
+    ),
+    161 => 
+    array (
+      'id' => 162,
+      'name' => 'Filet of Sesame Roasted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    162 => 
+    array (
+      'id' => 163,
+      'name' => 'Griffon Egg Omelet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 47,
+      'pvx' => 6,
+    ),
+    163 => 
+    array (
+      'id' => 164,
+      'name' => 'Plate of Coriander Crusted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    164 => 
+    array (
+      'id' => 165,
+      'name' => 'Plate of Steak and Asparagus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    165 => 
+    array (
+      'id' => 166,
+      'name' => 'Plate of Truffle Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    166 => 
+    array (
+      'id' => 167,
+      'name' => 'Spicy Lime Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    167 => 
+    array (
+      'id' => 168,
+      'name' => 'Plate of Citrus Clove Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    168 => 
+    array (
+      'id' => 169,
+      'name' => 'Spicier Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    169 => 
+    array (
+      'id' => 170,
+      'name' => 'Plate of Fire Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    170 => 
+    array (
+      'id' => 171,
+      'name' => 'Filet of Rosemary Roasted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    171 => 
+    array (
+      'id' => 172,
+      'name' => 'Plate of Roast Meat with Mint Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    172 => 
+    array (
+      'id' => 173,
+      'name' => 'Plate of Roast Meat with Braised Leeks',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    173 => 
+    array (
+      'id' => 174,
+      'name' => 'Plate of Orrian Steak Frittes',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    174 => 
+    array (
+      'id' => 175,
+      'name' => 'Bowl of Marjory\'s Experimental Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    175 => 
+    array (
+      'id' => 176,
+      'name' => 'Grilled Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    176 => 
+    array (
+      'id' => 177,
+      'name' => 'Veggie Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    177 => 
+    array (
+      'id' => 178,
+      'name' => 'Cheese Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    178 => 
+    array (
+      'id' => 179,
+      'name' => 'Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    179 => 
+    array (
+      'id' => 180,
+      'name' => 'Sweet Bean Bun',
+      'type' => 'Food',
+      'rarity' => 'Exotic',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    180 => 
+    array (
+      'id' => 181,
+      'name' => 'Mushroom Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    181 => 
+    array (
+      'id' => 182,
+      'name' => 'Bowl of Fly Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    182 => 
+    array (
+      'id' => 183,
+      'name' => 'Fancy Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    183 => 
+    array (
+      'id' => 184,
+      'name' => 'Super Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    184 => 
+    array (
+      'id' => 185,
+      'name' => 'Koi Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    185 => 
+    array (
+      'id' => 186,
+      'name' => 'Rare Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    186 => 
+    array (
+      'id' => 187,
+      'name' => 'Prickly Pear Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    187 => 
+    array (
+      'id' => 188,
+      'name' => 'Bowl of Cactus Fruit Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    188 => 
+    array (
+      'id' => 189,
+      'name' => 'Grilled Portobello Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    189 => 
+    array (
+      'id' => 190,
+      'name' => 'Bowl of Mushroom Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    190 => 
+    array (
+      'id' => 191,
+      'name' => 'Bowl of Mushroom and Asparagus Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    191 => 
+    array (
+      'id' => 192,
+      'name' => 'Bowl of Truffle Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    192 => 
+    array (
+      'id' => 193,
+      'name' => 'Bowl of Creamy Portobello Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    193 => 
+    array (
+      'id' => 194,
+      'name' => 'Bowl of Fancy Creamy Mushroom Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    194 => 
+    array (
+      'id' => 195,
+      'name' => 'Bowl of Snow Truffle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    195 => 
+    array (
+      'id' => 196,
+      'name' => 'Bowl of Orrian Truffle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    196 => 
+    array (
+      'id' => 197,
+      'name' => 'Spinach Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    197 => 
+    array (
+      'id' => 198,
+      'name' => 'Deluxe Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    198 => 
+    array (
+      'id' => 199,
+      'name' => 'Horseradish Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    199 => 
+    array (
+      'id' => 200,
+      'name' => 'Spicy Cheeseburger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    200 => 
+    array (
+      'id' => 201,
+      'name' => 'Fancy Truffle Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    201 => 
+    array (
+      'id' => 202,
+      'name' => 'Hamburger',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    202 => 
+    array (
+      'id' => 203,
+      'name' => 'Bowl of Meaty Wurm Surprise',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    203 => 
+    array (
+      'id' => 204,
+      'name' => 'Bowl of Green Bean Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    204 => 
+    array (
+      'id' => 205,
+      'name' => 'Bowl of Simple Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    205 => 
+    array (
+      'id' => 206,
+      'name' => 'Cheeseburger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    206 => 
+    array (
+      'id' => 207,
+      'name' => 'White Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    207 => 
+    array (
+      'id' => 208,
+      'name' => 'Bowl of Meat and Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    208 => 
+    array (
+      'id' => 209,
+      'name' => 'Chocolate Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    209 => 
+    array (
+      'id' => 210,
+      'name' => 'Bowl of Chili and Avocado',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    210 => 
+    array (
+      'id' => 211,
+      'name' => 'Bowl of Spiced Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    211 => 
+    array (
+      'id' => 212,
+      'name' => 'Bowl of Spicy Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    212 => 
+    array (
+      'id' => 213,
+      'name' => 'Bowl of Fire Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    213 => 
+    array (
+      'id' => 214,
+      'name' => 'Chocolate Cherry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    214 => 
+    array (
+      'id' => 215,
+      'name' => 'Orange Coconut Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    215 => 
+    array (
+      'id' => 216,
+      'name' => 'Chocolate Raspberry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    216 => 
+    array (
+      'id' => 217,
+      'name' => 'Chocolate Omnomberry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    217 => 
+    array (
+      'id' => 218,
+      'name' => 'Bowl of Vegetable Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    218 => 
+    array (
+      'id' => 219,
+      'name' => 'Bowl of Simple Vegetable Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    219 => 
+    array (
+      'id' => 220,
+      'name' => 'Bowl of Tomato Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    220 => 
+    array (
+      'id' => 221,
+      'name' => 'Bowl of Ice Wurm Bisque',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    221 => 
+    array (
+      'id' => 222,
+      'name' => 'Bowl of Beet and Bean Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    222 => 
+    array (
+      'id' => 223,
+      'name' => 'Bowl of Basic Vegetable Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    223 => 
+    array (
+      'id' => 224,
+      'name' => 'Bowl of Simple Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    224 => 
+    array (
+      'id' => 225,
+      'name' => 'Bowl of Fancy Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    225 => 
+    array (
+      'id' => 226,
+      'name' => 'Bowl of Zucchini Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    226 => 
+    array (
+      'id' => 227,
+      'name' => 'Bowl of Degun Shun Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 46,
+      'pvx' => 6,
+    ),
+    227 => 
+    array (
+      'id' => 228,
+      'name' => 'Bowl of Spiced Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    228 => 
+    array (
+      'id' => 229,
+      'name' => 'Bowl of Spicy Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    229 => 
+    array (
+      'id' => 230,
+      'name' => 'Bowl of Fire Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    230 => 
+    array (
+      'id' => 231,
+      'name' => 'Bowl of Skalefin Soup',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    231 => 
+    array (
+      'id' => 232,
+      'name' => 'Bowl of Tomato Zucchini Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    232 => 
+    array (
+      'id' => 233,
+      'name' => 'Bowl of Cauliflower Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    233 => 
+    array (
+      'id' => 234,
+      'name' => 'Minotaur Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    234 => 
+    array (
+      'id' => 235,
+      'name' => 'Bowl of Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    235 => 
+    array (
+      'id' => 236,
+      'name' => 'Bowl of Curry Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    236 => 
+    array (
+      'id' => 237,
+      'name' => 'Bowl of Yam Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    237 => 
+    array (
+      'id' => 238,
+      'name' => 'Bowl of Pumpkin Bisque',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    238 => 
+    array (
+      'id' => 239,
+      'name' => 'Bowl of Potato and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    239 => 
+    array (
+      'id' => 240,
+      'name' => 'Bowl of Fancy Potato and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    240 => 
+    array (
+      'id' => 241,
+      'name' => 'Bowl of Herbed Vegetable Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    241 => 
+    array (
+      'id' => 242,
+      'name' => 'Bowl of Kale Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    242 => 
+    array (
+      'id' => 243,
+      'name' => 'Bowl of Chickpea Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    243 => 
+    array (
+      'id' => 244,
+      'name' => 'Bowl of Artichoke Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    244 => 
+    array (
+      'id' => 245,
+      'name' => 'Bowl of Curry Pumpkin Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    245 => 
+    array (
+      'id' => 246,
+      'name' => 'Grumble Cake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    246 => 
+    array (
+      'id' => 247,
+      'name' => 'Loaf of Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    247 => 
+    array (
+      'id' => 248,
+      'name' => 'Buttermilk Biscuit',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    248 => 
+    array (
+      'id' => 249,
+      'name' => 'Cinnamon Pinwheel',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    249 => 
+    array (
+      'id' => 250,
+      'name' => 'Bowl of Dolyak Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    250 => 
+    array (
+      'id' => 251,
+      'name' => 'Loaf of Banana Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    251 => 
+    array (
+      'id' => 252,
+      'name' => 'Loaf of Walnut Sticky Bread',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 17,
+      'pvx' => 6,
+    ),
+    252 => 
+    array (
+      'id' => 253,
+      'name' => 'Curry Bun',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    253 => 
+    array (
+      'id' => 254,
+      'name' => 'Loaf of Zucchini Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    254 => 
+    array (
+      'id' => 255,
+      'name' => 'Slice of Pumpkin Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    255 => 
+    array (
+      'id' => 256,
+      'name' => 'Loaf of Raspberry Peach Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    256 => 
+    array (
+      'id' => 257,
+      'name' => 'Loaf of Omnomberry Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    257 => 
+    array (
+      'id' => 258,
+      'name' => 'Passion Fruit Soufflé',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    258 => 
+    array (
+      'id' => 259,
+      'name' => 'Plate of Pasta with Tomato Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    259 => 
+    array (
+      'id' => 260,
+      'name' => 'Meatball',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    260 => 
+    array (
+      'id' => 261,
+      'name' => 'Meatball Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    261 => 
+    array (
+      'id' => 262,
+      'name' => 'Bowl of Grilled Bananas with Passion Fruit Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    262 => 
+    array (
+      'id' => 263,
+      'name' => 'Bowl of Krytan Meatball Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    263 => 
+    array (
+      'id' => 264,
+      'name' => 'Bowl of Pesto Pasta Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    264 => 
+    array (
+      'id' => 265,
+      'name' => 'Bowl of Poultry Tarragon Pasta',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    265 => 
+    array (
+      'id' => 266,
+      'name' => 'Bowl of Truffle Ravioli',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    266 => 
+    array (
+      'id' => 267,
+      'name' => 'Bowl of Salad a la Consortium',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    267 => 
+    array (
+      'id' => 268,
+      'name' => 'Passion Fruit Coconut Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    268 => 
+    array (
+      'id' => 269,
+      'name' => 'Stuffed Artichoke with Tropical Dressing',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    269 => 
+    array (
+      'id' => 270,
+      'name' => 'Bowl of Tropical Mousse',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    270 => 
+    array (
+      'id' => 271,
+      'name' => 'Bowl of Refugee\'s Beet Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    271 => 
+    array (
+      'id' => 272,
+      'name' => 'Blueberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    272 => 
+    array (
+      'id' => 273,
+      'name' => 'Sugar Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    273 => 
+    array (
+      'id' => 274,
+      'name' => 'Apple Passion Fruit Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    274 => 
+    array (
+      'id' => 275,
+      'name' => 'Strawberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    275 => 
+    array (
+      'id' => 276,
+      'name' => 'Bowl of Front Line Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    276 => 
+    array (
+      'id' => 277,
+      'name' => 'Passion Fruit Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    277 => 
+    array (
+      'id' => 278,
+      'name' => 'Delicious Rice Ball',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    278 => 
+    array (
+      'id' => 279,
+      'name' => 'Cherry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    279 => 
+    array (
+      'id' => 280,
+      'name' => 'Blackberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    280 => 
+    array (
+      'id' => 281,
+      'name' => 'Peach Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    281 => 
+    array (
+      'id' => 282,
+      'name' => 'Omnomberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    282 => 
+    array (
+      'id' => 283,
+      'name' => 'Chocolate Chip Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    283 => 
+    array (
+      'id' => 284,
+      'name' => 'Candy Corn Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    284 => 
+    array (
+      'id' => 285,
+      'name' => 'Chocolate Mint Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    285 => 
+    array (
+      'id' => 286,
+      'name' => 'Chocolate Raspberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    286 => 
+    array (
+      'id' => 287,
+      'name' => 'Glazed Chocolate Raspberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    287 => 
+    array (
+      'id' => 288,
+      'name' => 'Spicy Chocolate Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    288 => 
+    array (
+      'id' => 289,
+      'name' => 'Cherry Passion Fruit Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    289 => 
+    array (
+      'id' => 290,
+      'name' => 'Orange Passion Fruit Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    290 => 
+    array (
+      'id' => 291,
+      'name' => 'Raspberry Passion Fruit Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    291 => 
+    array (
+      'id' => 292,
+      'name' => 'Bowl of Tropical Fruit Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    292 => 
+    array (
+      'id' => 293,
+      'name' => 'Bowl of Poultry Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    293 => 
+    array (
+      'id' => 294,
+      'name' => 'Bowl of Poultry Noodle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    294 => 
+    array (
+      'id' => 295,
+      'name' => 'Bowl of Savory Spinach and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    295 => 
+    array (
+      'id' => 296,
+      'name' => 'Bowl of Herbed Poultry Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    296 => 
+    array (
+      'id' => 297,
+      'name' => 'Bowl of Kale and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    297 => 
+    array (
+      'id' => 298,
+      'name' => 'Bowl of Hearty Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    298 => 
+    array (
+      'id' => 299,
+      'name' => 'Bowl of Saffron-scented Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    299 => 
+    array (
+      'id' => 300,
+      'name' => 'Bowl of Chocolate Chip Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    300 => 
+    array (
+      'id' => 301,
+      'name' => 'Bowl of Candy Corn Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    301 => 
+    array (
+      'id' => 302,
+      'name' => 'Bowl of Blueberry Chocolate Chunk Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    302 => 
+    array (
+      'id' => 303,
+      'name' => 'Bowl of Ginger-Lime Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    303 => 
+    array (
+      'id' => 304,
+      'name' => 'Bowl of Mint Chocolate Chip Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    304 => 
+    array (
+      'id' => 305,
+      'name' => 'Bowl of Peach Raspberry Swirl Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    305 => 
+    array (
+      'id' => 306,
+      'name' => 'Kralkachocolate Bar',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    306 => 
+    array (
+      'id' => 307,
+      'name' => 'Bowl of Saffron-Mango Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    307 => 
+    array (
+      'id' => 308,
+      'name' => 'Blueberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    308 => 
+    array (
+      'id' => 309,
+      'name' => 'Strawberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    309 => 
+    array (
+      'id' => 310,
+      'name' => 'Cherry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    310 => 
+    array (
+      'id' => 311,
+      'name' => 'Blackberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    311 => 
+    array (
+      'id' => 312,
+      'name' => 'Mixed Berry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    312 => 
+    array (
+      'id' => 313,
+      'name' => 'Slice of Candied Dragon Roll',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    313 => 
+    array (
+      'id' => 314,
+      'name' => 'Omnomberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    314 => 
+    array (
+      'id' => 315,
+      'name' => 'Omnomberry Ghost',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    315 => 
+    array (
+      'id' => 316,
+      'name' => 'Chili Pepper Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    316 => 
+    array (
+      'id' => 317,
+      'name' => 'Stuffed Pepper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    317 => 
+    array (
+      'id' => 318,
+      'name' => 'Stuffed Zucchini',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    318 => 
+    array (
+      'id' => 319,
+      'name' => 'Bowl of Hummus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    319 => 
+    array (
+      'id' => 320,
+      'name' => 'Roasted Artichoke',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    320 => 
+    array (
+      'id' => 321,
+      'name' => 'Ghost Pepper Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    321 => 
+    array (
+      'id' => 322,
+      'name' => 'Bowl of Sauteed Carrots',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    322 => 
+    array (
+      'id' => 323,
+      'name' => 'Celebratory Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    323 => 
+    array (
+      'id' => 324,
+      'name' => 'Bowl of Ettin Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 13,
+      'pvx' => 6,
+    ),
+    324 => 
+    array (
+      'id' => 325,
+      'name' => 'Bowl of Garlic Spinach Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    325 => 
+    array (
+      'id' => 326,
+      'name' => 'Bowl of Sauteed Zucchini with Nutmeg',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    326 => 
+    array (
+      'id' => 327,
+      'name' => 'Handful of Trail Mix',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    327 => 
+    array (
+      'id' => 328,
+      'name' => 'Bowl of Cauliflower Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    328 => 
+    array (
+      'id' => 329,
+      'name' => 'Bowl of Eggplant Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    329 => 
+    array (
+      'id' => 330,
+      'name' => 'Bowl of Truffle Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    330 => 
+    array (
+      'id' => 331,
+      'name' => 'Bowl of Simple Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    331 => 
+    array (
+      'id' => 332,
+      'name' => 'Bowl of Avocado Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    332 => 
+    array (
+      'id' => 333,
+      'name' => 'Bowl of Eggplant Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    333 => 
+    array (
+      'id' => 334,
+      'name' => 'Bowl of Lotus Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    334 => 
+    array (
+      'id' => 335,
+      'name' => 'Glass of Melon Juice',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    335 => 
+    array (
+      'id' => 336,
+      'name' => 'Bowl of Blueberry Apple Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    336 => 
+    array (
+      'id' => 337,
+      'name' => 'Bowl of Strawberry Apple Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    337 => 
+    array (
+      'id' => 338,
+      'name' => 'Bowl of Cherry Vanilla Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    338 => 
+    array (
+      'id' => 339,
+      'name' => 'Bowl of Blackberry Pear Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    339 => 
+    array (
+      'id' => 340,
+      'name' => 'Raspberry Peach Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    340 => 
+    array (
+      'id' => 341,
+      'name' => 'Mined Edible Root',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 68,
+      'pvx' => 6,
+    ),
+    341 => 
+    array (
+      'id' => 342,
+      'name' => 'Omnomberry Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    342 => 
+    array (
+      'id' => 343,
+      'name' => 'Bowl of Simple Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    343 => 
+    array (
+      'id' => 344,
+      'name' => 'Bowl of Ascalonian Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    344 => 
+    array (
+      'id' => 345,
+      'name' => 'Bowl of Coleslaw',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    345 => 
+    array (
+      'id' => 346,
+      'name' => 'Bowl of Cabbage and Chickpea Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    346 => 
+    array (
+      'id' => 347,
+      'name' => 'Bowl of Asparagus and Sage Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    347 => 
+    array (
+      'id' => 348,
+      'name' => 'Bowl of Seaweed Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    348 => 
+    array (
+      'id' => 349,
+      'name' => 'Experimental Remnant',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    349 => 
+    array (
+      'id' => 350,
+      'name' => 'Marinated Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    350 => 
+    array (
+      'id' => 351,
+      'name' => 'Sage Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    351 => 
+    array (
+      'id' => 352,
+      'name' => 'Triktiki Omelet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    352 => 
+    array (
+      'id' => 353,
+      'name' => 'Divinity Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    353 => 
+    array (
+      'id' => 354,
+      'name' => 'Bowl of Tasty Wurm Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    354 => 
+    array (
+      'id' => 355,
+      'name' => 'Eztlitl Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    355 => 
+    array (
+      'id' => 356,
+      'name' => 'Spicy Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    356 => 
+    array (
+      'id' => 357,
+      'name' => 'Saffron Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    357 => 
+    array (
+      'id' => 358,
+      'name' => 'Steamed Red Dumpling',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    358 => 
+    array (
+      'id' => 359,
+      'name' => 'Moa Haunch',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    359 => 
+    array (
+      'id' => 360,
+      'name' => 'Spicy Meat Kabob',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    360 => 
+    array (
+      'id' => 361,
+      'name' => 'Pepper Steak Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    361 => 
+    array (
+      'id' => 362,
+      'name' => 'Sesame Roasted Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    362 => 
+    array (
+      'id' => 363,
+      'name' => 'Plate of Coriander Crusted Meat Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    363 => 
+    array (
+      'id' => 364,
+      'name' => 'Plate of Steak and Asparagus Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    364 => 
+    array (
+      'id' => 365,
+      'name' => 'Dragon\'s Breath Bun',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    365 => 
+    array (
+      'id' => 366,
+      'name' => 'Plate of Truffle Steak Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    366 => 
+    array (
+      'id' => 367,
+      'name' => 'Bowl of Garlic Kale Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    367 => 
+    array (
+      'id' => 368,
+      'name' => 'Bowl of Sweet and Spicy Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    368 => 
+    array (
+      'id' => 369,
+      'name' => 'Bowl of Zesty Turnip Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    369 => 
+    array (
+      'id' => 370,
+      'name' => 'Carrot Soufflé',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    370 => 
+    array (
+      'id' => 371,
+      'name' => 'Mushroom Loaf',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    371 => 
+    array (
+      'id' => 372,
+      'name' => 'Plate of Frostgorge Clams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    372 => 
+    array (
+      'id' => 373,
+      'name' => 'Plate of Spicy Herbed Chicken',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    373 => 
+    array (
+      'id' => 374,
+      'name' => 'Spicy Marinated Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    374 => 
+    array (
+      'id' => 375,
+      'name' => 'Potion Of Karka Toughness',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    375 => 
+    array (
+      'id' => 376,
+      'name' => 'Bowl of Cactus Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    376 => 
+    array (
+      'id' => 377,
+      'name' => 'Bowl of Black Pepper Cactus Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    377 => 
+    array (
+      'id' => 378,
+      'name' => 'Bowl of Nopalitos Saute',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    378 => 
+    array (
+      'id' => 379,
+      'name' => 'Loaf of Candy Cactus Cornbread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    379 => 
+    array (
+      'id' => 380,
+      'name' => 'Spring Roll',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    380 => 
+    array (
+      'id' => 381,
+      'name' => 'Fried Golden Dumpling',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    381 => 
+    array (
+      'id' => 382,
+      'name' => 'Prickly Pear Stuffed Nopale',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    382 => 
+    array (
+      'id' => 383,
+      'name' => 'Bowl of Prickly Pear Sorbet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    383 => 
+    array (
+      'id' => 384,
+      'name' => 'Bowl of Sweet and Spicy Beans',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    384 => 
+    array (
+      'id' => 385,
+      'name' => 'Plate of Roasted Cactus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
       'pvx' => 6,
     ),
   ),
@@ -7113,7 +10651,7 @@
       'is_profile' => true,
     ),
   ),
-  'revision' => 1443361128,
+  'revision' => 1443370535,
   'specializations' => 
   array (
     0 => 

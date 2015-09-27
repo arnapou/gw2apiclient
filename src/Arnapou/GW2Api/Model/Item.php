@@ -526,6 +526,14 @@ class Item extends AbstractObject {
 
     /**
      * 
+     * @return string
+     */
+    public function getChatLink() {
+        return $this->getSubkey(['chat_link']);
+    }
+
+    /**
+     * 
      * @return Item
      */
     public function getSuffixItem() {
