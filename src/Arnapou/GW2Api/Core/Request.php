@@ -113,7 +113,7 @@ class Request implements RequestInterface {
             $curl->setHeaders($headers);
             $curl->setGet();
 
-            $response        = new CurlResponse($curl);
+            $response        = $curl->execute();
             $responseHeaders = $response->getHeaders();
 
             if ($response->getErrorCode()) {

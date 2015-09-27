@@ -12,7 +12,7 @@
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\External\GW2SkillsLinkBuilder;
+use Arnapou\GW2Api\External\GW2Skills\LinkBuilder;
 use Arnapou\GW2Api\SimpleClient;
 
 /**
@@ -339,8 +339,8 @@ class Character extends AbstractObject {
      * @return string
      */
     public function getGw2SkillsLinkPvp() {
-        $builder = new GW2SkillsLinkBuilder();
-        return $builder->getLink($this, GW2SkillsLinkBuilder::MODE_PVP);
+        $builder = new LinkBuilder();
+        return $builder->getLinkPvp($this);
     }
 
     /**
@@ -348,8 +348,8 @@ class Character extends AbstractObject {
      * @return string
      */
     public function getGw2SkillsLinkPve() {
-        $builder = new GW2SkillsLinkBuilder();
-        return $builder->getLink($this, GW2SkillsLinkBuilder::MODE_PVE);
+        $builder = new LinkBuilder();
+        return $builder->getLinkPve($this);
     }
 
     /**
@@ -357,8 +357,8 @@ class Character extends AbstractObject {
      * @return string
      */
     public function getGw2SkillsLinkWvw() {
-        $builder = new GW2SkillsLinkBuilder();
-        return $builder->getLink($this, GW2SkillsLinkBuilder::MODE_WVW);
+        $builder = new LinkBuilder();
+        return $builder->getLinkWvw($this);
     }
 
     /**

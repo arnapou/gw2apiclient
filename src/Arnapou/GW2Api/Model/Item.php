@@ -110,6 +110,9 @@ class Item extends AbstractObject {
     const SUBTYPE_GIZMO_RENTABLE_CONTRACT_NPC         = 'RentableContractNpc';
     const SUBTYPE_GIZMO_UNLIMITED_CONSMABLE           = 'UnlimitedConsumable';
     const SUBTYPE_TOOL_SALVAGE                        = 'Salvage';
+    const SUBTYPE_TRINKET_AMULET                      = 'Amulet';
+    const SUBTYPE_TRINKET_ACCESSORY                   = 'Accessory';
+    const SUBTYPE_TRINKET_RING                        = 'Ring';
     const SUBTYPE_UPGRADE_COMPONENT_DEFAULT           = 'Default';
     const SUBTYPE_UPGRADE_COMPONENT_GEM               = 'Gem';
     const SUBTYPE_UPGRADE_COMPONENT_RUNE              = 'Rune';
