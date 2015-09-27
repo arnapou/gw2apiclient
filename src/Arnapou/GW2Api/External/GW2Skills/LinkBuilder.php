@@ -375,12 +375,12 @@ class LinkBuilder {
             $lang     = $client->getLang();
             $cache    = $client->getClientV2()->getRequestManager()->getCache();
             $cacheKey = 'gw2skills-link/' . $lang . '/' . $mode . '/' . $character->getName();
-//            if ($cache) {
-//                $url = $cache->get($cacheKey);
-//                if ($url) {
-//                    return $url;
-//                }
-//            }
+            if ($cache) {
+                $url = $cache->get($cacheKey);
+                if ($url) {
+                    return $url;
+                }
+            }
             if ($mode === 'pve') {
                 $build = $character->getBuildPve();
             }
@@ -409,7 +409,6 @@ class LinkBuilder {
                 'inf'  => $this->getInfusions($character, $mode),
                 'bf'   => '0.0', // buffs
             ];
-            print_r($data);
 
             $curl     = new Curl();
             $curl->setUrl('http://api.gw2skills.net/v1/tcode/');
@@ -427,7 +426,6 @@ class LinkBuilder {
             $content = $response->getContent();
             if ($content !== '' && $content[0] === '{') {
                 $result = \Arnapou\GW2Api\json_decode($content);
-                print_r($result);
 
                 if (isset($result['quicklink'], $result['baseurl'])) {
                     $url = preg_replace('!^(https?://).*(gw2skills\.net)!si', '$1' . $lang . '.$2', $result['baseurl']) . $result['quicklink'];
