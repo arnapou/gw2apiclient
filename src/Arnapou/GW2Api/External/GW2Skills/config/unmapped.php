@@ -3,6 +3,60 @@
   array (
     0 => 
     array (
+      'id' => 18,
+      'name' => 'Druid',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 341,
+        1 => 342,
+        2 => 343,
+      ),
+      'major_traits' => 
+      array (
+        0 => 344,
+        1 => 345,
+        2 => 346,
+        3 => 347,
+        4 => 348,
+        5 => 349,
+        6 => 350,
+        7 => 351,
+        8 => 352,
+      ),
+    ),
+    1 => 
+    array (
+      'id' => 42,
+      'name' => 'Scrapper',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 823,
+        1 => 824,
+        2 => 825,
+      ),
+      'major_traits' => 
+      array (
+        0 => 826,
+        1 => 827,
+        2 => 828,
+        3 => 829,
+        4 => 830,
+        5 => 831,
+        6 => 832,
+        7 => 833,
+        8 => 834,
+      ),
+    ),
+    2 => 
+    array (
       'id' => 49,
       'name' => 'Corruption',
       'profession_id' => 9,
@@ -28,7 +82,7 @@
         8 => 971,
       ),
     ),
-    1 => 
+    3 => 
     array (
       'id' => 50,
       'name' => 'Retribution',
@@ -55,7 +109,7 @@
         8 => 983,
       ),
     ),
-    2 => 
+    4 => 
     array (
       'id' => 51,
       'name' => 'Salvation',
@@ -82,7 +136,7 @@
         8 => 995,
       ),
     ),
-    3 => 
+    5 => 
     array (
       'id' => 52,
       'name' => 'Invocation',
@@ -109,7 +163,7 @@
         8 => 1007,
       ),
     ),
-    4 => 
+    6 => 
     array (
       'id' => 53,
       'name' => 'Devastation',
@@ -136,7 +190,7 @@
         8 => 959,
       ),
     ),
-    5 => 
+    7 => 
     array (
       'id' => 54,
       'name' => 'Herald',
@@ -169,9 +223,9 @@
     0 => 
     array (
       'id' => 823,
-      'name' => '',
+      'name' => 'Function Gyro',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => true,
       'major' => false,
       'tier' => 1,
@@ -180,7 +234,7 @@
     1 => 
     array (
       'id' => 341,
-      'name' => '',
+      'name' => 'Celestial Being',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => true,
@@ -257,9 +311,9 @@
     8 => 
     array (
       'id' => 824,
-      'name' => '',
+      'name' => 'Decisive Renown',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => true,
       'major' => false,
       'tier' => 2,
@@ -268,7 +322,7 @@
     9 => 
     array (
       'id' => 342,
-      'name' => '',
+      'name' => 'Live Vicariously',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => true,
@@ -356,9 +410,9 @@
     17 => 
     array (
       'id' => 825,
-      'name' => '',
+      'name' => 'Impact Savant',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => true,
       'major' => false,
       'tier' => 3,
@@ -367,7 +421,7 @@
     18 => 
     array (
       'id' => 343,
-      'name' => '',
+      'name' => 'Natural Mender',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => true,
@@ -444,9 +498,9 @@
     25 => 
     array (
       'id' => 826,
-      'name' => '',
+      'name' => 'Shocking Speed',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 1,
@@ -455,7 +509,7 @@
     26 => 
     array (
       'id' => 344,
-      'name' => '',
+      'name' => 'Druidic Clarity',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -532,9 +586,9 @@
     33 => 
     array (
       'id' => 827,
-      'name' => '',
+      'name' => 'Stabilization Core',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 1,
@@ -543,7 +597,7 @@
     34 => 
     array (
       'id' => 345,
-      'name' => '',
+      'name' => 'Cultivated Synergy',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -620,9 +674,9 @@
     41 => 
     array (
       'id' => 828,
-      'name' => '',
+      'name' => 'Recovery Matrix',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 1,
@@ -631,7 +685,7 @@
     42 => 
     array (
       'id' => 346,
-      'name' => '',
+      'name' => 'Primal Echoes',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -708,9 +762,9 @@
     49 => 
     array (
       'id' => 829,
-      'name' => '',
+      'name' => 'Rapid Regeneration',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 2,
@@ -719,7 +773,7 @@
     50 => 
     array (
       'id' => 347,
-      'name' => '',
+      'name' => 'Celestial Shadow',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -796,9 +850,9 @@
     57 => 
     array (
       'id' => 830,
-      'name' => '',
+      'name' => 'Expert Examination',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 2,
@@ -807,7 +861,7 @@
     58 => 
     array (
       'id' => 348,
-      'name' => '',
+      'name' => 'Verdant Etching',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -895,9 +949,9 @@
     66 => 
     array (
       'id' => 831,
-      'name' => '',
+      'name' => 'Mass Momentum',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 2,
@@ -906,7 +960,7 @@
     67 => 
     array (
       'id' => 349,
-      'name' => '',
+      'name' => 'Natural Stride',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -983,9 +1037,9 @@
     74 => 
     array (
       'id' => 832,
-      'name' => '',
+      'name' => 'Adaptive Armor',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 3,
@@ -994,7 +1048,7 @@
     75 => 
     array (
       'id' => 350,
-      'name' => '',
+      'name' => 'Grace of the Land',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -1071,9 +1125,9 @@
     82 => 
     array (
       'id' => 833,
-      'name' => '',
+      'name' => 'Final Salvo',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 3,
@@ -1082,7 +1136,7 @@
     83 => 
     array (
       'id' => 351,
-      'name' => '',
+      'name' => 'Lingering Light',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -1159,9 +1213,9 @@
     90 => 
     array (
       'id' => 834,
-      'name' => '',
+      'name' => 'Perfectly Weighted',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 3,
@@ -1170,7 +1224,7 @@
     91 => 
     array (
       'id' => 352,
-      'name' => '',
+      'name' => 'Ancient Seeds',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -1287,29 +1341,11 @@
     ),
     3 => 
     array (
-      'id' => 74,
-      'name' => 'Cooked Fish Steak',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    4 => 
-    array (
       'id' => 161,
       'name' => 'Blessing Of Bear',
       'type' => 'Food',
       'rarity' => 'Common',
       'level' => 41,
-      'pvx' => 6,
-    ),
-    5 => 
-    array (
-      'id' => 221,
-      'name' => 'Bowl of Ice Wurm Bisque',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
       'pvx' => 6,
     ),
   ),

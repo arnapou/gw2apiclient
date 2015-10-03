@@ -164,15 +164,15 @@
     14 => 
     array (
       'id' => 15,
-      'name' => 'Ice Drake',
-      'family' => 'Drake',
+      'name' => 'Bristleback',
+      'family' => 'Dinosaur',
       'terrestrial' => true,
-      'aquatic' => true,
+      'aquatic' => false,
     ),
     15 => 
     array (
       'id' => 16,
-      'name' => 'River Drake',
+      'name' => 'Ice Drake',
       'family' => 'Drake',
       'terrestrial' => true,
       'aquatic' => true,
@@ -180,7 +180,7 @@
     16 => 
     array (
       'id' => 17,
-      'name' => 'Reef Drake',
+      'name' => 'River Drake',
       'family' => 'Drake',
       'terrestrial' => true,
       'aquatic' => true,
@@ -188,7 +188,7 @@
     17 => 
     array (
       'id' => 18,
-      'name' => 'Salamander Drake',
+      'name' => 'Reef Drake',
       'family' => 'Drake',
       'terrestrial' => true,
       'aquatic' => true,
@@ -196,7 +196,7 @@
     18 => 
     array (
       'id' => 19,
-      'name' => 'Marsh Drake',
+      'name' => 'Salamander Drake',
       'family' => 'Drake',
       'terrestrial' => true,
       'aquatic' => true,
@@ -204,15 +204,15 @@
     19 => 
     array (
       'id' => 20,
-      'name' => 'Jaguar',
-      'family' => 'Feline',
+      'name' => 'Marsh Drake',
+      'family' => 'Drake',
       'terrestrial' => true,
       'aquatic' => true,
     ),
     20 => 
     array (
       'id' => 21,
-      'name' => 'Jungle Stalker',
+      'name' => 'Jaguar',
       'family' => 'Feline',
       'terrestrial' => true,
       'aquatic' => true,
@@ -220,39 +220,39 @@
     21 => 
     array (
       'id' => 22,
+      'name' => 'Jungle Stalker',
+      'family' => 'Feline',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    22 => 
+    array (
+      'id' => 23,
       'name' => 'Lynx',
       'family' => 'Feline',
       'terrestrial' => true,
       'aquatic' => false,
     ),
-    22 => 
+    23 => 
     array (
-      'id' => 23,
+      'id' => 24,
       'name' => 'Snow Leopard',
       'family' => 'Feline',
       'terrestrial' => true,
       'aquatic' => true,
     ),
-    23 => 
-    array (
-      'id' => 24,
-      'name' => 'Blue Jellyfish',
-      'family' => 'Jellyfish',
-      'terrestrial' => false,
-      'aquatic' => true,
-    ),
     24 => 
     array (
-      'id' => 26,
-      'name' => 'Red Jellyfish',
-      'family' => 'Jellyfish',
-      'terrestrial' => false,
+      'id' => 25,
+      'name' => 'Tiger',
+      'family' => 'Feline',
+      'terrestrial' => true,
       'aquatic' => true,
     ),
     25 => 
     array (
-      'id' => 27,
-      'name' => 'Rainbow Jellyfish',
+      'id' => 26,
+      'name' => 'Blue Jellyfish',
       'family' => 'Jellyfish',
       'terrestrial' => false,
       'aquatic' => true,
@@ -260,23 +260,23 @@
     26 => 
     array (
       'id' => 28,
-      'name' => 'Black Moa',
-      'family' => 'Moa',
-      'terrestrial' => true,
-      'aquatic' => false,
+      'name' => 'Red Jellyfish',
+      'family' => 'Jellyfish',
+      'terrestrial' => false,
+      'aquatic' => true,
     ),
     27 => 
     array (
       'id' => 29,
-      'name' => 'Blue Moa',
-      'family' => 'Moa',
-      'terrestrial' => true,
-      'aquatic' => false,
+      'name' => 'Rainbow Jellyfish',
+      'family' => 'Jellyfish',
+      'terrestrial' => false,
+      'aquatic' => true,
     ),
     28 => 
     array (
       'id' => 30,
-      'name' => 'Pink Moa',
+      'name' => 'Black Moa',
       'family' => 'Moa',
       'terrestrial' => true,
       'aquatic' => false,
@@ -284,7 +284,7 @@
     29 => 
     array (
       'id' => 31,
-      'name' => 'Red Moa',
+      'name' => 'Blue Moa',
       'family' => 'Moa',
       'terrestrial' => true,
       'aquatic' => false,
@@ -292,71 +292,71 @@
     30 => 
     array (
       'id' => 32,
-      'name' => 'White Moa',
+      'name' => 'Pink Moa',
       'family' => 'Moa',
       'terrestrial' => true,
       'aquatic' => false,
     ),
     31 => 
     array (
-      'id' => 34,
-      'name' => 'Boar',
-      'family' => 'Pig',
+      'id' => 33,
+      'name' => 'Red Moa',
+      'family' => 'Moa',
       'terrestrial' => true,
       'aquatic' => false,
     ),
     32 => 
     array (
-      'id' => 35,
-      'name' => 'Pig',
-      'family' => 'Pig',
+      'id' => 34,
+      'name' => 'White Moa',
+      'family' => 'Moa',
       'terrestrial' => true,
       'aquatic' => false,
     ),
     33 => 
     array (
       'id' => 36,
-      'name' => 'Siamoth',
-      'family' => 'Pig',
+      'name' => 'Boar',
+      'family' => 'Porcine',
       'terrestrial' => true,
       'aquatic' => false,
     ),
     34 => 
     array (
       'id' => 37,
-      'name' => 'Warthog',
-      'family' => 'Pig',
+      'name' => 'Pig',
+      'family' => 'Porcine',
       'terrestrial' => true,
       'aquatic' => false,
     ),
     35 => 
     array (
       'id' => 38,
-      'name' => 'Shark',
-      'family' => 'Shark',
-      'terrestrial' => false,
-      'aquatic' => true,
+      'name' => 'Siamoth',
+      'family' => 'Porcine',
+      'terrestrial' => true,
+      'aquatic' => false,
     ),
     36 => 
     array (
       'id' => 39,
-      'name' => 'Black Widow Spider',
-      'family' => 'Spider',
+      'name' => 'Warthog',
+      'family' => 'Porcine',
       'terrestrial' => true,
       'aquatic' => false,
     ),
     37 => 
     array (
       'id' => 40,
-      'name' => 'Cave Spider',
-      'family' => 'Spider',
-      'terrestrial' => true,
-      'aquatic' => false,
+      'name' => 'Shark',
+      'family' => 'Shark',
+      'terrestrial' => false,
+      'aquatic' => true,
     ),
     38 => 
     array (
       'id' => 41,
-      'name' => 'Forest Spider',
+      'name' => 'Black Widow Spider',
       'family' => 'Spider',
       'terrestrial' => true,
       'aquatic' => false,
@@ -364,7 +364,7 @@
     39 => 
     array (
       'id' => 42,
-      'name' => 'Jungle Spider',
+      'name' => 'Cave Spider',
       'family' => 'Spider',
       'terrestrial' => true,
       'aquatic' => false,
@@ -372,23 +372,23 @@
     40 => 
     array (
       'id' => 43,
-      'name' => 'Arctodus',
-      'family' => 'Ursine',
+      'name' => 'Forest Spider',
+      'family' => 'Spider',
       'terrestrial' => true,
-      'aquatic' => true,
+      'aquatic' => false,
     ),
     41 => 
     array (
       'id' => 44,
-      'name' => 'Black Bear',
-      'family' => 'Ursine',
+      'name' => 'Jungle Spider',
+      'family' => 'Spider',
       'terrestrial' => true,
-      'aquatic' => true,
+      'aquatic' => false,
     ),
     42 => 
     array (
       'id' => 45,
-      'name' => 'Brown Bear',
+      'name' => 'Arctodus',
       'family' => 'Ursine',
       'terrestrial' => true,
       'aquatic' => true,
@@ -396,7 +396,7 @@
     43 => 
     array (
       'id' => 46,
-      'name' => 'Murrelow',
+      'name' => 'Black Bear',
       'family' => 'Ursine',
       'terrestrial' => true,
       'aquatic' => true,
@@ -404,10 +404,42 @@
     44 => 
     array (
       'id' => 47,
+      'name' => 'Brown Bear',
+      'family' => 'Ursine',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    45 => 
+    array (
+      'id' => 48,
+      'name' => 'Murrelow',
+      'family' => 'Ursine',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    46 => 
+    array (
+      'id' => 49,
       'name' => 'Polar Bear',
       'family' => 'Ursine',
       'terrestrial' => true,
       'aquatic' => true,
+    ),
+    47 => 
+    array (
+      'id' => 50,
+      'name' => 'Electric Wyvern',
+      'family' => 'Wyvern',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    48 => 
+    array (
+      'id' => 51,
+      'name' => 'Fire Wyvern',
+      'family' => 'Wyvern',
+      'terrestrial' => true,
+      'aquatic' => false,
     ),
   ),
   'skills' => 
@@ -1368,7 +1400,7 @@
     ),
     68 => 
     array (
-      'id' => 417,
+      'id' => 428,
       'name' => 'Troll Unguent',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1382,7 +1414,7 @@
     ),
     69 => 
     array (
-      'id' => 418,
+      'id' => 429,
       'name' => 'Water Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1396,7 +1428,21 @@
     ),
     70 => 
     array (
-      'id' => 420,
+      'id' => 431,
+      'name' => 'Glyph of Rejuvenation',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 18,
+      'specialization' => 'Druid',
+      'group' => 'Healing skills',
+      'type' => 'Glyph',
+      'pvx' => 7,
+    ),
+    71 => 
+    array (
+      'id' => 433,
       'name' => 'Healing Spring',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1408,10 +1454,10 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    71 => 
+    72 => 
     array (
-      'id' => 421,
-      'name' => '"We Heal as One!"',
+      'id' => 434,
+      'name' => '"We heal as one!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -1422,24 +1468,10 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    72 => 
-    array (
-      'id' => 422,
-      'name' => 'Storm Spirit',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Spirit',
-      'pvx' => 7,
-    ),
     73 => 
     array (
-      'id' => 424,
-      'name' => 'Frost Spirit',
+      'id' => 435,
+      'name' => 'Storm Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -1452,8 +1484,8 @@
     ),
     74 => 
     array (
-      'id' => 426,
-      'name' => 'Stone Spirit',
+      'id' => 437,
+      'name' => 'Frost Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -1466,8 +1498,8 @@
     ),
     75 => 
     array (
-      'id' => 428,
-      'name' => 'Sun Spirit',
+      'id' => 439,
+      'name' => 'Stone Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -1480,7 +1512,77 @@
     ),
     76 => 
     array (
-      'id' => 430,
+      'id' => 441,
+      'name' => 'Sun Spirit',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Spirit',
+      'pvx' => 7,
+    ),
+    77 => 
+    array (
+      'id' => 443,
+      'name' => 'Glyph of Alignment',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 18,
+      'specialization' => 'Druid',
+      'group' => 'Utility skills',
+      'type' => 'Glyph',
+      'pvx' => 7,
+    ),
+    78 => 
+    array (
+      'id' => 445,
+      'name' => 'Glyph of Equality',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 18,
+      'specialization' => 'Druid',
+      'group' => 'Utility skills',
+      'type' => 'Glyph',
+      'pvx' => 7,
+    ),
+    79 => 
+    array (
+      'id' => 447,
+      'name' => 'Glyph of the Tides',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 18,
+      'specialization' => 'Druid',
+      'group' => 'Utility skills',
+      'type' => 'Glyph',
+      'pvx' => 7,
+    ),
+    80 => 
+    array (
+      'id' => 449,
+      'name' => 'Glyph of Empowerment',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 18,
+      'specialization' => 'Druid',
+      'group' => 'Utility skills',
+      'type' => 'Glyph',
+      'pvx' => 7,
+    ),
+    81 => 
+    array (
+      'id' => 451,
       'name' => 'Viper\'s Nest',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1492,9 +1594,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    77 => 
+    82 => 
     array (
-      'id' => 431,
+      'id' => 452,
       'name' => 'Spike Trap',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1506,9 +1608,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    78 => 
+    83 => 
     array (
-      'id' => 432,
+      'id' => 453,
       'name' => 'Flame Trap',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1520,9 +1622,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    79 => 
+    84 => 
     array (
-      'id' => 433,
+      'id' => 454,
       'name' => 'Frost Trap',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1534,9 +1636,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    80 => 
+    85 => 
     array (
-      'id' => 434,
+      'id' => 455,
       'name' => 'Signet of Renewal',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1548,9 +1650,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    81 => 
+    86 => 
     array (
-      'id' => 435,
+      'id' => 456,
       'name' => 'Signet of the Hunt',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1562,9 +1664,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    82 => 
+    87 => 
     array (
-      'id' => 436,
+      'id' => 457,
       'name' => 'Signet of Stone',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1576,9 +1678,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    83 => 
+    88 => 
     array (
-      'id' => 437,
+      'id' => 458,
       'name' => 'Signet of the Wild',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1590,9 +1692,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    84 => 
+    89 => 
     array (
-      'id' => 438,
+      'id' => 459,
       'name' => 'Muddy Terrain',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1604,9 +1706,9 @@
       'type' => 'Survival',
       'pvx' => 7,
     ),
-    85 => 
+    90 => 
     array (
-      'id' => 439,
+      'id' => 460,
       'name' => 'Quickening Zephyr',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1618,9 +1720,9 @@
       'type' => 'Survival',
       'pvx' => 7,
     ),
-    86 => 
+    91 => 
     array (
-      'id' => 440,
+      'id' => 461,
       'name' => 'Lightning Reflexes',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1632,9 +1734,9 @@
       'type' => 'Survival',
       'pvx' => 7,
     ),
-    87 => 
+    92 => 
     array (
-      'id' => 441,
+      'id' => 462,
       'name' => 'Sharpening Stone',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1646,9 +1748,9 @@
       'type' => 'Survival',
       'pvx' => 7,
     ),
-    88 => 
+    93 => 
     array (
-      'id' => 442,
+      'id' => 463,
       'name' => '"Sick \'Em!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1660,9 +1762,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    89 => 
+    94 => 
     array (
-      'id' => 443,
+      'id' => 464,
       'name' => '"Protect Me!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1674,9 +1776,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    90 => 
+    95 => 
     array (
-      'id' => 444,
+      'id' => 465,
       'name' => '"Guard!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1688,9 +1790,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    91 => 
+    96 => 
     array (
-      'id' => 445,
+      'id' => 466,
       'name' => '"Search and Rescue!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1702,9 +1804,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    92 => 
+    97 => 
     array (
-      'id' => 446,
+      'id' => 467,
       'name' => 'Spirit of Nature',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1716,9 +1818,23 @@
       'type' => 'Spirit',
       'pvx' => 7,
     ),
-    93 => 
+    98 => 
     array (
-      'id' => 448,
+      'id' => 469,
+      'name' => 'Glyph of Unity',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 18,
+      'specialization' => 'Druid',
+      'group' => 'Elite skills',
+      'type' => 'Glyph',
+      'pvx' => 7,
+    ),
+    99 => 
+    array (
+      'id' => 471,
       'name' => 'Entangle',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1730,9 +1846,9 @@
       'type' => 'Survival',
       'pvx' => 7,
     ),
-    94 => 
+    100 => 
     array (
-      'id' => 449,
+      'id' => 472,
       'name' => '"Strength of the pack!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -1744,9 +1860,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    95 => 
+    101 => 
     array (
-      'id' => 526,
+      'id' => 549,
       'name' => 'Summon Blood Fiend',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1758,9 +1874,9 @@
       'type' => 'Minion',
       'pvx' => 7,
     ),
-    96 => 
+    102 => 
     array (
-      'id' => 528,
+      'id' => 551,
       'name' => '"Your soul is mine!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1772,9 +1888,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    97 => 
+    103 => 
     array (
-      'id' => 529,
+      'id' => 552,
       'name' => 'Signet of Vampirism',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1786,9 +1902,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    98 => 
+    104 => 
     array (
-      'id' => 530,
+      'id' => 553,
       'name' => 'Consume Conditions',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1800,9 +1916,9 @@
       'type' => 'Corruption',
       'pvx' => 7,
     ),
-    99 => 
+    105 => 
     array (
-      'id' => 531,
+      'id' => 554,
       'name' => 'Well of Blood',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1814,9 +1930,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    100 => 
+    106 => 
     array (
-      'id' => 532,
+      'id' => 555,
       'name' => 'Well of Suffering',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1828,9 +1944,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    101 => 
+    107 => 
     array (
-      'id' => 533,
+      'id' => 556,
       'name' => 'Well of Corruption',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1842,9 +1958,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    102 => 
+    108 => 
     array (
-      'id' => 534,
+      'id' => 557,
       'name' => 'Well of Power',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1856,9 +1972,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    103 => 
+    109 => 
     array (
-      'id' => 535,
+      'id' => 558,
       'name' => 'Well of Darkness',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1870,9 +1986,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    104 => 
+    110 => 
     array (
-      'id' => 536,
+      'id' => 559,
       'name' => '"Nothing can save you!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1884,9 +2000,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    105 => 
+    111 => 
     array (
-      'id' => 537,
+      'id' => 560,
       'name' => '"Rise!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1898,9 +2014,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    106 => 
+    112 => 
     array (
-      'id' => 538,
+      'id' => 561,
       'name' => '"Suffer!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1912,9 +2028,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    107 => 
+    113 => 
     array (
-      'id' => 539,
+      'id' => 562,
       'name' => '"You are all weaklings!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1926,9 +2042,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    108 => 
+    114 => 
     array (
-      'id' => 540,
+      'id' => 563,
       'name' => 'Summon Bone Minions',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1940,9 +2056,9 @@
       'type' => 'Minion',
       'pvx' => 7,
     ),
-    109 => 
+    115 => 
     array (
-      'id' => 542,
+      'id' => 565,
       'name' => 'Summon Bone Fiend',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1954,9 +2070,9 @@
       'type' => 'Minion',
       'pvx' => 7,
     ),
-    110 => 
+    116 => 
     array (
-      'id' => 544,
+      'id' => 567,
       'name' => 'Summon Shadow Fiend',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1968,9 +2084,9 @@
       'type' => 'Minion',
       'pvx' => 7,
     ),
-    111 => 
+    117 => 
     array (
-      'id' => 546,
+      'id' => 569,
       'name' => 'Summon Flesh Wurm',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1982,9 +2098,9 @@
       'type' => 'Minion',
       'pvx' => 7,
     ),
-    112 => 
+    118 => 
     array (
-      'id' => 548,
+      'id' => 571,
       'name' => 'Signet of Spite',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -1996,9 +2112,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    113 => 
+    119 => 
     array (
-      'id' => 549,
+      'id' => 572,
       'name' => 'Signet of the Locust',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2010,9 +2126,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    114 => 
+    120 => 
     array (
-      'id' => 550,
+      'id' => 573,
       'name' => 'Plague Signet',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2024,9 +2140,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    115 => 
+    121 => 
     array (
-      'id' => 551,
+      'id' => 574,
       'name' => 'Signet of Undeath',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2038,9 +2154,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    116 => 
+    122 => 
     array (
-      'id' => 552,
+      'id' => 575,
       'name' => 'Spectral Grasp',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2052,9 +2168,9 @@
       'type' => 'Spectral',
       'pvx' => 7,
     ),
-    117 => 
+    123 => 
     array (
-      'id' => 553,
+      'id' => 576,
       'name' => 'Spectral Armor',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2066,9 +2182,9 @@
       'type' => 'Spectral',
       'pvx' => 7,
     ),
-    118 => 
+    124 => 
     array (
-      'id' => 554,
+      'id' => 577,
       'name' => 'Spectral Wall',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2080,9 +2196,9 @@
       'type' => 'Spectral',
       'pvx' => 7,
     ),
-    119 => 
+    125 => 
     array (
-      'id' => 555,
+      'id' => 578,
       'name' => 'Spectral Walk',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2094,9 +2210,9 @@
       'type' => 'Spectral',
       'pvx' => 7,
     ),
-    120 => 
+    126 => 
     array (
-      'id' => 557,
+      'id' => 580,
       'name' => 'Corrosive Poison Cloud',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2108,9 +2224,9 @@
       'type' => 'Corruption',
       'pvx' => 7,
     ),
-    121 => 
+    127 => 
     array (
-      'id' => 558,
+      'id' => 581,
       'name' => 'Blood is Power',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2122,9 +2238,9 @@
       'type' => 'Corruption',
       'pvx' => 7,
     ),
-    122 => 
+    128 => 
     array (
-      'id' => 559,
+      'id' => 582,
       'name' => 'Epidemic',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2136,9 +2252,9 @@
       'type' => 'Corruption',
       'pvx' => 7,
     ),
-    123 => 
+    129 => 
     array (
-      'id' => 560,
+      'id' => 583,
       'name' => 'Corrupt Boon',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2150,9 +2266,9 @@
       'type' => 'Corruption',
       'pvx' => 7,
     ),
-    124 => 
+    130 => 
     array (
-      'id' => 561,
+      'id' => 584,
       'name' => 'Summon Flesh Golem',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2164,9 +2280,9 @@
       'type' => 'Minion',
       'pvx' => 7,
     ),
-    125 => 
+    131 => 
     array (
-      'id' => 563,
+      'id' => 586,
       'name' => 'Plague',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2178,9 +2294,9 @@
       'type' => 'Corruption',
       'pvx' => 7,
     ),
-    126 => 
+    132 => 
     array (
-      'id' => 567,
+      'id' => 590,
       'name' => '"Chilled to the bone!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2192,9 +2308,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    127 => 
+    133 => 
     array (
-      'id' => 568,
+      'id' => 591,
       'name' => 'Lich Form',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -2206,9 +2322,9 @@
       'type' => 'Spectral',
       'pvx' => 7,
     ),
-    128 => 
+    134 => 
     array (
-      'id' => 644,
+      'id' => 667,
       'name' => 'Shelter',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2220,9 +2336,9 @@
       'type' => '',
       'pvx' => 7,
     ),
-    129 => 
+    135 => 
     array (
-      'id' => 645,
+      'id' => 668,
       'name' => 'Signet of Resolve',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2234,9 +2350,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    130 => 
+    136 => 
     array (
-      'id' => 646,
+      'id' => 669,
       'name' => 'Purification',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2248,9 +2364,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    131 => 
+    137 => 
     array (
-      'id' => 647,
+      'id' => 670,
       'name' => 'Litany of Wrath',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2262,9 +2378,9 @@
       'type' => 'Meditation',
       'pvx' => 7,
     ),
-    132 => 
+    138 => 
     array (
-      'id' => 648,
+      'id' => 671,
       'name' => '"Receive the Light!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2276,9 +2392,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    133 => 
+    139 => 
     array (
-      'id' => 649,
+      'id' => 672,
       'name' => 'Hammer of Wisdom',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2290,9 +2406,9 @@
       'type' => 'Spirit Weapon',
       'pvx' => 7,
     ),
-    134 => 
+    140 => 
     array (
-      'id' => 651,
+      'id' => 674,
       'name' => 'Sword of Justice',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2304,9 +2420,9 @@
       'type' => 'Spirit Weapon',
       'pvx' => 7,
     ),
-    135 => 
+    141 => 
     array (
-      'id' => 653,
+      'id' => 676,
       'name' => 'Bow of Truth',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2318,9 +2434,9 @@
       'type' => 'Spirit Weapon',
       'pvx' => 7,
     ),
-    136 => 
+    142 => 
     array (
-      'id' => 655,
+      'id' => 678,
       'name' => 'Shield of the Avenger',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2332,9 +2448,9 @@
       'type' => 'Spirit Weapon',
       'pvx' => 7,
     ),
-    137 => 
+    143 => 
     array (
-      'id' => 657,
+      'id' => 680,
       'name' => 'Fragments of Faith',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2346,9 +2462,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    138 => 
+    144 => 
     array (
-      'id' => 659,
+      'id' => 682,
       'name' => 'Light\'s Judgement',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2360,9 +2476,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    139 => 
+    145 => 
     array (
-      'id' => 660,
+      'id' => 683,
       'name' => 'Test of Faith',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2374,9 +2490,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    140 => 
+    146 => 
     array (
-      'id' => 661,
+      'id' => 684,
       'name' => 'Procession of Blades',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2388,9 +2504,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    141 => 
+    147 => 
     array (
-      'id' => 662,
+      'id' => 685,
       'name' => 'Bane Signet',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2402,9 +2518,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    142 => 
+    148 => 
     array (
-      'id' => 663,
+      'id' => 686,
       'name' => 'Signet of Judgment',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2416,9 +2532,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    143 => 
+    149 => 
     array (
-      'id' => 664,
+      'id' => 687,
       'name' => 'Signet of Wrath',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2430,9 +2546,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    144 => 
+    150 => 
     array (
-      'id' => 665,
+      'id' => 688,
       'name' => 'Signet of Mercy',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2444,9 +2560,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    145 => 
+    151 => 
     array (
-      'id' => 666,
+      'id' => 689,
       'name' => '"Retreat!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2458,9 +2574,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    146 => 
+    152 => 
     array (
-      'id' => 667,
+      'id' => 690,
       'name' => '"Stand Your Ground!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2472,9 +2588,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    147 => 
+    153 => 
     array (
-      'id' => 668,
+      'id' => 691,
       'name' => '"Save Yourselves!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2486,9 +2602,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    148 => 
+    154 => 
     array (
-      'id' => 669,
+      'id' => 692,
       'name' => '"Hold the Line!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2500,9 +2616,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    149 => 
+    155 => 
     array (
-      'id' => 670,
+      'id' => 693,
       'name' => 'Wall of Reflection',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2514,94 +2630,10 @@
       'type' => 'Consecration',
       'pvx' => 7,
     ),
-    150 => 
-    array (
-      'id' => 671,
-      'name' => 'Hallowed Ground',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Consecration',
-      'pvx' => 7,
-    ),
-    151 => 
-    array (
-      'id' => 672,
-      'name' => 'Purging Flames',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Consecration',
-      'pvx' => 7,
-    ),
-    152 => 
-    array (
-      'id' => 673,
-      'name' => 'Smite Condition',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Meditation',
-      'pvx' => 7,
-    ),
-    153 => 
-    array (
-      'id' => 674,
-      'name' => 'Contemplation of Purity',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Meditation',
-      'pvx' => 7,
-    ),
-    154 => 
-    array (
-      'id' => 675,
-      'name' => 'Judge\'s Intervention',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Meditation',
-      'pvx' => 7,
-    ),
-    155 => 
-    array (
-      'id' => 676,
-      'name' => 'Merciful Intervention',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Meditation',
-      'pvx' => 7,
-    ),
     156 => 
     array (
-      'id' => 677,
-      'name' => 'Sanctuary',
+      'id' => 694,
+      'name' => 'Hallowed Ground',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -2614,7 +2646,91 @@
     ),
     157 => 
     array (
-      'id' => 678,
+      'id' => 695,
+      'name' => 'Purging Flames',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Consecration',
+      'pvx' => 7,
+    ),
+    158 => 
+    array (
+      'id' => 696,
+      'name' => 'Smite Condition',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Meditation',
+      'pvx' => 7,
+    ),
+    159 => 
+    array (
+      'id' => 697,
+      'name' => 'Contemplation of Purity',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Meditation',
+      'pvx' => 7,
+    ),
+    160 => 
+    array (
+      'id' => 698,
+      'name' => 'Judge\'s Intervention',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Meditation',
+      'pvx' => 7,
+    ),
+    161 => 
+    array (
+      'id' => 699,
+      'name' => 'Merciful Intervention',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Meditation',
+      'pvx' => 7,
+    ),
+    162 => 
+    array (
+      'id' => 700,
+      'name' => 'Sanctuary',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Consecration',
+      'pvx' => 7,
+    ),
+    163 => 
+    array (
+      'id' => 701,
       'name' => 'Renewed Focus',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2626,9 +2742,9 @@
       'type' => 'Meditation',
       'pvx' => 7,
     ),
-    158 => 
+    164 => 
     array (
-      'id' => 679,
+      'id' => 702,
       'name' => '"Feel My Wrath!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2640,9 +2756,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    159 => 
+    165 => 
     array (
-      'id' => 680,
+      'id' => 703,
       'name' => 'Dragon\'s Maw',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2654,9 +2770,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    160 => 
+    166 => 
     array (
-      'id' => 687,
+      'id' => 710,
       'name' => 'Signet of Courage',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -2668,9 +2784,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    161 => 
+    167 => 
     array (
-      'id' => 770,
+      'id' => 793,
       'name' => 'Hide in Shadows',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2682,9 +2798,9 @@
       'type' => 'Deception',
       'pvx' => 7,
     ),
-    162 => 
+    168 => 
     array (
-      'id' => 771,
+      'id' => 794,
       'name' => 'Skelk Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2696,9 +2812,9 @@
       'type' => 'Venom',
       'pvx' => 7,
     ),
-    163 => 
+    169 => 
     array (
-      'id' => 772,
+      'id' => 795,
       'name' => 'Withdraw',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2710,9 +2826,9 @@
       'type' => 'Trick',
       'pvx' => 7,
     ),
-    164 => 
+    170 => 
     array (
-      'id' => 773,
+      'id' => 796,
       'name' => 'Channeled Vigor',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2724,9 +2840,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    165 => 
+    171 => 
     array (
-      'id' => 774,
+      'id' => 797,
       'name' => 'Signet of Malice',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2738,9 +2854,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    166 => 
+    172 => 
     array (
-      'id' => 775,
+      'id' => 798,
       'name' => 'Spider Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2752,9 +2868,9 @@
       'type' => 'Venom',
       'pvx' => 7,
     ),
-    167 => 
+    173 => 
     array (
-      'id' => 776,
+      'id' => 799,
       'name' => 'Skale Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2766,9 +2882,9 @@
       'type' => 'Venom',
       'pvx' => 7,
     ),
-    168 => 
+    174 => 
     array (
-      'id' => 777,
+      'id' => 800,
       'name' => 'Ice Drake Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2780,9 +2896,9 @@
       'type' => 'Venom',
       'pvx' => 7,
     ),
-    169 => 
+    175 => 
     array (
-      'id' => 778,
+      'id' => 801,
       'name' => 'Devourer Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2794,9 +2910,9 @@
       'type' => 'Venom',
       'pvx' => 7,
     ),
-    170 => 
+    176 => 
     array (
-      'id' => 779,
+      'id' => 802,
       'name' => 'Bandit\'s Defense',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2808,9 +2924,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    171 => 
+    177 => 
     array (
-      'id' => 781,
+      'id' => 804,
       'name' => 'Distracting Daggers',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2822,9 +2938,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    172 => 
+    178 => 
     array (
-      'id' => 783,
+      'id' => 806,
       'name' => 'Fist Flurry',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2836,9 +2952,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    173 => 
+    179 => 
     array (
-      'id' => 785,
+      'id' => 808,
       'name' => 'Impairing Daggers',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2850,9 +2966,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    174 => 
+    180 => 
     array (
-      'id' => 786,
+      'id' => 809,
       'name' => 'Tripwire',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2864,9 +2980,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    175 => 
+    181 => 
     array (
-      'id' => 787,
+      'id' => 810,
       'name' => 'Needle Trap',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2878,9 +2994,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    176 => 
+    182 => 
     array (
-      'id' => 788,
+      'id' => 811,
       'name' => 'Ambush',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2892,9 +3008,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    177 => 
+    183 => 
     array (
-      'id' => 789,
+      'id' => 812,
       'name' => 'Shadow Trap',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2906,9 +3022,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    178 => 
+    184 => 
     array (
-      'id' => 791,
+      'id' => 814,
       'name' => 'Signet of Agility',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2920,9 +3036,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    179 => 
+    185 => 
     array (
-      'id' => 792,
+      'id' => 815,
       'name' => 'Assassin\'s Signet',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2934,9 +3050,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    180 => 
+    186 => 
     array (
-      'id' => 793,
+      'id' => 816,
       'name' => 'Infiltrator\'s Signet',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2948,9 +3064,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    181 => 
+    187 => 
     array (
-      'id' => 794,
+      'id' => 817,
       'name' => 'Signet of Shadows',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -2962,94 +3078,10 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    182 => 
-    array (
-      'id' => 795,
-      'name' => 'Shadowstep',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Deception',
-      'pvx' => 7,
-    ),
-    183 => 
-    array (
-      'id' => 797,
-      'name' => 'Scorpion Wire',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Trick',
-      'pvx' => 7,
-    ),
-    184 => 
-    array (
-      'id' => 798,
-      'name' => 'Roll for Initiative',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Trick',
-      'pvx' => 7,
-    ),
-    185 => 
-    array (
-      'id' => 799,
-      'name' => 'Haste',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Trick',
-      'pvx' => 7,
-    ),
-    186 => 
-    array (
-      'id' => 800,
-      'name' => 'Caltrops',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Trick',
-      'pvx' => 7,
-    ),
-    187 => 
-    array (
-      'id' => 801,
-      'name' => 'Smoke Screen',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Deception',
-      'pvx' => 7,
-    ),
     188 => 
     array (
-      'id' => 802,
-      'name' => 'Shadow Refuge',
+      'id' => 818,
+      'name' => 'Shadowstep',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -3062,7 +3094,91 @@
     ),
     189 => 
     array (
-      'id' => 803,
+      'id' => 820,
+      'name' => 'Scorpion Wire',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Trick',
+      'pvx' => 7,
+    ),
+    190 => 
+    array (
+      'id' => 821,
+      'name' => 'Roll for Initiative',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Trick',
+      'pvx' => 7,
+    ),
+    191 => 
+    array (
+      'id' => 822,
+      'name' => 'Haste',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Trick',
+      'pvx' => 7,
+    ),
+    192 => 
+    array (
+      'id' => 823,
+      'name' => 'Caltrops',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Trick',
+      'pvx' => 7,
+    ),
+    193 => 
+    array (
+      'id' => 824,
+      'name' => 'Smoke Screen',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Deception',
+      'pvx' => 7,
+    ),
+    194 => 
+    array (
+      'id' => 825,
+      'name' => 'Shadow Refuge',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Deception',
+      'pvx' => 7,
+    ),
+    195 => 
+    array (
+      'id' => 826,
       'name' => 'Blinding Powder',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -3074,9 +3190,9 @@
       'type' => 'Deception',
       'pvx' => 7,
     ),
-    190 => 
+    196 => 
     array (
-      'id' => 804,
+      'id' => 827,
       'name' => 'Thieves Guild',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -3088,9 +3204,9 @@
       'type' => 'Deception',
       'pvx' => 7,
     ),
-    191 => 
+    197 => 
     array (
-      'id' => 805,
+      'id' => 828,
       'name' => 'Dagger Storm',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -3102,9 +3218,9 @@
       'type' => 'Trick',
       'pvx' => 7,
     ),
-    192 => 
+    198 => 
     array (
-      'id' => 806,
+      'id' => 829,
       'name' => 'Impact Strike',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -3116,9 +3232,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    193 => 
+    199 => 
     array (
-      'id' => 809,
+      'id' => 832,
       'name' => 'Basilisk Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -3130,9 +3246,9 @@
       'type' => 'Venom',
       'pvx' => 7,
     ),
-    194 => 
+    200 => 
     array (
-      'id' => 837,
+      'id' => 868,
       'name' => 'Elixir H',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3144,9 +3260,9 @@
       'type' => 'Elixir',
       'pvx' => 7,
     ),
-    195 => 
+    201 => 
     array (
-      'id' => 839,
+      'id' => 870,
       'name' => 'A.E.D.',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3158,9 +3274,9 @@
       'type' => 'Gadget',
       'pvx' => 7,
     ),
-    196 => 
+    202 => 
     array (
-      'id' => 841,
+      'id' => 872,
       'name' => 'Med Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3172,9 +3288,23 @@
       'type' => 'Device Kit',
       'pvx' => 7,
     ),
-    197 => 
+    203 => 
     array (
-      'id' => 848,
+      'id' => 879,
+      'name' => 'Medic Gyro',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 42,
+      'specialization' => 'Scrapper',
+      'group' => 'Healing skills',
+      'type' => 'Gyro',
+      'pvx' => 7,
+    ),
+    204 => 
+    array (
+      'id' => 882,
       'name' => 'Healing Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3186,9 +3316,9 @@
       'type' => 'Turret',
       'pvx' => 7,
     ),
-    198 => 
+    205 => 
     array (
-      'id' => 852,
+      'id' => 886,
       'name' => 'Rifle Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3201,9 +3331,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    199 => 
+    206 => 
     array (
-      'id' => 856,
+      'id' => 890,
       'name' => 'Harpoon Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3216,9 +3346,9 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    200 => 
+    207 => 
     array (
-      'id' => 860,
+      'id' => 894,
       'name' => 'Flame Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3230,9 +3360,9 @@
       'type' => 'Turret',
       'pvx' => 7,
     ),
-    201 => 
+    208 => 
     array (
-      'id' => 864,
+      'id' => 898,
       'name' => 'Net Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3244,9 +3374,9 @@
       'type' => 'Turret',
       'pvx' => 7,
     ),
-    202 => 
+    209 => 
     array (
-      'id' => 868,
+      'id' => 902,
       'name' => 'Thumper Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3258,9 +3388,9 @@
       'type' => 'Turret',
       'pvx' => 7,
     ),
-    203 => 
+    210 => 
     array (
-      'id' => 872,
+      'id' => 906,
       'name' => 'Rocket Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3272,9 +3402,65 @@
       'type' => 'Turret',
       'pvx' => 7,
     ),
-    204 => 
+    211 => 
     array (
-      'id' => 876,
+      'id' => 910,
+      'name' => 'Blast Gyro Tag',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 42,
+      'specialization' => 'Scrapper',
+      'group' => 'Utility skills',
+      'type' => 'Gyro',
+      'pvx' => 7,
+    ),
+    212 => 
+    array (
+      'id' => 913,
+      'name' => 'Bulwark Gyro',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 42,
+      'specialization' => 'Scrapper',
+      'group' => 'Utility skills',
+      'type' => 'Gyro',
+      'pvx' => 7,
+    ),
+    213 => 
+    array (
+      'id' => 916,
+      'name' => 'Purge Gyro',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 42,
+      'specialization' => 'Scrapper',
+      'group' => 'Utility skills',
+      'type' => 'Gyro',
+      'pvx' => 7,
+    ),
+    214 => 
+    array (
+      'id' => 919,
+      'name' => 'Shredder Gyro',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 42,
+      'specialization' => 'Scrapper',
+      'group' => 'Utility skills',
+      'type' => 'Gyro',
+      'pvx' => 7,
+    ),
+    215 => 
+    array (
+      'id' => 922,
       'name' => 'Elixir B',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3286,9 +3472,9 @@
       'type' => 'Elixir',
       'pvx' => 7,
     ),
-    205 => 
+    216 => 
     array (
-      'id' => 878,
+      'id' => 924,
       'name' => 'Elixir U',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3300,9 +3486,9 @@
       'type' => 'Elixir',
       'pvx' => 7,
     ),
-    206 => 
+    217 => 
     array (
-      'id' => 880,
+      'id' => 926,
       'name' => 'Elixir S',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3314,9 +3500,9 @@
       'type' => 'Elixir',
       'pvx' => 7,
     ),
-    207 => 
+    218 => 
     array (
-      'id' => 882,
+      'id' => 928,
       'name' => 'Elixir C',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3328,9 +3514,9 @@
       'type' => 'Elixir',
       'pvx' => 7,
     ),
-    208 => 
+    219 => 
     array (
-      'id' => 884,
+      'id' => 930,
       'name' => 'Elixir R',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3342,9 +3528,9 @@
       'type' => 'Elixir',
       'pvx' => 7,
     ),
-    209 => 
+    220 => 
     array (
-      'id' => 886,
+      'id' => 932,
       'name' => 'Grenade Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3356,9 +3542,9 @@
       'type' => 'Device Kit',
       'pvx' => 7,
     ),
-    210 => 
+    221 => 
     array (
-      'id' => 893,
+      'id' => 939,
       'name' => 'Throw Mine',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3370,9 +3556,9 @@
       'type' => 'Gadget',
       'pvx' => 7,
     ),
-    211 => 
+    222 => 
     array (
-      'id' => 898,
+      'id' => 944,
       'name' => 'Bomb Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3384,9 +3570,9 @@
       'type' => 'Device Kit',
       'pvx' => 7,
     ),
-    212 => 
+    223 => 
     array (
-      'id' => 905,
+      'id' => 951,
       'name' => 'Flamethrower',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3398,9 +3584,9 @@
       'type' => 'Weapon Kit',
       'pvx' => 7,
     ),
-    213 => 
+    224 => 
     array (
-      'id' => 913,
+      'id' => 959,
       'name' => 'Elixir Gun',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3412,9 +3598,9 @@
       'type' => 'Weapon Kit',
       'pvx' => 7,
     ),
-    214 => 
+    225 => 
     array (
-      'id' => 920,
+      'id' => 966,
       'name' => 'Tool Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3426,9 +3612,9 @@
       'type' => 'Weapon Kit',
       'pvx' => 7,
     ),
-    215 => 
+    226 => 
     array (
-      'id' => 929,
+      'id' => 975,
       'name' => 'Utility Goggles',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3440,9 +3626,9 @@
       'type' => 'Gadget',
       'pvx' => 7,
     ),
-    216 => 
+    227 => 
     array (
-      'id' => 931,
+      'id' => 977,
       'name' => 'Rocket Boots',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3454,9 +3640,9 @@
       'type' => 'Gadget',
       'pvx' => 7,
     ),
-    217 => 
+    228 => 
     array (
-      'id' => 933,
+      'id' => 979,
       'name' => 'Personal Battering Ram',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3468,9 +3654,9 @@
       'type' => 'Gadget',
       'pvx' => 7,
     ),
-    218 => 
+    229 => 
     array (
-      'id' => 935,
+      'id' => 981,
       'name' => 'Slick Shoes',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3482,9 +3668,9 @@
       'type' => 'Gadget',
       'pvx' => 7,
     ),
-    219 => 
+    230 => 
     array (
-      'id' => 937,
+      'id' => 983,
       'name' => 'Supply Crate',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3497,9 +3683,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    220 => 
+    231 => 
     array (
-      'id' => 941,
+      'id' => 987,
       'name' => 'Supply Crate',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3512,9 +3698,23 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    221 => 
+    232 => 
     array (
-      'id' => 945,
+      'id' => 991,
+      'name' => 'Sneak Gyro',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => 42,
+      'specialization' => 'Scrapper',
+      'group' => 'Elite skills',
+      'type' => 'Gyro',
+      'pvx' => 7,
+    ),
+    233 => 
+    array (
+      'id' => 994,
       'name' => 'Elite Mortar Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3526,9 +3726,9 @@
       'type' => 'Weapon Kit',
       'pvx' => 7,
     ),
-    222 => 
+    234 => 
     array (
-      'id' => 952,
+      'id' => 1001,
       'name' => 'Elixir X',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3541,9 +3741,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    223 => 
+    235 => 
     array (
-      'id' => 964,
+      'id' => 1013,
       'name' => 'Elixir X',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -3556,9 +3756,9 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    224 => 
+    236 => 
     array (
-      'id' => 1031,
+      'id' => 1080,
       'name' => 'Ether Feast',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3570,9 +3770,9 @@
       'type' => '',
       'pvx' => 7,
     ),
-    225 => 
+    237 => 
     array (
-      'id' => 1032,
+      'id' => 1081,
       'name' => 'Mirror',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3584,9 +3784,9 @@
       'type' => 'Manipulation',
       'pvx' => 7,
     ),
-    226 => 
+    238 => 
     array (
-      'id' => 1033,
+      'id' => 1082,
       'name' => 'Well of Eternity',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3598,9 +3798,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    227 => 
+    239 => 
     array (
-      'id' => 1034,
+      'id' => 1083,
       'name' => 'Signet of the Ether',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3612,9 +3812,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    228 => 
+    240 => 
     array (
-      'id' => 1035,
+      'id' => 1084,
       'name' => 'Mantra of Recovery',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3626,9 +3826,9 @@
       'type' => 'Mantra',
       'pvx' => 7,
     ),
-    229 => 
+    241 => 
     array (
-      'id' => 1037,
+      'id' => 1086,
       'name' => 'Signet of Inspiration',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3640,9 +3840,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    230 => 
+    242 => 
     array (
-      'id' => 1038,
+      'id' => 1087,
       'name' => 'Signet of Domination',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3654,9 +3854,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    231 => 
+    243 => 
     array (
-      'id' => 1039,
+      'id' => 1088,
       'name' => 'Signet of Midnight',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3668,9 +3868,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    232 => 
+    244 => 
     array (
-      'id' => 1040,
+      'id' => 1089,
       'name' => 'Signet of Illusions',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3682,9 +3882,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    233 => 
+    245 => 
     array (
-      'id' => 1041,
+      'id' => 1090,
       'name' => 'Well of Action',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3696,9 +3896,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    234 => 
+    246 => 
     array (
-      'id' => 1042,
+      'id' => 1091,
       'name' => 'Well of Calamity',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3710,9 +3910,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    235 => 
+    247 => 
     array (
-      'id' => 1043,
+      'id' => 1092,
       'name' => 'Well of Precognition',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3724,9 +3924,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    236 => 
+    248 => 
     array (
-      'id' => 1044,
+      'id' => 1093,
       'name' => 'Well of Recall',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3738,9 +3938,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    237 => 
+    249 => 
     array (
-      'id' => 1045,
+      'id' => 1094,
       'name' => 'Mantra of Pain',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3752,9 +3952,9 @@
       'type' => 'Mantra',
       'pvx' => 7,
     ),
-    238 => 
+    250 => 
     array (
-      'id' => 1047,
+      'id' => 1096,
       'name' => 'Mantra of Distraction',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3766,9 +3966,9 @@
       'type' => 'Mantra',
       'pvx' => 7,
     ),
-    239 => 
+    251 => 
     array (
-      'id' => 1049,
+      'id' => 1098,
       'name' => 'Mantra of Resolve',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3780,9 +3980,9 @@
       'type' => 'Mantra',
       'pvx' => 7,
     ),
-    240 => 
+    252 => 
     array (
-      'id' => 1051,
+      'id' => 1100,
       'name' => 'Mantra of Concentration',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3794,9 +3994,9 @@
       'type' => 'Mantra',
       'pvx' => 7,
     ),
-    241 => 
+    253 => 
     array (
-      'id' => 1053,
+      'id' => 1102,
       'name' => 'Blink',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3808,9 +4008,9 @@
       'type' => 'Manipulation',
       'pvx' => 7,
     ),
-    242 => 
+    254 => 
     array (
-      'id' => 1054,
+      'id' => 1103,
       'name' => 'Arcane Thievery',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3822,9 +4022,9 @@
       'type' => 'Manipulation',
       'pvx' => 7,
     ),
-    243 => 
+    255 => 
     array (
-      'id' => 1055,
+      'id' => 1104,
       'name' => 'Illusion of Life',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3836,9 +4036,9 @@
       'type' => 'Manipulation',
       'pvx' => 7,
     ),
-    244 => 
+    256 => 
     array (
-      'id' => 1056,
+      'id' => 1105,
       'name' => 'Mimic',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3850,9 +4050,9 @@
       'type' => 'Manipulation',
       'pvx' => 7,
     ),
-    245 => 
+    257 => 
     array (
-      'id' => 1058,
+      'id' => 1107,
       'name' => 'Phantasmal Disenchanter',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3864,9 +4064,9 @@
       'type' => 'Phantasm',
       'pvx' => 7,
     ),
-    246 => 
+    258 => 
     array (
-      'id' => 1059,
+      'id' => 1108,
       'name' => 'Decoy',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3878,9 +4078,9 @@
       'type' => 'Clone',
       'pvx' => 7,
     ),
-    247 => 
+    259 => 
     array (
-      'id' => 1060,
+      'id' => 1109,
       'name' => 'Phantasmal Defender',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3892,9 +4092,9 @@
       'type' => 'Phantasm',
       'pvx' => 7,
     ),
-    248 => 
+    260 => 
     array (
-      'id' => 1061,
+      'id' => 1110,
       'name' => 'Mirror Images',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3906,9 +4106,9 @@
       'type' => 'Clone',
       'pvx' => 7,
     ),
-    249 => 
+    261 => 
     array (
-      'id' => 1062,
+      'id' => 1111,
       'name' => 'Null Field',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3920,9 +4120,9 @@
       'type' => 'Glamour',
       'pvx' => 7,
     ),
-    250 => 
+    262 => 
     array (
-      'id' => 1063,
+      'id' => 1112,
       'name' => 'Feedback',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3934,9 +4134,9 @@
       'type' => 'Glamour',
       'pvx' => 7,
     ),
-    251 => 
+    263 => 
     array (
-      'id' => 1064,
+      'id' => 1113,
       'name' => 'Portal Entre',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3948,9 +4148,9 @@
       'type' => 'Glamour',
       'pvx' => 7,
     ),
-    252 => 
+    264 => 
     array (
-      'id' => 1066,
+      'id' => 1115,
       'name' => 'Veil',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3962,9 +4162,9 @@
       'type' => 'Glamour',
       'pvx' => 7,
     ),
-    253 => 
+    265 => 
     array (
-      'id' => 1067,
+      'id' => 1116,
       'name' => 'Signet of Humility',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3977,9 +4177,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    254 => 
+    266 => 
     array (
-      'id' => 1068,
+      'id' => 1117,
       'name' => 'Signet of Humility',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -3992,9 +4192,9 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    255 => 
+    267 => 
     array (
-      'id' => 1069,
+      'id' => 1118,
       'name' => 'Gravity Well',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -4006,9 +4206,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    256 => 
+    268 => 
     array (
-      'id' => 1070,
+      'id' => 1119,
       'name' => 'Time Warp',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -4020,9 +4220,9 @@
       'type' => 'Glamour',
       'pvx' => 7,
     ),
-    257 => 
+    269 => 
     array (
-      'id' => 1071,
+      'id' => 1120,
       'name' => 'Mass Invisibility',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -4034,9 +4234,9 @@
       'type' => 'Manipulation',
       'pvx' => 7,
     ),
-    258 => 
+    270 => 
     array (
-      'id' => 1072,
+      'id' => 1121,
       'name' => 'Legendary Dwarf Stance',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4048,9 +4248,9 @@
       'type' => 'Legend',
       'pvx' => 7,
     ),
-    259 => 
+    271 => 
     array (
-      'id' => 1073,
+      'id' => 1122,
       'name' => 'Legendary Demon Stance',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4062,9 +4262,9 @@
       'type' => 'Legend',
       'pvx' => 7,
     ),
-    260 => 
+    272 => 
     array (
-      'id' => 1074,
+      'id' => 1123,
       'name' => 'Legendary Centaur Stance',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4076,9 +4276,9 @@
       'type' => 'Legend',
       'pvx' => 7,
     ),
-    261 => 
+    273 => 
     array (
-      'id' => 1075,
+      'id' => 1124,
       'name' => 'Legendary Assassin Stance',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4090,9 +4290,9 @@
       'type' => 'Legend',
       'pvx' => 7,
     ),
-    262 => 
+    274 => 
     array (
-      'id' => 1076,
+      'id' => 1125,
       'name' => 'Legendary Dragon Stance',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4104,9 +4304,9 @@
       'type' => 'Legend',
       'pvx' => 7,
     ),
-    263 => 
+    275 => 
     array (
-      'id' => 1127,
+      'id' => 1176,
       'name' => 'Soothing Stone',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4118,9 +4318,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    264 => 
+    276 => 
     array (
-      'id' => 1128,
+      'id' => 1177,
       'name' => 'Empowering Misery',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4132,9 +4332,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    265 => 
+    277 => 
     array (
-      'id' => 1129,
+      'id' => 1178,
       'name' => 'Project Tranquility',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4146,9 +4346,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    266 => 
+    278 => 
     array (
-      'id' => 1131,
+      'id' => 1180,
       'name' => 'Facet of Light',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4160,9 +4360,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    267 => 
+    279 => 
     array (
-      'id' => 1133,
+      'id' => 1182,
       'name' => 'Enchanted Daggers',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4174,9 +4374,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    268 => 
+    280 => 
     array (
-      'id' => 1134,
+      'id' => 1183,
       'name' => 'Inspiring Reinforcement',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4188,9 +4388,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    269 => 
+    281 => 
     array (
-      'id' => 1135,
+      'id' => 1184,
       'name' => 'Forced Engagement',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4202,9 +4402,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    270 => 
+    282 => 
     array (
-      'id' => 1136,
+      'id' => 1185,
       'name' => 'Vengeful Hammers',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4216,9 +4416,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    271 => 
+    283 => 
     array (
-      'id' => 1138,
+      'id' => 1187,
       'name' => 'Pain Absorption',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4230,9 +4430,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    272 => 
+    284 => 
     array (
-      'id' => 1139,
+      'id' => 1188,
       'name' => 'Banish Enchantment',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4244,9 +4444,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    273 => 
+    285 => 
     array (
-      'id' => 1140,
+      'id' => 1189,
       'name' => 'Unyielding Anguish',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4258,9 +4458,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    274 => 
+    286 => 
     array (
-      'id' => 1141,
+      'id' => 1190,
       'name' => 'Protective Solace',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4272,9 +4472,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    275 => 
+    287 => 
     array (
-      'id' => 1143,
+      'id' => 1192,
       'name' => 'Natural Harmony',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4286,9 +4486,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    276 => 
+    288 => 
     array (
-      'id' => 1144,
+      'id' => 1193,
       'name' => 'Purifying Essence',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4300,9 +4500,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    277 => 
+    289 => 
     array (
-      'id' => 1145,
+      'id' => 1194,
       'name' => 'Facet of Darkness',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4314,9 +4514,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    278 => 
+    290 => 
     array (
-      'id' => 1147,
+      'id' => 1196,
       'name' => 'Facet of Elements',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4328,9 +4528,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    279 => 
+    291 => 
     array (
-      'id' => 1149,
+      'id' => 1198,
       'name' => 'Facet of Strength',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4342,9 +4542,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    280 => 
+    292 => 
     array (
-      'id' => 1151,
+      'id' => 1200,
       'name' => 'Riposting Shadows',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4356,9 +4556,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    281 => 
+    293 => 
     array (
-      'id' => 1152,
+      'id' => 1201,
       'name' => 'Phase Traversal',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4370,9 +4570,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    282 => 
+    294 => 
     array (
-      'id' => 1153,
+      'id' => 1202,
       'name' => 'Impossible Odds',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4384,9 +4584,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    283 => 
+    295 => 
     array (
-      'id' => 1154,
+      'id' => 1203,
       'name' => 'Rite of the Great Dwarf',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4398,9 +4598,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    284 => 
+    296 => 
     array (
-      'id' => 1155,
+      'id' => 1204,
       'name' => 'Embrace the Darkness',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4412,9 +4612,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    285 => 
+    297 => 
     array (
-      'id' => 1157,
+      'id' => 1206,
       'name' => 'Energy Expulsion',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4426,9 +4626,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    286 => 
+    298 => 
     array (
-      'id' => 1158,
+      'id' => 1207,
       'name' => 'Facet of Chaos',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4440,9 +4640,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    287 => 
+    299 => 
     array (
-      'id' => 1160,
+      'id' => 1209,
       'name' => 'Jade Winds',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -4454,9 +4654,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    288 => 
+    300 => 
     array (
-      'id' => 1161,
+      'id' => 1210,
       'name' => 'Prayer to Dwayna',
       'profession_id' => false,
       'profession' => '',
@@ -4468,9 +4668,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    289 => 
+    301 => 
     array (
-      'id' => 1163,
+      'id' => 1212,
       'name' => 'Prayer to Kormir',
       'profession_id' => false,
       'profession' => '',
@@ -4482,9 +4682,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    290 => 
+    302 => 
     array (
-      'id' => 1165,
+      'id' => 1214,
       'name' => 'Prayer to Lyssa',
       'profession_id' => false,
       'profession' => '',
@@ -4496,9 +4696,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    291 => 
+    303 => 
     array (
-      'id' => 1167,
+      'id' => 1216,
       'name' => 'Reaper of Grenth',
       'profession_id' => false,
       'profession' => '',
@@ -4510,9 +4710,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    292 => 
+    304 => 
     array (
-      'id' => 1168,
+      'id' => 1217,
       'name' => 'Hounds of Balthazar',
       'profession_id' => false,
       'profession' => '',
@@ -4524,9 +4724,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    293 => 
+    305 => 
     array (
-      'id' => 1169,
+      'id' => 1218,
       'name' => 'Avatar of Melandru',
       'profession_id' => false,
       'profession' => '',
@@ -4538,9 +4738,9 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    294 => 
+    306 => 
     array (
-      'id' => 1175,
+      'id' => 1224,
       'name' => 'Shrapnel Mine',
       'profession_id' => false,
       'profession' => '',
@@ -4552,9 +4752,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    295 => 
+    307 => 
     array (
-      'id' => 1177,
+      'id' => 1226,
       'name' => 'Hidden Pistol',
       'profession_id' => false,
       'profession' => '',
@@ -4566,9 +4766,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    296 => 
+    308 => 
     array (
-      'id' => 1179,
+      'id' => 1228,
       'name' => 'Battle Roar',
       'profession_id' => false,
       'profession' => '',
@@ -4580,9 +4780,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    297 => 
+    309 => 
     array (
-      'id' => 1181,
+      'id' => 1230,
       'name' => 'Artillery Barrage',
       'profession_id' => false,
       'profession' => '',
@@ -4594,9 +4794,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    298 => 
+    310 => 
     array (
-      'id' => 1182,
+      'id' => 1231,
       'name' => 'Warband Support',
       'profession_id' => false,
       'profession' => '',
@@ -4608,9 +4808,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    299 => 
+    311 => 
     array (
-      'id' => 1183,
+      'id' => 1232,
       'name' => 'Charrzooka',
       'profession_id' => false,
       'profession' => '',
@@ -4622,9 +4822,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    300 => 
+    312 => 
     array (
-      'id' => 1189,
+      'id' => 1238,
       'name' => 'Pain Inverter',
       'profession_id' => false,
       'profession' => '',
@@ -4636,9 +4836,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    301 => 
+    313 => 
     array (
-      'id' => 1191,
+      'id' => 1240,
       'name' => 'Radiation Field',
       'profession_id' => false,
       'profession' => '',
@@ -4650,9 +4850,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    302 => 
+    314 => 
     array (
-      'id' => 1193,
+      'id' => 1242,
       'name' => 'Technobabble',
       'profession_id' => false,
       'profession' => '',
@@ -4664,9 +4864,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    303 => 
+    315 => 
     array (
-      'id' => 1195,
+      'id' => 1244,
       'name' => 'Summon D-Series Golem',
       'profession_id' => false,
       'profession' => '',
@@ -4678,9 +4878,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    304 => 
+    316 => 
     array (
-      'id' => 1196,
+      'id' => 1245,
       'name' => 'Summon 7-Series Golem',
       'profession_id' => false,
       'profession' => '',
@@ -4692,9 +4892,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    305 => 
+    317 => 
     array (
-      'id' => 1197,
+      'id' => 1246,
       'name' => 'Summon Power Suit',
       'profession_id' => false,
       'profession' => '',
@@ -4706,9 +4906,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    306 => 
+    318 => 
     array (
-      'id' => 1203,
+      'id' => 1252,
       'name' => 'Call Owl',
       'profession_id' => false,
       'profession' => '',
@@ -4720,9 +4920,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    307 => 
+    319 => 
     array (
-      'id' => 1205,
+      'id' => 1254,
       'name' => 'Call Wurm',
       'profession_id' => false,
       'profession' => '',
@@ -4734,9 +4934,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    308 => 
+    320 => 
     array (
-      'id' => 1207,
+      'id' => 1256,
       'name' => 'Become the Bear',
       'profession_id' => false,
       'profession' => '',
@@ -4748,9 +4948,9 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    309 => 
+    321 => 
     array (
-      'id' => 1214,
+      'id' => 1263,
       'name' => 'Become the Snow Leopard',
       'profession_id' => false,
       'profession' => '',
@@ -4762,9 +4962,9 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    310 => 
+    322 => 
     array (
-      'id' => 1220,
+      'id' => 1269,
       'name' => 'Become the Raven',
       'profession_id' => false,
       'profession' => '',
@@ -4776,9 +4976,9 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    311 => 
+    323 => 
     array (
-      'id' => 1227,
+      'id' => 1276,
       'name' => 'Become the Wolf',
       'profession_id' => false,
       'profession' => '',
@@ -4790,9 +4990,9 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    312 => 
+    324 => 
     array (
-      'id' => 1234,
+      'id' => 1283,
       'name' => 'Healing Seed',
       'profession_id' => false,
       'profession' => '',
@@ -4804,9 +5004,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    313 => 
+    325 => 
     array (
-      'id' => 1236,
+      'id' => 1285,
       'name' => 'Grasping Vines',
       'profession_id' => false,
       'profession' => '',
@@ -4818,9 +5018,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    314 => 
+    326 => 
     array (
-      'id' => 1238,
+      'id' => 1287,
       'name' => 'Seed Turret',
       'profession_id' => false,
       'profession' => '',
@@ -4832,9 +5032,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    315 => 
+    327 => 
     array (
-      'id' => 1241,
+      'id' => 1290,
       'name' => 'Take Root',
       'profession_id' => false,
       'profession' => '',
@@ -4846,9 +5046,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    316 => 
+    328 => 
     array (
-      'id' => 1242,
+      'id' => 1291,
       'name' => 'Summon Sylvan Hound',
       'profession_id' => false,
       'profession' => '',
@@ -4860,9 +5060,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    317 => 
+    329 => 
     array (
-      'id' => 1243,
+      'id' => 1292,
       'name' => 'Summon Druid Spirit',
       'profession_id' => false,
       'profession' => '',
@@ -10651,7 +10851,7 @@
       'is_profile' => true,
     ),
   ),
-  'revision' => 1443370535,
+  'revision' => 1443700844,
   'specializations' => 
   array (
     0 => 
@@ -11115,6 +11315,33 @@
     ),
     17 => 
     array (
+      'id' => 18,
+      'name' => 'Druid',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 341,
+        1 => 342,
+        2 => 343,
+      ),
+      'major_traits' => 
+      array (
+        0 => 344,
+        1 => 345,
+        2 => 346,
+        3 => 347,
+        4 => 348,
+        5 => 349,
+        6 => 350,
+        7 => 351,
+        8 => 352,
+      ),
+    ),
+    18 => 
+    array (
       'id' => 19,
       'name' => 'Spite',
       'profession_id' => 4,
@@ -11140,7 +11367,7 @@
         8 => 366,
       ),
     ),
-    18 => 
+    19 => 
     array (
       'id' => 20,
       'name' => 'Curses',
@@ -11167,7 +11394,7 @@
         8 => 390,
       ),
     ),
-    19 => 
+    20 => 
     array (
       'id' => 21,
       'name' => 'Death Magic',
@@ -11194,7 +11421,7 @@
         8 => 401,
       ),
     ),
-    20 => 
+    21 => 
     array (
       'id' => 22,
       'name' => 'Blood Magic',
@@ -11221,7 +11448,7 @@
         8 => 427,
       ),
     ),
-    21 => 
+    22 => 
     array (
       'id' => 23,
       'name' => 'Soul Reaping',
@@ -11248,7 +11475,7 @@
         8 => 439,
       ),
     ),
-    22 => 
+    23 => 
     array (
       'id' => 24,
       'name' => 'Reaper',
@@ -11275,7 +11502,7 @@
         8 => 465,
       ),
     ),
-    23 => 
+    24 => 
     array (
       'id' => 25,
       'name' => 'Zeal',
@@ -11302,7 +11529,7 @@
         8 => 474,
       ),
     ),
-    24 => 
+    25 => 
     array (
       'id' => 26,
       'name' => 'Radiance',
@@ -11329,7 +11556,7 @@
         8 => 489,
       ),
     ),
-    25 => 
+    26 => 
     array (
       'id' => 27,
       'name' => 'Valor',
@@ -11356,7 +11583,7 @@
         8 => 522,
       ),
     ),
-    26 => 
+    27 => 
     array (
       'id' => 28,
       'name' => 'Honor',
@@ -11383,7 +11610,7 @@
         8 => 530,
       ),
     ),
-    27 => 
+    28 => 
     array (
       'id' => 29,
       'name' => 'Virtues',
@@ -11410,7 +11637,7 @@
         8 => 554,
       ),
     ),
-    28 => 
+    29 => 
     array (
       'id' => 30,
       'name' => 'Dragonhunter',
@@ -11437,7 +11664,7 @@
         8 => 582,
       ),
     ),
-    29 => 
+    30 => 
     array (
       'id' => 31,
       'name' => 'Deadly Arts',
@@ -11464,7 +11691,7 @@
         8 => 600,
       ),
     ),
-    30 => 
+    31 => 
     array (
       'id' => 32,
       'name' => 'Critical Strikes',
@@ -11491,7 +11718,7 @@
         8 => 613,
       ),
     ),
-    31 => 
+    32 => 
     array (
       'id' => 33,
       'name' => 'Shadow Arts',
@@ -11518,7 +11745,7 @@
         8 => 644,
       ),
     ),
-    32 => 
+    33 => 
     array (
       'id' => 34,
       'name' => 'Acrobatics',
@@ -11545,7 +11772,7 @@
         8 => 653,
       ),
     ),
-    33 => 
+    34 => 
     array (
       'id' => 35,
       'name' => 'Trickery',
@@ -11572,7 +11799,7 @@
         8 => 673,
       ),
     ),
-    34 => 
+    35 => 
     array (
       'id' => 36,
       'name' => 'Daredevil',
@@ -11599,7 +11826,7 @@
         8 => 696,
       ),
     ),
-    35 => 
+    36 => 
     array (
       'id' => 37,
       'name' => 'Explosives',
@@ -11626,7 +11853,7 @@
         8 => 719,
       ),
     ),
-    36 => 
+    37 => 
     array (
       'id' => 38,
       'name' => 'Firearms',
@@ -11653,7 +11880,7 @@
         8 => 742,
       ),
     ),
-    37 => 
+    38 => 
     array (
       'id' => 39,
       'name' => 'Inventions',
@@ -11680,7 +11907,7 @@
         8 => 756,
       ),
     ),
-    38 => 
+    39 => 
     array (
       'id' => 40,
       'name' => 'Alchemy',
@@ -11707,7 +11934,7 @@
         8 => 786,
       ),
     ),
-    39 => 
+    40 => 
     array (
       'id' => 41,
       'name' => 'Tools',
@@ -11734,7 +11961,34 @@
         8 => 809,
       ),
     ),
-    40 => 
+    41 => 
+    array (
+      'id' => 42,
+      'name' => 'Scrapper',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 823,
+        1 => 824,
+        2 => 825,
+      ),
+      'major_traits' => 
+      array (
+        0 => 826,
+        1 => 827,
+        2 => 828,
+        3 => 829,
+        4 => 830,
+        5 => 831,
+        6 => 832,
+        7 => 833,
+        8 => 834,
+      ),
+    ),
+    42 => 
     array (
       'id' => 43,
       'name' => 'Domination',
@@ -11761,7 +12015,7 @@
         8 => 842,
       ),
     ),
-    41 => 
+    43 => 
     array (
       'id' => 44,
       'name' => 'Dueling',
@@ -11788,7 +12042,7 @@
         8 => 867,
       ),
     ),
-    42 => 
+    44 => 
     array (
       'id' => 45,
       'name' => 'Chaos',
@@ -11815,7 +12069,7 @@
         8 => 880,
       ),
     ),
-    43 => 
+    45 => 
     array (
       'id' => 46,
       'name' => 'Inspiration',
@@ -11842,7 +12096,7 @@
         8 => 908,
       ),
     ),
-    44 => 
+    46 => 
     array (
       'id' => 47,
       'name' => 'Illusions',
@@ -11869,7 +12123,7 @@
         8 => 924,
       ),
     ),
-    45 => 
+    47 => 
     array (
       'id' => 48,
       'name' => 'Chronomancer',
@@ -11896,7 +12150,7 @@
         8 => 945,
       ),
     ),
-    46 => 
+    48 => 
     array (
       'id' => 49,
       'name' => 'Corruption',
@@ -11923,7 +12177,7 @@
         8 => 971,
       ),
     ),
-    47 => 
+    49 => 
     array (
       'id' => 50,
       'name' => 'Retribution',
@@ -11950,7 +12204,7 @@
         8 => 983,
       ),
     ),
-    48 => 
+    50 => 
     array (
       'id' => 51,
       'name' => 'Salvation',
@@ -11977,7 +12231,7 @@
         8 => 995,
       ),
     ),
-    49 => 
+    51 => 
     array (
       'id' => 52,
       'name' => 'Invocation',
@@ -12004,7 +12258,7 @@
         8 => 1007,
       ),
     ),
-    50 => 
+    52 => 
     array (
       'id' => 53,
       'name' => 'Devastation',
@@ -12031,7 +12285,7 @@
         8 => 959,
       ),
     ),
-    51 => 
+    53 => 
     array (
       'id' => 54,
       'name' => 'Herald',
@@ -14364,9 +14618,9 @@
     9 => 
     array (
       'id' => 823,
-      'name' => '',
+      'name' => 'Function Gyro',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => true,
       'major' => false,
       'tier' => 1,
@@ -14441,7 +14695,7 @@
     16 => 
     array (
       'id' => 341,
-      'name' => '',
+      'name' => 'Celestial Being',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => true,
@@ -14958,9 +15212,9 @@
     63 => 
     array (
       'id' => 824,
-      'name' => '',
+      'name' => 'Decisive Renown',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => true,
       'major' => false,
       'tier' => 2,
@@ -15035,7 +15289,7 @@
     70 => 
     array (
       'id' => 342,
-      'name' => '',
+      'name' => 'Live Vicariously',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => true,
@@ -15552,9 +15806,9 @@
     117 => 
     array (
       'id' => 825,
-      'name' => '',
+      'name' => 'Impact Savant',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => true,
       'major' => false,
       'tier' => 3,
@@ -15629,7 +15883,7 @@
     124 => 
     array (
       'id' => 343,
-      'name' => '',
+      'name' => 'Natural Mender',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => true,
@@ -16157,9 +16411,9 @@
     172 => 
     array (
       'id' => 826,
-      'name' => '',
+      'name' => 'Shocking Speed',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 1,
@@ -16234,7 +16488,7 @@
     179 => 
     array (
       'id' => 344,
-      'name' => '',
+      'name' => 'Druidic Clarity',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -16762,9 +17016,9 @@
     227 => 
     array (
       'id' => 827,
-      'name' => '',
+      'name' => 'Stabilization Core',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 1,
@@ -16828,7 +17082,7 @@
     233 => 
     array (
       'id' => 345,
-      'name' => '',
+      'name' => 'Cultivated Synergy',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -17356,9 +17610,9 @@
     281 => 
     array (
       'id' => 828,
-      'name' => '',
+      'name' => 'Recovery Matrix',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 1,
@@ -17433,7 +17687,7 @@
     288 => 
     array (
       'id' => 346,
-      'name' => '',
+      'name' => 'Primal Echoes',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -17939,9 +18193,9 @@
     334 => 
     array (
       'id' => 829,
-      'name' => '',
+      'name' => 'Rapid Regeneration',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 2,
@@ -18016,7 +18270,7 @@
     341 => 
     array (
       'id' => 347,
-      'name' => '',
+      'name' => 'Celestial Shadow',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -18522,9 +18776,9 @@
     387 => 
     array (
       'id' => 830,
-      'name' => '',
+      'name' => 'Expert Examination',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 2,
@@ -18599,7 +18853,7 @@
     394 => 
     array (
       'id' => 348,
-      'name' => '',
+      'name' => 'Verdant Etching',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -19127,9 +19381,9 @@
     442 => 
     array (
       'id' => 831,
-      'name' => '',
+      'name' => 'Mass Momentum',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 2,
@@ -19204,7 +19458,7 @@
     449 => 
     array (
       'id' => 349,
-      'name' => '',
+      'name' => 'Natural Stride',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -19743,9 +19997,9 @@
     498 => 
     array (
       'id' => 832,
-      'name' => '',
+      'name' => 'Adaptive Armor',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 3,
@@ -19809,7 +20063,7 @@
     504 => 
     array (
       'id' => 350,
-      'name' => '',
+      'name' => 'Grace of the Land',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -20337,9 +20591,9 @@
     552 => 
     array (
       'id' => 833,
-      'name' => '',
+      'name' => 'Final Salvo',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 3,
@@ -20414,7 +20668,7 @@
     559 => 
     array (
       'id' => 351,
-      'name' => '',
+      'name' => 'Lingering Light',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
@@ -20942,9 +21196,9 @@
     607 => 
     array (
       'id' => 834,
-      'name' => '',
+      'name' => 'Perfectly Weighted',
       'specialization_id' => 42,
-      'specialization' => 'Forge',
+      'specialization' => 'Scrapper',
       'minor' => false,
       'major' => true,
       'tier' => 3,
@@ -20997,7 +21251,7 @@
     612 => 
     array (
       'id' => 352,
-      'name' => '',
+      'name' => 'Ancient Seeds',
       'specialization_id' => 18,
       'specialization' => 'Druid',
       'minor' => false,
