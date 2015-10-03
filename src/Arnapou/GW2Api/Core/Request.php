@@ -123,10 +123,12 @@ class Request implements RequestInterface {
             if ($response->getInfoHttpCode() == 503) {
                 usleep(100000); // 100 ms
                 if ($tries-- == 0) {
-                    throw new RequestException('HTTP Error 503. The service is unavailable.');
+                    throw new RequestException('HTTP Error 503. The GW2 API is unreachable.');
                 }
                 continue;
             }
+
+            $data = \Arnapou\GW2Api\json_decode($response->getContent());
 
             $event         = new Event();
             $event['uri']  = $requestUrl;
@@ -135,8 +137,6 @@ class Request implements RequestInterface {
 
             break;
         }
-
-        $data = \Arnapou\GW2Api\json_decode($response->getContent());
 
         // store in cache if needed
         if ($cache && $cacheRetention > 0) {

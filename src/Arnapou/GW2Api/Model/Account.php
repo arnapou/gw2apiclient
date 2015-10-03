@@ -137,7 +137,7 @@ class Account extends AbstractObject {
         $this->client->setAccessToken($accessToken);
 
         // get token info to check access token and permissions
-        $infos = $this->client->getClientV2()->apiTokeninfo()->execute(7 * 86400)->getAllData();
+        $infos = $this->client->getClientV2()->apiTokeninfo()->execute(86400)->getAllData();
         if (!isset($infos['id'])) {
             throw new InvalidTokenException('Invalid token.');
         }

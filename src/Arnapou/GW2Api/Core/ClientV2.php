@@ -448,4 +448,16 @@ class ClientV2 extends AbstractClient {
         return $this->request('worlds', $parameters);
     }
 
+    /**
+     * 
+     * @return RequestInterface
+     */
+    public function apiWvwObjectives($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('wvw/objectives', $parameters);
+    }
+
 }

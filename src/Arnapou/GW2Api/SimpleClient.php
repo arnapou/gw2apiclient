@@ -76,6 +76,7 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_tokeninfo()
  * @method array v2_traits($ids = null)
  * @method array v2_worlds($ids = null)
+ * @method array v2_wvw_objectives($ids = null)
  *
  */
 class SimpleClient {
