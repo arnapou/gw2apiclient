@@ -308,10 +308,10 @@ class LinkBuilder {
                 }
                 if ($item->getType() === Item::TYPE_CONSUMABLE && $item->getLevel()) {
                     if ($item->getSubType() === Item::SUBTYPE_CONSUMABLE_FOOD) {
-                        $foods[$item->getLevel()][] = $item->getId();
+                        $foods[floor($item->getLevel() / 10)][] = $item->getId();
                     }
                     elseif ($item->getSubType() === Item::SUBTYPE_CONSUMABLE_UTILITY) {
-                        $utilities[$item->getLevel()][] = $item->getId();
+                        $utilities[floor($item->getLevel() / 10)][] = $item->getId();
                     }
                 }
             }
