@@ -28,7 +28,7 @@ class Account extends AbstractObject {
     const PERMISSION_TRADINGPOST = 'tradingpost';
     const PERMISSION_UNLOCKS     = 'unlocks';
     const PERMISSION_WALLET      = 'wallet';
-    const PERMISSION_PVP      = 'pvp';
+    const PERMISSION_PVP         = 'pvp';
     const PERMISSION_BUILDS      = 'builds';
 
     /**
@@ -144,9 +144,21 @@ class Account extends AbstractObject {
         if (!isset($infos['permissions']) || !is_array($infos)) {
             throw new InvalidTokenException('Token info permission is missing, a weird bug occurs.');
         }
+
         sort($infos['permissions']);
         $this->dataTokeninfo = $infos;
         $this->accessToken   = $accessToken;
+
+        $this->data = $this->client->v2_account();
+        if (isset($this->data['text'])) {
+            if (stripos($this->data['text'], 'invalid key') !== null) {
+                throw new InvalidTokenException('Invalid token.');
+            }
+            throw new Exception($this->data['text']);
+        }
+        if (!$this->hasPermission(self::PERMISSION_ACCOUNT)) {
+            throw new MissingPermissionException(self::PERMISSION_ACCOUNT);
+        }
     }
 
     /**
@@ -155,18 +167,6 @@ class Account extends AbstractObject {
      */
     public function getAccessToken() {
         return $this->accessToken;
-    }
-
-    /**
-     * 
-     */
-    protected function checkAccount() {
-        if (empty($this->data)) {
-            if (!$this->hasPermission(self::PERMISSION_ACCOUNT)) {
-                throw new MissingPermissionException(self::PERMISSION_ACCOUNT);
-            }
-            $this->data = $this->client->v2_account();
-        }
     }
 
     /**
@@ -405,7 +405,6 @@ class Account extends AbstractObject {
      * @return string
      */
     public function getId() {
-        $this->checkAccount();
         return $this->data['id'];
     }
 
@@ -414,7 +413,6 @@ class Account extends AbstractObject {
      * @return string
      */
     public function getName() {
-        $this->checkAccount();
         return $this->getSubkey(['name']);
     }
 
@@ -423,7 +421,6 @@ class Account extends AbstractObject {
      * @return World
      */
     public function getWorld() {
-        $this->checkAccount();
         if (!isset($this->world)) {
             $this->world = new World($this->client, $this->data['world']);
         }
@@ -435,7 +432,6 @@ class Account extends AbstractObject {
      * @return array
      */
     public function getGuilds() {
-        $this->checkAccount();
         if (!isset($this->guilds)) {
             $this->guilds = [];
             if (!empty($this->data['guilds']) && is_array($this->data['guilds'])) {
