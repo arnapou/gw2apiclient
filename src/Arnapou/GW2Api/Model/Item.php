@@ -580,12 +580,25 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getAgonyResistance() {
-        if ($this->getType() !== self::TYPE_UPGRADE_COMPONENT) {
+        if ($this->getType() !== self::TYPE_UPGRADE_COMPONENT ||
+            $this->getSubType() !== self::SUBTYPE_UPGRADE_COMPONENT_DEFAULT
+        ) {
             return null;
         }
         $buffDescription = $this->getBuffDescription();
         if (!empty($buffDescription)) {
-            if (preg_match('!\+([0-9]+)!i', $buffDescription, $m)) {
+            $lang = $this->client->getLang();
+
+            if ($lang == AbstractClient::LANG_ES && preg_match('!^\+([0-9]+) resistencia!i', $buffDescription, $m)) {
+                return $m[1];
+            }
+            if ($lang == AbstractClient::LANG_FR && preg_match('!agonie \+([0-9]+)$!i', $buffDescription, $m)) {
+                return $m[1];
+            }
+            if ($lang == AbstractClient::LANG_EN && preg_match('!^\+([0-9]+) agony!i', $buffDescription, $m)) {
+                return $m[1];
+            }
+            if ($lang == AbstractClient::LANG_DE && preg_match('!^\+([0-9]+) Qual-Widerstand!i', $buffDescription, $m)) {
                 return $m[1];
             }
         }
