@@ -37,6 +37,7 @@
       'barbarian\'s jewel' => 21162,
       'berserker\'s jewel' => 21093,
       'carrion jewel' => 21164,
+      'celestial jewel' => 21169,
       'cleric\'s jewel' => 21094,
       'exquisite ambrite jewel' => 66671,
       'exquisite azurite jewel' => 42008,
@@ -723,6 +724,7 @@
       'explosives' => 6,
       'firearms' => 38,
       'inventions' => 47,
+      'scrapper' => 43,
       'tools' => 21,
     ),
     'guardian' => 
@@ -847,11 +849,11 @@
       'brawler\'s tenacity' => 1949,
       'driven fortitude' => 1887,
       'endurance thief' => 1837,
-      'enforcer training' => 1994,
       'escapist\'s absolution' => 1893,
       'evasive empowerment' => 1933,
       'impacting disruption' => 1975,
       'lotus training' => 1833,
+      'physical supremacy' => 1994,
       'staff master' => 1884,
       'staff proficiency' => 1957,
       'unhindered combatant' => 1964,
@@ -1112,7 +1114,7 @@
       'potent poison' => 1291,
       'revealed training' => 1704,
       'serpent\'s touch' => 1279,
-      'trappers respite' => 1164,
+      'trapper\'s respite' => 1164,
     ),
     29 => 
     array (
@@ -1325,6 +1327,22 @@
       'zealot\'s speed' => 648,
       'zealous blade' => 653,
       'zealous scepter' => 1925,
+    ),
+    43 => 
+    array (
+      'adaptive armor' => 1981,
+      'decisive renown' => 2014,
+      'expert examination' => 1999,
+      'final salvo' => 2052,
+      'function gyro' => 1959,
+      'hammer proficiency' => 1951,
+      'impact savant' => 1877,
+      'mass momentum' => 1860,
+      'perfectly weighted' => 1849,
+      'rapid regeneration' => 1954,
+      'recovery matrix' => 1867,
+      'shocking speed' => 1917,
+      'stabilization core' => 1971,
     ),
     44 => 
     array (
