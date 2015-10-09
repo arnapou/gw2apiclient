@@ -318,6 +318,26 @@ class ClientV2 extends AbstractClient {
      * 
      * @return RequestInterface
      */
+    public function apiAchievementsDaily() {
+        return $this->request('achievements/daily');
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
+    public function apiAchievements($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('achievements', $parameters);
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
     public function apiItems($ids = null) {
         $parameters = [];
         if (!empty($ids)) {

@@ -105,6 +105,20 @@ abstract class AbstractObject {
      * @param array $ids
      * @return array
      */
+    protected function apiAchievements($ids) {
+        if (!empty(self::$PRELOADS['achievements'])) {
+            $this->client->v2_achievements(self::$PRELOADS['achievements']);
+            self::$PRELOADS['achievements'] = [];
+        }
+        $result = $this->client->v2_achievements($ids);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
     protected function apiItems($ids) {
         if (!empty(self::$PRELOADS['items'])) {
             $this->client->v2_items(self::$PRELOADS['items']);

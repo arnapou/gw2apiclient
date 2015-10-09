@@ -30,22 +30,24 @@ class RequestManager {
      * @var array
      */
     protected $cacheUrlPolicy = [
-        '/v1/guild_details'     => 86400, // one day
-        '/v2/colors'            => 604000, // one week
-        '/v2/commerce/listings' => 1800, // 30 min
-        '/v2/commerce/prices'   => 1800, // 30 min
-        '/v2/characters'        => 1800, // 30 min
-        '/v2/currencies'        => 86400, // one day
-        '/v2/files'             => 604000, // one week
-        '/v2/items'             => 604000, // one week
-        '/v2/maps'              => 604000, // one week
-        '/v2/materials'         => 604000, // one week
-        '/v2/quaggans'          => 604000, // one week
-        '/v2/recipes'           => 604000, // one week
-        '/v2/skins'             => 604000, // one week
-        '/v2/specializations'   => 604000, // one week
-        '/v2/traits'            => 604000, // one week
-        '/v2/worlds'            => 604000, // one week
+        '/v1/guild_details'      => 86400, // one day
+        '/v2/achievements/daily' => 900, // 15 min
+        '/v2/achievements'       => 86000, // one day
+        '/v2/colors'             => 604000, // one week
+        '/v2/commerce/listings'  => 1800, // 30 min
+        '/v2/commerce/prices'    => 1800, // 30 min
+        '/v2/characters'         => 1800, // 30 min
+        '/v2/currencies'         => 86000, // one day
+        '/v2/files'              => 604000, // one week
+        '/v2/items'              => 604000, // one week
+        '/v2/maps'               => 604000, // one week
+        '/v2/materials'          => 604000, // one week
+        '/v2/quaggans'           => 604000, // one week
+        '/v2/recipes'            => 604000, // one week
+        '/v2/skins'              => 604000, // one week
+        '/v2/specializations'    => 604000, // one week
+        '/v2/traits'             => 604000, // one week
+        '/v2/worlds'             => 604000, // one week
     ];
 
     /**

@@ -48,6 +48,8 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_account_materials()
  * @method array v2_account_skins()
  * @method array v2_account_wallet()
+ * @method array v2_achievements($ids = null)
+ * @method array v2_achievements_daily()
  * @method array v2_build()
  * @method array v2_characters($ids = null)
  * @method array v2_colors($ids = null)
@@ -87,6 +89,7 @@ class SimpleClient {
      * @var array
      */
     protected $smartV2Apis = [
+        'v2_achievements'      => 'apiachievements',
         'v2_characters'        => 'apicharacters',
         'v2_colors'            => 'apicolors',
         'v2_commerce_listings' => 'apicommercelistings',
