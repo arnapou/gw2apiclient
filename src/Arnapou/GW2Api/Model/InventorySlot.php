@@ -115,7 +115,8 @@ class InventorySlot extends Item {
     }
 
     public function getAgonyResistance() {
-        if ($this->getRarity() !== self::RARITY_ASCENDED) {
+        if ($this->getRarity() !== self::RARITY_ASCENDED &&
+            $this->getRarity() !== self::RARITY_LEGENDARY) {
             return null;
         }
         $sum = 0;
