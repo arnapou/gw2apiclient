@@ -210,6 +210,8 @@ class Character extends AbstractObject {
                 'Healing'   => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
                 'AR'        => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
             ];
+            $hasWeaponA = false;
+            $hasWeaponB = false;
             $unknown    = [];
             foreach ($this->getEquipments() as $slot => /* @var $equipment Equipment */ $equipment) {
                 if (in_array($slot, [self::SLOT_AXE, self::SLOT_SICKLE, self::SLOT_PICK])) {
@@ -228,6 +230,7 @@ class Character extends AbstractObject {
                     }
                 }
                 elseif (strpos($slot, 'WeaponA') === 0) {
+                    $hasWeaponA = true;
                     $attributes['AR']['WeaponB'] += $equipment->getAgonyResistance();
                     if (!empty($attrs)) {
                         foreach ($attrs['list'] as $attr => $value) {
@@ -236,6 +239,7 @@ class Character extends AbstractObject {
                     }
                 }
                 elseif (strpos($slot, 'WeaponB') === 0) {
+                    $hasWeaponB = true;
                     $attributes['AR']['WeaponAquatic'] += $equipment->getAgonyResistance();
                     if (!empty($attrs)) {
                         foreach ($attrs['list'] as $attr => $value) {
@@ -256,9 +260,14 @@ class Character extends AbstractObject {
                     }
                 }
             }
-            foreach ($attributes as $key => &$values) {
-                if ($values['WeaponA'] == $values['WeaponB'] && $values['WeaponA'] == $values['WeaponAquatic']) {
-                    $values = ['All' => $values['WeaponA']];
+            if (!$hasWeaponA) {
+                foreach ($attributes as $key => &$values) {
+                    unset($values['WeaponA']);
+                }
+            }
+            if (!$hasWeaponB) {
+                foreach ($attributes as $key => &$values) {
+                    unset($values['WeaponB']);
                 }
             }
             foreach ($attributes['Precision'] as $set => $value) {
