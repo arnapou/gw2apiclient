@@ -201,14 +201,16 @@ class Character extends AbstractObject {
     public function getAttributes() {
         if (!isset($this->attributes)) {
             $attributes = [
-                'Power'     => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
-                'Precision' => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
-                'Toughness' => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
-                'Vitality'  => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
-                'Ferocity'  => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-                'Condition' => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-                'Healing'   => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-                'AR'        => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
+                'Power'             => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
+                'Precision'         => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
+                'Toughness'         => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
+                'Vitality'          => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
+                'Ferocity'          => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
+                'Condition'         => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
+                'ConditionDuration' => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
+                'Healing'           => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
+                'BoonDuration'      => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
+                'AR'                => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
             ];
             $hasWeaponA = false;
             $hasWeaponB = false;
@@ -247,6 +249,24 @@ class Character extends AbstractObject {
                         }
                     }
                 }
+                elseif ($slot === 'Helm') {
+                    $attributes['AR']['WeaponAquatic'] += $equipment->getAgonyResistance();
+                    if (!empty($attrs)) {
+                        foreach ($attrs['list'] as $attr => $value) {
+                            $attributes[$attr]['WeaponAquatic'] += $value;
+                        }
+                    }
+                }
+                elseif ($slot === 'HelmAquatic') {
+                    $attributes['AR']['WeaponA'] += $equipment->getAgonyResistance();
+                    $attributes['AR']['WeaponB'] += $equipment->getAgonyResistance();
+                    if (!empty($attrs)) {
+                        foreach ($attrs['list'] as $attr => $value) {
+                            $attributes[$attr]['WeaponA'] += $value;
+                            $attributes[$attr]['WeaponB'] += $value;
+                        }
+                    }
+                }
                 else {
                     $attributes['AR']['WeaponA'] += $equipment->getAgonyResistance();
                     $attributes['AR']['WeaponB'] += $equipment->getAgonyResistance();
@@ -271,10 +291,16 @@ class Character extends AbstractObject {
                 }
             }
             foreach ($attributes['Precision'] as $set => $value) {
-                $attributes['PrecisionPct'][$set] = round(($value - 916) / 21);
+                $attributes['PrecisionPct'][$set] = round(($value - 916) / 21, 2);
             }
             foreach ($attributes['Ferocity'] as $set => $value) {
-                $attributes['FerocityPct'][$set] = round(150 + $value / 15);
+                $attributes['FerocityPct'][$set] = round(150 + $value / 15, 2);
+            }
+            foreach ($attributes['ConditionDuration'] as $set => $value) {
+                $attributes['ConditionDurationPct'][$set] = round($value / 15, 2);
+            }
+            foreach ($attributes['BoonDuration'] as $set => $value) {
+                $attributes['BoonDurationPct'][$set] = round($value / 15, 2);
             }
             $this->attributes = [
                 'unknown' => $unknown,
