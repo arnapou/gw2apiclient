@@ -3,33 +3,6 @@
   array (
     0 => 
     array (
-      'id' => 18,
-      'name' => 'Druid',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 341,
-        1 => 342,
-        2 => 343,
-      ),
-      'major_traits' => 
-      array (
-        0 => 344,
-        1 => 345,
-        2 => 346,
-        3 => 347,
-        4 => 348,
-        5 => 349,
-        6 => 350,
-        7 => 351,
-        8 => 352,
-      ),
-    ),
-    1 => 
-    array (
       'id' => 49,
       'name' => 'Corruption',
       'profession_id' => 9,
@@ -55,7 +28,7 @@
         8 => 971,
       ),
     ),
-    2 => 
+    1 => 
     array (
       'id' => 50,
       'name' => 'Retribution',
@@ -82,7 +55,7 @@
         8 => 983,
       ),
     ),
-    3 => 
+    2 => 
     array (
       'id' => 51,
       'name' => 'Salvation',
@@ -109,7 +82,7 @@
         8 => 995,
       ),
     ),
-    4 => 
+    3 => 
     array (
       'id' => 52,
       'name' => 'Invocation',
@@ -136,7 +109,7 @@
         8 => 1007,
       ),
     ),
-    5 => 
+    4 => 
     array (
       'id' => 53,
       'name' => 'Devastation',
@@ -163,7 +136,7 @@
         8 => 959,
       ),
     ),
-    6 => 
+    5 => 
     array (
       'id' => 54,
       'name' => 'Herald',
@@ -195,17 +168,6 @@
   array (
     0 => 
     array (
-      'id' => 341,
-      'name' => 'Celestial Being',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    1 => 
-    array (
       'id' => 948,
       'name' => 'Mutilate Defenses',
       'specialization_id' => 53,
@@ -215,7 +177,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    2 => 
+    1 => 
     array (
       'id' => 960,
       'name' => 'Rampant Vex',
@@ -226,7 +188,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    3 => 
+    2 => 
     array (
       'id' => 972,
       'name' => 'Enduring Recovery',
@@ -237,7 +199,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    4 => 
+    3 => 
     array (
       'id' => 984,
       'name' => 'Disarming Riposte',
@@ -248,7 +210,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    5 => 
+    4 => 
     array (
       'id' => 996,
       'name' => 'Invoker’s Rage',
@@ -259,7 +221,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    6 => 
+    5 => 
     array (
       'id' => 1008,
       'name' => 'Crystal Harbinger',
@@ -270,18 +232,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    7 => 
-    array (
-      'id' => 342,
-      'name' => 'Live Vicariously',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    8 => 
+    6 => 
     array (
       'id' => 916,
       'name' => 'Illusionists Celerity',
@@ -292,7 +243,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    9 => 
+    7 => 
     array (
       'id' => 949,
       'name' => 'Targeted Destruction',
@@ -303,7 +254,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    10 => 
+    8 => 
     array (
       'id' => 961,
       'name' => 'Opportune Extraction',
@@ -314,7 +265,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    11 => 
+    9 => 
     array (
       'id' => 973,
       'name' => 'Unwavering Avoidance',
@@ -325,7 +276,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    12 => 
+    10 => 
     array (
       'id' => 985,
       'name' => 'Hardened Foundation',
@@ -336,7 +287,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    13 => 
+    11 => 
     array (
       'id' => 997,
       'name' => 'Ferocious Aggression',
@@ -347,7 +298,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    14 => 
+    12 => 
     array (
       'id' => 1009,
       'name' => 'Vigorous Persistence',
@@ -358,18 +309,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    15 => 
-    array (
-      'id' => 343,
-      'name' => 'Natural Mender',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    16 => 
+    13 => 
     array (
       'id' => 950,
       'name' => 'Focused Siphoning',
@@ -380,7 +320,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    17 => 
+    14 => 
     array (
       'id' => 962,
       'name' => 'Yearning Empowerment',
@@ -391,7 +331,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    18 => 
+    15 => 
     array (
       'id' => 974,
       'name' => 'Determined Resolution',
@@ -402,7 +342,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    19 => 
+    16 => 
     array (
       'id' => 986,
       'name' => 'Serene Rejuvenation',
@@ -413,7 +353,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    20 => 
+    17 => 
     array (
       'id' => 998,
       'name' => 'Empty Vessel',
@@ -424,7 +364,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    21 => 
+    18 => 
     array (
       'id' => 1010,
       'name' => 'Envoy of Sustenance',
@@ -435,18 +375,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    22 => 
-    array (
-      'id' => 344,
-      'name' => 'Druidic Clarity',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    23 => 
+    19 => 
     array (
       'id' => 956,
       'name' => 'Ferocious Strikes',
@@ -457,7 +386,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    24 => 
+    20 => 
     array (
       'id' => 963,
       'name' => 'Replenishing Despair',
@@ -468,7 +397,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    25 => 
+    21 => 
     array (
       'id' => 975,
       'name' => 'Planar Protection',
@@ -479,7 +408,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    26 => 
+    22 => 
     array (
       'id' => 987,
       'name' => 'Nourishing Roots',
@@ -490,7 +419,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    27 => 
+    23 => 
     array (
       'id' => 999,
       'name' => 'Cruel Repercussion',
@@ -501,7 +430,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    28 => 
+    24 => 
     array (
       'id' => 1011,
       'name' => 'Swift Gale',
@@ -512,21 +441,10 @@
       'tier' => 1,
       'number' => 1,
     ),
-    29 => 
-    array (
-      'id' => 345,
-      'name' => 'Cultivated Synergy',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    30 => 
+    25 => 
     array (
       'id' => 952,
-      'name' => 'Rapid Lacerations',
+      'name' => 'Vicious Lacerations',
       'specialization_id' => 53,
       'specialization' => 'Devastation',
       'minor' => false,
@@ -534,7 +452,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    31 => 
+    26 => 
     array (
       'id' => 964,
       'name' => 'Demonic Defiance',
@@ -545,7 +463,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    32 => 
+    27 => 
     array (
       'id' => 976,
       'name' => 'Close Quarters',
@@ -556,7 +474,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    33 => 
+    28 => 
     array (
       'id' => 988,
       'name' => 'Blinding Truths',
@@ -567,7 +485,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    34 => 
+    29 => 
     array (
       'id' => 1000,
       'name' => 'Cleansing Channel',
@@ -578,7 +496,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    35 => 
+    30 => 
     array (
       'id' => 1012,
       'name' => 'Radiant Revival',
@@ -589,7 +507,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    36 => 
+    31 => 
     array (
       'id' => 598,
       'name' => 'Trappers Respite',
@@ -600,18 +518,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    37 => 
-    array (
-      'id' => 346,
-      'name' => 'Primal Echoes',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    38 => 
+    32 => 
     array (
       'id' => 953,
       'name' => 'Malicious Reprisal',
@@ -622,7 +529,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    39 => 
+    33 => 
     array (
       'id' => 965,
       'name' => 'Venom Enhancement',
@@ -633,7 +540,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    40 => 
+    34 => 
     array (
       'id' => 977,
       'name' => 'Improved Aggression',
@@ -644,7 +551,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    41 => 
+    35 => 
     array (
       'id' => 989,
       'name' => 'Tranquil Balance',
@@ -655,7 +562,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    42 => 
+    36 => 
     array (
       'id' => 1001,
       'name' => 'Fierce Infusion',
@@ -666,7 +573,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    43 => 
+    37 => 
     array (
       'id' => 1013,
       'name' => 'Hardening Persistence',
@@ -677,18 +584,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    44 => 
-    array (
-      'id' => 347,
-      'name' => 'Celestial Shadow',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    45 => 
+    38 => 
     array (
       'id' => 954,
       'name' => 'Jade Echo',
@@ -699,7 +595,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    46 => 
+    39 => 
     array (
       'id' => 966,
       'name' => 'Bolstered Anguish',
@@ -710,7 +606,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    47 => 
+    40 => 
     array (
       'id' => 978,
       'name' => 'Eye for an Eye',
@@ -721,7 +617,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    48 => 
+    41 => 
     array (
       'id' => 990,
       'name' => 'Tranquil Benediction',
@@ -732,7 +628,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    49 => 
+    42 => 
     array (
       'id' => 1002,
       'name' => 'Equilibrium',
@@ -743,7 +639,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    50 => 
+    43 => 
     array (
       'id' => 1014,
       'name' => 'Bolster Fortifications',
@@ -754,18 +650,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    51 => 
-    array (
-      'id' => 348,
-      'name' => 'Verdant Etching',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    52 => 
+    44 => 
     array (
       'id' => 955,
       'name' => 'Nefarious Momentum',
@@ -776,7 +661,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    53 => 
+    45 => 
     array (
       'id' => 967,
       'name' => 'Frigid Precision',
@@ -787,7 +672,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    54 => 
+    46 => 
     array (
       'id' => 979,
       'name' => 'Retaliatory Evasion',
@@ -798,7 +683,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    55 => 
+    47 => 
     array (
       'id' => 991,
       'name' => 'Eluding Nullification',
@@ -809,7 +694,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    56 => 
+    48 => 
     array (
       'id' => 1003,
       'name' => 'Invigorating Flow',
@@ -820,7 +705,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    57 => 
+    49 => 
     array (
       'id' => 1015,
       'name' => 'Shared Empowerment',
@@ -831,18 +716,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    58 => 
-    array (
-      'id' => 349,
-      'name' => 'Natural Stride',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    59 => 
+    50 => 
     array (
       'id' => 951,
       'name' => 'Assassin\'s Presence',
@@ -853,7 +727,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    60 => 
+    51 => 
     array (
       'id' => 968,
       'name' => 'Spontanous Destruction',
@@ -864,7 +738,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    61 => 
+    52 => 
     array (
       'id' => 980,
       'name' => 'Dwarven Battle Training',
@@ -875,7 +749,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    62 => 
+    53 => 
     array (
       'id' => 992,
       'name' => 'Invoking Harmony',
@@ -886,7 +760,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    63 => 
+    54 => 
     array (
       'id' => 1004,
       'name' => 'Incensed Response',
@@ -897,7 +771,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    64 => 
+    55 => 
     array (
       'id' => 1016,
       'name' => 'Harmonize Continuity',
@@ -908,18 +782,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    65 => 
-    array (
-      'id' => 350,
-      'name' => 'Grace of the Land',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    66 => 
+    56 => 
     array (
       'id' => 957,
       'name' => 'Swift Termination',
@@ -930,7 +793,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    67 => 
+    57 => 
     array (
       'id' => 969,
       'name' => 'Diabolic Inferno',
@@ -941,7 +804,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    68 => 
+    58 => 
     array (
       'id' => 981,
       'name' => 'Empowering Vengeance',
@@ -952,7 +815,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    69 => 
+    59 => 
     array (
       'id' => 993,
       'name' => 'Selfless Amplification',
@@ -963,7 +826,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    70 => 
+    60 => 
     array (
       'id' => 1005,
       'name' => 'Roiling Mists',
@@ -974,7 +837,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    71 => 
+    61 => 
     array (
       'id' => 1017,
       'name' => 'Elder\'s Force',
@@ -985,18 +848,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    72 => 
-    array (
-      'id' => 351,
-      'name' => 'Lingering Light',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    73 => 
+    62 => 
     array (
       'id' => 958,
       'name' => 'Dismantle Fortifications',
@@ -1007,7 +859,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    74 => 
+    63 => 
     array (
       'id' => 970,
       'name' => 'Maniacal Persistence',
@@ -1018,10 +870,10 @@
       'tier' => 3,
       'number' => 8,
     ),
-    75 => 
+    64 => 
     array (
       'id' => 982,
-      'name' => 'Reflexive Summon',
+      'name' => 'Versed in Stone',
       'specialization_id' => 50,
       'specialization' => 'Retribution',
       'minor' => false,
@@ -1029,7 +881,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    76 => 
+    65 => 
     array (
       'id' => 994,
       'name' => 'Natural Abundance',
@@ -1040,7 +892,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    77 => 
+    66 => 
     array (
       'id' => 1006,
       'name' => 'Charged Mists',
@@ -1051,7 +903,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    78 => 
+    67 => 
     array (
       'id' => 1018,
       'name' => 'Soothing Bastion',
@@ -1062,18 +914,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    79 => 
-    array (
-      'id' => 352,
-      'name' => 'Ancient Seeds',
-      'specialization_id' => 18,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    80 => 
+    68 => 
     array (
       'id' => 109,
       'name' => 'Element Bastion',
@@ -1084,7 +925,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    81 => 
+    69 => 
     array (
       'id' => 959,
       'name' => 'Assassin\'s Annihilation',
@@ -1095,7 +936,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    82 => 
+    70 => 
     array (
       'id' => 971,
       'name' => 'Pulsating Pestilence',
@@ -1106,7 +947,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    83 => 
+    71 => 
     array (
       'id' => 983,
       'name' => 'Steadfast Rejuvenation',
@@ -1117,7 +958,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    84 => 
+    72 => 
     array (
       'id' => 995,
       'name' => 'Momentary Pacification',
@@ -1128,7 +969,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    85 => 
+    73 => 
     array (
       'id' => 1007,
       'name' => 'Shrouding Mists',
@@ -1139,7 +980,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    86 => 
+    74 => 
     array (
       'id' => 1019,
       'name' => 'Enhanced Bulwark',
@@ -1182,6 +1023,15 @@
     ),
     3 => 
     array (
+      'id' => 40,
+      'name' => 'Beetletun Omelette',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    4 => 
+    array (
       'id' => 161,
       'name' => 'Blessing Of Bear',
       'type' => 'Food',
@@ -1189,12 +1039,110 @@
       'level' => 41,
       'pvx' => 6,
     ),
+    5 => 
+    array (
+      'id' => 382,
+      'name' => 'Prickly Pear Stuffed Nopale',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+  ),
+  'upgrades' => 
+  array (
+    0 => 
+    array (
+      'id' => 51,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Agility',
+      'pvp_name' => 'Sigil of Agility (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    1 => 
+    array (
+      'id' => 52,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Transference',
+      'pvp_name' => 'Sigil of Transference (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    2 => 
+    array (
+      'id' => 138,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Leadership',
+      'pvp_name' => 'Rune of Leadership (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    3 => 
+    array (
+      'id' => 139,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Surging',
+      'pvp_name' => 'Rune of Surging (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    4 => 
+    array (
+      'id' => 147,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Revenant',
+      'pvp_name' => 'Rune of the Revenant (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    5 => 
+    array (
+      'id' => 36,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Burl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    6 => 
+    array (
+      'id' => 39,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Freshwater Pearl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    7 => 
+    array (
+      'id' => 40,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Lily Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    8 => 
+    array (
+      'id' => 41,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Flax Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
   ),
   'items' => 
   array (
     0 => 
     array (
-      'id' => 133,
+      'id' => 152,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Knight Amulet',
@@ -1203,7 +1151,7 @@
     ),
     1 => 
     array (
-      'id' => 134,
+      'id' => 153,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Cavalier Amulet',
@@ -1212,7 +1160,7 @@
     ),
     2 => 
     array (
-      'id' => 135,
+      'id' => 154,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Magi Amulet',
@@ -1221,7 +1169,7 @@
     ),
     3 => 
     array (
-      'id' => 136,
+      'id' => 155,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Celestial Amulet',
@@ -1230,7 +1178,7 @@
     ),
     4 => 
     array (
-      'id' => 137,
+      'id' => 156,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Carrion Amulet',
@@ -1239,7 +1187,7 @@
     ),
     5 => 
     array (
-      'id' => 138,
+      'id' => 157,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Rabid Amulet',
@@ -1248,7 +1196,7 @@
     ),
     6 => 
     array (
-      'id' => 139,
+      'id' => 158,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Cleric Amulet',
@@ -1257,7 +1205,7 @@
     ),
     7 => 
     array (
-      'id' => 140,
+      'id' => 159,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Valkyrie Amulet',
@@ -1266,7 +1214,7 @@
     ),
     8 => 
     array (
-      'id' => 141,
+      'id' => 160,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Berserker Amulet',
@@ -1275,7 +1223,7 @@
     ),
     9 => 
     array (
-      'id' => 142,
+      'id' => 161,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Soldier Amulet',
@@ -1284,7 +1232,7 @@
     ),
     10 => 
     array (
-      'id' => 143,
+      'id' => 162,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Rampager Amulet',
@@ -1293,7 +1241,7 @@
     ),
     11 => 
     array (
-      'id' => 144,
+      'id' => 163,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Barbarian Amulet',
@@ -1302,7 +1250,7 @@
     ),
     12 => 
     array (
-      'id' => 145,
+      'id' => 164,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Assassin Amulet',
@@ -1311,7 +1259,7 @@
     ),
     13 => 
     array (
-      'id' => 146,
+      'id' => 165,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Sentinel Amulet',
@@ -1320,7 +1268,7 @@
     ),
     14 => 
     array (
-      'id' => 147,
+      'id' => 167,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Crusader Amulet',
@@ -1329,7 +1277,7 @@
     ),
     15 => 
     array (
-      'id' => 148,
+      'id' => 168,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Marauder Amulet',
@@ -1338,12 +1286,568 @@
     ),
     16 => 
     array (
-      'id' => 149,
+      'id' => 171,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Vigilant Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    17 => 
+    array (
+      'id' => 172,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Viper Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    18 => 
+    array (
+      'id' => 173,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Wanderer Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    19 => 
+    array (
+      'id' => 174,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Sinister Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    20 => 
+    array (
+      'id' => 175,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Settler Amulet',
       'pvx' => 1,
       'is_profile' => false,
+    ),
+    21 => 
+    array (
+      'id' => 64,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    22 => 
+    array (
+      'id' => 65,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    23 => 
+    array (
+      'id' => 66,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    24 => 
+    array (
+      'id' => 67,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    25 => 
+    array (
+      'id' => 68,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    26 => 
+    array (
+      'id' => 69,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    27 => 
+    array (
+      'id' => 70,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    28 => 
+    array (
+      'id' => 71,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    29 => 
+    array (
+      'id' => 120,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    30 => 
+    array (
+      'id' => 121,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    31 => 
+    array (
+      'id' => 122,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    32 => 
+    array (
+      'id' => 123,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    33 => 
+    array (
+      'id' => 124,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    34 => 
+    array (
+      'id' => 125,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    35 => 
+    array (
+      'id' => 126,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    36 => 
+    array (
+      'id' => 127,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    37 => 
+    array (
+      'id' => 149,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    38 => 
+    array (
+      'id' => 150,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    39 => 
+    array (
+      'id' => 151,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    40 => 
+    array (
+      'id' => 152,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    41 => 
+    array (
+      'id' => 153,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    42 => 
+    array (
+      'id' => 154,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    43 => 
+    array (
+      'id' => 155,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    44 => 
+    array (
+      'id' => 156,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    45 => 
+    array (
+      'id' => 178,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    46 => 
+    array (
+      'id' => 179,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    47 => 
+    array (
+      'id' => 180,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    48 => 
+    array (
+      'id' => 181,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    49 => 
+    array (
+      'id' => 182,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    50 => 
+    array (
+      'id' => 183,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    51 => 
+    array (
+      'id' => 184,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    52 => 
+    array (
+      'id' => 185,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    53 => 
+    array (
+      'id' => 206,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    54 => 
+    array (
+      'id' => 207,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    55 => 
+    array (
+      'id' => 208,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    56 => 
+    array (
+      'id' => 209,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    57 => 
+    array (
+      'id' => 210,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    58 => 
+    array (
+      'id' => 211,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    59 => 
+    array (
+      'id' => 212,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    60 => 
+    array (
+      'id' => 213,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    61 => 
+    array (
+      'id' => 237,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    62 => 
+    array (
+      'id' => 238,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    63 => 
+    array (
+      'id' => 239,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    64 => 
+    array (
+      'id' => 240,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    65 => 
+    array (
+      'id' => 241,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    66 => 
+    array (
+      'id' => 242,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    67 => 
+    array (
+      'id' => 243,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    68 => 
+    array (
+      'id' => 244,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
     ),
   ),
 );

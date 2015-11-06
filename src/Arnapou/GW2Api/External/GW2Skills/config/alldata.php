@@ -623,7 +623,7 @@
     12 => 
     array (
       'id' => 125,
-      'name' => '"Shock and Aftershock!"',
+      'name' => '"Aftershock!"',
       'profession_id' => 1,
       'profession' => 'Elementalist',
       'race_id' => false,
@@ -1885,7 +1885,7 @@
     102 => 
     array (
       'id' => 557,
-      'name' => '"Your soul is mine!"',
+      'name' => '"Your Soul Is Mine!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -1997,7 +1997,7 @@
     110 => 
     array (
       'id' => 565,
-      'name' => '"Nothing can save you!"',
+      'name' => '"Nothing Can Save You!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -2039,7 +2039,7 @@
     113 => 
     array (
       'id' => 568,
-      'name' => '"You are all weaklings!"',
+      'name' => '"You Are All Weaklings!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -2305,7 +2305,7 @@
     132 => 
     array (
       'id' => 596,
-      'name' => '"Chilled to the bone!"',
+      'name' => '"Chilled to the Bone!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -9048,8 +9048,8 @@
       'id' => 51,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Nullification',
-      'pvp_name' => 'Sigil of Nullification (PvP)',
+      'name' => 'Superior Sigil of Agility',
+      'pvp_name' => 'Sigil of Agility (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9058,58 +9058,55 @@
       'id' => 52,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Purity',
-      'pvp_name' => 'Sigil of Purity (PvP)',
+      'name' => 'Superior Sigil of Transference',
+      'pvp_name' => 'Sigil of Transference (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
     52 => 
     array (
-      'id' => 63,
-      'type' => 'Rune',
+      'id' => 53,
+      'type' => 'Sigil',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Afflicted',
-      'pvp_name' => 'Rune of the Afflicted (PvP)',
-      'pvx' => 7,
+      'name' => 'Superior Sigil of Ruthlessness',
+      'pvx' => 6,
       'is_profile' => false,
     ),
     53 => 
     array (
-      'id' => 64,
-      'type' => 'Rune',
+      'id' => 54,
+      'type' => 'Sigil',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Air',
-      'pvp_name' => 'Rune of Air (PvP)',
-      'pvx' => 7,
+      'name' => 'Superior Sigil of Absorption',
+      'pvx' => 6,
       'is_profile' => false,
     ),
     54 => 
     array (
-      'id' => 65,
-      'type' => 'Rune',
+      'id' => 55,
+      'type' => 'Sigil',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Balthazar',
-      'pvp_name' => 'Rune of Balthazar (PvP)',
-      'pvx' => 7,
+      'name' => 'Superior Sigil of Draining',
+      'pvx' => 6,
       'is_profile' => false,
     ),
     55 => 
     array (
-      'id' => 66,
-      'type' => 'Rune',
+      'id' => 56,
+      'type' => 'Sigil',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Centaur',
-      'pvp_name' => 'Rune of the Centaur (PvP)',
+      'name' => 'Superior Sigil of Nullification',
+      'pvp_name' => 'Sigil of Nullification (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
     56 => 
     array (
-      'id' => 67,
-      'type' => 'Rune',
+      'id' => 57,
+      'type' => 'Sigil',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Citadel',
-      'pvp_name' => 'Rune of the Citadel (PvP)',
+      'name' => 'Superior Sigil of Purity',
+      'pvp_name' => 'Sigil of Purity (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9118,8 +9115,8 @@
       'id' => 68,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Divinity',
-      'pvp_name' => 'Rune of Divinity (PvP)',
+      'name' => 'Superior Rune of the Afflicted',
+      'pvp_name' => 'Rune of the Afflicted (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9128,8 +9125,8 @@
       'id' => 69,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Dolyak',
-      'pvp_name' => 'Rune of the Dolyak (PvP)',
+      'name' => 'Superior Rune of the Air',
+      'pvp_name' => 'Rune of Air (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9138,8 +9135,8 @@
       'id' => 70,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Dwayna',
-      'pvp_name' => 'Rune of Dwayna (PvP)',
+      'name' => 'Superior Rune of Balthazar',
+      'pvp_name' => 'Rune of Balthazar (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9148,8 +9145,8 @@
       'id' => 71,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Eagle',
-      'pvp_name' => 'Rune of the Eagle (PvP)',
+      'name' => 'Superior Rune of the Centaur',
+      'pvp_name' => 'Rune of the Centaur (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9158,8 +9155,8 @@
       'id' => 72,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Strength',
-      'pvp_name' => 'Rune of Strength (PvP)',
+      'name' => 'Superior Rune of the Citadel',
+      'pvp_name' => 'Rune of the Citadel (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9168,8 +9165,8 @@
       'id' => 73,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Fire',
-      'pvp_name' => 'Rune of Fire (PvP)',
+      'name' => 'Superior Rune of Divinity',
+      'pvp_name' => 'Rune of Divinity (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9178,8 +9175,8 @@
       'id' => 74,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Earth',
-      'pvp_name' => 'Rune of Earth (PvP)',
+      'name' => 'Superior Rune of the Dolyak',
+      'pvp_name' => 'Rune of the Dolyak (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9188,8 +9185,8 @@
       'id' => 75,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Flame Legion',
-      'pvp_name' => 'Rune of the Flame Legion (PvP)',
+      'name' => 'Superior Rune of Dwayna',
+      'pvp_name' => 'Rune of Dwayna (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9198,8 +9195,8 @@
       'id' => 76,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Flock',
-      'pvp_name' => 'Rune of the Flock (PvP)',
+      'name' => 'Superior Rune of the Eagle',
+      'pvp_name' => 'Rune of the Eagle (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9208,8 +9205,8 @@
       'id' => 77,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Krait',
-      'pvp_name' => 'Rune of the Krait (PvP)',
+      'name' => 'Superior Rune of Strength',
+      'pvp_name' => 'Rune of Strength (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9218,8 +9215,8 @@
       'id' => 78,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Grenth',
-      'pvp_name' => 'Rune of Grenth (PvP)',
+      'name' => 'Superior Rune of the Fire',
+      'pvp_name' => 'Rune of Fire (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9228,8 +9225,8 @@
       'id' => 79,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Grove',
-      'pvp_name' => 'Rune of the Grove (PvP)',
+      'name' => 'Superior Rune of the Earth',
+      'pvp_name' => 'Rune of Earth (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9238,8 +9235,8 @@
       'id' => 80,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Hoelbrak',
-      'pvp_name' => 'Rune of Hoelbrak (PvP)',
+      'name' => 'Superior Rune of Flame Legion',
+      'pvp_name' => 'Rune of the Flame Legion (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9248,8 +9245,8 @@
       'id' => 81,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ice',
-      'pvp_name' => 'Rune of Ice (PvP)',
+      'name' => 'Superior Rune of the Flock',
+      'pvp_name' => 'Rune of the Flock (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9258,8 +9255,8 @@
       'id' => 82,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Infiltration',
-      'pvp_name' => 'Rune of Infiltration (PvP)',
+      'name' => 'Superior Rune of the Krait',
+      'pvp_name' => 'Rune of the Krait (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9268,8 +9265,8 @@
       'id' => 83,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Lich',
-      'pvp_name' => 'Rune of the Lich (PvP)',
+      'name' => 'Superior Rune of Grenth',
+      'pvp_name' => 'Rune of Grenth (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9278,8 +9275,8 @@
       'id' => 84,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Lyssa',
-      'pvp_name' => 'Rune of Lyssa (PvP)',
+      'name' => 'Superior Rune of the Grove',
+      'pvp_name' => 'Rune of the Grove (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9288,8 +9285,8 @@
       'id' => 85,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Melandru',
-      'pvp_name' => 'Rune of Melandru (PvP)',
+      'name' => 'Superior Rune of Hoelbrak',
+      'pvp_name' => 'Rune of Hoelbrak (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9298,8 +9295,8 @@
       'id' => 86,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Mercy',
-      'pvp_name' => 'Rune of Mercy (PvP)',
+      'name' => 'Superior Rune of the Ice',
+      'pvp_name' => 'Rune of Ice (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9308,8 +9305,8 @@
       'id' => 87,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ogre',
-      'pvp_name' => 'Rune of the Ogre (PvP)',
+      'name' => 'Superior Rune of Infiltration',
+      'pvp_name' => 'Rune of Infiltration (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9318,9 +9315,8 @@
       'id' => 88,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Pack',
-      'pvp_name' => 'Rune of the Pack (PvP)',
-      'pvx' => 7,
+      'name' => 'Superior Rune of the Lich',
+      'pvx' => 6,
       'is_profile' => false,
     ),
     78 => 
@@ -9328,8 +9324,8 @@
       'id' => 89,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Rage',
-      'pvp_name' => 'Rune of Rage (PvP)',
+      'name' => 'Superior Rune of Lyssa',
+      'pvp_name' => 'Rune of Lyssa (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9338,8 +9334,8 @@
       'id' => 90,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Rata Sum',
-      'pvp_name' => 'Rune of Rata Sum (PvP)',
+      'name' => 'Superior Rune of Melandru',
+      'pvp_name' => 'Rune of Melandru (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9348,8 +9344,8 @@
       'id' => 91,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Speed',
-      'pvp_name' => 'Rune of Speed (PvP)',
+      'name' => 'Superior Rune of Mercy',
+      'pvp_name' => 'Rune of Mercy (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9358,9 +9354,8 @@
       'id' => 92,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Undead',
-      'pvp_name' => 'Rune of the Undead (PvP)',
-      'pvx' => 7,
+      'name' => 'Superior Rune of the Ogre',
+      'pvx' => 6,
       'is_profile' => false,
     ),
     82 => 
@@ -9368,8 +9363,8 @@
       'id' => 93,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Vampirism',
-      'pvp_name' => 'Rune of Vampirism (PvP)',
+      'name' => 'Superior Rune of the Pack',
+      'pvp_name' => 'Rune of the Pack (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9378,8 +9373,8 @@
       'id' => 94,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Wurm',
-      'pvp_name' => 'Rune of the Wurm (PvP)',
+      'name' => 'Superior Rune of Rage',
+      'pvp_name' => 'Rune of Rage (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9388,8 +9383,8 @@
       'id' => 95,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Svanir',
-      'pvp_name' => 'Rune of Svanir (PvP)',
+      'name' => 'Superior Rune of the Rata Sum',
+      'pvp_name' => 'Rune of Rata Sum (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9398,8 +9393,8 @@
       'id' => 96,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Necromancer',
-      'pvp_name' => 'Rune of the Necromancer (PvP)',
+      'name' => 'Superior Rune of Speed',
+      'pvp_name' => 'Rune of Speed (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9408,8 +9403,8 @@
       'id' => 97,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Mesmer',
-      'pvp_name' => 'Rune of the Mesmer (PvP)',
+      'name' => 'Superior Rune of the Undead',
+      'pvp_name' => 'Rune of the Undead (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9418,8 +9413,8 @@
       'id' => 98,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Engineer',
-      'pvp_name' => 'Rune of the Engineer (PvP)',
+      'name' => 'Superior Rune of Vampirism',
+      'pvp_name' => 'Rune of Vampirism (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9428,8 +9423,8 @@
       'id' => 99,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ranger',
-      'pvp_name' => 'Rune of the Ranger (PvP)',
+      'name' => 'Superior Rune of the Wurm',
+      'pvp_name' => 'Rune of the Wurm (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9438,8 +9433,8 @@
       'id' => 100,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Elementalist',
-      'pvp_name' => 'Rune of the Elementalist (PvP)',
+      'name' => 'Superior Rune of Svanir',
+      'pvp_name' => 'Rune of Svanir (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9448,8 +9443,8 @@
       'id' => 101,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Thief',
-      'pvp_name' => 'Rune of the Thief (PvP)',
+      'name' => 'Superior Rune of the Necromancer',
+      'pvp_name' => 'Rune of the Necromancer (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9458,8 +9453,8 @@
       'id' => 102,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Warrior',
-      'pvp_name' => 'Rune of the Warrior (PvP)',
+      'name' => 'Superior Rune of the Mesmer',
+      'pvp_name' => 'Rune of the Mesmer (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9468,8 +9463,8 @@
       'id' => 103,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Guardian',
-      'pvp_name' => 'Rune of the Guardian (PvP)',
+      'name' => 'Superior Rune of the Engineer',
+      'pvp_name' => 'Rune of the Engineer (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9478,8 +9473,8 @@
       'id' => 104,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Trooper',
-      'pvp_name' => 'Rune of the Soldier (PvP)',
+      'name' => 'Superior Rune of the Ranger',
+      'pvp_name' => 'Rune of the Ranger (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9488,8 +9483,8 @@
       'id' => 105,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Adventurer',
-      'pvp_name' => 'Rune of Adventure (PvP)',
+      'name' => 'Superior Rune of the Elementalist',
+      'pvp_name' => 'Rune of the Elementalist (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9498,8 +9493,8 @@
       'id' => 106,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Brawler',
-      'pvp_name' => 'Rune of the Fighter (PvP)',
+      'name' => 'Superior Rune of the Thief',
+      'pvp_name' => 'Rune of the Thief (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9508,8 +9503,8 @@
       'id' => 107,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Scholar',
-      'pvp_name' => 'Rune of the Scholar (PvP)',
+      'name' => 'Superior Rune of the Warrior',
+      'pvp_name' => 'Rune of the Warrior (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9518,8 +9513,8 @@
       'id' => 108,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Water',
-      'pvp_name' => 'Rune of the Water (PvP)',
+      'name' => 'Superior Rune of the Guardian',
+      'pvp_name' => 'Rune of the Guardian (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9528,8 +9523,8 @@
       'id' => 109,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Monk',
-      'pvp_name' => 'Rune of the Monk (PvP)',
+      'name' => 'Superior Rune of the Trooper',
+      'pvp_name' => 'Rune of the Soldier (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9538,8 +9533,8 @@
       'id' => 110,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Nightmare',
-      'pvp_name' => 'Rune of the Nightmare (PvP)',
+      'name' => 'Superior Rune of the Adventurer',
+      'pvp_name' => 'Rune of Adventure (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9548,8 +9543,8 @@
       'id' => 111,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Forgeman',
-      'pvp_name' => 'Rune of the Forge (PvP)',
+      'name' => 'Superior Rune of the Brawler',
+      'pvp_name' => 'Rune of the Fighter (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9558,8 +9553,8 @@
       'id' => 112,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Baelfire',
-      'pvp_name' => 'Rune of the Baelfire (PvP)',
+      'name' => 'Superior Rune of the Scholar',
+      'pvp_name' => 'Rune of the Scholar (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9568,8 +9563,8 @@
       'id' => 113,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Sanctuary',
-      'pvp_name' => 'Rune of Sanctuary (PvP)',
+      'name' => 'Superior Rune of the Water',
+      'pvp_name' => 'Rune of the Water (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9578,8 +9573,8 @@
       'id' => 114,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Orr',
-      'pvp_name' => 'Rune of Orr (PvP)',
+      'name' => 'Superior Rune of the Monk',
+      'pvp_name' => 'Rune of the Monk (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9588,8 +9583,9 @@
       'id' => 115,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Exuberance',
-      'pvx' => 6,
+      'name' => 'Superior Rune of the Nightmare',
+      'pvp_name' => 'Rune of the Nightmare (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     105 => 
@@ -9597,8 +9593,9 @@
       'id' => 116,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Perplexity',
-      'pvx' => 6,
+      'name' => 'Superior Rune of the Forgeman',
+      'pvp_name' => 'Rune of the Forge (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     106 => 
@@ -9606,8 +9603,9 @@
       'id' => 117,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Tormenting',
-      'pvx' => 6,
+      'name' => 'Superior Rune of the Baelfire',
+      'pvp_name' => 'Rune of the Baelfire (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     107 => 
@@ -9615,8 +9613,8 @@
       'id' => 118,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Mad King',
-      'pvp_name' => 'Rune of the Mad King (PvP)',
+      'name' => 'Superior Rune of Sanctuary',
+      'pvp_name' => 'Rune of Sanctuary (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9625,8 +9623,8 @@
       'id' => 119,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Scavenging',
-      'pvp_name' => 'Rune of Scavenging (PvP)',
+      'name' => 'Superior Rune of Orr',
+      'pvp_name' => 'Rune of Orr (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9635,9 +9633,8 @@
       'id' => 120,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Altruism',
-      'pvp_name' => 'Rune of Altruism (PvP)',
-      'pvx' => 7,
+      'name' => 'Superior Rune of Exuberance',
+      'pvx' => 6,
       'is_profile' => false,
     ),
     110 => 
@@ -9645,7 +9642,7 @@
       'id' => 121,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Aristocracy',
+      'name' => 'Superior Rune of Perplexity',
       'pvx' => 6,
       'is_profile' => false,
     ),
@@ -9654,9 +9651,8 @@
       'id' => 122,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Traveler',
-      'pvp_name' => 'Rune of the Traveler (PvP)',
-      'pvx' => 7,
+      'name' => 'Superior Rune of Tormenting',
+      'pvx' => 6,
       'is_profile' => false,
     ),
     112 => 
@@ -9664,8 +9660,8 @@
       'id' => 123,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Privateer',
-      'pvp_name' => 'Rune of the Pirate (PvP)',
+      'name' => 'Superior Rune of the Mad King',
+      'pvp_name' => 'Rune of the Mad King (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9674,8 +9670,9 @@
       'id' => 124,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Golemancer',
-      'pvx' => 6,
+      'name' => 'Superior Rune of Scavenging',
+      'pvp_name' => 'Rune of Scavenging (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     114 => 
@@ -9683,8 +9680,9 @@
       'id' => 125,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Sunless',
-      'pvx' => 6,
+      'name' => 'Superior Rune of Altruism',
+      'pvp_name' => 'Rune of Altruism (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     115 => 
@@ -9692,8 +9690,8 @@
       'id' => 126,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Resistance',
-      'pvp_name' => 'Rune of Resistance (PvP)',
+      'name' => 'Superior Rune of the Aristocracy',
+      'pvp_name' => 'Rune of the Aristocracy (PvP)',
       'pvx' => 7,
       'is_profile' => false,
     ),
@@ -9702,8 +9700,9 @@
       'id' => 127,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Evasion',
-      'pvx' => 6,
+      'name' => 'Superior Rune of the Traveler',
+      'pvp_name' => 'Rune of the Traveler (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     117 => 
@@ -9711,7 +9710,7 @@
       'id' => 128,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Trapper',
+      'name' => 'Superior Rune of the Privateer',
       'pvx' => 6,
       'is_profile' => false,
     ),
@@ -9720,7 +9719,7 @@
       'id' => 129,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Radiance',
+      'name' => 'Superior Rune of the Golemancer',
       'pvx' => 6,
       'is_profile' => false,
     ),
@@ -9729,7 +9728,7 @@
       'id' => 130,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Snowfall',
+      'name' => 'Superior Rune of the Sunless',
       'pvx' => 6,
       'is_profile' => false,
     ),
@@ -9738,8 +9737,9 @@
       'id' => 131,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Defender',
-      'pvx' => 6,
+      'name' => 'Superior Rune of Resistance',
+      'pvp_name' => 'Rune of Resistance (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     121 => 
@@ -9747,875 +9747,1063 @@
       'id' => 132,
       'type' => 'Rune',
       'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Antitoxin',
-      'pvx' => 6,
+      'name' => 'Superior Rune of Evasion',
+      'pvp_name' => 'Rune of Evasion (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     122 => 
     array (
-      'id' => 150,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Malign Infusion',
-      'pvx' => 6,
+      'id' => 133,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Trapper',
+      'pvp_name' => 'Rune of the Trapper (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     123 => 
     array (
-      'id' => 151,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Mighty Infusion',
-      'pvx' => 6,
+      'id' => 134,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Radiance',
+      'pvp_name' => 'Rune of Radiance (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     124 => 
     array (
-      'id' => 152,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Precise Infusion',
+      'id' => 135,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Snowfall',
       'pvx' => 6,
       'is_profile' => false,
     ),
     125 => 
     array (
-      'id' => 153,
+      'id' => 136,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Defender',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    126 => 
+    array (
+      'id' => 137,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Durability',
+      'pvp_name' => 'Rune of Durability (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    127 => 
+    array (
+      'id' => 138,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Leadership',
+      'pvp_name' => 'Rune of Leadership (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    128 => 
+    array (
+      'id' => 139,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Surging',
+      'pvp_name' => 'Rune of Surging (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    129 => 
+    array (
+      'id' => 140,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Berserker',
+      'pvp_name' => 'Rune of the Berserker (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    130 => 
+    array (
+      'id' => 141,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Chronomancer',
+      'pvp_name' => 'Rune of the Chronomancer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    131 => 
+    array (
+      'id' => 142,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Daredevil',
+      'pvp_name' => 'Rune of the Daredevil (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    132 => 
+    array (
+      'id' => 143,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Dragonhunter',
+      'pvp_name' => 'Rune of the Dragonhunter (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    133 => 
+    array (
+      'id' => 144,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Druid',
+      'pvp_name' => 'Rune of the Druid (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    134 => 
+    array (
+      'id' => 145,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Herald',
+      'pvp_name' => 'Rune of the Herald (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    135 => 
+    array (
+      'id' => 146,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Reaper',
+      'pvp_name' => 'Rune of the Reaper (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    136 => 
+    array (
+      'id' => 147,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Revenant',
+      'pvp_name' => 'Rune of the Revenant (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    137 => 
+    array (
+      'id' => 148,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Scrapper',
+      'pvp_name' => 'Rune of the Scrapper (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    138 => 
+    array (
+      'id' => 149,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Tempest',
+      'pvp_name' => 'Rune of the Tempest (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    139 => 
+    array (
+      'id' => 150,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Thorns',
+      'pvp_name' => 'Rune of Thorns (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    140 => 
+    array (
+      'id' => 151,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Antitoxin',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    141 => 
+    array (
+      'id' => 176,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Malign Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    142 => 
+    array (
+      'id' => 177,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Mighty Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    143 => 
+    array (
+      'id' => 178,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Precise Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    144 => 
+    array (
+      'id' => 179,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Malign Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    126 => 
+    145 => 
     array (
-      'id' => 154,
+      'id' => 180,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Mighty Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    127 => 
+    146 => 
     array (
-      'id' => 155,
+      'id' => 181,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Precise Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    128 => 
+    147 => 
     array (
-      'id' => 156,
+      'id' => 182,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Malign WvW Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    129 => 
+    148 => 
     array (
-      'id' => 157,
+      'id' => 183,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Mighty WvW Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    130 => 
+    149 => 
     array (
-      'id' => 158,
+      'id' => 184,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Precise WvW Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    131 => 
+    150 => 
     array (
-      'id' => 159,
+      'id' => 185,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Healing Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    132 => 
+    151 => 
     array (
-      'id' => 160,
+      'id' => 186,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Resilient Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    133 => 
+    152 => 
     array (
-      'id' => 161,
+      'id' => 187,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    134 => 
+    153 => 
     array (
-      'id' => 162,
+      'id' => 188,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Healing Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    135 => 
+    154 => 
     array (
-      'id' => 163,
+      'id' => 189,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Resilient Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    136 => 
+    155 => 
     array (
-      'id' => 164,
+      'id' => 190,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    137 => 
+    156 => 
     array (
-      'id' => 165,
+      'id' => 191,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Healing WvW Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    138 => 
+    157 => 
     array (
-      'id' => 166,
+      'id' => 192,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Resilient WvW Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    139 => 
+    158 => 
     array (
-      'id' => 167,
+      'id' => 193,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Vital WvW Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    140 => 
+    159 => 
     array (
-      'id' => 168,
+      'id' => 194,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Gilded Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    141 => 
+    160 => 
     array (
-      'id' => 169,
+      'id' => 195,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Magical Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    142 => 
+    161 => 
     array (
-      'id' => 170,
+      'id' => 196,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Experienced Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    143 => 
+    162 => 
     array (
-      'id' => 171,
+      'id' => 197,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Karmic Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    144 => 
+    163 => 
     array (
-      'id' => 172,
+      'id' => 198,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Versatile Simple Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    145 => 
+    164 => 
     array (
-      'id' => 173,
+      'id' => 199,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Malign Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    146 => 
+    165 => 
     array (
-      'id' => 174,
+      'id' => 200,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Mighty Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    147 => 
+    166 => 
     array (
-      'id' => 175,
+      'id' => 201,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Precise Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    148 => 
+    167 => 
     array (
-      'id' => 176,
+      'id' => 202,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Healing Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    149 => 
+    168 => 
     array (
-      'id' => 177,
+      'id' => 203,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Resilient Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    150 => 
+    169 => 
     array (
-      'id' => 178,
+      'id' => 204,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    151 => 
+    170 => 
     array (
-      'id' => 179,
+      'id' => 205,
       'type' => 'Doubloon',
       'rarity' => 'Rare',
       'name' => 'Copper Doubloon',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    152 => 
+    171 => 
     array (
-      'id' => 180,
+      'id' => 206,
       'type' => 'Doubloon',
       'rarity' => 'Rare',
       'name' => 'Silver Doubloon',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    153 => 
+    172 => 
     array (
-      'id' => 181,
+      'id' => 207,
       'type' => 'Doubloon',
       'rarity' => 'Rare',
       'name' => 'Gold Doubloon',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    154 => 
+    173 => 
     array (
-      'id' => 182,
+      'id' => 208,
       'type' => 'Doubloon',
       'rarity' => 'Rare',
       'name' => 'Platinum Doubloon',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    155 => 
+    174 => 
     array (
-      'id' => 183,
+      'id' => 209,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Afflicted',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    156 => 
+    175 => 
     array (
-      'id' => 184,
+      'id' => 210,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Air',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    157 => 
+    176 => 
     array (
-      'id' => 185,
+      'id' => 211,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Balthazar',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    158 => 
+    177 => 
     array (
-      'id' => 186,
+      'id' => 212,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Centaur',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    159 => 
+    178 => 
     array (
-      'id' => 187,
+      'id' => 213,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Citadel',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    160 => 
+    179 => 
     array (
-      'id' => 188,
+      'id' => 214,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Divinity',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    161 => 
+    180 => 
     array (
-      'id' => 189,
+      'id' => 215,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Dolyak',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    162 => 
+    181 => 
     array (
-      'id' => 190,
+      'id' => 216,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Dwayna',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    163 => 
+    182 => 
     array (
-      'id' => 191,
+      'id' => 217,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Eagle',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    164 => 
+    183 => 
     array (
-      'id' => 192,
+      'id' => 218,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Strength',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    165 => 
+    184 => 
     array (
-      'id' => 193,
+      'id' => 219,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Fire',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    166 => 
+    185 => 
     array (
-      'id' => 194,
+      'id' => 220,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Earth',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    167 => 
+    186 => 
     array (
-      'id' => 195,
+      'id' => 221,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Flame Legion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    168 => 
+    187 => 
     array (
-      'id' => 196,
+      'id' => 222,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Flock',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    169 => 
+    188 => 
     array (
-      'id' => 197,
+      'id' => 223,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Krait',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    170 => 
+    189 => 
     array (
-      'id' => 198,
+      'id' => 224,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Grenth',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    171 => 
+    190 => 
     array (
-      'id' => 199,
+      'id' => 225,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Grove',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    172 => 
+    191 => 
     array (
-      'id' => 200,
+      'id' => 226,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Hoelbrak',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    173 => 
+    192 => 
     array (
-      'id' => 201,
+      'id' => 227,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Ice',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    174 => 
+    193 => 
     array (
-      'id' => 202,
+      'id' => 228,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Infiltration',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    175 => 
+    194 => 
     array (
-      'id' => 203,
+      'id' => 229,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Lich',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    176 => 
+    195 => 
     array (
-      'id' => 204,
+      'id' => 230,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Lyssa',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    177 => 
+    196 => 
     array (
-      'id' => 205,
+      'id' => 231,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Melandru',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    178 => 
+    197 => 
     array (
-      'id' => 206,
+      'id' => 232,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Mercy',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    179 => 
+    198 => 
     array (
-      'id' => 207,
+      'id' => 233,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Ogre',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    180 => 
+    199 => 
     array (
-      'id' => 208,
+      'id' => 234,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Pack',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    181 => 
+    200 => 
     array (
-      'id' => 209,
+      'id' => 235,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Rage',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    182 => 
+    201 => 
     array (
-      'id' => 210,
+      'id' => 236,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Rata Sum',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    183 => 
+    202 => 
     array (
-      'id' => 211,
+      'id' => 237,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Speed',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    184 => 
+    203 => 
     array (
-      'id' => 212,
+      'id' => 238,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Undead',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    185 => 
+    204 => 
     array (
-      'id' => 213,
+      'id' => 239,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Vampirism',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    186 => 
+    205 => 
     array (
-      'id' => 214,
+      'id' => 240,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Wurm',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    187 => 
+    206 => 
     array (
-      'id' => 215,
+      'id' => 241,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Svanir',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    188 => 
+    207 => 
     array (
-      'id' => 216,
+      'id' => 242,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Necromancer',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    189 => 
+    208 => 
     array (
-      'id' => 217,
+      'id' => 243,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Mesmer',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    190 => 
+    209 => 
     array (
-      'id' => 218,
+      'id' => 244,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Engineer',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    191 => 
+    210 => 
     array (
-      'id' => 219,
+      'id' => 245,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Ranger',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    192 => 
+    211 => 
     array (
-      'id' => 220,
+      'id' => 246,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Elementalist',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    193 => 
+    212 => 
     array (
-      'id' => 221,
+      'id' => 247,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Thief',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    194 => 
+    213 => 
     array (
-      'id' => 222,
+      'id' => 248,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Warrior',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    195 => 
+    214 => 
     array (
-      'id' => 223,
+      'id' => 249,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Guardian',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    196 => 
+    215 => 
     array (
-      'id' => 224,
+      'id' => 250,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Trooper',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    197 => 
+    216 => 
     array (
-      'id' => 225,
+      'id' => 251,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Adventurer',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    198 => 
+    217 => 
     array (
-      'id' => 226,
+      'id' => 252,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Brawler',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    199 => 
+    218 => 
     array (
-      'id' => 227,
+      'id' => 253,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Scholar',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    200 => 
+    219 => 
     array (
-      'id' => 228,
+      'id' => 254,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Water',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    201 => 
+    220 => 
     array (
-      'id' => 229,
+      'id' => 255,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Monk',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    202 => 
+    221 => 
     array (
-      'id' => 230,
+      'id' => 256,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Nightmare',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    203 => 
+    222 => 
     array (
-      'id' => 231,
+      'id' => 257,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Forgeman',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    204 => 
+    223 => 
     array (
-      'id' => 232,
+      'id' => 258,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Baelfire',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    205 => 
+    224 => 
     array (
-      'id' => 233,
+      'id' => 259,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Sanctuary',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    206 => 
+    225 => 
     array (
-      'id' => 234,
+      'id' => 260,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Orr',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    207 => 
+    226 => 
     array (
-      'id' => 235,
+      'id' => 261,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Exuberance',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    208 => 
+    227 => 
     array (
-      'id' => 236,
+      'id' => 262,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Perplexity',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    209 => 
+    228 => 
     array (
-      'id' => 237,
+      'id' => 263,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Tormenting',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    210 => 
+    229 => 
     array (
-      'id' => 238,
+      'id' => 264,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Mad King',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    211 => 
+    230 => 
     array (
-      'id' => 239,
+      'id' => 265,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Scavenging',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    212 => 
+    231 => 
     array (
-      'id' => 240,
+      'id' => 266,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Altruism',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    213 => 
+    232 => 
     array (
-      'id' => 241,
+      'id' => 267,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Aristocracy',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    214 => 
+    233 => 
     array (
-      'id' => 242,
+      'id' => 268,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Traveler',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    215 => 
+    234 => 
     array (
-      'id' => 243,
+      'id' => 269,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Privateer',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    216 => 
+    235 => 
     array (
-      'id' => 244,
+      'id' => 270,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of the Golemancer',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    217 => 
+    236 => 
     array (
-      'id' => 245,
+      'id' => 271,
       'type' => 'Rune',
       'rarity' => 'Rare',
       'name' => 'Major Rune of Snowfall',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    218 => 
+    237 => 
     array (
       'id' => 1,
       'type' => 'Crest',
@@ -10624,7 +10812,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    219 => 
+    238 => 
     array (
       'id' => 2,
       'type' => 'Crest',
@@ -10633,7 +10821,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    220 => 
+    239 => 
     array (
       'id' => 3,
       'type' => 'Crest',
@@ -10642,7 +10830,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    221 => 
+    240 => 
     array (
       'id' => 4,
       'type' => 'Crest',
@@ -10651,7 +10839,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    222 => 
+    241 => 
     array (
       'id' => 5,
       'type' => 'Crest',
@@ -10660,7 +10848,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    223 => 
+    242 => 
     array (
       'id' => 6,
       'type' => 'Gemstone',
@@ -10669,7 +10857,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    224 => 
+    243 => 
     array (
       'id' => 7,
       'type' => 'Gemstone',
@@ -10678,7 +10866,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    225 => 
+    244 => 
     array (
       'id' => 8,
       'type' => 'Gemstone',
@@ -10687,7 +10875,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    226 => 
+    245 => 
     array (
       'id' => 9,
       'type' => 'Gemstone',
@@ -10696,7 +10884,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    227 => 
+    246 => 
     array (
       'id' => 10,
       'type' => 'Gemstone',
@@ -10705,7 +10893,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    228 => 
+    247 => 
     array (
       'id' => 11,
       'type' => 'Gemstone',
@@ -10714,7 +10902,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    229 => 
+    248 => 
     array (
       'id' => 12,
       'type' => 'Gemstone',
@@ -10723,135 +10911,279 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    230 => 
+    249 => 
     array (
       'id' => 14,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Agate Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    250 => 
+    array (
+      'id' => 15,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Black Diamond',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    251 => 
+    array (
+      'id' => 16,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Freshwater Pearl',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    252 => 
+    array (
+      'id' => 17,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Ebony Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    253 => 
+    array (
+      'id' => 18,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Moonstone Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    254 => 
+    array (
+      'id' => 19,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Maguuma Burl',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    255 => 
+    array (
+      'id' => 20,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Maguuma Lily',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    256 => 
+    array (
+      'id' => 21,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Flax Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    257 => 
+    array (
+      'id' => 22,
       'type' => 'Gemstone',
       'rarity' => 'Rare',
       'name' => 'Azurite Orb',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    231 => 
+    258 => 
     array (
-      'id' => 15,
+      'id' => 23,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Ruby Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    232 => 
+    259 => 
     array (
-      'id' => 16,
+      'id' => 24,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Beryl Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    233 => 
+    260 => 
     array (
-      'id' => 17,
+      'id' => 25,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Emerald Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    234 => 
+    261 => 
     array (
-      'id' => 18,
+      'id' => 26,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Coral Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    235 => 
+    262 => 
     array (
-      'id' => 19,
+      'id' => 27,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Chrysocola Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    236 => 
+    263 => 
     array (
-      'id' => 20,
+      'id' => 28,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Sapphire Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    237 => 
+    264 => 
     array (
-      'id' => 21,
+      'id' => 29,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Opal Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    238 => 
+    265 => 
     array (
-      'id' => 22,
+      'id' => 30,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Azurite Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    239 => 
+    266 => 
     array (
-      'id' => 23,
+      'id' => 31,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Snowflake',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    240 => 
+    267 => 
     array (
-      'id' => 24,
+      'id' => 32,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Charged Quartz Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    241 => 
+    268 => 
     array (
-      'id' => 25,
+      'id' => 33,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Watchwork Sprocket',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    242 => 
+    269 => 
     array (
-      'id' => 26,
+      'id' => 34,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Ambrite Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    243 => 
+    270 => 
     array (
-      'id' => 27,
+      'id' => 35,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Charged Ambrite Jewel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    244 => 
+    271 => 
     array (
-      'id' => 28,
+      'id' => 36,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Burl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    272 => 
+    array (
+      'id' => 37,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Ebony Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    273 => 
+    array (
+      'id' => 38,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Agate Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    274 => 
+    array (
+      'id' => 39,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Freshwater Pearl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    275 => 
+    array (
+      'id' => 40,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Lily Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    276 => 
+    array (
+      'id' => 41,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Flax Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    277 => 
+    array (
+      'id' => 42,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Black Diamond Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    278 => 
+    array (
+      'id' => 43,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Moonstone Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    279 => 
+    array (
+      'id' => 44,
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Passion Flower',
@@ -10859,7 +11191,7 @@
       'is_profile' => true,
     ),
   ),
-  'revision' => 1444057949,
+  'revision' => 1446808880,
   'specializations' => 
   array (
     0 => 
@@ -12451,7 +12783,7 @@
   array (
     0 => 
     array (
-      'id' => 133,
+      'id' => 152,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Knight Amulet',
@@ -12460,7 +12792,7 @@
     ),
     1 => 
     array (
-      'id' => 134,
+      'id' => 153,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Cavalier Amulet',
@@ -12469,7 +12801,7 @@
     ),
     2 => 
     array (
-      'id' => 135,
+      'id' => 154,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Magi Amulet',
@@ -12478,7 +12810,7 @@
     ),
     3 => 
     array (
-      'id' => 136,
+      'id' => 155,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Celestial Amulet',
@@ -12487,7 +12819,7 @@
     ),
     4 => 
     array (
-      'id' => 137,
+      'id' => 156,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Carrion Amulet',
@@ -12496,7 +12828,7 @@
     ),
     5 => 
     array (
-      'id' => 138,
+      'id' => 157,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Rabid Amulet',
@@ -12505,7 +12837,7 @@
     ),
     6 => 
     array (
-      'id' => 139,
+      'id' => 158,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Cleric Amulet',
@@ -12514,7 +12846,7 @@
     ),
     7 => 
     array (
-      'id' => 140,
+      'id' => 159,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Valkyrie Amulet',
@@ -12523,7 +12855,7 @@
     ),
     8 => 
     array (
-      'id' => 141,
+      'id' => 160,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Berserker Amulet',
@@ -12532,7 +12864,7 @@
     ),
     9 => 
     array (
-      'id' => 142,
+      'id' => 161,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Soldier Amulet',
@@ -12541,7 +12873,7 @@
     ),
     10 => 
     array (
-      'id' => 143,
+      'id' => 162,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Rampager Amulet',
@@ -12550,7 +12882,7 @@
     ),
     11 => 
     array (
-      'id' => 144,
+      'id' => 163,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Barbarian Amulet',
@@ -12559,7 +12891,7 @@
     ),
     12 => 
     array (
-      'id' => 145,
+      'id' => 164,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Assassin Amulet',
@@ -12568,7 +12900,7 @@
     ),
     13 => 
     array (
-      'id' => 146,
+      'id' => 165,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Sentinel Amulet',
@@ -12577,7 +12909,7 @@
     ),
     14 => 
     array (
-      'id' => 147,
+      'id' => 167,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Crusader Amulet',
@@ -12586,7 +12918,7 @@
     ),
     15 => 
     array (
-      'id' => 148,
+      'id' => 168,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Marauder Amulet',
@@ -12595,16 +12927,52 @@
     ),
     16 => 
     array (
-      'id' => 149,
+      'id' => 171,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Vigilant Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    17 => 
+    array (
+      'id' => 172,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Viper Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    18 => 
+    array (
+      'id' => 173,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Wanderer Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    19 => 
+    array (
+      'id' => 174,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Sinister Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    20 => 
+    array (
+      'id' => 175,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Settler Amulet',
       'pvx' => 1,
       'is_profile' => false,
     ),
-    17 => 
+    21 => 
     array (
-      'id' => 29,
+      'id' => 45,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12612,9 +12980,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    18 => 
+    22 => 
     array (
-      'id' => 30,
+      'id' => 46,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12622,9 +12990,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    19 => 
+    23 => 
     array (
-      'id' => 31,
+      'id' => 47,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12632,9 +13000,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    20 => 
+    24 => 
     array (
-      'id' => 32,
+      'id' => 48,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12642,9 +13010,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    21 => 
+    25 => 
     array (
-      'id' => 33,
+      'id' => 49,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12652,9 +13020,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    22 => 
+    26 => 
     array (
-      'id' => 34,
+      'id' => 50,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12662,9 +13030,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    23 => 
+    27 => 
     array (
-      'id' => 35,
+      'id' => 51,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12672,9 +13040,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    24 => 
+    28 => 
     array (
-      'id' => 36,
+      'id' => 52,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12682,9 +13050,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    25 => 
+    29 => 
     array (
-      'id' => 37,
+      'id' => 53,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12692,9 +13060,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    26 => 
+    30 => 
     array (
-      'id' => 38,
+      'id' => 54,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12702,9 +13070,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    27 => 
+    31 => 
     array (
-      'id' => 39,
+      'id' => 55,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12712,9 +13080,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    28 => 
+    32 => 
     array (
-      'id' => 40,
+      'id' => 56,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12722,9 +13090,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    29 => 
+    33 => 
     array (
-      'id' => 41,
+      'id' => 57,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12732,9 +13100,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    30 => 
+    34 => 
     array (
-      'id' => 42,
+      'id' => 58,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12742,9 +13110,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    31 => 
+    35 => 
     array (
-      'id' => 43,
+      'id' => 59,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12752,9 +13120,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    32 => 
+    36 => 
     array (
-      'id' => 44,
+      'id' => 60,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12762,9 +13130,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    33 => 
+    37 => 
     array (
-      'id' => 45,
+      'id' => 61,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12772,9 +13140,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    34 => 
+    38 => 
     array (
-      'id' => 46,
+      'id' => 62,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12782,9 +13150,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    35 => 
+    39 => 
     array (
-      'id' => 47,
+      'id' => 63,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -12792,9 +13160,89 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    36 => 
+    40 => 
     array (
-      'id' => 49,
+      'id' => 64,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    41 => 
+    array (
+      'id' => 65,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    42 => 
+    array (
+      'id' => 66,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    43 => 
+    array (
+      'id' => 67,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    44 => 
+    array (
+      'id' => 68,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    45 => 
+    array (
+      'id' => 69,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    46 => 
+    array (
+      'id' => 70,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    47 => 
+    array (
+      'id' => 71,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    48 => 
+    array (
+      'id' => 73,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12802,9 +13250,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    37 => 
+    49 => 
     array (
-      'id' => 50,
+      'id' => 74,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12812,9 +13260,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    38 => 
+    50 => 
     array (
-      'id' => 51,
+      'id' => 75,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12822,9 +13270,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    39 => 
+    51 => 
     array (
-      'id' => 52,
+      'id' => 76,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12832,9 +13280,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    40 => 
+    52 => 
     array (
-      'id' => 53,
+      'id' => 77,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12842,9 +13290,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    41 => 
+    53 => 
     array (
-      'id' => 54,
+      'id' => 78,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12852,9 +13300,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    42 => 
+    54 => 
     array (
-      'id' => 56,
+      'id' => 80,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12862,9 +13310,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    43 => 
+    55 => 
     array (
-      'id' => 57,
+      'id' => 81,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12872,9 +13320,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    44 => 
+    56 => 
     array (
-      'id' => 58,
+      'id' => 82,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12882,9 +13330,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    45 => 
+    57 => 
     array (
-      'id' => 59,
+      'id' => 83,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12892,9 +13340,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    46 => 
+    58 => 
     array (
-      'id' => 60,
+      'id' => 84,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12902,9 +13350,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    47 => 
+    59 => 
     array (
-      'id' => 61,
+      'id' => 85,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12912,9 +13360,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    48 => 
+    60 => 
     array (
-      'id' => 65,
+      'id' => 89,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -12922,9 +13370,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    49 => 
+    61 => 
     array (
-      'id' => 68,
+      'id' => 92,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -12932,9 +13380,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    50 => 
+    62 => 
     array (
-      'id' => 69,
+      'id' => 93,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -12942,9 +13390,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    51 => 
+    63 => 
     array (
-      'id' => 70,
+      'id' => 94,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -12952,9 +13400,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    52 => 
+    64 => 
     array (
-      'id' => 71,
+      'id' => 95,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -12962,500 +13410,676 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    53 => 
-    array (
-      'id' => 72,
-      'type' => 'Back',
-      'rarity' => 'Masterwork',
-      'name' => '',
-      'stats_class' => 'Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    54 => 
-    array (
-      'id' => 73,
-      'type' => 'Back',
-      'rarity' => 'Masterwork',
-      'name' => '',
-      'stats_class' => 'Rabid',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    55 => 
-    array (
-      'id' => 74,
-      'type' => 'Back',
-      'rarity' => 'Masterwork',
-      'name' => '',
-      'stats_class' => 'Cleric',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    56 => 
-    array (
-      'id' => 75,
-      'type' => 'Back',
-      'rarity' => 'Masterwork',
-      'name' => '',
-      'stats_class' => 'Magi',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    57 => 
-    array (
-      'id' => 77,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Berserker',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    58 => 
-    array (
-      'id' => 78,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    59 => 
-    array (
-      'id' => 79,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Valkyrie',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    60 => 
-    array (
-      'id' => 80,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Rampager',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    61 => 
-    array (
-      'id' => 81,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Knight',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    62 => 
-    array (
-      'id' => 82,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Settler',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    63 => 
-    array (
-      'id' => 83,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    64 => 
-    array (
-      'id' => 84,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Carrion',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
     65 => 
     array (
-      'id' => 85,
-      'type' => '',
-      'rarity' => 'Exotic',
+      'id' => 96,
+      'type' => 'Back',
+      'rarity' => 'Masterwork',
       'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Rabid',
+      'stats_class' => 'Shaman',
       'pvx' => 6,
       'is_profile' => true,
     ),
     66 => 
     array (
-      'id' => 86,
-      'type' => '',
-      'rarity' => 'Exotic',
+      'id' => 97,
+      'type' => 'Back',
+      'rarity' => 'Masterwork',
       'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Giver',
+      'stats_class' => 'Rabid',
       'pvx' => 6,
       'is_profile' => true,
     ),
     67 => 
     array (
-      'id' => 87,
-      'type' => '',
-      'rarity' => 'Exotic',
+      'id' => 98,
+      'type' => 'Back',
+      'rarity' => 'Masterwork',
       'name' => '',
-      'group' => 'Weapon',
       'stats_class' => 'Cleric',
       'pvx' => 6,
       'is_profile' => true,
     ),
     68 => 
     array (
-      'id' => 88,
-      'type' => '',
-      'rarity' => 'Exotic',
+      'id' => 99,
+      'type' => 'Back',
+      'rarity' => 'Masterwork',
       'name' => '',
-      'group' => 'Weapon',
       'stats_class' => 'Magi',
       'pvx' => 6,
       'is_profile' => true,
     ),
     69 => 
     array (
-      'id' => 89,
+      'id' => 101,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Apothecary',
+      'stats_class' => 'Berserker',
       'pvx' => 6,
       'is_profile' => true,
     ),
     70 => 
     array (
-      'id' => 90,
+      'id' => 102,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Assassin',
+      'stats_class' => 'Soldier',
       'pvx' => 6,
       'is_profile' => true,
     ),
     71 => 
     array (
-      'id' => 91,
+      'id' => 103,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Dire',
+      'stats_class' => 'Valkyrie',
       'pvx' => 6,
       'is_profile' => true,
     ),
     72 => 
     array (
-      'id' => 92,
+      'id' => 104,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Zealot',
+      'stats_class' => 'Rampager',
       'pvx' => 6,
       'is_profile' => true,
     ),
     73 => 
     array (
-      'id' => 93,
+      'id' => 105,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Nomad',
+      'stats_class' => 'Knight',
       'pvx' => 6,
       'is_profile' => true,
     ),
     74 => 
     array (
-      'id' => 94,
+      'id' => 106,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Sinister',
+      'stats_class' => 'Settler',
       'pvx' => 6,
       'is_profile' => true,
     ),
     75 => 
     array (
-      'id' => 95,
+      'id' => 107,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Sentinel',
+      'stats_class' => 'Shaman',
       'pvx' => 6,
       'is_profile' => true,
     ),
     76 => 
     array (
-      'id' => 96,
+      'id' => 108,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Celestial',
+      'stats_class' => 'Carrion',
       'pvx' => 6,
       'is_profile' => true,
     ),
     77 => 
     array (
-      'id' => 97,
+      'id' => 109,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Cavalier',
+      'stats_class' => 'Rabid',
       'pvx' => 6,
       'is_profile' => true,
     ),
     78 => 
     array (
-      'id' => 98,
+      'id' => 110,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Berserker',
+      'stats_class' => 'Giver',
       'pvx' => 6,
       'is_profile' => true,
     ),
     79 => 
     array (
-      'id' => 99,
+      'id' => 111,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Soldier',
+      'stats_class' => 'Cleric',
       'pvx' => 6,
       'is_profile' => true,
     ),
     80 => 
     array (
-      'id' => 100,
+      'id' => 112,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Valkyrie',
+      'stats_class' => 'Magi',
       'pvx' => 6,
       'is_profile' => true,
     ),
     81 => 
     array (
-      'id' => 101,
+      'id' => 113,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Rampager',
+      'stats_class' => 'Apothecary',
       'pvx' => 6,
       'is_profile' => true,
     ),
     82 => 
     array (
-      'id' => 102,
+      'id' => 114,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Knight',
+      'stats_class' => 'Assassin',
       'pvx' => 6,
       'is_profile' => true,
     ),
     83 => 
     array (
-      'id' => 103,
+      'id' => 115,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Settler',
+      'stats_class' => 'Dire',
       'pvx' => 6,
       'is_profile' => true,
     ),
     84 => 
     array (
-      'id' => 104,
+      'id' => 116,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Shaman',
+      'stats_class' => 'Zealot',
       'pvx' => 6,
       'is_profile' => true,
     ),
     85 => 
     array (
-      'id' => 105,
+      'id' => 117,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Carrion',
+      'stats_class' => 'Nomad',
       'pvx' => 6,
       'is_profile' => true,
     ),
     86 => 
     array (
-      'id' => 106,
+      'id' => 118,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Rabid',
+      'stats_class' => 'Sinister',
       'pvx' => 6,
       'is_profile' => true,
     ),
     87 => 
     array (
-      'id' => 107,
+      'id' => 119,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Giver',
+      'stats_class' => 'Sentinel',
       'pvx' => 6,
       'is_profile' => true,
     ),
     88 => 
     array (
-      'id' => 108,
+      'id' => 120,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Cleric',
+      'stats_class' => 'Commander',
       'pvx' => 6,
       'is_profile' => true,
     ),
     89 => 
     array (
-      'id' => 109,
+      'id' => 121,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Magi',
+      'stats_class' => 'Crusader',
       'pvx' => 6,
       'is_profile' => true,
     ),
     90 => 
     array (
-      'id' => 110,
+      'id' => 122,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Apothecary',
+      'stats_class' => 'Marauder',
       'pvx' => 6,
       'is_profile' => true,
     ),
     91 => 
     array (
-      'id' => 111,
+      'id' => 123,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Assassin',
+      'stats_class' => 'Minstrel',
       'pvx' => 6,
       'is_profile' => true,
     ),
     92 => 
     array (
-      'id' => 112,
+      'id' => 124,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Dire',
+      'stats_class' => 'Trailblazer',
       'pvx' => 6,
       'is_profile' => true,
     ),
     93 => 
     array (
-      'id' => 113,
+      'id' => 125,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Zealot',
+      'stats_class' => 'Vigilant',
       'pvx' => 6,
       'is_profile' => true,
     ),
     94 => 
     array (
-      'id' => 114,
+      'id' => 126,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Nomad',
+      'stats_class' => 'Viper',
       'pvx' => 6,
       'is_profile' => true,
     ),
     95 => 
     array (
-      'id' => 115,
+      'id' => 127,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Sinister',
+      'stats_class' => 'Wanderer',
       'pvx' => 6,
       'is_profile' => true,
     ),
     96 => 
     array (
-      'id' => 116,
+      'id' => 128,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Sentinel',
+      'stats_class' => 'Celestial',
       'pvx' => 6,
       'is_profile' => true,
     ),
     97 => 
     array (
-      'id' => 117,
+      'id' => 129,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Celestial',
+      'stats_class' => 'Cavalier',
       'pvx' => 6,
       'is_profile' => true,
     ),
     98 => 
     array (
-      'id' => 118,
+      'id' => 130,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Berserker',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    99 => 
+    array (
+      'id' => 131,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Soldier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    100 => 
+    array (
+      'id' => 132,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Valkyrie',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    101 => 
+    array (
+      'id' => 133,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Rampager',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    102 => 
+    array (
+      'id' => 134,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Knight',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    103 => 
+    array (
+      'id' => 135,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Settler',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    104 => 
+    array (
+      'id' => 136,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Shaman',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    105 => 
+    array (
+      'id' => 137,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Carrion',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    106 => 
+    array (
+      'id' => 138,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Rabid',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    107 => 
+    array (
+      'id' => 139,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Giver',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    108 => 
+    array (
+      'id' => 140,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Cleric',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    109 => 
+    array (
+      'id' => 141,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Magi',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    110 => 
+    array (
+      'id' => 142,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Apothecary',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    111 => 
+    array (
+      'id' => 143,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Assassin',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    112 => 
+    array (
+      'id' => 144,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Dire',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    113 => 
+    array (
+      'id' => 145,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Zealot',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    114 => 
+    array (
+      'id' => 146,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Nomad',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    115 => 
+    array (
+      'id' => 147,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Sinister',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    116 => 
+    array (
+      'id' => 148,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Sentinel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    117 => 
+    array (
+      'id' => 149,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    118 => 
+    array (
+      'id' => 150,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    119 => 
+    array (
+      'id' => 151,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    120 => 
+    array (
+      'id' => 152,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    121 => 
+    array (
+      'id' => 153,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    122 => 
+    array (
+      'id' => 154,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    123 => 
+    array (
+      'id' => 155,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    124 => 
+    array (
+      'id' => 156,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    125 => 
+    array (
+      'id' => 157,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Celestial',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    126 => 
+    array (
+      'id' => 158,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13464,328 +14088,416 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    99 => 
-    array (
-      'id' => 119,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Berserker',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    100 => 
-    array (
-      'id' => 120,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    101 => 
-    array (
-      'id' => 121,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Valkyrie',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    102 => 
-    array (
-      'id' => 122,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Rampager',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    103 => 
-    array (
-      'id' => 123,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Knight',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    104 => 
-    array (
-      'id' => 124,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Settler',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    105 => 
-    array (
-      'id' => 125,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    106 => 
-    array (
-      'id' => 126,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Sentinel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    107 => 
-    array (
-      'id' => 127,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Carrion',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    108 => 
-    array (
-      'id' => 128,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Rabid',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    109 => 
-    array (
-      'id' => 129,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Giver',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    110 => 
-    array (
-      'id' => 130,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Cavalier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    111 => 
-    array (
-      'id' => 131,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Cleric',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    112 => 
-    array (
-      'id' => 132,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Magi',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    113 => 
-    array (
-      'id' => 133,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Apothecary',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    114 => 
-    array (
-      'id' => 134,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Assassin',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    115 => 
-    array (
-      'id' => 135,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Zealot',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    116 => 
-    array (
-      'id' => 136,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Nomad',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    117 => 
-    array (
-      'id' => 137,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Sinister',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    118 => 
-    array (
-      'id' => 138,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Celestial',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    119 => 
-    array (
-      'id' => 139,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Dire',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    120 => 
-    array (
-      'id' => 140,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Berserker',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    121 => 
-    array (
-      'id' => 141,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    122 => 
-    array (
-      'id' => 142,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Valkyrie',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    123 => 
-    array (
-      'id' => 143,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Rampager',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    124 => 
-    array (
-      'id' => 144,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Knight',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    125 => 
-    array (
-      'id' => 145,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Settler',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    126 => 
-    array (
-      'id' => 146,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
     127 => 
     array (
-      'id' => 147,
+      'id' => 159,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Armor',
-      'stats_class' => 'Sentinel',
+      'stats_class' => 'Berserker',
       'pvx' => 6,
       'is_profile' => true,
     ),
     128 => 
     array (
-      'id' => 148,
+      'id' => 160,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Soldier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    129 => 
+    array (
+      'id' => 161,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Valkyrie',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    130 => 
+    array (
+      'id' => 162,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Rampager',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    131 => 
+    array (
+      'id' => 163,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Knight',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    132 => 
+    array (
+      'id' => 164,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Settler',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    133 => 
+    array (
+      'id' => 165,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Shaman',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    134 => 
+    array (
+      'id' => 166,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Sentinel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    135 => 
+    array (
+      'id' => 167,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Carrion',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    136 => 
+    array (
+      'id' => 168,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Rabid',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    137 => 
+    array (
+      'id' => 169,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Giver',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    138 => 
+    array (
+      'id' => 170,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Cavalier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    139 => 
+    array (
+      'id' => 171,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Cleric',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    140 => 
+    array (
+      'id' => 172,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Magi',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    141 => 
+    array (
+      'id' => 173,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Apothecary',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    142 => 
+    array (
+      'id' => 174,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Assassin',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    143 => 
+    array (
+      'id' => 175,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Zealot',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    144 => 
+    array (
+      'id' => 176,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Nomad',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    145 => 
+    array (
+      'id' => 177,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Sinister',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    146 => 
+    array (
+      'id' => 178,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    147 => 
+    array (
+      'id' => 179,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    148 => 
+    array (
+      'id' => 180,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    149 => 
+    array (
+      'id' => 181,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    150 => 
+    array (
+      'id' => 182,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    151 => 
+    array (
+      'id' => 183,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    152 => 
+    array (
+      'id' => 184,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    153 => 
+    array (
+      'id' => 185,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    154 => 
+    array (
+      'id' => 186,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Celestial',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    155 => 
+    array (
+      'id' => 187,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Dire',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    156 => 
+    array (
+      'id' => 188,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Berserker',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    157 => 
+    array (
+      'id' => 189,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Soldier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    158 => 
+    array (
+      'id' => 190,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Valkyrie',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    159 => 
+    array (
+      'id' => 191,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Rampager',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    160 => 
+    array (
+      'id' => 192,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Knight',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    161 => 
+    array (
+      'id' => 193,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Settler',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    162 => 
+    array (
+      'id' => 194,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Shaman',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    163 => 
+    array (
+      'id' => 195,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Sentinel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    164 => 
+    array (
+      'id' => 196,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13794,9 +14506,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    129 => 
+    165 => 
     array (
-      'id' => 149,
+      'id' => 197,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13805,9 +14517,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    130 => 
+    166 => 
     array (
-      'id' => 150,
+      'id' => 198,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13816,9 +14528,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    131 => 
+    167 => 
     array (
-      'id' => 151,
+      'id' => 199,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13827,9 +14539,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    132 => 
+    168 => 
     array (
-      'id' => 152,
+      'id' => 200,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13838,9 +14550,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    133 => 
+    169 => 
     array (
-      'id' => 153,
+      'id' => 201,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13849,9 +14561,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    134 => 
+    170 => 
     array (
-      'id' => 154,
+      'id' => 202,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13860,9 +14572,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    135 => 
+    171 => 
     array (
-      'id' => 155,
+      'id' => 203,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13871,9 +14583,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    136 => 
+    172 => 
     array (
-      'id' => 156,
+      'id' => 204,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13882,9 +14594,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    137 => 
+    173 => 
     array (
-      'id' => 157,
+      'id' => 205,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13893,9 +14605,97 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    138 => 
+    174 => 
     array (
-      'id' => 158,
+      'id' => 206,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    175 => 
+    array (
+      'id' => 207,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    176 => 
+    array (
+      'id' => 208,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    177 => 
+    array (
+      'id' => 209,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    178 => 
+    array (
+      'id' => 210,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    179 => 
+    array (
+      'id' => 211,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    180 => 
+    array (
+      'id' => 212,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    181 => 
+    array (
+      'id' => 213,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    182 => 
+    array (
+      'id' => 214,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13904,9 +14704,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    139 => 
+    183 => 
     array (
-      'id' => 159,
+      'id' => 215,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -13915,9 +14715,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    140 => 
+    184 => 
     array (
-      'id' => 160,
+      'id' => 216,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -13926,9 +14726,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    141 => 
+    185 => 
     array (
-      'id' => 161,
+      'id' => 217,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -13937,9 +14737,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    142 => 
+    186 => 
     array (
-      'id' => 162,
+      'id' => 218,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -13948,9 +14748,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    143 => 
+    187 => 
     array (
-      'id' => 163,
+      'id' => 219,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -13959,9 +14759,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    144 => 
+    188 => 
     array (
-      'id' => 164,
+      'id' => 220,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -13970,9 +14770,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    145 => 
+    189 => 
     array (
-      'id' => 165,
+      'id' => 221,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -13981,9 +14781,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    146 => 
+    190 => 
     array (
-      'id' => 166,
+      'id' => 222,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -13992,9 +14792,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    147 => 
+    191 => 
     array (
-      'id' => 167,
+      'id' => 223,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14003,9 +14803,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    148 => 
+    192 => 
     array (
-      'id' => 168,
+      'id' => 224,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14014,9 +14814,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    149 => 
+    193 => 
     array (
-      'id' => 169,
+      'id' => 225,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14025,9 +14825,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    150 => 
+    194 => 
     array (
-      'id' => 170,
+      'id' => 226,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14036,9 +14836,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    151 => 
+    195 => 
     array (
-      'id' => 171,
+      'id' => 227,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14047,9 +14847,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    152 => 
+    196 => 
     array (
-      'id' => 172,
+      'id' => 228,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14058,9 +14858,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    153 => 
+    197 => 
     array (
-      'id' => 173,
+      'id' => 229,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14069,9 +14869,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    154 => 
+    198 => 
     array (
-      'id' => 174,
+      'id' => 230,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14080,9 +14880,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    155 => 
+    199 => 
     array (
-      'id' => 175,
+      'id' => 231,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14091,9 +14891,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    156 => 
+    200 => 
     array (
-      'id' => 176,
+      'id' => 232,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14102,9 +14902,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    157 => 
+    201 => 
     array (
-      'id' => 177,
+      'id' => 233,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14113,9 +14913,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    158 => 
+    202 => 
     array (
-      'id' => 178,
+      'id' => 234,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14124,9 +14924,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    159 => 
+    203 => 
     array (
-      'id' => 179,
+      'id' => 235,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14135,9 +14935,97 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    160 => 
+    204 => 
     array (
-      'id' => 181,
+      'id' => 237,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    205 => 
+    array (
+      'id' => 238,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    206 => 
+    array (
+      'id' => 239,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    207 => 
+    array (
+      'id' => 240,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    208 => 
+    array (
+      'id' => 241,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    209 => 
+    array (
+      'id' => 242,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    210 => 
+    array (
+      'id' => 243,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    211 => 
+    array (
+      'id' => 244,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    212 => 
+    array (
+      'id' => 245,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14145,9 +15033,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    161 => 
+    213 => 
     array (
-      'id' => 182,
+      'id' => 246,
       'type' => 'Ring',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14155,9 +15043,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    162 => 
+    214 => 
     array (
-      'id' => 183,
+      'id' => 247,
       'type' => 'Earring',
       'rarity' => 'Exotic',
       'name' => '',
@@ -14165,9 +15053,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    163 => 
+    215 => 
     array (
-      'id' => 184,
+      'id' => 248,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14176,9 +15064,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    164 => 
+    216 => 
     array (
-      'id' => 185,
+      'id' => 249,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14187,9 +15075,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    165 => 
+    217 => 
     array (
-      'id' => 186,
+      'id' => 250,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14198,9 +15086,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    166 => 
+    218 => 
     array (
-      'id' => 187,
+      'id' => 251,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14209,9 +15097,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    167 => 
+    219 => 
     array (
-      'id' => 188,
+      'id' => 252,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14220,9 +15108,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    168 => 
+    220 => 
     array (
-      'id' => 189,
+      'id' => 253,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14231,9 +15119,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    169 => 
+    221 => 
     array (
-      'id' => 190,
+      'id' => 254,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14242,9 +15130,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    170 => 
+    222 => 
     array (
-      'id' => 191,
+      'id' => 255,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14253,9 +15141,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    171 => 
+    223 => 
     array (
-      'id' => 192,
+      'id' => 256,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14264,9 +15152,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    172 => 
+    224 => 
     array (
-      'id' => 193,
+      'id' => 257,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14275,9 +15163,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    173 => 
+    225 => 
     array (
-      'id' => 194,
+      'id' => 258,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14286,9 +15174,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    174 => 
+    226 => 
     array (
-      'id' => 195,
+      'id' => 259,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14297,9 +15185,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    175 => 
+    227 => 
     array (
-      'id' => 196,
+      'id' => 260,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14308,9 +15196,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    176 => 
+    228 => 
     array (
-      'id' => 198,
+      'id' => 262,
       'type' => 'Earring',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14318,9 +15206,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    177 => 
+    229 => 
     array (
-      'id' => 199,
+      'id' => 263,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14329,9 +15217,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    178 => 
+    230 => 
     array (
-      'id' => 200,
+      'id' => 264,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14340,9 +15228,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    179 => 
+    231 => 
     array (
-      'id' => 201,
+      'id' => 265,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14351,9 +15239,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    180 => 
+    232 => 
     array (
-      'id' => 202,
+      'id' => 274,
       'type' => 'Earring',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14361,9 +15249,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    181 => 
+    233 => 
     array (
-      'id' => 203,
+      'id' => 275,
       'type' => 'Earring',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14371,9 +15259,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    182 => 
+    234 => 
     array (
-      'id' => 204,
+      'id' => 276,
       'type' => 'Earring',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14381,9 +15269,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    183 => 
+    235 => 
     array (
-      'id' => 205,
+      'id' => 277,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14391,9 +15279,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    184 => 
+    236 => 
     array (
-      'id' => 206,
+      'id' => 278,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14401,9 +15289,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    185 => 
+    237 => 
     array (
-      'id' => 207,
+      'id' => 279,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14411,9 +15299,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    186 => 
+    238 => 
     array (
-      'id' => 208,
+      'id' => 280,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14421,9 +15309,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    187 => 
+    239 => 
     array (
-      'id' => 209,
+      'id' => 281,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14431,9 +15319,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    188 => 
+    240 => 
     array (
-      'id' => 210,
+      'id' => 282,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14441,9 +15329,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    189 => 
+    241 => 
     array (
-      'id' => 211,
+      'id' => 283,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14451,9 +15339,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    190 => 
+    242 => 
     array (
-      'id' => 212,
+      'id' => 284,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14461,9 +15349,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    191 => 
+    243 => 
     array (
-      'id' => 213,
+      'id' => 285,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14471,9 +15359,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    192 => 
+    244 => 
     array (
-      'id' => 214,
+      'id' => 286,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14481,9 +15369,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    193 => 
+    245 => 
     array (
-      'id' => 215,
+      'id' => 287,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14491,9 +15379,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    194 => 
+    246 => 
     array (
-      'id' => 216,
+      'id' => 288,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14501,9 +15389,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    195 => 
+    247 => 
     array (
-      'id' => 217,
+      'id' => 289,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -14511,9 +15399,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    196 => 
+    248 => 
     array (
-      'id' => 218,
+      'id' => 290,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -16694,7 +17582,7 @@
     197 => 
     array (
       'id' => 689,
-      'name' => 'Evasive Empowerment',
+      'name' => 'Havoc Mastery',
       'specialization_id' => 36,
       'specialization' => 'Daredevil',
       'minor' => false,
@@ -17310,7 +18198,7 @@
     253 => 
     array (
       'id' => 952,
-      'name' => 'Rapid Lacerations',
+      'name' => 'Vicious Lacerations',
       'specialization_id' => 53,
       'specialization' => 'Devastation',
       'minor' => false,
@@ -18894,7 +19782,7 @@
     397 => 
     array (
       'id' => 105,
-      'name' => 'Earthen Proxy',
+      'name' => 'Invigorating Torrents',
       'specialization_id' => 6,
       'specialization' => 'Tempest',
       'minor' => false,
@@ -20951,7 +21839,7 @@
     584 => 
     array (
       'id' => 982,
-      'name' => 'Reflexive Summon',
+      'name' => 'Versed in Stone',
       'specialization_id' => 50,
       'specialization' => 'Retribution',
       'minor' => false,
