@@ -62,7 +62,10 @@ class Build extends AbstractObject {
             $this->specializations = [];
             foreach ($this->data as $data) {
                 if (isset($data['id'], $data['traits'])) {
-                    $this->specializations[] = new Specialization($this->client, $data['id'], $data['traits']);
+                    $spe = new Specialization($this->client, $data['id'], $data['traits']);
+                    if ($spe->getName()) {
+                        $this->specializations[] = $spe;
+                    }
                 }
             }
         }
