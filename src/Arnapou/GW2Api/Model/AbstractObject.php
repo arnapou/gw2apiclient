@@ -135,10 +135,24 @@ abstract class AbstractObject {
      */
     protected function apiColors($ids) {
         if (!empty(self::$PRELOADS['colors'])) {
-            $this->client->v2_items(self::$PRELOADS['colors']);
+            $this->client->v2_colors(self::$PRELOADS['colors']);
             self::$PRELOADS['colors'] = [];
         }
         $result = $this->client->v2_colors($ids);
+        return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
+    }
+
+    /**
+     * 
+     * @param array $ids
+     * @return array
+     */
+    protected function apiMinis($ids) {
+        if (!empty(self::$PRELOADS['minis'])) {
+            $this->client->v2_minis(self::$PRELOADS['minis']);
+            self::$PRELOADS['minis'] = [];
+        }
+        $result = $this->client->v2_minis($ids);
         return (!is_array($ids) && isset($result[$ids])) ? $result[$ids] : $result;
     }
 

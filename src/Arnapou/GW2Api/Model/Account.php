@@ -93,6 +93,12 @@ class Account extends AbstractObject {
 
     /**
      *
+     * @var array
+     */
+    protected $minis;
+
+    /**
+     *
      * @var TradingPost
      */
     protected $tradingPost;
@@ -215,6 +221,22 @@ class Account extends AbstractObject {
             $this->dyes = new Dyes($this->client, $this->client->v2_account_dyes());
         }
         return $this->dyes;
+    }
+
+    /**
+     * 
+     * @return Minis
+     */
+    public function getMinis() {
+        if (empty($this->minis)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $this->minis = new Minis($this->client, $this->client->v2_account_minis());
+        }
+        return $this->minis;
     }
 
     /**

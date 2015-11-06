@@ -45,6 +45,7 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_account()
  * @method array v2_account_bank()
  * @method array v2_account_dyes()
+ * @method array v2_account_minis()
  * @method array v2_account_materials()
  * @method array v2_account_skins()
  * @method array v2_account_wallet()
@@ -68,6 +69,7 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_items($ids = null)
  * @method array v2_maps($ids = null)
  * @method array v2_materials($ids = null)
+ * @method array v2_minis($ids = null)
  * @method array v2_pvp_stats()
  * @method array v2_pvp_games($ids = null)
  * @method array v2_quaggans($ids = null)
@@ -99,6 +101,7 @@ class SimpleClient {
         'v2_items'             => 'apiitems',
         'v2_maps'              => 'apimaps',
         'v2_materials'         => 'apimaterials',
+        'v2_minis'             => 'apiminis',
         'v2_quaggans'          => 'apiquaggans',
         'v2_recipes'           => 'apirecipes',
         'v2_skins'             => 'apiskins',

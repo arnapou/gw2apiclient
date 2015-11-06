@@ -101,6 +101,14 @@ class ClientV2 extends AbstractClient {
      * 
      * @return RequestInterface
      */
+    public function apiAccountMinis() {
+        return $this->checkAccessToken($this->request('account/minis'));
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
     public function apiAccountMaterials() {
         return $this->checkAccessToken($this->request('account/materials'));
     }
@@ -344,6 +352,18 @@ class ClientV2 extends AbstractClient {
             $parameters['ids'] = $ids;
         }
         return $this->request('items', $parameters);
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
+    public function apiMinis($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('minis', $parameters);
     }
 
     /**
