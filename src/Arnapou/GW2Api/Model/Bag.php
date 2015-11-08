@@ -85,7 +85,7 @@ class Bag extends Item {
      */
     public function getInventoryStuff() {
         if (!isset($this->inventoryStuff)) {
-            $allowedRarities = [self::RARITY_ASCENDED, self::RARITY_EXOTIC];
+            $allowedRarities = [self::RARITY_LEGENDARY, self::RARITY_ASCENDED, self::RARITY_EXOTIC];
             $allowedTypes    = [self::TYPE_ARMOR, self::TYPE_BACK, self::TYPE_WEAPON, self::TYPE_TRINKET];
 
             $this->inventoryStuff = [];
