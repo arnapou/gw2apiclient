@@ -43,6 +43,7 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v1_wvw_objective_names()
  * 
  * @method array v2_account()
+ * @method array v2_account_achievements()
  * @method array v2_account_bank()
  * @method array v2_account_dyes()
  * @method array v2_account_minis()
@@ -65,7 +66,9 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method array v2_commerce_transactions_history_sells()
  * @method array v2_continents($continentId = null, $floorId = null, $regionId = null, $mapId = null)
  * @method array v2_currencies($ids = null)
+ * @method array v2_emblem($ids = null)
  * @method array v2_files($ids = null)
+ * @method array v2_guild_upgrades($ids = null)
  * @method array v2_items($ids = null)
  * @method array v2_maps($ids = null)
  * @method array v2_materials($ids = null)

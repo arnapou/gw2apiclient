@@ -85,6 +85,14 @@ class ClientV2 extends AbstractClient {
      * 
      * @return RequestInterface
      */
+    public function apiAccountAchievements() {
+        return $this->checkAccessToken($this->request('account/achievements'));
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
     public function apiAccountBank() {
         return $this->checkAccessToken($this->request('account/bank'));
     }
@@ -352,6 +360,30 @@ class ClientV2 extends AbstractClient {
             $parameters['ids'] = $ids;
         }
         return $this->request('items', $parameters);
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
+    public function apiEmblem($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('emblem', $parameters);
+    }
+
+    /**
+     * 
+     * @return RequestInterface
+     */
+    public function apiGuildUpgrades($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('guild/upgrades', $parameters);
     }
 
     /**

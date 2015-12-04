@@ -21,15 +21,50 @@ use Arnapou\GW2Api\SimpleClient;
  */
 class Account extends AbstractObject {
 
-    // PERMISSIONS
-    const PERMISSION_ACCOUNT     = 'account';
-    const PERMISSION_CHARACTERS  = 'characters';
+    /**
+     * Your account display name, ID, home world, and list of guilds. Required permission.
+     */
+    const PERMISSION_ACCOUNT = 'account';
+
+    /**
+     * Your account bank, material storage, recipe unlocks, and character inventories.
+     */
     const PERMISSION_INVENTORIES = 'inventories';
+
+    /**
+     * Basic information about your characters.
+     */
+    const PERMISSION_CHARACTERS = 'characters';
+
+    /**
+     * Your Trading Post transactions.
+     */
     const PERMISSION_TRADINGPOST = 'tradingpost';
-    const PERMISSION_UNLOCKS     = 'unlocks';
-    const PERMISSION_WALLET      = 'wallet';
-    const PERMISSION_PVP         = 'pvp';
-    const PERMISSION_BUILDS      = 'builds';
+
+    /**
+     * Your account's wallet.
+     */
+    const PERMISSION_WALLET = 'wallet';
+
+    /**
+     * Your wardrobe unlocks—skins, dyes, minipets, finishers, etc.—and currently equipped skins.
+     */
+    const PERMISSION_UNLOCKS = 'unlocks';
+
+    /**
+     * Your PvP stats, match history, reward track progression, and custom arena details.
+     */
+    const PERMISSION_PVP = 'pvp';
+
+    /**
+     * Your currently equipped specializations, traits, skills, and equipment for all game modes.
+     */
+    const PERMISSION_BUILDS = 'builds';
+
+    /**
+     * Your achievements, dungeon unlock status, mastery point assignments, and general PvE progress.
+     */
+    const PERMISSION_PROGRESSION = 'progression';
 
     /**
      *
@@ -95,6 +130,12 @@ class Account extends AbstractObject {
      *
      * @var array
      */
+    protected $achievements;
+
+    /**
+     *
+     * @var array
+     */
     protected $minis;
 
     /**
@@ -129,6 +170,7 @@ class Account extends AbstractObject {
             self::PERMISSION_UNLOCKS,
             self::PERMISSION_PVP,
             self::PERMISSION_BUILDS,
+            self::PERMISSION_PROGRESSION,
         ];
     }
 
@@ -205,6 +247,25 @@ class Account extends AbstractObject {
             $this->tradingPost = new TradingPost($this->client);
         }
         return $this->tradingPost;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getAchievements() {
+        if (empty($this->achievements)) {
+
+            if (!$this->hasPermission(self::PERMISSION_PROGRESSION)) {
+                throw new MissingPermissionException(self::PERMISSION_PROGRESSION);
+            }
+
+            $this->achievements = [];
+            foreach ($this->client->v2_account_achievements() as $data) {
+                $this->achievements[] = new AccountAchievement($this->client, $data);
+            }
+        }
+        return $this->achievements;
     }
 
     /**
