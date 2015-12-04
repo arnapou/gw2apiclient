@@ -80,7 +80,7 @@ class BankVault extends AbstractObject {
                 'sell' => 0,
             ];
             foreach ($this->getItems() as /* @var $item InventorySlot */ $item) {
-                if ($item) {
+                if ($item && empty($item->getBinding())) {
                     $price = $item->getPrice();
                     $this->price['buy'] += $price['buy_total'];
                     $this->price['sell'] += $price['sell_total'];

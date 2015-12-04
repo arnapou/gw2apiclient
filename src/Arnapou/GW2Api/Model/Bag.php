@@ -113,7 +113,7 @@ class Bag extends Item {
                 'sell' => 0,
             ];
             foreach ($this->getInventory() as /* @var $item InventorySlot */ $item) {
-                if ($item) {
+                if ($item && empty($item->getBinding())) {
                     $price = $item->getPrice();
                     $this->bagprice['buy'] += $price['buy_total'];
                     $this->bagprice['sell'] += $price['sell_total'];

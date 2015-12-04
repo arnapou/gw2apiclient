@@ -19,11 +19,26 @@ use Arnapou\GW2Api\SimpleClient;
  */
 class InventorySlot extends Item {
 
+    const BINDING_ACCOUNT   = 'Account';
+    const BINDING_CHARACTER = 'Character';
+
     /**
      *
      * @var string
      */
     protected $count;
+
+    /**
+     *
+     * @var string
+     */
+    protected $binding;
+
+    /**
+     *
+     * @var string
+     */
+    protected $bound_to;
 
     /**
      *
@@ -59,6 +74,8 @@ class InventorySlot extends Item {
 
         $this->dataSlot = $data;
         $this->count    = isset($data['count']) ? $data['count'] : null;
+        $this->binding  = isset($data['binding']) ? $data['binding'] : null;
+        $this->bound_to = isset($data['bound_to']) ? $data['bound_to'] : null;
     }
 
     /**
@@ -67,6 +84,22 @@ class InventorySlot extends Item {
      */
     public function getCount() {
         return $this->count;
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getBinding() {
+        return $this->binding;
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getBoundTo() {
+        return $this->bound_to;
     }
 
     /**
