@@ -119,6 +119,15 @@ class Client {
         'captain'              => "Captain's",
         'dire + rabid'         => "Dire + Rabid",
         'rabid + apothecary'   => "Rabid + Apothecary's",
+        // HoT
+        'viper'                => "Viper's",
+        'commander'            => "Commander",
+        'wanderer'             => "Wanderer",
+        'marauder'             => "Marauder",
+        'crusader'             => "Crusader",
+        'trailblazer'          => "Trailblazer",
+        'minstrel'             => "Minstrel",
+        'vigilant'             => "Vigilant",
     ];
 
     /**
@@ -248,6 +257,10 @@ class Client {
         // traits
         foreach ($alldata['traits'] as $item) {
             $name = strtolower($item['name']);
+            $name = str_replace('element bastion', 'elemental bastion', $name);
+            $name = str_replace('spontanous destruction', 'spontaneous destruction', $name);
+            $name = str_replace('trappers respite', 'trapper\'s respite', $name);
+            $name = str_replace('illusionists celerity', 'illusionist\'s celerity', $name);
             if (isset($specializations[$item['specialization_id']], $gw2names['traits'][$specializations[$item['specialization_id']]][$name])) {
                 $gw2id                    = $gw2names['traits'][$specializations[$item['specialization_id']]][$name];
                 $mapped['traits'][$gw2id] = $item['id'];
