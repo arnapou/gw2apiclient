@@ -9634,7 +9634,8 @@
       'type' => 'Rune',
       'rarity' => 'Exotic',
       'name' => 'Superior Rune of Exuberance',
-      'pvx' => 6,
+      'pvp_name' => 'Rune of Exuberance (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     110 => 
@@ -9652,7 +9653,8 @@
       'type' => 'Rune',
       'rarity' => 'Exotic',
       'name' => 'Superior Rune of Tormenting',
-      'pvx' => 6,
+      'pvp_name' => 'Rune of Tormenting (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     112 => 
@@ -9729,7 +9731,8 @@
       'type' => 'Rune',
       'rarity' => 'Exotic',
       'name' => 'Superior Rune of the Sunless',
-      'pvx' => 6,
+      'pvp_name' => 'Rune of the Sunless (PvP)',
+      'pvx' => 7,
       'is_profile' => false,
     ),
     120 => 
@@ -11191,7 +11194,7 @@
       'is_profile' => true,
     ),
   ),
-  'revision' => 1446808880,
+  'revision' => 1447752609,
   'specializations' => 
   array (
     0 => 
@@ -13162,86 +13165,6 @@
     ),
     40 => 
     array (
-      'id' => 64,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Commander',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    41 => 
-    array (
-      'id' => 65,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Crusader',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    42 => 
-    array (
-      'id' => 66,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Marauder',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    43 => 
-    array (
-      'id' => 67,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Minstrel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    44 => 
-    array (
-      'id' => 68,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Trailblazer',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    45 => 
-    array (
-      'id' => 69,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Vigilant',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    46 => 
-    array (
-      'id' => 70,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Viper',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    47 => 
-    array (
-      'id' => 71,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Wanderer',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    48 => 
-    array (
       'id' => 73,
       'type' => 'Back',
       'rarity' => 'Rare',
@@ -13250,7 +13173,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    49 => 
+    41 => 
     array (
       'id' => 74,
       'type' => 'Back',
@@ -13260,7 +13183,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    50 => 
+    42 => 
     array (
       'id' => 75,
       'type' => 'Back',
@@ -13270,7 +13193,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    51 => 
+    43 => 
     array (
       'id' => 76,
       'type' => 'Back',
@@ -13280,7 +13203,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    52 => 
+    44 => 
     array (
       'id' => 77,
       'type' => 'Back',
@@ -13290,7 +13213,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    53 => 
+    45 => 
     array (
       'id' => 78,
       'type' => 'Back',
@@ -13300,7 +13223,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    54 => 
+    46 => 
     array (
       'id' => 80,
       'type' => 'Back',
@@ -13310,7 +13233,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    55 => 
+    47 => 
     array (
       'id' => 81,
       'type' => 'Back',
@@ -13320,7 +13243,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    56 => 
+    48 => 
     array (
       'id' => 82,
       'type' => 'Back',
@@ -13330,7 +13253,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    57 => 
+    49 => 
     array (
       'id' => 83,
       'type' => 'Back',
@@ -13340,7 +13263,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    58 => 
+    50 => 
     array (
       'id' => 84,
       'type' => 'Back',
@@ -13350,7 +13273,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    59 => 
+    51 => 
     array (
       'id' => 85,
       'type' => 'Back',
@@ -13360,7 +13283,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    60 => 
+    52 => 
     array (
       'id' => 89,
       'type' => 'Back',
@@ -13370,7 +13293,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    61 => 
+    53 => 
     array (
       'id' => 92,
       'type' => 'Back',
@@ -13380,7 +13303,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    62 => 
+    54 => 
     array (
       'id' => 93,
       'type' => 'Back',
@@ -13390,7 +13313,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    63 => 
+    55 => 
     array (
       'id' => 94,
       'type' => 'Back',
@@ -13400,7 +13323,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    64 => 
+    56 => 
     array (
       'id' => 95,
       'type' => 'Back',
@@ -13410,7 +13333,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    65 => 
+    57 => 
     array (
       'id' => 96,
       'type' => 'Back',
@@ -13420,7 +13343,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    66 => 
+    58 => 
     array (
       'id' => 97,
       'type' => 'Back',
@@ -13430,7 +13353,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    67 => 
+    59 => 
     array (
       'id' => 98,
       'type' => 'Back',
@@ -13440,7 +13363,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    68 => 
+    60 => 
     array (
       'id' => 99,
       'type' => 'Back',
@@ -13450,7 +13373,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    69 => 
+    61 => 
     array (
       'id' => 101,
       'type' => '',
@@ -13461,7 +13384,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    70 => 
+    62 => 
     array (
       'id' => 102,
       'type' => '',
@@ -13472,7 +13395,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    71 => 
+    63 => 
     array (
       'id' => 103,
       'type' => '',
@@ -13483,7 +13406,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    72 => 
+    64 => 
     array (
       'id' => 104,
       'type' => '',
@@ -13494,7 +13417,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    73 => 
+    65 => 
     array (
       'id' => 105,
       'type' => '',
@@ -13505,7 +13428,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    74 => 
+    66 => 
     array (
       'id' => 106,
       'type' => '',
@@ -13516,7 +13439,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    75 => 
+    67 => 
     array (
       'id' => 107,
       'type' => '',
@@ -13527,7 +13450,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    76 => 
+    68 => 
     array (
       'id' => 108,
       'type' => '',
@@ -13538,7 +13461,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    77 => 
+    69 => 
     array (
       'id' => 109,
       'type' => '',
@@ -13549,7 +13472,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    78 => 
+    70 => 
     array (
       'id' => 110,
       'type' => '',
@@ -13560,7 +13483,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    79 => 
+    71 => 
     array (
       'id' => 111,
       'type' => '',
@@ -13571,7 +13494,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    80 => 
+    72 => 
     array (
       'id' => 112,
       'type' => '',
@@ -13582,7 +13505,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    81 => 
+    73 => 
     array (
       'id' => 113,
       'type' => '',
@@ -13593,7 +13516,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    82 => 
+    74 => 
     array (
       'id' => 114,
       'type' => '',
@@ -13604,7 +13527,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    83 => 
+    75 => 
     array (
       'id' => 115,
       'type' => '',
@@ -13615,7 +13538,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    84 => 
+    76 => 
     array (
       'id' => 116,
       'type' => '',
@@ -13626,7 +13549,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    85 => 
+    77 => 
     array (
       'id' => 117,
       'type' => '',
@@ -13637,7 +13560,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    86 => 
+    78 => 
     array (
       'id' => 118,
       'type' => '',
@@ -13648,7 +13571,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    87 => 
+    79 => 
     array (
       'id' => 119,
       'type' => '',
@@ -13659,7 +13582,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    88 => 
+    80 => 
     array (
       'id' => 120,
       'type' => '',
@@ -13670,7 +13593,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    89 => 
+    81 => 
     array (
       'id' => 121,
       'type' => '',
@@ -13681,7 +13604,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    90 => 
+    82 => 
     array (
       'id' => 122,
       'type' => '',
@@ -13692,7 +13615,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    91 => 
+    83 => 
     array (
       'id' => 123,
       'type' => '',
@@ -13703,7 +13626,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    92 => 
+    84 => 
     array (
       'id' => 124,
       'type' => '',
@@ -13714,7 +13637,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    93 => 
+    85 => 
     array (
       'id' => 125,
       'type' => '',
@@ -13725,7 +13648,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    94 => 
+    86 => 
     array (
       'id' => 126,
       'type' => '',
@@ -13736,7 +13659,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    95 => 
+    87 => 
     array (
       'id' => 127,
       'type' => '',
@@ -13747,7 +13670,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    96 => 
+    88 => 
     array (
       'id' => 128,
       'type' => '',
@@ -13758,7 +13681,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    97 => 
+    89 => 
     array (
       'id' => 129,
       'type' => '',
@@ -13769,7 +13692,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    98 => 
+    90 => 
     array (
       'id' => 130,
       'type' => '',
@@ -13780,7 +13703,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    99 => 
+    91 => 
     array (
       'id' => 131,
       'type' => '',
@@ -13791,7 +13714,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    100 => 
+    92 => 
     array (
       'id' => 132,
       'type' => '',
@@ -13802,7 +13725,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    101 => 
+    93 => 
     array (
       'id' => 133,
       'type' => '',
@@ -13813,7 +13736,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    102 => 
+    94 => 
     array (
       'id' => 134,
       'type' => '',
@@ -13824,7 +13747,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    103 => 
+    95 => 
     array (
       'id' => 135,
       'type' => '',
@@ -13835,7 +13758,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    104 => 
+    96 => 
     array (
       'id' => 136,
       'type' => '',
@@ -13846,7 +13769,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    105 => 
+    97 => 
     array (
       'id' => 137,
       'type' => '',
@@ -13857,7 +13780,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    106 => 
+    98 => 
     array (
       'id' => 138,
       'type' => '',
@@ -13868,7 +13791,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    107 => 
+    99 => 
     array (
       'id' => 139,
       'type' => '',
@@ -13879,7 +13802,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    108 => 
+    100 => 
     array (
       'id' => 140,
       'type' => '',
@@ -13890,7 +13813,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    109 => 
+    101 => 
     array (
       'id' => 141,
       'type' => '',
@@ -13901,7 +13824,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    110 => 
+    102 => 
     array (
       'id' => 142,
       'type' => '',
@@ -13912,7 +13835,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    111 => 
+    103 => 
     array (
       'id' => 143,
       'type' => '',
@@ -13923,7 +13846,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    112 => 
+    104 => 
     array (
       'id' => 144,
       'type' => '',
@@ -13934,7 +13857,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    113 => 
+    105 => 
     array (
       'id' => 145,
       'type' => '',
@@ -13945,7 +13868,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    114 => 
+    106 => 
     array (
       'id' => 146,
       'type' => '',
@@ -13956,7 +13879,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    115 => 
+    107 => 
     array (
       'id' => 147,
       'type' => '',
@@ -13967,7 +13890,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    116 => 
+    108 => 
     array (
       'id' => 148,
       'type' => '',
@@ -13978,7 +13901,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    117 => 
+    109 => 
     array (
       'id' => 149,
       'type' => '',
@@ -13989,7 +13912,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    118 => 
+    110 => 
     array (
       'id' => 150,
       'type' => '',
@@ -14000,7 +13923,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    119 => 
+    111 => 
     array (
       'id' => 151,
       'type' => '',
@@ -14011,7 +13934,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    120 => 
+    112 => 
     array (
       'id' => 152,
       'type' => '',
@@ -14022,7 +13945,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    121 => 
+    113 => 
     array (
       'id' => 153,
       'type' => '',
@@ -14033,7 +13956,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    122 => 
+    114 => 
     array (
       'id' => 154,
       'type' => '',
@@ -14044,7 +13967,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    123 => 
+    115 => 
     array (
       'id' => 155,
       'type' => '',
@@ -14055,7 +13978,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    124 => 
+    116 => 
     array (
       'id' => 156,
       'type' => '',
@@ -14066,7 +13989,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    125 => 
+    117 => 
     array (
       'id' => 157,
       'type' => '',
@@ -14077,7 +14000,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    126 => 
+    118 => 
     array (
       'id' => 158,
       'type' => '',
@@ -14088,7 +14011,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    127 => 
+    119 => 
     array (
       'id' => 159,
       'type' => '',
@@ -14099,7 +14022,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    128 => 
+    120 => 
     array (
       'id' => 160,
       'type' => '',
@@ -14110,7 +14033,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    129 => 
+    121 => 
     array (
       'id' => 161,
       'type' => '',
@@ -14121,7 +14044,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    130 => 
+    122 => 
     array (
       'id' => 162,
       'type' => '',
@@ -14132,7 +14055,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    131 => 
+    123 => 
     array (
       'id' => 163,
       'type' => '',
@@ -14143,7 +14066,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    132 => 
+    124 => 
     array (
       'id' => 164,
       'type' => '',
@@ -14154,7 +14077,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    133 => 
+    125 => 
     array (
       'id' => 165,
       'type' => '',
@@ -14165,7 +14088,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    134 => 
+    126 => 
     array (
       'id' => 166,
       'type' => '',
@@ -14176,7 +14099,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    135 => 
+    127 => 
     array (
       'id' => 167,
       'type' => '',
@@ -14187,7 +14110,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    136 => 
+    128 => 
     array (
       'id' => 168,
       'type' => '',
@@ -14198,7 +14121,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    137 => 
+    129 => 
     array (
       'id' => 169,
       'type' => '',
@@ -14209,7 +14132,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    138 => 
+    130 => 
     array (
       'id' => 170,
       'type' => '',
@@ -14220,7 +14143,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    139 => 
+    131 => 
     array (
       'id' => 171,
       'type' => '',
@@ -14231,7 +14154,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    140 => 
+    132 => 
     array (
       'id' => 172,
       'type' => '',
@@ -14242,7 +14165,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    141 => 
+    133 => 
     array (
       'id' => 173,
       'type' => '',
@@ -14253,7 +14176,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    142 => 
+    134 => 
     array (
       'id' => 174,
       'type' => '',
@@ -14264,7 +14187,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    143 => 
+    135 => 
     array (
       'id' => 175,
       'type' => '',
@@ -14275,7 +14198,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    144 => 
+    136 => 
     array (
       'id' => 176,
       'type' => '',
@@ -14286,7 +14209,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    145 => 
+    137 => 
     array (
       'id' => 177,
       'type' => '',
@@ -14297,7 +14220,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    146 => 
+    138 => 
     array (
       'id' => 178,
       'type' => '',
@@ -14308,7 +14231,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    147 => 
+    139 => 
     array (
       'id' => 179,
       'type' => '',
@@ -14319,7 +14242,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    148 => 
+    140 => 
     array (
       'id' => 180,
       'type' => '',
@@ -14330,7 +14253,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    149 => 
+    141 => 
     array (
       'id' => 181,
       'type' => '',
@@ -14341,7 +14264,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    150 => 
+    142 => 
     array (
       'id' => 182,
       'type' => '',
@@ -14352,7 +14275,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    151 => 
+    143 => 
     array (
       'id' => 183,
       'type' => '',
@@ -14363,7 +14286,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    152 => 
+    144 => 
     array (
       'id' => 184,
       'type' => '',
@@ -14374,7 +14297,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    153 => 
+    145 => 
     array (
       'id' => 185,
       'type' => '',
@@ -14385,7 +14308,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    154 => 
+    146 => 
     array (
       'id' => 186,
       'type' => '',
@@ -14396,7 +14319,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    155 => 
+    147 => 
     array (
       'id' => 187,
       'type' => '',
@@ -14407,7 +14330,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    156 => 
+    148 => 
     array (
       'id' => 188,
       'type' => '',
@@ -14418,7 +14341,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    157 => 
+    149 => 
     array (
       'id' => 189,
       'type' => '',
@@ -14429,7 +14352,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    158 => 
+    150 => 
     array (
       'id' => 190,
       'type' => '',
@@ -14440,7 +14363,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    159 => 
+    151 => 
     array (
       'id' => 191,
       'type' => '',
@@ -14451,7 +14374,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    160 => 
+    152 => 
     array (
       'id' => 192,
       'type' => '',
@@ -14462,7 +14385,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    161 => 
+    153 => 
     array (
       'id' => 193,
       'type' => '',
@@ -14473,7 +14396,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    162 => 
+    154 => 
     array (
       'id' => 194,
       'type' => '',
@@ -14484,7 +14407,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    163 => 
+    155 => 
     array (
       'id' => 195,
       'type' => '',
@@ -14495,7 +14418,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    164 => 
+    156 => 
     array (
       'id' => 196,
       'type' => '',
@@ -14506,7 +14429,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    165 => 
+    157 => 
     array (
       'id' => 197,
       'type' => '',
@@ -14517,7 +14440,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    166 => 
+    158 => 
     array (
       'id' => 198,
       'type' => '',
@@ -14528,7 +14451,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    167 => 
+    159 => 
     array (
       'id' => 199,
       'type' => '',
@@ -14539,7 +14462,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    168 => 
+    160 => 
     array (
       'id' => 200,
       'type' => '',
@@ -14550,7 +14473,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    169 => 
+    161 => 
     array (
       'id' => 201,
       'type' => '',
@@ -14561,7 +14484,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    170 => 
+    162 => 
     array (
       'id' => 202,
       'type' => '',
@@ -14572,7 +14495,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    171 => 
+    163 => 
     array (
       'id' => 203,
       'type' => '',
@@ -14583,7 +14506,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    172 => 
+    164 => 
     array (
       'id' => 204,
       'type' => '',
@@ -14594,7 +14517,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    173 => 
+    165 => 
     array (
       'id' => 205,
       'type' => '',
@@ -14605,7 +14528,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    174 => 
+    166 => 
     array (
       'id' => 206,
       'type' => '',
@@ -14616,7 +14539,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    175 => 
+    167 => 
     array (
       'id' => 207,
       'type' => '',
@@ -14627,7 +14550,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    176 => 
+    168 => 
     array (
       'id' => 208,
       'type' => '',
@@ -14638,7 +14561,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    177 => 
+    169 => 
     array (
       'id' => 209,
       'type' => '',
@@ -14649,7 +14572,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    178 => 
+    170 => 
     array (
       'id' => 210,
       'type' => '',
@@ -14660,7 +14583,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    179 => 
+    171 => 
     array (
       'id' => 211,
       'type' => '',
@@ -14671,7 +14594,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    180 => 
+    172 => 
     array (
       'id' => 212,
       'type' => '',
@@ -14682,7 +14605,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    181 => 
+    173 => 
     array (
       'id' => 213,
       'type' => '',
@@ -14693,7 +14616,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    182 => 
+    174 => 
     array (
       'id' => 214,
       'type' => '',
@@ -14704,7 +14627,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    183 => 
+    175 => 
     array (
       'id' => 215,
       'type' => '',
@@ -14715,7 +14638,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    184 => 
+    176 => 
     array (
       'id' => 216,
       'type' => '',
@@ -14726,7 +14649,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    185 => 
+    177 => 
     array (
       'id' => 217,
       'type' => '',
@@ -14737,7 +14660,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    186 => 
+    178 => 
     array (
       'id' => 218,
       'type' => '',
@@ -14748,7 +14671,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    187 => 
+    179 => 
     array (
       'id' => 219,
       'type' => '',
@@ -14759,7 +14682,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    188 => 
+    180 => 
     array (
       'id' => 220,
       'type' => '',
@@ -14770,7 +14693,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    189 => 
+    181 => 
     array (
       'id' => 221,
       'type' => '',
@@ -14781,7 +14704,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    190 => 
+    182 => 
     array (
       'id' => 222,
       'type' => '',
@@ -14792,7 +14715,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    191 => 
+    183 => 
     array (
       'id' => 223,
       'type' => '',
@@ -14803,7 +14726,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    192 => 
+    184 => 
     array (
       'id' => 224,
       'type' => '',
@@ -14814,7 +14737,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    193 => 
+    185 => 
     array (
       'id' => 225,
       'type' => '',
@@ -14825,7 +14748,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    194 => 
+    186 => 
     array (
       'id' => 226,
       'type' => '',
@@ -14836,7 +14759,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    195 => 
+    187 => 
     array (
       'id' => 227,
       'type' => '',
@@ -14847,7 +14770,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    196 => 
+    188 => 
     array (
       'id' => 228,
       'type' => '',
@@ -14858,7 +14781,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    197 => 
+    189 => 
     array (
       'id' => 229,
       'type' => '',
@@ -14869,7 +14792,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    198 => 
+    190 => 
     array (
       'id' => 230,
       'type' => '',
@@ -14880,7 +14803,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    199 => 
+    191 => 
     array (
       'id' => 231,
       'type' => '',
@@ -14891,7 +14814,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    200 => 
+    192 => 
     array (
       'id' => 232,
       'type' => '',
@@ -14902,7 +14825,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    201 => 
+    193 => 
     array (
       'id' => 233,
       'type' => '',
@@ -14913,7 +14836,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    202 => 
+    194 => 
     array (
       'id' => 234,
       'type' => '',
@@ -14924,7 +14847,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    203 => 
+    195 => 
     array (
       'id' => 235,
       'type' => '',
@@ -14935,7 +14858,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    204 => 
+    196 => 
     array (
       'id' => 237,
       'type' => '',
@@ -14946,7 +14869,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    205 => 
+    197 => 
     array (
       'id' => 238,
       'type' => '',
@@ -14957,7 +14880,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    206 => 
+    198 => 
     array (
       'id' => 239,
       'type' => '',
@@ -14968,7 +14891,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    207 => 
+    199 => 
     array (
       'id' => 240,
       'type' => '',
@@ -14979,7 +14902,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    208 => 
+    200 => 
     array (
       'id' => 241,
       'type' => '',
@@ -14990,7 +14913,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    209 => 
+    201 => 
     array (
       'id' => 242,
       'type' => '',
@@ -15001,7 +14924,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    210 => 
+    202 => 
     array (
       'id' => 243,
       'type' => '',
@@ -15012,7 +14935,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    211 => 
+    203 => 
     array (
       'id' => 244,
       'type' => '',
@@ -15023,7 +14946,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    212 => 
+    204 => 
     array (
       'id' => 245,
       'type' => 'Amulet',
@@ -15033,7 +14956,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    213 => 
+    205 => 
     array (
       'id' => 246,
       'type' => 'Ring',
@@ -15043,7 +14966,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    214 => 
+    206 => 
     array (
       'id' => 247,
       'type' => 'Earring',
@@ -15053,7 +14976,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    215 => 
+    207 => 
     array (
       'id' => 248,
       'type' => '',
@@ -15064,7 +14987,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    216 => 
+    208 => 
     array (
       'id' => 249,
       'type' => '',
@@ -15075,7 +14998,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    217 => 
+    209 => 
     array (
       'id' => 250,
       'type' => '',
@@ -15086,7 +15009,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    218 => 
+    210 => 
     array (
       'id' => 251,
       'type' => '',
@@ -15097,7 +15020,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    219 => 
+    211 => 
     array (
       'id' => 252,
       'type' => '',
@@ -15108,7 +15031,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    220 => 
+    212 => 
     array (
       'id' => 253,
       'type' => '',
@@ -15119,7 +15042,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    221 => 
+    213 => 
     array (
       'id' => 254,
       'type' => '',
@@ -15130,7 +15053,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    222 => 
+    214 => 
     array (
       'id' => 255,
       'type' => '',
@@ -15141,7 +15064,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    223 => 
+    215 => 
     array (
       'id' => 256,
       'type' => '',
@@ -15152,7 +15075,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    224 => 
+    216 => 
     array (
       'id' => 257,
       'type' => '',
@@ -15163,7 +15086,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    225 => 
+    217 => 
     array (
       'id' => 258,
       'type' => '',
@@ -15174,7 +15097,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    226 => 
+    218 => 
     array (
       'id' => 259,
       'type' => '',
@@ -15185,7 +15108,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    227 => 
+    219 => 
     array (
       'id' => 260,
       'type' => '',
@@ -15196,7 +15119,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    228 => 
+    220 => 
     array (
       'id' => 262,
       'type' => 'Earring',
@@ -15206,7 +15129,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    229 => 
+    221 => 
     array (
       'id' => 263,
       'type' => '',
@@ -15217,7 +15140,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    230 => 
+    222 => 
     array (
       'id' => 264,
       'type' => '',
@@ -15228,7 +15151,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    231 => 
+    223 => 
     array (
       'id' => 265,
       'type' => '',
@@ -15236,6 +15159,86 @@
       'name' => '',
       'group' => 'Trinket',
       'stats_class' => 'Nomad',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    224 => 
+    array (
+      'id' => 266,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    225 => 
+    array (
+      'id' => 267,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    226 => 
+    array (
+      'id' => 268,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    227 => 
+    array (
+      'id' => 269,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    228 => 
+    array (
+      'id' => 270,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    229 => 
+    array (
+      'id' => 271,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    230 => 
+    array (
+      'id' => 272,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    231 => 
+    array (
+      'id' => 273,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Wanderer',
       'pvx' => 6,
       'is_profile' => true,
     ),

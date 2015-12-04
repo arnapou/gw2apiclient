@@ -3,60 +3,6 @@
   array (
     0 => 
     array (
-      'id' => 49,
-      'name' => 'Corruption',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 960,
-        1 => 961,
-        2 => 962,
-      ),
-      'major_traits' => 
-      array (
-        0 => 963,
-        1 => 964,
-        2 => 965,
-        3 => 966,
-        4 => 967,
-        5 => 968,
-        6 => 969,
-        7 => 970,
-        8 => 971,
-      ),
-    ),
-    1 => 
-    array (
-      'id' => 50,
-      'name' => 'Retribution',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 972,
-        1 => 973,
-        2 => 974,
-      ),
-      'major_traits' => 
-      array (
-        0 => 975,
-        1 => 976,
-        2 => 977,
-        3 => 978,
-        4 => 979,
-        5 => 980,
-        6 => 981,
-        7 => 982,
-        8 => 983,
-      ),
-    ),
-    2 => 
-    array (
       'id' => 51,
       'name' => 'Salvation',
       'profession_id' => 9,
@@ -82,7 +28,7 @@
         8 => 995,
       ),
     ),
-    3 => 
+    1 => 
     array (
       'id' => 52,
       'name' => 'Invocation',
@@ -109,34 +55,7 @@
         8 => 1007,
       ),
     ),
-    4 => 
-    array (
-      'id' => 53,
-      'name' => 'Devastation',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 948,
-        1 => 949,
-        2 => 950,
-      ),
-      'major_traits' => 
-      array (
-        0 => 956,
-        1 => 952,
-        2 => 953,
-        3 => 954,
-        4 => 955,
-        5 => 951,
-        6 => 957,
-        7 => 958,
-        8 => 959,
-      ),
-    ),
-    5 => 
+    2 => 
     array (
       'id' => 54,
       'name' => 'Herald',
@@ -179,17 +98,6 @@
     ),
     1 => 
     array (
-      'id' => 960,
-      'name' => 'Rampant Vex',
-      'specialization_id' => 49,
-      'specialization' => 'Corruption',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    2 => 
-    array (
       'id' => 972,
       'name' => 'Enduring Recovery',
       'specialization_id' => 50,
@@ -199,7 +107,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    3 => 
+    2 => 
     array (
       'id' => 984,
       'name' => 'Disarming Riposte',
@@ -210,7 +118,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    4 => 
+    3 => 
     array (
       'id' => 996,
       'name' => 'Invoker’s Rage',
@@ -221,7 +129,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    5 => 
+    4 => 
     array (
       'id' => 1008,
       'name' => 'Crystal Harbinger',
@@ -232,7 +140,7 @@
       'tier' => 1,
       'number' => 0,
     ),
-    6 => 
+    5 => 
     array (
       'id' => 916,
       'name' => 'Illusionists Celerity',
@@ -243,7 +151,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    7 => 
+    6 => 
     array (
       'id' => 949,
       'name' => 'Targeted Destruction',
@@ -254,18 +162,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    8 => 
-    array (
-      'id' => 961,
-      'name' => 'Opportune Extraction',
-      'specialization_id' => 49,
-      'specialization' => 'Corruption',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    9 => 
+    7 => 
     array (
       'id' => 973,
       'name' => 'Unwavering Avoidance',
@@ -276,7 +173,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    10 => 
+    8 => 
     array (
       'id' => 985,
       'name' => 'Hardened Foundation',
@@ -287,7 +184,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    11 => 
+    9 => 
     array (
       'id' => 997,
       'name' => 'Ferocious Aggression',
@@ -298,7 +195,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    12 => 
+    10 => 
     array (
       'id' => 1009,
       'name' => 'Vigorous Persistence',
@@ -309,7 +206,7 @@
       'tier' => 2,
       'number' => 0,
     ),
-    13 => 
+    11 => 
     array (
       'id' => 950,
       'name' => 'Focused Siphoning',
@@ -320,18 +217,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    14 => 
-    array (
-      'id' => 962,
-      'name' => 'Yearning Empowerment',
-      'specialization_id' => 49,
-      'specialization' => 'Corruption',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    15 => 
+    12 => 
     array (
       'id' => 974,
       'name' => 'Determined Resolution',
@@ -342,7 +228,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    16 => 
+    13 => 
     array (
       'id' => 986,
       'name' => 'Serene Rejuvenation',
@@ -353,7 +239,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    17 => 
+    14 => 
     array (
       'id' => 998,
       'name' => 'Empty Vessel',
@@ -364,7 +250,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    18 => 
+    15 => 
     array (
       'id' => 1010,
       'name' => 'Envoy of Sustenance',
@@ -375,29 +261,7 @@
       'tier' => 3,
       'number' => 0,
     ),
-    19 => 
-    array (
-      'id' => 956,
-      'name' => 'Ferocious Strikes',
-      'specialization_id' => 53,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    20 => 
-    array (
-      'id' => 963,
-      'name' => 'Replenishing Despair',
-      'specialization_id' => 49,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    21 => 
+    16 => 
     array (
       'id' => 975,
       'name' => 'Planar Protection',
@@ -408,7 +272,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    22 => 
+    17 => 
     array (
       'id' => 987,
       'name' => 'Nourishing Roots',
@@ -419,7 +283,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    23 => 
+    18 => 
     array (
       'id' => 999,
       'name' => 'Cruel Repercussion',
@@ -430,7 +294,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    24 => 
+    19 => 
     array (
       'id' => 1011,
       'name' => 'Swift Gale',
@@ -441,7 +305,7 @@
       'tier' => 1,
       'number' => 1,
     ),
-    25 => 
+    20 => 
     array (
       'id' => 952,
       'name' => 'Vicious Lacerations',
@@ -452,29 +316,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    26 => 
-    array (
-      'id' => 964,
-      'name' => 'Demonic Defiance',
-      'specialization_id' => 49,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    27 => 
-    array (
-      'id' => 976,
-      'name' => 'Close Quarters',
-      'specialization_id' => 50,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    28 => 
+    21 => 
     array (
       'id' => 988,
       'name' => 'Blinding Truths',
@@ -485,7 +327,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    29 => 
+    22 => 
     array (
       'id' => 1000,
       'name' => 'Cleansing Channel',
@@ -496,7 +338,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    30 => 
+    23 => 
     array (
       'id' => 1012,
       'name' => 'Radiant Revival',
@@ -507,7 +349,7 @@
       'tier' => 1,
       'number' => 2,
     ),
-    31 => 
+    24 => 
     array (
       'id' => 598,
       'name' => 'Trappers Respite',
@@ -518,7 +360,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    32 => 
+    25 => 
     array (
       'id' => 953,
       'name' => 'Malicious Reprisal',
@@ -529,18 +371,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    33 => 
-    array (
-      'id' => 965,
-      'name' => 'Venom Enhancement',
-      'specialization_id' => 49,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    34 => 
+    26 => 
     array (
       'id' => 977,
       'name' => 'Improved Aggression',
@@ -551,7 +382,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    35 => 
+    27 => 
     array (
       'id' => 989,
       'name' => 'Tranquil Balance',
@@ -562,7 +393,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    36 => 
+    28 => 
     array (
       'id' => 1001,
       'name' => 'Fierce Infusion',
@@ -573,7 +404,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    37 => 
+    29 => 
     array (
       'id' => 1013,
       'name' => 'Hardening Persistence',
@@ -584,7 +415,7 @@
       'tier' => 1,
       'number' => 3,
     ),
-    38 => 
+    30 => 
     array (
       'id' => 954,
       'name' => 'Jade Echo',
@@ -595,7 +426,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    39 => 
+    31 => 
     array (
       'id' => 966,
       'name' => 'Bolstered Anguish',
@@ -606,7 +437,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    40 => 
+    32 => 
     array (
       'id' => 978,
       'name' => 'Eye for an Eye',
@@ -617,7 +448,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    41 => 
+    33 => 
     array (
       'id' => 990,
       'name' => 'Tranquil Benediction',
@@ -628,7 +459,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    42 => 
+    34 => 
     array (
       'id' => 1002,
       'name' => 'Equilibrium',
@@ -639,7 +470,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    43 => 
+    35 => 
     array (
       'id' => 1014,
       'name' => 'Bolster Fortifications',
@@ -650,40 +481,7 @@
       'tier' => 2,
       'number' => 4,
     ),
-    44 => 
-    array (
-      'id' => 955,
-      'name' => 'Nefarious Momentum',
-      'specialization_id' => 53,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    45 => 
-    array (
-      'id' => 967,
-      'name' => 'Frigid Precision',
-      'specialization_id' => 49,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    46 => 
-    array (
-      'id' => 979,
-      'name' => 'Retaliatory Evasion',
-      'specialization_id' => 50,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    47 => 
+    36 => 
     array (
       'id' => 991,
       'name' => 'Eluding Nullification',
@@ -694,7 +492,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    48 => 
+    37 => 
     array (
       'id' => 1003,
       'name' => 'Invigorating Flow',
@@ -705,7 +503,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    49 => 
+    38 => 
     array (
       'id' => 1015,
       'name' => 'Shared Empowerment',
@@ -716,7 +514,7 @@
       'tier' => 2,
       'number' => 5,
     ),
-    50 => 
+    39 => 
     array (
       'id' => 951,
       'name' => 'Assassin\'s Presence',
@@ -727,7 +525,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    51 => 
+    40 => 
     array (
       'id' => 968,
       'name' => 'Spontanous Destruction',
@@ -738,7 +536,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    52 => 
+    41 => 
     array (
       'id' => 980,
       'name' => 'Dwarven Battle Training',
@@ -749,7 +547,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    53 => 
+    42 => 
     array (
       'id' => 992,
       'name' => 'Invoking Harmony',
@@ -760,7 +558,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    54 => 
+    43 => 
     array (
       'id' => 1004,
       'name' => 'Incensed Response',
@@ -771,7 +569,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    55 => 
+    44 => 
     array (
       'id' => 1016,
       'name' => 'Harmonize Continuity',
@@ -782,7 +580,7 @@
       'tier' => 2,
       'number' => 6,
     ),
-    56 => 
+    45 => 
     array (
       'id' => 957,
       'name' => 'Swift Termination',
@@ -793,18 +591,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    57 => 
-    array (
-      'id' => 969,
-      'name' => 'Diabolic Inferno',
-      'specialization_id' => 49,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    58 => 
+    46 => 
     array (
       'id' => 981,
       'name' => 'Empowering Vengeance',
@@ -815,7 +602,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    59 => 
+    47 => 
     array (
       'id' => 993,
       'name' => 'Selfless Amplification',
@@ -826,7 +613,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    60 => 
+    48 => 
     array (
       'id' => 1005,
       'name' => 'Roiling Mists',
@@ -837,7 +624,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    61 => 
+    49 => 
     array (
       'id' => 1017,
       'name' => 'Elder\'s Force',
@@ -848,7 +635,7 @@
       'tier' => 3,
       'number' => 7,
     ),
-    62 => 
+    50 => 
     array (
       'id' => 958,
       'name' => 'Dismantle Fortifications',
@@ -859,7 +646,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    63 => 
+    51 => 
     array (
       'id' => 970,
       'name' => 'Maniacal Persistence',
@@ -870,7 +657,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    64 => 
+    52 => 
     array (
       'id' => 982,
       'name' => 'Versed in Stone',
@@ -881,7 +668,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    65 => 
+    53 => 
     array (
       'id' => 994,
       'name' => 'Natural Abundance',
@@ -892,7 +679,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    66 => 
+    54 => 
     array (
       'id' => 1006,
       'name' => 'Charged Mists',
@@ -903,7 +690,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    67 => 
+    55 => 
     array (
       'id' => 1018,
       'name' => 'Soothing Bastion',
@@ -914,7 +701,7 @@
       'tier' => 3,
       'number' => 8,
     ),
-    68 => 
+    56 => 
     array (
       'id' => 109,
       'name' => 'Element Bastion',
@@ -925,7 +712,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    69 => 
+    57 => 
     array (
       'id' => 959,
       'name' => 'Assassin\'s Annihilation',
@@ -936,7 +723,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    70 => 
+    58 => 
     array (
       'id' => 971,
       'name' => 'Pulsating Pestilence',
@@ -947,18 +734,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    71 => 
-    array (
-      'id' => 983,
-      'name' => 'Steadfast Rejuvenation',
-      'specialization_id' => 50,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    72 => 
+    59 => 
     array (
       'id' => 995,
       'name' => 'Momentary Pacification',
@@ -969,7 +745,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    73 => 
+    60 => 
     array (
       'id' => 1007,
       'name' => 'Shrouding Mists',
@@ -980,7 +756,7 @@
       'tier' => 3,
       'number' => 9,
     ),
-    74 => 
+    61 => 
     array (
       'id' => 1019,
       'name' => 'Enhanced Bulwark',
@@ -1053,26 +829,6 @@
   array (
     0 => 
     array (
-      'id' => 51,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Agility',
-      'pvp_name' => 'Sigil of Agility (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    1 => 
-    array (
-      'id' => 52,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Transference',
-      'pvp_name' => 'Sigil of Transference (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    2 => 
-    array (
       'id' => 138,
       'type' => 'Rune',
       'rarity' => 'Exotic',
@@ -1081,36 +837,7 @@
       'pvx' => 7,
       'is_profile' => false,
     ),
-    3 => 
-    array (
-      'id' => 139,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Surging',
-      'pvp_name' => 'Rune of Surging (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    4 => 
-    array (
-      'id' => 147,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Revenant',
-      'pvp_name' => 'Rune of the Revenant (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    5 => 
-    array (
-      'id' => 36,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Burl Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    6 => 
+    1 => 
     array (
       'id' => 39,
       'type' => 'Jewel',
@@ -1119,7 +846,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    7 => 
+    2 => 
     array (
       'id' => 40,
       'type' => 'Jewel',
@@ -1128,7 +855,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    8 => 
+    3 => 
     array (
       'id' => 41,
       'type' => 'Jewel',
@@ -1331,86 +1058,6 @@
     ),
     21 => 
     array (
-      'id' => 64,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Commander',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    22 => 
-    array (
-      'id' => 65,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Crusader',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    23 => 
-    array (
-      'id' => 66,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Marauder',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    24 => 
-    array (
-      'id' => 67,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Minstrel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    25 => 
-    array (
-      'id' => 68,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Trailblazer',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    26 => 
-    array (
-      'id' => 69,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Vigilant',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    27 => 
-    array (
-      'id' => 70,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Viper',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    28 => 
-    array (
-      'id' => 71,
-      'type' => 'Back',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'stats_class' => 'Wanderer',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    29 => 
-    array (
       'id' => 120,
       'type' => '',
       'rarity' => 'Exotic',
@@ -1420,7 +1067,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    30 => 
+    22 => 
     array (
       'id' => 121,
       'type' => '',
@@ -1431,7 +1078,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    31 => 
+    23 => 
     array (
       'id' => 122,
       'type' => '',
@@ -1442,7 +1089,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    32 => 
+    24 => 
     array (
       'id' => 123,
       'type' => '',
@@ -1453,7 +1100,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    33 => 
+    25 => 
     array (
       'id' => 124,
       'type' => '',
@@ -1464,7 +1111,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    34 => 
+    26 => 
     array (
       'id' => 125,
       'type' => '',
@@ -1475,7 +1122,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    35 => 
+    27 => 
     array (
       'id' => 126,
       'type' => '',
@@ -1486,7 +1133,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    36 => 
+    28 => 
     array (
       'id' => 127,
       'type' => '',
@@ -1497,7 +1144,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    37 => 
+    29 => 
     array (
       'id' => 149,
       'type' => '',
@@ -1508,7 +1155,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    38 => 
+    30 => 
     array (
       'id' => 150,
       'type' => '',
@@ -1519,7 +1166,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    39 => 
+    31 => 
     array (
       'id' => 151,
       'type' => '',
@@ -1530,7 +1177,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    40 => 
+    32 => 
     array (
       'id' => 152,
       'type' => '',
@@ -1541,7 +1188,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    41 => 
+    33 => 
     array (
       'id' => 153,
       'type' => '',
@@ -1552,7 +1199,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    42 => 
+    34 => 
     array (
       'id' => 154,
       'type' => '',
@@ -1563,7 +1210,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    43 => 
+    35 => 
     array (
       'id' => 155,
       'type' => '',
@@ -1574,7 +1221,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    44 => 
+    36 => 
     array (
       'id' => 156,
       'type' => '',
@@ -1585,7 +1232,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    45 => 
+    37 => 
     array (
       'id' => 178,
       'type' => '',
@@ -1596,7 +1243,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    46 => 
+    38 => 
     array (
       'id' => 179,
       'type' => '',
@@ -1607,7 +1254,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    47 => 
+    39 => 
     array (
       'id' => 180,
       'type' => '',
@@ -1618,7 +1265,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    48 => 
+    40 => 
     array (
       'id' => 181,
       'type' => '',
@@ -1629,7 +1276,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    49 => 
+    41 => 
     array (
       'id' => 182,
       'type' => '',
@@ -1640,7 +1287,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    50 => 
+    42 => 
     array (
       'id' => 183,
       'type' => '',
@@ -1651,7 +1298,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    51 => 
+    43 => 
     array (
       'id' => 184,
       'type' => '',
@@ -1662,7 +1309,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    52 => 
+    44 => 
     array (
       'id' => 185,
       'type' => '',
@@ -1673,7 +1320,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    53 => 
+    45 => 
     array (
       'id' => 206,
       'type' => '',
@@ -1684,7 +1331,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    54 => 
+    46 => 
     array (
       'id' => 207,
       'type' => '',
@@ -1695,7 +1342,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    55 => 
+    47 => 
     array (
       'id' => 208,
       'type' => '',
@@ -1706,7 +1353,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    56 => 
+    48 => 
     array (
       'id' => 209,
       'type' => '',
@@ -1717,7 +1364,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    57 => 
+    49 => 
     array (
       'id' => 210,
       'type' => '',
@@ -1728,7 +1375,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    58 => 
+    50 => 
     array (
       'id' => 211,
       'type' => '',
@@ -1739,7 +1386,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    59 => 
+    51 => 
     array (
       'id' => 212,
       'type' => '',
@@ -1750,7 +1397,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    60 => 
+    52 => 
     array (
       'id' => 213,
       'type' => '',
@@ -1761,7 +1408,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    61 => 
+    53 => 
     array (
       'id' => 237,
       'type' => '',
@@ -1772,7 +1419,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    62 => 
+    54 => 
     array (
       'id' => 238,
       'type' => '',
@@ -1783,7 +1430,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    63 => 
+    55 => 
     array (
       'id' => 239,
       'type' => '',
@@ -1794,7 +1441,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    64 => 
+    56 => 
     array (
       'id' => 240,
       'type' => '',
@@ -1805,7 +1452,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    65 => 
+    57 => 
     array (
       'id' => 241,
       'type' => '',
@@ -1816,7 +1463,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    66 => 
+    58 => 
     array (
       'id' => 242,
       'type' => '',
@@ -1827,7 +1474,7 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    67 => 
+    59 => 
     array (
       'id' => 243,
       'type' => '',
@@ -1838,13 +1485,93 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    68 => 
+    60 => 
     array (
       'id' => 244,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Trinket',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    61 => 
+    array (
+      'id' => 266,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Commander',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    62 => 
+    array (
+      'id' => 267,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Crusader',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    63 => 
+    array (
+      'id' => 268,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    64 => 
+    array (
+      'id' => 269,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    65 => 
+    array (
+      'id' => 270,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    66 => 
+    array (
+      'id' => 271,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    67 => 
+    array (
+      'id' => 272,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    68 => 
+    array (
+      'id' => 273,
+      'type' => 'Amulet',
+      'rarity' => 'Ascended',
+      'name' => '',
       'stats_class' => 'Wanderer',
       'pvx' => 6,
       'is_profile' => true,
