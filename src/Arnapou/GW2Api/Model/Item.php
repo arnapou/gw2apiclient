@@ -201,7 +201,7 @@ class Item extends AbstractObject {
         'Toughness/Healing'                              => "Giver's",
         'Healing/Toughness'                              => "Giver's",
         'Vitality/Toughness/Power'                       => "Sentinel's",
-        'Vitality/Toughness/Power'                       => "Sentinel's",
+        'Vitality/Power/Toughness'                       => "Sentinel's",
         'Vitality/Healing/Condition'                     => "Shaman's",
         'Vitality/Condition/Healing'                     => "Shaman's",
         'Vitality/Healing/Power'                         => "of the shaman",
