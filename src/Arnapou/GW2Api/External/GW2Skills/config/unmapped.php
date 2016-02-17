@@ -3,7 +3,7 @@
   array (
     0 => 
     array (
-      'id' => 996,
+      'id' => 997,
       'name' => 'Invoker’s Rage',
       'specialization_id' => 52,
       'specialization' => 'Invocation',
@@ -113,15 +113,6 @@
     ),
     3 => 
     array (
-      'id' => 155,
-      'type' => 'Amulet',
-      'rarity' => 'Exotic',
-      'name' => 'Celestial Amulet',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    4 => 
-    array (
       'id' => 156,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
@@ -129,7 +120,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    5 => 
+    4 => 
     array (
       'id' => 157,
       'type' => 'Amulet',
@@ -138,7 +129,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    6 => 
+    5 => 
     array (
       'id' => 158,
       'type' => 'Amulet',
@@ -147,7 +138,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    7 => 
+    6 => 
     array (
       'id' => 159,
       'type' => 'Amulet',
@@ -156,7 +147,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    8 => 
+    7 => 
     array (
       'id' => 160,
       'type' => 'Amulet',
@@ -165,16 +156,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    9 => 
-    array (
-      'id' => 161,
-      'type' => 'Amulet',
-      'rarity' => 'Exotic',
-      'name' => 'Soldier Amulet',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    10 => 
+    8 => 
     array (
       'id' => 162,
       'type' => 'Amulet',
@@ -183,7 +165,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    11 => 
+    9 => 
     array (
       'id' => 163,
       'type' => 'Amulet',
@@ -192,7 +174,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    12 => 
+    10 => 
     array (
       'id' => 164,
       'type' => 'Amulet',
@@ -201,16 +183,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    13 => 
-    array (
-      'id' => 165,
-      'type' => 'Amulet',
-      'rarity' => 'Exotic',
-      'name' => 'Sentinel Amulet',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    14 => 
+    11 => 
     array (
       'id' => 167,
       'type' => 'Amulet',
@@ -219,7 +192,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    15 => 
+    12 => 
     array (
       'id' => 168,
       'type' => 'Amulet',
@@ -228,7 +201,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    16 => 
+    13 => 
     array (
       'id' => 171,
       'type' => 'Amulet',
@@ -237,7 +210,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    17 => 
+    14 => 
     array (
       'id' => 172,
       'type' => 'Amulet',
@@ -246,7 +219,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    18 => 
+    15 => 
     array (
       'id' => 173,
       'type' => 'Amulet',
@@ -255,7 +228,7 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    19 => 
+    16 => 
     array (
       'id' => 174,
       'type' => 'Amulet',
@@ -264,12 +237,39 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    20 => 
+    17 => 
     array (
       'id' => 175,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
-      'name' => 'Settler Amulet',
+      'name' => 'Mender\'s Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    18 => 
+    array (
+      'id' => 176,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Mercenary\'s Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    19 => 
+    array (
+      'id' => 177,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Paladin\'s Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    20 => 
+    array (
+      'id' => 178,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Sage\'s Amulet',
       'pvx' => 1,
       'is_profile' => false,
     ),
