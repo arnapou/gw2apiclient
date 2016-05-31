@@ -67,6 +67,11 @@ class Account extends AbstractObject {
     const PERMISSION_PROGRESSION = 'progression';
 
     /**
+     * La liste des membres, l'historique et le message du jour de toutes les guildes dont vous êtes membre.
+     */
+    const PERMISSION_GUILDS = 'guilds';
+
+    /**
      *
      * @var array
      */
