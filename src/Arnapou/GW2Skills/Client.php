@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Arnapou\GW2Api\External\GW2Skills;
+namespace Arnapou\GW2Skills;
 
 use Arnapou\GW2Api\Cache\CacheInterface;
 use Arnapou\GW2Api\Core\Curl;

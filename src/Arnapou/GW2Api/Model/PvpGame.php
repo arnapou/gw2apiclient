@@ -11,11 +11,11 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
+ * @method string getTeam()
+ * @method string getResult()
+ * @method string getProfession()
  */
 class PvpGame extends AbstractObject {
 
@@ -38,15 +38,12 @@ class PvpGame extends AbstractObject {
      */
     protected $map;
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
+    protected function setData($data) {
+        parent::setData($data);
 
-        $this->data = $data;
+        if (isset($data['map_id'])) {
+            $this->map = new Map($this->getEnvironment(), $data['map_id']);
+        }
     }
 
     /**
@@ -54,9 +51,6 @@ class PvpGame extends AbstractObject {
      * @return Map
      */
     public function getMap() {
-        if (!isset($this->map)) {
-            $this->map = new Map($this->client, $this->data['map_id']);
-        }
         return $this->map;
     }
 
@@ -64,32 +58,8 @@ class PvpGame extends AbstractObject {
      * 
      * @return string
      */
-    public function getId() {
-        return $this->data['id'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getTeam() {
-        return $this->data['team'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
     public function isVictory() {
-        return $this->data['result'] == self::RESULT_VICTORY;
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getResult() {
-        return $this->data['result'];
+        return $this->getData('result') == self::RESULT_VICTORY;
     }
 
     /**
@@ -97,7 +67,7 @@ class PvpGame extends AbstractObject {
      * @return string
      */
     public function getDateStarted() {
-        return gmdate('Y-m-d H:i:s', strtotime($this->data['started']) - 8 * 3600);
+        return gmdate('Y-m-d H:i:s', strtotime($this->getData('started')));
     }
 
     /**
@@ -105,7 +75,7 @@ class PvpGame extends AbstractObject {
      * @return string
      */
     public function getDateEnded() {
-        return gmdate('Y-m-d H:i:s', strtotime($this->data['ended']) - 8 * 3600);
+        return gmdate('Y-m-d H:i:s', strtotime($this->getData('ended')));
     }
 
     /**
@@ -113,7 +83,7 @@ class PvpGame extends AbstractObject {
      * @return string
      */
     public function getDuration() {
-        return strtotime($this->data['ended']) - strtotime($this->data['started']);
+        return strtotime($this->getData('ended')) - strtotime($this->getData('started'));
     }
 
     /**
@@ -121,7 +91,7 @@ class PvpGame extends AbstractObject {
      * @return string
      */
     public function getScoreBlue() {
-        return $this->data['scores']['blue'];
+        return $this->getData(['scores', 'blue']);
     }
 
     /**
@@ -129,31 +99,7 @@ class PvpGame extends AbstractObject {
      * @return string
      */
     public function getScoreRed() {
-        return $this->data['scores']['red'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getProfession() {
-        return $this->data['profession'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getProfessionIcon() {
-        return $this->apiIcon('icon_' . strtolower($this->getProfession()));
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getProfessionIconBig() {
-        return $this->apiIcon('icon_' . strtolower($this->getProfession()) . '_big');
+        return $this->getData(['scores', 'red']);
     }
 
 }

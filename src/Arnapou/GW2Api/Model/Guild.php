@@ -11,35 +11,19 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
- *
+ * 
+ * @method string getTag()
+ * @method array getEmblem()
  */
 class Guild extends AbstractObject {
 
     /**
      * 
-     * @param SimpleClient $client
-     * @param string $id
-     */
-    public function __construct(SimpleClient $client, $id) {
-        parent::__construct($client);
-
-        $data = $this->client->v1_guild_details($id);
-        if (!is_array($data)) {
-            throw new Exception('Invalid received guild data.');
-        }
-        $this->data = $data;
-    }
-
-    /**
-     * 
-     * @return integer
+     * @return string
      */
     public function getId() {
-        return $this->data['guild_id'];
+        return $this->getData('guild_id');
     }
 
     /**
@@ -47,23 +31,7 @@ class Guild extends AbstractObject {
      * @return string
      */
     public function getName() {
-        return $this->data['guild_name'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getTag() {
-        return $this->data['tag'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getFullname() {
-        return $this->getName() . ' [' . $this->getTag() . ']';
+        return $this->getData('guild_name');
     }
 
     /**
@@ -71,85 +39,26 @@ class Guild extends AbstractObject {
      * @return boolean
      */
     public function hasEmblem() {
-        return !empty($this->getEmblemForegroundId());
+        $emblem = $this->getEmblem();
+        if (!is_array($emblem) || empty($emblem)) {
+            return false;
+        }
+        return true;
     }
 
     /**
      * 
-     * @return int
-     */
-    public function getEmblemBackgroundId() {
-        return $this->getSubkey(['emblem', 'background_id']);
-    }
-
-    /**
-     * 
-     * @return int
-     */
-    public function getEmblemForegroundId() {
-        return $this->getSubkey(['emblem', 'foreground_id']);
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getEmblemFlags() {
-        return $this->getSubkey(['emblem', 'flags']);
-    }
-
-    /**
-     * 
-     * @return int
-     */
-    public function getEmblemBackgroundColorId() {
-        return $this->getSubkey(['emblem', 'background_color_id']);
-    }
-
-    /**
-     * 
-     * @return int
-     */
-    public function getEmblemForegroundPrimaryColorId() {
-        return $this->getSubkey(['emblem', 'foreground_primary_color_id']);
-    }
-
-    /**
-     * 
-     * @return int
-     */
-    public function getEmblemForegroundSecondaryColorId() {
-        return $this->getSubkey(['emblem', 'foreground_secondary_color_id']);
-    }
-
-    /**
-     * 
-     * Thanks to http://guilds.gw2w2w.com/
-     * 
-     * @link https://github.com/fooey/node-gw2guilds
-     * @param integer $size
      * @return string
      */
-    public function getIconLinkGw2guildsSvg($size = 256) {
-        if (empty($this->data['emblem'])) {
-            return null;
+    public function __toString() {
+        $name = (string) $this->getName();
+        $tag  = (string) $this->getTag();
+        if ($name && $tag) {
+            return $name . ' [' . $tag . ']';
         }
-        $slug = str_replace(' ', '-', $this->getName());
-        return 'http://guilds.gw2w2w.com/guilds/' . rawurlencode($slug) . '/' . $size . ".svg";
-    }
-
-    /**
-     * 
-     * Thanks to http://data.gw2.fr/guild-emblem/
-     * 
-     * @param integer $size
-     * @return string
-     */
-    public function getIconLinkGw2Png($size = 256) {
-        if (empty($this->data['emblem'])) {
-            return null;
+        else {
+            return $name;
         }
-        return 'http://data.gw2.fr/guild-emblem/name/' . rawurlencode($this->getName()) . '/' . $size . ".png";
     }
 
 }

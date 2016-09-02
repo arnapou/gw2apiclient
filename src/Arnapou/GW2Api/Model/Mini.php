@@ -11,31 +11,33 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
+ * @method string getName()
+ * @method string getUnlock()
+ * @method string getIcon()
+ * @method string getOrder()
+ * @method string getItemId()
  */
-class Mini extends AbstractObject {
+class Mini extends AbstractStoredObject {
 
-    /**
-     *
-     * @var boolean
-     */
-    protected $unlocked;
+    protected $unlocked = false;
+    protected $item;
+
+    protected function setData($data) {
+        parent::setData($data);
+
+        if (isset($data['item_id'])) {
+            $this->item = new Item($this->getEnvironment(), $data['item_id']);
+        }
+    }
 
     /**
      * 
-     * @param SimpleClient $client
-     * @param array $id
-     * @param boolean $unlocked
+     * @return Item
      */
-    public function __construct(SimpleClient $client, $id, $unlocked = false) {
-        parent::__construct($client);
-
-        $this->data     = $this->apiMinis($id);
-        $this->unlocked = $unlocked;
+    public function getItem() {
+        return $this->item;
     }
 
     /**
@@ -48,62 +50,14 @@ class Mini extends AbstractObject {
 
     /**
      * 
-     * @return integer
+     * @param boolean $bool
      */
-    public function getId() {
-        return $this->data['id'];
+    public function setUnlocked($bool) {
+        $this->unlocked = $bool ? true : false;
     }
 
-    /**
-     * 
-     * @return string
-     */
-    public function getName() {
-        return $this->getSubkey(['name']);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getIcon() {
-        return $this->getSubkey(['icon']);
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getOrder() {
-        return $this->getSubkey(['order'], 0);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getUnlock() {
-        return $this->getSubkey(['unlock']);
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getItemId() {
-        return $this->getSubkey(['item_id']);
-    }
-
-    /**
-     * 
-     * @return Item
-     */
-    public function getItem() {
-        $id = $this->getItemId();
-        if ($id) {
-            return new Item($this->client, $id);
-        }
-        return null;
+    protected function getApiName() {
+        return 'minis';
     }
 
 }

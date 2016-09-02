@@ -11,14 +11,21 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Core\AbstractClient;
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
+use Arnapou\GW2Api\Environment;
 
 /**
- *
+ * @doc https://wiki.guildwars2.com/wiki/API:2/items
+ * 
+ * @method string getChatLink()
+ * @method string getName()
+ * @method string getIcon()
+ * @method string getDescription()
+ * @method string getType()
+ * @method string getRarity()
+ * @method string getLevel()
+ * @method string getVendorValue()
  */
-class Item extends AbstractObject {
+class Item extends AbstractStoredObject {
 
     // TYPES
     const TYPE_ARMOR                                  = 'Armor';
@@ -162,194 +169,78 @@ class Item extends AbstractObject {
     // ATTRIBUTES
     const ATTRIBUTE_POWER                             = 'Power';
     const ATTRIBUTE_PRECISION                         = 'Precision';
-    const ATTRIBUTE_FEROCITY                          = 'Ferocity';
     const ATTRIBUTE_THOUGHNESS                        = 'Toughness';
     const ATTRIBUTE_VITALITY                          = 'Vitality';
     const ATTRIBUTE_HEALING                           = 'Healing';
-    const ATTRIBUTE_CONDITION                         = 'Condition';
-
-    /**
-     *
-     * @var array
-     */
-    protected static $STATS = [
-        'Power/Precision/Ferocity'                       => "Berserker's",
-        'Power/Ferocity/Precision'                       => "Berserker's",
-        'Power/Ferocity/Precision/Vitality'              => "Berserker's + Valkyrie",
-        'Power/Healing/Precision'                        => "Zealot's",
-        'Power/Precision/Healing'                        => "Zealot's",
-        'Power/Toughness/Vitality'                       => "Soldier's",
-        'Power/Vitality/Toughness'                       => "Soldier's",
-        'Power/Ferocity/Vitality'                        => "Valkyrie",
-        'Power/Vitality/Ferocity'                        => "Valkyrie",
-        'Power/Toughness/Healing'                        => "Forsaken",
-        'Power/Healing/Toughness'                        => "Forsaken",
-        'Precision/Toughness/Power'                      => "Captain's",
-        'Precision/Power/Toughness'                      => "Captain's",
-        'Precision/Condition/Power'                      => "Rampager's",
-        'Precision/Power/Condition'                      => "Rampager's",
-        'Precision/Ferocity/Power'                       => "Assassin's",
-        'Precision/Power/Ferocity'                       => "Assassin's",
-        'Toughness/Precision/Power'                      => "Knight's",
-        'Toughness/Power/Precision'                      => "Knight's",
-        'Toughness/Power/Ferocity'                       => "Cavalier's",
-        'Toughness/Ferocity/Power'                       => "Cavalier's",
-        'Toughness/Healing/Vitality'                     => "Nomad's",
-        'Toughness/Vitality/Healing'                     => "Nomad's",
-        'Toughness/Healing/Condition'                    => "Settler's",
-        'Toughness/Condition/Healing'                    => "Settler's",
-        'Toughness/Healing'                              => "Giver's",
-        'Healing/Toughness'                              => "Giver's",
-        'Vitality/Toughness/Power'                       => "Sentinel's",
-        'Vitality/Power/Toughness'                       => "Sentinel's",
-        'Vitality/Healing/Condition'                     => "Shaman's",
-        'Vitality/Condition/Healing'                     => "Shaman's",
-        'Vitality/Healing/Power'                         => "of the shaman",
-        'Vitality/Power/Healing'                         => "of the shaman",
-        'Condition/Precision/Power'                      => "Sinister",
-        'Condition/Power/Precision'                      => "Sinister",
-        'Condition/Vitality/Power'                       => "Carrion",
-        'Condition/Power/Vitality'                       => "Carrion",
-        'Condition/Toughness/Precision'                  => "Rabid",
-        'Condition/Precision/Toughness'                  => "Rabid",
-        'Condition/Toughness/Precision/Healing'          => "Rabid + Apothecary's",
-        'Condition/Vitality/Toughness'                   => "Dire",
-        'Condition/Toughness/Vitality'                   => "Dire",
-        'Condition/Toughness/Vitality/Precision'         => "Dire + Rabid",
-        'Condition/Healing/Toughness'                    => "Apostate's",
-        'Condition/Toughness/Healing'                    => "Apostate's",
-        'Healing/Toughness/Power'                        => "Cleric's",
-        'Healing/Power/Toughness'                        => "Cleric's",
-        'Healing/Vitality/Precision'                     => "Magi's",
-        'Healing/Precision/Vitality'                     => "Magi's",
-        'Healing/Condition/Toughness'                    => "Apothecary's",
-        'Healing/Toughness/Condition'                    => "Apothecary's",
-        // HoT stats
-        'Power/Precision/BoonDuration/Toughness'         => "Commander",
-        'Power/Precision/Toughness/BoonDuration'         => "Commander",
-        'Precision/Power/BoonDuration/Toughness'         => "Commander",
-        'Precision/Power/Toughness/BoonDuration'         => "Commander",
-        'Power/Vitality/Toughness/BoonDuration'          => "Wanderer",
-        'Power/Vitality/BoonDuration/Toughness'          => "Wanderer",
-        'Vitality/Power/Toughness/BoonDuration'          => "Wanderer",
-        'Vitality/Power/BoonDuration/Toughness'          => "Wanderer",
-        'Power/Precision/Vitality/Ferocity'              => "Marauder",
-        'Power/Precision/Ferocity/Vitality'              => "Marauder",
-        'Precision/Power/Vitality/Ferocity'              => "Marauder",
-        'Precision/Power/Ferocity/Vitality'              => "Marauder",
-        'Power/Toughness/Ferocity/Healing'               => "Crusader",
-        'Power/Toughness/Healing/Ferocity'               => "Crusader",
-        'Toughness/Power/Ferocity/Healing'               => "Crusader",
-        'Toughness/Power/Healing/Ferocity'               => "Crusader",
-        'Toughness/Condition/Vitality/ConditionDuration' => "Trailblazer",
-        'Toughness/Condition/ConditionDuration/Vitality' => "Trailblazer",
-        'Condition/Toughness/Vitality/ConditionDuration' => "Trailblazer",
-        'Condition/Toughness/ConditionDuration/Vitality' => "Trailblazer",
-        'Toughness/Healing/Vitality/BoonDuration'        => "Minstrel",
-        'Toughness/Healing/BoonDuration/Vitality'        => "Minstrel",
-        'Healing/Toughness/Vitality/BoonDuration'        => "Minstrel",
-        'Healing/Toughness/BoonDuration/Vitality'        => "Minstrel",
-        'Toughness/Power/ConditionDuration/BoonDuration' => "Vigilant",
-        'Toughness/Power/BoonDuration/ConditionDuration' => "Vigilant",
-        'Power/Toughness/ConditionDuration/BoonDuration' => "Vigilant",
-        'Power/Toughness/BoonDuration/ConditionDuration' => "Vigilant",
-        'Power/Condition/ConditionDuration/Precision'    => "Viper's",
-        'Power/Condition/Precision/ConditionDuration'    => "Viper's",
-        'Condition/Power/ConditionDuration/Precision'    => "Viper's",
-        'Condition/Power/Precision/ConditionDuration'    => "Viper's",
-    ];
+    const ATTRIBUTE_AGONYRESISTANCE                   = 'AgonyResistance';
+    const ATTRIBUTE_BOONDURATION                      = 'BoonDuration';      // concentration
+    const ATTRIBUTE_CONDITIONDAMAGE                   = 'ConditionDamage';
+    const ATTRIBUTE_CONDITIONDURATION                 = 'ConditionDuration'; // expertise
+    const ATTRIBUTE_CRITDAMAGE                        = 'CritDamage';        // ferocity
 
     /**
      *
      * @var Skin
      */
-    protected $defaultSkin;
+
+    protected $defaultSkin = null;
+
+    /**
+     *
+     * @var ItemStat
+     */
+    protected $itemStat = null;
 
     /**
      *
      * @var array
      */
-    protected $attributes;
+    protected $price = null;
 
-    /**
-     *
-     * @var array
-     */
-    protected $price;
+    public function __construct(Environment $environment, $id) {
+        parent::__construct($environment, $id);
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $id
-     */
-    public function __construct(SimpleClient $client, $id) {
-        parent::__construct($client);
-
-        $this->data = $this->apiItems($id);
+        $this->getEnvironment()->getStorage()->prepare(Environment::LANG_EN, 'prices', (string) $this->objectId);
     }
 
     /**
      * 
-     * @return integer
+     * @return array [buy: x, sell: y]
      */
-    public function getId() {
-        return $this->data['id'];
+    public function getPrice() {
+        if (empty($this->price)) {
+            $this->price = [
+                'buy'  => null,
+                'sell' => null,
+            ];
+            if (!$this->hasFlag(self::FLAG_ACCOUNT_BOUND)) {
+                if ($this->objectId) {
+                    $env     = $this->getEnvironment();
+                    $storage = $env->getStorage();
+                    $client  = $env->getClientVersion2();
+                    $data    = $storage->get(Environment::LANG_EN, 'prices', (string) $this->objectId, [$client, 'apiCommercePrices']);
+
+                    if (isset($data['buys'], $data['buys']['unit_price'])) {
+                        $this->price['buy'] = $data['buys']['unit_price'];
+                    }
+                    if (isset($data['sells'], $data['sells']['unit_price'])) {
+                        $this->price['sell'] = $data['sells']['unit_price'];
+                    }
+                }
+            }
+        }
+        return $this->price;
     }
 
-    /**
-     * 
-     * @return string
-     */
-    public function getName() {
-        return $this->getSubkey(['name']);
-    }
+    protected function setData($data) {
+        parent::setData($data);
 
-    /**
-     * 
-     * @return string
-     */
-    public function getIcon() {
-        return $this->getSubkey(['icon']);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getDescription() {
-        return strip_tags($this->getSubkey(['description']));
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getType() {
-        return $this->getSubkey(['type']);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getRarity() {
-        return $this->getSubkey(['rarity']);
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getLevel() {
-        return $this->getSubkey(['level']);
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getVendorValue() {
-        return $this->getSubkey(['vendor_value']);
+        if (isset($data['default_skin'])) {
+            $this->defaultSkin = new Skin($this->getEnvironment(), $data['default_skin']);
+        }
+        if (isset($data['infix_upgrade'], $data['infix_upgrade']['id'])) {
+            $this->itemStat = new ItemStat($this->getEnvironment(), $data['infix_upgrade']['id']);
+        }
     }
 
     /**
@@ -357,21 +248,15 @@ class Item extends AbstractObject {
      * @return Skin
      */
     public function getDefaultSkin() {
-        if (!isset($this->defaultSkin)) {
-            $id = $this->getSubkey(['default_skin']);
-            if ($id) {
-                $this->defaultSkin = new Skin($this->client, $id);
-            }
-        }
         return $this->defaultSkin;
     }
 
     /**
      * 
-     * @return string
+     * @return array
      */
     public function getFlags() {
-        return $this->getSubkey(['flags']);
+        return $this->getData('flags', []);
     }
 
     /**
@@ -380,19 +265,15 @@ class Item extends AbstractObject {
      * @return boolean
      */
     public function hasFlag($flag) {
-        $flags = $this->getFlags();
-        if (is_array($flags)) {
-            return in_array($flag, $flags);
-        }
-        return false;
+        return in_array($flag, (array) $this->getFlags());
     }
 
     /**
      * 
-     * @return string
+     * @return array
      */
     public function getGameTypes() {
-        return $this->getSubkey(['game_types']);
+        return $this->getData('game_types', []);
     }
 
     /**
@@ -401,11 +282,7 @@ class Item extends AbstractObject {
      * @return boolean
      */
     public function hasGameType($type) {
-        $types = $this->getGameTypes();
-        if (is_array($types)) {
-            return in_array($type, $types);
-        }
-        return false;
+        return in_array($type, (array) $this->getGameTypes());
     }
 
     /**
@@ -413,7 +290,7 @@ class Item extends AbstractObject {
      * @return string
      */
     public function getRestrictions() {
-        return $this->getSubkey(['restrictions']);
+        return $this->getData('restrictions', []);
     }
 
     /**
@@ -422,11 +299,7 @@ class Item extends AbstractObject {
      * @return boolean
      */
     public function hasRestriction($restriction) {
-        $restrictions = $this->getGameTypes();
-        if (is_array($restrictions)) {
-            return in_array($restriction, $restrictions);
-        }
-        return false;
+        return in_array($restriction, (array) $this->getRestrictions());
     }
 
     /**
@@ -434,7 +307,7 @@ class Item extends AbstractObject {
      * @return string
      */
     public function getSubType() {
-        return $this->getSubkey(['details', 'type']);
+        return $this->getData(['details', 'type']);
     }
 
     /**
@@ -442,7 +315,7 @@ class Item extends AbstractObject {
      * @return string
      */
     public function getArmorWeightClass() {
-        return $this->getSubkey(['details', 'weight_class']);
+        return $this->getData(['details', 'weight_class']);
     }
 
     /**
@@ -450,7 +323,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getArmorDefense() {
-        return $this->getSubkey(['details', 'defense']);
+        return $this->getData(['details', 'defense']);
     }
 
     /**
@@ -458,7 +331,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getWeaponDamageType() {
-        return $this->getSubkey(['details', 'damage_type']);
+        return $this->getData(['details', 'damage_type']);
     }
 
     /**
@@ -466,7 +339,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getWeaponMinPower() {
-        return $this->getSubkey(['details', 'min_power']);
+        return $this->getData(['details', 'min_power']);
     }
 
     /**
@@ -474,7 +347,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getWeaponMaxPower() {
-        return $this->getSubkey(['details', 'max_power']);
+        return $this->getData(['details', 'max_power']);
     }
 
     /**
@@ -482,7 +355,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getWeaponDefense() {
-        return $this->getSubkey(['details', 'defense']);
+        return $this->getData(['details', 'defense']);
     }
 
     /**
@@ -490,7 +363,7 @@ class Item extends AbstractObject {
      * @return string
      */
     public function getConsumableDescription() {
-        return $this->getSubkey(['details', 'description']);
+        return $this->getData(['details', 'description']);
     }
 
     /**
@@ -498,7 +371,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getConsumableDurationMs() {
-        return $this->getSubkey(['details', 'duration_ms']);
+        return $this->getData(['details', 'duration_ms']);
     }
 
     /**
@@ -506,7 +379,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getConsumableColorId() {
-        return $this->getSubkey(['details', 'color_id']);
+        return $this->getData(['details', 'color_id']);
     }
 
     /**
@@ -514,7 +387,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getConsumableRecipeId() {
-        return $this->getSubkey(['details', 'recipe_id']);
+        return $this->getData(['details', 'recipe_id']);
     }
 
     /**
@@ -522,7 +395,7 @@ class Item extends AbstractObject {
      * @return string
      */
     public function getConsumableUnlockType() {
-        return $this->getSubkey(['details', 'unlock_type']);
+        return $this->getData(['details', 'unlock_type']);
     }
 
     /**
@@ -530,7 +403,7 @@ class Item extends AbstractObject {
      * @return integer
      */
     public function getSalvageCharges() {
-        return $this->getSubkey(['details', 'charges']);
+        return $this->getData(['details', 'charges']);
     }
 
     /**
@@ -538,7 +411,7 @@ class Item extends AbstractObject {
      * @return array
      */
     public function getUpgradeComponentFlags() {
-        return $this->getSubkey(['details', 'flags']);
+        return $this->getData(['details', 'flags']);
     }
 
     /**
@@ -546,7 +419,7 @@ class Item extends AbstractObject {
      * @return array
      */
     public function getUpgradeComponentSuffix() {
-        return $this->getSubkey(['details', 'suffix']);
+        return $this->getData(['details', 'suffix']);
     }
 
     /**
@@ -554,58 +427,54 @@ class Item extends AbstractObject {
      * @return array
      */
     public function getBagSize() {
-        return $this->getSubkey(['details', 'size']);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getChatLink() {
-        return $this->getSubkey(['chat_link']);
+        return $this->getData(['details', 'size']);
     }
 
     /**
      * 
      * @return Item
      */
-    public function getSuffixItem() {
-        $id = $this->getSubkey(['details', 'suffix_item_id']);
-        if ($id) {
-            return new Item($this->client, $id);
+    public function getSuffixItemId() {
+        return $this->getData(['details', 'suffix_item_id']);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getAttributes() {
+        $attributes = [];
+        $array      = $this->getData(['details', 'infix_upgrade', 'attributes']);
+        if (is_array($array)) {
+            foreach ($array as $key => $value) {
+                if (is_array($value) && isset($value['attribute'], $value['modifier'])) {
+                    $attributes[$value['attribute']] = $value['modifier'];
+                }
+                else {
+                    $attributes[$key] = $value;
+                }
+            }
         }
-        return null;
+        return $attributes;
+    }
+
+    /**
+     * 
+     * @return ItemStat
+     */
+    public function getItemStat() {
+        return $this->itemStat;
     }
 
     /**
      * 
      * @return string
      */
-    public function getBuffDescription() {
-        $buff = $this->getSubkey(['details', 'infix_upgrade', 'buff', 'description']);
-        if (empty($buff)) {
-            $buff = $this->getSubkey(['details', 'bonuses']);
+    public function getStatName() {
+        if ($this->itemStat) {
+            return $this->itemStat->getStatName();
         }
-        if (is_array($buff)) {
-            return implode("\n", $buff);
-        }
-        return $buff;
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getBuffSkillId() {
-        return $this->getSubkey(['details', 'infix_upgrade', 'buff', 'skill_id']);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getInfusionSlots() {
-        return $this->getSubkey(['details', 'infusion_slots']);
+        return \Arnapou\GW2Api\attributes_to_statname($this->getAttributes());
     }
 
     /**
@@ -618,20 +487,24 @@ class Item extends AbstractObject {
         ) {
             return null;
         }
+        $attributes = $this->getAttributes();
+        if (isset($attributes[self::ATTRIBUTE_AGONYRESISTANCE])) {
+            return $attributes[self::ATTRIBUTE_AGONYRESISTANCE];
+        }
         $buffDescription = $this->getBuffDescription();
         if (!empty($buffDescription)) {
-            $lang = $this->client->getLang();
+            $lang = $this->getEnvironment()->getLang();
 
-            if ($lang == AbstractClient::LANG_ES && preg_match('!^\+([0-9]+) resistencia!i', $buffDescription, $m)) {
+            if ($lang == Environment::LANG_ES && preg_match('!^\+([0-9]+) resistencia!i', $buffDescription, $m)) {
                 return $m[1];
             }
-            if ($lang == AbstractClient::LANG_FR && preg_match('!agonie \+([0-9]+)$!i', $buffDescription, $m)) {
+            if ($lang == Environment::LANG_FR && preg_match('!agonie \+([0-9]+)$!i', $buffDescription, $m)) {
                 return $m[1];
             }
-            if ($lang == AbstractClient::LANG_EN && preg_match('!^\+([0-9]+) agony!i', $buffDescription, $m)) {
+            if ($lang == Environment::LANG_EN && preg_match('!^\+([0-9]+) agony!i', $buffDescription, $m)) {
                 return $m[1];
             }
-            if ($lang == AbstractClient::LANG_DE && preg_match('!^\+([0-9]+) Qual-Widerstand!i', $buffDescription, $m)) {
+            if ($lang == Environment::LANG_DE && preg_match('!^\+([0-9]+) Qual-Widerstand!i', $buffDescription, $m)) {
                 return $m[1];
             }
         }
@@ -640,111 +513,45 @@ class Item extends AbstractObject {
 
     /**
      * 
-     * @return arrray
+     * @return string
      */
-    public function getAttributes() {
-        if (!isset($this->attributes)) {
-            $this->attributes = [];
-            $attributes       = $this->getSubkey(['details', 'infix_upgrade', 'attributes']);
-            if (is_array($attributes)) {
-                usort($attributes, function($a, $b) {
-                    if ($a['modifier'] == $b['modifier']) {
-                        return 0;
-                    }
-                    return $a['modifier'] < $b['modifier'] ? 1 : -1;
-                });
-                $list = [];
-                foreach ($attributes as $attribute) {
-                    $name        = str_replace('CritDamage', 'Ferocity', $attribute['attribute']);
-                    $name        = str_replace('ConditionDamage', 'Condition', $name);
-                    $list[$name] = $attribute['modifier'];
-                }
-                if (count($attributes) >= 7) {
-                    $stats      = 'Celestial';
-                    $stats_name = 'Celestial';
-                }
-                else {
-                    if ($this->getRarity() == self::RARITY_ASCENDED) {
-                        $buff = $this->getBuffDescription();
-                        if ($buff) {
-                            $buff = $this->getItemEN()->getBuffDescription();
-                            if ($buff) {
-                                $stats_names = [
-                                    'Power'             => 'Power',
-                                    'Precision'         => 'Precision',
-                                    'Toughness'         => 'Toughness',
-                                    'Vitality'          => 'Vitality',
-                                    'Ferocity'          => 'Ferocity',
-                                    'Condition Damage'  => 'Condition',
-                                    'Healing'           => 'Healing',
-                                    'BoonDuration'      => 'BoonDuration',
-                                    'ConditionDuration' => 'ConditionDuration',
-                                ];
-                                $lines       = explode("\n", $buff);
-                                foreach ($lines as $line) {
-                                    if (preg_match('!^\+([0-9]+) (.+)$!i', $line, $m)) {
-                                        if (isset($stats_names[$m[2]])) {
-                                            if (isset($list[$stats_names[$m[2]]])) {
-                                                $list[$stats_names[$m[2]]] += $m[1];
-                                            }
-                                            else {
-                                                $list[$stats_names[$m[2]]] = $m[1];
-                                            }
-                                        }
-                                    }
-                                }
-                                uasort($list, function($a, $b) {
-                                    if ($a == $b) {
-                                        return 0;
-                                    }
-                                    return $a < $b ? 1 : -1;
-                                });
-                            }
-                        }
-                    }
-
-                    $stats      = implode('/', array_keys($list));
-                    $stats_name = isset(self::$STATS[$stats]) ? self::$STATS[$stats] : '';
-                }
-                $this->attributes = [
-                    'stats'      => $stats,
-                    'stats_name' => $stats_name,
-                    'list'       => $list,
-                ];
-            }
+    public function getBuffDescription() {
+        $buff = $this->getData(['details', 'infix_upgrade', 'buff', 'description']);
+        if (empty($buff)) {
+            $buff = $this->getData(['details', 'bonuses']);
         }
-        return $this->attributes;
+        if (is_array($buff)) {
+            return implode("\n", $buff);
+        }
+        return $buff;
     }
 
     /**
      * 
-     * @return Item
+     * @return string
      */
-    protected function getItemEN() {
-        $lang = $this->client->getLang();
-        if ($lang == AbstractClient::LANG_EN) {
-            return $this;
-        }
-        $this->client->setLang(AbstractClient::LANG_EN);
-        $object = new Item($this->client, $this->getId());
-        $this->client->setLang($lang);
-        return $object;
+    public function getBuffSkillId() {
+        return $this->getData(['details', 'infix_upgrade', 'buff', 'skill_id']);
     }
 
     /**
      * 
-     * @return array [buy: x, sell: y]
+     * @return string
      */
-    public function getPrice() {
-        if (!isset($this->price)) {
-            $price = $this->apiPrices($this->getId());
+    public function getInfusionSlots() {
+        return $this->getData(['details', 'infusion_slots']);
+    }
 
-            $this->price = [
-                'buy'  => isset($price['buys'], $price['buys']['unit_price']) ? $price['buys']['unit_price'] : null,
-                'sell' => isset($price['sells'], $price['sells']['unit_price']) ? $price['sells']['unit_price'] : null,
-            ];
-        }
-        return $this->price;
+    /**
+     * 
+     * @return array
+     */
+    public function getStatChoices() {
+        return $this->getData(['details', 'stat_choices'], []);
+    }
+
+    protected function getApiName() {
+        return 'items';
     }
 
 }

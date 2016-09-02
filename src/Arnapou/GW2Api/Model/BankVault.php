@@ -23,7 +23,7 @@ class BankVault extends AbstractObject {
      *
      * @var array
      */
-    protected $items;
+    protected $inventorySlots = [];
 
     /**
      *
@@ -33,40 +33,28 @@ class BankVault extends AbstractObject {
 
     /**
      * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
-
-        $this->data = $data;
-    }
-
-    /**
-     * 
      * @return integer
      */
     public function getId() {
-        return $this->data['id'];
+        return $this->getData('id');
+    }
+
+    protected function setData($data) {
+        parent::setData($data);
+
+        if (isset($data['items']) && is_array($data['items'])) {
+            foreach ($data['items'] as $item) {
+                $this->inventorySlots[] = new InventorySlot($this->getEnvironment(), $item);
+            }
+        }
     }
 
     /**
      * 
      * @return array
      */
-    public function getItems() {
-        if (!isset($this->items)) {
-            $this->items = [];
-            foreach ($this->data['items'] as $item) {
-                if (is_array($item) && isset($item['id'])) {
-                    $this->items[] = new InventorySlot($this->client, $item);
-                }
-                else {
-                    $this->items[] = null;
-                }
-            }
-        }
-        return $this->items;
+    public function getInventorySlots() {
+        return $this->inventorySlots;
     }
 
     /**
@@ -79,7 +67,7 @@ class BankVault extends AbstractObject {
                 'buy'  => 0,
                 'sell' => 0,
             ];
-            foreach ($this->getItems() as /* @var $item InventorySlot */ $item) {
+            foreach ($this->inventorySlots as /* @var $item InventorySlot */ $item) {
                 if ($item && empty($item->getBinding())) {
                     $price = $item->getPrice();
                     $this->price['buy'] += $price['buy_total'];

@@ -11,9 +11,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
  */
@@ -24,12 +21,6 @@ class Minis extends AbstractObject {
      * @var array
      */
     protected $unlocked;
-
-    /**
-     *
-     * @var array
-     */
-    protected $allIds;
 
     /**
      *
@@ -49,27 +40,10 @@ class Minis extends AbstractObject {
      */
     protected $total;
 
-    /**
-     *
-     * @var boolean
-     */
-    static protected $preloadMinisDone = false;
+    protected function setData($data) {
+        parent::setData($data);
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
-
-        $this->unlocked = $data;
-        $this->allIds   = $this->client->v2_minis();
-
-        if (!self::$preloadMinisDone) {
-            self::$PRELOADS['minis'] = $this->allIds;
-            self::$preloadMinisDone  = true;
-        }
+        $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
     /**
@@ -79,20 +53,24 @@ class Minis extends AbstractObject {
         $this->minis = [];
         $this->count = 0;
         $this->total = 0;
-        $itemIds     = [];
 
+        $env             = $this->getEnvironment();
         $flippedUnlocked = array_flip($this->unlocked);
-        foreach ($this->allIds as $id) {
+        foreach ($env->getClientVersion2()->apiMinis() as $id) {
             $unlocked      = isset($flippedUnlocked[$id]);
-            $mini          = new Mini($this->client, $id, $unlocked);
-            $itemIds[]     = $mini->getItemId();
+            $mini          = new Mini($env, $id);
+            $mini->setUnlocked($unlocked);
             $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->minis[] = $mini;
         }
-        $this->preloadItemIds($itemIds);
         uasort($this->minis, function(Mini $mini1, Mini $mini2) {
-            return strcmp($mini1->getOrder(), $mini2->getOrder());
+            $n1 = $mini1->getOrder();
+            $n2 = $mini2->getOrder();
+            if ($n1 == $n2) {
+                return 0;
+            }
+            return $n1 > $n2 ? 1 : -1;
         });
     }
 

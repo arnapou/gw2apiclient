@@ -12,12 +12,11 @@
 namespace Arnapou\GW2Api\Model;
 
 /**
- * @doc https://wiki.guildwars2.com/wiki/API:2/worlds
  * 
  * @method string getName()
- * @method string getPopulation()
+ * @method string getOrder()
  */
-class World extends AbstractStoredObject {
+class Material extends AbstractStoredObject {
 
     /**
      * 
@@ -28,7 +27,15 @@ class World extends AbstractStoredObject {
     }
 
     protected function getApiName() {
-        return 'worlds';
+        return 'materials';
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getItemIds() {
+        return $this->getData('items', []);
     }
 
 }

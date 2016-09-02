@@ -11,9 +11,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
  */
@@ -24,12 +21,6 @@ class Dyes extends AbstractObject {
      * @var array
      */
     protected $unlocked;
-
-    /**
-     *
-     * @var array
-     */
-    protected $allIds;
 
     /**
      *
@@ -49,27 +40,10 @@ class Dyes extends AbstractObject {
      */
     protected $total;
 
-    /**
-     *
-     * @var boolean
-     */
-    static protected $preloadColorDone = false;
+    protected function setData($data) {
+        parent::setData($data);
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
-
-        $this->unlocked = $data;
-        $this->allIds   = $this->client->v2_colors();
-
-        if (!self::$preloadColorDone) {
-            self::$PRELOADS['colors'] = $this->allIds;
-            self::$preloadColorDone   = true;
-        }
+        $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
     /**
@@ -80,14 +54,17 @@ class Dyes extends AbstractObject {
         $this->count  = 0;
         $this->total  = 0;
 
+        $env             = $this->getEnvironment();
         $flippedUnlocked = array_flip($this->unlocked);
-        foreach ($this->allIds as $id) {
+        foreach ($env->getClientVersion2()->apiColors() as $id) {
             $unlocked       = isset($flippedUnlocked[$id]);
-            $color          = new Color($this->client, $id, $unlocked);
+            $color          = new Color($env, $id);
+            $color->setUnlocked($unlocked);
             $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->colors[] = $color;
         }
+
         uasort($this->colors, function(Color $color1, Color $color2) {
             return strcmp($color1->getName(), $color2->getName());
         });

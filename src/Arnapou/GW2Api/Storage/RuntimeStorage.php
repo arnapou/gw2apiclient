@@ -9,12 +9,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Arnapou\GW2Api\Model;
+namespace Arnapou\GW2Api\Storage;
 
-/**
- *
- * @method string getProfession()
- */
-class PvpStatsProfession extends PvpStats {
+class RuntimeStorage extends AbstractStorage {
     
 }

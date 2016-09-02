@@ -11,9 +11,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
  */
@@ -59,20 +56,17 @@ class Pvp extends AbstractObject {
      */
     protected $ladders = [];
 
-    /**
-     * 
-     * @param SimpleClient $client
-     */
-    public function __construct(SimpleClient $client) {
-        parent::__construct($client);
-    }
+    protected function setData($data) {
+        parent::setData($data);
 
-    /**
-     * 
-     */
-    protected function checkStats() {
-        if (!isset($this->data)) {
-            $this->data = $this->client->v2_pvp_stats();
+        if (isset($data['aggregate'])) {
+            $this->aggregate = new PvpStats($this->getEnvironment(), $data['aggregate']);
+        }
+        if (isset($data['ladders']) && is_array($data['ladders'])) {
+            $this->ladders = [];
+            foreach ($data['ladders'] as $key => $ladder) {
+                $this->ladders[$key] = new PvpStats($this->getEnvironment(), $ladder);
+            }
         }
     }
 
@@ -81,10 +75,6 @@ class Pvp extends AbstractObject {
      * @return PvpStats
      */
     public function getAggregateStats() {
-        if (!isset($this->aggregate)) {
-            $this->checkStats();
-            $this->aggregate = new PvpStats($this->client, $this->data['aggregate']);
-        }
         return $this->aggregate;
     }
 
@@ -95,13 +85,7 @@ class Pvp extends AbstractObject {
      */
     public function getLadderStats($key) {
         if (!array_key_exists($key, $this->ladders)) {
-            $this->checkStats();
-            if (isset($this->data['ladders'], $this->data['ladders'][$key])) {
-                $this->ladders[$key] = new PvpStats($this->client, $this->data['ladders'][$key]);
-            }
-            else {
-                $this->ladders[$key] = null;
-            }
+            return null;
         }
         return $this->ladders[$key];
     }
@@ -152,10 +136,11 @@ class Pvp extends AbstractObject {
      */
     public function getProfessionsStats() {
         if (!isset($this->professions)) {
-            $this->checkStats();
+            $professions       = $this->getData('professions');
             $this->professions = [];
-            if (isset($this->data['professions'])) {
-                foreach ($this->data['professions'] as $profession => $data) {
+            if (!empty($professions) && is_array($professions)) {
+                $env = $this->getEnvironment();
+                foreach ($professions as $profession => $data) {
                     $data['profession']                     = [
                         'elementalist' => Character::PROFESSION_ELEMENTALIST,
                         'engineer'     => Character::PROFESSION_ENGINEER,
@@ -168,7 +153,7 @@ class Pvp extends AbstractObject {
                         'warrior'      => Character::PROFESSION_WARRIOR,
                         'revenant'     => Character::PROFESSION_REVENANT,
                         ][strtolower($profession)];
-                    $this->professions[$data['profession']] = new PvpStatsProfession($this->client, $data);
+                    $this->professions[$data['profession']] = new PvpStatsProfession($env, $data);
                 }
             }
             uasort($this->professions, function($a, $b) {
@@ -189,13 +174,11 @@ class Pvp extends AbstractObject {
      */
     public function getGames() {
         if (!isset($this->games)) {
-            $games       = $this->client->v2_pvp_games($this->client->v2_pvp_games());
+            $env         = $this->getEnvironment();
+            $games       = $env->getClientVersion2()->apiPvpGames($env->getClientVersion2()->apiPvpGames());
             $this->games = [];
             foreach ($games as $game) {
-                self::$PRELOADS['maps'][] = $game['map_id'];
-            }
-            foreach ($games as $game) {
-                $this->games[] = new PvpGame($this->client, $game);
+                $this->games[] = new PvpGame($env, $game);
             }
             uasort($this->games, function($a, $b) {
                 return -strcmp($a->getDateEnded(), $b->getDateEnded());
@@ -209,8 +192,23 @@ class Pvp extends AbstractObject {
      * @return integer
      */
     public function getRank() {
-        $this->checkStats();
-        return $this->data['pvp_rank'];
+        return $this->getData('pvp_rank');
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getRankPoints() {
+        return $this->getData('pvp_rank_points');
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getRankRollovers() {
+        return $this->getData('pvp_rank_rollovers');
     }
 
     /**

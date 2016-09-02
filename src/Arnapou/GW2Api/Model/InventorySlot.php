@@ -11,95 +11,110 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
+ * @method getId()
+ * @method getSlot()
+ * @method getBinding()
+ * @method getBoundTo()
  */
-class InventorySlot extends Item {
+class InventorySlot extends AbstractObject {
 
     const BINDING_ACCOUNT   = 'Account';
     const BINDING_CHARACTER = 'Character';
 
     /**
      *
-     * @var string
+     * @var array
      */
-    protected $count;
-
-    /**
-     *
-     * @var string
-     */
-    protected $binding;
-
-    /**
-     *
-     * @var string
-     */
-    protected $bound_to;
+    protected $infusions = [];
 
     /**
      *
      * @var array
      */
-    protected $infusions;
+    protected $upgrades = [];
 
     /**
      *
-     * @var array
+     * @var integer
      */
-    protected $upgrades;
+    protected $count = null;
 
     /**
      *
-     * @var array
+     * @var Skin
      */
     protected $skin;
 
     /**
      *
-     * @var array
+     * @var Item
      */
-    protected $dataSlot;
+    protected $item;
 
     /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
+     *
+     * @var ItemStat
      */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client, $data['id']);
+    protected $itemStat;
 
-        $this->dataSlot = $data;
-        $this->count    = isset($data['count']) ? $data['count'] : null;
-        $this->binding  = isset($data['binding']) ? $data['binding'] : null;
-        $this->bound_to = isset($data['bound_to']) ? $data['bound_to'] : null;
+    protected function setData($data) {
+        parent::setData($data);
+
+        if (isset($data['upgrades']) && is_array($data['upgrades'])) {
+            foreach ($data['upgrades'] as $id) {
+                $this->upgrades[] = new Item($this->getEnvironment(), $id);
+            }
+        }
+        if (isset($data['infusions']) && is_array($data['infusions'])) {
+            foreach ($data['infusions'] as $id) {
+                $this->infusions[] = new Item($this->getEnvironment(), $id);
+            }
+        }
+        if (isset($data['skin'])) {
+            $this->skin = new Skin($this->getEnvironment(), $data['skin']);
+        }
+        if (isset($data['id'])) {
+            $this->item = new Item($this->getEnvironment(), $data['id']);
+        }
+        if (isset($data['count'])) {
+            $this->count = (int) $data['count'];
+        }
+        else {
+            $this->count = 1;
+        }
+        if (isset($data['stats'], $data['stats']['id'])) {
+            $this->itemStat = new ItemStat($this->getEnvironment(), $data['stats']['id']);
+        }
     }
 
     /**
      * 
-     * @return string
+     * @return array [buy: x, sell: y]
      */
-    public function getCount() {
-        return $this->count;
+    public function getPrice() {
+        if ($this->item && empty($this->getBinding()) && empty($this->getBoundTo())) {
+            $n                   = $this->getCount();
+            $price               = $this->item->getPrice();
+            $price['buy_total']  = $price['buy'] * $n;
+            $price['sell_total'] = $price['sell'] * $n;
+            return $price;
+        }
+        return [
+            'buy'        => null,
+            'sell'       => null,
+            'buy_total'  => null,
+            'sell_total' => null,
+        ];
     }
 
-    /**
-     * 
-     * @return string
-     */
-    public function getBinding() {
-        return $this->binding;
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getBoundTo() {
-        return $this->bound_to;
+    public function __call($name, $arguments) {
+        $val = parent::__call($name, $arguments);
+        if ($val === null && empty($arguments) && $this->item) {
+            return $this->item->$name();
+        }
+        return $val;
     }
 
     /**
@@ -107,15 +122,15 @@ class InventorySlot extends Item {
      * @return array
      */
     public function getInfusions() {
-        if (!isset($this->infusions)) {
-            $this->infusions = [];
-            if (isset($this->dataSlot['infusions'])) {
-                foreach ($this->dataSlot['infusions'] as $id) {
-                    $this->infusions[] = new Item($this->client, $id);
-                }
-            }
-        }
         return $this->infusions;
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getCount() {
+        return $this->count;
     }
 
     /**
@@ -123,14 +138,6 @@ class InventorySlot extends Item {
      * @return array
      */
     public function getUpgrades() {
-        if (!isset($this->upgrades)) {
-            $this->upgrades = [];
-            if (isset($this->dataSlot['upgrades'])) {
-                foreach ($this->dataSlot['upgrades'] as $id) {
-                    $this->upgrades[] = new Item($this->client, $id);
-                }
-            }
-        }
         return $this->upgrades;
     }
 
@@ -139,31 +146,78 @@ class InventorySlot extends Item {
      * @return Skin
      */
     public function getSkin() {
-        if (!isset($this->skin)) {
-            if (isset($this->dataSlot['skin'])) {
-                $this->skin = new Skin($this->client, $this->dataSlot['skin']);
-            }
-        }
         return $this->skin;
     }
 
-    public function getAgonyResistance() {
-        if ($this->getRarity() !== self::RARITY_ASCENDED &&
-            $this->getRarity() !== self::RARITY_LEGENDARY) {
-            return null;
-        }
-        $sum = 0;
-        foreach ($this->getInfusions()as /* @var $infusion Item */ $infusion) {
-            $sum += $infusion->getAgonyResistance();
-        }
-        return $sum ? $sum : null;
+    /**
+     * 
+     * @return Item
+     */
+    public function getItem() {
+        return $this->item;
     }
 
-    public function getPrice() {
-        $price               = parent::getPrice();
-        $price['buy_total']  = $price['buy'] * $this->count;
-        $price['sell_total'] = $price['sell'] * $this->count;
-        return $price;
+    /**
+     * 
+     * @return ItemStat
+     */
+    public function getItemStat() {
+        if ($this->itemStat) {
+            return $this->itemStat;
+        }
+        elseif ($this->item) {
+            return $this->getItem()->getItemStat();
+        }
+        return null;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getAttributes() {
+        $attributes = $this->getData(['stats', 'attributes'], []);
+        if (empty($attributes)) {
+            $attributes = $this->getItem()->getAttributes();
+        }
+        return $attributes;
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getAgonyResistance() {
+        $ar = $this->item ? $this->item->getAgonyResistance() : 0;
+        foreach ($this->getUpgrades() as $item) {
+            if ($item) {
+                $ar += $item->getAgonyResistance();
+            }
+        }
+        foreach ($this->getInfusions() as $item) {
+            if ($item) {
+                $ar += $item->getAgonyResistance();
+            }
+        }
+        return (int) $ar;
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getStatName() {
+        if ($this->itemStat) {
+            return $this->itemStat->getStatName();
+        }
+        $name = \Arnapou\GW2Api\attributes_to_statname($this->getAttributes());
+        if ($name) {
+            return $name;
+        }
+        if ($this->item) {
+            return $this->getItem()->getStatName();
+        }
+        return null;
     }
 
 }

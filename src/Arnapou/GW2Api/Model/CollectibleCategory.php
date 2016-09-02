@@ -11,9 +11,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
  */
@@ -23,7 +20,7 @@ class CollectibleCategory extends AbstractObject {
      *
      * @var array
      */
-    protected $items;
+    protected $items = [];
 
     /**
      *
@@ -32,14 +29,51 @@ class CollectibleCategory extends AbstractObject {
     protected $price;
 
     /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
+     *
+     * @var Material
      */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
+    protected $material;
 
-        $this->data = $data;
+    protected function setData($data) {
+        parent::setData($data);
+
+        $env = $this->getEnvironment();
+        if (isset($data['id'])) {
+            $this->material = new Material($env, $data['id']);
+            $ids            = $this->material->getItemIds();
+
+            if (isset($data['items']) && is_array($data['items']) && !empty($ids) && is_array($ids)) {
+                $items = array_combine($ids, $ids);
+                foreach ($data['items'] as $item) {
+                    if (isset($item['id'], $item['count']) && isset($items[$item['id']])) {
+                        $items[$item['id']] = new InventorySlot($env, [
+                            'id'    => $item['id'],
+                            'count' => $item['count'],
+                        ]);
+                    }
+                }
+                foreach ($items as $id => $item) {
+                    if (!($item instanceof InventorySlot)) {
+                        $items[$id] = new InventorySlot($env, [
+                            'id'    => $id,
+                            'count' => 0,
+                        ]);
+                    }
+                }
+                $this->items = array_values($items);
+            }
+        }
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getOrder() {
+        if ($this->material) {
+            return $this->material->getOrder();
+        }
+        return null;
     }
 
     /**
@@ -47,7 +81,10 @@ class CollectibleCategory extends AbstractObject {
      * @return string
      */
     public function getName() {
-        return $this->data['name'];
+        if ($this->material) {
+            return $this->material->getName();
+        }
+        return null;
     }
 
     /**
@@ -55,7 +92,7 @@ class CollectibleCategory extends AbstractObject {
      * @return integer
      */
     public function getId() {
-        return $this->data['id'];
+        return $this->getData('id');
     }
 
     /**
@@ -63,17 +100,6 @@ class CollectibleCategory extends AbstractObject {
      * @return array
      */
     public function getItems() {
-        if (!isset($this->items)) {
-            $this->items = [];
-            foreach ($this->data['items'] as $item) {
-                if (is_array($item) && isset($item['id'])) {
-                    $this->items[] = new InventorySlot($this->client, $item);
-                }
-                else {
-                    $this->items[] = null;
-                }
-            }
-        }
         return $this->items;
     }
 

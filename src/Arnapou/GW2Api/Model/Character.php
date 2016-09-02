@@ -11,12 +11,17 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\External\GW2Skills\LinkBuilder;
-use Arnapou\GW2Api\SimpleClient;
+use Arnapou\GW2Skills\LinkBuilder;
 
 /**
- *
+ * @doc https://wiki.guildwars2.com/wiki/API:2/characters
+ * 
+ * @method string  getAge()
+ * @method string  getDeaths()
+ * @method string  getGender()
+ * @method string  getLevel()
+ * @method string  getName()
+ * @method string  getRace()
  */
 class Character extends AbstractObject {
 
@@ -31,14 +36,23 @@ class Character extends AbstractObject {
     const GENDER_FEMALE           = 'Female';
     // PROFESSIONS
     const PROFESSION_ELEMENTALIST = 'Elementalist';
+    const PROFESSION_TEMPEST      = 'Tempest';
     const PROFESSION_ENGINEER     = 'Engineer';
+    const PROFESSION_SCRAPPER     = 'Scrapper';
     const PROFESSION_GUARDIAN     = 'Guardian';
+    const PROFESSION_DRAGONHUNTER = 'DragonHunter';
     const PROFESSION_MESMER       = 'Mesmer';
+    const PROFESSION_CHRONOMANCER = 'Chronomancer';
     const PROFESSION_NECROMANCER  = 'Necromancer';
+    const PROFESSION_REAPER       = 'Reaper';
     const PROFESSION_RANGER       = 'Ranger';
+    const PROFESSION_DRUID        = 'Druid';
     const PROFESSION_THIEF        = 'Thief';
+    const PROFESSION_DAREDEVIL    = 'Daredevil';
     const PROFESSION_WARRIOR      = 'Warrior';
+    const PROFESSION_BERSERKER    = 'Berserker';
     const PROFESSION_REVENANT     = 'Revenant';
+    const PROFESSION_HERALD       = 'Herald';
     // SLOTS
     const SLOT_HELM_AQUATIC       = 'HelmAquatic';
     const SLOT_HELM               = 'Helm';
@@ -67,37 +81,61 @@ class Character extends AbstractObject {
      *
      * @var array
      */
-    protected $craftingDisciplines;
+    protected $crafting = [];
+
+    /**
+     *
+     * @var array
+     */
+    protected $backstory = [];
+
+    /**
+     *
+     * @var boolean
+     */
+    protected $backstorySorted = false;
+
+    /**
+     *
+     * @var array
+     */
+    protected $builds = [];
+
+    /**
+     *
+     * @var array
+     */
+    protected $bags = [];
+
+    /**
+     *
+     * @var array
+     */
+    protected $equipments = [];
 
     /**
      *
      * @var Guild
      */
-    protected $guild;
+    protected $guild = null;
+
+    /**
+     *
+     * @var string
+     */
+    protected $profession = null;
 
     /**
      *
      * @var array
      */
-    protected $equipments;
+    protected $attributes = null;
 
     /**
      *
-     * @var array
+     * @var Title
      */
-    protected $bags;
-
-    /**
-     *
-     * @var array
-     */
-    protected $attributes;
-
-    /**
-     *
-     * @var array
-     */
-    protected $bagsfilling;
+    protected $title = null;
 
     /**
      *
@@ -105,429 +143,55 @@ class Character extends AbstractObject {
      */
     protected $bagsprice;
 
-    /**
-     *
-     * @var array
-     */
-    protected $builds;
+    protected function setData($data) {
+        parent::setData($data);
 
-    /**
-     *
-     * @var array
-     */
-    protected $inventoryStuff;
-
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param integer $name
-     */
-    public function __construct(SimpleClient $client, $name) {
-        parent::__construct($client);
-
-        $data = $this->apiCharacters($name);
-        if (!is_array($data) || !isset($data['name'])) {
-            throw new Exception('Invalid received character data.');
+        if (isset($data['title'])) {
+            $this->title = new Title($this->getEnvironment(), $data['title']);
         }
-        $this->data = $data;
-    }
-
-    /**
-     * 
-     * @param string $type
-     * @return Build
-     */
-    protected function getBuild($type) {
-        if (!isset($this->builds[$type])) {
-            $data = $this->getSubkey(['specializations', $type]);
-            if ($data) {
-                $this->builds[$type] = new Build($this->client, $data);
+        if (isset($data['backstory']) && is_array($data['backstory'])) {
+            foreach ($data['backstory'] as $id) {
+                $this->backstory[] = new BackstoryAnswer($this->getEnvironment(), $id);
             }
         }
-        return $this->builds[$type];
-    }
-
-    /**
-     * 
-     * @return Build
-     */
-    public function getBuildPvp() {
-        return $this->getBuild('pvp');
-    }
-
-    /**
-     * 
-     * @return Build
-     */
-    public function getBuildPve() {
-        return $this->getBuild('pve');
-    }
-
-    /**
-     * 
-     * @return Build
-     */
-    public function getBuildWvw() {
-        return $this->getBuild('wvw');
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getInventoryStuff() {
-        if (!isset($this->inventoryStuff)) {
-
-            $this->inventoryStuff = [];
-
-            foreach ($this->getEquipments() as /* @var $item InventorySlot */ $item) {
-                $this->inventoryStuff[$item->getSubType()][] = $item;
-            }
-
-            foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
-                foreach ($bag->getInventoryStuff() as $subtype => $items) {
-                    foreach ($items as /* @var $item InventorySlot */ $item) {
-                        $this->inventoryStuff[$subtype][] = $item;
-                    }
+        if (isset($data['crafting']) && is_array($data['crafting'])) {
+            foreach ($data['crafting'] as $item) {
+                if (isset($item['discipline'])) {
+                    $this->crafting[] = new Crafting($this->getEnvironment(), $item);
                 }
             }
         }
-        return $this->inventoryStuff;
-    }
-
-    /**
-     * @return array
-     */
-    public function getAttributes() {
-        if (!isset($this->attributes)) {
-            $attributes = [
-                'Power'             => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
-                'Precision'         => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
-                'Toughness'         => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
-                'Vitality'          => [ 'WeaponA' => 1000, 'WeaponB' => 1000, 'WeaponAquatic' => 1000],
-                'Ferocity'          => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-                'Condition'         => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-                'ConditionDuration' => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-                'Healing'           => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-                'BoonDuration'      => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-                'AR'                => [ 'WeaponA' => 0, 'WeaponB' => 0, 'WeaponAquatic' => 0],
-            ];
-            $hasWeaponA = false;
-            $hasWeaponB = false;
-            $unknown    = [];
-            foreach ($this->getEquipments() as $slot => /* @var $equipment Equipment */ $equipment) {
-                if (in_array($slot, [self::SLOT_AXE, self::SLOT_SICKLE, self::SLOT_PICK])) {
-                    continue;
-                }
-                $attrs = $equipment->getAttributes();
-                if (empty($attrs)) {
-                    $unknown[] = $slot;
-                }
-                if (strpos($slot, 'WeaponAquatic') === 0) {
-                    $attributes['AR']['WeaponA'] += $equipment->getAgonyResistance();
-                    if (!empty($attrs)) {
-                        foreach ($attrs['list'] as $attr => $value) {
-                            $attributes[$attr]['WeaponA'] += $value;
-                        }
-                    }
-                }
-                elseif (strpos($slot, 'WeaponA') === 0) {
-                    $hasWeaponA = true;
-                    $attributes['AR']['WeaponB'] += $equipment->getAgonyResistance();
-                    if (!empty($attrs)) {
-                        foreach ($attrs['list'] as $attr => $value) {
-                            $attributes[$attr]['WeaponB'] += $value;
-                        }
-                    }
-                }
-                elseif (strpos($slot, 'WeaponB') === 0) {
-                    $hasWeaponB = true;
-                    $attributes['AR']['WeaponAquatic'] += $equipment->getAgonyResistance();
-                    if (!empty($attrs)) {
-                        foreach ($attrs['list'] as $attr => $value) {
-                            $attributes[$attr]['WeaponAquatic'] += $value;
-                        }
-                    }
-                }
-                elseif ($slot === 'Helm') {
-                    $attributes['AR']['WeaponAquatic'] += $equipment->getAgonyResistance();
-                    if (!empty($attrs)) {
-                        foreach ($attrs['list'] as $attr => $value) {
-                            $attributes[$attr]['WeaponAquatic'] += $value;
-                        }
-                    }
-                }
-                elseif ($slot === 'HelmAquatic') {
-                    $attributes['AR']['WeaponA'] += $equipment->getAgonyResistance();
-                    $attributes['AR']['WeaponB'] += $equipment->getAgonyResistance();
-                    if (!empty($attrs)) {
-                        foreach ($attrs['list'] as $attr => $value) {
-                            $attributes[$attr]['WeaponA'] += $value;
-                            $attributes[$attr]['WeaponB'] += $value;
-                        }
-                    }
-                }
-                else {
-                    $attributes['AR']['WeaponA'] += $equipment->getAgonyResistance();
-                    $attributes['AR']['WeaponB'] += $equipment->getAgonyResistance();
-                    $attributes['AR']['WeaponAquatic'] += $equipment->getAgonyResistance();
-                    if (!empty($attrs)) {
-                        foreach ($attrs['list'] as $attr => $value) {
-                            $attributes[$attr]['WeaponA'] += $value;
-                            $attributes[$attr]['WeaponB'] += $value;
-                            $attributes[$attr]['WeaponAquatic'] += $value;
-                        }
-                    }
-                }
+        if (isset($data['bags']) && is_array($data['bags'])) {
+            foreach ($data['bags'] as $item) {
+                $this->bags[] = new Bag($this->getEnvironment(), $item);
             }
-            if (!$hasWeaponA) {
-                foreach ($attributes as $key => &$values) {
-                    unset($values['WeaponA']);
-                }
-            }
-            if (!$hasWeaponB) {
-                foreach ($attributes as $key => &$values) {
-                    unset($values['WeaponB']);
-                }
-            }
-            foreach ($attributes['Precision'] as $set => $value) {
-                $attributes['PrecisionPct'][$set] = round(($value - 916) / 21, 2);
-            }
-            foreach ($attributes['Ferocity'] as $set => $value) {
-                $attributes['FerocityPct'][$set] = round(150 + $value / 15, 2);
-            }
-            foreach ($attributes['ConditionDuration'] as $set => $value) {
-                $attributes['ConditionDurationPct'][$set] = round($value / 15, 2);
-            }
-            foreach ($attributes['BoonDuration'] as $set => $value) {
-                $attributes['BoonDurationPct'][$set] = round($value / 15, 2);
-            }
-            $this->attributes = [
-                'unknown' => $unknown,
-                'list'    => $attributes,
-            ];
         }
-        return $this->attributes;
-    }
-
-    /**
-     * @param string $slot
-     * @return Equipment
-     */
-    public function getEquipment($slot) {
-        $equipments = $this->getEquipments();
-        if (isset($equipments[$slot])) {
-            return $equipments[$slot];
-        }
-        return null;
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getEquipments() {
-        if (!isset($this->equipments)) {
-            $this->equipments = [];
-            if (!empty($this->data['equipment']) && is_array($this->data['equipment'])) {
-
-                $this->preloadSlots($this->data['equipment']);
-
-                foreach ($this->data['equipment'] as $equipment) {
-                    if (!isset($equipment['id'], $equipment['slot'])) {
-                        continue;
-                    }
-                    $this->equipments[$equipment['slot']] = new Equipment($this->client, $equipment);
+        if (isset($data['equipment']) && is_array($data['equipment'])) {
+            foreach ($data['equipment'] as $item) {
+                if (isset($item['slot'])) {
+                    $this->equipments[$item['slot']] = new Equipment($this->getEnvironment(), $item);
                 }
             }
         }
-        return $this->equipments;
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getBags() {
-        if (!isset($this->bags)) {
-            $this->bags = [];
-            if (!empty($this->data['bags']) && is_array($this->data['bags'])) {
-
-                foreach ($this->data['bags'] as $bag) {
-                    if (isset($bag['inventory'])) {
-                        $this->preloadSlots($bag['inventory']);
-                    }
-                }
-
-                foreach ($this->data['bags'] as $bag) {
-                    if (isset($bag['inventory'])) {
-                        $this->bags[] = new Bag($this->client, $bag);
-                    }
-                }
-            }
+        foreach ([Build::TYPE_PVE, Build::TYPE_PVP, Build::TYPE_WVW] as $type) {
+            $this->builds[$type] = new Build($this->getEnvironment(), [
+                'type'            => $type,
+                'specializations' => $this->getData(['specializations', $type], []),
+                'skills'          => $this->getData(['skills', $type], []),
+            ]);
         }
-        return $this->bags;
     }
 
     /**
      * 
      * @return string
      */
-    public function getGw2SkillsLinkPvp() {
+    public function getGw2SkillsLink($mode) {
+        if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
+            throw new \Exception('Mode should be either "pve", "pvp" or "wvw"');
+        }
         $builder = new LinkBuilder();
-        return $builder->getLinkPvp($this);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getGw2SkillsLinkPve() {
-        $builder = new LinkBuilder();
-        return $builder->getLinkPve($this);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getGw2SkillsLinkWvw() {
-        $builder = new LinkBuilder();
-        return $builder->getLinkWvw($this);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getName() {
-        return $this->data['name'];
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getRace() {
-        return $this->data['race'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getGender() {
-        return $this->data['gender'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getProfession() {
-        return $this->data['profession'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getProfessionIcon() {
-        return $this->apiIcon('icon_' . strtolower($this->getProfession()));
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getProfessionIconBig() {
-        return $this->apiIcon('icon_' . strtolower($this->getProfession()) . '_big');
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getLevel() {
-        return $this->data['level'];
-    }
-
-    /**
-     * 
-     * @return Guild
-     */
-    public function getGuild() {
-        if (!isset($this->guild)) {
-            if (empty($this->data['guild'])) {
-                return null;
-            }
-            $this->guild = new Guild($this->client, $this->data['guild']);
-        }
-        return $this->guild;
-    }
-
-    /**
-     * 
-     * @param boolean $onlyactive
-     * @return array
-     */
-    public function getCrafting($onlyactive = true) {
-        if (!isset($this->craftingDisciplines)) {
-            $this->craftingDisciplines = [];
-            if (!empty($this->data['crafting']) && is_array($this->data['crafting'])) {
-                foreach ($this->data['crafting'] as $discipline) {
-                    $this->craftingDisciplines[] = new CraftingDiscipline($this->client, $discipline);
-                }
-            }
-        }
-        if ($onlyactive) {
-            $disciplines = [];
-            foreach ($this->craftingDisciplines as /* @var $discipline CraftingDiscipline */ $discipline) {
-                if ($discipline->isActive()) {
-                    $disciplines[] = $discipline;
-                }
-            }
-            return $disciplines;
-        }
-        return $this->craftingDisciplines;
-    }
-
-    /**
-     * 
-     * @return string YYYY-MM-DD HH:MM UTC format
-     */
-    public function getCreated() {
-        if (isset($this->data['created'])) {
-            return gmdate('Y-m-d H:i', strtotime($this->data['created']));
-        }
-        return null;
-    }
-
-    /**
-     * 
-     * @return int
-     */
-    public function getDays() {
-        if (isset($this->data['created'])) {
-            return floor((time() - strtotime($this->data['created'])) / 86400);
-        }
-        return null;
-    }
-
-    /**
-     * 
-     * @return int
-     */
-    public function getAge() {
-        return $this->getSubkey(['age']);
-    }
-
-    /**
-     * 
-     * @return int
-     */
-    public function getDeaths() {
-        return $this->getSubkey(['deaths']);
+        return $builder->getLink($this, $mode);
     }
 
     /**
@@ -553,26 +217,378 @@ class Character extends AbstractObject {
 
     /**
      * 
+     * @return Build
+     */
+    public function getBuild($type) {
+        $builds = $this->getBuilds();
+        return isset($builds[$type]) ? $builds[$type] : null;
+    }
+
+    /**
+     * 
      * @return array
      */
-    public function getBagsFilling() {
-        if (!isset($this->bagsfilling)) {
-            $this->bagsfilling = [
-                'filled' => 0,
-                'size'   => 0,
-            ];
-            foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
-                if ($bag) {
-                    $this->bagsfilling['size'] += $bag->getSize();
-                    foreach ($bag->getInventory() as /* @var $item InventorySlot */ $item) {
-                        if ($item) {
-                            $this->bagsfilling['filled'] ++;
+    public function getBuilds() {
+        return $this->builds;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getBags() {
+        return $this->bags;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getEquipments() {
+        return $this->equipments;
+    }
+
+    /**
+     * 
+     * @return Equipment
+     */
+    public function getEquipmentsBySubtype() {
+        $data = [];
+        foreach ($this->getEquipments() as $slot => /* @var $item InventorySlot */ $item) {
+            if (in_array($slot, [self::SLOT_AXE, self::SLOT_PICK, self::SLOT_SICKLE])) {
+                continue;
+            }
+            $key          = $item->getType() == Item::TYPE_BACK ? self::SLOT_BACKPACK : $item->getSubType();
+            $data[$key][] = $item;
+        }
+        $allowedRarities = [Item::RARITY_LEGENDARY, Item::RARITY_ASCENDED, Item::RARITY_EXOTIC];
+        $allowedTypes    = [Item::TYPE_ARMOR, Item::TYPE_BACK, Item::TYPE_WEAPON, Item::TYPE_TRINKET];
+        foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
+            foreach ($bag->getInventorySlots() as /* @var $item InventorySlot */ $item) {
+                if (empty($item) ||
+                    !in_array($item->getRarity(), $allowedRarities) ||
+                    !in_array($item->getType(), $allowedTypes)
+                ) {
+                    continue;
+                }
+                $key          = $item->getType() == Item::TYPE_BACK ? self::SLOT_BACKPACK : $item->getSubType();
+                $data[$key][] = $item;
+            }
+        }
+
+        return $data;
+    }
+
+    /**
+     * 
+     * @return Equipment
+     */
+    public function getEquipment($slot) {
+        return isset($this->equipments[$slot]) ? $this->equipments[$slot] : null;
+    }
+
+    /**
+     * 
+     * @return boolean
+     */
+    public function canSwapWeapons() {
+        $profession = $this->getData('profession');
+        if ($profession === self::PROFESSION_ELEMENTALIST || $profession === self::PROFESSION_ENGINEER) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getProfession() {
+        if ($this->profession === null) {
+            $this->profession = $this->getData('profession');
+            $build            = $this->getBuild('pve'); /* @var $build Build */
+            if ($build && $this->profession) {
+                $mapping = [
+                    self::PROFESSION_ELEMENTALIST => self::PROFESSION_TEMPEST,
+                    self::PROFESSION_ENGINEER     => self::PROFESSION_SCRAPPER,
+                    self::PROFESSION_GUARDIAN     => self::PROFESSION_DRAGONHUNTER,
+                    self::PROFESSION_MESMER       => self::PROFESSION_CHRONOMANCER,
+                    self::PROFESSION_NECROMANCER  => self::PROFESSION_REAPER,
+                    self::PROFESSION_RANGER       => self::PROFESSION_DRUID,
+                    self::PROFESSION_REVENANT     => self::PROFESSION_HERALD,
+                    self::PROFESSION_THIEF        => self::PROFESSION_DAREDEVIL,
+                    self::PROFESSION_WARRIOR      => self::PROFESSION_BERSERKER,
+                ];
+                foreach ($build->getSpecializations() as /* @var $specialization SpecializationLine */ $specialization) {
+                    if ($specialization->isElite()) {
+                        if (isset($mapping[$this->profession])) {
+                            $this->profession = $mapping[$this->profession];
+                            break;
                         }
                     }
                 }
             }
         }
-        return $this->bagsfilling;
+        return $this->profession;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getCrafting() {
+        return $this->crafting;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getBackstoryAnswers() {
+        if (!$this->backstorySorted) {
+            usort($this->backstory, function($a, $b) {
+                try {
+                    $oa = $a->getQuestion()->getOrder();
+                    $ob = $b->getQuestion()->getOrder();
+                    if ($oa == $ob) {
+                        return 0;
+                    }
+                    return $oa > $ob ? 1 : -1;
+                }
+                catch (\Exception $ex) {
+                    return 0;
+                }
+            });
+            $this->backstorySorted = true;
+        }
+        return $this->backstory;
+    }
+
+    /**
+     * 
+     * @return Guild
+     */
+    public function getGuild() {
+        $guildId = $this->getGuildId();
+        if ($guildId && empty($this->guild)) {
+            try {
+                $client = $this->getEnvironment()->getClientVersion1();
+                $data   = $client->apiGuildDetails($guildId);
+                if (isset($data['guild_id'])) {
+                    $this->guild = new Guild($this->getEnvironment(), $data);
+                }
+            }
+            catch (\Exception $e) {
+                
+            }
+        }
+        return $this->guild;
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getGuildId() {
+        return $this->getData('guild');
+    }
+
+    /**
+     * 
+     * @return string YYYY-MM-DD HH:MM UTC format
+     */
+    public function getCreated() {
+        $date = $this->getData('created');
+        return $date ? gmdate('Y-m-d H:i', strtotime($date)) : null;
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getTitleId() {
+        return (int) $this->getData('title');
+    }
+
+    /**
+     * 
+     * @return Title
+     */
+    public function getTitle() {
+        return $this->title;
+    }
+
+    /**
+     * 
+     * @return int
+     */
+    public function getCreatedEllapsedTime() {
+        $created = $this->getCreated();
+        if ($created) {
+            return time() - strtotime($created);
+        }
+        return null;
+    }
+
+    public function __toString() {
+        return $this->getName();
+    }
+
+    /**
+     * 
+     * @param InventorySlot $item
+     * @return boolean
+     */
+    protected function isTwoHandedWeapon($item) {
+        if ($item) {
+            return in_array($item->getSubType(), [
+                    Item::SUBTYPE_WEAPON_GREATSWORD, Item::SUBTYPE_WEAPON_HAMMER,
+                    Item::SUBTYPE_WEAPON_LONGBOW, Item::SUBTYPE_WEAPON_RIFLE,
+                    Item::SUBTYPE_WEAPON_SHORTBOW, Item::SUBTYPE_WEAPON_STAFF
+                ]) ? true : false;
+        }
+        return false;
+    }
+
+    /**
+     * 
+     * @return InventorySlot
+     */
+    public function getEquipmentWeapon1() {
+        $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_A1);
+        $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_A2);
+        $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_B1);
+        if ($weaponA1) {
+            return $weaponA1;
+        }
+        elseif ($weaponA2) {
+            if ($weaponB1 && !$this->isTwoHandedWeapon($weaponB1)) {
+                return $weaponB1;
+            }
+        }
+        else {
+            return $weaponB1;
+        }
+        return null;
+    }
+
+    /**
+     * 
+     * @return InventorySlot
+     */
+    public function getEquipmentWeapon2() {
+        $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_A1);
+        $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_A2);
+        $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_B1);
+        $weaponB2 = $this->getEquipment(self::SLOT_WEAPON_B2);
+        if ($weaponA2) {
+            return $weaponA2;
+        }
+        elseif (!$this->isTwoHandedWeapon($weaponA1)) {
+            if ($weaponB2 && !$this->isTwoHandedWeapon($weaponB1)) {
+                return $weaponB2;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getAttributes() {
+        if ($this->attributes === null) {
+            $profession = $this->getData('profession');
+            $level      = $this->getLevel();
+            $attributes = [
+                Item::ATTRIBUTE_POWER             => 1000,
+                Item::ATTRIBUTE_PRECISION         => 1000,
+                Item::ATTRIBUTE_THOUGHNESS        => 1000,
+                Item::ATTRIBUTE_VITALITY          => 1000,
+                Item::ATTRIBUTE_CRITDAMAGE        => 0,
+                Item::ATTRIBUTE_CONDITIONDAMAGE   => 0,
+                Item::ATTRIBUTE_CONDITIONDURATION => 0,
+                Item::ATTRIBUTE_HEALING           => 0,
+                Item::ATTRIBUTE_BOONDURATION      => 0,
+                Item::ATTRIBUTE_AGONYRESISTANCE   => 0,
+                'Armor'                           => 0,
+            ];
+            $items      = [$this->getEquipmentWeapon1(), $this->getEquipmentWeapon2()];
+            foreach ([
+            self::SLOT_HELM, self::SLOT_SHOULDERS, self::SLOT_COAT,
+            self::SLOT_GLOVES, self::SLOT_LEGGINGS, self::SLOT_BOOTS,
+            self::SLOT_AMULET, self::SLOT_ACCESSORY1, self::SLOT_ACCESSORY2,
+            self::SLOT_BACKPACK, self::SLOT_RING1, self::SLOT_RING2,
+            ] as $slot) {
+                $items[] = $this->getEquipment($slot);
+            }
+
+            foreach ($items as $item) {
+                if ($item) {
+                    $attrs = $item->getAttributes();
+                    foreach ($attrs as $attr => $value) {
+                        if (isset($attributes[$attr])) {
+                            $attributes[$attr] += (int) $value;
+                        }
+                    }
+                    $attributes['Armor'] += (int) $item->getArmorDefense();
+                    $attributes[Item::ATTRIBUTE_AGONYRESISTANCE] += $item->getAgonyResistance();
+                }
+            }
+
+            $attributes[Item::ATTRIBUTE_PRECISION . 'Pct']         = round(($attributes[Item::ATTRIBUTE_PRECISION] - 916) / 21, 2);
+            $attributes[Item::ATTRIBUTE_CRITDAMAGE . 'Pct']        = round(150 + $attributes[Item::ATTRIBUTE_CRITDAMAGE] / 15, 2);
+            $attributes[Item::ATTRIBUTE_CONDITIONDURATION . 'Pct'] = round($attributes[Item::ATTRIBUTE_CONDITIONDURATION] / 15, 2);
+            $attributes[Item::ATTRIBUTE_BOONDURATION . 'Pct']      = round($attributes[Item::ATTRIBUTE_BOONDURATION] / 15, 2);
+
+            /*
+             * calculate heatlh
+             */
+            $healthMap            = [
+                [
+                    'professions' => [self::PROFESSION_WARRIOR, self::PROFESSION_NECROMANCER],
+                    'levels'      => [
+                        28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28,
+                        70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70,
+                        140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140,
+                        210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210,
+                        280
+                    ],
+                ], [
+                    'professions' => [self::PROFESSION_REVENANT, self::PROFESSION_ENGINEER, self::PROFESSION_RANGER, self::PROFESSION_MESMER],
+                    'levels'      => [
+                        18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18,
+                        45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45,
+                        90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90,
+                        135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135,
+                        180
+                    ],
+                ], [
+                    'professions' => [self::PROFESSION_GUARDIAN, self::PROFESSION_THIEF, self::PROFESSION_ELEMENTALIST],
+                    'levels'      => [
+                        5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+                        12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5,
+                        25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25,
+                        37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5,
+                        50
+                    ],
+                ]
+            ];
+            $attributes['Armor'] += $attributes[Item::ATTRIBUTE_THOUGHNESS];
+            $attributes['Health'] = 0;
+            foreach ($healthMap as $map) {
+                if (in_array($profession, $map['professions'])) {
+                    for ($i = 0; $i < $level; $i++) {
+                        $attributes['Health'] += $map['levels'][$i];
+                    }
+                    break;
+                }
+            }
+            $attributes['Health'] += 10 * $attributes[Item::ATTRIBUTE_VITALITY];
+
+            $this->attributes = $attributes;
+        }
+        return $this->attributes;
     }
 
 }

@@ -12,23 +12,22 @@
 namespace Arnapou\GW2Api\Model;
 
 /**
- * @doc https://wiki.guildwars2.com/wiki/API:2/worlds
+ * @doc https://wiki.guildwars2.com/wiki/API:2/files
  * 
- * @method string getName()
- * @method string getPopulation()
+ * @method string getIcon()
  */
-class World extends AbstractStoredObject {
+class File extends AbstractStoredObject {
 
     /**
      * 
      * @return string
      */
     public function __toString() {
-        return $this->getName();
+        return $this->getIcon();
     }
 
     protected function getApiName() {
-        return 'worlds';
+        return 'files';
     }
 
 }

@@ -11,119 +11,29 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
+ * @doc https://wiki.guildwars2.com/wiki/API:2/maps
  *
+ * @method string getName()
+ * @method string getMinLevel()
+ * @method string getMaxLevel()
+ * @method string getDefaultFloor()
+ * @method string getFloors()
+ * @method string getRegionId()
+ * @method string getRegionName()
+ * @method string getContinentId()
+ * @method string getContinentName()
+ * @method string getMapRect()
+ * @method string getContinentRect()
  */
-class Map extends AbstractObject {
+class Map extends AbstractStoredObject {
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param integer $mapid
-     */
-    public function __construct(SimpleClient $client, $mapid) {
-        parent::__construct($client);
-
-        $this->data = $this->apiMaps($mapid);
+    protected function getApiName() {
+        return 'maps';
     }
 
-    /**
-     * 
-     * @return string
-     */
-    public function getId() {
-        return $this->data['id'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getName() {
-        return $this->data['name'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getMinLevel() {
-        return $this->data['min_level'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getMaxLevel() {
-        return $this->data['max_level'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getDefaultFloor() {
-        return $this->data['default_floor'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getFloors() {
-        return $this->data['floors'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getRegionId() {
-        return $this->data['region_id'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getRegionName() {
-        return $this->data['region_name'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getContinentId() {
-        return $this->data['continent_id'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getContinentName() {
-        return $this->data['continent_name'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getMapRect() {
-        return $this->data['map_rect'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getContinentRect() {
-        return $this->data['continent_rect'];
+    public function __toString() {
+        return $this->getName();
     }
 
 }

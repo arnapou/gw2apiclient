@@ -11,14 +11,17 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Core\AbstractClient;
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
- *
+ * 
+ * @method string getDescription()
+ * @method string getIcon()
+ * @method string getName()
+ * @method string getLockedText()
+ * @method string getRequirement()
+ * @method string getPointCap()
+ * @method string getType()
  */
-class Achievement extends AbstractObject {
+class Achievement extends AbstractStoredObject {
 
     // TYPES
     const TYPE_DEFAULT                = 'Default';
@@ -28,64 +31,46 @@ class Achievement extends AbstractObject {
     const FLAG_CATEGORY_DISPLAY       = 'CategoryDisplay';
     const FLAG_MOVE_TO_TOP            = 'MoveToTop';
     const FLAG_IGNORE_NEARLY_COMPLETE = 'IgnoreNearlyComplete';
+    // BITS TYPE
+    const BITS_TYPE_TEXT              = 'Text';
+    const BITS_TYPE_ITEM              = 'Item';
+    const BITS_TYPE_MINIPET           = 'Minipet';
+    const BITS_TYPE_SKIN              = 'Skin';
+    // REWARDS TYPE
+    const REWARDS_TYPE_TEXT           = 'Coins';
+    const REWARDS_TYPE_ITEM           = 'Item';
+    const REWARDS_TYPE_MASTERY        = 'Mastery';
 
     /**
      * 
-     * @param SimpleClient $client
-     * @param array $id
+     * @return array
      */
-    public function __construct(SimpleClient $client, $id) {
-        parent::__construct($client);
-
-        $this->data = $this->apiAchievements($id);
+    public function getBits() {
+        return $this->getData('bits', []);
     }
 
     /**
      * 
-     * @return integer
-     */
-    public function getId() {
-        return $this->data['id'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getIcon() {
-        return $this->getSubkey(['icon']);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getName() {
-        return $this->getSubkey(['name']);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getDescription() {
-        return strip_tags($this->getSubkey(['description']));
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getRequirement() {
-        return $this->getSubkey(['requirement']);
-    }
-
-    /**
-     * 
-     * @return string
+     * @return array
      */
     public function getFlags() {
-        return $this->getSubkey(['flags']);
+        return $this->getData('flags', []);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getTiers() {
+        return $this->getData('tiers', []);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getRewards() {
+        return $this->getData('rewards', []);
     }
 
     /**
@@ -94,11 +79,19 @@ class Achievement extends AbstractObject {
      * @return boolean
      */
     public function hasFlag($flag) {
-        $flags = $this->getFlags();
-        if (is_array($flags)) {
-            return in_array($flag, $flags);
-        }
-        return false;
+        return in_array($flag, (array) $this->getFlags());
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function __toString() {
+        return $this->getName();
+    }
+
+    protected function getApiName() {
+        return 'achievements';
     }
 
 }

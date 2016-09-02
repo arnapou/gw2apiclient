@@ -11,9 +11,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
  */
@@ -24,12 +21,6 @@ class Wardrobe extends AbstractObject {
      * @var array
      */
     protected $unlockedSkins;
-
-    /**
-     *
-     * @var array
-     */
-    protected $allSkins;
 
     /**
      *
@@ -55,21 +46,10 @@ class Wardrobe extends AbstractObject {
      */
     static protected $cacheInitialized = false;
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
+    protected function setData($data) {
+        parent::setData($data);
 
-        $this->unlockedSkins = $data;
-        $this->allSkins      = $this->client->v2_skins();
-
-        if (!self::$cacheInitialized) {
-            $this->apiSkins($this->allSkins);
-            self::$cacheInitialized = true;
-        }
+        $this->unlockedSkins = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
     /**
@@ -98,10 +78,17 @@ class Wardrobe extends AbstractObject {
             'total' => 0,
         ];
 
+        $env      = $this->getEnvironment();
+        $skins    = [];
+        $allSkins = $this->getEnvironment()->getClientVersion2()->apiSkins();
+        foreach ($allSkins as $skinId) {
+            $skins[] = new Skin($env, $skinId);
+        }
+
         $flippedUnlocked = array_flip($this->unlockedSkins);
-        foreach ($this->allSkins as $id) {
-            $unlocked = isset($flippedUnlocked[$id]);
-            $skin     = new Skin($this->client, $id, $unlocked);
+        foreach ($skins as $skin) {
+            $unlocked = isset($flippedUnlocked[$skin->getId()]);
+            $skin->setUnlocked($unlocked);
 
             if ($skin->hasFlag(Skin::FLAG_SHOW_IN_WARDROBE)) {
                 $type    = $skin->getType();

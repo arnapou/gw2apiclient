@@ -13,7 +13,7 @@ namespace Arnapou\GW2Api\Cache;
 
 use Arnapou\GW2Api\Exception\Exception;
 
-class MongoCache implements CacheInterface, MultipleGetCacheInterface {
+class MongoCache implements CacheInterface {
 
     /**
      *
@@ -31,7 +31,7 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
      *
      * @var string
      */
-    protected $collectionPrefix;
+    protected $collectionName;
 
     /**
      *
@@ -46,79 +46,16 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
     protected $mongoDB;
 
     /**
-     *
-     * @var array
-     */
-    protected $objectCollections = [];
-
-    /**
      * 
      * @param \MongoDB $mongoDB
-     * @param string $collectionPrefix
+     * @param string $collectionName
      */
-    public function __construct(\MongoDB $mongoDB, $collectionPrefix = 'cache') {
-        $this->collectionPrefix = $collectionPrefix;
-        $this->mongoDB          = $mongoDB;
-        $this->collection       = $mongoDB->selectCollection($collectionPrefix . '_requests');
+    public function __construct(\MongoDB $mongoDB, $collectionName = 'cache') {
+        $this->collectionName = $collectionName;
+        $this->mongoDB        = $mongoDB;
+        $this->collection     = $mongoDB->selectCollection($collectionName);
         $this->collection->ensureIndex(['key' => 1], ['unique' => true]);
         $this->collection->ensureIndex(['expiration' => 1]);
-    }
-
-    /**
-     * 
-     * @param string $collectionSuffixName
-     * @return \MongoCollection
-     */
-    public function getMongoCollection($collectionSuffixName) {
-        if (!isset($this->objectCollections[$collectionSuffixName])) {
-            $collection                                     = $this->mongoDB->selectCollection($this->collectionPrefix . '_' . $collectionSuffixName);
-            $collection->ensureIndex(['key' => 1], ['unique' => true]);
-            $collection->ensureIndex(['expiration' => 1]);
-            $collection->ensureIndex(['value.id' => 1]);
-            $collection->ensureIndex(['value.type' => 1]);
-            $collection->ensureIndex(['value.output_item_id' => 1]);   // for recipes
-            $collection->ensureIndex(['value.default_skin' => 1]);     // for items
-            $collection->ensureIndex(['value.details.type' => 1]);
-            $collection->ensureIndex(['value.details.color_id' => 1]); // to find item from color id
-            $this->objectCollections[$collectionSuffixName] = $collection;
-        }
-        return $this->objectCollections[$collectionSuffixName];
-    }
-
-    /**
-     * 
-     * @param string $key
-     * @return string
-     */
-    protected function detectCollectionName($key) {
-        if (strpos($key, 'smartCaching/') === 0) {
-            $elements = explode('/', $key);
-            return $elements[1];
-        }
-        return 'requests';
-    }
-
-    /**
-     * 
-     * @param string $key
-     * @return \MongoCollection
-     */
-    protected function detectCollection($key) {
-        if (strpos($key, 'smartCaching/') === 0) {
-            $elements = explode('/', $key);
-            return $this->getMongoCollection($elements[1]);
-        }
-        else {
-            return $this->collection;
-        }
-    }
-
-    /**
-     * 
-     * @return \MongoDB
-     */
-    public function getMongoDB() {
-        return $this->mongoDB;
     }
 
     /**
@@ -141,6 +78,30 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
         catch (\Exception $e) {
             return null;
         }
+    }
+
+    /**
+     * 
+     * @return \MongoDB
+     */
+    public function getMongoDB() {
+        return $this->mongoDB;
+    }
+
+    /**
+     * 
+     * @return \MongoCollection
+     */
+    public function getCollection() {
+        return $this->collection;
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getCollectionName() {
+        return $this->collectionName;
     }
 
     /**
@@ -170,7 +131,7 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
     }
 
     public function get($key) {
-        $document = $this->detectCollection($key)->findOne([
+        $document = $this->collection->findOne([
             'key'        => $this->hash($key),
             'expiration' => ['$gte' => time()],
         ]);
@@ -185,54 +146,8 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
         return null;
     }
 
-    /**
-     * 
-     * @param array $keys
-     * @param string $prefix
-     * @return array
-     */
-    public function getMultiple($keys, $prefix = '') {
-        $return           = [];
-        $keysByCollection = [];
-        $hashsMap         = [];
-        $suffix           = $this->detectCollectionName($prefix);
-        if ($suffix === 'requests') {
-            foreach ($keys as $key) {
-                $suffix                      = $this->detectCollectionName($prefix . $key);
-                $hash                        = $this->hash($prefix . $key);
-                $hashsMap[$hash]             = $prefix . $key;
-                $keysByCollection[$suffix][] = $hash;
-            }
-        }
-        else {
-            foreach ($keys as $key) {
-                $hash                        = $this->hash($prefix . $key);
-                $hashsMap[$hash]             = $prefix . $key;
-                $keysByCollection[$suffix][] = $hash;
-            }
-        }
-        foreach ($keysByCollection as $suffix => $hashs) {
-            $documents = $this->getMongoCollection($suffix)
-                ->find([
-                'key'        => ['$in' => $hashs],
-                'expiration' => ['$gte' => time()],
-            ]);
-            foreach ($documents as $document) {
-                if ($document && isset($document['value'])) {
-                    try {
-                        $return[$hashsMap[$document['key']]] = $document['value'];
-                    }
-                    catch (\Exception $e) {
-                        
-                    }
-                }
-            }
-        }
-        return $return;
-    }
-
     public function exists($key) {
-        $document = $this->detectCollection($key)->findOne([
+        $document = $this->collection->findOne([
             'key'        => $this->hash($key),
             'expiration' => ['$gte' => time()],
         ]);
@@ -247,7 +162,7 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
             $expiration += time();
         }
         $hash = $this->hash($key);
-        $this->detectCollection($key)->update([
+        $this->collection->update([
             'key' => $hash,
             ], [
             'key'        => $hash,
@@ -260,7 +175,7 @@ class MongoCache implements CacheInterface, MultipleGetCacheInterface {
 
     public function remove($key) {
         try {
-            $this->detectCollection($key)->remove(['key' => $this->hash($key)]);
+            $this->collection->remove(['key' => $this->hash($key)]);
         }
         catch (\Exception $e) {
             return null;

@@ -11,44 +11,52 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
+ * @method string  getType()
  */
 class Build extends AbstractObject {
 
-    /**
-     *
-     * @var array
-     */
-    protected $specializations;
+    // TYPES
+    const TYPE_PVE = 'pve';
+    const TYPE_PVP = 'pvp';
+    const TYPE_WVW = 'wvw';
 
     /**
      *
      * @var array
      */
-    protected $alltraits = [];
+    protected $specializations = [];
 
     /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
+     *
+     * @var array
      */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
+    protected $skills = [
+        'heal'      => null,
+        'utilities' => [],
+        'elite'     => null,
+    ];
 
-        $this->data = $data;
+    protected function setData($data) {
+        parent::setData($data);
 
-        // preloads
-        foreach ($data as $row) {
-            if (isset($row['id'], $row['traits'])) {
-                foreach ($row['traits'] as $id) {
-                    self::$PRELOADS['traits'][] = $id;
-                    $this->alltraits[]          = $id;
+        if (isset($data['specializations']) && is_array($data['specializations'])) {
+            foreach ($data['specializations'] as $spedata) {
+                $this->specializations[] = new SpecializationLine($this->getEnvironment(), $spedata);
+            }
+        }
+        if (isset($data['skills'])) {
+            if (isset($data['skills']['heal'])) {
+                $this->skills['heal'] = new Skill($this->getEnvironment(), $data['skills']['heal']);
+            }
+            if (isset($data['skills']['elite'])) {
+                $this->skills['elite'] = new Skill($this->getEnvironment(), $data['skills']['elite']);
+            }
+            if (isset($data['skills']['utilities']) && is_array($data['skills']['utilities'])) {
+                foreach ($data['skills']['utilities'] as $id) {
+                    $this->skills['utilities'][] = new Skill($this->getEnvironment(), $id);
                 }
-                self::$PRELOADS['specializations'][] = $row['id'];
             }
         }
     }
@@ -58,26 +66,50 @@ class Build extends AbstractObject {
      * @return array
      */
     public function getSpecializations() {
-        if (!isset($this->specializations)) {
-            $this->specializations = [];
-            foreach ($this->data as $data) {
-                if (isset($data['id'], $data['traits'])) {
-                    $spe = new Specialization($this->client, $data['id'], $data['traits']);
-                    if ($spe->getName()) {
-                        $this->specializations[] = $spe;
-                    }
-                }
-            }
-        }
         return $this->specializations;
+    }
+
+    /**
+     * 
+     * @return Skill
+     */
+    public function getSkill($number) {
+        if ($number == 6) {
+            return $this->getSkillHeal();
+        }
+        elseif ($number >= 7 and $number <= 9) {
+            $utilities = $this->getSkillUtilities();
+            $index     = $number - 7;
+            return isset($utilities[$index]) ? $utilities[$index] : null;
+        }
+        elseif ($number == 0) {
+            return $this->getSkillElite();
+        }
+        return null;
+    }
+
+    /**
+     * 
+     * @return Skill
+     */
+    public function getSkillHeal() {
+        return $this->skills['heal'];
+    }
+
+    /**
+     * 
+     * @return Skill
+     */
+    public function getSkillElite() {
+        return $this->skills['elite'];
     }
 
     /**
      * 
      * @return array
      */
-    public function getAllTraitsId() {
-        return $this->alltraits;
+    public function getSkillUtilities() {
+        return $this->skills['utilities'];
     }
 
 }

@@ -11,11 +11,13 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
+ * @method string getWins()
+ * @method string getLosses()
+ * @method string getDesertions()
+ * @method string getByes()
+ * @method string getForfeits()
  */
 class PvpStats extends AbstractObject {
 
@@ -33,33 +35,6 @@ class PvpStats extends AbstractObject {
 
     /**
      * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
-
-        $this->data = $data;
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getWins() {
-        return $this->data['wins'];
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getLosses() {
-        return $this->data['losses'];
-    }
-
-    /**
-     * 
      * @return float
      */
     public function getWinRate() {
@@ -69,30 +44,6 @@ class PvpStats extends AbstractObject {
             return round(100 * $wins / ($losses + $wins), 2);
         }
         return null;
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getDesertions() {
-        return $this->data['desertions'];
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getByes() {
-        return $this->data['byes'];
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getForfeits() {
-        return $this->data['forfeits'];
     }
 
     /**

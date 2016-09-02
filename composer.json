@@ -10,7 +10,8 @@
 	],
 	"autoload": {
 		"psr-0": {
-			"Arnapou\\GW2Api": "src/"
+			"Arnapou\\GW2Api": "src/",
+			"Arnapou\\GW2Skills": "src/"
 		},
 		"files": ["src/Arnapou/GW2Api/functions.php"]
 	}

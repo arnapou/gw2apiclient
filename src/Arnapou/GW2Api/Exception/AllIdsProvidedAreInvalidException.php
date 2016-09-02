@@ -9,12 +9,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Arnapou\GW2Api\Model;
+namespace Arnapou\GW2Api\Exception;
 
-/**
- *
- * @method string getProfession()
- */
-class PvpStatsProfession extends PvpStats {
-    
+class AllIdsProvidedAreInvalidException extends Exception {
+	
 }

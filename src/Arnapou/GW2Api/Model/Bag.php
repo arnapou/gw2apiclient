@@ -12,30 +12,25 @@
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
 
 /**
  *
+ * @method integer getId()
+ * @method integer getSize()
  */
-class Bag extends Item {
+class Bag extends InventorySlot {
 
     /**
      *
      * @var array
      */
-    protected $inventory;
-
-    /**
-     *
-     * @var integer
-     */
-    protected $size;
+    protected $inventorySlots = [];
 
     /**
      *
      * @var array
      */
-    protected $inventoryStuff;
+    protected $item = null;
 
     /**
      *
@@ -43,63 +38,33 @@ class Bag extends Item {
      */
     protected $bagprice;
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client, $data['id']);
+    protected function setData($data) {
+        parent::setData($data);
 
-        $this->size      = $data['size'];
-        $this->inventory = [];
-        foreach ($data['inventory'] as $item) {
-            if (is_array($item) && isset($item['id'])) {
-                $this->inventory[] = new InventorySlot($this->client, $item);
-            }
-            else {
-                $this->inventory[] = null;
+        if (isset($data['id'])) {
+            $this->item = new Item($this->getEnvironment(), $data['id']);
+        }
+        if (isset($data['inventory']) && is_array($data['inventory'])) {
+            foreach ($data['inventory'] as $item) {
+                $this->inventorySlots[] = new InventorySlot($this->getEnvironment(), $item);
             }
         }
     }
 
     /**
      * 
-     * @return string
+     * @return Item
      */
-    public function getSize() {
-        return $this->size;
+    public function getItem() {
+        return $this->item;
     }
 
     /**
      * 
      * @return array
      */
-    public function getInventory() {
-        return $this->inventory;
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getInventoryStuff() {
-        if (!isset($this->inventoryStuff)) {
-            $allowedRarities = [self::RARITY_LEGENDARY, self::RARITY_ASCENDED, self::RARITY_EXOTIC];
-            $allowedTypes    = [self::TYPE_ARMOR, self::TYPE_BACK, self::TYPE_WEAPON, self::TYPE_TRINKET];
-
-            $this->inventoryStuff = [];
-            foreach ($this->inventory as /* @var $item InventorySlot */ $item) {
-                if (empty($item) ||
-                    !in_array($item->getRarity(), $allowedRarities) ||
-                    !in_array($item->getType(), $allowedTypes)
-                ) {
-                    continue;
-                }
-                $this->inventoryStuff[$item->getSubType()][] = $item;
-            }
-        }
-        return $this->inventoryStuff;
+    public function getInventorySlots() {
+        return $this->inventorySlots;
     }
 
     /**
@@ -112,7 +77,7 @@ class Bag extends Item {
                 'buy'  => 0,
                 'sell' => 0,
             ];
-            foreach ($this->getInventory() as /* @var $item InventorySlot */ $item) {
+            foreach ($this->inventorySlots as /* @var $item InventorySlot */ $item) {
                 if ($item && empty($item->getBinding())) {
                     $price = $item->getPrice();
                     $this->bagprice['buy'] += $price['buy_total'];

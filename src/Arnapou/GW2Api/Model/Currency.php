@@ -11,71 +11,36 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
- *
+ * @doc https://wiki.guildwars2.com/wiki/API:2/worlds
+ * 
+ * @method string getName()
+ * @method string getDescription()
+ * @method string getOrder()
+ * @method string getIcon()
  */
-class Currency extends AbstractObject {
+class Currency extends AbstractStoredObject {
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client, $data) {
-        parent::__construct($client);
-
-        $this->data = $data;
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getId() {
-        return $this->data['id'];
-    }
+    private $quantity = 0;
 
     /**
      * 
      * @return string
      */
-    public function getName() {
-        return $this->data['name'];
+    public function __toString() {
+        return $this->getName();
     }
 
-    /**
-     * 
-     * @return string
-     */
-    public function getDescription() {
-        return $this->data['description'];
+    protected function getApiName() {
+        return 'currencies';
     }
 
-    /**
-     * 
-     * @return string
-     */
-    public function getOrder() {
-        return $this->data['order'];
+    public function setQuantity($quantity) {
+        $this->quantity = $quantity;
     }
 
-    /**
-     * 
-     * @return string
-     */
-    public function getIcon() {
-        return $this->data['icon'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
     public function getQuantity() {
-        return $this->data['quantity'];
+        return $this->quantity;
     }
 
 }

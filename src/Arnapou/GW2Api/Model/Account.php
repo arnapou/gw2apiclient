@@ -14,92 +14,127 @@ namespace Arnapou\GW2Api\Model;
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Exception\InvalidTokenException;
 use Arnapou\GW2Api\Exception\MissingPermissionException;
-use Arnapou\GW2Api\SimpleClient;
+use Arnapou\GW2Api\Environment;
 
 /**
- *
+ * 
  */
 class Account extends AbstractObject {
-
-    /**
-     * Your account display name, ID, home world, and list of guilds. Required permission.
+    /*
+     * account     : Your account display name, ID, home world, and list of guilds. Required permission.
+     * inventories : Your account bank, material storage, recipe unlocks, and character inventories.
+     * characters  : Basic information about your characters.
+     * tradingpost : Your Trading Post transactions.
+     * wallet      : Your account's wallet.
+     * unlocks     : Your wardrobe unlocks—skins, dyes, minipets, finishers, etc.—and currently equipped skins.
+     * pvp         : Your PvP stats, match history, reward track progression, and custom arena details.
+     * builds      : Your currently equipped specializations, traits, skills, and equipment for all game modes.
+     * progression : Your achievements, dungeon unlock status, mastery point assignments, and general PvE progress.
+     * guilds      : La liste des membres, l'historique et le message du jour de toutes les guildes dont vous êtes membre.
      */
-    const PERMISSION_ACCOUNT = 'account';
 
-    /**
-     * Your account bank, material storage, recipe unlocks, and character inventories.
-     */
+    const PERMISSION_ACCOUNT     = 'account';
     const PERMISSION_INVENTORIES = 'inventories';
-
-    /**
-     * Basic information about your characters.
-     */
-    const PERMISSION_CHARACTERS = 'characters';
-
-    /**
-     * Your Trading Post transactions.
-     */
+    const PERMISSION_CHARACTERS  = 'characters';
     const PERMISSION_TRADINGPOST = 'tradingpost';
-
-    /**
-     * Your account's wallet.
-     */
-    const PERMISSION_WALLET = 'wallet';
-
-    /**
-     * Your wardrobe unlocks—skins, dyes, minipets, finishers, etc.—and currently equipped skins.
-     */
-    const PERMISSION_UNLOCKS = 'unlocks';
-
-    /**
-     * Your PvP stats, match history, reward track progression, and custom arena details.
-     */
-    const PERMISSION_PVP = 'pvp';
-
-    /**
-     * Your currently equipped specializations, traits, skills, and equipment for all game modes.
-     */
-    const PERMISSION_BUILDS = 'builds';
-
-    /**
-     * Your achievements, dungeon unlock status, mastery point assignments, and general PvE progress.
-     */
+    const PERMISSION_WALLET      = 'wallet';
+    const PERMISSION_UNLOCKS     = 'unlocks';
+    const PERMISSION_PVP         = 'pvp';
+    const PERMISSION_BUILDS      = 'builds';
     const PERMISSION_PROGRESSION = 'progression';
+    const PERMISSION_GUILDS      = 'guilds';
 
     /**
-     * La liste des membres, l'historique et le message du jour de toutes les guildes dont vous êtes membre.
+     * 
+     * @return array
      */
-    const PERMISSION_GUILDS = 'guilds';
+    public static function permissionsList() {
+        return [
+            self::PERMISSION_ACCOUNT,
+            self::PERMISSION_CHARACTERS,
+            self::PERMISSION_INVENTORIES,
+            self::PERMISSION_TRADINGPOST,
+            self::PERMISSION_WALLET,
+            self::PERMISSION_UNLOCKS,
+            self::PERMISSION_PVP,
+            self::PERMISSION_BUILDS,
+            self::PERMISSION_PROGRESSION,
+            self::PERMISSION_GUILDS,
+        ];
+    }
+
+    /*
+     * game access constants
+     */
+
+    const GAME_ACCESS_CORE = 'GuildWars2';
+    const GAME_ACCESS_HOT  = 'HeartOfThorns';
 
     /**
      *
      * @var array
      */
-    protected $dataTokeninfo;
+    private $dataTokenInfo;
 
     /**
      *
      * @var array
      */
-    protected $characters;
+    private $dataAccount;
 
     /**
      *
      * @var array
      */
-    protected $characterNames;
+    private $dataCharacters;
 
     /**
      *
      * @var array
      */
-    protected $wallet;
+    private $dataCharacterNames;
+
+    /**
+     *
+     * @var World
+     */
+    private $world;
 
     /**
      *
      * @var array
      */
-    protected $bankVaults;
+    private $guilds;
+
+    /**
+     *
+     * @var array
+     */
+    private $wallet;
+
+    /**
+     *
+     * @var array
+     */
+    private $inventory;
+
+    /**
+     *
+     * @var array
+     */
+    private $bankVaults;
+
+    /**
+     *
+     * @var array
+     */
+    private $achievementsGroups = [];
+
+    /**
+     *
+     * @var array
+     */
+    private $achievementsDaily = [];
 
     /**
      *
@@ -109,15 +144,9 @@ class Account extends AbstractObject {
 
     /**
      *
-     * @var array
+     * @var Pvp
      */
-    protected $guilds;
-
-    /**
-     *
-     * @var World
-     */
-    protected $world;
+    protected $pvp;
 
     /**
      *
@@ -135,107 +164,47 @@ class Account extends AbstractObject {
      *
      * @var array
      */
-    protected $achievements;
+    protected $minis;
 
     /**
      *
      * @var array
      */
-    protected $minis;
-
-    /**
-     *
-     * @var TradingPost
-     */
     protected $tradingPost;
 
     /**
-     *
-     * @var string
-     */
-    protected $accessToken;
-
-    /**
-     *
-     * @var Pvp
-     */
-    protected $pvp;
-
-    /**
      * 
-     * @return array
      */
-    public static function permissionsList() {
-        return [
-            self::PERMISSION_ACCOUNT,
-            self::PERMISSION_CHARACTERS,
-            self::PERMISSION_INVENTORIES,
-            self::PERMISSION_TRADINGPOST,
-            self::PERMISSION_WALLET,
-            self::PERMISSION_UNLOCKS,
-            self::PERMISSION_PVP,
-            self::PERMISSION_BUILDS,
-            self::PERMISSION_PROGRESSION,
-        ];
-    }
+    public function __construct(Environment $environment) {
+        parent::__construct($environment, null);
 
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param string $accessToken
-     */
-    public function __construct(SimpleClient $client, $accessToken) {
-        parent::__construct($client);
+        if (empty($this->getEnvironment()->getAccessToken())) {
+            throw new Exception('You should provide the access token before using Account class.');
+        }
 
-        $this->client->setAccessToken($accessToken);
-
-        // get token info to check access token and permissions
-        $infos = $this->client->getClientV2()->apiTokeninfo()->execute(86400)->getAllData();
-        if (!isset($infos['id'])) {
+        // token info
+        $tokenInfo = $this->getEnvironment()->getClientVersion2()->apiTokeninfo();
+        if (!isset($tokenInfo['id'])) {
             throw new InvalidTokenException('Invalid token.');
         }
-        if (!isset($infos['permissions']) || !is_array($infos)) {
+        if (!isset($tokenInfo['permissions']) || !is_array($tokenInfo)) {
             throw new InvalidTokenException('Token info permission is missing, a weird bug occurs.');
         }
+        sort($tokenInfo['permissions']);
+        $this->dataTokenInfo = $tokenInfo;
 
-        sort($infos['permissions']);
-        $this->dataTokeninfo = $infos;
-        $this->accessToken   = $accessToken;
-
-        $this->data = $this->client->v2_account();
-        if (isset($this->data['text'])) {
-            if (stripos($this->data['text'], 'invalid key') !== null) {
+        // account
+        $account = $this->getEnvironment()->getClientVersion2()->apiAccount();
+        if (isset($account['text'])) {
+            if (stripos($account['text'], 'invalid key') !== null) {
                 throw new InvalidTokenException('Invalid token.');
             }
-            throw new Exception($this->data['text']);
+            throw new Exception($account['text']);
         }
         if (!$this->hasPermission(self::PERMISSION_ACCOUNT)) {
             throw new MissingPermissionException(self::PERMISSION_ACCOUNT);
         }
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getAccessToken() {
-        return $this->accessToken;
-    }
-
-    /**
-     * 
-     * @return Pvp
-     */
-    public function getPvp() {
-        if (empty($this->pvp)) {
-
-            if (!$this->hasPermission(self::PERMISSION_PVP)) {
-                throw new MissingPermissionException(self::PERMISSION_PVP);
-            }
-
-            $this->pvp = new Pvp($this->client);
-        }
-        return $this->pvp;
+        $this->dataAccount = $account;
     }
 
     /**
@@ -249,44 +218,9 @@ class Account extends AbstractObject {
                 throw new MissingPermissionException(self::PERMISSION_TRADINGPOST);
             }
 
-            $this->tradingPost = new TradingPost($this->client);
+            $this->tradingPost = new TradingPost($this->getEnvironment(), []);
         }
         return $this->tradingPost;
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getAchievements() {
-        if (empty($this->achievements)) {
-
-            if (!$this->hasPermission(self::PERMISSION_PROGRESSION)) {
-                throw new MissingPermissionException(self::PERMISSION_PROGRESSION);
-            }
-
-            $this->achievements = [];
-            foreach ($this->client->v2_account_achievements() as $data) {
-                $this->achievements[] = new AccountAchievement($this->client, $data);
-            }
-        }
-        return $this->achievements;
-    }
-
-    /**
-     * 
-     * @return Dyes
-     */
-    public function getDyes() {
-        if (empty($this->dyes)) {
-
-            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
-                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
-            }
-
-            $this->dyes = new Dyes($this->client, $this->client->v2_account_dyes());
-        }
-        return $this->dyes;
     }
 
     /**
@@ -300,9 +234,31 @@ class Account extends AbstractObject {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
 
-            $this->minis = new Minis($this->client, $this->client->v2_account_minis());
+            $env         = $this->getEnvironment();
+            $this->minis = new Minis($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountMinis(),
+            ]);
         }
         return $this->minis;
+    }
+
+    /**
+     * 
+     * @return Dyes
+     */
+    public function getDyes() {
+        if (empty($this->dyes)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env        = $this->getEnvironment();
+            $this->dyes = new Dyes($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountDyes(),
+            ]);
+        }
+        return $this->dyes;
     }
 
     /**
@@ -316,68 +272,29 @@ class Account extends AbstractObject {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
 
-            $this->wardrobe = new Wardrobe($this->client, $this->client->v2_account_skins());
+            $env            = $this->getEnvironment();
+            $this->wardrobe = new Wardrobe($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountSkins(),
+            ]);
         }
         return $this->wardrobe;
     }
 
     /**
      * 
-     * @return array
+     * @return Pvp
      */
-    public function getWallet() {
-        if (empty($this->wallet)) {
+    public function getPvp() {
+        if (empty($this->pvp)) {
 
-            if (!$this->hasPermission(self::PERMISSION_WALLET)) {
-                throw new MissingPermissionException(self::PERMISSION_WALLET);
+            if (!$this->hasPermission(self::PERMISSION_PVP)) {
+                throw new MissingPermissionException(self::PERMISSION_PVP);
             }
 
-            $currencies = $this->client->v2_currencies($this->client->v2_currencies());
-            usort($currencies, function($a, $b) {
-                if ($a['order'] == $b['order']) {
-                    return 0;
-                }
-                return $a['order'] > $b['order'] ? 1 : -1;
-            });
-
-            $quantities = [];
-            foreach ($this->client->v2_account_wallet() as $item) {
-                $quantities[$item['id']] = $item['value'];
-            }
-
-            $this->wallet = [];
-            foreach ($currencies as $currency) {
-                $currency['quantity']          = isset($quantities[$currency['id']]) ? $quantities[$currency['id']] : 0;
-                $this->wallet[$currency['id']] = new Currency($this->client, $currency);
-            }
+            $data      = $this->getEnvironment()->getClientVersion2()->apiPvpStats();
+            $this->pvp = new Pvp($this->getEnvironment(), $data);
         }
-        return $this->wallet;
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getBankVaults() {
-        if (empty($this->bankVaults)) {
-
-            if (!$this->hasPermission(self::PERMISSION_INVENTORIES)) {
-                throw new MissingPermissionException(self::PERMISSION_INVENTORIES);
-            }
-
-            $slots = $this->client->v2_account_bank();
-            $this->preloadSlots($slots);
-
-            $vaults           = array_chunk($slots, 30);
-            $this->bankVaults = [];
-            foreach ($vaults as $i => $items) {
-                $this->bankVaults[] = new BankVault($this->client, [
-                    'id'    => $i + 1,
-                    'items' => $items,
-                ]);
-            }
-        }
-        return $this->bankVaults;
+        return $this->pvp;
     }
 
     /**
@@ -391,39 +308,36 @@ class Account extends AbstractObject {
                 throw new MissingPermissionException(self::PERMISSION_INVENTORIES);
             }
 
-            $categories = $this->client->v2_materials($this->client->v2_materials());
-            foreach ($categories as $category) {
-                $this->preloadItemIds($category['items']);
-            }
+            $env = $this->getEnvironment();
 
-            $materials = [];
-            foreach ($categories as $category) {
-                $items = [];
-                foreach ($category['items'] as $id) {
-                    $items[$id] = ['id' => $id];
-                }
-                $materials[$category['id']] = [
-                    'id'    => $category['id'],
-                    'name'  => $category['name'],
-                    'items' => $items,
-                ];
-            }
+            $preload = [];
+            $items   = [];
+            foreach ($env->getClientVersion2()->apiAccountMaterials() as $data) {
+                if (isset($data['id'], $data['count'], $data['category'])) {
+                    $items[$data['category']][] = [
+                        'id'    => $data['id'],
+                        'count' => $data['count'],
+                    ];
 
-            foreach ($this->client->v2_account_materials() as $item) {
-                if (isset($item['category'], $item['count'], $item['id'])) {
-                    if (isset($materials[$item['category']])) {
-                        if (array_key_exists($item['id'], $materials[$item['category']]['items'])) {
-                            $materials[$item['category']]['items'][$item['id']]['count'] = $item['count'];
-                        }
-                    }
+                    $preload[] = new Material($env, $data['category']);
                 }
             }
 
-            $this->collectibles = [];
-            ksort($materials);
-            foreach ($materials as $category) {
-                $this->collectibles[] = new CollectibleCategory($this->client, $category);
+            foreach ($env->getClientVersion2()->apiMaterials() as $materialId) {
+                $this->collectibles[] = new CollectibleCategory($env, [
+                    'id'    => $materialId,
+                    'items' => isset($items[$materialId]) ? $items[$materialId] : [],
+                ]);
             }
+
+            usort($this->collectibles, function($a, $b) {
+                $na = $a->getOrder();
+                $nb = $b->getOrder();
+                if ($na == $nb) {
+                    return 0;
+                }
+                return $na > $nb ? 1 : -1;
+            });
         }
         return $this->collectibles;
     }
@@ -432,47 +346,67 @@ class Account extends AbstractObject {
      * 
      * @return array
      */
-    public function getCharacters() {
-        if (empty($this->characters)) {
+    public function getBankVaults() {
+        if (empty($this->bankVaults)) {
+
+            if (!$this->hasPermission(self::PERMISSION_INVENTORIES)) {
+                throw new MissingPermissionException(self::PERMISSION_INVENTORIES);
+            }
+
+            $env   = $this->getEnvironment();
+            $slots = $env->getClientVersion2()->apiAccountBank();
+
+            $vaults           = array_chunk($slots, 30);
+            $this->bankVaults = [];
+            foreach ($vaults as $i => $items) {
+                $this->bankVaults[] = new BankVault($env, [
+                    'id'    => $i + 1,
+                    'items' => $items,
+                ]);
+            }
+        }
+        return $this->bankVaults;
+    }
+
+    /**
+     * 
+     * @return array ["Name 1", "Name 2"]
+     */
+    public function getCharacterNames() {
+        if (empty($this->dataCharacterNames)) {
             if (!$this->hasPermission(self::PERMISSION_CHARACTERS)) {
                 throw new MissingPermissionException(self::PERMISSION_CHARACTERS);
             }
 
-            $characterNames = $this->client->v2_characters();
+            $names = $this->getEnvironment()->getClientVersion2()->apiCharacters();
 
-            // init for better performance
-            $this->apiCharacters($characterNames);
-
-            $characters = [];
-            foreach ($characterNames as $characterName) {
-                $characters[$characterName] = new Character($this->client, $characterName);
-            }
-            uasort($characters, function($a, $b) {
-                if ($a->getAge() == $b->getAge()) {
-                    return 0;
-                }
-                return $a->getAge() < $b->getAge() ? 1 : -1;
-            });
-
-            $this->characters = $characters;
+            $this->dataCharacterNames = $names;
         }
-        return $this->characters;
+        return $this->dataCharacterNames;
     }
 
     /**
      * 
      * @return array
      */
-    public function getCharacterNames() {
-        if (empty($this->characterNames)) {
+    public function getCharacters() {
+        if (empty($this->dataCharacters)) {
             if (!$this->hasPermission(self::PERMISSION_CHARACTERS)) {
                 throw new MissingPermissionException(self::PERMISSION_CHARACTERS);
             }
 
-            $this->characterNames = $this->client->v2_characters();
-            sort($this->characterNames);
+            $items = $this->getEnvironment()->getClientVersion2()->apiCharacters($this->getCharacterNames());
+
+            $characters = [];
+            foreach ($items as $item) {
+                if (isset($item['name'])) {
+                    $characters[$item['name']] = new Character($this->getEnvironment(), $item);
+                }
+            }
+
+            $this->dataCharacters = $characters;
         }
-        return $this->characterNames;
+        return $this->dataCharacters;
     }
 
     /**
@@ -490,18 +424,26 @@ class Account extends AbstractObject {
 
     /**
      * 
-     * @return string
+     * @return string "1E25809D-6A79-EE39-E111-736E8E79F0D1"
      */
     public function getId() {
-        return $this->data['id'];
+        return $this->getData('id', null, $this->dataAccount);
     }
 
     /**
      * 
-     * @return string
+     * @return string "My Name.1234"
      */
     public function getName() {
-        return $this->getSubkey(['name']);
+        return $this->getData('name', null, $this->dataAccount);
+    }
+
+    /**
+     * 
+     * @return integer 2102
+     */
+    public function getWorldId() {
+        return (int) $this->getData('world', null, $this->dataAccount);
     }
 
     /**
@@ -509,22 +451,38 @@ class Account extends AbstractObject {
      * @return World
      */
     public function getWorld() {
-        if (!isset($this->world)) {
-            $this->world = new World($this->client, $this->data['world']);
+        if (empty($this->world)) {
+            $this->world = new World($this->getEnvironment(), $this->getWorldId());
         }
         return $this->world;
     }
 
     /**
      * 
-     * @return array
+     * @return array ["27E8635F-2B2F-44BC-A58F-03F66F2083E2", "52BD8E08-7F38-449E-ADB7-37CC6CE47230"]
+     */
+    public function getGuildIds() {
+        return $this->getData('guilds', [], $this->dataAccount);
+    }
+
+    /**
+     * 
+     * @return World
      */
     public function getGuilds() {
-        if (!isset($this->guilds)) {
+        if (empty($this->guilds)) {
             $this->guilds = [];
-            if (!empty($this->data['guilds']) && is_array($this->data['guilds'])) {
-                foreach ($this->data['guilds'] as $guild) {
-                    $this->guilds[] = new Guild($this->client, $guild);
+            $env          = $this->getEnvironment();
+            $client       = $env->getClientVersion1();
+            foreach ($this->getGuildIds() as $id) {
+                try {
+                    $data = $client->apiGuildDetails($id);
+                    if (isset($data['guild_id'])) {
+                        $this->guilds[] = new Guild($env, $data);
+                    }
+                }
+                catch (\Exception $e) {
+                    
                 }
             }
         }
@@ -533,10 +491,113 @@ class Account extends AbstractObject {
 
     /**
      * 
-     * @return arrya
+     * @return World
      */
-    public function getPermissions() {
-        return $this->dataTokeninfo['permissions'];
+    public function getInventory() {
+        if (empty($this->inventory)) {
+            $this->inventory = [];
+            $env             = $this->getEnvironment();
+            $client          = $env->getClientVersion2();
+            $inventory       = $client->apiAccountInventory();
+            foreach ($inventory as $data) {
+                $this->inventory[] = new InventorySlot($env, $data);
+            }
+        }
+        return $this->inventory;
+    }
+
+    /**
+     * 
+     * @return World
+     */
+    public function getWallet() {
+        if ($this->wallet === null) {
+            $this->wallet = [];
+
+            $env   = $this->getEnvironment();
+            $items = $env->getClientVersion2()->apiAccountWallet();
+            foreach ($items as $item) {
+                if (isset($item['id'], $item['value'])) {
+                    $currency                  = new Currency($env, $item['id']);
+                    $currency->setQuantity($item['value']);
+                    $this->wallet[$item['id']] = $currency;
+                }
+            }
+            uasort($this->wallet, function($a, $b) {
+                $orderA = $a->getOrder();
+                $orderB = $b->getOrder();
+                if ($orderA == $orderB) {
+                    return 0;
+                }
+                return $orderA > $orderB ? 1 : -1;
+            });
+        }
+        return $this->wallet;
+    }
+
+    /**
+     * 
+     * @return integer 100
+     */
+    public function getFractalLevel() {
+        return (int) $this->getData('fractal_level', null, $this->dataAccount);
+    }
+
+    /**
+     * 
+     * @return integer 12309
+     */
+    public function getDailyAP() {
+        return (int) $this->getData('daily_ap', null, $this->dataAccount);
+    }
+
+    /**
+     * 
+     * @return integer 2691
+     */
+    public function getMonthlyAP() {
+        return (int) $this->getData('monthly_ap', null, $this->dataAccount);
+    }
+
+    /**
+     * 
+     * @return integer 245
+     */
+    public function getWvwRank() {
+        return (int) $this->getData('wvw_rank', null, $this->dataAccount);
+    }
+
+    /**
+     * 
+     * @return boolean
+     */
+    public function hasAccessHeartOfThorns() {
+        return $this->getData('access', null, $this->dataAccount) === self::GAME_ACCESS_HOT ? true : false;
+    }
+
+    /**
+     * 
+     * @return boolean
+     */
+    public function hasCommanderTag() {
+        return $this->getData('commander', null, $this->dataAccount) == 1 ? true : false;
+    }
+
+    /**
+     * 
+     * @return string YYYY-MM-DD HH:MM UTC format
+     */
+    public function getCreated() {
+        $date = $this->getData('created', null, $this->dataAccount);
+        return $date ? gmdate('Y-m-d H:i', strtotime($date)) : null;
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getAccessToken() {
+        return $this->getEnvironment()->getAccessToken();
     }
 
     /**
@@ -545,18 +606,45 @@ class Account extends AbstractObject {
      * @return boolean
      */
     public function hasPermission($permission) {
-        return in_array($permission, $this->dataTokeninfo['permissions']);
+        return in_array($permission, $this->dataTokenInfo['permissions']);
     }
 
     /**
      * 
-     * @return string YYYY-MM-DD HH:MM UTC format
+     * @return array
      */
-    public function getCreated() {
-        if (isset($this->data['created'])) {
-            return gmdate('Y-m-d H:i', strtotime($this->data['created']));
+    public function getAchievementsDaily() {
+        if (empty($this->achievementsDaily)) {
+            $env = $this->getEnvironment();
+            foreach ($env->getClientVersion2()->apiAchievementsDaily() as $mode => $items) {
+                foreach ($items as $item) {
+                    $this->achievementsDaily[$mode][] = new AchievementDaily($env, $item);
+                }
+            }
         }
-        return null;
+        return $this->achievementsDaily;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getAchievementsGroups() {
+        if (empty($this->achievementsGroups)) {
+            $env = $this->getEnvironment();
+            foreach ($env->getClientVersion2()->apiAchievementsGroups() as $id) {
+                $this->achievementsGroups[] = new AchievementGroup($env, $id);
+            }
+            usort($this->achievementsGroups, function($a, $b) {
+                $ia = $a->getOrder();
+                $ib = $b->getOrder();
+                if ($ia == $ib) {
+                    return 0;
+                }
+                return $ia < $ib ? -1 : 1;
+            });
+        }
+        return $this->achievementsGroups;
     }
 
 }

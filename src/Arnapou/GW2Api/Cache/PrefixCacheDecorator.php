@@ -11,7 +11,7 @@
 
 namespace Arnapou\GW2Api\Cache;
 
-class PrefixCacheDecorator extends AbstractCacheDecorator {
+class PrefixCacheDecorator implements CacheInterface {
 
     /**
      *
@@ -20,13 +20,18 @@ class PrefixCacheDecorator extends AbstractCacheDecorator {
     protected $prefix;
 
     /**
+     *
+     * @var CacheInterface
+     */
+    protected $cache;
+
+    /**
      * 
      * @param string $prefix
      * @param CacheInterface $cache
      */
     public function __construct($prefix, CacheInterface $cache) {
-        parent::__construct($cache);
-
+        $this->cache  = $cache;
         $this->prefix = $prefix;
     }
 

@@ -11,43 +11,37 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
+ * @doc https://wiki.guildwars2.com/wiki/API:2/skins
  *
+ * @method string getName()
+ * @method string getCategories()
+ * @method string getCloth()
+ * @method string getLeather()
+ * @method string getMetal()
+ * @method string getItem()
+ * @method string getBaseRgb()
  */
-class Color extends AbstractObject {
+class Color extends AbstractStoredObject {
 
-    // CATEGORIES
-    const CATEGORY_CLOTH   = 'cloth';
-    const CATEGORY_LEATHER = 'leather';
-    const CATEGORY_METAL   = 'metal';
+    // CATGEORIES
+    const CATEGORY_HUE_GRAY         = 'Gray';
+    const CATEGORY_HUE_BROWN        = 'Brown';
+    const CATEGORY_HUE_RED          = 'Red';
+    const CATEGORY_HUE_ORANGE       = 'Orange';
+    const CATEGORY_HUE_YELLOW       = 'Yellow';
+    const CATEGORY_HUE_GREEN        = 'Green';
+    const CATEGORY_HUE_BLUE         = 'Blue';
+    const CATEGORY_HUE_PURPLE       = 'Purple';
+    const CATEGORY_MATERIAL_VIBRANT = 'Vibrant';
+    const CATEGORY_MATERIAL_LEATHER = 'Leather';
+    const CATEGORY_MATERIAL_METAL   = 'Metal';
+    const CATEGORY_RARITY_STARTER   = 'Starter';
+    const CATEGORY_RARITY_COMMON    = 'Common';
+    const CATEGORY_RARITY_UNCOMMON  = 'Uncommon';
+    const CATEGORY_RARITY_RARE      = 'Rare';
 
-    /**
-     *
-     * @var array
-     */
-    protected $attributes;
-
-    /**
-     *
-     * @var boolean
-     */
-    protected $unlocked;
-
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $id
-     * @param boolean $unlocked
-     */
-    public function __construct(SimpleClient $client, $id, $unlocked = false) {
-        parent::__construct($client);
-
-        $this->data     = $this->apiColors($id);
-        $this->unlocked = $unlocked;
-    }
+    protected $unlocked = false;
 
     /**
      * 
@@ -59,26 +53,10 @@ class Color extends AbstractObject {
 
     /**
      * 
-     * @return integer
+     * @param boolean $bool
      */
-    public function getId() {
-        return $this->data['id'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getName() {
-        return $this->getSubkey(['name']);
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getBaseRgb() {
-        return $this->getSubkey(['base_rgb']);
+    public function setUnlocked($bool) {
+        $this->unlocked = $bool ? true : false;
     }
 
     /**
@@ -98,7 +76,7 @@ class Color extends AbstractObject {
      * @return float
      */
     public function getCategoryBrightness($category) {
-        return $this->getSubkey([$category, 'brightness']);
+        return $this->getData([$category, 'brightness']);
     }
 
     /**
@@ -106,7 +84,7 @@ class Color extends AbstractObject {
      * @return float
      */
     public function getCategoryContrast($category) {
-        return $this->getSubkey([$category, 'contrast']);
+        return $this->getData([$category, 'contrast']);
     }
 
     /**
@@ -114,7 +92,7 @@ class Color extends AbstractObject {
      * @return float
      */
     public function getCategoryHue($category) {
-        return $this->getSubkey([$category, 'hue']);
+        return $this->getData([$category, 'hue']);
     }
 
     /**
@@ -122,7 +100,7 @@ class Color extends AbstractObject {
      * @return float
      */
     public function getCategorySaturation($category) {
-        return $this->getSubkey([$category, 'saturation']);
+        return $this->getData([$category, 'saturation']);
     }
 
     /**
@@ -130,7 +108,7 @@ class Color extends AbstractObject {
      * @return float
      */
     public function getCategoryLightness($category) {
-        return $this->getSubkey([$category, 'lightness']);
+        return $this->getData([$category, 'lightness']);
     }
 
     /**
@@ -138,8 +116,9 @@ class Color extends AbstractObject {
      * @return array
      */
     public function getCategoryRgb($category) {
-        return $this->getSubkey([$category, 'rgb']);
+        return $this->getData([$category, 'rgb']);
     }
+
     /**
      * 
      * @return string
@@ -150,6 +129,10 @@ class Color extends AbstractObject {
             return '#' . sprintf('%02x%02x%02x', $rgb[0], $rgb[1], $rgb[2]);
         }
         return '#000000';
+    }
+
+    protected function getApiName() {
+        return 'colors';
     }
 
 }

@@ -11,9 +11,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
  *
  */
@@ -45,15 +42,6 @@ class TradingPost extends AbstractObject {
 
     /**
      * 
-     * @param SimpleClient $client
-     * @param array $data
-     */
-    public function __construct(SimpleClient $client) {
-        parent::__construct($client);
-    }
-
-    /**
-     * 
      * @param array $items
      * @return array
      */
@@ -62,11 +50,7 @@ class TradingPost extends AbstractObject {
             return [];
         }
         $return = [];
-        $ids    = [];
-        foreach ($items as $item) {
-            $ids[] = $item['item_id'];
-        }
-        $this->preloadItemIds($ids);
+        $env    = $this->getEnvironment();
 
         foreach ($items as $item) {
             $key = $item['item_id'] . '_' . $item['price'];
@@ -74,7 +58,7 @@ class TradingPost extends AbstractObject {
                 $return[$key]['quantity'] += $item['quantity'];
             }
             else {
-                $item['item'] = new Item($this->client, $item['item_id']);
+                $item['item'] = new Item($env, $item['item_id']);
                 unset($item['item_id']);
                 $return[$key] = $item;
             }
@@ -84,31 +68,11 @@ class TradingPost extends AbstractObject {
 
     /**
      * 
-     * @param string $method
-     * @param integer $nbpages
      * @return array
      */
-    protected function apiCommerceGetData($method, $nbpages = 2) {
-        $response = $this->client->getClientV2()->$method()->execute();
-        $alldata  = $response->getData();
-        while ($response->hasNextPage() && $nbpages > 1) {
-            $response = $response->getNextPage();
-            foreach ($response->getData() as $item) {
-                $alldata[] = $item;
-            }
-            $nbpages--;
-        }
-        return $alldata;
-    }
-
-    /**
-     * 
-     * @param int $nbpages
-     * @return array
-     */
-    public function getCurrentBuys($nbpages = 2) {
+    public function getCurrentBuys() {
         if (!isset($this->currentBuys)) {
-            $items             = $this->apiCommerceGetData('apiCommerceTransactionsCurrentBuys', $nbpages);
+            $items             = $this->getEnvironment()->getClientVersion2()->apiCommerceTransactionsCurrentBuys();
             $this->currentBuys = $this->prepareItems($items);
         }
         return $this->currentBuys;
@@ -116,12 +80,11 @@ class TradingPost extends AbstractObject {
 
     /**
      * 
-     * @param int $nbpages
      * @return array
      */
-    public function getCurrentSells($nbpages = 2) {
+    public function getCurrentSells() {
         if (!isset($this->currentSells)) {
-            $items              = $this->apiCommerceGetData('apiCommerceTransactionsCurrentSells', $nbpages);
+            $items              = $this->getEnvironment()->getClientVersion2()->apiCommerceTransactionsCurrentSells();
             $this->currentSells = $this->prepareItems($items);
         }
         return $this->currentSells;
@@ -129,12 +92,11 @@ class TradingPost extends AbstractObject {
 
     /**
      * 
-     * @param int $nbpages
      * @return array
      */
-    public function getHistoryBuys($nbpages = 2) {
+    public function getHistoryBuys() {
         if (!isset($this->historyBuys)) {
-            $items             = $this->apiCommerceGetData('apiCommerceTransactionsHistoryBuys', $nbpages);
+            $items             = $this->getEnvironment()->getClientVersion2()->apiCommerceTransactionsHistoryBuys();
             $this->historyBuys = $this->prepareItems($items);
         }
         return $this->historyBuys;
@@ -142,12 +104,11 @@ class TradingPost extends AbstractObject {
 
     /**
      * 
-     * @param int $nbpages
      * @return array
      */
-    public function getHistorySells($nbpages = 2) {
+    public function getHistorySells() {
         if (!isset($this->historySells)) {
-            $items              = $this->apiCommerceGetData('apiCommerceTransactionsHistorySells', $nbpages);
+            $items              = $this->getEnvironment()->getClientVersion2()->apiCommerceTransactionsHistorySells();
             $this->historySells = $this->prepareItems($items);
         }
         return $this->historySells;

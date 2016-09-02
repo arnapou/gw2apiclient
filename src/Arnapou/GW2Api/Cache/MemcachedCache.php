@@ -15,6 +15,10 @@ use Arnapou\GW2Api\Exception\Exception;
 
 class MemcachedCache implements CacheInterface {
 
+    /**
+     *
+     * @var Memcached
+     */
     protected $memcached;
 
     public function __construct($server = 'localhost', $port = 11211) {
@@ -23,6 +27,14 @@ class MemcachedCache implements CacheInterface {
         }
         $this->memcached = new \Memcached();
         $this->memcached->addServer($server, $port);
+    }
+
+    /**
+     * 
+     * @return Memcached
+     */
+    public function getMemcached() {
+        return $this->memcached;
     }
 
     protected function hash($key) {

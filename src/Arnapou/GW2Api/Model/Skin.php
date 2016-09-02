@@ -11,13 +11,16 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
 /**
+ * @doc https://wiki.guildwars2.com/wiki/API:2/skins
  *
+ * @method string getName()
+ * @method string getType()
+ * @method string getRarity()
+ * @method string getDescription()
+ * @method string getIcon()
  */
-class Skin extends AbstractObject {
+class Skin extends AbstractStoredObject {
 
     // TYPES
     const TYPE_ARMOR                   = 'Armor';
@@ -39,30 +42,7 @@ class Skin extends AbstractObject {
     const WEAPON_DAMAGE_TYPE_PHYSICAL  = 'Physical';
     const WEAPON_DAMAGE_TYPE_CHOKING   = 'Choking';
 
-    /**
-     *
-     * @var array
-     */
-    protected $attributes;
-
-    /**
-     *
-     * @var boolean
-     */
-    protected $unlocked;
-
-    /**
-     * 
-     * @param SimpleClient $client
-     * @param array $id
-     * @param boolean $unlocked
-     */
-    public function __construct(SimpleClient $client, $id, $unlocked = false) {
-        parent::__construct($client);
-
-        $this->data     = $this->apiSkins($id);
-        $this->unlocked = $unlocked;
-    }
+    protected $unlocked = false;
 
     /**
      * 
@@ -74,34 +54,10 @@ class Skin extends AbstractObject {
 
     /**
      * 
-     * @return integer
-     */
-    public function getId() {
-        return $this->data['id'];
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getName() {
-        return $this->getSubkey(['name']);
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getType() {
-        return $this->getSubkey(['type']);
-    }
-
-    /**
-     * 
-     * @return string
+     * @return array
      */
     public function getFlags() {
-        return $this->getSubkey(['flags']);
+        return $this->getData('flags', []);
     }
 
     /**
@@ -110,11 +66,7 @@ class Skin extends AbstractObject {
      * @return boolean
      */
     public function hasFlag($flag) {
-        $flags = $this->getFlags();
-        if (is_array($flags)) {
-            return in_array($flag, $flags);
-        }
-        return false;
+        return in_array($flag, (array) $this->getFlags());
     }
 
     /**
@@ -122,7 +74,7 @@ class Skin extends AbstractObject {
      * @return string
      */
     public function getRestrictions() {
-        return $this->getSubkey(['restrictions']);
+        return $this->getData('restrictions', []);
     }
 
     /**
@@ -131,19 +83,7 @@ class Skin extends AbstractObject {
      * @return boolean
      */
     public function hasRestriction($restriction) {
-        $restrictions = $this->getGameTypes();
-        if (is_array($restrictions)) {
-            return in_array($restriction, $restrictions);
-        }
-        return false;
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getIcon() {
-        return $this->getSubkey(['icon']);
+        return in_array($restriction, (array) $this->getRestrictions());
     }
 
     /**
@@ -151,7 +91,7 @@ class Skin extends AbstractObject {
      * @return string
      */
     public function getSubType() {
-        return $this->getSubkey(['details', 'type']);
+        return $this->getData(['details', 'type']);
     }
 
     /**
@@ -159,7 +99,7 @@ class Skin extends AbstractObject {
      * @return string
      */
     public function getArmorWeightClass() {
-        return $this->getSubkey(['details', 'weight_class']);
+        return $this->getData(['details', 'weight_class']);
     }
 
     /**
@@ -167,7 +107,19 @@ class Skin extends AbstractObject {
      * @return integer
      */
     public function getWeaponDamageType() {
-        return $this->getSubkey(['details', 'damage_type']);
+        return $this->getData(['details', 'damage_type']);
+    }
+
+    /**
+     * 
+     * @param boolean $bool
+     */
+    public function setUnlocked($bool) {
+        $this->unlocked = $bool ? true : false;
+    }
+
+    protected function getApiName() {
+        return 'skins';
     }
 
 }
