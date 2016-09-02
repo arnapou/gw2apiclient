@@ -36,6 +36,7 @@ class Build extends AbstractObject {
         'heal'      => null,
         'utilities' => [],
         'elite'     => null,
+        'legends'   => [],
     ];
 
     protected function setData($data) {
@@ -58,7 +59,23 @@ class Build extends AbstractObject {
                     $this->skills['utilities'][] = new Skill($this->getEnvironment(), $id);
                 }
             }
+            if (isset($data['skills']['legends']) && is_array($data['skills']['legends'])) {
+                foreach ($data['skills']['legends'] as $id) {
+                    $this->skills['legends'][] = new Legend($this->getEnvironment(), $id);
+                }
+            }
         }
+    }
+
+    /**
+     * 
+     * @return string
+     */
+    public function getProfession() {
+        foreach ($this->specializations as $spe) {
+            return $spe->getProfession();
+        }
+        return '';
     }
 
     /**
@@ -110,6 +127,14 @@ class Build extends AbstractObject {
      */
     public function getSkillUtilities() {
         return $this->skills['utilities'];
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getLegends() {
+        return $this->skills['legends'];
     }
 
 }

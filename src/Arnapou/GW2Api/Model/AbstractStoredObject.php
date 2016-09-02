@@ -27,7 +27,9 @@ abstract class AbstractStoredObject extends AbstractObject {
         parent::__construct($environment, null);
 
         $this->objectId = $id;
-        $environment->getStorage()->prepare($this->getEnvironment()->getLang(), $this->getApiName(), $this->objectId);
+        if ($this->objectId) {
+            $environment->getStorage()->prepare($this->getEnvironment()->getLang(), $this->getApiName(), $this->objectId);
+        }
     }
 
     public function getId() {
@@ -57,8 +59,16 @@ abstract class AbstractStoredObject extends AbstractObject {
      * 
      * @return string
      */
-    protected function getApiMethod() {
+    public function getApiMethod() {
         return 'api' . ucfirst($this->getApiName());
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getApiTimeFresh() {
+        return 86000;
     }
 
     /**
@@ -69,5 +79,5 @@ abstract class AbstractStoredObject extends AbstractObject {
         return $this->getData('_empty_') == 1;
     }
 
-    abstract protected function getApiName();
+    abstract public function getApiName();
 }

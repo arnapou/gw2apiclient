@@ -73,7 +73,6 @@ class MongoStorage extends AbstractStorage {
             if (!isset($this->cached[$key])) {
                 $this->cached[$key] = [];
             }
-//print_r(array_keys($this->prepared[$key]));
             $collection = $this->getCollection($lang, $name);
             $documents  = $collection->find(['key' => ['$in' => array_values($this->prepared[$key])]]);
             foreach ($documents as $document) {

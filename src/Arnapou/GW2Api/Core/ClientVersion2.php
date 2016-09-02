@@ -204,12 +204,44 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
+    public function apiPvpStandings() {
+        return $this->requestAccessToken('pvp/standings');
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function apiPvpGames($ids = null) {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
         }
         return $this->requestAccessToken('pvp/games', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiPvpAmulets($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('pvp/amulets', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiPvpSeasons($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('pvp/seasons', $parameters);
     }
 
     /**

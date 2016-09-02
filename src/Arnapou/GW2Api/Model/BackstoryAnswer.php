@@ -74,7 +74,7 @@ class BackstoryAnswer extends AbstractStoredObject {
         return $this->getTitle();
     }
 
-    protected function getApiName() {
+    public function getApiName() {
         return 'backstoryanswers';
     }
 

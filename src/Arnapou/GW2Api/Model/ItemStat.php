@@ -46,7 +46,7 @@ class ItemStat extends AbstractStoredObject {
         return \Arnapou\GW2Api\attributes_to_statname($this->getAttributes());
     }
 
-    protected function getApiName() {
+    public function getApiName() {
         return 'itemstats';
     }
 

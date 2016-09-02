@@ -12,13 +12,16 @@
 namespace Arnapou\GW2Skills;
 
 use Arnapou\GW2Api\Core\Curl;
+use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Model\Bag;
 use Arnapou\GW2Api\Model\Build;
 use Arnapou\GW2Api\Model\Character;
 use Arnapou\GW2Api\Model\Item;
+use Arnapou\GW2Api\Model\Legend;
 use Arnapou\GW2Api\Model\InventorySlot;
 use Arnapou\GW2Api\Model\Specialization;
+use Arnapou\GW2Api\Model\SpecializationLine;
 use Arnapou\GW2Api\Model\SpecializationTrait;
 
 /* * ********************************************************************** *
@@ -48,19 +51,29 @@ class LinkBuilder {
 
     /**
      *
-     * @var Client
+     * @var integer
      */
-    static protected $client;
+    protected $cacheDuration = 300; // 5 minutes
+
+    /**
+     *
+     * @var Environment 
+     */
+    protected $environment;
+
+    public function __construct(Environment $env) {
+        $this->environment = $env;
+    }
 
     /**
      * 
      * @return Client
      */
-    static protected function getClient() {
-        if (empty(self::$client)) {
-            self::$client = new Client();
+    protected function getClient() {
+        if (empty($this->client)) {
+            $this->client = new Client($this->environment);
         }
-        return self::$client;
+        return $this->client;
     }
 
     /**
@@ -69,7 +82,7 @@ class LinkBuilder {
      * @return string
      */
     protected function getRace(Character $character) {
-        $map = self::getClient()->getMap('races');
+        $map = $this->getClient()->getMap('races');
         $key = strtolower($character->getRace());
         return isset($map[$key]) ? $map[$key] : '0';
     }
@@ -80,8 +93,8 @@ class LinkBuilder {
      * @return string
      */
     protected function getProfession(Character $character) {
-        $map = self::getClient()->getMap('professions');
-        $key = strtolower($character->getProfession());
+        $map = $this->getClient()->getMap('professions');
+        $key = strtolower($character->getData('profession'));
         return isset($map[$key]) ? $map[$key] : '0';
     }
 
@@ -91,13 +104,13 @@ class LinkBuilder {
      * @return string
      */
     protected function getWeapons(Character $character) {
-        $map    = self::getClient()->getMap('weapons');
+        $map    = $this->getClient()->getMap('weapons');
         $return = [];
 
         $parts = [];
         foreach ([
-        $character->getEquipment(Character::SLOT_WEAPON_A1),
-        $character->getEquipment(Character::SLOT_WEAPON_A2),
+        $character->getEquipmentWeapon1('A'),
+        $character->getEquipmentWeapon2('A'),
         ] as $equipment) {
             if (empty($equipment)) {
                 $parts[] = '0';
@@ -111,8 +124,8 @@ class LinkBuilder {
 
         $parts = [];
         foreach ([
-        $character->getEquipment(Character::SLOT_WEAPON_B1),
-        $character->getEquipment(Character::SLOT_WEAPON_B2),
+        $character->getEquipmentWeapon1('B'),
+        $character->getEquipmentWeapon2('B'),
         ] as $equipment) {
             if (empty($equipment)) {
                 $parts[] = '0';
@@ -134,15 +147,15 @@ class LinkBuilder {
      * @return string
      */
     protected function getInfusions(Character $character, $mode) {
-        $map    = self::getClient()->getMap('upgrades');
+        $map    = $this->getClient()->getMap('upgrades');
         $return = [];
 
         $parts = [];
         foreach ([
-        $character->getEquipment(Character::SLOT_WEAPON_A1),
-        $character->getEquipment(Character::SLOT_WEAPON_A2),
-        $character->getEquipment(Character::SLOT_WEAPON_B1),
-        $character->getEquipment(Character::SLOT_WEAPON_B2),
+        $character->getEquipmentWeapon1('A'),
+        $character->getEquipmentWeapon2('A'),
+        $character->getEquipmentWeapon1('B'),
+        $character->getEquipmentWeapon2('B'),
         $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_A),
         $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_B),
         ] as $equipment) {
@@ -167,7 +180,7 @@ class LinkBuilder {
         $character->getEquipment(Character::SLOT_BOOTS),
         ] as $equipment) {
             if (empty($equipment)) {
-                $parts[] = '0.0';
+                $parts[] = '0';
             }
             else {
                 $infusions = $equipment->getInfusions();
@@ -186,7 +199,7 @@ class LinkBuilder {
         $character->getEquipment(Character::SLOT_BACKPACK),
         ] as $equipment) {
             if (empty($equipment)) {
-                $parts[] = '0.0';
+                $parts[] = '0';
             }
             else {
                 $infusions = $equipment->getInfusions();
@@ -205,27 +218,43 @@ class LinkBuilder {
      * @return string
      */
     protected function getUpgradesArmor(Character $character, $mode) {
-        $mapStats   = self::getClient()->getMap('items');
-        $mapUpgrade = self::getClient()->getMap('upgrades');
-        $parts      = [];
-        foreach ([
-        $character->getEquipment(Character::SLOT_HELM),
-        $character->getEquipment(Character::SLOT_SHOULDERS),
-        $character->getEquipment(Character::SLOT_COAT),
-        $character->getEquipment(Character::SLOT_GLOVES),
-        $character->getEquipment(Character::SLOT_LEGGINGS),
-        $character->getEquipment(Character::SLOT_BOOTS),
-        ] as $equipment) {
-            if (empty($equipment)) {
-                $parts[] = '0.0.0.0';
+        if ($mode == 'pvp') {
+            $mapStats   = $this->getClient()->getMap('items');
+            $mapUpgrade = $this->getClient()->getMap('upgrades');
+            $pvp        = $character->getPvpEquipment();
+            if ($pvp && $pvp->getRune()) {
+                $rune = $pvp->getRune();
+                $part = $this->getMappedUpgrade($mode, $mapUpgrade, isset($rune) ? $rune : null)
+                    . '.0.0';
             }
             else {
-                $upgrades = $equipment->getUpgrades();
-                $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
-                    . '.' . $this->getMappedStat($mode, $mapStats, $equipment);
+                $part = '0.0.0.0';
             }
+            return implode(':', [$part, $part, $part, $part, $part, $part]);
         }
-        return implode(':', $parts);
+        else {
+            $mapStats   = $this->getClient()->getMap('items');
+            $mapUpgrade = $this->getClient()->getMap('upgrades');
+            $parts      = [];
+            foreach ([
+            $character->getEquipment(Character::SLOT_HELM),
+            $character->getEquipment(Character::SLOT_SHOULDERS),
+            $character->getEquipment(Character::SLOT_COAT),
+            $character->getEquipment(Character::SLOT_GLOVES),
+            $character->getEquipment(Character::SLOT_LEGGINGS),
+            $character->getEquipment(Character::SLOT_BOOTS),
+            ] as $equipment) {
+                if (empty($equipment)) {
+                    $parts[] = '0.0.0.0';
+                }
+                else {
+                    $upgrades = $equipment->getUpgrades();
+                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
+                        . '.' . $this->getMappedStat($mode, $mapStats, $equipment);
+                }
+            }
+            return implode(':', $parts);
+        }
     }
 
     /**
@@ -235,27 +264,47 @@ class LinkBuilder {
      * @return string
      */
     protected function getUpgradesTrinkets(Character $character, $mode) {
-        $mapStats   = self::getClient()->getMap('items');
-        $mapUpgrade = self::getClient()->getMap('upgrades');
-        $parts      = [];
-        foreach ([
-        $character->getEquipment(Character::SLOT_AMULET),
-        $character->getEquipment(Character::SLOT_RING1),
-        $character->getEquipment(Character::SLOT_RING2),
-        $character->getEquipment(Character::SLOT_ACCESSORY1),
-        $character->getEquipment(Character::SLOT_ACCESSORY2),
-        $character->getEquipment(Character::SLOT_BACKPACK),
-        ] as $equipment) {
-            if (empty($equipment)) {
-                $parts[] = '0.0.0.0';
+        if ($mode == 'pvp') {
+            $mapItems = $this->getClient()->getMap('pvp_items');
+            $pvp      = $character->getPvpEquipment();
+            $amulet   = $pvp ? $pvp->getAmulet() : null;
+            $parts    = [];
+            if ($amulet && isset($mapItems[$amulet->getId()])) {
+                $parts[] = '0.0.0.' . $mapItems[$amulet->getId()];
             }
             else {
-                $upgrades = $equipment->getUpgrades();
-                $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
-                    . '.' . $this->getMappedStat($mode, $mapStats, $equipment);
+                $parts[] = '0.0.0.0';
             }
+            $parts[] = '0.0.0.0';
+            $parts[] = '0.0.0.0';
+            $parts[] = '0.0.0.0';
+            $parts[] = '0.0.0.0';
+            $parts[] = '0.0.0.0';
+            return implode(':', $parts);
         }
-        return implode(':', $parts);
+        else {
+            $mapStats   = $this->getClient()->getMap('items');
+            $mapUpgrade = $this->getClient()->getMap('upgrades');
+            $parts      = [];
+            foreach ([
+            $character->getEquipment(Character::SLOT_AMULET),
+            $character->getEquipment(Character::SLOT_RING1),
+            $character->getEquipment(Character::SLOT_RING2),
+            $character->getEquipment(Character::SLOT_ACCESSORY1),
+            $character->getEquipment(Character::SLOT_ACCESSORY2),
+            $character->getEquipment(Character::SLOT_BACKPACK),
+            ] as $equipment) {
+                if (empty($equipment)) {
+                    $parts[] = '0.0.0.0';
+                }
+                else {
+                    $upgrades = $equipment->getUpgrades();
+                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
+                        . '.' . $this->getMappedStat($mode, $mapStats, $equipment);
+                }
+            }
+            return implode(':', $parts);
+        }
     }
 
     /**
@@ -265,28 +314,67 @@ class LinkBuilder {
      * @return string
      */
     protected function getUpgradesWeapons(Character $character, $mode) {
-        $mapStats   = self::getClient()->getMap('items');
-        $mapUpgrade = self::getClient()->getMap('upgrades');
-        $parts      = [];
-        foreach ([
-        $character->getEquipment(Character::SLOT_WEAPON_A1),
-        $character->getEquipment(Character::SLOT_WEAPON_A2),
-        $character->getEquipment(Character::SLOT_WEAPON_B1),
-        $character->getEquipment(Character::SLOT_WEAPON_B2),
-        $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_A),
-        $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_B),
-        ] as $equipment) {
-            if (empty($equipment)) {
-                $parts[] = '0.0.0.0.0.0';
+        if ($mode == 'pvp') {
+            $mapUpgrade = $this->getClient()->getMap('upgrades');
+            $pvp        = $character->getPvpEquipment();
+            $sigils     = $pvp ? $pvp->getSigils() : [];
+            $sigil1     = isset($sigils[0]) ? $sigils[0] : null;
+            $sigil2     = isset($sigils[1]) ? $sigils[1] : null;
+            $sigil3     = isset($sigils[2]) ? $sigils[2] : null;
+            $sigil4     = isset($sigils[3]) ? $sigils[3] : null;
+            $weapons    = [];
+            $weaponA1   = $character->getEquipmentWeapon1('A');
+            $weaponB1   = $character->getEquipmentWeapon1('B');
+            if (\Arnapou\GW2Api\is_two_handed_weapon($weaponA1)) {
+                $weapons[] = [$sigil1, $sigil2];
+                $weapons[] = [null, null];
             }
             else {
-                $upgrades = $equipment->getUpgrades();
-                $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
-                    . '.' . $this->getMappedStat($mode, $mapStats, $equipment)
-                    . '.' . $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[1]) ? $upgrades[1] : null);
+                $weapons[] = [$sigil1, null];
+                $weapons[] = [$sigil2, null];
             }
+            if (\Arnapou\GW2Api\is_two_handed_weapon($weaponB1)) {
+                $weapons[] = [$sigil3, $sigil4];
+                $weapons[] = [null, null];
+            }
+            else {
+                $weapons[] = [$sigil3, null];
+                $weapons[] = [$sigil4, null];
+            }
+            $parts = [];
+            foreach ($weapons as $weapon) {
+                $parts[] = $this->getMappedUpgrade($mode, $mapUpgrade, $weapon[0])
+                    . '.0.0'
+                    . '.' . $this->getMappedUpgrade($mode, $mapUpgrade, $weapon[1]);
+            }
+            $parts[] = '0.0.0.0.0.0';
+            $parts[] = '0.0.0.0.0.0';
+            return implode(':', $parts);
         }
-        return implode(':', $parts);
+        else {
+            $mapStats   = $this->getClient()->getMap('items');
+            $mapUpgrade = $this->getClient()->getMap('upgrades');
+            $parts      = [];
+            foreach ([
+            $character->getEquipmentWeapon1('A'),
+            $character->getEquipmentWeapon2('A'),
+            $character->getEquipmentWeapon1('B'),
+            $character->getEquipmentWeapon2('B'),
+            $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_A),
+            $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_B),
+            ] as $equipment) {
+                if (empty($equipment)) {
+                    $parts[] = '0.0.0.0.0.0';
+                }
+                else {
+                    $upgrades = $equipment->getUpgrades();
+                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
+                        . '.' . $this->getMappedStat($mode, $mapStats, $equipment)
+                        . '.' . $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[1]) ? $upgrades[1] : null);
+                }
+            }
+            return implode(':', $parts);
+        }
     }
 
     /**
@@ -296,22 +384,26 @@ class LinkBuilder {
      * @return string
      */
     protected function getBuffs(Character $character, $mode) {
-        $map = self::getClient()->getMap('buffs');
+        $map = $this->getClient()->getMap('buffs');
 
         $parts     = ['0', '0'];
         $utilities = [];
         $foods     = [];
         foreach ($character->getBags() as /* @var $bag Bag */ $bag) {
-            foreach ($bag->getInventory() as /* @var $item Item */ $item) {
+            foreach ($bag->getInventorySlots() as /* @var $item Item */ $item) {
                 if (empty($item)) {
                     continue;
                 }
                 if ($item->getType() === Item::TYPE_CONSUMABLE && $item->getLevel()) {
                     if ($item->getSubType() === Item::SUBTYPE_CONSUMABLE_FOOD) {
-                        $foods[floor($item->getLevel() / 10)][] = $item->getId();
+                        if (isset($map[$mode . '.' . $item->getId()])) {
+                            $foods[floor($item->getLevel() / 10)][] = $item->getId();
+                        }
                     }
                     elseif ($item->getSubType() === Item::SUBTYPE_CONSUMABLE_UTILITY) {
-                        $utilities[floor($item->getLevel() / 10)][] = $item->getId();
+                        if (isset($map[$mode . '.' . $item->getId()])) {
+                            $utilities[floor($item->getLevel() / 10)][] = $item->getId();
+                        }
                     }
                 }
             }
@@ -322,11 +414,8 @@ class LinkBuilder {
         foreach ([$foods, $utilities] as $i => $array) {
             foreach ($array as $level => $ids) {
                 foreach ($ids as $id) {
-                    $key = $mode . '.' . $id;
-                    if (isset($map[$key])) {
-                        $parts[$i] = $map[$key];
-                        break;
-                    }
+                    $parts[$i] = $map[$mode . '.' . $id];
+                    break;
                 }
                 if ($parts[$i] != 0) {
                     break;
@@ -346,8 +435,9 @@ class LinkBuilder {
      */
     protected function getMappedInfusion($mode, $map, Item $item = null) {
         if ($item) {
-            $key = $mode
-                . '.' . strtolower($item->getRarity())
+            $rarity = $item->getRarity();
+            $key    = $mode
+                . '.' . strtolower($rarity == Item::RARITY_LEGENDARY ? Item::RARITY_ASCENDED : $rarity)
                 . '.' . $item->getId();
             if (isset($map[$key])) {
                 return substr($map[$key], 2); // remove profile flag
@@ -365,8 +455,9 @@ class LinkBuilder {
      */
     protected function getMappedUpgrade($mode, $map, Item $item = null) {
         if ($item) {
-            $key = $mode
-                . '.' . strtolower($item->getRarity())
+            $rarity = $item->getRarity();
+            $key    = $mode
+                . '.' . strtolower($rarity == Item::RARITY_LEGENDARY ? Item::RARITY_ASCENDED : $rarity)
                 . '.' . $item->getId();
             if (isset($map[$key])) {
                 return $map[$key];
@@ -384,13 +475,14 @@ class LinkBuilder {
      */
     protected function getMappedStat($mode, $map, InventorySlot $item = null) {
         if ($item) {
-            $attributes = $item->getAttributes();
-            if (!empty($attributes)) {
+            $rarity   = $item->getRarity();
+            $statname = $item->getStatName();
+            if (!empty($statname)) {
                 $key = $mode
-                    . '.' . strtolower($item->getRarity())
+                    . '.' . strtolower($rarity == Item::RARITY_LEGENDARY ? Item::RARITY_ASCENDED : $rarity)
                     . '.' . strtolower($item->getType())
                     . '.' . strtolower($item->getSubType())
-                    . '.' . strtolower($attributes['stats_name']);
+                    . '.' . strtolower($statname);
                 if (isset($map[$key])) {
                     return $map[$key];
                 }
@@ -408,14 +500,15 @@ class LinkBuilder {
         if (empty($build)) {
             return '';
         }
-        $mapSpecializations = self::getClient()->getMap('specializations');
-        $mapTraits          = self::getClient()->getMap('traits');
+        $mapSpecializations = $this->getClient()->getMap('specializations');
+        $mapTraits          = $this->getClient()->getMap('traits');
         $parts              = [];
-        foreach ($build->getSpecializations() as /* @var $spe Specialization */ $spe) {
+        foreach ($build->getSpecializations() as /* @var $spe SpecializationLine */ $spe) {
             if (isset($mapSpecializations[$spe->getId()])) {
-                $ids = [$mapSpecializations[$spe->getId()], 'false', 'false', 'false'];
+                $selected = $spe->getTraitsIds();
+                $ids      = [$mapSpecializations[$spe->getId()], 'false', 'false', 'false'];
                 foreach ($spe->getMajorTraits() as /* @var $trait SpecializationTrait */ $trait) {
-                    if ($trait->isSelected() && isset($mapTraits[$trait->getId()])) {
+                    if (in_array($trait->getId(), $selected) && isset($mapTraits[$trait->getId()])) {
                         $ids[$trait->getTier()] = $mapTraits[$trait->getId()];
                     }
                 }
@@ -427,6 +520,94 @@ class LinkBuilder {
 
     /**
      * 
+     * @param Build $build
+     * @return string
+     */
+    protected function getSkills(Build $build = null) {
+        if ($build) {
+            $mapSkills = $this->getClient()->getMap('skills');
+            if ($build->getProfession() == Character::PROFESSION_REVENANT) {
+                $parts = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]];
+                foreach ($build->getLegends() as $k => $legend) {
+                    if (isset($parts[$k])) {
+                        foreach ([6, 7, 8, 9, 0] as $i => $skillIndex) {
+                            $skill = $legend->getSkill($skillIndex);
+                            if ($skill && $skill->getId()) {
+                                if (isset($mapSkills[$skill->getId()])) {
+                                    $parts[$k][$i] = $mapSkills[$skill->getId()];
+                                }
+                            }
+                        }
+                        $skill = $legend->getSkillSwap();
+                        if ($skill && $skill->getId()) {
+                            if (isset($mapSkills[$skill->getId()])) {
+                                $parts[$k][5] = $mapSkills[$skill->getId()];
+                            }
+                        }
+                    }
+                }
+                return implode('.', $parts[0]) . ':' . implode('.', $parts[1]);
+            }
+            else {
+                $parts = [0, 0, 0, 0, 0];
+                foreach ([6, 7, 8, 9, 0] as $i => $skillIndex) {
+                    $skill = $build->getSkill($skillIndex);
+                    if ($skill && $skill->getId()) {
+                        if (isset($mapSkills[$skill->getId()])) {
+                            $parts[$i] = $mapSkills[$skill->getId()];
+                        }
+                    }
+                }
+                return implode('.', $parts);
+            }
+        }
+        else {
+            return '0.0.0.0.0';
+        }
+    }
+
+    /**
+     * 
+     * @param Build $build
+     * @return string
+     */
+    protected function getAquaticSkills(Build $build = null) {
+        if ($build) {
+            // 
+            // 
+            // aquatic skills: not implemented for the moment because not in gw2 api
+            // 
+            //
+            return '0.0.0.0.0';
+        }
+        else {
+            return '0.0.0.0.0';
+        }
+    }
+
+    /**
+     * 
+     * @param Character $character
+     * @param string $mode
+     * @return string
+     */
+    protected function getPets(Character $character, $mode) {
+        $profession = $character->getData('profession');
+        if ($profession === Character::PROFESSION_RANGER) {
+            // 
+            // 
+            // pets: not implemented for the moment because not in gw2 api
+            // 
+            //
+            return '0.0.0.0';
+        }
+        else {
+            return '0.0.0.0';
+        }
+    }
+
+    /**
+     * 
      * @param Character $character
      * @param int $mode
      * @param boolean $nocache
@@ -434,9 +615,10 @@ class LinkBuilder {
      */
     public function getLink(Character $character, $mode, $nocache = false) {
         try {
-            $client   = $character->getClient();
-            $lang     = $client->getLang();
-            $cache    = $client->getClientV2()->getRequestManager()->getCache();
+            $env      = $character->getEnvironment();
+            $client   = $env->getClientVersion2();
+            $lang     = $env->getLang();
+            $cache    = $env->getCache();
             $cacheKey = 'gw2skills-link/' . $lang . '/' . $mode . '/' . $character->getName();
             if ($cache) {
                 $url = $cache->get($cacheKey);
@@ -444,27 +626,19 @@ class LinkBuilder {
                     return $url;
                 }
             }
-            if ($mode === 'pve') {
-                $build = $character->getBuildPve();
-            }
-            elseif ($mode === 'pvp') {
-                $build = $character->getBuildPvp();
-            }
-            elseif ($mode === 'wvw') {
-                $build = $character->getBuildWvw();
-            }
-            else {
+            if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
                 throw new Exception('Mode not supported');
             }
+            $build = $character->getBuild($mode);
 
             $data = [
                 'mode' => $this->modes[$mode],
                 'p'    => $this->getProfession($character),
                 'r'    => $this->getRace($character),
                 'w'    => $this->getWeapons($character),
-                's'    => '0.0.0.0.0', // skills: not implemented for the moment because not in gw2 api
-                'sa'   => '0.0.0.0.0', // aquatic skills: not implemented for the moment because not in gw2 api
-                'pet'  => '0.0.0.0', // pets: not implemented for the moment because not in gw2 api
+                's'    => $this->getSkills($build),
+                'sa'   => $this->getAquaticSkills($build),
+                'pet'  => $this->getPets($character, $mode),
                 't'    => $this->getTraits($build),
                 'up_w' => $this->getUpgradesWeapons($character, $mode),
                 'up_b' => $this->getUpgradesArmor($character, $mode),
@@ -493,9 +667,9 @@ class LinkBuilder {
                 if (isset($result['quicklink'], $result['baseurl'])) {
                     $url = preg_replace('!^(https?://).*(gw2skills\.net)!si', '$1' . $lang . '.$2', $result['baseurl']) . $result['quicklink'];
                     if ($cache) {
-                        $cache->set($cacheKey, $url, 900); // 15 min
+                        $cache->set($cacheKey, $url, $this->cacheDuration); // 15 min
+                        return $url;
                     }
-                    return $url;
                 }
             }
         }
@@ -530,6 +704,24 @@ class LinkBuilder {
      */
     public function getLinkPve(Character $character) {
         return $this->getLink($character, 'pve');
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    function getCacheDuration() {
+        return $this->cacheDuration;
+    }
+
+    /**
+     * 
+     * @param integer $duration
+     * @return LinkBuilder
+     */
+    function setCacheDuration($duration) {
+        $this->cacheDuration = $duration;
+        return $this;
     }
 
 }

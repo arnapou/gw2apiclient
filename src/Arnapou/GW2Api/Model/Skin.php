@@ -118,7 +118,7 @@ class Skin extends AbstractStoredObject {
         $this->unlocked = $bool ? true : false;
     }
 
-    protected function getApiName() {
+    public function getApiName() {
         return 'skins';
     }
 

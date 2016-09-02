@@ -56,6 +56,12 @@ class Pvp extends AbstractObject {
      */
     protected $ladders = [];
 
+    /**
+     *
+     * @var array
+     */
+    protected $standings;
+
     protected function setData($data) {
         parent::setData($data);
 
@@ -68,6 +74,31 @@ class Pvp extends AbstractObject {
                 $this->ladders[$key] = new PvpStats($this->getEnvironment(), $ladder);
             }
         }
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getStandings() {
+        if ($this->standings === null) {
+            $this->standings = [];
+            $env             = $this->getEnvironment();
+            $data            = $env->getClientVersion2()->apiPvpStandings();
+            if (is_array($data)) {
+                foreach ($data as $item) {
+                    $this->standings[] = new PvpStanding($env, $item);
+                }
+            }
+            usort($this->standings, function(PvpStanding $a, PvpStanding $b) {
+                $sa = $a->getSeason();
+                $sb = $b->getSeason();
+                $d1 = (string) ($sa ? $sa->getDateStart() : '');
+                $d2 = (string) ($sb ? $sb->getDateStart() : '');
+                return -strcmp($d1, $d2);
+            });
+        }
+        return $this->standings;
     }
 
     /**

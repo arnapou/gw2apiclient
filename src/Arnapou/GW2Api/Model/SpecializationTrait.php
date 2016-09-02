@@ -63,7 +63,7 @@ class SpecializationTrait extends AbstractStoredObject {
         return $this->getName();
     }
 
-    protected function getApiName() {
+    public function getApiName() {
         return 'traits';
     }
 

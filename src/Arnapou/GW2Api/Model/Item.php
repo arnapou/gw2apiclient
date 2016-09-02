@@ -200,7 +200,9 @@ class Item extends AbstractStoredObject {
     public function __construct(Environment $environment, $id) {
         parent::__construct($environment, $id);
 
-        $this->getEnvironment()->getStorage()->prepare(Environment::LANG_EN, 'prices', (string) $this->objectId);
+        if ($this->objectId) {
+            $this->getEnvironment()->getStorage()->prepare(Environment::LANG_EN, 'prices', (string) $this->objectId);
+        }
     }
 
     /**
@@ -550,7 +552,7 @@ class Item extends AbstractStoredObject {
         return $this->getData(['details', 'stat_choices'], []);
     }
 
-    protected function getApiName() {
+    public function getApiName() {
         return 'items';
     }
 

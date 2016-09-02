@@ -58,7 +58,7 @@ class AchievementCategory extends AbstractStoredObject {
         return $this->getName();
     }
 
-    protected function getApiName() {
+    public function getApiName() {
         return 'achievementscategories';
     }
 

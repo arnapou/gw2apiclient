@@ -115,6 +115,12 @@ class Character extends AbstractObject {
 
     /**
      *
+     * @var PvpEquipment
+     */
+    protected $pvpEquipment;
+
+    /**
+     *
      * @var Guild
      */
     protected $guild = null;
@@ -173,6 +179,9 @@ class Character extends AbstractObject {
                 }
             }
         }
+        if (isset($data['equipment_pvp'])) {
+            $this->pvpEquipment = new PvpEquipment($this->getEnvironment(), $data['equipment_pvp']);
+        }
         foreach ([Build::TYPE_PVE, Build::TYPE_PVP, Build::TYPE_WVW] as $type) {
             $this->builds[$type] = new Build($this->getEnvironment(), [
                 'type'            => $type,
@@ -184,13 +193,21 @@ class Character extends AbstractObject {
 
     /**
      * 
+     * @return PvpEquipment
+     */
+    public function getPvpEquipment() {
+        return $this->pvpEquipment;
+    }
+
+    /**
+     * 
      * @return string
      */
     public function getGw2SkillsLink($mode) {
         if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
             throw new \Exception('Mode should be either "pve", "pvp" or "wvw"');
         }
-        $builder = new LinkBuilder();
+        $builder = new LinkBuilder($this->getEnvironment());
         return $builder->getLink($this, $mode);
     }
 
@@ -436,33 +453,27 @@ class Character extends AbstractObject {
 
     /**
      * 
-     * @param InventorySlot $item
-     * @return boolean
-     */
-    protected function isTwoHandedWeapon($item) {
-        if ($item) {
-            return in_array($item->getSubType(), [
-                    Item::SUBTYPE_WEAPON_GREATSWORD, Item::SUBTYPE_WEAPON_HAMMER,
-                    Item::SUBTYPE_WEAPON_LONGBOW, Item::SUBTYPE_WEAPON_RIFLE,
-                    Item::SUBTYPE_WEAPON_SHORTBOW, Item::SUBTYPE_WEAPON_STAFF
-                ]) ? true : false;
-        }
-        return false;
-    }
-
-    /**
-     * 
      * @return InventorySlot
      */
-    public function getEquipmentWeapon1() {
-        $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_A1);
-        $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_A2);
-        $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_B1);
+    public function getEquipmentWeapon1($set = 'A') {
+        if (!in_array($set, ['A', 'B'])) {
+            throw new Exception('Set should be either "A" or "B"');
+        }
+        if ($set == 'A') {
+            $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_A1);
+            $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_A2);
+            $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_B1);
+        }
+        else {
+            $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_B1);
+            $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_B2);
+            $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_A1);
+        }
         if ($weaponA1) {
             return $weaponA1;
         }
         elseif ($weaponA2) {
-            if ($weaponB1 && !$this->isTwoHandedWeapon($weaponB1)) {
+            if ($weaponB1 && !\Arnapou\GW2Api\is_two_handed_weapon($weaponB1)) {
                 return $weaponB1;
             }
         }
@@ -476,16 +487,27 @@ class Character extends AbstractObject {
      * 
      * @return InventorySlot
      */
-    public function getEquipmentWeapon2() {
-        $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_A1);
-        $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_A2);
-        $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_B1);
-        $weaponB2 = $this->getEquipment(self::SLOT_WEAPON_B2);
+    public function getEquipmentWeapon2($set = 'A') {
+        if (!in_array($set, ['A', 'B'])) {
+            throw new Exception('Set should be either "A" or "B"');
+        }
+        if ($set == 'A') {
+            $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_A1);
+            $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_A2);
+            $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_B1);
+            $weaponB2 = $this->getEquipment(self::SLOT_WEAPON_B2);
+        }
+        else {
+            $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_B1);
+            $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_B2);
+            $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_A1);
+            $weaponB2 = $this->getEquipment(self::SLOT_WEAPON_A2);
+        }
         if ($weaponA2) {
             return $weaponA2;
         }
-        elseif (!$this->isTwoHandedWeapon($weaponA1)) {
-            if ($weaponB2 && !$this->isTwoHandedWeapon($weaponB1)) {
+        elseif (!\Arnapou\GW2Api\is_two_handed_weapon($weaponA1)) {
+            if ($weaponB2 && !\Arnapou\GW2Api\is_two_handed_weapon($weaponB1)) {
                 return $weaponB2;
             }
         }

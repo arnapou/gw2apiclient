@@ -12,6 +12,23 @@
 namespace Arnapou\GW2Api;
 
 use Arnapou\GW2Api\Exception\JsonException;
+use Arnapou\GW2Api\Model\Item;
+
+/**
+ * 
+ * @param Item $item
+ * @return boolean
+ */
+function is_two_handed_weapon($item) {
+    if ($item) {
+        return in_array($item->getSubType(), [
+                Item::SUBTYPE_WEAPON_GREATSWORD, Item::SUBTYPE_WEAPON_HAMMER,
+                Item::SUBTYPE_WEAPON_LONGBOW, Item::SUBTYPE_WEAPON_RIFLE,
+                Item::SUBTYPE_WEAPON_SHORTBOW, Item::SUBTYPE_WEAPON_STAFF
+            ]) ? true : false;
+    }
+    return false;
+}
 
 /**
  * 

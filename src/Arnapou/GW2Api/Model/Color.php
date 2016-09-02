@@ -131,7 +131,7 @@ class Color extends AbstractStoredObject {
         return '#000000';
     }
 
-    protected function getApiName() {
+    public function getApiName() {
         return 'colors';
     }
 

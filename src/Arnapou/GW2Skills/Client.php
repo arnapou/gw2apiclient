@@ -11,12 +11,13 @@
 
 namespace Arnapou\GW2Skills;
 
-use Arnapou\GW2Api\Cache\CacheInterface;
+use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Core\Curl;
 use Arnapou\GW2Api\Core\CurlResponse;
 use Arnapou\GW2Api\Exception\RequestException;
 use Arnapou\GW2Api\Model\Item;
 use Arnapou\GW2Api\Model\Character;
+use Arnapou\GW2Api\Storage\MongoStorage;
 
 /* * ********************************************************************** *
  *                                                                          *
@@ -91,6 +92,12 @@ class Client {
 
     /**
      *
+     * @var Environment
+     */
+    protected $environment;
+
+    /**
+     *
      * @var array
      */
     protected $statsClassMap = [
@@ -132,9 +139,11 @@ class Client {
 
     /**
      * 
+     * @param Environment $env
      */
-    public function __construct() {
-        $this->files = [
+    public function __construct(Environment $env) {
+        $this->environment = $env;
+        $this->files       = [
             'revision' => __DIR__ . '/config/revision.php',
             'alldata'  => __DIR__ . '/config/alldata.php',
             'gw2names' => __DIR__ . '/config/gw2names.php',
@@ -295,9 +304,39 @@ class Client {
         }
         ksort($mapped['buffs']);
 
+        // skills
+        foreach ($alldata['skills'] as $item) {
+            $name       = strtolower($item['name']);
+            $profession = strtolower($item['profession']);
+            $found      = false;
+            if (isset($gw2names['skills'][$profession], $gw2names['skills'][$profession][$name])) {
+                foreach ($gw2names['skills'][$profession][$name] as $gw2id) {
+                    $mapped['skills'][$gw2id] = $item['id'];
+                }
+                $found = true;
+            }
+            elseif (empty($profession)) {
+                $professions = array_keys($mapped['professions']);
+                foreach ($professions as $profession) {
+                    if (isset($gw2names['skills'][$profession], $gw2names['skills'][$profession][$name])) {
+                        foreach ($gw2names['skills'][$profession][$name] as $gw2id) {
+                            $mapped['skills'][$gw2id] = $item['id'];
+                        }
+                        $found = true;
+                        break;
+                    }
+                }
+            }
+            if (!$found) {
+                $unmapped['skills'][] = $item;
+            }
+        }
+        ksort($mapped['skills']);
+
         // upgrades
         foreach ($alldata['upgrades'] as $item) {
             $name       = strtolower($item['name']);
+            $pvpname    = isset($item['pvp_name']) ? str_replace(' (pvp)', '', strtolower($item['pvp_name'])) : '';
             $name       = str_replace('of flame legion', 'of the flame legion', $name);
             $rarity     = strtolower($item['rarity']);
             $rarity     = str_replace('common', 'fine', $rarity);
@@ -308,6 +347,12 @@ class Client {
                 if ($pvx & $int) {
                     if (isset($gw2names['upgrades'][$rarity][$name])) {
                         $gw2id                    = $gw2names['upgrades'][$rarity][$name];
+                        $key                      = $mode . '.' . $rarity . '.' . $gw2id;
+                        $found                    = true;
+                        $mapped['upgrades'][$key] = ($is_profile ? 1 : 0) . '.' . $item['id'];
+                    }
+                    if ($mode == 'pvp' && $pvpname && isset($gw2names['upgrades'][$rarity][$pvpname])) {
+                        $gw2id                    = $gw2names['upgrades'][$rarity][$pvpname];
                         $key                      = $mode . '.' . $rarity . '.' . $gw2id;
                         $found                    = true;
                         $mapped['upgrades'][$key] = ($is_profile ? 1 : 0) . '.' . $item['id'];
@@ -411,6 +456,14 @@ class Client {
                             }
                         }
                     }
+                    if ($mode == 'pvp' && $type == 'amulet' && $rarity == 'exotic') {
+                        $name = str_replace("'s", '', $name);
+                        if (isset($gw2names['pvp_items'][$name])) {
+                            $gw2id                       = $gw2names['pvp_items'][$name];
+                            $mapped['pvp_items'][$gw2id] = $item['id'];
+                            $found                       = true;
+                        }
+                    }
                 }
             }
             if (!$found) {
@@ -425,22 +478,21 @@ class Client {
 
     /**
      * 
-     * Note that this method can only work if you have GW2Tools project loaded
      * 
      */
     public function buildGw2Names() {
-        if (class_exists('Arnapou\GW2Tools\MongoCache')) {
-            $cache = \Arnapou\GW2Tools\MongoCache::getInstance(false);
+        $storage = $this->environment->getStorage();
+        if ($storage instanceof MongoStorage) {
 
             // upgrades
             $upgrades   = [];
-            $collection = $cache->getMongoCollection('en_items');
-            foreach ($collection->find(['value.type' => 'UpgradeComponent']) as $row) {
-                if (isset($row['value']['name'])) {
-                    $group                   = strtolower($row['value']['rarity']);
-                    $name                    = strtolower($row['value']['name']);
+            $collection = $storage->getCollection('en', 'items');
+            foreach ($collection->find(['data.type' => 'UpgradeComponent']) as $row) {
+                if (isset($row['data']['name'])) {
+                    $group                   = strtolower($row['data']['rarity']);
+                    $name                    = strtolower($row['data']['name']);
                     $name                    = str_replace('of rata sum', 'of the rata sum', $name);
-                    $upgrades[$group][$name] = $row['value']['id'];
+                    $upgrades[$group][$name] = $row['data']['id'];
                 }
             }
             ksort($upgrades);
@@ -450,12 +502,12 @@ class Client {
 
             // specializations
             $specializations = [];
-            $collection      = $cache->getMongoCollection('en_specializations');
+            $collection      = $storage->getCollection('en', 'specializations');
             foreach ($collection->find() as $row) {
-                if (isset($row['value']['name'])) {
-                    $group                          = strtolower($row['value']['profession']);
-                    $name                           = strtolower($row['value']['name']);
-                    $specializations[$group][$name] = $row['value']['id'];
+                if (isset($row['data']['name'])) {
+                    $group                          = strtolower($row['data']['profession']);
+                    $name                           = strtolower($row['data']['name']);
+                    $specializations[$group][$name] = $row['data']['id'];
                 }
             }
             ksort($specializations);
@@ -465,27 +517,59 @@ class Client {
 
             // buffs
             $buffs      = [];
-            $collection = $cache->getMongoCollection('en_items');
-            foreach ($collection->find(['value.type' => 'Consumable', 'value.details.type' => ['$in' => ['Utility', 'Food']]]) as $row) {
-                if (isset($row['value']['name'])) {
-                    $name         = strtolower($row['value']['name']);
-                    $buffs[$name] = $row['value']['id'];
+            $collection = $storage->getCollection('en', 'items');
+            foreach ($collection->find(['data.type' => 'Consumable', 'data.details.type' => ['$in' => ['Utility', 'Food']]]) as $row) {
+                if (isset($row['data']['name'])) {
+                    $name         = strtolower($row['data']['name']);
+                    $buffs[$name] = $row['data']['id'];
                 }
             }
             ksort($buffs);
 
+            // pvp items
+            $pvp_items  = [];
+            $collection = $storage->getCollection('en', 'pvpamulets');
+            foreach ($collection->find() as $row) {
+                if (isset($row['data']['name'])) {
+                    $name             = strtolower($row['data']['name']);
+                    $name             = str_replace("'s", '', $name);
+                    $pvp_items[$name] = $row['data']['id'];
+                }
+            }
+            ksort($pvp_items);
+
             // traits
             $traits     = [];
-            $collection = $cache->getMongoCollection('en_traits');
+            $collection = $storage->getCollection('en', 'traits');
             foreach ($collection->find() as $row) {
-                if (isset($row['value']['name'])) {
-                    $group                 = strtolower($row['value']['specialization']);
-                    $name                  = strtolower($row['value']['name']);
-                    $traits[$group][$name] = $row['value']['id'];
+                if (isset($row['data']['name'])) {
+                    $group                 = strtolower($row['data']['specialization']);
+                    $name                  = strtolower($row['data']['name']);
+                    $traits[$group][$name] = $row['data']['id'];
                 }
             }
             ksort($traits);
             foreach ($traits as &$submap) {
+                ksort($submap);
+            }
+
+            // skills
+            $skills     = [];
+            $collection = $storage->getCollection('en', 'skills');
+            foreach ($collection->find() as $row) {
+                if (isset($row['data']['name'])) {
+                    $professions = $row['data']['professions'];
+                    $name        = strtolower($row['data']['name']);
+                    if (empty($professions) || !is_array($professions)) {
+                        $professions = [''];
+                    }
+                    foreach ($professions as $profession) {
+                        $skills[strtolower($profession)][$name][] = $row['data']['id'];
+                    }
+                }
+            }
+            ksort($skills);
+            foreach ($skills as &$submap) {
                 ksort($submap);
             }
 
@@ -495,6 +579,8 @@ class Client {
                 'specializations' => $specializations,
                 'traits'          => $traits,
                 'buffs'           => $buffs,
+                'skills'          => $skills,
+                'pvp_items'       => $pvp_items,
             ]);
             return true;
         }

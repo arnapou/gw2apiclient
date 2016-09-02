@@ -26,7 +26,7 @@ class File extends AbstractStoredObject {
         return $this->getIcon();
     }
 
-    protected function getApiName() {
+    public function getApiName() {
         return 'files';
     }
 
