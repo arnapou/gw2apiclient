@@ -24,6 +24,17 @@
       'number' => 9,
     ),
   ),
+  'pets' => 
+  array (
+    0 => 
+    array (
+      'id' => 49,
+      'name' => 'Murrelow',
+      'family' => 'Ursine',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+  ),
   'buffs' => 
   array (
     0 => 

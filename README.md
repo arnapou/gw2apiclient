@@ -8,139 +8,48 @@ It is currently used by http://gw2tool.net/
 The classes I wrote are very robust : retries when the api is not well responding, it manages long list of ids while manking several request and returning to you the whole response, and so on.
 
 
-### Simple and fast use (no cache: bad idea)
+### Init objects
 
-    use Arnapou\GW2Api\Core\AbstractClient;
-    use Arnapou\GW2Api\SimpleClient;
+    // init Environment
+    $env = new Arnapou\GW2Api\Environment();
     
-    // init client
-    $client = SimpleClient::create(AbstractClient::LANG_EN);
+    // init cache (here it is a Mongo cache, but it can be a file cache or whatever you want)
+    $mongo   = new MongoClient();
+    $mongoDB = $mongo->selectDB("my_db");
+    $cache   = new Arnapou\GW2Api\Cache\MongoCache($mongoDB);
+    $env->setCache($cache);
     
-    // get all world ids
-    $worldIds = $client->v2_worlds();
-    print_r($worldIds);
+    // init storage (optional, but recommended, here, we used the same mongo database as before)
+    $storage = new Arnapou\GW2Api\Storage\MongoStorage($mongoDB);
+    $env->setStorage($storage);
     
-    // get specific worlds details
-    $worlds = $client->v2_worlds([1001, 2003]);
-    print_r($world);
-    
-    // get item detail
-    $item = $client->v2_items([30689]);
-    print_r($item);
-
-### More customized with cache and retention
-
-    use Arnapou\GW2Api\Cache\FileCache;
-    use Arnapou\GW2Api\Core\AbstractClient;
-    use Arnapou\GW2Api\SimpleClient;
-    
-    // use a file cache
-    $cache = new FileCache($some_path_to_be_defined);
-    
-    // init client
-    $client = SimpleClient::create(AbstractClient::LANG_EN, $cache);
-    
-    // get all world ids
-    $worldIds = $client->getClientV2()
-        ->apiWorlds()
-        ->execute($cacheRetention)
-        ->getAllData();
-    print_r($worldIds);
-    
-    // get specific worlds details
-    $worlds = $client->getClientV2()
-        ->apiWorlds([1001, 2003])
-        ->execute($cacheRetention)
-        ->getAllData();
-    print_r($world);
-    
-    // get item detail
-    $item = $client->getClientV2()
-        ->apiItems([30689])
-        ->execute($cacheRetention)
-        ->getAllData();
-    print_r($item);
-
-### Use of access token for authentified Api requests
-
-    use Arnapou\GW2Api\Cache\MongoCache;
-    use Arnapou\GW2Api\Core\AbstractClient;
-    use Arnapou\GW2Api\SimpleClient;
-    
-    // use a mongo cache
-    $cache = new MongoCache($mongoCollection);
-    
-    // init client
-    $client = SimpleClient::create(AbstractClient::LANG_DE, $cache);
+    // set lang (en, fr, de, es)
+    $env->setLang('en');
     
     // set access token
-    $client->setAccessToken($accessToken);
+    $env->setAccessToken('A7B98574-1757-8048-B640-55C2D3F46727BB6E108E-E011-4501-B0BB-B2731E90785D');
     
-    // get the account wallet details
-    $wallet = $client->v2_account_wallet();
-    print_r($wallet);
 
-### Even deeper in the client api to control the requester
+### Browse account through objects (use storage if set)
 
-    use Arnapou\GW2Api\Cache\MemcachedCache;
-    use Arnapou\GW2Api\Core\AbstractClient;
-    use Arnapou\GW2Api\Core\RequestManager;
-    use Arnapou\GW2Api\Core\ClientV1;
+    $account = new Arnapou\GW2Api\Model\Account($env);
     
-    // use a memcached cache
-    $cache = new MemcachedCache();
+    $account->getWorld()->getName();
     
-    // init request manager
-    $requestManager = new RequestManager();
-    $requestManager->setCache($cache);
-    $requestManager->setCurlRequestTimeout(10);
-    $requestManager->setCurlUserAgent('My user Agent');
-    $requestManager->setDefautCacheRetention(900); // 15 min
-    
-    // init client v1
-    $client = new ClientV1($requestManager);
-    $client->setLang(AbstractClient::LANG_ES);
-    
-    // get one guild details
-    $guild = $client->apiGuildDetails($guildId)
-        ->execute()
-        ->getAllData();
-    print_r($guild);
+    $account->getCharacter('My Character Name')->getEquipment('Helm')->getName();
 
-### And the magic come here with simple model classes
 
-    use Arnapou\GW2Api\Cache\MongoCache;
-    use Arnapou\GW2Api\Core\AbstractClient;
-    use Arnapou\GW2Api\SimpleClient;
-    use Arnapou\GW2Api\Model\Account;
+### Use api to retrieve raw api data (ignore storage, only cache is used)
+
+    $env->getClientVersion1()->apiColors();
     
-    // use a mongo cache
-    $cache = new MongoCache($mongoCollection);
+    $env->getClientVersion2()->apiItems([21141,65230]);
+
+### Fully custom use 
+
+    // get api raw data
+    $data = $env->getClientVersion2()->apiPets([28]);
     
-    // init client
-    $client = SimpleClient::create(AbstractClient::LANG_DE, $cache);
-    
-    // init account object
-    $account = new Account($client, $accessToken);
-    
-    // get character names
-    $account->getCharacterNames();
-    
-    // get one character
-    $char = $account->getCharacter('My Character');
-    
-    // get info on the character
-    $char->getAge();
-    $char->getCrafting();
-    $char->getGuild()->getFullname();
-    ...
-    
-    // get char helm
-    $helm = $char->getEquipment('Helm');
-    
-    // get info on the helm
-    $helm->getName();
-    $helm->getAttributes();
-    $helm->getRarity();
-    $helm->getAgonyResistance();
-    ...
+    // instanciate object with data and use it as you wish
+    $pet = new Arnapou\GW2Api\Model\Pet($env, $data[0]);
+    $pet->getName();

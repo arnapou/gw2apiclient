@@ -21,7 +21,8 @@ namespace Arnapou\GW2Api\Model;
  */
 class Mini extends AbstractStoredObject {
 
-    protected $unlocked = false;
+    use UnlockTrait;
+
     protected $item;
 
     protected function setData($data) {
@@ -38,22 +39,6 @@ class Mini extends AbstractStoredObject {
      */
     public function getItem() {
         return $this->item;
-    }
-
-    /**
-     * 
-     * @return boolean
-     */
-    public function isUnlocked() {
-        return $this->unlocked;
-    }
-
-    /**
-     * 
-     * @param boolean $bool
-     */
-    public function setUnlocked($bool) {
-        $this->unlocked = $bool ? true : false;
     }
 
     public function getApiName() {

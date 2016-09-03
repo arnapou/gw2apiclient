@@ -120,6 +120,12 @@ class Account extends AbstractObject {
 
     /**
      *
+     * @var WvwMatch
+     */
+    private $wvwMatch;
+
+    /**
+     *
      * @var array
      */
     private $bankVaults;
@@ -129,6 +135,12 @@ class Account extends AbstractObject {
      * @var array
      */
     private $achievementsGroups = [];
+
+    /**
+     *
+     * @var array
+     */
+    private $storySeasons = [];
 
     /**
      *
@@ -165,6 +177,18 @@ class Account extends AbstractObject {
      * @var array
      */
     protected $minis;
+
+    /**
+     *
+     * @var array
+     */
+    protected $titles;
+
+    /**
+     *
+     * @var array
+     */
+    protected $finishers;
 
     /**
      *
@@ -221,6 +245,44 @@ class Account extends AbstractObject {
             $this->tradingPost = new TradingPost($this->getEnvironment(), []);
         }
         return $this->tradingPost;
+    }
+
+    /**
+     * 
+     * @return Finishers
+     */
+    public function getFinishers() {
+        if (empty($this->finishers)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env             = $this->getEnvironment();
+            $this->finishers = new Finishers($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountFinishers(),
+            ]);
+        }
+        return $this->finishers;
+    }
+
+    /**
+     * 
+     * @return Titles
+     */
+    public function getTitles() {
+        if (empty($this->titles)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env          = $this->getEnvironment();
+            $this->titles = new Titles($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountTitles(),
+            ]);
+        }
+        return $this->titles;
     }
 
     /**
@@ -645,6 +707,51 @@ class Account extends AbstractObject {
             });
         }
         return $this->achievementsGroups;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getStorySeasons() {
+        if (empty($this->storySeasons)) {
+            $env = $this->getEnvironment();
+            foreach ($env->getClientVersion2()->apiStoriesSeasons() as $id) {
+                $this->storySeasons[] = new StorySeason($env, $id);
+            }
+            usort($this->storySeasons, function(StorySeason $a, StorySeason $b) {
+                $ia = $a->getOrder();
+                $ib = $b->getOrder();
+                if ($ia == $ib) {
+                    return 0;
+                }
+                return $ia < $ib ? -1 : 1;
+            });
+        }
+        return $this->storySeasons;
+    }
+
+    public function getWvwMatch() {
+        if ($this->wvwMatch === null) {
+            $env     = $this->getEnvironment();
+            $ids     = $env->getClientVersion2()->apiWvwMatches();
+            $matches = [];
+            foreach ($ids as $id) {
+                $matches[] = new WvwMatch($env, $id);
+            }
+            $worldId = $this->getWorldId();
+            foreach ($matches as $match) {
+                foreach ($match->getAllWorlds() as $color => $worlds) {
+                    foreach ($worlds as $world) {
+                        if ($world->getId() == $worldId) {
+                            $this->wvwMatch = $match;
+                            return $match;
+                        }
+                    }
+                }
+            }
+        }
+        return $this->wvwMatch;
     }
 
 }

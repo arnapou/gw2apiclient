@@ -22,6 +22,8 @@ namespace Arnapou\GW2Api\Model;
  */
 class Skin extends AbstractStoredObject {
 
+    use UnlockTrait;
+
     // TYPES
     const TYPE_ARMOR                   = 'Armor';
     const TYPE_BACK                    = 'Back';
@@ -41,16 +43,6 @@ class Skin extends AbstractStoredObject {
     const WEAPON_DAMAGE_TYPE_LIGHTNING = 'Lightning';
     const WEAPON_DAMAGE_TYPE_PHYSICAL  = 'Physical';
     const WEAPON_DAMAGE_TYPE_CHOKING   = 'Choking';
-
-    protected $unlocked = false;
-
-    /**
-     * 
-     * @return boolean
-     */
-    public function isUnlocked() {
-        return $this->unlocked;
-    }
 
     /**
      * 
@@ -108,14 +100,6 @@ class Skin extends AbstractStoredObject {
      */
     public function getWeaponDamageType() {
         return $this->getData(['details', 'damage_type']);
-    }
-
-    /**
-     * 
-     * @param boolean $bool
-     */
-    public function setUnlocked($bool) {
-        $this->unlocked = $bool ? true : false;
     }
 
     public function getApiName() {

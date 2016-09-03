@@ -65,18 +65,10 @@ abstract class AbstractStoredObject extends AbstractObject {
 
     /**
      * 
-     * @return integer
-     */
-    public function getApiTimeFresh() {
-        return 86000;
-    }
-
-    /**
-     * 
      * @return boolean
      */
     public function isEmpty() {
-        return $this->getData('_empty_') == 1;
+        return empty($this->objectId) || $this->getData('_empty_') == 1;
     }
 
     abstract public function getApiName();

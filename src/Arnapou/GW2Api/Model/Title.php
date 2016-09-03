@@ -12,9 +12,11 @@
 namespace Arnapou\GW2Api\Model;
 
 /**
- * @doc https://wiki.guildwars2.com/wiki/API:2/titles
+ * 
  */
 class Title extends AbstractStoredObject {
+
+    use UnlockTrait;
 
     protected $achievement = null;
 

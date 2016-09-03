@@ -37,6 +37,10 @@ class Build extends AbstractObject {
         'utilities' => [],
         'elite'     => null,
         'legends'   => [],
+        'pets'      => [
+            'terrestrial' => [],
+            'aquatic'     => [],
+        ],
     ];
 
     protected function setData($data) {
@@ -62,6 +66,13 @@ class Build extends AbstractObject {
             if (isset($data['skills']['legends']) && is_array($data['skills']['legends'])) {
                 foreach ($data['skills']['legends'] as $id) {
                     $this->skills['legends'][] = new Legend($this->getEnvironment(), $id);
+                }
+            }
+            foreach ($this->skills['pets'] as $type => $tmp) {
+                if (isset($data['skills']['pets'], $data['skills']['pets'][$type]) && is_array($data['skills']['pets'][$type])) {
+                    foreach ($data['skills']['pets'][$type] as $id) {
+                        $this->skills['pets'][$type][] = new Pet($this->getEnvironment(), $id);
+                    }
                 }
             }
         }
@@ -135,6 +146,30 @@ class Build extends AbstractObject {
      */
     public function getLegends() {
         return $this->skills['legends'];
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getPets() {
+        return $this->skills['pets'];
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getPetsTerrestrial() {
+        return $this->skills['pets']['terrestrial'];
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getPetsAquatic() {
+        return $this->skills['pets']['aquatic'];
     }
 
 }

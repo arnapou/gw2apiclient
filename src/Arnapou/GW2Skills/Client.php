@@ -280,6 +280,19 @@ class Client {
         }
         ksort($mapped['traits']);
 
+        // pets
+        foreach ($alldata['pets'] as $item) {
+            $name = strtolower($item['name']);
+            if (isset($gw2names['pets'][$name])) {
+                $gw2id                  = $gw2names['pets'][$name];
+                $mapped['pets'][$gw2id] = $item['id'];
+            }
+            else {
+                $unmapped['pets'][] = $item;
+            }
+        }
+        ksort($mapped['pets']);
+
         // buffs
         foreach ($alldata['buffs'] as $item) {
             $name  = strtolower($item['name']);
@@ -526,6 +539,18 @@ class Client {
             }
             ksort($buffs);
 
+            // pets
+            $pets       = [];
+            $collection = $storage->getCollection('en', 'pets');
+            foreach ($collection->find() as $row) {
+                if (isset($row['data']['name'])) {
+                    $name              = strtolower($row['data']['name']);
+                    $name              = str_replace("juvenile", '', $name);
+                    $pets[trim($name)] = $row['data']['id'];
+                }
+            }
+            ksort($pets);
+
             // pvp items
             $pvp_items  = [];
             $collection = $storage->getCollection('en', 'pvpamulets');
@@ -581,6 +606,7 @@ class Client {
                 'buffs'           => $buffs,
                 'skills'          => $skills,
                 'pvp_items'       => $pvp_items,
+                'pets'            => $pets,
             ]);
             return true;
         }

@@ -24,7 +24,9 @@ namespace Arnapou\GW2Api\Model;
  */
 class Color extends AbstractStoredObject {
 
-    // CATGEORIES
+    use UnlockTrait;
+
+    // CATEGORIES
     const CATEGORY_HUE_GRAY         = 'Gray';
     const CATEGORY_HUE_BROWN        = 'Brown';
     const CATEGORY_HUE_RED          = 'Red';
@@ -40,24 +42,6 @@ class Color extends AbstractStoredObject {
     const CATEGORY_RARITY_COMMON    = 'Common';
     const CATEGORY_RARITY_UNCOMMON  = 'Uncommon';
     const CATEGORY_RARITY_RARE      = 'Rare';
-
-    protected $unlocked = false;
-
-    /**
-     * 
-     * @return boolean
-     */
-    public function isUnlocked() {
-        return $this->unlocked;
-    }
-
-    /**
-     * 
-     * @param boolean $bool
-     */
-    public function setUnlocked($bool) {
-        $this->unlocked = $bool ? true : false;
-    }
 
     /**
      * 

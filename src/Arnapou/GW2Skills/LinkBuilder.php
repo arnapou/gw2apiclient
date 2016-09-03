@@ -587,19 +587,24 @@ class LinkBuilder {
 
     /**
      * 
-     * @param Character $character
-     * @param string $mode
+     * @param Build $build
      * @return string
      */
-    protected function getPets(Character $character, $mode) {
-        $profession = $character->getData('profession');
-        if ($profession === Character::PROFESSION_RANGER) {
-            // 
-            // 
-            // pets: not implemented for the moment because not in gw2 api
-            // 
-            //
-            return '0.0.0.0';
+    protected function getPets(Build $build = null) {
+        if ($build->getProfession() === Character::PROFESSION_RANGER) {
+            $mapPets     = $this->getClient()->getMap('pets');
+            $terrestrial = $build->getPetsTerrestrial();
+            $aquatic     = $build->getPetsAquatic();
+            $parts       = [0, 0, 0, 0];
+            foreach ([0, 1] as $i) {
+                if (isset($terrestrial[$i]) && isset($mapPets[$terrestrial[$i]->getId()])) {
+                    $parts[$i] = $mapPets[$terrestrial[$i]->getId()];
+                }
+                if (isset($aquatic[$i]) && isset($mapPets[$aquatic[$i]->getId()])) {
+                    $parts[$i + 2] = $mapPets[$aquatic[$i]->getId()];
+                }
+            }
+            return implode('.', $parts);
         }
         else {
             return '0.0.0.0';
@@ -638,7 +643,7 @@ class LinkBuilder {
                 'w'    => $this->getWeapons($character),
                 's'    => $this->getSkills($build),
                 'sa'   => $this->getAquaticSkills($build),
-                'pet'  => $this->getPets($character, $mode),
+                'pet'  => $this->getPets($build),
                 't'    => $this->getTraits($build),
                 'up_w' => $this->getUpgradesWeapons($character, $mode),
                 'up_b' => $this->getUpgradesArmor($character, $mode),
