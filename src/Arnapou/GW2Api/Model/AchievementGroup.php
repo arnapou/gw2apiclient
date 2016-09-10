@@ -45,9 +45,9 @@ class AchievementGroup extends AbstractStoredObject {
 
         if (isset($data['categories']) && is_array($data['categories'])) {
             foreach ($data['categories'] as $id) {
-                $this->categories[] = new AchievementCategory($this->getEnvironment(), $id);
+                $this->categories[$id] = new AchievementCategory($this->getEnvironment(), $id);
             }
-            usort($this->categories, function($a, $b) {
+            uasort($this->categories, function($a, $b) {
                 $ia = $a->getOrder();
                 $ib = $b->getOrder();
                 if ($ia == $ib) {

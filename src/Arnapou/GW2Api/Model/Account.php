@@ -134,6 +134,12 @@ class Account extends AbstractObject {
      *
      * @var array
      */
+    private $accountAchievements = [];
+
+    /**
+     *
+     * @var array
+     */
     private $achievementsGroups = [];
 
     /**
@@ -153,6 +159,18 @@ class Account extends AbstractObject {
      * @var array
      */
     protected $collectibles;
+
+    /**
+     *
+     * @var array
+     */
+    protected $masteries = [];
+
+    /**
+     *
+     * @var integer
+     */
+    protected $otherAP;
 
     /**
      *
@@ -229,6 +247,30 @@ class Account extends AbstractObject {
             throw new MissingPermissionException(self::PERMISSION_ACCOUNT);
         }
         $this->dataAccount = $account;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getAccountAchievements() {
+        if (empty($this->accountAchievements)) {
+
+            if (!$this->hasPermission(self::PERMISSION_PROGRESSION)) {
+                throw new MissingPermissionException(self::PERMISSION_PROGRESSION);
+            }
+
+            $env          = $this->getEnvironment();
+            $achievements = [];
+            foreach ($env->getClientVersion2()->apiAccountAchievements() as $data) {
+                if (isset($data['id'])) {
+                    $achievements[$data['id']] = new AccountAchievement($env, $data);
+                }
+            }
+
+            $this->accountAchievements = $achievements;
+        }
+        return $this->accountAchievements;
     }
 
     /**
@@ -623,6 +665,37 @@ class Account extends AbstractObject {
 
     /**
      * 
+     * @return integer 
+     */
+    public function getOtherAP() {
+        if ($this->otherAP === null && $this->hasPermission(self::PERMISSION_PROGRESSION)) {
+            $this->otherAP = 0;
+            $ids           = [];
+            $aps           = $this->getAccountAchievements();
+            foreach ($this->getAchievementsGroups() as /* @var $group AchievementGroup */ $group) {
+                foreach ($group->getCategories() as /* @var $category AchievementCategory */ $category) {
+                    foreach ($category->getAchievements() as /* @var $item Achievement */ $item) {
+                        if (isset($aps[$item->getId()])) {
+                            $this->otherAP += $aps[$item->getId()]->getTotalAP();
+                            $ids[] = $item->getId();
+                        }
+                    }
+                }
+            }
+        }
+        return $this->otherAP;
+    }
+
+    /**
+     * 
+     * @return integer 
+     */
+    public function getTotalAP() {
+        return $this->getMonthlyAP() + $this->getDailyAP() + $this->getOtherAP();
+    }
+
+    /**
+     * 
      * @return integer 245
      */
     public function getWvwRank() {
@@ -695,9 +768,9 @@ class Account extends AbstractObject {
         if (empty($this->achievementsGroups)) {
             $env = $this->getEnvironment();
             foreach ($env->getClientVersion2()->apiAchievementsGroups() as $id) {
-                $this->achievementsGroups[] = new AchievementGroup($env, $id);
+                $this->achievementsGroups[$id] = new AchievementGroup($env, $id);
             }
-            usort($this->achievementsGroups, function($a, $b) {
+            uasort($this->achievementsGroups, function($a, $b) {
                 $ia = $a->getOrder();
                 $ib = $b->getOrder();
                 if ($ia == $ib) {
@@ -707,6 +780,28 @@ class Account extends AbstractObject {
             });
         }
         return $this->achievementsGroups;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getMasteries() {
+        if (empty($this->masteries)) {
+            $env = $this->getEnvironment();
+            foreach ($env->getClientVersion2()->apiMasteries() as $id) {
+                $this->masteries[$id] = new Mastery($env, $id);
+            }
+            uasort($this->masteries, function($a, $b) {
+                $ia = $a->getOrder();
+                $ib = $b->getOrder();
+                if ($ia == $ib) {
+                    return 0;
+                }
+                return $ia < $ib ? -1 : 1;
+            });
+        }
+        return $this->masteries;
     }
 
     /**

@@ -585,6 +585,18 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
+    public function apiMasteries($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('masteries', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function apiMinis($ids = null) {
         $parameters = [];
         if (!empty($ids)) {
