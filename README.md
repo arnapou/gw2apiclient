@@ -14,8 +14,8 @@ The classes I wrote are very robust : retries when the api is not well respondin
     $env = new Arnapou\GW2Api\Environment();
     
     // init cache (here it is a Mongo cache, but it can be a file cache or whatever you want)
-    $mongo   = new MongoClient();
-    $mongoDB = $mongo->selectDB("my_db");
+    $mongo   = MongoDB\Client('mongodb://localhost:27017', [], ['typeMap' => ['root' => 'array', 'document' => 'array']]);
+    $mongoDB = $mongo->selectDatabase("my_db");
     $cache   = new Arnapou\GW2Api\Cache\MongoCache($mongoDB);
     $env->setCache($cache);
     
@@ -53,3 +53,10 @@ The classes I wrote are very robust : retries when the api is not well respondin
     // instanciate object with data and use it as you wish
     $pet = new Arnapou\GW2Api\Model\Pet($env, $data[0]);
     $pet->getName();
+
+
+Requirements
+==================
+
+* PHP 7+
+* PECL extension mongodb version >=1.1.0 and <2.0.0

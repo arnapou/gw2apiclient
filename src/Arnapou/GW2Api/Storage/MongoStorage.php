@@ -12,12 +12,15 @@
 namespace Arnapou\GW2Api\Storage;
 
 use Arnapou\GW2Api\Exception\Exception;
+use MongoDB\BSON\UTCDateTime as MongoDate;
+use MongoDB\Database as MongoDatabase;
+use MongoDB\Collection as MongoCollection;
 
 class MongoStorage extends AbstractStorage {
 
     /**
      *
-     * @var \MongoDB
+     * @var MongoDatabase
      */
     protected $mongoDB;
 
@@ -46,21 +49,32 @@ class MongoStorage extends AbstractStorage {
 
     /**
      * 
-     * @param \MongoDB $mongoDB
+     * Example to instanciate a valid mongoDB variable : <pre>
+     *     $mongo   = new MongoDB\Client('mongodb://localhost:27017', [], ['typeMap' => ['root' => 'array', 'document' => 'array']]);
+     *     $mongoDB = $mongo->selectDatabase("test");
+     * </pre>
+     * 
+     * @param MongoDatabase $mongoDB
      */
-    public function __construct(\MongoDB $mongoDB, $collectionPrefix = 'storage_') {
+    public function __construct(MongoDatabase $mongoDB, $collectionPrefix = 'storage_') {
+        $error = \Arnapou\GW2Api\get_mongo_database_error($mongoDB);
+        if ($error) {
+            throw new WrongMongoDatabaseException($error);
+        }
         $this->mongoDB          = $mongoDB;
         $this->collectionPrefix = $collectionPrefix;
     }
 
     public function set($lang, $name, $id, $data) {
         $this->getCollection($lang, $name)
-            ->update([
+            ->updateOne([
                 'key' => (string) $id,
                 ], [
-                'key'         => (string) $id,
-                'data'        => $data,
-                'datecreated' => new \MongoDate(),
+                '$set' => [
+                    'key'         => (string) $id,
+                    'data'        => $data,
+                    'datecreated' => new MongoDate(floor(microtime(true) * 1000)),
+                ]
                 ], [
                 'upsert' => true
         ]);
@@ -89,17 +103,17 @@ class MongoStorage extends AbstractStorage {
      * 
      * @param string $lang
      * @param string $name
-     * @return \MongoCollection
+     * @return MongoCollection
      */
     public function getCollection($lang, $name) {
         $key = $this->getKey($lang, $name);
         if (!isset($this->collections[$key])) {
             $collectionName = $this->collectionPrefix . $key;
             $collection     = $this->mongoDB->selectCollection($collectionName);
-            $collection->ensureIndex(['key' => 1], ['unique' => true]);
+            $collection->createIndex(['key' => 1], ['unique' => true]);
             if (isset($this->indexes[$name])) {
                 foreach ($this->indexes[$name] as $index) {
-                    $collection->ensureIndex([$index => 1]);
+                    $collection->createIndex([$index => 1]);
                 }
             }
             $this->collections[$key] = $collection;
@@ -109,7 +123,7 @@ class MongoStorage extends AbstractStorage {
 
     /**
      * 
-     * @return \MongoDB
+     * @return MongoDatabase
      */
     function getMongoDB() {
         return $this->mongoDB;

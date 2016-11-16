@@ -13,6 +13,29 @@ namespace Arnapou\GW2Api;
 
 use Arnapou\GW2Api\Exception\JsonException;
 use Arnapou\GW2Api\Model\Item;
+use MongoDB\Database as MongoDatabase;
+
+/**
+ * 
+ * @param MongoDatabase $mongoDB
+ * @return string
+ */
+function get_mongo_database_error(MongoDatabase $mongoDB) {
+    if (!method_exists($mongoDB, '__debugInfo')) {
+        return "Magic method '__debugInfo' not found.";
+    }
+    $debug = $mongoDB->__debugInfo();
+    if (!isset($debug['typeMap'])) {
+        return "Debug sub key 'typeMap' not found.";
+    }
+    if (!isset($debug['typeMap']['root']) || strtolower($debug['typeMap']['root']) !== 'array') {
+        return "Mongo database option 'typeMap' with subkey 'root' should be equal to 'array'.";
+    }
+    if (!isset($debug['typeMap']['document']) || strtolower($debug['typeMap']['document']) !== 'array') {
+        return "Mongo database option 'typeMap' with subkey 'document' should be equal to 'array'.";
+    }
+    return null;
+}
 
 /**
  * 

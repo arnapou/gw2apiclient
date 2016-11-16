@@ -12,6 +12,9 @@
 namespace Arnapou\GW2Api\Cache;
 
 use Arnapou\GW2Api\Exception\Exception;
+use Arnapou\GW2Api\Exception\WrongMongoDatabaseException;
+use MongoDB\Database as MongoDatabase;
+use MongoDB\Collection as MongoCollection;
 
 class MongoCache implements CacheInterface {
 
@@ -35,27 +38,36 @@ class MongoCache implements CacheInterface {
 
     /**
      *
-     * @var \MongoCollection
+     * @var MongoCollection
      */
     protected $collection;
 
     /**
      *
-     * @var \MongoDB
+     * @var MongoDatabase
      */
     protected $mongoDB;
 
     /**
      * 
-     * @param \MongoDB $mongoDB
+     * Example to instanciate a valid mongoDB variable : <pre>
+     *     $mongo   = new MongoDB\Client('mongodb://localhost:27017', [], ['typeMap' => ['root' => 'array', 'document' => 'array']]);
+     *     $mongoDB = $mongo->selectDatabase("test");
+     * </pre>
+     * 
+     * @param MongoDatabase $mongoDB
      * @param string $collectionName
      */
-    public function __construct(\MongoDB $mongoDB, $collectionName = 'cache') {
+    public function __construct(MongoDatabase $mongoDB, $collectionName = 'cache') {
+        $error = \Arnapou\GW2Api\get_mongo_database_error($mongoDB);
+        if ($error) {
+            throw new WrongMongoDatabaseException($error);
+        }
         $this->collectionName = $collectionName;
         $this->mongoDB        = $mongoDB;
         $this->collection     = $mongoDB->selectCollection($collectionName);
-        $this->collection->ensureIndex(['key' => 1], ['unique' => true]);
-        $this->collection->ensureIndex(['expiration' => 1]);
+        $this->collection->createIndex(['key' => 1], ['unique' => true]);
+        $this->collection->createIndex(['expiration' => 1]);
     }
 
     /**
@@ -73,7 +85,7 @@ class MongoCache implements CacheInterface {
      */
     public function runGarbageCollector() {
         try {
-            $this->collection->remove(['expiration' => ['$lt' => time()]]);
+            $this->collection->deleteMany(['expiration' => ['$lt' => time()]]);
         }
         catch (\Exception $e) {
             return null;
@@ -82,7 +94,7 @@ class MongoCache implements CacheInterface {
 
     /**
      * 
-     * @return \MongoDB
+     * @return MongoDatabase
      */
     public function getMongoDB() {
         return $this->mongoDB;
@@ -90,7 +102,7 @@ class MongoCache implements CacheInterface {
 
     /**
      * 
-     * @return \MongoCollection
+     * @return MongoCollection
      */
     public function getCollection() {
         return $this->collection;
@@ -162,12 +174,14 @@ class MongoCache implements CacheInterface {
             $expiration += time();
         }
         $hash = $this->hash($key);
-        $this->collection->update([
+        $this->collection->updateOne([
             'key' => $hash,
             ], [
-            'key'        => $hash,
-            'value'      => $value,
-            'expiration' => $expiration,
+            '$set' => [
+                'key'        => $hash,
+                'value'      => $value,
+                'expiration' => $expiration,
+            ]
             ], [
             'upsert' => true
         ]);
@@ -175,7 +189,7 @@ class MongoCache implements CacheInterface {
 
     public function remove($key) {
         try {
-            $this->collection->remove(['key' => $this->hash($key)]);
+            $this->collection->deleteOne(['key' => $this->hash($key)]);
         }
         catch (\Exception $e) {
             return null;
