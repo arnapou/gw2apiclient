@@ -16,6 +16,53 @@ use Arnapou\GW2Api\Model\Item;
 use MongoDB\Database as MongoDatabase;
 
 /**
+ * https://wiki.guildwars2.com/wiki/Chat_link_format
+ * 
+ * @param integer $item
+ * @param integer $skin
+ * @param integer $upgrade1
+ * @param integer $upgrade2
+ * @return string
+ */
+function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity = 1) {
+    if (empty($item)) {
+        return null;
+    }
+    $hex = function($id) {
+        $h = dechex((int) $id);
+        $n = 6 - strlen($h);
+        $s = ($n > 0 ? str_repeat('0', $n) : '') . $h;
+        return $s[4] . $s[5] . $s[2] . $s[3] . $s[0] . $s[1];
+    };
+    $s = '02' . substr($hex($quantity), 0, 2) . $hex($item);
+    // 0x00 – Default item
+    if (empty($skin) && empty($upgrade1) && empty($upgrade2)) {
+        $s .= '00';
+    }
+    // 0x40 – 1 upgrade component
+    elseif (empty($skin) && !empty($upgrade1) && empty($upgrade2)) {
+        $s .= '40' . $hex($upgrade1) . '00';
+    }
+    // 0x60 – 2 upgrade components
+    elseif (empty($skin) && !empty($upgrade1) && !empty($upgrade2)) {
+        $s .= '60' . $hex($upgrade1) . '00' . $hex($upgrade2) . '00';
+    }
+    // 0x80 – Skinned
+    elseif (!empty($skin) && empty($upgrade1) && empty($upgrade2)) {
+        $s .= '80' . $hex($skin) . '00';
+    }
+    // 0xC0 – Skinned + 1 upgrade component
+    elseif (!empty($skin) && !empty($upgrade1) && empty($upgrade2)) {
+        $s .= 'C0' . $hex($skin) . '00' . $hex($upgrade1) . '00';
+    }
+    // 0xE0 – Skinned + 2 upgrade components
+    elseif (!empty($skin) && !empty($upgrade1) && !empty($upgrade2)) {
+        $s .= 'E0' . $hex($skin) . '00' . $hex($upgrade1) . '00' . $hex($upgrade2) . '00';
+    }
+    return '[&' . base64_encode(pack('H*', $s)) . ']';
+}
+
+/**
  * 
  * @param MongoDatabase $mongoDB
  * @return string

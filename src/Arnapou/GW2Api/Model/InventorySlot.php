@@ -91,6 +91,19 @@ class InventorySlot extends AbstractObject {
 
     /**
      * 
+     */
+    public function getChatLink() {
+        if ($this->getId()) {
+            $skin     = $this->skin ? $this->skin->getId() : 0;
+            $upgrade1 = isset($this->upgrades[0]) ? $this->upgrades[0]->getId() : 0;
+            $upgrade2 = isset($this->upgrades[1]) ? $this->upgrades[1]->getId() : 0;
+            return \Arnapou\GW2Api\chatlink_item($this->getId(), $skin, $upgrade1, $upgrade2);
+        }
+        return '';
+    }
+
+    /**
+     * 
      * @return array [buy: x, sell: y]
      */
     public function getPrice() {

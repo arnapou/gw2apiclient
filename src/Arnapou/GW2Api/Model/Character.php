@@ -111,6 +111,12 @@ class Character extends AbstractObject {
      *
      * @var array
      */
+    protected $wvwAbilities = [];
+
+    /**
+     *
+     * @var array
+     */
     protected $equipments = [];
 
     /**
@@ -179,6 +185,17 @@ class Character extends AbstractObject {
                 }
             }
         }
+        if (!empty($data['wvw_abilities']) && is_array($data['wvw_abilities'])) {
+            foreach ($data['wvw_abilities'] as $item) {
+                if (isset($item['id'])) {
+                    $wvwAbility = new WvwAbility($this->getEnvironment(), $item['id']);
+                    if (isset($item['rank'])) {
+                        $wvwAbility->setRank($item['rank']);
+                    }
+                    $this->wvwAbilities[] = $wvwAbility;
+                }
+            }
+        }
         if (isset($data['equipment_pvp'])) {
             $this->pvpEquipment = new PvpEquipment($this->getEnvironment(), $data['equipment_pvp']);
         }
@@ -189,6 +206,14 @@ class Character extends AbstractObject {
                 'skills'          => $this->getData(['skills', $type], []),
             ]);
         }
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getWvwAbilities() {
+        return $this->wvwAbilities;
     }
 
     /**
@@ -223,8 +248,8 @@ class Character extends AbstractObject {
             ];
             foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
                 if ($bag) {
-                    $price = $bag->getBagPrice();
-                    $this->bagsprice['buy'] += $price['buy'];
+                    $price                   = $bag->getBagPrice();
+                    $this->bagsprice['buy']  += $price['buy'];
                     $this->bagsprice['sell'] += $price['sell'];
                 }
             }
@@ -273,13 +298,15 @@ class Character extends AbstractObject {
         $data = [];
         foreach ($this->getEquipments() as $slot => /* @var $item InventorySlot */ $item) {
             if (in_array($slot, [self::SLOT_AXE, self::SLOT_PICK, self::SLOT_SICKLE])) {
-                continue;
+                $key = $item->getSubType();
             }
-            $key          = $item->getType() == Item::TYPE_BACK ? self::SLOT_BACKPACK : $item->getSubType();
+            else {
+                $key = $item->getType() == Item::TYPE_BACK ? self::SLOT_BACKPACK : $item->getSubType();
+            }
             $data[$key][] = $item;
         }
         $allowedRarities = [Item::RARITY_LEGENDARY, Item::RARITY_ASCENDED, Item::RARITY_EXOTIC];
-        $allowedTypes    = [Item::TYPE_ARMOR, Item::TYPE_BACK, Item::TYPE_WEAPON, Item::TYPE_TRINKET];
+        $allowedTypes    = [Item::TYPE_ARMOR, Item::TYPE_BACK, Item::TYPE_WEAPON, Item::TYPE_TRINKET, Item::TYPE_GATHERING];
         foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
             foreach ($bag->getInventorySlots() as /* @var $item InventorySlot */ $item) {
                 if (empty($item) ||
@@ -553,7 +580,7 @@ class Character extends AbstractObject {
                             $attributes[$attr] += (int) $value;
                         }
                     }
-                    $attributes['Armor'] += (int) $item->getArmorDefense();
+                    $attributes['Armor']                         += (int) $item->getArmorDefense();
                     $attributes[Item::ATTRIBUTE_AGONYRESISTANCE] += $item->getAgonyResistance();
                 }
             }
@@ -567,7 +594,7 @@ class Character extends AbstractObject {
              * calculate heatlh
              */
             $healthMap            = [
-                [
+                    [
                     'professions' => [self::PROFESSION_WARRIOR, self::PROFESSION_NECROMANCER],
                     'levels'      => [
                         28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28,
@@ -596,7 +623,7 @@ class Character extends AbstractObject {
                     ],
                 ]
             ];
-            $attributes['Armor'] += $attributes[Item::ATTRIBUTE_THOUGHNESS];
+            $attributes['Armor']  += $attributes[Item::ATTRIBUTE_THOUGHNESS];
             $attributes['Health'] = 0;
             foreach ($healthMap as $map) {
                 if (in_array($profession, $map['professions'])) {

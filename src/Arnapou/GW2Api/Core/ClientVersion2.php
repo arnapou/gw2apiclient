@@ -803,6 +803,18 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
+    public function apiWvwAbilities($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('wvw/abilities', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function apiWvwMatches($ids = null) {
         $parameters = [];
         if (!empty($ids)) {

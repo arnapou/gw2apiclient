@@ -16,7 +16,6 @@ use Arnapou\GW2Api\Environment;
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/items
  * 
- * @method string getChatLink()
  * @method string getName()
  * @method string getIcon()
  * @method string getDescription()
@@ -203,6 +202,16 @@ class Item extends AbstractStoredObject {
         if ($this->objectId) {
             $this->getEnvironment()->getStorage()->prepare(Environment::LANG_EN, 'prices', (string) $this->objectId);
         }
+    }
+
+    /**
+     * 
+     */
+    public function getChatLink() {
+        if ($this->getId()) {
+            return \Arnapou\GW2Api\chatlink_item($this->getId());
+        }
+        return '';
     }
 
     /**
