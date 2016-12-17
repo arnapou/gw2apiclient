@@ -1,29 +1,4 @@
 <?php return array (
-  'traits' => 
-  array (
-    0 => 
-    array (
-      'id' => 563,
-      'name' => 'Supreme Justice',
-      'specialization_id' => 29,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    1 => 
-    array (
-      'id' => 644,
-      'name' => 'Venomous Aura',
-      'specialization_id' => 33,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-  ),
   'pets' => 
   array (
     0 => 
@@ -110,7 +85,7 @@
     ),
     1 => 
     array (
-      'id' => 476,
+      'id' => 478,
       'name' => '"Sick \'Em!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -124,7 +99,7 @@
     ),
     2 => 
     array (
-      'id' => 696,
+      'id' => 699,
       'name' => 'Light\'s Judgement',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -141,55 +116,56 @@
   array (
     0 => 
     array (
-      'id' => 184,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Malign Infusion',
-      'pvx' => 6,
+      'id' => 153,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Lynx',
+      'pvp_name' => 'Rune of the Lynx (PvP)',
+      'pvx' => 1,
       'is_profile' => false,
     ),
     1 => 
     array (
-      'id' => 185,
+      'id' => 188,
       'type' => 'Infusion',
       'rarity' => 'Common',
-      'name' => 'Mighty Infusion',
+      'name' => 'Malign Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
     2 => 
     array (
-      'id' => 186,
+      'id' => 189,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Mighty Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    3 => 
+    array (
+      'id' => 190,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Precise Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    3 => 
+    4 => 
     array (
-      'id' => 187,
+      'id' => 191,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Malign Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    4 => 
+    5 => 
     array (
-      'id' => 188,
+      'id' => 192,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Mighty Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    5 => 
-    array (
-      'id' => 189,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Precise Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
@@ -197,53 +173,53 @@
     array (
       'id' => 193,
       'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Healing Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Precise Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
     7 => 
     array (
-      'id' => 194,
+      'id' => 197,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Healing Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    8 => 
+    array (
+      'id' => 198,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Resilient Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    8 => 
+    9 => 
     array (
-      'id' => 195,
+      'id' => 199,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    9 => 
+    10 => 
     array (
-      'id' => 196,
+      'id' => 200,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Healing Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    10 => 
+    11 => 
     array (
-      'id' => 197,
+      'id' => 201,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    11 => 
-    array (
-      'id' => 198,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
@@ -252,101 +228,110 @@
       'id' => 202,
       'type' => 'Infusion',
       'rarity' => 'Fine',
-      'name' => 'Gilded Infusion',
+      'name' => 'Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
     13 => 
     array (
-      'id' => 203,
+      'id' => 206,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Gilded Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    14 => 
+    array (
+      'id' => 207,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Magical Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    14 => 
+    15 => 
     array (
-      'id' => 204,
+      'id' => 208,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Experienced Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    15 => 
+    16 => 
     array (
-      'id' => 205,
+      'id' => 209,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Karmic Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    16 => 
+    17 => 
     array (
-      'id' => 206,
+      'id' => 210,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Versatile Simple Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    17 => 
+    18 => 
     array (
-      'id' => 207,
+      'id' => 211,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Malign Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    18 => 
+    19 => 
     array (
-      'id' => 208,
+      'id' => 212,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Mighty Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    19 => 
+    20 => 
     array (
-      'id' => 209,
+      'id' => 213,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Precise Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    20 => 
+    21 => 
     array (
-      'id' => 210,
+      'id' => 214,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Healing Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    21 => 
+    22 => 
     array (
-      'id' => 211,
+      'id' => 215,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Resilient Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    22 => 
+    23 => 
     array (
-      'id' => 212,
+      'id' => 216,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    23 => 
+    24 => 
     array (
       'id' => 39,
       'type' => 'Jewel',
@@ -354,18 +339,6 @@
       'name' => 'Exquisite Freshwater Pearl Jewel',
       'pvx' => 6,
       'is_profile' => true,
-    ),
-  ),
-  'items' => 
-  array (
-    0 => 
-    array (
-      'id' => 160,
-      'type' => 'Amulet',
-      'rarity' => 'Exotic',
-      'name' => 'Cleric Amulet',
-      'pvx' => 1,
-      'is_profile' => false,
     ),
   ),
 );
