@@ -25,6 +25,7 @@ class Mastery extends AbstractStoredObject {
     const REGION_TYRIA   = 'Tyria';
 
     protected $levels;
+    protected $unlocked = -1;
 
     protected function setData($data) {
         parent::setData($data);
@@ -37,12 +38,34 @@ class Mastery extends AbstractStoredObject {
         }
     }
 
+    public function setUnlockedLevel($level) {
+        $this->unlocked = $level;
+    }
+
+    public function getUnlockedLevel() {
+        return $this->unlocked;
+    }
+
+    public function isUnlocked() {
+        return $this->unlocked + 1 >= count($this->levels) ? true : false;
+    }
+
+    public function getSpentPoints() {
+        $spent = 0;
+        foreach ($this->getLevels() as /* @var $level MasteryLevel */ $i => $level) {
+            if ($this->unlocked >= $i) {
+                $spent += $level->getPointCost();
+            }
+        }
+        return $spent;
+    }
+
     /**
      * 
      * @return array
      */
     public function getLevels() {
-        return $this->level;
+        return $this->levels;
     }
 
     public function getApiName() {

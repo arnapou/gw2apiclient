@@ -188,6 +188,14 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
+    public function apiAccountMasteries() {
+        return $this->requestAccessToken('account/masteries');
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function apiAccountMaterials() {
         return $this->requestAccessToken('account/materials');
     }

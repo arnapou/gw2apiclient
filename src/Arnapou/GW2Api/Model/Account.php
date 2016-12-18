@@ -677,7 +677,7 @@ class Account extends AbstractObject {
                     foreach ($category->getAchievements() as /* @var $item Achievement */ $item) {
                         if (isset($aps[$item->getId()])) {
                             $this->otherAP += $aps[$item->getId()]->getTotalAP();
-                            $ids[] = $item->getId();
+                            $ids[]         = $item->getId();
                         }
                     }
                 }
@@ -784,15 +784,45 @@ class Account extends AbstractObject {
 
     /**
      * 
+     * @return integer
+     */
+    public function getMasteriesSpentPoints() {
+        $sum = 0;
+        foreach ($this->getMasteries() as /* @var $mastery Mastery */ $mastery) {
+            $sum += $mastery->getSpentPoints();
+        }
+        return $sum;
+    }
+
+    /**
+     * 
      * @return array
      */
     public function getMasteries() {
         if (empty($this->masteries)) {
-            $env = $this->getEnvironment();
+            $env      = $this->getEnvironment();
+            $unlocked = [];
+            if ($this->hasPermission(self::PERMISSION_PROGRESSION)) {
+                $unlocked = [];
+                foreach ($env->getClientVersion2()->apiAccountMasteries() as $data) {
+                    if (isset($data['id'], $data['level'])) {
+                        $unlocked[$data['id']] = $data['level'];
+                    }
+                }
+            }
+
             foreach ($env->getClientVersion2()->apiMasteries() as $id) {
-                $this->masteries[$id] = new Mastery($env, $id);
+                $mastery = new Mastery($env, $id);
+                if (isset($unlocked[$id])) {
+                    $mastery->setUnlockedLevel($unlocked[$id]);
+                }
+                $this->masteries[$id] = $mastery;
             }
             uasort($this->masteries, function($a, $b) {
+                $n = strcmp($a->getRegion(), $b->getRegion());
+                if ($n != 0) {
+                    return $n;
+                }
                 $ia = $a->getOrder();
                 $ib = $b->getOrder();
                 if ($ia == $ib) {
