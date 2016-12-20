@@ -554,15 +554,70 @@ class ClientVersion2 extends AbstractClientVersion {
     }
 
     /**
-     * 
+     * !!!
+     * this function has two output depending on the parameters,
+     * if you pass a guild id to this function, it will retrieve 
+     * the specific guild upgrades list
+     * !!!
      * @return array
      */
     public function apiGuildUpgrades($ids = null) {
+        if (is_string($ids) && preg_match('!^([A-Z0-9]+-)+[A-Z0-9]$!si', $ids)) {
+            return $this->requestAccessToken('guild/' . $ids . '/upgrades');
+        }
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
         }
         return $this->request('guild/upgrades', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiGuildLog($guildId) {
+        return $this->requestAccessToken('guild/' . $guildId . '/log');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiGuildMembers($guildId) {
+        return $this->requestAccessToken('guild/' . $guildId . '/members');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiGuildRanks($guildId) {
+        return $this->requestAccessToken('guild/' . $guildId . '/ranks');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiGuildStash($guildId) {
+        return $this->requestAccessToken('guild/' . $guildId . '/stash');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiGuildTeams($guildId) {
+        return $this->requestAccessToken('guild/' . $guildId . '/teams');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiGuildTreasury($guildId) {
+        return $this->requestAccessToken('guild/' . $guildId . '/treasury');
     }
 
     /**

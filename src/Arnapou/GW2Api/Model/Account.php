@@ -565,23 +565,32 @@ class Account extends AbstractObject {
      * 
      * @return array ["27E8635F-2B2F-44BC-A58F-03F66F2083E2", "52BD8E08-7F38-449E-ADB7-37CC6CE47230"]
      */
-    public function getGuildIds() {
-        return $this->getData('guilds', [], $this->dataAccount);
+    public function getGuildIds($onlyLeader = false) {
+        if ($onlyLeader) {
+            return $this->getData('guild_leader', [], $this->dataAccount);
+        }
+        else {
+            return $this->getData('guilds', [], $this->dataAccount);
+        }
     }
 
     /**
      * 
      * @return World
      */
-    public function getGuilds() {
+    public function getGuilds($onlyLeader = false) {
         if (empty($this->guilds)) {
             $this->guilds = [];
             $env          = $this->getEnvironment();
             $client       = $env->getClientVersion1();
+            $leaderIds    = $this->getGuildIds(true);
             foreach ($this->getGuildIds() as $id) {
                 try {
                     $data = $client->apiGuildDetails($id);
                     if (isset($data['guild_id'])) {
+                        if (in_array($id, $leaderIds)) {
+                            $data['x-leader'] = true;
+                        }
                         $this->guilds[] = new Guild($env, $data);
                     }
                 }
@@ -590,7 +599,18 @@ class Account extends AbstractObject {
                 }
             }
         }
-        return $this->guilds;
+        if ($onlyLeader) {
+            $tmp = [];
+            foreach ($this->guilds as /* @var $guild Guild */ $guild) {
+                if ($guild->isLeader()) {
+                    $tmp[] = $guild;
+                }
+            }
+            return $tmp;
+        }
+        else {
+            return $this->guilds;
+        }
     }
 
     /**
