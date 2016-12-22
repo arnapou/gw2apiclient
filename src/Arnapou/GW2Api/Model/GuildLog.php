@@ -17,6 +17,7 @@ namespace Arnapou\GW2Api\Model;
  * @method string getType()
  * @method string getUser()
  * @method string getInvitedBy() for type = invited
+ * @method string getDeclinedBy() for type = invite_declined
  * @method string getKickedBy() for type = kick
  * @method string getChangedBy() for type = rank_change
  * @method string getOldRank() for type = rank_change
@@ -26,21 +27,26 @@ namespace Arnapou\GW2Api\Model;
  * @method string getCount() for type = stash, treasury
  * @method string getCoins() for type = stash
  * @method string getMotd() for type = motd
- * @method string getUpgradeType() for type = upgrade
+ * @method string getAction() for type = upgrade
  * @method string getUpgradeId() for type = upgrade
+ * @method string getActivity() for type = influence
+ * @method string getTotalParticipants() for type = influence
+ * @method string getParticipants() for type = influence
  */
 class GuildLog extends AbstractObject {
 
-    const TYPE_JOINED        = 'joined';
-    const TYPE_INVITED       = 'invited';
-    const TYPE_KICK          = 'kick';
-    const TYPE_              = 'rank_change';
-    const TYPE_TREASURY      = 'treasury';
-    const TYPE_STASH         = 'stash';
-    const TYPE_MOTD          = 'motd';
-    const TYPE_UPGRADE       = 'upgrade';
-    const OPERATION_DEPOSIT  = 'deposit';
-    const OPERATION_WITHDRAW = 'withdraw';
+    const TYPE_JOINED          = 'joined';
+    const TYPE_INVITED         = 'invited';
+    const TYPE_INVITE_DECLINED = 'invite_declined';
+    const TYPE_KICK            = 'kick';
+    const TYPE_                = 'rank_change';
+    const TYPE_TREASURY        = 'treasury';
+    const TYPE_STASH           = 'stash';
+    const TYPE_MOTD            = 'motd';
+    const TYPE_UPGRADE         = 'upgrade';
+    const TYPE_INFLUENCE       = 'influence';
+    const OPERATION_DEPOSIT    = 'deposit';
+    const OPERATION_WITHDRAW   = 'withdraw';
 
     /**
      *

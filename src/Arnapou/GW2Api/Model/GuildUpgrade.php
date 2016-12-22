@@ -25,12 +25,33 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildUpgrade extends AbstractStoredObject {
 
+    protected $prerequisites = [];
+    protected $costs         = [];
+
+    protected function setData($data) {
+        parent::setData($data);
+
+        if (isset($data['prerequisites']) && is_array($data['prerequisites'])) {
+            $env = $this->getEnvironment();
+            foreach ($data['prerequisites'] as $id) {
+                $this->prerequisites[] = new GuildUpgrade($env, $id);
+            }
+        }
+
+        if (isset($data['costs']) && is_array($data['costs'])) {
+            $env = $this->getEnvironment();
+            foreach ($data['costs'] as $item) {
+                $this->costs[] = new GuildUpgradeCost($env, $item);
+            }
+        }
+    }
+
     /**
      * 
      * @return array
      */
     public function getPrerequisites() {
-        return $this->getData('prerequisites', []);
+        return $this->prerequisites;
     }
 
     /**
@@ -38,11 +59,15 @@ class GuildUpgrade extends AbstractStoredObject {
      * @return array
      */
     public function getCosts() {
-        return $this->getData('costs', []);
+        return $this->costs;
     }
 
     public function getApiName() {
         return 'guildupgrades';
+    }
+
+    public function __toString() {
+        return $this->getName();
     }
 
 }

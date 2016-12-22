@@ -28,6 +28,9 @@ function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity
     if (empty($item)) {
         return null;
     }
+    if ($quantity > 250) {
+        $quantity = 250;
+    }
     $hex = function($id) {
         $h = dechex((int) $id);
         $n = 6 - strlen($h);

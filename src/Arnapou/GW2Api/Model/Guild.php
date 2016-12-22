@@ -84,6 +84,34 @@ class Guild extends AbstractObject {
 
     /**
      * 
+     * @return string
+     */
+    public function getMOTD() {
+        foreach ($this->getLog() as /* @var $log GuildLog */ $log) {
+            if ($log->getType() == GuildLog::TYPE_MOTD) {
+                return $log->getMotd();
+            }
+        }
+        return '';
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getMinLevel() {
+        $min = 0;
+        foreach ($this->getUpgrades() as /* @var $up GuildUpgrade */ $up) {
+            $lvl = $up->getRequiredLevel();
+            if ($lvl > $min) {
+                $min = $lvl;
+            }
+        }
+        return $min;
+    }
+
+    /**
+     * 
      * @return boolean
      */
     public function isLeader() {
@@ -112,12 +140,29 @@ class Guild extends AbstractObject {
             $data = $env->getClientVersion2()->apiGuildLog($this->getId());
             if (!empty($data) && is_array($data)) {
                 foreach ($data as $item) {
-                    $obj                        = new GuildLog($env, $item);
-                    $this->ranks[$obj->getId()] = $obj;
+                    $obj                      = new GuildLog($env, $item);
+                    $this->log[$obj->getId()] = $obj;
                 }
             }
         }
         return $this->log;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getTreasury() {
+        if (empty($this->treasury) && $this->isLeader()) {
+            $env  = $this->getEnvironment();
+            $data = $env->getClientVersion2()->apiGuildTreasury($this->getId());
+            if (!empty($data) && is_array($data)) {
+                foreach ($data as $item) {
+                    $this->treasury[] = new GuildTreasury($env, $item);
+                }
+            }
+        }
+        return $this->treasury;
     }
 
     /**
@@ -130,17 +175,49 @@ class Guild extends AbstractObject {
             $data = $env->getClientVersion2()->apiGuildMembers($this->getId());
             if (!empty($data) && is_array($data)) {
                 foreach ($data as $item) {
-                    $obj                        = new GuildMember($env, $item);
-                    $this->ranks[$obj->getId()] = $obj;
+                    $obj                          = new GuildMember($env, $item);
+                    $this->members[$obj->getId()] = $obj;
                 }
-                uasort($this->ranks, function($a, $b) {
-                    $sa = (string) $a->getName();
-                    $sb = (string) $b->getName();
-                    return strcmp($sa, $sb);
+                $ranks = $this->getRanks();
+                uasort($this->members, function($a, $b) use($ranks) {
+                    $ra = isset($ranks[$a->getRank()]) ? $ranks[$a->getRank()]->getOrder() : 999;
+                    $rb = isset($ranks[$b->getRank()]) ? $ranks[$b->getRank()]->getOrder() : 999;
+                    $sa = sprintf('%04d : %s', $ra, $a->getName());
+                    $sb = sprintf('%04d : %s', $rb, $b->getName());
+                    return strcasecmp($sa, $sb);
                 });
             }
         }
         return $this->members;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getUpgradeIds() {
+        return $this->getEnvironment()->getClientVersion2()->apiGuildUpgrades($this->getId());
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getUpgrades() {
+        if (empty($this->upgrades) && $this->isLeader()) {
+            $env = $this->getEnvironment();
+            $ids = $env->getClientVersion2()->apiGuildUpgrades($this->getId());
+            if (!empty($ids) && is_array($ids)) {
+                foreach ($ids as $id) {
+                    $obj                           = new GuildUpgrade($env, $id);
+                    $this->upgrades[$obj->getId()] = $obj;
+                }
+                uasort($this->upgrades, function($a, $b) {
+                    return strcmp((string) $a, (string) $b);
+                });
+            }
+        }
+        return $this->upgrades;
     }
 
     /**

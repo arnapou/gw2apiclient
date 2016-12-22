@@ -562,7 +562,7 @@ class ClientVersion2 extends AbstractClientVersion {
      * @return array
      */
     public function apiGuildUpgrades($ids = null) {
-        if (is_string($ids) && preg_match('!^([A-Z0-9]+-)+[A-Z0-9]$!si', $ids)) {
+        if (is_string($ids) && preg_match('!^([A-Z0-9]+-)+[A-Z0-9]+$!si', $ids)) {
             return $this->requestAccessToken('guild/' . $ids . '/upgrades');
         }
         $parameters = [];
@@ -570,6 +570,18 @@ class ClientVersion2 extends AbstractClientVersion {
             $parameters['ids'] = $ids;
         }
         return $this->request('guild/upgrades', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiGuildPermissions($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('guild/permissions', $parameters);
     }
 
     /**
