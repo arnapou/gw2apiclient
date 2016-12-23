@@ -45,6 +45,26 @@ class GuildTreasury extends AbstractObject {
         }
     }
 
+    /**
+     * 
+     * @return integer
+     */
+    public function getId() {
+        return $this->item ? $this->item->getId() : null;
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getCount() {
+        return $this->item ? $this->item->getCount() : 0;
+    }
+
+    /**
+     * 
+     * @return integer
+     */
     public function getTotalCount() {
         return $this->totalCount;
     }

@@ -12,20 +12,10 @@
 namespace Arnapou\GW2Api\Model;
 
 /**
- *
+ * 
  * @method string getName()
- * @method string getDescription()
+ * @method string getRole)
  */
-class GuildPermission extends AbstractStoredObject {
-
-    use UnlockTrait;
-
-    public function getApiName() {
-        return 'guildpermissions';
-    }
-
-    public function __toString() {
-        return $this->getName();
-    }
-
+class GuildTeamMember extends AbstractObject {
+    
 }

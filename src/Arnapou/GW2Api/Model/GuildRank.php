@@ -19,20 +19,49 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildRank extends AbstractObject {
 
-    protected $permissions = [];
+    protected static $ALL_PERMISSIONS_IDS;
+    protected $permissions   = [];
+    protected $permissionIds = [];
 
     protected function setData($data) {
         parent::setData($data);
 
+        $env = $this->getEnvironment();
         if (isset($data['permissions']) && is_array($data['permissions'])) {
-            $env = $this->getEnvironment();
-            foreach ($data['permissions'] as $item) {
-                $this->permissions[] = new GuildPermission($env, $item);
-            }
-            usort($this->permissions, function($a, $b) {
-                return strcmp((string) $a, (string) $b);
-            });
+            $this->permissionIds = $data['permissions'];
         }
+        $allIds = $this->getAllPermissionIds();
+        foreach ($allIds as $id) {
+            $perm                = new GuildPermission($env, $id);
+            $perm->setUnlocked(in_array($id, $this->permissionIds));
+            $this->permissions[] = $perm;
+        }
+        usort($this->permissions, function($a, $b) {
+            return strcmp((string) $a, (string) $b);
+        });
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getPermissionIds() {
+        return $this->permissionIds;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getAllPermissionIds() {
+        $env = $this->getEnvironment();
+        if (!isset(self::$ALL_PERMISSIONS_IDS)) {
+            $ids = $env->getClientVersion2()->apiGuildPermissions();
+            if (!empty($ids) && is_array($ids)) {
+                self::$ALL_PERMISSIONS_IDS = $ids;
+            }
+        }
+        return self::$ALL_PERMISSIONS_IDS;
     }
 
     /**

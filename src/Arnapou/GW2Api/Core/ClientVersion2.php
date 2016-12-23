@@ -588,6 +588,19 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
+    public function apiGuild($guildId) {
+        if ($this->getEnvironment()->getAccessToken()) {
+            return $this->requestAccessToken('guild/' . $guildId);
+        }
+        else {
+            return $this->request('guild/' . $guildId);
+        }
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function apiGuildLog($guildId) {
         return $this->requestAccessToken('guild/' . $guildId . '/log');
     }
@@ -678,6 +691,18 @@ class ClientVersion2 extends AbstractClientVersion {
             $parameters['ids'] = $ids;
         }
         return $this->request('minis', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiProfessions($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('professions', $parameters);
     }
 
     /**

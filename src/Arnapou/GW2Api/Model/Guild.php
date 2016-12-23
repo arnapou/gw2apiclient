@@ -13,6 +13,14 @@ namespace Arnapou\GW2Api\Model;
 
 /**
  * 
+ * @method string getLevel()
+ * @method string getMotd()
+ * @method string getInfluence()
+ * @method string getAetherium()
+ * @method string getResonance()
+ * @method string getFavor()
+ * @method string getId()
+ * @method string getName()
  * @method string getTag()
  * @method array getEmblem()
  */
@@ -52,6 +60,12 @@ class Guild extends AbstractObject {
      *
      * @var array
      */
+    protected $treasuryByUpgrade = [];
+
+    /**
+     *
+     * @var array
+     */
     protected $teams = [];
 
     /**
@@ -64,51 +78,13 @@ class Guild extends AbstractObject {
      *
      * @var array
      */
+    protected $upgradeIds;
+
+    /**
+     *
+     * @var array
+     */
     protected $stashprice;
-
-    /**
-     * 
-     * @return string
-     */
-    public function getId() {
-        return $this->getData('guild_id');
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getName() {
-        return $this->getData('guild_name');
-    }
-
-    /**
-     * 
-     * @return string
-     */
-    public function getMOTD() {
-        foreach ($this->getLog() as /* @var $log GuildLog */ $log) {
-            if ($log->getType() == GuildLog::TYPE_MOTD) {
-                return $log->getMotd();
-            }
-        }
-        return '';
-    }
-
-    /**
-     * 
-     * @return integer
-     */
-    public function getMinLevel() {
-        $min = 0;
-        foreach ($this->getUpgrades() as /* @var $up GuildUpgrade */ $up) {
-            $lvl = $up->getRequiredLevel();
-            if ($lvl > $min) {
-                $min = $lvl;
-            }
-        }
-        return $min;
-    }
 
     /**
      * 
@@ -169,6 +145,51 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
+    public function getTreasuryByUpgrade() {
+        if (empty($this->treasuryByUpgrade)) {
+            $data = [];
+            foreach ($this->getTreasury() as /* @var $treasury GuildTreasury */ $treasury) {
+                foreach ($treasury->getNeededBy() as $needed) {
+                    $upgrade = $needed['upgrade']; /* @var $upgrade GuildUpgrade */
+                    if (!isset($data[$upgrade->getId()])) {
+                        $data[$upgrade->getId()] = [
+                            'upgrade'    => $upgrade,
+                            'treasuries' => [],
+                        ];
+                    }
+                    $data[$upgrade->getId()]['treasuries'][$treasury->getId()] = $treasury;
+                }
+            }
+            uasort($data, function($a, $b) {
+                return strcmp((string) $a['upgrade'], (string) $b['upgrade']);
+            });
+            $this->treasuryByUpgrade = $data;
+        }
+        return $this->treasuryByUpgrade;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getTeams() {
+        if (empty($this->teams) && $this->isLeader()) {
+            $env  = $this->getEnvironment();
+            $data = $env->getClientVersion2()->apiGuildTeams($this->getId());
+            if (!empty($data) && is_array($data)) {
+                foreach ($data as $item) {
+                    $obj           = new GuildTeam($env, $item);
+                    $this->teams[] = $obj;
+                }
+            }
+        }
+        return $this->teams;
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function getMembers() {
         if (empty($this->members) && $this->isLeader()) {
             $env  = $this->getEnvironment();
@@ -182,8 +203,8 @@ class Guild extends AbstractObject {
                 uasort($this->members, function($a, $b) use($ranks) {
                     $ra = isset($ranks[$a->getRank()]) ? $ranks[$a->getRank()]->getOrder() : 999;
                     $rb = isset($ranks[$b->getRank()]) ? $ranks[$b->getRank()]->getOrder() : 999;
-                    $sa = sprintf('%04d : %s', $ra, $a->getName());
-                    $sb = sprintf('%04d : %s', $rb, $b->getName());
+                    $sa = sprintf('%04d : %s : %s', $ra, $a->getData('joined'), $a->getName());
+                    $sb = sprintf('%04d : %s : %s', $rb, $b->getData('joined'), $b->getName());
                     return strcasecmp($sa, $sb);
                 });
             }
@@ -196,7 +217,10 @@ class Guild extends AbstractObject {
      * @return array
      */
     public function getUpgradeIds() {
-        return $this->getEnvironment()->getClientVersion2()->apiGuildUpgrades($this->getId());
+        if (!isset($this->upgradeIds)) {
+            $this->upgradeIds = $this->getEnvironment()->getClientVersion2()->apiGuildUpgrades($this->getId());
+        }
+        return $this->upgradeIds;
     }
 
     /**
@@ -206,7 +230,7 @@ class Guild extends AbstractObject {
     public function getUpgrades() {
         if (empty($this->upgrades) && $this->isLeader()) {
             $env = $this->getEnvironment();
-            $ids = $env->getClientVersion2()->apiGuildUpgrades($this->getId());
+            $ids = $this->getUpgradeIds();
             if (!empty($ids) && is_array($ids)) {
                 foreach ($ids as $id) {
                     $obj                           = new GuildUpgrade($env, $id);

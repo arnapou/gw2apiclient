@@ -582,12 +582,11 @@ class Account extends AbstractObject {
         if (empty($this->guilds)) {
             $this->guilds = [];
             $env          = $this->getEnvironment();
-            $client       = $env->getClientVersion1();
             $leaderIds    = $this->getGuildIds(true);
             foreach ($this->getGuildIds() as $id) {
                 try {
-                    $data = $client->apiGuildDetails($id);
-                    if (isset($data['guild_id'])) {
+                    $data = $env->getClientVersion2()->apiGuild($id);
+                    if (isset($data['id'])) {
                         if (in_array($id, $leaderIds)) {
                             $data['x-leader'] = true;
                         }

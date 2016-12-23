@@ -91,6 +91,12 @@ class Character extends AbstractObject {
 
     /**
      *
+     * @var array
+     */
+    protected $training;
+
+    /**
+     *
      * @var boolean
      */
     protected $backstorySorted = false;
@@ -136,6 +142,12 @@ class Character extends AbstractObject {
      * @var string
      */
     protected $profession = null;
+
+    /**
+     *
+     * @var Profession
+     */
+    protected $professionObject = null;
 
     /**
      *
@@ -347,33 +359,41 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getProfession() {
-        if ($this->profession === null) {
-            $this->profession = $this->getData('profession');
-            $build            = $this->getBuild('pve'); /* @var $build Build */
-            if ($build && $this->profession) {
-                $mapping = [
-                    self::PROFESSION_ELEMENTALIST => self::PROFESSION_TEMPEST,
-                    self::PROFESSION_ENGINEER     => self::PROFESSION_SCRAPPER,
-                    self::PROFESSION_GUARDIAN     => self::PROFESSION_DRAGONHUNTER,
-                    self::PROFESSION_MESMER       => self::PROFESSION_CHRONOMANCER,
-                    self::PROFESSION_NECROMANCER  => self::PROFESSION_REAPER,
-                    self::PROFESSION_RANGER       => self::PROFESSION_DRUID,
-                    self::PROFESSION_REVENANT     => self::PROFESSION_HERALD,
-                    self::PROFESSION_THIEF        => self::PROFESSION_DAREDEVIL,
-                    self::PROFESSION_WARRIOR      => self::PROFESSION_BERSERKER,
-                ];
-                foreach ($build->getSpecializations() as /* @var $specialization SpecializationLine */ $specialization) {
-                    if ($specialization->isElite()) {
-                        if (isset($mapping[$this->profession])) {
-                            $this->profession = $mapping[$this->profession];
-                            break;
+    public function getProfession($object = false) {
+        if ($object) {
+            if ($this->professionObject === null) {
+                $this->professionObject = new Profession($this->getEnvironment(), $this->getData('profession'));
+            }
+            return $this->professionObject;
+        }
+        else {
+            if ($this->profession === null) {
+                $this->profession = $this->getData('profession');
+                $build            = $this->getBuild('pve'); /* @var $build Build */
+                if ($build && $this->profession) {
+                    $mapping = [
+                        self::PROFESSION_ELEMENTALIST => self::PROFESSION_TEMPEST,
+                        self::PROFESSION_ENGINEER     => self::PROFESSION_SCRAPPER,
+                        self::PROFESSION_GUARDIAN     => self::PROFESSION_DRAGONHUNTER,
+                        self::PROFESSION_MESMER       => self::PROFESSION_CHRONOMANCER,
+                        self::PROFESSION_NECROMANCER  => self::PROFESSION_REAPER,
+                        self::PROFESSION_RANGER       => self::PROFESSION_DRUID,
+                        self::PROFESSION_REVENANT     => self::PROFESSION_HERALD,
+                        self::PROFESSION_THIEF        => self::PROFESSION_DAREDEVIL,
+                        self::PROFESSION_WARRIOR      => self::PROFESSION_BERSERKER,
+                    ];
+                    foreach ($build->getSpecializations() as /* @var $specialization SpecializationLine */ $specialization) {
+                        if ($specialization->isElite()) {
+                            if (isset($mapping[$this->profession])) {
+                                $this->profession = $mapping[$this->profession];
+                                break;
+                            }
                         }
                     }
                 }
             }
+            return $this->profession;
         }
-        return $this->profession;
     }
 
     /**
@@ -410,15 +430,39 @@ class Character extends AbstractObject {
 
     /**
      * 
+     * @return array
+     */
+    public function getTraining() {
+        if (!isset($this->training)) {
+            $this->training = [];
+            $charTraining   = $this->getData('training');
+            if (is_array($charTraining)) {
+                $profession = $this->getProfession(true);
+                if ($profession) {
+                    $profTraining = $profession->getTraining();
+                    $env          = $this->getEnvironment();
+                    foreach ($charTraining as $item) {
+                        if (isset($item['id'], $profTraining[$item['id']])) {
+                            $item['training']            = $profTraining[$item['id']];
+                            $this->training[$item['id']] = $item;
+                        }
+                    }
+                }
+            }
+        }
+        return $this->training;
+    }
+
+    /**
+     * 
      * @return Guild
      */
     public function getGuild() {
         $guildId = $this->getGuildId();
         if ($guildId && empty($this->guild)) {
             try {
-                $client = $this->getEnvironment()->getClientVersion1();
-                $data   = $client->apiGuildDetails($guildId);
-                if (isset($data['guild_id'])) {
+                $data = $this->getEnvironment()->getClientVersion2()->apiGuild($guildId);
+                if (isset($data['id'])) {
                     $this->guild = new Guild($this->getEnvironment(), $data);
                 }
             }
