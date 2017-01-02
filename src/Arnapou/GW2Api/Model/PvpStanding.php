@@ -69,6 +69,14 @@ class PvpStanding extends AbstractObject {
         return $this->getData(['current', 'repeats']);
     }
 
+    public function getCurrentRating() {
+        return $this->getData(['current', 'rating']);
+    }
+    
+    public function getCurrentDecay() {
+        return $this->getData(['current', 'decay']);
+    }
+
     /**
      * 
      * @return PvpSeason
