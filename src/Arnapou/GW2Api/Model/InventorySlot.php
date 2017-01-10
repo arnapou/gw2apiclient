@@ -43,6 +43,12 @@ class InventorySlot extends AbstractObject {
 
     /**
      *
+     * @var integer
+     */
+    protected $charges = null;
+
+    /**
+     *
      * @var Skin
      */
     protected $skin;
@@ -77,6 +83,9 @@ class InventorySlot extends AbstractObject {
         }
         if (isset($data['id'])) {
             $this->item = new Item($this->getEnvironment(), $data['id']);
+        }
+        if (isset($data['charges'])) {
+            $this->charges = (int) $data['charges'];
         }
         if (isset($data['count'])) {
             $this->count = (int) $data['count'];
@@ -136,6 +145,14 @@ class InventorySlot extends AbstractObject {
      */
     public function getInfusions() {
         return $this->infusions;
+    }
+
+    /**
+     * 
+     * @return integer
+     */
+    public function getCharges() {
+        return $this->charges;
     }
 
     /**
