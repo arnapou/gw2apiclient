@@ -24,6 +24,33 @@ class Finisher extends AbstractStoredObject {
 
     protected $quantity    = 0;
     protected $isPermanent = false;
+    protected $unlockItems = [];
+
+    protected function setData($data) {
+        parent::setData($data);
+
+        if (isset($data['unlock_items']) && is_array($data['unlock_items'])) {
+            foreach ($data['unlock_items'] as $id) {
+                $this->unlockItems[] = new Item($this->getEnvironment(), $id);
+            }
+        }
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getUnlockItem($index) {
+        return isset($this->unlockItems[$index]) ? $this->unlockItems[$index] : null;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getUnlockItems() {
+        return $this->unlockItems;
+    }
 
     /**
      * 
