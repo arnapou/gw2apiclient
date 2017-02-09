@@ -271,6 +271,11 @@ function attributes_to_statname($attributes) {
         'Power/ConditionDamage/Precision/ConditionDuration'    => "Viper's",
         'ConditionDamage/Power/ConditionDuration/Precision'    => "Viper's",
         'ConditionDamage/Power/Precision/ConditionDuration'    => "Viper's",
+        // HoT stats - Episode 4
+        'Precision/ConditionDamage/Healing/BoonDuration'       => "Seraph",
+        'Precision/ConditionDamage/BoonDuration/Healing'       => "Seraph",
+        'ConditionDamage/Precision/Healing/BoonDuration'       => "Seraph",
+        'ConditionDamage/Precision/BoonDuration/Healing'       => "Seraph",
     ];
     if ($flatten && isset($statNames[$flatten])) {
         return $statNames[$flatten];
