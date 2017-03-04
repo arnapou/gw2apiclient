@@ -16,6 +16,15 @@ use Arnapou\GW2Api\Model\Item;
 use MongoDB\Database as MongoDatabase;
 
 /**
+ * 
+ * @param string $id
+ * @return string
+ */
+function id_to_name($id) {
+    return ucfirst(str_replace('_', ' ', $id));
+}
+
+/**
  * https://wiki.guildwars2.com/wiki/Chat_link_format
  * 
  * @param integer $item

@@ -164,6 +164,18 @@ class Account extends AbstractObject {
      *
      * @var array
      */
+    protected $dungeons = [];
+
+    /**
+     *
+     * @var array
+     */
+    protected $raids = [];
+
+    /**
+     *
+     * @var array
+     */
     protected $masteries = [];
 
     /**
@@ -207,6 +219,12 @@ class Account extends AbstractObject {
      * @var array
      */
     protected $finishers;
+
+    /**
+     *
+     * @var array
+     */
+    protected $outfits;
 
     /**
      *
@@ -306,6 +324,25 @@ class Account extends AbstractObject {
             ]);
         }
         return $this->finishers;
+    }
+
+    /**
+     * 
+     * @return Outfits
+     */
+    public function getOutfits() {
+        if (empty($this->outfits)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env           = $this->getEnvironment();
+            $this->outfits = new Outfits($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountOutfits(),
+            ]);
+        }
+        return $this->outfits;
     }
 
     /**
@@ -761,6 +798,54 @@ class Account extends AbstractObject {
      */
     public function hasPermission($permission) {
         return in_array($permission, $this->dataTokenInfo['permissions']);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getDungeons() {
+        if (empty($this->dungeons)) {
+            $env    = $this->getEnvironment();
+            $client = $env->getClientVersion2();
+            foreach ($client->apiDungeons() as $id) {
+                $this->dungeons[] = new Dungeon($env, $id);
+            }
+            $pathIds = $client->apiAccountDungeons();
+            foreach ($this->dungeons as /* @var $dungeon Dungeon */ $dungeon) {
+                foreach ($dungeon->getPaths() as /* @var $path DungeonPath */ $path) {
+                    if (in_array($path->getId(), $pathIds)) {
+                        $path->setUnlocked(true);
+                    }
+                }
+            }
+        }
+        return $this->dungeons;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getRaids() {
+        if (empty($this->raids)) {
+            $env    = $this->getEnvironment();
+            $client = $env->getClientVersion2();
+            foreach ($client->apiRaids() as $id) {
+                $this->raids[] = new Raid($env, $id);
+            }
+            $eventIds = $client->apiAccountRaids();
+            foreach ($this->raids as /* @var $raid Raid */ $raid) {
+                foreach ($raid->getWings() as /* @var $wing RaidWing */ $wing) {
+                    foreach ($wing->getEvents() as /* @var $event RaidWingEvent */ $event) {
+                        if (in_array($event->getId(), $eventIds)) {
+                            $event->setUnlocked(true);
+                        }
+                    }
+                }
+            }
+        }
+        return $this->raids;
     }
 
     /**

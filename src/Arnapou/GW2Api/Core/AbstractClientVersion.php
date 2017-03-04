@@ -116,10 +116,11 @@ abstract class AbstractClientVersion {
 
             $data = \Arnapou\GW2Api\json_decode($response->getContent());
 
-            $event         = new Event();
-            $event['uri']  = $requestUrl;
-            $event['time'] = microtime(true) - $time;
-            $this->getEnvironment()->getEventListener()->trigger(Environment::onRequest, $event);
+            $this->getEnvironment()->getEventListener()->trigger(Environment::onRequest, new Event([
+                'code' => $httpCode,
+                'url'  => $requestUrl,
+                'time' => microtime(true) - $time,
+            ]));
 
             break;
         }

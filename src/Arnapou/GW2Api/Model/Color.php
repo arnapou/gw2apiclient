@@ -12,7 +12,6 @@
 namespace Arnapou\GW2Api\Model;
 
 /**
- * @doc https://wiki.guildwars2.com/wiki/API:2/skins
  *
  * @method string getName()
  * @method string getCategories()

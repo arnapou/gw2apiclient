@@ -27,6 +27,8 @@ class Environment {
     const LANG_EN   = 'en';
     const LANG_ES   = 'es';
     const LANG_FR   = 'fr';
+    const LANG_KO   = 'ko';
+    const LANG_ZH   = 'zh';
 
     /**
      *
@@ -214,7 +216,7 @@ class Environment {
      * @return Environment
      */
     public function setLang($lang) {
-        if (!in_array($lang, [self::LANG_DE, self::LANG_EN, self::LANG_ES, self::LANG_FR])) {
+        if (!in_array($lang, [self::LANG_DE, self::LANG_EN, self::LANG_ES, self::LANG_FR, self::LANG_KO, self::LANG_ZH])) {
             throw new Exception('Wrong lang parameter.');
         }
         $this->lang = $lang;

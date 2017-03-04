@@ -188,6 +188,14 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
+    public function apiAccountOutfits() {
+        return $this->requestAccessToken('account/outfits');
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function apiAccountMasteries() {
         return $this->requestAccessToken('account/masteries');
     }
@@ -214,6 +222,38 @@ class ClientVersion2 extends AbstractClientVersion {
      */
     public function apiAccountWallet() {
         return $this->requestAccessToken('account/wallet');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiAccountDungeons() {
+        return $this->requestAccessToken('account/dungeons');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiAccountRaids() {
+        return $this->requestAccessToken('account/raids');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiAccountHomeCats() {
+        return $this->requestAccessToken('account/home/cats');
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiAccountHomeNodes() {
+        return $this->requestAccessToken('account/home/nodes');
     }
 
     /**
@@ -298,6 +338,30 @@ class ClientVersion2 extends AbstractClientVersion {
             $parameters['ids'] = $ids;
         }
         return $this->request('colors', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiDungeons($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('dungeons', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiRaids($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('raids', $parameters);
     }
 
     /**
@@ -673,6 +737,18 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
+    public function apiOutfits($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('outfits', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function apiMasteries($ids = null) {
         $parameters = [];
         if (!empty($ids)) {
@@ -793,6 +869,18 @@ class ClientVersion2 extends AbstractClientVersion {
             $parameters['ids'] = $ids;
         }
         return $this->request('skins', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiRaces($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('races', $parameters);
     }
 
     /**

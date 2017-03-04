@@ -23,6 +23,7 @@ class Profession extends AbstractStoredObject {
     protected $specializations = [];
     protected $weapons         = [];
     protected $training        = [];
+    protected $skills          = [];
 
     protected function setData($data) {
         parent::setData($data);
@@ -48,6 +49,22 @@ class Profession extends AbstractStoredObject {
                 $this->training[$obj->getId()] = $obj;
             }
         }
+
+        if (isset($data['skills']) && is_array($data['skills'])) {
+            foreach ($data['skills'] as $item) {
+                $obj                         = new ProfessionSkill($env, $item);
+                $this->skills[$obj->getId()] = $obj;
+            }
+        }
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getSkills() {
+        $this->checkLoadData();
+        return $this->skills;
     }
 
     /**
