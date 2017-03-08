@@ -2145,6 +2145,7 @@
     'krait tuning crystal' => 67185,
     'kralkachocolate bar' => 43358,
     'krewe bar' => 8501,
+    'lake doric mussels' => 80373,
     'large mist defensive potion' => 76150,
     'large mist mobility potion' => 75427,
     'large mist offensive potion' => 71659,
@@ -2164,6 +2165,7 @@
     'loaf of walnut sticky bread' => 12160,
     'loaf of zucchini bread' => 12285,
     'lump of crystallized nougat' => 67367,
+    'magic-imbued peach' => 80272,
     'magical fruit' => 8554,
     'mango pie' => 78658,
     'marinated mushroom' => 12190,
@@ -2331,7 +2333,6 @@
     'potent potion of sons of svanir slaying' => 8868,
     'potent potion of undead slaying' => 8878,
     'potent superior sharpening stone' => 43451,
-    'potion of ascalonian mages' => 8700,
     'potion of azantil' => 8797,
     'potion of centaur slaying' => 8835,
     'potion of demon slaying' => 8841,
@@ -2397,6 +2398,7 @@
     'roasted rutabaga' => 12130,
     'rock candy' => 74239,
     'rough sharpening stone' => 9431,
+    'saffron mussels' => 80466,
     'saffron stuffed mushroom' => 12476,
     'sage stuffed mushroom' => 12360,
     'sage stuffed poultry' => 12301,
@@ -2445,6 +2447,7 @@
     'steamed red dumpling' => 68635,
     'stick of cotton candy' => 8584,
     'stick of mystery meat' => 8527,
+    'story unlock: bitterfrost frontier' => 79846,
     'story unlock: echoes of the past' => 67776,
     'story unlock: entanglement' => 66871,
     'story unlock: gates of maguuma' => 66873,
@@ -2631,6 +2634,18 @@
   array (
     '' => 
     array (
+      'bash' => 
+      array (
+        0 => 14486,
+      ),
+      'binding roots' => 
+      array (
+        0 => 12371,
+      ),
+      'bite' => 
+      array (
+        0 => 10372,
+      ),
       'blood frenzy' => 
       array (
         0 => 12424,
@@ -2638,6 +2653,26 @@
       'chilling wind' => 
       array (
         0 => 10633,
+      ),
+      'chomp' => 
+      array (
+        0 => 10373,
+      ),
+      'claw' => 
+      array (
+        0 => 10183,
+      ),
+      'cleansing leaves' => 
+      array (
+        0 => 12374,
+      ),
+      'continuum shift' => 
+      array (
+        0 => 30747,
+      ),
+      'continuum split' => 
+      array (
+        0 => 29830,
       ),
       'crippling shield' => 
       array (
@@ -2647,14 +2682,32 @@
       array (
         0 => 12421,
       ),
+      'cry of frustration' => 
+      array (
+        0 => 10190,
+      ),
       'dash' => 
       array (
         0 => 12427,
+        1 => 14489,
+      ),
+      'distortion' => 
+      array (
+        0 => 10192,
+      ),
+      'diversion' => 
+      array (
+        0 => 10287,
       ),
       'executioner\'s scythe' => 
       array (
         0 => 30557,
         1 => 30558,
+      ),
+      'flee' => 
+      array (
+        0 => 10375,
+        1 => 15863,
       ),
       'fortify' => 
       array (
@@ -2663,6 +2716,7 @@
       'frenzy' => 
       array (
         0 => 12429,
+        1 => 10374,
       ),
       'grim specter' => 
       array (
@@ -2675,6 +2729,11 @@
       'howl' => 
       array (
         0 => 12390,
+      ),
+      'kick' => 
+      array (
+        0 => 14488,
+        1 => 10180,
       ),
       'leap' => 
       array (
@@ -2708,6 +2767,18 @@
       array (
         0 => 19113,
       ),
+      'mind wrack' => 
+      array (
+        0 => 10191,
+      ),
+      'oakheart swipe' => 
+      array (
+        0 => 12370,
+      ),
+      'peck' => 
+      array (
+        0 => 10181,
+      ),
       'pounce' => 
       array (
         0 => 12431,
@@ -2728,6 +2799,23 @@
       array (
         0 => 12407,
       ),
+      'return' => 
+      array (
+        0 => 15861,
+        1 => 15862,
+      ),
+      'roar of the forest' => 
+      array (
+        0 => 12376,
+      ),
+      'screech' => 
+      array (
+        0 => 10182,
+      ),
+      'seismic leap' => 
+      array (
+        0 => 14490,
+      ),
       'shield smack' => 
       array (
         0 => 5621,
@@ -2740,9 +2828,17 @@
       array (
         0 => 12408,
       ),
+      'smash' => 
+      array (
+        0 => 14485,
+      ),
       'snarl' => 
       array (
         0 => 12425,
+      ),
+      'spit' => 
+      array (
+        0 => 10376,
       ),
       'static field' => 
       array (
@@ -2756,6 +2852,10 @@
       array (
         0 => 21647,
       ),
+      'summon healing spring' => 
+      array (
+        0 => 12375,
+      ),
       'swipe' => 
       array (
         0 => 12410,
@@ -2768,9 +2868,17 @@
       array (
         0 => 19504,
       ),
+      'throw boulder' => 
+      array (
+        0 => 14556,
+      ),
       'thunderclap' => 
       array (
         0 => 5728,
+      ),
+      'uppercut' => 
+      array (
+        0 => 14487,
       ),
       'wind blast' => 
       array (
@@ -3587,6 +3695,10 @@
       'shrapnel mine' => 
       array (
         0 => 12337,
+      ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
       ),
       'signet of air' => 
       array (
@@ -4620,6 +4732,10 @@
       array (
         0 => 30112,
       ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
+      ),
       'slick shoes' => 
       array (
         0 => 5825,
@@ -5449,6 +5565,10 @@
       array (
         0 => 12337,
       ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
+      ),
       'signet of courage' => 
       array (
         0 => 30461,
@@ -6255,6 +6375,10 @@
       array (
         0 => 12337,
       ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
+      ),
       'signet of domination' => 
       array (
         0 => 10232,
@@ -7040,6 +7164,10 @@
       array (
         0 => 12337,
       ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
+      ),
       'signet of spite' => 
       array (
         0 => 10622,
@@ -7368,6 +7496,11 @@
       array (
         0 => 12529,
       ),
+      'cosmic ray' => 
+      array (
+        0 => 31796,
+        1 => 33387,
+      ),
       'counter throw' => 
       array (
         0 => 12630,
@@ -7650,6 +7783,11 @@
       array (
         0 => 12510,
       ),
+      'lunar impact' => 
+      array (
+        0 => 31318,
+        1 => 32364,
+      ),
       'man o\' war' => 
       array (
         0 => 12552,
@@ -7682,6 +7820,11 @@
       'napalm' => 
       array (
         0 => 5929,
+      ),
+      'natural convergence' => 
+      array (
+        0 => 31503,
+        1 => 34070,
       ),
       'nature\'s renewal' => 
       array (
@@ -7760,6 +7903,11 @@
       array (
         0 => 12367,
       ),
+      'rejuvenating tides' => 
+      array (
+        0 => 31894,
+        1 => 32253,
+      ),
       'release celestial avatar' => 
       array (
         0 => 31411,
@@ -7805,6 +7953,11 @@
       array (
         0 => 12348,
       ),
+      'seed of life' => 
+      array (
+        0 => 31406,
+        1 => 32242,
+      ),
       'seed turret' => 
       array (
         0 => 12456,
@@ -7820,6 +7973,10 @@
       'shrapnel mine' => 
       array (
         0 => 12337,
+      ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
       ),
       'signet of renewal' => 
       array (
@@ -8490,6 +8647,10 @@
       array (
         0 => 28472,
       ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
+      ),
       'smoke bomb' => 
       array (
         0 => 5824,
@@ -9156,6 +9317,10 @@
       'signet of agility' => 
       array (
         0 => 13062,
+      ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
       ),
       'signet of malice' => 
       array (
@@ -10063,6 +10228,10 @@
       'shrapnel mine' => 
       array (
         0 => 12337,
+      ),
+      'signet of agony' => 
+      array (
+        0 => 37873,
       ),
       'signet of fury' => 
       array (

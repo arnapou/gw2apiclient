@@ -71,7 +71,7 @@
   array (
     0 => 
     array (
-      'id' => 4,
+      'id' => 5,
       'name' => 'Summon Mistfire Wolf',
       'profession_id' => false,
       'profession' => '',
@@ -85,7 +85,7 @@
     ),
     1 => 
     array (
-      'id' => 478,
+      'id' => 479,
       'name' => '"Sick \'Em!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -99,7 +99,7 @@
     ),
     2 => 
     array (
-      'id' => 699,
+      'id' => 700,
       'name' => 'Light\'s Judgement',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -337,6 +337,85 @@
       'type' => 'Jewel',
       'rarity' => 'Exotic',
       'name' => 'Exquisite Freshwater Pearl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+  ),
+  'items' => 
+  array (
+    0 => 
+    array (
+      'id' => 133,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    1 => 
+    array (
+      'id' => 163,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    2 => 
+    array (
+      'id' => 193,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    3 => 
+    array (
+      'id' => 222,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    4 => 
+    array (
+      'id' => 254,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    5 => 
+    array (
+      'id' => 288,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    6 => 
+    array (
+      'id' => 324,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Seraph',
       'pvx' => 6,
       'is_profile' => true,
     ),
