@@ -81,22 +81,30 @@ class MongoStorage extends AbstractStorage {
         parent::set($lang, $name, $id, $data);
     }
 
-    protected function loadPrepared($lang, $name, $fallback) {
-        $key = $this->getKey($lang, $name);
-        if (!empty($this->prepared[$key])) {
-            if (!isset($this->cached[$key])) {
-                $this->cached[$key] = [];
-            }
-            $collection = $this->getCollection($lang, $name);
-            $documents  = $collection->find(['key' => ['$in' => array_values($this->prepared[$key])]]);
+    protected function loadFromFallback($lang, $name, $fallback, $ids) {
+
+        $key        = $this->getKey($lang, $name);
+        $collection = $this->getCollection($lang, $name);
+
+        $n = 10;
+        while ($n--) {
+            $documents = $collection->find(['key' => ['$in' => array_values($ids)]]);
+            $found     = [];
             foreach ($documents as $document) {
+                $found[$document['key']] = $document['key'];
                 parent::set($lang, $name, $document['key'], $document['data']);
             }
-            $this->loadFromFallback($lang, $name, $fallback, array_diff_key($this->prepared[$key], $this->cached[$key]));
-            $this->prepared[$key] = array_diff_key($this->prepared[$key], $this->cached[$key]);
-            return true;
+            $remain = array_diff_key($this->prepared[$key], $this->cached[$key]);
+            if (empty($remain) || count($ids) == count($remain) + count($found)) {
+                break;
+            }
+            else {
+                $ids = $remain;
+            }
         }
-        return false;
+
+        $this->prepared[$key] = $remain;
+        parent::loadFromFallback($lang, $name, $fallback, $this->prepared[$key]);
     }
 
     /**
