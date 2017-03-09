@@ -12,9 +12,9 @@
 namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Environment;
+use Arnapou\GW2Api\Event\Event;
 use Arnapou\GW2Api\Exception\AllIdsProvidedAreInvalidException;
 use Arnapou\GW2Api\Exception\RequestException;
-use Arnapou\GW2Api\Event\Event;
 
 abstract class AbstractClientVersion {
 

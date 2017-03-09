@@ -223,7 +223,7 @@ class Environment {
     /**
      * 
      * @param boolean $bool
-     * @return ClientVersion2
+     * @return Environment
      */
     function setUseSmartCaching($bool) {
         $this->useSmartCaching = $bool ? true : false;
