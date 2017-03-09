@@ -38,6 +38,12 @@ class Environment {
 
     /**
      *
+     * @var array
+     */
+    protected $cacheRetentionRules = [];
+
+    /**
+     *
      * @var StorageInterface
      */
     protected $storage;
@@ -109,6 +115,20 @@ class Environment {
     public function __construct($lang = self::LANG_EN) {
         $this->setLang($lang);
         $this->eventListener = new Event\EventListener();
+    }
+
+    /**
+     * 
+     * @param string $pattern
+     * @param integer $seconds
+     * @return Environment
+     */
+    public function addCacheRetentionRule($pattern, $seconds) {
+        if ($seconds <= 1) {
+            throw new Exception('Retention cannot be lower than 2 seconds');
+        }
+        $this->cacheRetentionRules[$pattern] = $seconds;
+        return $this;
     }
 
     /**
@@ -251,7 +271,7 @@ class Environment {
 
     /**
      * 
-     * @param integer $seconds
+     * @param integer $seconds default cache retention
      * @return Environment
      */
     public function setCacheRetention($seconds) {
@@ -266,7 +286,14 @@ class Environment {
      * 
      * @return string
      */
-    public function getCacheRetention() {
+    public function getCacheRetention($url = null) {
+        if ($url) {
+            foreach ($this->cacheRetentionRules as $pattern => $retention) {
+                if (strpos($url, $pattern) !== false) {
+                    return $retention;
+                }
+            }
+        }
         return $this->cacheRetention;
     }
 

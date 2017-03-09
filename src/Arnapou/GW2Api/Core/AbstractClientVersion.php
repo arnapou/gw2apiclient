@@ -130,7 +130,7 @@ abstract class AbstractClientVersion {
             $cache->set($cacheKey, [
                 'headers' => $responseHeaders,
                 'data'    => $data,
-                ], $this->getEnvironment()->getCacheRetention()
+                ], $this->getEnvironment()->getCacheRetention($this->getBaseUrl() . $url)
             );
         }
 
