@@ -224,6 +224,12 @@ class Account extends AbstractObject {
      *
      * @var array
      */
+    protected $gliders;
+
+    /**
+     *
+     * @var array
+     */
     protected $outfits;
 
     /**
@@ -305,6 +311,25 @@ class Account extends AbstractObject {
             $this->tradingPost = new TradingPost($this->getEnvironment(), []);
         }
         return $this->tradingPost;
+    }
+
+    /**
+     * 
+     * @return Gliders
+     */
+    public function getGliders() {
+        if (empty($this->gliders)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env           = $this->getEnvironment();
+            $this->gliders = new Gliders($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountGliders(),
+            ]);
+        }
+        return $this->gliders;
     }
 
     /**

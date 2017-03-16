@@ -180,6 +180,14 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
+    public function apiAccountGliders() {
+        return $this->requestAccessToken('account/gliders');
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function apiAccountFinishers() {
         return $this->requestAccessToken('account/finishers');
     }
@@ -719,6 +727,18 @@ class ClientVersion2 extends AbstractClientVersion {
             $parameters['ids'] = $ids;
         }
         return $this->request('legends', $parameters);
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function apiGliders($ids = null) {
+        $parameters = [];
+        if (!empty($ids)) {
+            $parameters['ids'] = $ids;
+        }
+        return $this->request('gliders', $parameters);
     }
 
     /**
