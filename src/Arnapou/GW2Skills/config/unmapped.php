@@ -23,7 +23,7 @@
     ),
     1 => 
     array (
-      'id' => 21,
+      'id' => 22,
       'name' => 'Sharpening Stone Station',
       'type' => 'Sharpen',
       'rarity' => 'Masterwork',
@@ -32,7 +32,7 @@
     ),
     2 => 
     array (
-      'id' => 28,
+      'id' => 30,
       'name' => 'Tuning Crystal Station',
       'type' => 'Crystal',
       'rarity' => 'Masterwork',
@@ -41,7 +41,7 @@
     ),
     3 => 
     array (
-      'id' => 58,
+      'id' => 61,
       'name' => 'Beetletun Omelette',
       'type' => 'Food',
       'rarity' => 'Fine',
@@ -50,7 +50,7 @@
     ),
     4 => 
     array (
-      'id' => 179,
+      'id' => 182,
       'name' => 'Blessing Of Bear',
       'type' => 'Food',
       'rarity' => 'Common',
@@ -59,7 +59,7 @@
     ),
     5 => 
     array (
-      'id' => 417,
+      'id' => 420,
       'name' => 'Prickly Pear Stuffed Nopale',
       'type' => 'Food',
       'rarity' => 'Fine',
@@ -99,7 +99,7 @@
     ),
     2 => 
     array (
-      'id' => 700,
+      'id' => 701,
       'name' => 'Light\'s Judgement',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -116,7 +116,157 @@
   array (
     0 => 
     array (
-      'id' => 153,
+      'id' => 58,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Annulment',
+      'pvp_name' => 'Sigil of Annulment (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    1 => 
+    array (
+      'id' => 59,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Compounding',
+      'pvp_name' => 'Sigil of Compounding (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    2 => 
+    array (
+      'id' => 60,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Confusion',
+      'pvp_name' => 'Sigil of Confusion (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    3 => 
+    array (
+      'id' => 61,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Courage',
+      'pvp_name' => 'Sigil of Courage (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    4 => 
+    array (
+      'id' => 62,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Enhancement',
+      'pvp_name' => 'Sigil of Enhancement (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    5 => 
+    array (
+      'id' => 63,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Escape',
+      'pvp_name' => 'Sigil of Escape (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    6 => 
+    array (
+      'id' => 64,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Exploitation',
+      'pvp_name' => 'Sigil of Exploitation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    7 => 
+    array (
+      'id' => 65,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Exposure',
+      'pvp_name' => 'Sigil of Exposure (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    8 => 
+    array (
+      'id' => 67,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Misery',
+      'pvp_name' => 'Sigil of Misery (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    9 => 
+    array (
+      'id' => 68,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Opportunity',
+      'pvp_name' => 'Sigil of Opportunity (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    10 => 
+    array (
+      'id' => 69,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Purging',
+      'pvp_name' => 'Sigil of Purging (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    11 => 
+    array (
+      'id' => 70,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Revocation',
+      'pvp_name' => 'Sigil of Revocation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    12 => 
+    array (
+      'id' => 71,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Savagery',
+      'pvp_name' => 'Sigil of Savagery (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    13 => 
+    array (
+      'id' => 72,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Separation',
+      'pvp_name' => 'Sigil of Separation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    14 => 
+    array (
+      'id' => 73,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Stagnation',
+      'pvp_name' => 'Sigil of Stagnation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    15 => 
+    array (
+      'id' => 169,
       'type' => 'Rune',
       'rarity' => 'Exotic',
       'name' => 'Superior Rune of the Lynx',
@@ -124,214 +274,214 @@
       'pvx' => 1,
       'is_profile' => false,
     ),
-    1 => 
+    16 => 
     array (
-      'id' => 188,
+      'id' => 204,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Malign Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    2 => 
+    17 => 
     array (
-      'id' => 189,
+      'id' => 205,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Mighty Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    3 => 
-    array (
-      'id' => 190,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Precise Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    4 => 
-    array (
-      'id' => 191,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Malign Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    5 => 
-    array (
-      'id' => 192,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Mighty Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    6 => 
-    array (
-      'id' => 193,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Precise Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    7 => 
-    array (
-      'id' => 197,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Healing Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    8 => 
-    array (
-      'id' => 198,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    9 => 
-    array (
-      'id' => 199,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Vital Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    10 => 
-    array (
-      'id' => 200,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Healing Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    11 => 
-    array (
-      'id' => 201,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    12 => 
-    array (
-      'id' => 202,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Vital Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    13 => 
+    18 => 
     array (
       'id' => 206,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Precise Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    19 => 
+    array (
+      'id' => 207,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Malign Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    20 => 
+    array (
+      'id' => 208,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Mighty Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    21 => 
+    array (
+      'id' => 209,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Precise Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    22 => 
+    array (
+      'id' => 213,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Healing Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    23 => 
+    array (
+      'id' => 214,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Resilient Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    24 => 
+    array (
+      'id' => 215,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Vital Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    25 => 
+    array (
+      'id' => 216,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Healing Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    26 => 
+    array (
+      'id' => 217,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Resilient Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    27 => 
+    array (
+      'id' => 218,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Vital Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    28 => 
+    array (
+      'id' => 222,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Gilded Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    14 => 
+    29 => 
     array (
-      'id' => 207,
+      'id' => 223,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Magical Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    15 => 
+    30 => 
     array (
-      'id' => 208,
+      'id' => 224,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Experienced Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    16 => 
+    31 => 
     array (
-      'id' => 209,
+      'id' => 225,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Karmic Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    17 => 
+    32 => 
     array (
-      'id' => 210,
+      'id' => 226,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Versatile Simple Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    18 => 
+    33 => 
     array (
-      'id' => 211,
+      'id' => 227,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Malign Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    19 => 
+    34 => 
     array (
-      'id' => 212,
+      'id' => 228,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Mighty Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    20 => 
+    35 => 
     array (
-      'id' => 213,
+      'id' => 229,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Precise Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    21 => 
+    36 => 
     array (
-      'id' => 214,
+      'id' => 230,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Healing Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    22 => 
+    37 => 
     array (
-      'id' => 215,
+      'id' => 231,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Resilient Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    23 => 
+    38 => 
     array (
-      'id' => 216,
+      'id' => 232,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
     ),
-    24 => 
+    39 => 
     array (
       'id' => 39,
       'type' => 'Jewel',
