@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Titles extends AbstractObject {
+class Titles extends AbstractObject
+{
 
     /**
      *
@@ -40,7 +39,8 @@ class Titles extends AbstractObject {
      */
     protected $total;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
@@ -49,7 +49,8 @@ class Titles extends AbstractObject {
     /**
      * 
      */
-    protected function prepareObjects() {
+    protected function prepareObjects()
+    {
         $this->titles = [];
         $this->count  = 0;
         $this->total  = 0;
@@ -60,7 +61,7 @@ class Titles extends AbstractObject {
             $unlocked          = isset($flippedUnlocked[$id]);
             $title             = new Title($env, $id);
             $title->setUnlocked($unlocked);
-            $this->count += $unlocked ? 1 : 0;
+            $this->count       += $unlocked ? 1 : 0;
             $this->total++;
             $this->titles[$id] = $title;
         }
@@ -73,7 +74,8 @@ class Titles extends AbstractObject {
      * 
      * @return array
      */
-    public function getTitles() {
+    public function getTitles()
+    {
         if (!isset($this->titles)) {
             $this->prepareObjects();
         }
@@ -84,7 +86,8 @@ class Titles extends AbstractObject {
      * 
      * @return integer
      */
-    public function getCount() {
+    public function getCount()
+    {
         return count($this->unlocked);
     }
 
@@ -92,11 +95,11 @@ class Titles extends AbstractObject {
      * 
      * @return integer
      */
-    public function getTotal() {
+    public function getTotal()
+    {
         if (!isset($this->total)) {
             $this->prepareObjects();
         }
         return $this->total;
     }
-
 }

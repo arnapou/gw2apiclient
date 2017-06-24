@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,7 +16,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getOffhand() The name of the offhand weapon this skill requires to be equipped. This field is usually only present for Thief skills.
  * @method string getAttunement() The Elementalist attunement that this skill requires. This field is usually only present for Elementalist skills.
  */
-class ProfessionWeaponSkill extends AbstractObject {
+class ProfessionWeaponSkill extends AbstractObject
+{
 
     const SLOT_WEAPON_1 = 'Weapon_1';
     const SLOT_WEAPON_2 = 'Weapon_2';
@@ -38,7 +37,8 @@ class ProfessionWeaponSkill extends AbstractObject {
      */
     protected $specialization;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['id'])) {
@@ -50,8 +50,8 @@ class ProfessionWeaponSkill extends AbstractObject {
      * 
      * @return Skill
      */
-    public function getSkill() {
+    public function getSkill()
+    {
         return $this->skill;
     }
-
 }

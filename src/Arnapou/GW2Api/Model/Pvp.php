@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Pvp extends AbstractObject {
+class Pvp extends AbstractObject
+{
 
     const RANK_RABBIT  = 'Rabbit';
     const RANK_DEER    = 'Deer';
@@ -62,7 +61,8 @@ class Pvp extends AbstractObject {
      */
     protected $standings;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['aggregate'])) {
@@ -80,7 +80,8 @@ class Pvp extends AbstractObject {
      * 
      * @return array
      */
-    public function getStandings() {
+    public function getStandings()
+    {
         if ($this->standings === null) {
             $this->standings = [];
             $env             = $this->getEnvironment();
@@ -105,7 +106,8 @@ class Pvp extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getAggregateStats() {
+    public function getAggregateStats()
+    {
         return $this->aggregate;
     }
 
@@ -114,7 +116,8 @@ class Pvp extends AbstractObject {
      * @param string $key
      * @return array
      */
-    public function getLadderStats($key) {
+    public function getLadderStats($key)
+    {
         if (!array_key_exists($key, $this->ladders)) {
             return null;
         }
@@ -125,7 +128,8 @@ class Pvp extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getLadderNone() {
+    public function getLadderNone()
+    {
         return $this->getLadderStats('none');
     }
 
@@ -133,7 +137,8 @@ class Pvp extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getLadderRanked() {
+    public function getLadderRanked()
+    {
         return $this->getLadderStats('ranked');
     }
 
@@ -141,7 +146,8 @@ class Pvp extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getLadderUnranked() {
+    public function getLadderUnranked()
+    {
         return $this->getLadderStats('unranked');
     }
 
@@ -149,7 +155,8 @@ class Pvp extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getLadderSoloArenaRated() {
+    public function getLadderSoloArenaRated()
+    {
         return $this->getLadderStats('soloarenarated');
     }
 
@@ -157,7 +164,8 @@ class Pvp extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getLadderTeamArenaRated() {
+    public function getLadderTeamArenaRated()
+    {
         return $this->getLadderStats('teamarenarated');
     }
 
@@ -165,7 +173,8 @@ class Pvp extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getProfessionsStats() {
+    public function getProfessionsStats()
+    {
         if (!isset($this->professions)) {
             $professions       = $this->getData('professions');
             $this->professions = [];
@@ -203,7 +212,8 @@ class Pvp extends AbstractObject {
      * 
      * @return array
      */
-    public function getGames() {
+    public function getGames()
+    {
         if (!isset($this->games)) {
             $env         = $this->getEnvironment();
             $games       = $env->getClientVersion2()->apiPvpGames($env->getClientVersion2()->apiPvpGames());
@@ -222,7 +232,8 @@ class Pvp extends AbstractObject {
      * 
      * @return integer
      */
-    public function getRank() {
+    public function getRank()
+    {
         return $this->getData('pvp_rank');
     }
 
@@ -230,7 +241,8 @@ class Pvp extends AbstractObject {
      * 
      * @return integer
      */
-    public function getRankPoints() {
+    public function getRankPoints()
+    {
         return $this->getData('pvp_rank_points');
     }
 
@@ -238,7 +250,8 @@ class Pvp extends AbstractObject {
      * 
      * @return integer
      */
-    public function getRankRollovers() {
+    public function getRankRollovers()
+    {
         return $this->getData('pvp_rank_rollovers');
     }
 
@@ -246,7 +259,8 @@ class Pvp extends AbstractObject {
      * 
      * @return string
      */
-    public function getRankName() {
+    public function getRankName()
+    {
         return [
             self::RANK_RABBIT,
             self::RANK_DEER,
@@ -259,5 +273,4 @@ class Pvp extends AbstractObject {
             self::RANK_DRAGON,
             ][floor($this->getRank() / 10)];
     }
-
 }

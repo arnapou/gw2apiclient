@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,14 +16,16 @@ namespace Arnapou\GW2Api\Model;
  * @method string getIcon()
  * @method string getIconBig()
  */
-class Profession extends AbstractStoredObject {
+class Profession extends AbstractStoredObject
+{
 
     protected $specializations = [];
     protected $weapons         = [];
     protected $training        = [];
     protected $skills          = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $env = $this->getEnvironment();
@@ -62,7 +62,8 @@ class Profession extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getSkills() {
+    public function getSkills()
+    {
         $this->checkLoadData();
         return $this->skills;
     }
@@ -71,7 +72,8 @@ class Profession extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getWeapons() {
+    public function getWeapons()
+    {
         $this->checkLoadData();
         return $this->weapons;
     }
@@ -80,7 +82,8 @@ class Profession extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getTraining() {
+    public function getTraining()
+    {
         $this->checkLoadData();
         return $this->training;
     }
@@ -89,7 +92,8 @@ class Profession extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getSpecializations() {
+    public function getSpecializations()
+    {
         $this->checkLoadData();
         return $this->specializations;
     }
@@ -98,12 +102,13 @@ class Profession extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'professions';
     }
-
 }

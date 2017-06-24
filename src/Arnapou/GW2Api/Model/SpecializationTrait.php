@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -20,7 +18,8 @@ namespace Arnapou\GW2Api\Model;
  * @method getTier()
  * @method getSlot()
  */
-class SpecializationTrait extends AbstractStoredObject {
+class SpecializationTrait extends AbstractStoredObject
+{
 
     const SLOT_MAJOR = 'Major';
     const SLOT_MINOR = 'Minor';
@@ -35,7 +34,8 @@ class SpecializationTrait extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getSkills() {
+    public function getSkills()
+    {
         return $this->getData('skills');
     }
 
@@ -43,7 +43,8 @@ class SpecializationTrait extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getFacts() {
+    public function getFacts()
+    {
         return $this->getData('facts', []);
     }
 
@@ -51,7 +52,8 @@ class SpecializationTrait extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getTraitedFacts() {
+    public function getTraitedFacts()
+    {
         return $this->getData('traited_facts', []);
     }
 
@@ -59,12 +61,13 @@ class SpecializationTrait extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'traits';
     }
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Environment;
@@ -16,7 +14,8 @@ use Arnapou\GW2Api\Event\Event;
 use Arnapou\GW2Api\Exception\AllIdsProvidedAreInvalidException;
 use Arnapou\GW2Api\Exception\RequestException;
 
-abstract class AbstractClientVersion {
+abstract class AbstractClientVersion
+{
 
     /**
      *
@@ -27,7 +26,8 @@ abstract class AbstractClientVersion {
     /**
      * 
      */
-    public function __construct(Environment $environment) {
+    public function __construct(Environment $environment)
+    {
         $this->environment = $environment;
     }
 
@@ -35,7 +35,8 @@ abstract class AbstractClientVersion {
      * 
      * @param array $parameters
      */
-    protected function checkParameters(&$parameters) {
+    protected function checkParameters(&$parameters)
+    {
         if (!isset($parameters['lang']) && !empty($this->lang)) {
             $parameters['lang'] = $this->lang;
         }
@@ -47,7 +48,8 @@ abstract class AbstractClientVersion {
      * @param array $headers
      * @return Curl
      */
-    protected function createCurl($url, $headers) {
+    protected function createCurl($url, $headers)
+    {
         $curl = new Curl();
         $curl->setUrl($url);
         $curl->setUserAgent($this->getEnvironment()->getCurlUserAgent());
@@ -64,7 +66,8 @@ abstract class AbstractClientVersion {
      * @param array $headers
      * @return array
      */
-    protected function request($url, $parameters = [], $headers = []) {
+    protected function request($url, $parameters = [], $headers = [])
+    {
         $environment = $this->getEnvironment();
         if (!isset($parameters['lang'])) {
             $parameters['lang'] = $environment->getLang();
@@ -102,11 +105,9 @@ abstract class AbstractClientVersion {
                     throw new RequestException('HTTP Error 503. The GW2 API is unreachable.');
                 }
                 continue;
-            }
-            elseif ($httpCode == 404 && stripos($response->getContent(), '"all ids provided are invalid"')) {
+            } elseif ($httpCode == 404 && stripos($response->getContent(), '"all ids provided are invalid"')) {
                 throw new AllIdsProvidedAreInvalidException();
-            }
-            elseif ($httpCode != 200 && $httpCode != 206) {
+            } elseif ($httpCode != 200 && $httpCode != 206) {
                 throw new RequestException(
                 "HTTP Error " . $httpCode . ".\n"
                 . "URL = " . $requestUrl . ".\n"
@@ -141,7 +142,8 @@ abstract class AbstractClientVersion {
      * 
      * @return Environment
      */
-    public function getEnvironment() {
+    public function getEnvironment()
+    {
         return $this->environment;
     }
 

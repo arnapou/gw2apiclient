@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -26,7 +24,8 @@ namespace Arnapou\GW2Api\Model;
  * @method getType()
  * @method getWeaponType()
  */
-class Skill extends AbstractStoredObject {
+class Skill extends AbstractStoredObject
+{
 
     // TYPES
     const TYPE_BUNDLE             = 'Bundle';
@@ -81,12 +80,12 @@ class Skill extends AbstractStoredObject {
      */
     protected $bundleSkills = [];
 
-
     /**
      * 
      * @return string
      */
-    public function getPrevChainId() {
+    public function getPrevChainId()
+    {
         return $this->getData('prev_chain');
     }
 
@@ -94,7 +93,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getFlags() {
+    public function getFlags()
+    {
         return $this->getData('flags', []);
     }
 
@@ -102,7 +102,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return Skill
      */
-    public function getPrevChain() {
+    public function getPrevChain()
+    {
         $this->checkLoadData();
         return $this->prevChain;
     }
@@ -111,7 +112,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getNextChainId() {
+    public function getNextChainId()
+    {
         return $this->getData('next_chain');
     }
 
@@ -119,7 +121,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return Skill
      */
-    public function getNextChain() {
+    public function getNextChain()
+    {
         $this->checkLoadData();
         return $this->nextChain;
     }
@@ -128,7 +131,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getFlipSkillId() {
+    public function getFlipSkillId()
+    {
         return $this->getData('flip_skill');
     }
 
@@ -136,7 +140,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return Skill
      */
-    public function getFlipSkill() {
+    public function getFlipSkill()
+    {
         $this->checkLoadData();
         return $this->flipSkill;
     }
@@ -145,7 +150,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getToolbeltSkillId() {
+    public function getToolbeltSkillId()
+    {
         return $this->getData('toolbelt_skill');
     }
 
@@ -153,7 +159,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return Skill
      */
-    public function getToolbeltSkill() {
+    public function getToolbeltSkill()
+    {
         $this->checkLoadData();
         return $this->toolbeltSkill;
     }
@@ -162,7 +169,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getTransformSkillsIds() {
+    public function getTransformSkillsIds()
+    {
         return $this->getData('transform_skills');
     }
 
@@ -170,7 +178,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getTransformSkills() {
+    public function getTransformSkills()
+    {
         $this->checkLoadData();
         return $this->transformSkills;
     }
@@ -179,7 +188,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getBundleSkillsIds() {
+    public function getBundleSkillsIds()
+    {
         return $this->getData('bundle_skills');
     }
 
@@ -187,7 +197,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getBundleSkills() {
+    public function getBundleSkills()
+    {
         $this->checkLoadData();
         return $this->bundleSkills;
     }
@@ -196,7 +207,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getProfessions() {
+    public function getProfessions()
+    {
         return $this->getData('professions', []);
     }
 
@@ -204,7 +216,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getFacts() {
+    public function getFacts()
+    {
         return $this->getData('facts', []);
     }
 
@@ -212,7 +225,8 @@ class Skill extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getTraitedFacts() {
+    public function getTraitedFacts()
+    {
         return $this->getData('traited_facts', []);
     }
 
@@ -220,12 +234,13 @@ class Skill extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getCategories() {
+    public function getCategories()
+    {
         return $this->getData('categories', []);
     }
 
-
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['flip_skill'])) {
@@ -256,12 +271,13 @@ class Skill extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'skills';
     }
-
 }

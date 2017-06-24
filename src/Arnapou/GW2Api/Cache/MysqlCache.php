@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -22,12 +21,12 @@
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
  */
-
 namespace Arnapou\GW2Api\Cache;
 
 use Arnapou\GW2Api\Exception\Exception;
 
-class MysqlCache implements CacheInterface {
+class MysqlCache implements CacheInterface
+{
 
     /**
      *
@@ -63,15 +62,17 @@ class MysqlCache implements CacheInterface {
      * 
      * @param \PDO $pdo
      */
-    public function __construct(\PDO $pdo, $table) {
-        $this->pdo = $pdo;
+    public function __construct(\PDO $pdo, $table)
+    {
+        $this->pdo   = $pdo;
         $this->table = $table;
     }
 
     /**
      * Ran when php exits : automatically run of GC if conditions are met
      */
-    public function __destruct() {
+    public function __destruct()
+    {
         $rand = mt_rand(1, $this->gcDivisor);
         if ($rand <= $this->gcProbability) {
             $this->runGarbageCollector();
@@ -81,7 +82,8 @@ class MysqlCache implements CacheInterface {
     /**
      * Run the garbage collector which clean expired files
      */
-    public function runGarbageCollector() {
+    public function runGarbageCollector()
+    {
         $this->pdo->exec('DELETE FROM `' . $this->table . '̀  WHERE expiration < ' . time());
     }
 
@@ -96,22 +98,25 @@ class MysqlCache implements CacheInterface {
      * @param int $gcProbability
      * @param int $gcDivisor
      */
-    public function setGarbageCollectorParameters($gcProbability, $gcDivisor) {
+    public function setGarbageCollectorParameters($gcProbability, $gcDivisor)
+    {
         if ($gcDivisor < 1) {
             throw new Exception('gcDivisor should be strictly > 0.');
         }
         if ($gcDivisor < 0) {
             throw new Exception('gcProbability cannot be negative.');
         }
-        $this->gcDivisor = $gcDivisor;
+        $this->gcDivisor     = $gcDivisor;
         $this->gcProbability = $gcProbability;
     }
 
-    protected function hash($key) {
+    protected function hash($key)
+    {
         return hash('sha256', $key);
     }
 
-    public function get($key) {
+    public function get($key)
+    {
         $prepared = $this->getPreparedGet();
         $prepared->bindValue('hash', $this->hash($key), \PDO::PARAM_STR);
         $prepared->bindValue('expiration', time(), \PDO::PARAM_INT);
@@ -121,15 +126,15 @@ class MysqlCache implements CacheInterface {
         if (isset($row[0])) {
             try {
                 return unserialize($row[0]);
-            }
-            catch (\Exception $e) {
+            } catch (\Exception $e) {
                 return null;
             }
         }
         return null;
     }
 
-    public function exists($key) {
+    public function exists($key)
+    {
         $prepared = $this->getPreparedGet();
         $prepared->bindValue('hash', $this->hash($key), \PDO::PARAM_STR);
         $prepared->bindValue('expiration', time(), \PDO::PARAM_INT);
@@ -142,7 +147,8 @@ class MysqlCache implements CacheInterface {
         return false;
     }
 
-    public function set($key, $value, $expiration = 0) {
+    public function set($key, $value, $expiration = 0)
+    {
         if ($expiration != 0 && $expiration <= 30 * 86400) {
             $expiration += time();
         }
@@ -154,7 +160,8 @@ class MysqlCache implements CacheInterface {
         $prepared->execute();
     }
 
-    public function remove($key) {
+    public function remove($key)
+    {
         $prepared = $this->getPreparedRemove();
         $prepared->bindValue('hash', $this->hash($key), \PDO::PARAM_STR);
         $prepared->execute();
@@ -164,9 +171,10 @@ class MysqlCache implements CacheInterface {
      * 
      * @return \PDOStatement
      */
-    protected function getPreparedRemove() {
+    protected function getPreparedRemove()
+    {
         if (empty($this->prepared['remove'])) {
-            $sql = "DELETE FROM `" . $this->table . "` WHERE `hash`=:hash";
+            $sql                      = "DELETE FROM `" . $this->table . "` WHERE `hash`=:hash";
             $this->prepared['remove'] = $this->pdo->prepare($sql);
         }
         return $this->prepared['remove'];
@@ -176,9 +184,10 @@ class MysqlCache implements CacheInterface {
      * 
      * @return \PDOStatement
      */
-    protected function getPreparedGet() {
+    protected function getPreparedGet()
+    {
         if (empty($this->prepared['get'])) {
-            $sql = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=:hash and `expiration`>=:expiration";
+            $sql                   = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=:hash and `expiration`>=:expiration";
             $this->prepared['get'] = $this->pdo->prepare($sql);
         }
         return $this->prepared['get'];
@@ -188,12 +197,12 @@ class MysqlCache implements CacheInterface {
      * 
      * @return \PDOStatement
      */
-    protected function getPreparedSet() {
+    protected function getPreparedSet()
+    {
         if (!isset($this->prepared['set'])) {
-            $sql = "REPLACE INTO `" . $this->table . "` (`hash`, `value`, `expiration` ) VALUES (:hash, :value, :expiration)";
+            $sql                   = "REPLACE INTO `" . $this->table . "` (`hash`, `value`, `expiration` ) VALUES (:hash, :value, :expiration)";
             $this->prepared['set'] = $this->pdo->prepare($sql);
         }
         return $this->prepared['set'];
     }
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -20,7 +18,8 @@ namespace Arnapou\GW2Api\Model;
  * @method getProfession()
  * @method isElite()
  */
-class Specialization extends AbstractStoredObject {
+class Specialization extends AbstractStoredObject
+{
 
     /**
      *
@@ -38,7 +37,8 @@ class Specialization extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getMinorTraitsIds() {
+    public function getMinorTraitsIds()
+    {
         return $this->getData('minor_traits');
     }
 
@@ -46,7 +46,8 @@ class Specialization extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getMinorTraits() {
+    public function getMinorTraits()
+    {
         $this->checkLoadData();
         return $this->minorTraits;
     }
@@ -55,7 +56,8 @@ class Specialization extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getMajorTraitsIds() {
+    public function getMajorTraitsIds()
+    {
         return $this->getData('major_traits');
     }
 
@@ -63,12 +65,14 @@ class Specialization extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getMajorTraits() {
+    public function getMajorTraits()
+    {
         $this->checkLoadData();
         return $this->majorTraits;
     }
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['minor_traits']) && is_array($data['minor_traits'])) {
@@ -87,12 +91,13 @@ class Specialization extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'specializations';
     }
-
 }

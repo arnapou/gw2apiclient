@@ -13,9 +13,9 @@
         "mongodb/mongodb": "1.0"
     },
     "autoload": {
-        "psr-0": {
-            "Arnapou\\GW2Api": "src/",
-            "Arnapou\\GW2Skills": "src/"
+        "psr-4": {
+            "Arnapou\\GW2Api": "src/Arnapou/GW2Api/",
+            "Arnapou\\GW2Skills": "src/Arnapou/GW2Skills/"
         },
         "files": ["src/Arnapou/GW2Api/functions.php"]
     }

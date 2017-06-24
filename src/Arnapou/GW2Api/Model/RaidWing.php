@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,17 +7,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class RaidWing extends AbstractObject {
+class RaidWing extends AbstractObject
+{
 
     protected $events = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['events']) && is_array($data['events'])) {
@@ -35,7 +35,8 @@ class RaidWing extends AbstractObject {
      * 
      * @return array
      */
-    public function getEvents() {
+    public function getEvents()
+    {
         return $this->events;
     }
 
@@ -43,7 +44,8 @@ class RaidWing extends AbstractObject {
      * 
      * @return string
      */
-    public function getId() {
+    public function getId()
+    {
         return $this->getData('id');
     }
 
@@ -51,7 +53,8 @@ class RaidWing extends AbstractObject {
      * 
      * @return integer
      */
-    public function getNumber() {
+    public function getNumber()
+    {
         return $this->getData('number');
     }
 
@@ -59,7 +62,8 @@ class RaidWing extends AbstractObject {
      * 
      * @return string
      */
-    public function getName() {
+    public function getName()
+    {
         return \Arnapou\GW2Api\id_to_name($this->getId());
     }
 
@@ -67,8 +71,8 @@ class RaidWing extends AbstractObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
-
 }

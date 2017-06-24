@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -21,11 +19,13 @@ namespace Arnapou\GW2Api\Model;
  * @method string getChapters()
  * @method string getRaces()
  */
-class Story extends AbstractStoredObject {
+class Story extends AbstractStoredObject
+{
 
     protected $season;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['season'])) {
@@ -37,7 +37,8 @@ class Story extends AbstractStoredObject {
      * 
      * @return StorySeason
      */
-    public function getSeason() {
+    public function getSeason()
+    {
         return $this->season;
     }
 
@@ -45,7 +46,8 @@ class Story extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getFlags() {
+    public function getFlags()
+    {
         return $this->getData('flags', []);
     }
 
@@ -54,12 +56,13 @@ class Story extends AbstractStoredObject {
      * @param string $flag
      * @return boolean
      */
-    public function hasFlag($flag) {
+    public function hasFlag($flag)
+    {
         return in_array($flag, (array) $this->getFlags());
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'stories';
     }
-
 }

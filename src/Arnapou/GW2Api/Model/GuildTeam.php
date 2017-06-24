@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -17,7 +15,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getName()
  * @method string getState)
  */
-class GuildTeam extends AbstractObject {
+class GuildTeam extends AbstractObject
+{
 
     /**
      *
@@ -43,7 +42,8 @@ class GuildTeam extends AbstractObject {
      */
     protected $aggregate;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $env = $this->getEnvironment();
@@ -78,7 +78,8 @@ class GuildTeam extends AbstractObject {
      * 
      * @return array
      */
-    public function getMembers() {
+    public function getMembers()
+    {
         return $this->members;
     }
 
@@ -86,7 +87,8 @@ class GuildTeam extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getAggregateStats() {
+    public function getAggregateStats()
+    {
         return $this->aggregate;
     }
 
@@ -94,7 +96,8 @@ class GuildTeam extends AbstractObject {
      * 
      * @return array
      */
-    public function getGames() {
+    public function getGames()
+    {
         return $this->games;
     }
 
@@ -103,7 +106,8 @@ class GuildTeam extends AbstractObject {
      * @param string $key
      * @return array
      */
-    public function getLadderStats($key) {
+    public function getLadderStats($key)
+    {
         if (!array_key_exists($key, $this->ladders)) {
             return null;
         }
@@ -114,7 +118,8 @@ class GuildTeam extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getLadderRanked() {
+    public function getLadderRanked()
+    {
         return $this->getLadderStats('ranked');
     }
 
@@ -122,8 +127,8 @@ class GuildTeam extends AbstractObject {
      * 
      * @return PvpStats
      */
-    public function getLadderUnranked() {
+    public function getLadderUnranked()
+    {
         return $this->getLadderStats('unranked');
     }
-
 }

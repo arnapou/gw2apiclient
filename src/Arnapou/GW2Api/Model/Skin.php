@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -20,7 +18,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getDescription()
  * @method string getIcon()
  */
-class Skin extends AbstractStoredObject {
+class Skin extends AbstractStoredObject
+{
 
     use UnlockTrait;
 
@@ -48,7 +47,8 @@ class Skin extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getFlags() {
+    public function getFlags()
+    {
         return $this->getData('flags', []);
     }
 
@@ -57,7 +57,8 @@ class Skin extends AbstractStoredObject {
      * @param string $flag
      * @return boolean
      */
-    public function hasFlag($flag) {
+    public function hasFlag($flag)
+    {
         return in_array($flag, (array) $this->getFlags());
     }
 
@@ -65,7 +66,8 @@ class Skin extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getRestrictions() {
+    public function getRestrictions()
+    {
         return $this->getData('restrictions', []);
     }
 
@@ -74,7 +76,8 @@ class Skin extends AbstractStoredObject {
      * @param string $restriction
      * @return boolean
      */
-    public function hasRestriction($restriction) {
+    public function hasRestriction($restriction)
+    {
         return in_array($restriction, (array) $this->getRestrictions());
     }
 
@@ -82,7 +85,8 @@ class Skin extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getSubType() {
+    public function getSubType()
+    {
         return $this->getData(['details', 'type']);
     }
 
@@ -90,7 +94,8 @@ class Skin extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getArmorWeightClass() {
+    public function getArmorWeightClass()
+    {
         return $this->getData(['details', 'weight_class']);
     }
 
@@ -98,12 +103,13 @@ class Skin extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getWeaponDamageType() {
+    public function getWeaponDamageType()
+    {
         return $this->getData(['details', 'damage_type']);
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'skins';
     }
-
 }

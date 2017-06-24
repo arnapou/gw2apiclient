@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,14 +7,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  * 
  * @method string getType()
  */
-class ProfessionWeapon extends AbstractObject {
+class ProfessionWeapon extends AbstractObject
+{
 
     /**
      *
@@ -29,7 +28,8 @@ class ProfessionWeapon extends AbstractObject {
      */
     protected $specialization;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $env = $this->getEnvironment();
@@ -48,7 +48,8 @@ class ProfessionWeapon extends AbstractObject {
      * 
      * @return array
      */
-    public function getSkills() {
+    public function getSkills()
+    {
         return $this->skills;
     }
 
@@ -56,8 +57,8 @@ class ProfessionWeapon extends AbstractObject {
      * 
      * @return Specialization
      */
-    public function getSpecialization() {
+    public function getSpecialization()
+    {
         return $this->specialization;
     }
-
 }

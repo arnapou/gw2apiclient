@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -17,13 +15,15 @@ use Arnapou\GW2Api\Environment;
 /**
  *
  */
-abstract class AbstractStoredObject extends AbstractObject {
+abstract class AbstractStoredObject extends AbstractObject
+{
 
     protected $objectId;
     protected $objectLoaded  = false;
     protected $clientVersion = 2;
 
-    public function __construct(Environment $environment, $id) {
+    public function __construct(Environment $environment, $id)
+    {
         parent::__construct($environment, null);
 
         $this->objectId = $id;
@@ -32,11 +32,13 @@ abstract class AbstractStoredObject extends AbstractObject {
         }
     }
 
-    public function getId() {
+    public function getId()
+    {
         return $this->objectId;
     }
 
-    protected function checkLoadData() {
+    protected function checkLoadData()
+    {
         if (!$this->objectLoaded) {
             if ($this->objectId) {
                 $env     = $this->getEnvironment();
@@ -50,7 +52,8 @@ abstract class AbstractStoredObject extends AbstractObject {
         }
     }
 
-    public function getData($keys = null, $default = null, $array = null) {
+    public function getData($keys = null, $default = null, $array = null)
+    {
         $this->checkLoadData();
         return parent::getData($keys, $default, $array);
     }
@@ -59,7 +62,8 @@ abstract class AbstractStoredObject extends AbstractObject {
      * 
      * @return string
      */
-    public function getApiMethod() {
+    public function getApiMethod()
+    {
         return 'api' . ucfirst($this->getApiName());
     }
 
@@ -67,7 +71,8 @@ abstract class AbstractStoredObject extends AbstractObject {
      * 
      * @return boolean
      */
-    public function isEmpty() {
+    public function isEmpty()
+    {
         return empty($this->objectId) || $this->getData('_empty_') == 1;
     }
 

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -17,7 +15,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string  getDescription()
  * @method string  getOrder()
  */
-class BackstoryQuestion extends AbstractStoredObject {
+class BackstoryQuestion extends AbstractStoredObject
+{
 
     /**
      *
@@ -29,7 +28,8 @@ class BackstoryQuestion extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getRaces() {
+    public function getRaces()
+    {
         return $this->getData('races', []);
     }
 
@@ -37,7 +37,8 @@ class BackstoryQuestion extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getProfessions() {
+    public function getProfessions()
+    {
         return $this->getData('professions', []);
     }
 
@@ -45,7 +46,8 @@ class BackstoryQuestion extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getAnswersIds() {
+    public function getAnswersIds()
+    {
         return $this->getData('answers');
     }
 
@@ -53,12 +55,14 @@ class BackstoryQuestion extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getAnswers() {
+    public function getAnswers()
+    {
         $this->checkLoadData();
         return $this->answers;
     }
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['answers']) && is_array($data['answers'])) {
@@ -72,12 +76,13 @@ class BackstoryQuestion extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getTitle();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'backstoryquestions';
     }
-
 }

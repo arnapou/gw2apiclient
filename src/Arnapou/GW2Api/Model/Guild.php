@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -24,7 +22,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getTag()
  * @method array getEmblem()
  */
-class Guild extends AbstractObject {
+class Guild extends AbstractObject
+{
 
     /**
      *
@@ -90,7 +89,8 @@ class Guild extends AbstractObject {
      * 
      * @return boolean
      */
-    public function isLeader() {
+    public function isLeader()
+    {
         return $this->getData('x-leader', false);
     }
 
@@ -98,7 +98,8 @@ class Guild extends AbstractObject {
      * 
      * @return boolean
      */
-    public function hasEmblem() {
+    public function hasEmblem()
+    {
         $emblem = $this->getEmblem();
         if (!is_array($emblem) || empty($emblem)) {
             return false;
@@ -110,7 +111,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getLog() {
+    public function getLog()
+    {
         if (empty($this->log) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildLog($this->getId());
@@ -128,7 +130,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getTreasury() {
+    public function getTreasury()
+    {
         if (empty($this->treasury) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildTreasury($this->getId());
@@ -145,7 +148,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getTreasuryByUpgrade() {
+    public function getTreasuryByUpgrade()
+    {
         if (empty($this->treasuryByUpgrade)) {
             $data = [];
             foreach ($this->getTreasury() as /* @var $treasury GuildTreasury */ $treasury) {
@@ -172,7 +176,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getTeams() {
+    public function getTeams()
+    {
         if (empty($this->teams) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildTeams($this->getId());
@@ -190,7 +195,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getMembers() {
+    public function getMembers()
+    {
         if (empty($this->members) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildMembers($this->getId());
@@ -216,7 +222,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getUpgradeIds() {
+    public function getUpgradeIds()
+    {
         if (!isset($this->upgradeIds)) {
             $this->upgradeIds = $this->getEnvironment()->getClientVersion2()->apiGuildUpgrades($this->getId());
         }
@@ -227,7 +234,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getUpgrades() {
+    public function getUpgrades()
+    {
         if (empty($this->upgrades) && $this->isLeader()) {
             $env = $this->getEnvironment();
             $ids = $this->getUpgradeIds();
@@ -248,7 +256,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getRanks() {
+    public function getRanks()
+    {
         if (empty($this->ranks) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildRanks($this->getId());
@@ -274,7 +283,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getStash() {
+    public function getStash()
+    {
         if (empty($this->stash) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildStash($this->getId());
@@ -291,7 +301,8 @@ class Guild extends AbstractObject {
      * 
      * @return array
      */
-    public function getStashPrice() {
+    public function getStashPrice()
+    {
         if (!isset($this->stashprice)) {
             $this->stashprice = [
                 'buy'  => $this->getCoins(),
@@ -310,15 +321,14 @@ class Guild extends AbstractObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         $name = (string) $this->getName();
         $tag  = (string) $this->getTag();
         if ($name && $tag) {
             return $name . ' [' . $tag . ']';
-        }
-        else {
+        } else {
             return $name;
         }
     }
-
 }

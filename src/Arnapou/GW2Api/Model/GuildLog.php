@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -33,7 +31,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getTotalParticipants() for type = influence
  * @method string getParticipants() for type = influence
  */
-class GuildLog extends AbstractObject {
+class GuildLog extends AbstractObject
+{
 
     const TYPE_JOINED          = 'joined';
     const TYPE_INVITED         = 'invited';
@@ -64,7 +63,8 @@ class GuildLog extends AbstractObject {
      * 
      * @param array $data
      */
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['count'], $data['item_id'])) {
@@ -83,7 +83,8 @@ class GuildLog extends AbstractObject {
      * 
      * @return string YYYY-MM-DD HH:MM:SS UTC format
      */
-    public function getTime() {
+    public function getTime()
+    {
         $date = $this->getData('time');
         return $date ? gmdate('Y-m-d H:i:s', strtotime($date)) : null;
     }
@@ -92,7 +93,8 @@ class GuildLog extends AbstractObject {
      * 
      * @return GuildUpgrade
      */
-    public function getUpgrade() {
+    public function getUpgrade()
+    {
         return $this->upgrade;
     }
 
@@ -100,8 +102,8 @@ class GuildLog extends AbstractObject {
      * 
      * @return InventorySlot
      */
-    public function getItem() {
+    public function getItem()
+    {
         return $this->item;
     }
-
 }

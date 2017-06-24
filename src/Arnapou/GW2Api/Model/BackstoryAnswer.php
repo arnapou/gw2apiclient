@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -17,7 +15,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string  getDescription()
  * @method string  getJournal()
  */
-class BackstoryAnswer extends AbstractStoredObject {
+class BackstoryAnswer extends AbstractStoredObject
+{
 
     /**
      *
@@ -29,7 +28,8 @@ class BackstoryAnswer extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getRaces() {
+    public function getRaces()
+    {
         return $this->getData('races', []);
     }
 
@@ -37,7 +37,8 @@ class BackstoryAnswer extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getProfessions() {
+    public function getProfessions()
+    {
         return $this->getData('professions', []);
     }
 
@@ -45,7 +46,8 @@ class BackstoryAnswer extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getQuestionId() {
+    public function getQuestionId()
+    {
         return $this->getData('question');
     }
 
@@ -53,12 +55,14 @@ class BackstoryAnswer extends AbstractStoredObject {
      * 
      * @return BackstoryQuestion
      */
-    public function getQuestion() {
+    public function getQuestion()
+    {
         $this->checkLoadData();
         return $this->question;
     }
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['question'])) {
@@ -70,12 +74,13 @@ class BackstoryAnswer extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getTitle();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'backstoryanswers';
     }
-
 }

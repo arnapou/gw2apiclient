@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -18,7 +16,8 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method integer getId()
  * @method integer getSize()
  */
-class Bag extends InventorySlot {
+class Bag extends InventorySlot
+{
 
     /**
      *
@@ -38,7 +37,8 @@ class Bag extends InventorySlot {
      */
     protected $bagprice;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['id'])) {
@@ -55,7 +55,8 @@ class Bag extends InventorySlot {
      * 
      * @return Item
      */
-    public function getItem() {
+    public function getItem()
+    {
         return $this->item;
     }
 
@@ -63,7 +64,8 @@ class Bag extends InventorySlot {
      * 
      * @return array
      */
-    public function getInventorySlots() {
+    public function getInventorySlots()
+    {
         return $this->inventorySlots;
     }
 
@@ -71,7 +73,8 @@ class Bag extends InventorySlot {
      * 
      * @return array
      */
-    public function getBagPrice() {
+    public function getBagPrice()
+    {
         if (!isset($this->bagprice)) {
             $this->bagprice = [
                 'buy'  => 0,
@@ -79,13 +82,12 @@ class Bag extends InventorySlot {
             ];
             foreach ($this->inventorySlots as /* @var $item InventorySlot */ $item) {
                 if ($item && empty($item->getBinding())) {
-                    $price = $item->getPrice();
-                    $this->bagprice['buy'] += $price['buy_total'];
+                    $price                  = $item->getPrice();
+                    $this->bagprice['buy']  += $price['buy_total'];
                     $this->bagprice['sell'] += $price['sell_total'];
                 }
             }
         }
         return $this->bagprice;
     }
-
 }

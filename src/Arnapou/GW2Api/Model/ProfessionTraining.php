@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -17,7 +15,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getCategory()
  * @method string getName()
  */
-class ProfessionTraining extends AbstractObject {
+class ProfessionTraining extends AbstractObject
+{
 
     const CATEGORY_SKILLS                = 'Skills';
     const CATEGORY_SPECIALIZATIONS       = 'Specializations';
@@ -29,7 +28,8 @@ class ProfessionTraining extends AbstractObject {
      */
     protected $track = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $env = $this->getEnvironment();
@@ -44,7 +44,8 @@ class ProfessionTraining extends AbstractObject {
      * 
      * @return integer
      */
-    public function getTotalCost() {
+    public function getTotalCost()
+    {
         $max = 0;
         foreach ($this->getTrack() as $item) {
             $val = $item->getCost();
@@ -59,8 +60,8 @@ class ProfessionTraining extends AbstractObject {
      * 
      * @return array
      */
-    public function getTrack() {
+    public function getTrack()
+    {
         return $this->track;
     }
-
 }

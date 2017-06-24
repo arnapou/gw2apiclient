@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class DungeonPath extends AbstractObject {
+class DungeonPath extends AbstractObject
+{
 
     use UnlockTrait;
 
@@ -22,7 +21,8 @@ class DungeonPath extends AbstractObject {
      * 
      * @return string
      */
-    public function getId() {
+    public function getId()
+    {
         return $this->getData('id');
     }
 
@@ -30,7 +30,8 @@ class DungeonPath extends AbstractObject {
      * 
      * @return integer
      */
-    public function getNumber() {
+    public function getNumber()
+    {
         return $this->getData('number');
     }
 
@@ -38,7 +39,8 @@ class DungeonPath extends AbstractObject {
      * 
      * @return string
      */
-    public function getName() {
+    public function getName()
+    {
         return \Arnapou\GW2Api\id_to_name($this->getId());
     }
 
@@ -46,8 +48,8 @@ class DungeonPath extends AbstractObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
-
 }

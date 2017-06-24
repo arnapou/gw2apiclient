@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -19,7 +17,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getNote()
  * @method string getUpgradeId()
  */
-class GuildStash extends AbstractObject {
+class GuildStash extends AbstractObject
+{
 
     /**
      *
@@ -43,7 +42,8 @@ class GuildStash extends AbstractObject {
      * 
      * @param array $data
      */
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['inventory']) && is_array($data['inventory'])) {
@@ -62,7 +62,8 @@ class GuildStash extends AbstractObject {
      * 
      * @return array
      */
-    public function getInventorySlots() {
+    public function getInventorySlots()
+    {
         return $this->inventorySlots;
     }
 
@@ -70,7 +71,8 @@ class GuildStash extends AbstractObject {
      * 
      * @return GuildUpgrade
      */
-    public function getUpgrade() {
+    public function getUpgrade()
+    {
         return $this->upgrade;
     }
 
@@ -78,7 +80,8 @@ class GuildStash extends AbstractObject {
      * 
      * @return array
      */
-    public function getStashPrice() {
+    public function getStashPrice()
+    {
         if (!isset($this->stashprice)) {
             $this->stashprice = [
                 'buy'  => $this->getCoins(),
@@ -94,5 +97,4 @@ class GuildStash extends AbstractObject {
         }
         return $this->stashprice;
     }
-
 }

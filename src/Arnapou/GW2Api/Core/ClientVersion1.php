@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -17,13 +15,15 @@ use Arnapou\GW2Api\Exception\Exception;
  * 
  * @doc https://wiki.guildwars2.com/wiki/API:1
  */
-class ClientVersion1 extends AbstractClientVersion {
+class ClientVersion1 extends AbstractClientVersion
+{
 
     /**
      * 
      * @return string
      */
-    public function getBaseUrl() {
+    public function getBaseUrl()
+    {
         return 'https://api.guildwars2.com/v1/';
     }
 
@@ -31,7 +31,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiBuild() {
+    public function apiBuild()
+    {
         return $this->request('build.json');
     }
 
@@ -39,7 +40,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiColors() {
+    public function apiColors()
+    {
         return $this->request('colors.json');
     }
 
@@ -47,7 +49,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiContinents() {
+    public function apiContinents()
+    {
         return $this->request('continents.json');
     }
 
@@ -56,19 +59,17 @@ class ClientVersion1 extends AbstractClientVersion {
      * @param string $eventId
      * @return array
      */
-    public function apiEventDetails($eventId = null) {
-        $parameters = [];
-        if ($eventId) {
-            $parameters['event_id'] = $eventId;
-        }
-        return $this->request('event_details.json', $parameters);
+    public function apiEventDetails($eventId = null)
+    {
+        return $this->request('event_details.json', empty($eventId) ? [] : ['event_id' => $eventId]);
     }
 
     /**
      * 
      * @return array
      */
-    public function apiEventNames() {
+    public function apiEventNames()
+    {
         throw new Exception('event_names API is deprecated');
     }
 
@@ -76,7 +77,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiEvents() {
+    public function apiEvents()
+    {
         throw new Exception('events API is deprecated');
     }
 
@@ -84,7 +86,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiFiles() {
+    public function apiFiles()
+    {
         return $this->request('files.json');
     }
 
@@ -94,7 +97,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * @param string $guildName
      * @return array
      */
-    public function apiGuildDetails($guildId = null, $guildName = null) {
+    public function apiGuildDetails($guildId = null, $guildName = null)
+    {
         $parameters = [];
         if ($guildId) {
             $parameters['guild_id'] = $guildId;
@@ -113,19 +117,17 @@ class ClientVersion1 extends AbstractClientVersion {
      * @param int $itemId
      * @return array
      */
-    public function apiItemDetails($itemId = null) {
-        $parameters = [];
-        if ($itemId) {
-            $parameters['item_id'] = $itemId;
-        }
-        return $this->request('item_details.json', $parameters);
+    public function apiItemDetails($itemId = null)
+    {
+        return $this->request('item_details.json', empty($itemId) ? [] : ['item_id' => $itemId]);
     }
 
     /**
      * 
      * @return array
      */
-    public function apiItems() {
+    public function apiItems()
+    {
         return $this->request('items.json');
     }
 
@@ -135,7 +137,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * @param integer $floor
      * @return array
      */
-    public function apiMapFloor($continentId, $floor) {
+    public function apiMapFloor($continentId, $floor)
+    {
         $parameters = [
             'continent_id' => $continentId,
             'floor'        => $floor,
@@ -147,7 +150,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiMapNames() {
+    public function apiMapNames()
+    {
         return $this->request('map_names.json');
     }
 
@@ -156,12 +160,9 @@ class ClientVersion1 extends AbstractClientVersion {
      * @param int $mapId
      * @return array
      */
-    public function apiMaps($mapId = null) {
-        $parameters = [];
-        if ($mapId) {
-            $parameters['map_id'] = $mapId;
-        }
-        return $this->request('maps.json', $parameters);
+    public function apiMaps($mapId = null)
+    {
+        return $this->request('maps.json', empty($mapId) ? [] : ['map_id' => $mapId]);
     }
 
     /**
@@ -169,18 +170,17 @@ class ClientVersion1 extends AbstractClientVersion {
      * @param int $recipeId
      * @return array
      */
-    public function apiRecipeDetails($recipeId) {
-        $parameters = [
-            'recipe_id' => $recipeId,
-        ];
-        return $this->request('recipe_details.json', $parameters);
+    public function apiRecipeDetails($recipeId)
+    {
+        return $this->request('recipe_details.json', ['recipe_id' => $recipeId]);
     }
 
     /**
      * 
      * @return array
      */
-    public function apiRecipes() {
+    public function apiRecipes()
+    {
         return $this->request('recipes.json');
     }
 
@@ -189,18 +189,17 @@ class ClientVersion1 extends AbstractClientVersion {
      * @param int $skinId
      * @return array
      */
-    public function apiSkinDetails($skinId) {
-        $parameters = [
-            'skin_id' => $skinId,
-        ];
-        return $this->request('skin_details.json', $parameters);
+    public function apiSkinDetails($skinId)
+    {
+        return $this->request('skin_details.json', ['skin_id' => $skinId]);
     }
 
     /**
      * 
      * @return array
      */
-    public function apiSkins() {
+    public function apiSkins()
+    {
         return $this->request('skins.json');
     }
 
@@ -208,7 +207,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiWorldNames() {
+    public function apiWorldNames()
+    {
         return $this->request('world_names.json');
     }
 
@@ -217,18 +217,17 @@ class ClientVersion1 extends AbstractClientVersion {
      * @param string $matchId
      * @return array
      */
-    public function apiWvwMatchDetails($matchId) {
-        $parameters = [
-            'match_id' => $matchId,
-        ];
-        return $this->request('wvw/match_details.json', $parameters);
+    public function apiWvwMatchDetails($matchId)
+    {
+        return $this->request('wvw/match_details.json', ['match_id' => $matchId]);
     }
 
     /**
      * 
      * @return array
      */
-    public function apiWvwMatches() {
+    public function apiWvwMatches()
+    {
         return $this->request('wvw/matches.json');
     }
 
@@ -236,8 +235,8 @@ class ClientVersion1 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiWvwObjectiveNames() {
+    public function apiWvwObjectiveNames()
+    {
         return $this->request('wvw/objective_names.json');
     }
-
 }

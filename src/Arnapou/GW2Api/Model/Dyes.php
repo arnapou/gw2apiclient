@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Dyes extends AbstractObject {
+class Dyes extends AbstractObject
+{
 
     /**
      *
@@ -40,7 +39,8 @@ class Dyes extends AbstractObject {
      */
     protected $total;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
@@ -49,7 +49,8 @@ class Dyes extends AbstractObject {
     /**
      * 
      */
-    protected function prepareObjects() {
+    protected function prepareObjects()
+    {
         $this->colors = [];
         $this->count  = 0;
         $this->total  = 0;
@@ -60,7 +61,7 @@ class Dyes extends AbstractObject {
             $unlocked       = isset($flippedUnlocked[$id]);
             $color          = new Color($env, $id);
             $color->setUnlocked($unlocked);
-            $this->count += $unlocked ? 1 : 0;
+            $this->count    += $unlocked ? 1 : 0;
             $this->total++;
             $this->colors[] = $color;
         }
@@ -74,7 +75,8 @@ class Dyes extends AbstractObject {
      * 
      * @return array
      */
-    public function getColors() {
+    public function getColors()
+    {
         if (!isset($this->colors)) {
             $this->prepareObjects();
         }
@@ -85,7 +87,8 @@ class Dyes extends AbstractObject {
      * 
      * @return integer
      */
-    public function getCount() {
+    public function getCount()
+    {
         return count($this->unlocked);
     }
 
@@ -93,11 +96,11 @@ class Dyes extends AbstractObject {
      * 
      * @return integer
      */
-    public function getTotal() {
+    public function getTotal()
+    {
         if (!isset($this->total)) {
             $this->prepareObjects();
         }
         return $this->total;
     }
-
 }

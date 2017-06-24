@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Skills\LinkBuilder;
@@ -23,7 +21,8 @@ use Arnapou\GW2Skills\LinkBuilder;
  * @method string  getName()
  * @method string  getRace()
  */
-class Character extends AbstractObject {
+class Character extends AbstractObject
+{
 
     // RACES
     const RACE_ASURA              = 'Asura';
@@ -167,7 +166,8 @@ class Character extends AbstractObject {
      */
     protected $bagsprice;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['title'])) {
@@ -224,7 +224,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getWvwAbilities() {
+    public function getWvwAbilities()
+    {
         return $this->wvwAbilities;
     }
 
@@ -232,7 +233,8 @@ class Character extends AbstractObject {
      * 
      * @return PvpEquipment
      */
-    public function getPvpEquipment() {
+    public function getPvpEquipment()
+    {
         return $this->pvpEquipment;
     }
 
@@ -240,7 +242,8 @@ class Character extends AbstractObject {
      * 
      * @return string
      */
-    public function getGw2SkillsLink($mode) {
+    public function getGw2SkillsLink($mode)
+    {
         if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
             throw new \Exception('Mode should be either "pve", "pvp" or "wvw"');
         }
@@ -252,7 +255,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getBagsPrice() {
+    public function getBagsPrice()
+    {
         if (!isset($this->bagsprice)) {
             $this->bagsprice = [
                 'buy'  => 0,
@@ -273,7 +277,8 @@ class Character extends AbstractObject {
      * 
      * @return Build
      */
-    public function getBuild($type) {
+    public function getBuild($type)
+    {
         $builds = $this->getBuilds();
         return isset($builds[$type]) ? $builds[$type] : null;
     }
@@ -282,7 +287,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getBuilds() {
+    public function getBuilds()
+    {
         return $this->builds;
     }
 
@@ -290,7 +296,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getBags() {
+    public function getBags()
+    {
         return $this->bags;
     }
 
@@ -298,7 +305,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getEquipments() {
+    public function getEquipments()
+    {
         return $this->equipments;
     }
 
@@ -306,13 +314,13 @@ class Character extends AbstractObject {
      * 
      * @return Equipment
      */
-    public function getEquipmentsBySubtype() {
+    public function getEquipmentsBySubtype()
+    {
         $data = [];
         foreach ($this->getEquipments() as $slot => /* @var $item InventorySlot */ $item) {
             if (in_array($slot, [self::SLOT_AXE, self::SLOT_PICK, self::SLOT_SICKLE])) {
                 $key = $item->getSubType();
-            }
-            else {
+            } else {
                 $key = $item->getType() == Item::TYPE_BACK ? self::SLOT_BACKPACK : $item->getSubType();
             }
             $data[$key][] = $item;
@@ -339,7 +347,8 @@ class Character extends AbstractObject {
      * 
      * @return Equipment
      */
-    public function getEquipment($slot) {
+    public function getEquipment($slot)
+    {
         return isset($this->equipments[$slot]) ? $this->equipments[$slot] : null;
     }
 
@@ -347,7 +356,8 @@ class Character extends AbstractObject {
      * 
      * @return boolean
      */
-    public function canSwapWeapons() {
+    public function canSwapWeapons()
+    {
         $profession = $this->getData('profession');
         if ($profession === self::PROFESSION_ELEMENTALIST || $profession === self::PROFESSION_ENGINEER) {
             return false;
@@ -359,14 +369,14 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getProfession($object = false) {
+    public function getProfession($object = false)
+    {
         if ($object) {
             if ($this->professionObject === null) {
                 $this->professionObject = new Profession($this->getEnvironment(), $this->getData('profession'));
             }
             return $this->professionObject;
-        }
-        else {
+        } else {
             if ($this->profession === null) {
                 $this->profession = $this->getData('profession');
                 $build            = $this->getBuild('pve'); /* @var $build Build */
@@ -400,7 +410,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getCrafting() {
+    public function getCrafting()
+    {
         return $this->crafting;
     }
 
@@ -408,7 +419,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getBackstoryAnswers() {
+    public function getBackstoryAnswers()
+    {
         if (!$this->backstorySorted) {
             usort($this->backstory, function($a, $b) {
                 try {
@@ -418,8 +430,7 @@ class Character extends AbstractObject {
                         return 0;
                     }
                     return $oa > $ob ? 1 : -1;
-                }
-                catch (\Exception $ex) {
+                } catch (\Exception $ex) {
                     return 0;
                 }
             });
@@ -432,7 +443,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getTraining() {
+    public function getTraining()
+    {
         if (!isset($this->training)) {
             $this->training = [];
             $charTraining   = $this->getData('training');
@@ -457,7 +469,8 @@ class Character extends AbstractObject {
      * 
      * @return Guild
      */
-    public function getGuild() {
+    public function getGuild()
+    {
         $guildId = $this->getGuildId();
         if ($guildId && empty($this->guild)) {
             try {
@@ -465,8 +478,7 @@ class Character extends AbstractObject {
                 if (isset($data['id'])) {
                     $this->guild = new Guild($this->getEnvironment(), $data);
                 }
-            }
-            catch (\Exception $e) {
+            } catch (\Exception $e) {
                 
             }
         }
@@ -477,7 +489,8 @@ class Character extends AbstractObject {
      * 
      * @return integer
      */
-    public function getGuildId() {
+    public function getGuildId()
+    {
         return $this->getData('guild');
     }
 
@@ -485,7 +498,8 @@ class Character extends AbstractObject {
      * 
      * @return string YYYY-MM-DD HH:MM UTC format
      */
-    public function getCreated() {
+    public function getCreated()
+    {
         $date = $this->getData('created');
         return $date ? gmdate('Y-m-d H:i', strtotime($date)) : null;
     }
@@ -494,7 +508,8 @@ class Character extends AbstractObject {
      * 
      * @return integer
      */
-    public function getTitleId() {
+    public function getTitleId()
+    {
         return (int) $this->getData('title');
     }
 
@@ -502,7 +517,8 @@ class Character extends AbstractObject {
      * 
      * @return Title
      */
-    public function getTitle() {
+    public function getTitle()
+    {
         return $this->title;
     }
 
@@ -510,7 +526,8 @@ class Character extends AbstractObject {
      * 
      * @return int
      */
-    public function getCreatedEllapsedTime() {
+    public function getCreatedEllapsedTime()
+    {
         $created = $this->getCreated();
         if ($created) {
             return time() - strtotime($created);
@@ -518,7 +535,8 @@ class Character extends AbstractObject {
         return null;
     }
 
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
 
@@ -526,7 +544,8 @@ class Character extends AbstractObject {
      * 
      * @return InventorySlot
      */
-    public function getEquipmentWeapon1($set = 'A') {
+    public function getEquipmentWeapon1($set = 'A')
+    {
         if (!in_array($set, ['A', 'B'])) {
             throw new Exception('Set should be either "A" or "B"');
         }
@@ -534,21 +553,18 @@ class Character extends AbstractObject {
             $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_A1);
             $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_A2);
             $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_B1);
-        }
-        else {
+        } else {
             $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_B1);
             $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_B2);
             $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_A1);
         }
         if ($weaponA1) {
             return $weaponA1;
-        }
-        elseif ($weaponA2) {
+        } elseif ($weaponA2) {
             if ($weaponB1 && !\Arnapou\GW2Api\is_two_handed_weapon($weaponB1)) {
                 return $weaponB1;
             }
-        }
-        else {
+        } else {
             return $weaponB1;
         }
         return null;
@@ -558,7 +574,8 @@ class Character extends AbstractObject {
      * 
      * @return InventorySlot
      */
-    public function getEquipmentWeapon2($set = 'A') {
+    public function getEquipmentWeapon2($set = 'A')
+    {
         if (!in_array($set, ['A', 'B'])) {
             throw new Exception('Set should be either "A" or "B"');
         }
@@ -567,8 +584,7 @@ class Character extends AbstractObject {
             $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_A2);
             $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_B1);
             $weaponB2 = $this->getEquipment(self::SLOT_WEAPON_B2);
-        }
-        else {
+        } else {
             $weaponA1 = $this->getEquipment(self::SLOT_WEAPON_B1);
             $weaponA2 = $this->getEquipment(self::SLOT_WEAPON_B2);
             $weaponB1 = $this->getEquipment(self::SLOT_WEAPON_A1);
@@ -576,8 +592,7 @@ class Character extends AbstractObject {
         }
         if ($weaponA2) {
             return $weaponA2;
-        }
-        elseif (!\Arnapou\GW2Api\is_two_handed_weapon($weaponA1)) {
+        } elseif (!\Arnapou\GW2Api\is_two_handed_weapon($weaponA1)) {
             if ($weaponB2 && !\Arnapou\GW2Api\is_two_handed_weapon($weaponB1)) {
                 return $weaponB2;
             }
@@ -589,7 +604,8 @@ class Character extends AbstractObject {
      * 
      * @return array
      */
-    public function getAttributes() {
+    public function getAttributes()
+    {
         if ($this->attributes === null) {
             $profession = $this->getData('profession');
             $level      = $this->getLevel();
@@ -638,7 +654,7 @@ class Character extends AbstractObject {
              * calculate heatlh
              */
             $healthMap            = [
-                    [
+                [
                     'professions' => [self::PROFESSION_WARRIOR, self::PROFESSION_NECROMANCER],
                     'levels'      => [
                         28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28,
@@ -683,5 +699,4 @@ class Character extends AbstractObject {
         }
         return $this->attributes;
     }
-
 }

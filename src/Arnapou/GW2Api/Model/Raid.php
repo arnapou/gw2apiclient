@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,17 +7,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Raid extends AbstractStoredObject {
+class Raid extends AbstractStoredObject
+{
 
     protected $wings = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['wings']) && is_array($data['wings'])) {
@@ -38,7 +38,8 @@ class Raid extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getWings() {
+    public function getWings()
+    {
         $this->checkLoadData();
         return $this->wings;
     }
@@ -47,11 +48,13 @@ class Raid extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getName() {
+    public function getName()
+    {
         return \Arnapou\GW2Api\id_to_name($this->getId());
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'raids';
     }
 
@@ -59,8 +62,8 @@ class Raid extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
-
 }

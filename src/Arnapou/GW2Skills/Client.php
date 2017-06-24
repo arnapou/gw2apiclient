@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Skills;
 
 use Arnapou\GW2Api\Environment;
@@ -32,7 +30,8 @@ use Arnapou\GW2Api\Storage\MongoStorage;
  *                                                                          *
  * ************************************************************************ */
 
-class Client {
+class Client
+{
 
     /**
      *
@@ -141,7 +140,8 @@ class Client {
      * 
      * @param Environment $env
      */
-    public function __construct(Environment $env) {
+    public function __construct(Environment $env)
+    {
         $this->environment = $env;
         $this->files       = [
             'revision' => __DIR__ . '/config/revision.php',
@@ -158,7 +158,8 @@ class Client {
      * @param string $filename
      * @param mixed $data
      */
-    protected function exportToFile($filename, $data) {
+    protected function exportToFile($filename, $data)
+    {
         file_put_contents($filename, '<?php return ' . var_export($data, true) . ";\n", LOCK_EX);
     }
 
@@ -166,7 +167,8 @@ class Client {
      * 
      * @return integer
      */
-    public function getRevision() {
+    public function getRevision()
+    {
         if (!isset($this->revision)) {
             $filename = $this->files['revision'];
             try {
@@ -177,8 +179,7 @@ class Client {
                 if (!is_file($filename) || time() - filemtime($filename) > $this->revisionCheckDelay) {
                     try {
                         $revision = $this->request('revision/');
-                    }
-                    catch (\Exception $ex) {
+                    } catch (\Exception $ex) {
                         // if the request fail, we skip it totally : silent
                         // it happens if the requestor has not the right to access gw2 skills api
                         @touch($filename);
@@ -190,14 +191,12 @@ class Client {
                     if ($revision != $this->revision) {
                         $this->reloadData();
                         $this->exportToFile($filename, (int) $revision);
-                    }
-                    else {
+                    } else {
                         @touch($filename);
                     }
                     $this->revision = $revision;
                 }
-            }
-            catch (\Exception $ex) {
+            } catch (\Exception $ex) {
                 if (!is_file($filename)) {
                     throw $ex;
                 }
@@ -209,7 +208,8 @@ class Client {
     /**
      * 
      */
-    public function buildMap() {
+    public function buildMap()
+    {
         $gw2names = include($this->files['gw2names']);
         $alldata  = include($this->files['alldata']);
 
@@ -256,8 +256,7 @@ class Client {
                 $gw2id                             = $gw2names['specializations'][$profession][$name];
                 $mapped['specializations'][$gw2id] = $item['id'];
                 $specializations[$item['id']]      = $gw2id;
-            }
-            else {
+            } else {
                 $unmapped['specializations'][] = $item;
             }
         }
@@ -273,8 +272,7 @@ class Client {
             if (isset($specializations[$item['specialization_id']], $gw2names['traits'][$specializations[$item['specialization_id']]][$name])) {
                 $gw2id                    = $gw2names['traits'][$specializations[$item['specialization_id']]][$name];
                 $mapped['traits'][$gw2id] = $item['id'];
-            }
-            else {
+            } else {
                 $unmapped['traits'][] = $item;
             }
         }
@@ -286,8 +284,7 @@ class Client {
             if (isset($gw2names['pets'][$name])) {
                 $gw2id                  = $gw2names['pets'][$name];
                 $mapped['pets'][$gw2id] = $item['id'];
-            }
-            else {
+            } else {
                 $unmapped['pets'][] = $item;
             }
         }
@@ -327,8 +324,7 @@ class Client {
                     $mapped['skills'][$gw2id] = $item['id'];
                 }
                 $found = true;
-            }
-            elseif (empty($profession)) {
+            } elseif (empty($profession)) {
                 $professions = array_keys($mapped['professions']);
                 foreach ($professions as $profession) {
                     if (isset($gw2names['skills'][$profession], $gw2names['skills'][$profession][$name])) {
@@ -418,8 +414,7 @@ class Client {
                                 Item::SUBTYPE_WEAPON_TRIDENT,
                                 Item::SUBTYPE_WEAPON_WARHORN,
                             ];
-                        }
-                        elseif ($group == 'armor' && empty($type)) {
+                        } elseif ($group == 'armor' && empty($type)) {
                             $gwtypes    = [Item::TYPE_ARMOR];
                             $gwsubtypes = [
                                 Item::SUBTYPE_ARMOR_BOOTS,
@@ -430,32 +425,26 @@ class Client {
                                 Item::SUBTYPE_ARMOR_LEGGINGS,
                                 Item::SUBTYPE_ARMOR_SHOULDERS,
                             ];
-                        }
-                        elseif ($group == 'trinket' && empty($type)) {
+                        } elseif ($group == 'trinket' && empty($type)) {
                             $gwtypes    = [Item::TYPE_TRINKET];
                             $gwsubtypes = [
                                 Item::SUBTYPE_TRINKET_ACCESSORY,
                                 Item::SUBTYPE_TRINKET_AMULET,
                                 Item::SUBTYPE_TRINKET_RING,
                             ];
-                        }
-                        elseif (empty($group) && $type == 'back') {
+                        } elseif (empty($group) && $type == 'back') {
                             $gwtypes    = [Item::TYPE_BACK];
                             $gwsubtypes = [''];
-                        }
-                        elseif (empty($group) && $type == 'accessory') {
+                        } elseif (empty($group) && $type == 'accessory') {
                             $gwtypes    = [Item::TYPE_TRINKET];
                             $gwsubtypes = [Item::SUBTYPE_TRINKET_ACCESSORY];
-                        }
-                        elseif (empty($group) && $type == 'ring') {
+                        } elseif (empty($group) && $type == 'ring') {
                             $gwtypes    = [Item::TYPE_TRINKET];
                             $gwsubtypes = [Item::SUBTYPE_TRINKET_RING];
-                        }
-                        elseif (empty($group) && $type == 'amulet') {
+                        } elseif (empty($group) && $type == 'amulet') {
                             $gwtypes    = [Item::TYPE_TRINKET];
                             $gwsubtypes = [Item::SUBTYPE_TRINKET_AMULET];
-                        }
-                        else {
+                        } else {
                             $gwtypes    = [$group];
                             $gwsubtypes = [$type];
                         }
@@ -493,7 +482,8 @@ class Client {
      * 
      * 
      */
-    public function buildGw2Names() {
+    public function buildGw2Names()
+    {
         $storage = $this->environment->getStorage();
         if ($storage instanceof MongoStorage) {
 
@@ -618,7 +608,8 @@ class Client {
      * @param $key
      * @return array
      */
-    public function getMap($key = null) {
+    public function getMap($key = null)
+    {
         if (!isset($this->map)) {
             $filename = $this->files['mapped'];
             if (!is_file($filename)) {
@@ -636,7 +627,8 @@ class Client {
      * 
      * @return array
      */
-    public function getData() {
+    public function getData()
+    {
         if (!isset($this->data)) {
             $filename = $this->files['alldata'];
             if (!is_file($filename)) {
@@ -650,11 +642,11 @@ class Client {
     /**
      * 
      */
-    protected function reloadData() {
+    protected function reloadData()
+    {
         try {
             $data = $this->request('all/');
-        }
-        catch (\Exception $ex) {
+        } catch (\Exception $ex) {
             // if the request fail, we skip it totally : silent
             // it happens if the requestor has not the right to access gw2 skills api
             return;
@@ -673,7 +665,8 @@ class Client {
      * 
      * @return array
      */
-    protected function request($uri) {
+    protected function request($uri)
+    {
         $url = $this->remoteUri . $uri;
 
         $curl = new Curl();
@@ -698,5 +691,4 @@ class Client {
         }
         return $content;
     }
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,7 +16,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getSmallIcon()
  * @method string getPipIcon()
  */
-class PvpDivision extends AbstractObject {
+class PvpDivision extends AbstractObject
+{
 
     // results
     const FLAG_CAN_LOSE_POINTS = 'CanLosePoints';
@@ -29,7 +28,8 @@ class PvpDivision extends AbstractObject {
      * 
      * @return array
      */
-    public function getTiers() {
+    public function getTiers()
+    {
         return $this->getData('tiers', []);
     }
 
@@ -37,7 +37,8 @@ class PvpDivision extends AbstractObject {
      * 
      * @return array
      */
-    public function getFlags() {
+    public function getFlags()
+    {
         return $this->getData('flags', []);
     }
 
@@ -46,8 +47,8 @@ class PvpDivision extends AbstractObject {
      * @param string $flag
      * @return boolean
      */
-    public function hasFlag($flag) {
+    public function hasFlag($flag)
+    {
         return in_array($flag, (array) $this->getFlags());
     }
-
 }
