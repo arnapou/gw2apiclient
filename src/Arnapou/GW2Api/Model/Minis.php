@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Minis extends AbstractObject {
+class Minis extends AbstractObject
+{
 
     /**
      *
@@ -40,7 +39,8 @@ class Minis extends AbstractObject {
      */
     protected $total;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
@@ -49,7 +49,8 @@ class Minis extends AbstractObject {
     /**
      * 
      */
-    protected function prepareObjects() {
+    protected function prepareObjects()
+    {
         $this->minis = [];
         $this->count = 0;
         $this->total = 0;
@@ -60,7 +61,7 @@ class Minis extends AbstractObject {
             $unlocked      = isset($flippedUnlocked[$id]);
             $mini          = new Mini($env, $id);
             $mini->setUnlocked($unlocked);
-            $this->count += $unlocked ? 1 : 0;
+            $this->count   += $unlocked ? 1 : 0;
             $this->total++;
             $this->minis[] = $mini;
         }
@@ -78,7 +79,8 @@ class Minis extends AbstractObject {
      * 
      * @return array
      */
-    public function getMinis() {
+    public function getMinis()
+    {
         if (!isset($this->minis)) {
             $this->prepareObjects();
         }
@@ -89,7 +91,8 @@ class Minis extends AbstractObject {
      * 
      * @return integer
      */
-    public function getCount() {
+    public function getCount()
+    {
         return count($this->unlocked);
     }
 
@@ -97,11 +100,11 @@ class Minis extends AbstractObject {
      * 
      * @return integer
      */
-    public function getTotal() {
+    public function getTotal()
+    {
         if (!isset($this->total)) {
             $this->prepareObjects();
         }
         return $this->total;
     }
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -22,7 +20,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getLabelCoord()
  * @method string getMarker()
  */
-class WvwObjective extends AbstractStoredObject {
+class WvwObjective extends AbstractStoredObject
+{
 
     const TYPE_CAMP      = 'Camp';
     const TYPE_CASTLE    = 'Castle';
@@ -34,8 +33,8 @@ class WvwObjective extends AbstractStoredObject {
     const TYPE_GENERIC   = 'Generic';
     const TYPE_SPAWN     = 'Spawn';
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'wvwobjectives';
     }
-
 }

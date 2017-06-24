@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -16,7 +14,8 @@ namespace Arnapou\GW2Api\Model;
  * 
  * @method string getName()
  */
-class ItemStat extends AbstractStoredObject {
+class ItemStat extends AbstractStoredObject
+{
 
     // ATTRIBUTES
     const ATTRIBUTE_AGONY_RESISTANCE   = 'AgonyResistance';
@@ -34,7 +33,8 @@ class ItemStat extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getAttributes() {
+    public function getAttributes()
+    {
         return $this->getData('attributes', []);
     }
 
@@ -42,16 +42,18 @@ class ItemStat extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getStatName() {
+    public function getStatName()
+    {
         return \Arnapou\GW2Api\attributes_to_statname($this->getAttributes());
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'itemstats';
     }
 
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getStatName();
     }
-
 }

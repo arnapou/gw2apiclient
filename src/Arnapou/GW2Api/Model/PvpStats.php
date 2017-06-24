@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -19,7 +17,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getByes()
  * @method string getForfeits()
  */
-class PvpStats extends AbstractObject {
+class PvpStats extends AbstractObject
+{
 
     /**
      *
@@ -37,7 +36,8 @@ class PvpStats extends AbstractObject {
      * 
      * @return float
      */
-    public function getWinRate() {
+    public function getWinRate()
+    {
         $wins   = $this->getWins();
         $losses = $this->getLosses();
         if ($losses + $wins > 0) {
@@ -50,11 +50,11 @@ class PvpStats extends AbstractObject {
      * 
      * @return integer
      */
-    public function getTotal() {
+    public function getTotal()
+    {
         if (!isset($this->total)) {
             $this->total = $this->getWins() + $this->getLosses() + $this->getDesertions() + $this->getByes() + $this->getForfeits();
         }
         return $this->total;
     }
-
 }

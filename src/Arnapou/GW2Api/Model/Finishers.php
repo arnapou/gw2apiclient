@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Finishers extends AbstractObject {
+class Finishers extends AbstractObject
+{
 
     /**
      *
@@ -40,7 +39,8 @@ class Finishers extends AbstractObject {
      */
     protected $total;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
@@ -49,7 +49,8 @@ class Finishers extends AbstractObject {
     /**
      * 
      */
-    protected function prepareObjects() {
+    protected function prepareObjects()
+    {
         $this->finishers = [];
         $this->count     = 0;
         $this->total     = 0;
@@ -70,7 +71,7 @@ class Finishers extends AbstractObject {
             if ($unlocked && isset($map[$id]['permanent'])) {
                 $finisher->setPermanent($map[$id]['permanent']);
             }
-            $this->count += $unlocked ? 1 : 0;
+            $this->count       += $unlocked ? 1 : 0;
             $this->total++;
             $this->finishers[] = $finisher;
         }
@@ -88,7 +89,8 @@ class Finishers extends AbstractObject {
      * 
      * @return array
      */
-    public function getFinishers() {
+    public function getFinishers()
+    {
         if (!isset($this->finishers)) {
             $this->prepareObjects();
         }
@@ -99,7 +101,8 @@ class Finishers extends AbstractObject {
      * 
      * @return integer
      */
-    public function getCount() {
+    public function getCount()
+    {
         return count($this->unlocked);
     }
 
@@ -107,11 +110,11 @@ class Finishers extends AbstractObject {
      * 
      * @return integer
      */
-    public function getTotal() {
+    public function getTotal()
+    {
         if (!isset($this->total)) {
             $this->prepareObjects();
         }
         return $this->total;
     }
-
 }

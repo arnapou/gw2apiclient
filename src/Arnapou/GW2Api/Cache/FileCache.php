@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Cache;
 
 use \FilesystemIterator;
@@ -16,7 +14,8 @@ use \RecursiveIteratorIterator;
 use \RecursiveDirectoryIterator;
 use Arnapou\GW2Api\Exception\Exception;
 
-class FileCache implements CacheInterface {
+class FileCache implements CacheInterface
+{
 
     /**
      *
@@ -46,21 +45,23 @@ class FileCache implements CacheInterface {
      * 
      * @param string $path
      */
-    public function __construct($path) {
+    public function __construct($path)
+    {
         if (!is_dir($path)) {
             throw new Exception("The FileCache path does not exists.");
         }
         if (!is_writable($path)) {
             throw new Exception("The FileCache path is not writable.");
         }
-        $this->cachePath = rtrim(rtrim($path, '\\'), '/');
+        $this->cachePath               = rtrim(rtrim($path, '\\'), '/');
         $this->opcacheInvalidateExists = function_exists('opcache_invalidate');
     }
 
     /**
      * Ran when php exits : automatically run of GC if conditions are met
      */
-    public function __destruct() {
+    public function __destruct()
+    {
         $rand = mt_rand(1, $this->gcDivisor);
         if ($rand <= $this->gcProbability) {
             $this->runGarbageCollector();
@@ -70,15 +71,16 @@ class FileCache implements CacheInterface {
     /**
      * Run the garbage collector which clean expired files
      */
-    public function runGarbageCollector() {
-        $flags = FilesystemIterator::KEY_AS_PATHNAME;
-        $flags|= FilesystemIterator::SKIP_DOTS;
-        $flags|= FilesystemIterator::CURRENT_AS_FILEINFO;
+    public function runGarbageCollector()
+    {
+        $flags             = FilesystemIterator::KEY_AS_PATHNAME;
+        $flags             |= FilesystemIterator::SKIP_DOTS;
+        $flags             |= FilesystemIterator::CURRENT_AS_FILEINFO;
         $directoryIterator = new RecursiveDirectoryIterator($this->cachePath, $flags);
 
-        $flags = RecursiveIteratorIterator::LEAVES_ONLY;
+        $flags    = RecursiveIteratorIterator::LEAVES_ONLY;
         $iterator = new RecursiveIteratorIterator($directoryIterator, $flags);
-        $time = time();
+        $time     = time();
         foreach ($iterator as /* @var $file \SplFileInfo */ $file) {
             if ($file->getExtension() == 'php') {
                 include $file->getPathname();
@@ -100,14 +102,15 @@ class FileCache implements CacheInterface {
      * @param int $gcProbability
      * @param int $gcDivisor
      */
-    public function setGarbageCollectorParameters($gcProbability, $gcDivisor) {
+    public function setGarbageCollectorParameters($gcProbability, $gcDivisor)
+    {
         if ($gcDivisor < 1) {
             throw new Exception('gcDivisor should be strictly > 0.');
         }
         if ($gcDivisor < 0) {
             throw new Exception('gcProbability cannot be negative.');
         }
-        $this->gcDivisor = $gcDivisor;
+        $this->gcDivisor     = $gcDivisor;
         $this->gcProbability = $gcProbability;
     }
 
@@ -116,15 +119,17 @@ class FileCache implements CacheInterface {
      * @param string $key
      * @return type
      */
-    public function getFilename($key) {
+    public function getFilename($key)
+    {
         $hash = hash('sha256', $key);
         return $this->cachePath . '/' . substr($hash, 0, 2) . '/' . substr($hash, 2, 2) . '/' . substr($hash, 4) . '.php';
     }
 
-    public function get($key) {
+    public function get($key)
+    {
         if ($this->exists($key)) {
             $filename = $this->getFilename($key);
-            $handle = fopen($filename, 'r');
+            $handle   = fopen($filename, 'r');
             if (flock($handle, LOCK_SH)) {
                 include $filename;
                 flock($handle, LOCK_UN);
@@ -132,23 +137,23 @@ class FileCache implements CacheInterface {
                 if (isset($data)) {
                     return $data;
                 }
-            }
-            else {
+            } else {
                 @fclose($handle);
             }
         }
         return null;
     }
 
-    public function set($key, $value, $expiration = 0) {
+    public function set($key, $value, $expiration = 0)
+    {
         if ($expiration != 0 && $expiration <= 30 * 86400) {
             $expiration += time();
         }
         $filename = $this->getFilename($key);
-        $content = "<?php\n";
-        $content.= "/* key = $key */\n";
-        $content.= "\$expires = $expiration;" . ($expiration != 0 ? " // " . date('Y-m-d H:i:s', $expiration) : "") . "\n";
-        $content.= "\$data = " . var_export($value, true) . ";\n";
+        $content  = "<?php\n";
+        $content  .= "/* key = $key */\n";
+        $content  .= "\$expires = $expiration;" . ($expiration != 0 ? " // " . date('Y-m-d H:i:s', $expiration) : "") . "\n";
+        $content  .= "\$data = " . var_export($value, true) . ";\n";
         $this->directoryCreateIfNotExists(dirname($filename));
         file_put_contents($filename, $content, LOCK_EX);
         if ($this->opcacheInvalidateExists) {
@@ -161,7 +166,8 @@ class FileCache implements CacheInterface {
      * 
      * @param string $path
      */
-    protected function directoryCreateIfNotExists($path) {
+    protected function directoryCreateIfNotExists($path)
+    {
         if (!empty($path) && !is_dir($path)) {
             $dir = dirname($path);
             $this->directoryCreateIfNotExists($dir);
@@ -173,7 +179,8 @@ class FileCache implements CacheInterface {
         }
     }
 
-    public function exists($key) {
+    public function exists($key)
+    {
         $filename = $this->getFilename($key);
         if (is_file($filename)) {
             include $filename;
@@ -185,11 +192,11 @@ class FileCache implements CacheInterface {
         return false;
     }
 
-    public function remove($key) {
+    public function remove($key)
+    {
         $filename = $this->getFilename($key);
         if (is_file($filename)) {
             @unlink($filename);
         }
     }
-
 }

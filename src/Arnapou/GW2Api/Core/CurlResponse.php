@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,10 +7,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Core;
 
-class CurlResponse {
+class CurlResponse
+{
 
     /**
      *
@@ -143,7 +142,8 @@ class CurlResponse {
      * 
      * @param Curl $curl
      */
-    public function __construct(Curl $curl) {
+    public function __construct(Curl $curl)
+    {
         $this->curl = $curl;
         $resource   = $curl->getCurl();
 
@@ -162,7 +162,8 @@ class CurlResponse {
      * 
      * @param string $response
      */
-    protected function parseResponse(&$response) {
+    protected function parseResponse(&$response)
+    {
         if (preg_match('!^(?:HTTP/.*?\r?\n\r?\n)*(HTTP/.*?)\r?\n\r?\n(.*)$!si', $response, $m) ||
             preg_match('!^(HTTP/.*?)\r?\n\r?\n(.*)$!si', $response, $m)
         ) {
@@ -173,18 +174,15 @@ class CurlResponse {
                     $v = trim($mm[2]);
                     if (isset($this->headers[$k])) {
                         $this->headers[$k] .= ', ' . $v;
-                    }
-                    else {
+                    } else {
                         $this->headers[$k] = $v;
                     }
-                }
-                else {
+                } else {
                     $this->headers[] = $line;
                 }
             }
             $this->responseContent = $m[2];
-        }
-        else {
+        } else {
             $this->responseContent = $response;
         }
     }
@@ -193,7 +191,8 @@ class CurlResponse {
      * 
      * @return array
      */
-    public function getHeaders() {
+    public function getHeaders()
+    {
         return $this->headers;
     }
 
@@ -201,7 +200,8 @@ class CurlResponse {
      * 
      * @return string|null
      */
-    public function getHeader($directive) {
+    public function getHeader($directive)
+    {
         $directive = strtolower($directive);
         if (isset($this->headers[$directive])) {
             return $this->headers[$directive];
@@ -213,7 +213,8 @@ class CurlResponse {
      * 
      * @return string
      */
-    public function getContent() {
+    public function getContent()
+    {
         return $this->responseContent;
     }
 
@@ -221,7 +222,8 @@ class CurlResponse {
      * 
      * @return int
      */
-    public function getErrorCode() {
+    public function getErrorCode()
+    {
         return $this->curlErrorCode ? $this->curlErrorCode : 0;
     }
 
@@ -229,7 +231,8 @@ class CurlResponse {
      * 
      * @return string|null
      */
-    public function getErrorTitle() {
+    public function getErrorTitle()
+    {
         if ($this->curlErrorCode) {
             if (isset($this->curlErrorCodes[$this->curlErrorCode])) {
                 return $this->curlErrorCodes[$this->curlErrorCode];
@@ -243,7 +246,8 @@ class CurlResponse {
      * 
      * @return string|null
      */
-    public function getErrorDetail() {
+    public function getErrorDetail()
+    {
         return $this->curlError;
     }
 
@@ -251,7 +255,8 @@ class CurlResponse {
      * 
      * @return string The request string sent. For this to work, add the CURLINFO_HEADER_OUT option to the handle by calling curl_setopt()
      */
-    public function getInfoRequestHeader() {
+    public function getInfoRequestHeader()
+    {
         return $this->getInfo('request_header');
     }
 
@@ -259,7 +264,8 @@ class CurlResponse {
      * 
      * @return mixed 
      */
-    public function getInfoCertinfo() {
+    public function getInfoCertinfo()
+    {
         return $this->getInfo('certinfo');
     }
 
@@ -267,7 +273,8 @@ class CurlResponse {
      * 
      * @return mixed Time in seconds of all redirection steps before final transaction was started
      */
-    public function getInfoRedirectTime() {
+    public function getInfoRedirectTime()
+    {
         return $this->getInfo('redirect_time');
     }
 
@@ -275,7 +282,8 @@ class CurlResponse {
      * 
      * @return mixed Time in seconds until the first byte is about to be transferred
      */
-    public function getInfoStartTransferTime() {
+    public function getInfoStartTransferTime()
+    {
         return $this->getInfo('starttransfer_time');
     }
 
@@ -283,7 +291,8 @@ class CurlResponse {
      * 
      * @return mixed Specified size of upload
      */
-    public function getInfoUploadContentLength() {
+    public function getInfoUploadContentLength()
+    {
         return $this->getInfo('upload_content_length');
     }
 
@@ -291,7 +300,8 @@ class CurlResponse {
      * 
      * @return mixed content-length of download, read from Content-Length: field
      */
-    public function getInfoDownloadContentLength() {
+    public function getInfoDownloadContentLength()
+    {
         return $this->getInfo('download_content_length');
     }
 
@@ -299,7 +309,8 @@ class CurlResponse {
      * 
      * @return mixed Average upload speed
      */
-    public function getInfoSpeedUpload() {
+    public function getInfoSpeedUpload()
+    {
         return $this->getInfo('speed_upload');
     }
 
@@ -307,7 +318,8 @@ class CurlResponse {
      * 
      * @return mixed Average download speed
      */
-    public function getInfoSpeedDownload() {
+    public function getInfoSpeedDownload()
+    {
         return $this->getInfo('speed_download');
     }
 
@@ -315,7 +327,8 @@ class CurlResponse {
      * 
      * @return int Total number of bytes downloaded
      */
-    public function getInfoSizeDownload() {
+    public function getInfoSizeDownload()
+    {
         return $this->getInfo('size_download');
     }
 
@@ -323,7 +336,8 @@ class CurlResponse {
      * 
      * @return int Total number of bytes uploaded
      */
-    public function getInfoSizeUpload() {
+    public function getInfoSizeUpload()
+    {
         return $this->getInfo('size_upload');
     }
 
@@ -331,7 +345,8 @@ class CurlResponse {
      * 
      * @return mixed Time in seconds from start until just before file transfer begins
      */
-    public function getInfoPreTransferTime() {
+    public function getInfoPreTransferTime()
+    {
         return $this->getInfo('pretransfer_time');
     }
 
@@ -339,7 +354,8 @@ class CurlResponse {
      * 
      * @return mixed Time in seconds it took to establish the connection
      */
-    public function getInfoConnectTime() {
+    public function getInfoConnectTime()
+    {
         return $this->getInfo('connect_time');
     }
 
@@ -347,7 +363,8 @@ class CurlResponse {
      * 
      * @return mixed Time in seconds until name resolving was complete
      */
-    public function getInfoNamelookupTime() {
+    public function getInfoNamelookupTime()
+    {
         return $this->getInfo('namelookup_time');
     }
 
@@ -355,7 +372,8 @@ class CurlResponse {
      * 
      * @return mixed Total transaction time in seconds for last transfer
      */
-    public function getInfoTotalTime() {
+    public function getInfoTotalTime()
+    {
         return $this->getInfo('total_time');
     }
 
@@ -363,7 +381,8 @@ class CurlResponse {
      * 
      * @return mixed Number of redirects
      */
-    public function getInfoRedirectCount() {
+    public function getInfoRedirectCount()
+    {
         return $this->getInfo('redirect_count');
     }
 
@@ -371,7 +390,8 @@ class CurlResponse {
      * 
      * @return mixed Result of SSL certification verification requested by setting CURLOPT_SSL_VERIFYPEER
      */
-    public function getInfoSslVerifyResult() {
+    public function getInfoSslVerifyResult()
+    {
         return $this->getInfo('ssl_verify_result');
     }
 
@@ -379,7 +399,8 @@ class CurlResponse {
      * 
      * @return mixed Remote time of the retrieved document, if -1 is returned the time of the document is unknown
      */
-    public function getInfoFiletime() {
+    public function getInfoFiletime()
+    {
         return $this->getInfo('filetime');
     }
 
@@ -387,7 +408,8 @@ class CurlResponse {
      * 
      * @return mixed Last effective URL
      */
-    public function getInfoEffectiveUrl() {
+    public function getInfoEffectiveUrl()
+    {
         return $this->getInfo('url');
     }
 
@@ -395,7 +417,8 @@ class CurlResponse {
      * 
      * @return mixed Content-Type: of the requested document, NULL indicates server did not send valid Content-Type: header
      */
-    public function getInfoContentType() {
+    public function getInfoContentType()
+    {
         return $this->getInfo('content_type');
     }
 
@@ -403,7 +426,8 @@ class CurlResponse {
      * 
      * @return mixed Last received HTTP code
      */
-    public function getInfoHttpCode() {
+    public function getInfoHttpCode()
+    {
         return (int) $this->getInfo('http_code');
     }
 
@@ -411,7 +435,8 @@ class CurlResponse {
      * 
      * @return mixed Total size of all headers received
      */
-    public function getInfoHeaderSize() {
+    public function getInfoHeaderSize()
+    {
         return $this->getInfo('header_size');
     }
 
@@ -419,7 +444,8 @@ class CurlResponse {
      * 
      * @return mixed Total size of issued requests, currently only for HTTP requests
      */
-    public function getInfoRequestSize() {
+    public function getInfoRequestSize()
+    {
         return $this->getInfo('request_size');
     }
 
@@ -428,11 +454,11 @@ class CurlResponse {
      * @param string $key
      * @return string|null
      */
-    protected function getInfo($key) {
+    protected function getInfo($key)
+    {
         if (isset($this->info[$key])) {
             return $this->info[$key];
         }
         return null;
     }
-
 }

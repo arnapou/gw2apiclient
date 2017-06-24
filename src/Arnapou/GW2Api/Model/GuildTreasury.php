@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,19 +7,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  * 
  */
-class GuildTreasury extends AbstractObject {
+class GuildTreasury extends AbstractObject
+{
 
     protected $item;
     protected $neededBy   = [];
     protected $totalCount = 0;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $env = $this->getEnvironment();
@@ -49,7 +49,8 @@ class GuildTreasury extends AbstractObject {
      * 
      * @return integer
      */
-    public function getId() {
+    public function getId()
+    {
         return $this->item ? $this->item->getId() : null;
     }
 
@@ -57,7 +58,8 @@ class GuildTreasury extends AbstractObject {
      * 
      * @return integer
      */
-    public function getCount() {
+    public function getCount()
+    {
         return $this->item ? $this->item->getCount() : 0;
     }
 
@@ -65,7 +67,8 @@ class GuildTreasury extends AbstractObject {
      * 
      * @return integer
      */
-    public function getTotalCount() {
+    public function getTotalCount()
+    {
         return $this->totalCount;
     }
 
@@ -73,7 +76,8 @@ class GuildTreasury extends AbstractObject {
      * 
      * @return array
      */
-    public function getNeededBy() {
+    public function getNeededBy()
+    {
         return $this->neededBy;
     }
 
@@ -81,8 +85,8 @@ class GuildTreasury extends AbstractObject {
      * 
      * @return InventorySlot
      */
-    public function getItem() {
+    public function getItem()
+    {
         return $this->item;
     }
-
 }

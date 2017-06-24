@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -17,13 +15,15 @@ namespace Arnapou\GW2Api\Model;
  * @method string getOrder()
  * @method string getIcon()
  */
-class GuildRank extends AbstractObject {
+class GuildRank extends AbstractObject
+{
 
     protected static $ALL_PERMISSIONS_IDS;
     protected $permissions   = [];
     protected $permissionIds = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $env = $this->getEnvironment();
@@ -45,7 +45,8 @@ class GuildRank extends AbstractObject {
      * 
      * @return array
      */
-    public function getPermissionIds() {
+    public function getPermissionIds()
+    {
         return $this->permissionIds;
     }
 
@@ -53,7 +54,8 @@ class GuildRank extends AbstractObject {
      * 
      * @return array
      */
-    public function getAllPermissionIds() {
+    public function getAllPermissionIds()
+    {
         $env = $this->getEnvironment();
         if (!isset(self::$ALL_PERMISSIONS_IDS)) {
             $ids = $env->getClientVersion2()->apiGuildPermissions();
@@ -68,8 +70,8 @@ class GuildRank extends AbstractObject {
      * 
      * @return array
      */
-    public function getPermissions() {
+    public function getPermissions()
+    {
         return $this->permissions;
     }
-
 }

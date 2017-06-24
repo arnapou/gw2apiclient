@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class CollectibleCategory extends AbstractObject {
+class CollectibleCategory extends AbstractObject
+{
 
     /**
      *
@@ -34,7 +33,8 @@ class CollectibleCategory extends AbstractObject {
      */
     protected $material;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $env = $this->getEnvironment();
@@ -69,7 +69,8 @@ class CollectibleCategory extends AbstractObject {
      * 
      * @return string
      */
-    public function getOrder() {
+    public function getOrder()
+    {
         if ($this->material) {
             return $this->material->getOrder();
         }
@@ -80,7 +81,8 @@ class CollectibleCategory extends AbstractObject {
      * 
      * @return string
      */
-    public function getName() {
+    public function getName()
+    {
         if ($this->material) {
             return $this->material->getName();
         }
@@ -91,7 +93,8 @@ class CollectibleCategory extends AbstractObject {
      * 
      * @return integer
      */
-    public function getId() {
+    public function getId()
+    {
         return $this->getData('id');
     }
 
@@ -99,7 +102,8 @@ class CollectibleCategory extends AbstractObject {
      * 
      * @return array
      */
-    public function getItems() {
+    public function getItems()
+    {
         return $this->items;
     }
 
@@ -107,7 +111,8 @@ class CollectibleCategory extends AbstractObject {
      * 
      * @return array
      */
-    public function getPrice() {
+    public function getPrice()
+    {
         if (!isset($this->price)) {
             $this->price = [
                 'buy'  => 0,
@@ -115,13 +120,12 @@ class CollectibleCategory extends AbstractObject {
             ];
             foreach ($this->getItems() as /* @var $item InventorySlot */ $item) {
                 if ($item) {
-                    $price = $item->getPrice();
-                    $this->price['buy'] += $price['buy_total'];
+                    $price               = $item->getPrice();
+                    $this->price['buy']  += $price['buy_total'];
                     $this->price['sell'] += $price['sell_total'];
                 }
             }
         }
         return $this->price;
     }
-
 }

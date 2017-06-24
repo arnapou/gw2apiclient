@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,19 +7,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class PvpEquipment extends AbstractObject {
+class PvpEquipment extends AbstractObject
+{
 
     protected $amulet;
     protected $rune;
     protected $sigils = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['amulet'])) {
@@ -40,7 +40,8 @@ class PvpEquipment extends AbstractObject {
      * 
      * @return PvpAmulet
      */
-    public function getAmulet() {
+    public function getAmulet()
+    {
         return $this->amulet;
     }
 
@@ -48,7 +49,8 @@ class PvpEquipment extends AbstractObject {
      * 
      * @return Item
      */
-    public function getRune() {
+    public function getRune()
+    {
         return $this->rune;
     }
 
@@ -56,8 +58,8 @@ class PvpEquipment extends AbstractObject {
      * 
      * @return array
      */
-    public function getSigils() {
+    public function getSigils()
+    {
         return $this->sigils;
     }
-
 }

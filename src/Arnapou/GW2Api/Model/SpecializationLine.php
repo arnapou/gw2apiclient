@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -24,7 +22,8 @@ use Arnapou\GW2Api\Exception\Exception;
  * @method getMinorTraits()
  * @method getMajorTraits()
  */
-class SpecializationLine extends AbstractObject {
+class SpecializationLine extends AbstractObject
+{
 
     /**
      *
@@ -38,7 +37,8 @@ class SpecializationLine extends AbstractObject {
      */
     protected $traits = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['id'])) {
@@ -51,7 +51,8 @@ class SpecializationLine extends AbstractObject {
         }
     }
 
-    public function __call($name, $arguments) {
+    public function __call($name, $arguments)
+    {
         $val = parent::__call($name, $arguments);
         if ($val === null && empty($arguments) && $this->specialization) {
             return $this->specialization->$name();
@@ -63,7 +64,8 @@ class SpecializationLine extends AbstractObject {
      * 
      * @return boolean
      */
-    public function isElite() {
+    public function isElite()
+    {
         return $this->specialization && $this->specialization->isElite() ? true : false;
     }
 
@@ -71,7 +73,8 @@ class SpecializationLine extends AbstractObject {
      * 
      * @return array
      */
-    public function getTraitsIds() {
+    public function getTraitsIds()
+    {
         return $this->getData('traits');
     }
 
@@ -79,7 +82,8 @@ class SpecializationLine extends AbstractObject {
      * 
      * @return array
      */
-    public function getTraits() {
+    public function getTraits()
+    {
         return $this->traits;
     }
 
@@ -87,7 +91,8 @@ class SpecializationLine extends AbstractObject {
      * 
      * @return array
      */
-    public function getMajorTraitsSelected() {
+    public function getMajorTraitsSelected()
+    {
         $ids    = $this->getTraitsIds();
         $traits = [];
         foreach ($this->getMajorTraits() as $trait) {
@@ -102,7 +107,8 @@ class SpecializationLine extends AbstractObject {
      * 
      * @return integer
      */
-    public function getSpecializationId() {
+    public function getSpecializationId()
+    {
         return $this->getData('id');
     }
 
@@ -110,8 +116,8 @@ class SpecializationLine extends AbstractObject {
      * 
      * @return Specialization
      */
-    public function getSpecialization() {
+    public function getSpecialization()
+    {
         return $this->specialization;
     }
-
 }

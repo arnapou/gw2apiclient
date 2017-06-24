@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -17,19 +15,23 @@ namespace Arnapou\GW2Api\Model;
  * @method string getDescription()
  * @method string getIcon()
  */
-class WvwAbility extends AbstractStoredObject {
+class WvwAbility extends AbstractStoredObject
+{
 
     protected $rank = 0;
 
-    public function getRanks() {
+    public function getRanks()
+    {
         return $this->getData('ranks', []);
     }
 
-    public function getRank() {
+    public function getRank()
+    {
         return $this->rank;
     }
 
-    public function getTotalCost() {
+    public function getTotalCost()
+    {
         $cost = 0;
         foreach ($this->getRanks() as $i => $rank) {
             if ($this->rank >= $i + 1 && isset($rank['cost'])) {
@@ -39,12 +41,13 @@ class WvwAbility extends AbstractStoredObject {
         return $cost;
     }
 
-    public function setRank($rank) {
+    public function setRank($rank)
+    {
         $this->rank = $rank;
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'wvwabilities';
     }
-
 }

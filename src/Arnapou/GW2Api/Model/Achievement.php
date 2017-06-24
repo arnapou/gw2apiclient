@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -21,7 +19,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getPointCap()
  * @method string getType()
  */
-class Achievement extends AbstractStoredObject {
+class Achievement extends AbstractStoredObject
+{
 
     // TYPES
     const TYPE_DEFAULT                = 'Default';
@@ -47,7 +46,8 @@ class Achievement extends AbstractStoredObject {
     protected $rewards = [];
     protected $bits    = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['rewards']) && is_array($data['rewards'])) {
@@ -56,8 +56,7 @@ class Achievement extends AbstractStoredObject {
                 if (isset($item['type'], $item['id'])) {
                     if (self::REWARDS_TYPE_ITEM == $item['type']) {
                         $item = $item + ['object' => new Item($env, $item['id'])];
-                    }
-                    elseif (self::REWARDS_TYPE_TITLE == $item['type']) {
+                    } elseif (self::REWARDS_TYPE_TITLE == $item['type']) {
                         $item = $item + ['object' => new Title($env, $item['id'])];
                     }
                 }
@@ -71,11 +70,9 @@ class Achievement extends AbstractStoredObject {
                 if (isset($item['type'], $item['id'])) {
                     if (self::BITS_TYPE_ITEM == $item['type']) {
                         $item = $item + ['object' => new Item($env, $item['id'])];
-                    }
-                    elseif (self::BITS_TYPE_MINIPET == $item['type']) {
+                    } elseif (self::BITS_TYPE_MINIPET == $item['type']) {
                         $item = $item + ['object' => new Mini($env, $item['id'])];
-                    }
-                    elseif (self::BITS_TYPE_SKIN == $item['type']) {
+                    } elseif (self::BITS_TYPE_SKIN == $item['type']) {
                         $item = $item + ['object' => new Skin($env, $item['id'])];
                     }
                 }
@@ -88,7 +85,8 @@ class Achievement extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getBits() {
+    public function getBits()
+    {
         return $this->bits;
     }
 
@@ -96,7 +94,8 @@ class Achievement extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getFlags() {
+    public function getFlags()
+    {
         return $this->getData('flags', []);
     }
 
@@ -104,7 +103,8 @@ class Achievement extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getTiers() {
+    public function getTiers()
+    {
         return $this->getData('tiers', []);
     }
 
@@ -112,14 +112,14 @@ class Achievement extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getTotalAP() {
+    public function getTotalAP()
+    {
         if ($this->total === null) {
             $this->total = 0;
             $pointCap    = $this->getPointCap();
             if ($pointCap) {
                 $this->total = $pointCap;
-            }
-            else {
+            } else {
                 foreach ($this->getTiers() as $tier) {
                     if (isset($tier['points'])) {
                         $this->total += $tier['points'];
@@ -137,7 +137,8 @@ class Achievement extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getRewards() {
+    public function getRewards()
+    {
         return $this->rewards;
     }
 
@@ -146,7 +147,8 @@ class Achievement extends AbstractStoredObject {
      * @param string $flag
      * @return boolean
      */
-    public function hasFlag($flag) {
+    public function hasFlag($flag)
+    {
         return in_array($flag, (array) $this->getFlags());
     }
 
@@ -154,12 +156,13 @@ class Achievement extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'achievements';
     }
-
 }

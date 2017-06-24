@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -16,7 +14,8 @@ namespace Arnapou\GW2Api\Model;
  * @method integer getId()
  * @method integer getRequiredAccess()
  */
-class AchievementDaily extends AbstractObject {
+class AchievementDaily extends AbstractObject
+{
 
     /**
      *
@@ -30,7 +29,8 @@ class AchievementDaily extends AbstractObject {
      */
     protected $achievement;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['id'])) {
@@ -38,7 +38,8 @@ class AchievementDaily extends AbstractObject {
         }
     }
 
-    public function __call($name, $arguments) {
+    public function __call($name, $arguments)
+    {
         $val = parent::__call($name, $arguments);
         if ($val === null && empty($arguments) && $this->achievement) {
             return $this->achievement->$name();
@@ -50,7 +51,8 @@ class AchievementDaily extends AbstractObject {
      * 
      * @return Achievement
      */
-    public function getAchievement() {
+    public function getAchievement()
+    {
         return $this->achievement;
     }
 
@@ -58,7 +60,8 @@ class AchievementDaily extends AbstractObject {
      * 
      * @return array
      */
-    public function getLevelMin() {
+    public function getLevelMin()
+    {
         return $this->getData(['level', 'min']);
     }
 
@@ -66,7 +69,8 @@ class AchievementDaily extends AbstractObject {
      * 
      * @return array
      */
-    public function getLevelMax() {
+    public function getLevelMax()
+    {
         return $this->getData(['level', 'max']);
     }
 
@@ -74,7 +78,8 @@ class AchievementDaily extends AbstractObject {
      * 
      * @return array
      */
-    public function requireGuildWars2() {
+    public function requireGuildWars2()
+    {
         return in_array(Account::GAME_ACCESS_CORE, $this->getRequiredAccess());
     }
 
@@ -82,8 +87,8 @@ class AchievementDaily extends AbstractObject {
      * 
      * @return array
      */
-    public function requireHeartOfThorns() {
+    public function requireHeartOfThorns()
+    {
         return in_array(Account::GAME_ACCESS_HOT, $this->getRequiredAccess());
     }
-
 }

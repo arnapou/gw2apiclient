@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,7 +16,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getSkillId()
  * @method string getTraitId()
  */
-class ProfessionTrainingTrackElement extends AbstractObject {
+class ProfessionTrainingTrackElement extends AbstractObject
+{
 
     const TYPE_TRAIT = 'Trait';
     const TYPE_SKILL = 'Skill';
@@ -35,7 +34,8 @@ class ProfessionTrainingTrackElement extends AbstractObject {
      */
     protected $trait;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $env = $this->getEnvironment();
@@ -53,7 +53,8 @@ class ProfessionTrainingTrackElement extends AbstractObject {
      * 
      * @return Skill
      */
-    public function getSkill() {
+    public function getSkill()
+    {
         return $this->skill;
     }
 
@@ -61,8 +62,8 @@ class ProfessionTrainingTrackElement extends AbstractObject {
      * 
      * @return SpecializationTrait
      */
-    public function getTrait() {
+    public function getTrait()
+    {
         return $this->trait;
     }
-
 }

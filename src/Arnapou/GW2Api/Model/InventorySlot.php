@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,7 +16,8 @@ namespace Arnapou\GW2Api\Model;
  * @method getBinding()
  * @method getBoundTo()
  */
-class InventorySlot extends AbstractObject {
+class InventorySlot extends AbstractObject
+{
 
     const BINDING_ACCOUNT   = 'Account';
     const BINDING_CHARACTER = 'Character';
@@ -65,7 +64,8 @@ class InventorySlot extends AbstractObject {
      */
     protected $itemStat;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['upgrades']) && is_array($data['upgrades'])) {
@@ -89,8 +89,7 @@ class InventorySlot extends AbstractObject {
         }
         if (isset($data['count'])) {
             $this->count = (int) $data['count'];
-        }
-        else {
+        } else {
             $this->count = 1;
         }
         if (isset($data['stats'], $data['stats']['id'])) {
@@ -101,7 +100,8 @@ class InventorySlot extends AbstractObject {
     /**
      * 
      */
-    public function getChatLink() {
+    public function getChatLink()
+    {
         if ($this->getId()) {
             $skin     = $this->skin ? $this->skin->getId() : 0;
             $upgrade1 = isset($this->upgrades[0]) ? $this->upgrades[0]->getId() : 0;
@@ -115,7 +115,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return array [buy: x, sell: y]
      */
-    public function getPrice() {
+    public function getPrice()
+    {
         if ($this->item && empty($this->getBinding()) && empty($this->getBoundTo())) {
             $n                   = $this->getCount();
             $price               = $this->item->getPrice();
@@ -131,7 +132,8 @@ class InventorySlot extends AbstractObject {
         ];
     }
 
-    public function __call($name, $arguments) {
+    public function __call($name, $arguments)
+    {
         $val = parent::__call($name, $arguments);
         if ($val === null && empty($arguments) && $this->item) {
             return $this->item->$name();
@@ -143,7 +145,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return array
      */
-    public function getInfusions() {
+    public function getInfusions()
+    {
         return $this->infusions;
     }
 
@@ -151,7 +154,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return integer
      */
-    public function getCharges() {
+    public function getCharges()
+    {
         return $this->charges;
     }
 
@@ -159,7 +163,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return integer
      */
-    public function getCount() {
+    public function getCount()
+    {
         return $this->count;
     }
 
@@ -167,7 +172,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return array
      */
-    public function getUpgrades() {
+    public function getUpgrades()
+    {
         return $this->upgrades;
     }
 
@@ -175,7 +181,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return Skin
      */
-    public function getSkin() {
+    public function getSkin()
+    {
         return $this->skin;
     }
 
@@ -183,7 +190,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return Item
      */
-    public function getItem() {
+    public function getItem()
+    {
         return $this->item;
     }
 
@@ -191,11 +199,11 @@ class InventorySlot extends AbstractObject {
      * 
      * @return ItemStat
      */
-    public function getItemStat() {
+    public function getItemStat()
+    {
         if ($this->itemStat) {
             return $this->itemStat;
-        }
-        elseif ($this->item) {
+        } elseif ($this->item) {
             return $this->getItem()->getItemStat();
         }
         return null;
@@ -205,7 +213,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return array
      */
-    public function getAttributes() {
+    public function getAttributes()
+    {
         $attributes = $this->getData(['stats', 'attributes'], []);
         if (empty($attributes)) {
             $attributes = $this->getItem()->getAttributes();
@@ -217,7 +226,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return integer
      */
-    public function getAgonyResistance() {
+    public function getAgonyResistance()
+    {
         $ar = $this->item ? $this->item->getAgonyResistance() : 0;
         foreach ($this->getUpgrades() as $item) {
             if ($item) {
@@ -236,7 +246,8 @@ class InventorySlot extends AbstractObject {
      * 
      * @return string
      */
-    public function getStatName() {
+    public function getStatName()
+    {
         if ($this->itemStat) {
             return $this->itemStat->getStatName();
         }
@@ -249,5 +260,4 @@ class InventorySlot extends AbstractObject {
         }
         return null;
     }
-
 }

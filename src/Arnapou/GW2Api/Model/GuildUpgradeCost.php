@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,7 +16,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getName()
  * @method string getItemId()
  */
-class GuildUpgradeCost extends AbstractObject {
+class GuildUpgradeCost extends AbstractObject
+{
 
     const TYPE_ITEM        = 'Item';
     const TYPE_COLLECTIBLE = 'Collectible';
@@ -26,7 +25,8 @@ class GuildUpgradeCost extends AbstractObject {
 
     protected $item;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['item_id'])) {
@@ -41,12 +41,13 @@ class GuildUpgradeCost extends AbstractObject {
      * 
      * @return InventorySlot
      */
-    public function getItem() {
+    public function getItem()
+    {
         return $this->item;
     }
 
-    public function __toString() {
+    public function __toString()
+    {
         return (string) $this->getName();
     }
-
 }

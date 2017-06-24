@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -17,7 +15,8 @@ use Arnapou\GW2Api\Exception\Exception;
  * 
  * @doc https://wiki.guildwars2.com/wiki/API:2
  */
-class ClientVersion2 extends AbstractClientVersion {
+class ClientVersion2 extends AbstractClientVersion
+{
 
     protected $maxRequestIdsLength = 1000;
 
@@ -27,7 +26,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * @param array $ids
      * @return array
      */
-    protected function preRequestSmartCaching($cachePrefix, &$ids) {
+    protected function preRequestSmartCaching($cachePrefix, &$ids)
+    {
         $cache  = $this->getEnvironment()->getCache();
         $cached = [];
         if ($cache && $this->getEnvironment()->getUseSmartCaching()) {
@@ -36,8 +36,7 @@ class ClientVersion2 extends AbstractClientVersion {
                 $item = $cache->get($cachePrefix . '/' . $id);
                 if (!empty($item) && is_array($item)) {
                     $cached[] = $item;
-                }
-                else {
+                } else {
                     $requestedIds[] = $id;
                 }
             }
@@ -51,7 +50,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * @param string $cachePrefix
      * @param array $results
      */
-    protected function postRequestSmartCaching($cachePrefix, $results) {
+    protected function postRequestSmartCaching($cachePrefix, $results)
+    {
         $cache = $this->getEnvironment()->getCache();
         if ($cache && $this->getEnvironment()->getUseSmartCaching()) {
             $retention = $this->getEnvironment()->getCacheRetention();
@@ -70,7 +70,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * @param array $headers
      * @return array
      */
-    protected function request($url, $parameters = array(), $headers = array()) {
+    protected function request($url, $parameters = array(), $headers = array())
+    {
         if (isset($parameters['ids']) && is_array($parameters['ids']) && !empty($parameters['ids'])) {
             $cachePrefix = __CLASS__ . $url;
             $results     = [];
@@ -91,8 +92,7 @@ class ClientVersion2 extends AbstractClientVersion {
 
             $this->postRequestSmartCaching($cachePrefix, $results);
             return array_merge($cached, $results);
-        }
-        else {
+        } else {
             return parent::request($url, $parameters, $headers);
         }
     }
@@ -104,7 +104,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * @param array $headers
      * @return array
      */
-    protected function requestAccessToken($url, $parameters = array(), $headers = array()) {
+    protected function requestAccessToken($url, $parameters = array(), $headers = array())
+    {
         if (empty($this->getEnvironment()->getAccessToken())) {
             throw new Exception('You should provide the access token before using this api.');
         }
@@ -116,7 +117,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return string
      */
-    public function getBaseUrl() {
+    public function getBaseUrl()
+    {
         return 'https://api.guildwars2.com/v2/';
     }
 
@@ -124,7 +126,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccount() {
+    public function apiAccount()
+    {
         return $this->requestAccessToken('account');
     }
 
@@ -132,7 +135,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountAchievements() {
+    public function apiAccountAchievements()
+    {
         return $this->requestAccessToken('account/achievements');
     }
 
@@ -140,7 +144,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountInventory() {
+    public function apiAccountInventory()
+    {
         return $this->requestAccessToken('account/inventory');
     }
 
@@ -148,7 +153,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountBank() {
+    public function apiAccountBank()
+    {
         return $this->requestAccessToken('account/bank');
     }
 
@@ -156,7 +162,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountDyes() {
+    public function apiAccountDyes()
+    {
         return $this->requestAccessToken('account/dyes');
     }
 
@@ -164,7 +171,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountTitles() {
+    public function apiAccountTitles()
+    {
         return $this->requestAccessToken('account/titles');
     }
 
@@ -172,7 +180,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountMinis() {
+    public function apiAccountMinis()
+    {
         return $this->requestAccessToken('account/minis');
     }
 
@@ -180,7 +189,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountGliders() {
+    public function apiAccountGliders()
+    {
         return $this->requestAccessToken('account/gliders');
     }
 
@@ -188,7 +198,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountFinishers() {
+    public function apiAccountFinishers()
+    {
         return $this->requestAccessToken('account/finishers');
     }
 
@@ -196,7 +207,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountOutfits() {
+    public function apiAccountOutfits()
+    {
         return $this->requestAccessToken('account/outfits');
     }
 
@@ -204,7 +216,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountMasteries() {
+    public function apiAccountMasteries()
+    {
         return $this->requestAccessToken('account/masteries');
     }
 
@@ -212,7 +225,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountMaterials() {
+    public function apiAccountMaterials()
+    {
         return $this->requestAccessToken('account/materials');
     }
 
@@ -220,7 +234,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountSkins() {
+    public function apiAccountSkins()
+    {
         return $this->requestAccessToken('account/skins');
     }
 
@@ -228,7 +243,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountWallet() {
+    public function apiAccountWallet()
+    {
         return $this->requestAccessToken('account/wallet');
     }
 
@@ -236,7 +252,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountDungeons() {
+    public function apiAccountDungeons()
+    {
         return $this->requestAccessToken('account/dungeons');
     }
 
@@ -244,7 +261,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountRaids() {
+    public function apiAccountRaids()
+    {
         return $this->requestAccessToken('account/raids');
     }
 
@@ -252,7 +270,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountHomeCats() {
+    public function apiAccountHomeCats()
+    {
         return $this->requestAccessToken('account/home/cats');
     }
 
@@ -260,7 +279,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAccountHomeNodes() {
+    public function apiAccountHomeNodes()
+    {
         return $this->requestAccessToken('account/home/nodes');
     }
 
@@ -268,7 +288,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiPvpStats() {
+    public function apiPvpStats()
+    {
         return $this->requestAccessToken('pvp/stats');
     }
 
@@ -276,7 +297,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiPvpStandings() {
+    public function apiPvpStandings()
+    {
         return $this->requestAccessToken('pvp/standings');
     }
 
@@ -284,7 +306,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiPvpGames($ids = null) {
+    public function apiPvpGames($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -296,7 +319,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiPvpAmulets($ids = null) {
+    public function apiPvpAmulets($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -308,7 +332,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiPvpSeasons($ids = null) {
+    public function apiPvpSeasons($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -320,7 +345,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiBuild() {
+    public function apiBuild()
+    {
         return $this->request('build');
     }
 
@@ -328,7 +354,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCharacters($ids = null) {
+    public function apiCharacters($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -340,7 +367,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiColors($ids = null) {
+    public function apiColors($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -352,7 +380,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiDungeons($ids = null) {
+    public function apiDungeons($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -364,7 +393,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiRaids($ids = null) {
+    public function apiRaids($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -376,7 +406,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommerceExchange() {
+    public function apiCommerceExchange()
+    {
         return $this->request('commerce/exchange');
     }
 
@@ -384,7 +415,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommerceExchangeCoins($quantity) {
+    public function apiCommerceExchangeCoins($quantity)
+    {
         return $this->request('commerce/exchange/coins', ['quantity' => $quantity]);
     }
 
@@ -392,7 +424,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommerceExchangeGems($quantity) {
+    public function apiCommerceExchangeGems($quantity)
+    {
         return $this->request('commerce/exchange/gems', ['quantity' => $quantity]);
     }
 
@@ -400,7 +433,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommerceListings($ids = null) {
+    public function apiCommerceListings($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -412,7 +446,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommercePrices($ids = null) {
+    public function apiCommercePrices($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -424,7 +459,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommerceTransactionsCurrentBuys() {
+    public function apiCommerceTransactionsCurrentBuys()
+    {
         $parameters = [
             'page_size' => 200,
             'page'      => 0,
@@ -436,7 +472,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommerceTransactionsCurrentSells() {
+    public function apiCommerceTransactionsCurrentSells()
+    {
         $parameters = [
             'page_size' => 200,
             'page'      => 0,
@@ -448,7 +485,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommerceTransactionsHistoryBuys() {
+    public function apiCommerceTransactionsHistoryBuys()
+    {
         $parameters = [
             'page_size' => 200,
             'page'      => 0,
@@ -460,7 +498,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCommerceTransactionsHistorySells() {
+    public function apiCommerceTransactionsHistorySells()
+    {
         $parameters = [
             'page_size' => 200,
             'page'      => 0,
@@ -472,7 +511,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiContinents($continentId = null, $floorId = null, $regionId = null, $mapId = null) {
+    public function apiContinents($continentId = null, $floorId = null, $regionId = null, $mapId = null)
+    {
         $url = 'continents';
         if ($continentId) {
             $url .= '/' . $continentId;
@@ -493,7 +533,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiCurrencies($ids = null) {
+    public function apiCurrencies($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -505,7 +546,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiFiles($ids = null) {
+    public function apiFiles($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -517,7 +559,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAchievements($ids = null) {
+    public function apiAchievements($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -529,7 +572,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAchievementsDaily() {
+    public function apiAchievementsDaily()
+    {
         return $this->request('achievements/daily');
     }
 
@@ -537,7 +581,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAchievementsDailyTomorrow() {
+    public function apiAchievementsDailyTomorrow()
+    {
         return $this->request('achievements/daily/tomorrow');
     }
 
@@ -545,7 +590,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAchievementsGroups($ids = null) {
+    public function apiAchievementsGroups($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -557,7 +603,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiAchievementsCategories($ids = null) {
+    public function apiAchievementsCategories($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -569,7 +616,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiBackstoryAnswers($ids = null) {
+    public function apiBackstoryAnswers($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -581,7 +629,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiBackstoryQuestions($ids = null) {
+    public function apiBackstoryQuestions($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -593,7 +642,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiItems($ids = null) {
+    public function apiItems($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -605,7 +655,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiItemstats($ids = null) {
+    public function apiItemstats($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -617,7 +668,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiEmblem($ids = null) {
+    public function apiEmblem($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -633,7 +685,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * !!!
      * @return array
      */
-    public function apiGuildUpgrades($ids = null) {
+    public function apiGuildUpgrades($ids = null)
+    {
         if (is_string($ids) && preg_match('!^([A-Z0-9]+-)+[A-Z0-9]+$!si', $ids)) {
             return $this->requestAccessToken('guild/' . $ids . '/upgrades');
         }
@@ -648,7 +701,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGuildPermissions($ids = null) {
+    public function apiGuildPermissions($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -660,11 +714,11 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGuild($guildId) {
+    public function apiGuild($guildId)
+    {
         if ($this->getEnvironment()->getAccessToken()) {
             return $this->requestAccessToken('guild/' . $guildId);
-        }
-        else {
+        } else {
             return $this->request('guild/' . $guildId);
         }
     }
@@ -673,7 +727,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGuildLog($guildId) {
+    public function apiGuildLog($guildId)
+    {
         return $this->requestAccessToken('guild/' . $guildId . '/log');
     }
 
@@ -681,7 +736,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGuildMembers($guildId) {
+    public function apiGuildMembers($guildId)
+    {
         return $this->requestAccessToken('guild/' . $guildId . '/members');
     }
 
@@ -689,7 +745,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGuildRanks($guildId) {
+    public function apiGuildRanks($guildId)
+    {
         return $this->requestAccessToken('guild/' . $guildId . '/ranks');
     }
 
@@ -697,7 +754,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGuildStash($guildId) {
+    public function apiGuildStash($guildId)
+    {
         return $this->requestAccessToken('guild/' . $guildId . '/stash');
     }
 
@@ -705,7 +763,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGuildTeams($guildId) {
+    public function apiGuildTeams($guildId)
+    {
         return $this->requestAccessToken('guild/' . $guildId . '/teams');
     }
 
@@ -713,7 +772,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGuildTreasury($guildId) {
+    public function apiGuildTreasury($guildId)
+    {
         return $this->requestAccessToken('guild/' . $guildId . '/treasury');
     }
 
@@ -721,7 +781,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiLegends($ids = null) {
+    public function apiLegends($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -733,7 +794,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiGliders($ids = null) {
+    public function apiGliders($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -745,7 +807,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiFinishers($ids = null) {
+    public function apiFinishers($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -757,7 +820,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiOutfits($ids = null) {
+    public function apiOutfits($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -769,7 +833,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiMasteries($ids = null) {
+    public function apiMasteries($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -781,7 +846,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiMinis($ids = null) {
+    public function apiMinis($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -793,7 +859,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiProfessions($ids = null) {
+    public function apiProfessions($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -805,7 +872,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiPets($ids = null) {
+    public function apiPets($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -817,7 +885,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiMaps($ids = null) {
+    public function apiMaps($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -829,7 +898,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiMaterials($ids = null) {
+    public function apiMaterials($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -841,7 +911,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiQuaggans($ids = null) {
+    public function apiQuaggans($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -853,7 +924,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiRecipes($ids = null) {
+    public function apiRecipes($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -865,15 +937,14 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiRecipesSearch($input = null, $output = null) {
+    public function apiRecipesSearch($input = null, $output = null)
+    {
         $parameters = [];
         if ($input) {
             $parameters['input'] = $input;
-        }
-        elseif ($output) {
+        } elseif ($output) {
             $parameters['output'] = $output;
-        }
-        else {
+        } else {
             throw new Exception('Either input or output parameter should be specified.');
         }
         return $this->request('recipes/search', $parameters);
@@ -883,7 +954,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiSkins($ids = null) {
+    public function apiSkins($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -895,7 +967,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiRaces($ids = null) {
+    public function apiRaces($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -907,7 +980,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiSkills($ids = null) {
+    public function apiSkills($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -919,7 +993,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiSpecializations($ids = null) {
+    public function apiSpecializations($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -931,7 +1006,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiTokeninfo() {
+    public function apiTokeninfo()
+    {
         return $this->requestAccessToken('tokeninfo');
     }
 
@@ -939,7 +1015,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiTitles($ids = null) {
+    public function apiTitles($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -951,7 +1028,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiStories($ids = null) {
+    public function apiStories($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -963,7 +1041,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiStoriesSeasons($ids = null) {
+    public function apiStoriesSeasons($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -975,7 +1054,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiTraits($ids = null) {
+    public function apiTraits($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -987,7 +1067,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiWorlds($ids = null) {
+    public function apiWorlds($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -999,7 +1080,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiWvwObjectives($ids = null) {
+    public function apiWvwObjectives($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -1011,7 +1093,8 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiWvwAbilities($ids = null) {
+    public function apiWvwAbilities($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
@@ -1023,12 +1106,12 @@ class ClientVersion2 extends AbstractClientVersion {
      * 
      * @return array
      */
-    public function apiWvwMatches($ids = null) {
+    public function apiWvwMatches($ids = null)
+    {
         $parameters = [];
         if (!empty($ids)) {
             $parameters['ids'] = $ids;
         }
         return $this->request('wvw/matches', $parameters);
     }
-
 }

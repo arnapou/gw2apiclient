@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -19,7 +17,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string  getName()
  * @method string  getOrder()
  */
-class AchievementGroup extends AbstractStoredObject {
+class AchievementGroup extends AbstractStoredObject
+{
 
     protected $categories = [];
 
@@ -27,7 +26,8 @@ class AchievementGroup extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getCategoriesIds() {
+    public function getCategoriesIds()
+    {
         return $this->getData('categories');
     }
 
@@ -35,12 +35,14 @@ class AchievementGroup extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getCategories() {
+    public function getCategories()
+    {
         $this->checkLoadData();
         return $this->categories;
     }
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['categories']) && is_array($data['categories'])) {
@@ -62,12 +64,13 @@ class AchievementGroup extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'achievementsgroups';
     }
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,7 +16,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getIcon()
  * @method string getUnlockDetails()
  */
-class Finisher extends AbstractStoredObject {
+class Finisher extends AbstractStoredObject
+{
 
     use UnlockTrait;
 
@@ -26,7 +25,8 @@ class Finisher extends AbstractStoredObject {
     protected $isPermanent = false;
     protected $unlockItems = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['unlock_items']) && is_array($data['unlock_items'])) {
@@ -40,7 +40,8 @@ class Finisher extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getUnlockItem($index) {
+    public function getUnlockItem($index)
+    {
         return isset($this->unlockItems[$index]) ? $this->unlockItems[$index] : null;
     }
 
@@ -48,7 +49,8 @@ class Finisher extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getUnlockItems() {
+    public function getUnlockItems()
+    {
         return $this->unlockItems;
     }
 
@@ -56,7 +58,8 @@ class Finisher extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getQuantity() {
+    public function getQuantity()
+    {
         return $this->quantity;
     }
 
@@ -64,7 +67,8 @@ class Finisher extends AbstractStoredObject {
      * 
      * @param integer $nb
      */
-    public function setQuantity($nb) {
+    public function setQuantity($nb)
+    {
         $this->quantity = $nb;
     }
 
@@ -72,7 +76,8 @@ class Finisher extends AbstractStoredObject {
      * 
      * @return boolean
      */
-    public function isPermanent() {
+    public function isPermanent()
+    {
         return $this->isPermanent;
     }
 
@@ -80,12 +85,13 @@ class Finisher extends AbstractStoredObject {
      * 
      * @param boolean $bool
      */
-    public function setPermanent($bool) {
+    public function setPermanent($bool)
+    {
         $this->isPermanent = $bool ? true : false;
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'finishers';
     }
-
 }

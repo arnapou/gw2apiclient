@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Environment;
@@ -24,7 +22,8 @@ use Arnapou\GW2Api\Environment;
  * @method string getLevel()
  * @method string getVendorValue()
  */
-class Item extends AbstractStoredObject {
+class Item extends AbstractStoredObject
+{
 
     // TYPES
     const TYPE_ARMOR                                  = 'Armor';
@@ -196,7 +195,8 @@ class Item extends AbstractStoredObject {
      */
     protected $price = null;
 
-    public function __construct(Environment $environment, $id) {
+    public function __construct(Environment $environment, $id)
+    {
         parent::__construct($environment, $id);
 
         if ($this->objectId) {
@@ -207,7 +207,8 @@ class Item extends AbstractStoredObject {
     /**
      * 
      */
-    public function getChatLink() {
+    public function getChatLink()
+    {
         if ($this->getId()) {
             return \Arnapou\GW2Api\chatlink_item($this->getId());
         }
@@ -218,7 +219,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return array [buy: x, sell: y]
      */
-    public function getPrice() {
+    public function getPrice()
+    {
         if (empty($this->price)) {
             $this->price = [
                 'buy'  => null,
@@ -243,7 +245,8 @@ class Item extends AbstractStoredObject {
         return $this->price;
     }
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['default_skin'])) {
@@ -258,7 +261,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return Skin
      */
-    public function getDefaultSkin() {
+    public function getDefaultSkin()
+    {
         return $this->defaultSkin;
     }
 
@@ -266,7 +270,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getFlags() {
+    public function getFlags()
+    {
         return $this->getData('flags', []);
     }
 
@@ -275,7 +280,8 @@ class Item extends AbstractStoredObject {
      * @param string $flag
      * @return boolean
      */
-    public function hasFlag($flag) {
+    public function hasFlag($flag)
+    {
         return in_array($flag, (array) $this->getFlags());
     }
 
@@ -283,7 +289,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getGameTypes() {
+    public function getGameTypes()
+    {
         return $this->getData('game_types', []);
     }
 
@@ -292,7 +299,8 @@ class Item extends AbstractStoredObject {
      * @param string $type
      * @return boolean
      */
-    public function hasGameType($type) {
+    public function hasGameType($type)
+    {
         return in_array($type, (array) $this->getGameTypes());
     }
 
@@ -300,7 +308,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getRestrictions() {
+    public function getRestrictions()
+    {
         return $this->getData('restrictions', []);
     }
 
@@ -309,7 +318,8 @@ class Item extends AbstractStoredObject {
      * @param string $restriction
      * @return boolean
      */
-    public function hasRestriction($restriction) {
+    public function hasRestriction($restriction)
+    {
         return in_array($restriction, (array) $this->getRestrictions());
     }
 
@@ -317,7 +327,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getSubType() {
+    public function getSubType()
+    {
         return $this->getData(['details', 'type']);
     }
 
@@ -325,7 +336,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getArmorWeightClass() {
+    public function getArmorWeightClass()
+    {
         return $this->getData(['details', 'weight_class']);
     }
 
@@ -333,7 +345,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getArmorDefense() {
+    public function getArmorDefense()
+    {
         return $this->getData(['details', 'defense']);
     }
 
@@ -341,7 +354,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getWeaponDamageType() {
+    public function getWeaponDamageType()
+    {
         return $this->getData(['details', 'damage_type']);
     }
 
@@ -349,7 +363,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getWeaponMinPower() {
+    public function getWeaponMinPower()
+    {
         return $this->getData(['details', 'min_power']);
     }
 
@@ -357,7 +372,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getWeaponMaxPower() {
+    public function getWeaponMaxPower()
+    {
         return $this->getData(['details', 'max_power']);
     }
 
@@ -365,7 +381,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getWeaponDefense() {
+    public function getWeaponDefense()
+    {
         return $this->getData(['details', 'defense']);
     }
 
@@ -373,7 +390,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getConsumableDescription() {
+    public function getConsumableDescription()
+    {
         return $this->getData(['details', 'description']);
     }
 
@@ -381,7 +399,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getConsumableDurationMs() {
+    public function getConsumableDurationMs()
+    {
         return $this->getData(['details', 'duration_ms']);
     }
 
@@ -389,7 +408,8 @@ class Item extends AbstractStoredObject {
      * The dye id for dyes
      * @return integer
      */
-    public function getConsumableColorId() {
+    public function getConsumableColorId()
+    {
         return $this->getData(['details', 'color_id']);
     }
 
@@ -397,7 +417,8 @@ class Item extends AbstractStoredObject {
      * The recipe id for recipe unlocks.
      * @return integer
      */
-    public function getConsumableRecipeId() {
+    public function getConsumableRecipeId()
+    {
         return $this->getData(['details', 'recipe_id']);
     }
 
@@ -405,7 +426,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getConsumableUnlockType() {
+    public function getConsumableUnlockType()
+    {
         return $this->getData(['details', 'unlock_type']);
     }
 
@@ -413,7 +435,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getSalvageCharges() {
+    public function getSalvageCharges()
+    {
         return $this->getData(['details', 'charges']);
     }
 
@@ -421,7 +444,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getUpgradeComponentFlags() {
+    public function getUpgradeComponentFlags()
+    {
         return $this->getData(['details', 'flags']);
     }
 
@@ -429,7 +453,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getUpgradeComponentSuffix() {
+    public function getUpgradeComponentSuffix()
+    {
         return $this->getData(['details', 'suffix']);
     }
 
@@ -437,7 +462,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getBagSize() {
+    public function getBagSize()
+    {
         return $this->getData(['details', 'size']);
     }
 
@@ -445,7 +471,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return Item
      */
-    public function getSuffixItemId() {
+    public function getSuffixItemId()
+    {
         return $this->getData(['details', 'suffix_item_id']);
     }
 
@@ -453,15 +480,15 @@ class Item extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getAttributes() {
+    public function getAttributes()
+    {
         $attributes = [];
         $array      = $this->getData(['details', 'infix_upgrade', 'attributes']);
         if (is_array($array)) {
             foreach ($array as $key => $value) {
                 if (is_array($value) && isset($value['attribute'], $value['modifier'])) {
                     $attributes[$value['attribute']] = $value['modifier'];
-                }
-                else {
+                } else {
                     $attributes[$key] = $value;
                 }
             }
@@ -473,7 +500,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return ItemStat
      */
-    public function getItemStat() {
+    public function getItemStat()
+    {
         return $this->itemStat;
     }
 
@@ -481,7 +509,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getStatName() {
+    public function getStatName()
+    {
         if ($this->itemStat) {
             return $this->itemStat->getStatName();
         }
@@ -492,7 +521,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getAgonyResistance() {
+    public function getAgonyResistance()
+    {
         if ($this->getType() !== self::TYPE_UPGRADE_COMPONENT ||
             $this->getSubType() !== self::SUBTYPE_UPGRADE_COMPONENT_DEFAULT
         ) {
@@ -526,7 +556,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getBuffDescription() {
+    public function getBuffDescription()
+    {
         $buff = $this->getData(['details', 'infix_upgrade', 'buff', 'description']);
         if (empty($buff)) {
             $buff = $this->getData(['details', 'bonuses']);
@@ -541,7 +572,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getBuffSkillId() {
+    public function getBuffSkillId()
+    {
         return $this->getData(['details', 'infix_upgrade', 'buff', 'skill_id']);
     }
 
@@ -549,7 +581,8 @@ class Item extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getInfusionSlots() {
+    public function getInfusionSlots()
+    {
         return $this->getData(['details', 'infusion_slots']);
     }
 
@@ -557,12 +590,13 @@ class Item extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getStatChoices() {
+    public function getStatChoices()
+    {
         return $this->getData(['details', 'stat_choices'], []);
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'items';
     }
-
 }

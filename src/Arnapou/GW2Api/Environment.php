@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api;
 
 use Arnapou\GW2Api\Cache\CacheInterface;
@@ -18,7 +16,8 @@ use Arnapou\GW2Api\Storage\StorageInterface;
 /**
  *
  */
-class Environment {
+class Environment
+{
 
     // EVENTS
     const onRequest = 'onRequest';
@@ -112,7 +111,8 @@ class Environment {
      * 
      * @param string $lang
      */
-    public function __construct($lang = self::LANG_EN) {
+    public function __construct($lang = self::LANG_EN)
+    {
         $this->setLang($lang);
         $this->eventListener = new Event\EventListener();
     }
@@ -123,7 +123,8 @@ class Environment {
      * @param integer $seconds
      * @return Environment
      */
-    public function addCacheRetentionRule($pattern, $seconds) {
+    public function addCacheRetentionRule($pattern, $seconds)
+    {
         if ($seconds <= 1) {
             throw new Exception('Retention cannot be lower than 2 seconds');
         }
@@ -136,7 +137,8 @@ class Environment {
      * @param Core\ClientVersion1 $client
      * @return Environment
      */
-    public function setClientVersion1(Core\ClientVersion1 $client) {
+    public function setClientVersion1(Core\ClientVersion1 $client)
+    {
         $this->clientVersion1 = $client;
         return $this;
     }
@@ -145,7 +147,8 @@ class Environment {
      * 
      * @return Core\ClientVersion1
      */
-    public function getClientVersion1() {
+    public function getClientVersion1()
+    {
         if (empty($this->clientVersion1)) {
             $this->clientVersion1 = new Core\ClientVersion1($this);
         }
@@ -157,7 +160,8 @@ class Environment {
      * @param Core\ClientVersion2 $client
      * @return Environment
      */
-    public function setClientVersion2(Core\ClientVersion2 $client) {
+    public function setClientVersion2(Core\ClientVersion2 $client)
+    {
         $this->clientVersion2 = $client;
         return $this;
     }
@@ -166,7 +170,8 @@ class Environment {
      * 
      * @return Core\ClientVersion2
      */
-    public function getClientVersion2() {
+    public function getClientVersion2()
+    {
         if (empty($this->clientVersion2)) {
             $this->clientVersion2 = new Core\ClientVersion2($this);
         }
@@ -178,7 +183,8 @@ class Environment {
      * @param CacheInterface $cache
      * @return Environment
      */
-    public function setCache(CacheInterface $cache) {
+    public function setCache(CacheInterface $cache)
+    {
         $this->cache = $cache;
         return $this;
     }
@@ -187,7 +193,8 @@ class Environment {
      * 
      * @return CacheInterface
      */
-    public function getCache() {
+    public function getCache()
+    {
         return $this->cache;
     }
 
@@ -196,7 +203,8 @@ class Environment {
      * @param StorageInterface $storage
      * @return Environment
      */
-    public function setStorage(StorageInterface $storage) {
+    public function setStorage(StorageInterface $storage)
+    {
         $this->storage = $storage;
         return $this;
     }
@@ -205,7 +213,8 @@ class Environment {
      * 
      * @return StorageInterface
      */
-    public function getStorage() {
+    public function getStorage()
+    {
         if (empty($this->storage)) {
             $this->storage = new Storage\RuntimeStorage();
         }
@@ -216,7 +225,8 @@ class Environment {
      * 
      * @return boolean
      */
-    function getUseSmartCaching() {
+    function getUseSmartCaching()
+    {
         return $this->useSmartCaching;
     }
 
@@ -225,7 +235,8 @@ class Environment {
      * @param boolean $bool
      * @return Environment
      */
-    function setUseSmartCaching($bool) {
+    function setUseSmartCaching($bool)
+    {
         $this->useSmartCaching = $bool ? true : false;
         return $this;
     }
@@ -235,7 +246,8 @@ class Environment {
      * @param string $lang
      * @return Environment
      */
-    public function setLang($lang) {
+    public function setLang($lang)
+    {
         if (!in_array($lang, [self::LANG_DE, self::LANG_EN, self::LANG_ES, self::LANG_FR, self::LANG_KO, self::LANG_ZH])) {
             throw new Exception('Wrong lang parameter.');
         }
@@ -247,7 +259,8 @@ class Environment {
      * 
      * @return string
      */
-    public function getLang() {
+    public function getLang()
+    {
         return $this->lang;
     }
 
@@ -256,7 +269,8 @@ class Environment {
      * @param string $token
      * @return Environment
      */
-    public function setAccessToken($token) {
+    public function setAccessToken($token)
+    {
         $this->accessToken = $token;
         return $this;
     }
@@ -265,7 +279,8 @@ class Environment {
      * 
      * @return string
      */
-    public function getAccessToken() {
+    public function getAccessToken()
+    {
         return $this->accessToken;
     }
 
@@ -274,7 +289,8 @@ class Environment {
      * @param integer $seconds default cache retention
      * @return Environment
      */
-    public function setCacheRetention($seconds) {
+    public function setCacheRetention($seconds)
+    {
         if ($seconds <= 1) {
             throw new Exception('Retention cannot be lower than 2 seconds');
         }
@@ -286,7 +302,8 @@ class Environment {
      * 
      * @return string
      */
-    public function getCacheRetention($url = null) {
+    public function getCacheRetention($url = null)
+    {
         if ($url) {
             foreach ($this->cacheRetentionRules as $pattern => $retention) {
                 if (strpos($url, $pattern) !== false) {
@@ -302,7 +319,8 @@ class Environment {
      * @param string $userAgent
      * @return Environment
      */
-    public function setCurlUserAgent($userAgent) {
+    public function setCurlUserAgent($userAgent)
+    {
         $this->curlUserAgent = $userAgent;
         return $this;
     }
@@ -311,7 +329,8 @@ class Environment {
      * 
      * @return string
      */
-    public function getCurlUserAgent() {
+    public function getCurlUserAgent()
+    {
         return $this->curlUserAgent;
     }
 
@@ -320,7 +339,8 @@ class Environment {
      * @param integer $seconds
      * @return Environment
      */
-    public function setCurlRequestTimeout($seconds) {
+    public function setCurlRequestTimeout($seconds)
+    {
         $this->curlRequestTimeout = $seconds;
         return $this;
     }
@@ -329,7 +349,8 @@ class Environment {
      * 
      * @return integer
      */
-    public function getCurlRequestTimeout() {
+    public function getCurlRequestTimeout()
+    {
         return $this->curlRequestTimeout;
     }
 
@@ -338,7 +359,8 @@ class Environment {
      * @param integer $retries
      * @return Environment
      */
-    public function setRequestRetries($retries) {
+    public function setRequestRetries($retries)
+    {
         $this->requestRetries = $retries;
         return $this;
     }
@@ -347,7 +369,8 @@ class Environment {
      * 
      * @return integer
      */
-    public function getRequestRetries() {
+    public function getRequestRetries()
+    {
         return $this->requestRetries;
     }
 
@@ -356,7 +379,8 @@ class Environment {
      * @param integer $delay cannot be lower than 20 ms
      * @return Environment
      */
-    public function setRequestRetryDelay($delay) {
+    public function setRequestRetryDelay($delay)
+    {
         if ($delay < 20) {
             $delay = 20;
         }
@@ -368,7 +392,8 @@ class Environment {
      * 
      * @return integer
      */
-    public function getRequestRetryDelay() {
+    public function getRequestRetryDelay()
+    {
         return $this->requestRetryDelay;
     }
 
@@ -376,8 +401,8 @@ class Environment {
      * 
      * @return Event\EventListener
      */
-    public function getEventListener() {
+    public function getEventListener()
+    {
         return $this->eventListener;
     }
-
 }

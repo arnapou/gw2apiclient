@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class TradingPost extends AbstractObject {
+class TradingPost extends AbstractObject
+{
 
     /**
      *
@@ -45,7 +44,8 @@ class TradingPost extends AbstractObject {
      * @param array $items
      * @return array
      */
-    protected function prepareItems($items) {
+    protected function prepareItems($items)
+    {
         if (empty($items)) {
             return [];
         }
@@ -56,8 +56,7 @@ class TradingPost extends AbstractObject {
             $key = $item['item_id'] . '_' . $item['price'];
             if (isset($return[$key])) {
                 $return[$key]['quantity'] += $item['quantity'];
-            }
-            else {
+            } else {
                 $item['item'] = new Item($env, $item['item_id']);
                 unset($item['item_id']);
                 $return[$key] = $item;
@@ -70,7 +69,8 @@ class TradingPost extends AbstractObject {
      * 
      * @return array
      */
-    public function getCurrentBuys() {
+    public function getCurrentBuys()
+    {
         if (!isset($this->currentBuys)) {
             $items             = $this->getEnvironment()->getClientVersion2()->apiCommerceTransactionsCurrentBuys();
             $this->currentBuys = $this->prepareItems($items);
@@ -82,7 +82,8 @@ class TradingPost extends AbstractObject {
      * 
      * @return array
      */
-    public function getCurrentSells() {
+    public function getCurrentSells()
+    {
         if (!isset($this->currentSells)) {
             $items              = $this->getEnvironment()->getClientVersion2()->apiCommerceTransactionsCurrentSells();
             $this->currentSells = $this->prepareItems($items);
@@ -94,7 +95,8 @@ class TradingPost extends AbstractObject {
      * 
      * @return array
      */
-    public function getHistoryBuys() {
+    public function getHistoryBuys()
+    {
         if (!isset($this->historyBuys)) {
             $items             = $this->getEnvironment()->getClientVersion2()->apiCommerceTransactionsHistoryBuys();
             $this->historyBuys = $this->prepareItems($items);
@@ -106,12 +108,12 @@ class TradingPost extends AbstractObject {
      * 
      * @return array
      */
-    public function getHistorySells() {
+    public function getHistorySells()
+    {
         if (!isset($this->historySells)) {
             $items              = $this->getEnvironment()->getClientVersion2()->apiCommerceTransactionsHistorySells();
             $this->historySells = $this->prepareItems($items);
         }
         return $this->historySells;
     }
-
 }

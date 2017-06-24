@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class RaidWingEvent extends AbstractObject {
+class RaidWingEvent extends AbstractObject
+{
 
     use UnlockTrait;
 
@@ -25,7 +24,8 @@ class RaidWingEvent extends AbstractObject {
      * 
      * @return string
      */
-    public function getType() {
+    public function getType()
+    {
         return $this->getData('type');
     }
 
@@ -33,7 +33,8 @@ class RaidWingEvent extends AbstractObject {
      * 
      * @return string
      */
-    public function getId() {
+    public function getId()
+    {
         return $this->getData('id');
     }
 
@@ -41,7 +42,8 @@ class RaidWingEvent extends AbstractObject {
      * 
      * @return string
      */
-    public function getName() {
+    public function getName()
+    {
         return \Arnapou\GW2Api\id_to_name($this->getId());
     }
 
@@ -49,8 +51,8 @@ class RaidWingEvent extends AbstractObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
-
 }

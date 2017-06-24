@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,17 +7,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Dungeon extends AbstractStoredObject {
+class Dungeon extends AbstractStoredObject
+{
 
     protected $paths = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['paths']) && is_array($data['paths'])) {
@@ -38,7 +38,8 @@ class Dungeon extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getPaths() {
+    public function getPaths()
+    {
         $this->checkLoadData();
         return $this->paths;
     }
@@ -47,11 +48,13 @@ class Dungeon extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getName() {
+    public function getName()
+    {
         return \Arnapou\GW2Api\id_to_name($this->getId());
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'dungeons';
     }
 
@@ -59,8 +62,8 @@ class Dungeon extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
-
 }

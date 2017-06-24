@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,14 +7,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  * @method string  getType()
  */
-class Build extends AbstractObject {
+class Build extends AbstractObject
+{
 
     // TYPES
     const TYPE_PVE = 'pve';
@@ -43,7 +42,8 @@ class Build extends AbstractObject {
         ],
     ];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['specializations']) && is_array($data['specializations'])) {
@@ -82,7 +82,8 @@ class Build extends AbstractObject {
      * 
      * @return string
      */
-    public function getProfession() {
+    public function getProfession()
+    {
         foreach ($this->specializations as $spe) {
             return $spe->getProfession();
         }
@@ -93,7 +94,8 @@ class Build extends AbstractObject {
      * 
      * @return array
      */
-    public function getSpecializations() {
+    public function getSpecializations()
+    {
         return $this->specializations;
     }
 
@@ -101,16 +103,15 @@ class Build extends AbstractObject {
      * 
      * @return Skill
      */
-    public function getSkill($number) {
+    public function getSkill($number)
+    {
         if ($number == 6) {
             return $this->getSkillHeal();
-        }
-        elseif ($number >= 7 and $number <= 9) {
+        } elseif ($number >= 7 and $number <= 9) {
             $utilities = $this->getSkillUtilities();
             $index     = $number - 7;
             return isset($utilities[$index]) ? $utilities[$index] : null;
-        }
-        elseif ($number == 0) {
+        } elseif ($number == 0) {
             return $this->getSkillElite();
         }
         return null;
@@ -120,7 +121,8 @@ class Build extends AbstractObject {
      * 
      * @return Skill
      */
-    public function getSkillHeal() {
+    public function getSkillHeal()
+    {
         return $this->skills['heal'];
     }
 
@@ -128,7 +130,8 @@ class Build extends AbstractObject {
      * 
      * @return Skill
      */
-    public function getSkillElite() {
+    public function getSkillElite()
+    {
         return $this->skills['elite'];
     }
 
@@ -136,7 +139,8 @@ class Build extends AbstractObject {
      * 
      * @return array
      */
-    public function getSkillUtilities() {
+    public function getSkillUtilities()
+    {
         return $this->skills['utilities'];
     }
 
@@ -144,7 +148,8 @@ class Build extends AbstractObject {
      * 
      * @return array
      */
-    public function getLegends() {
+    public function getLegends()
+    {
         return $this->skills['legends'];
     }
 
@@ -152,7 +157,8 @@ class Build extends AbstractObject {
      * 
      * @return array
      */
-    public function getPets() {
+    public function getPets()
+    {
         return $this->skills['pets'];
     }
 
@@ -160,7 +166,8 @@ class Build extends AbstractObject {
      * 
      * @return array
      */
-    public function getPetsTerrestrial() {
+    public function getPetsTerrestrial()
+    {
         return $this->skills['pets']['terrestrial'];
     }
 
@@ -168,8 +175,8 @@ class Build extends AbstractObject {
      * 
      * @return array
      */
-    public function getPetsAquatic() {
+    public function getPetsAquatic()
+    {
         return $this->skills['pets']['aquatic'];
     }
-
 }

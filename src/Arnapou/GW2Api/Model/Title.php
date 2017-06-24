@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  * 
  */
-class Title extends AbstractStoredObject {
+class Title extends AbstractStoredObject
+{
 
     use UnlockTrait;
 
@@ -24,7 +23,8 @@ class Title extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function getName() {
+    public function getName()
+    {
         return $this->getData('name');
     }
 
@@ -32,7 +32,8 @@ class Title extends AbstractStoredObject {
      * 
      * @return integer
      */
-    public function getAchievementId() {
+    public function getAchievementId()
+    {
         return $this->getData('achievement');
     }
 
@@ -40,12 +41,14 @@ class Title extends AbstractStoredObject {
      * 
      * @return Achievement
      */
-    public function getAchievement() {
+    public function getAchievement()
+    {
         $this->checkLoadData();
         return $this->achievement;
     }
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['achievement'])) {
@@ -57,12 +60,13 @@ class Title extends AbstractStoredObject {
      * 
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getName();
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'titles';
     }
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -17,7 +15,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getResult()
  * @method string getProfession()
  */
-class PvpGame extends AbstractObject {
+class PvpGame extends AbstractObject
+{
 
     // results
     const RESULT_VICTORY = 'Victory';
@@ -38,7 +37,8 @@ class PvpGame extends AbstractObject {
      */
     protected $map;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['map_id'])) {
@@ -50,7 +50,8 @@ class PvpGame extends AbstractObject {
      * 
      * @return Map
      */
-    public function getMap() {
+    public function getMap()
+    {
         return $this->map;
     }
 
@@ -58,7 +59,8 @@ class PvpGame extends AbstractObject {
      * 
      * @return string
      */
-    public function isVictory() {
+    public function isVictory()
+    {
         return $this->getData('result') == self::RESULT_VICTORY;
     }
 
@@ -66,7 +68,8 @@ class PvpGame extends AbstractObject {
      * 
      * @return string
      */
-    public function getDateStarted() {
+    public function getDateStarted()
+    {
         return gmdate('Y-m-d H:i:s', strtotime($this->getData('started')));
     }
 
@@ -74,7 +77,8 @@ class PvpGame extends AbstractObject {
      * 
      * @return string
      */
-    public function getDateEnded() {
+    public function getDateEnded()
+    {
         return gmdate('Y-m-d H:i:s', strtotime($this->getData('ended')));
     }
 
@@ -82,7 +86,8 @@ class PvpGame extends AbstractObject {
      * 
      * @return string
      */
-    public function getDuration() {
+    public function getDuration()
+    {
         return strtotime($this->getData('ended')) - strtotime($this->getData('started'));
     }
 
@@ -90,7 +95,8 @@ class PvpGame extends AbstractObject {
      * 
      * @return string
      */
-    public function getScoreBlue() {
+    public function getScoreBlue()
+    {
         return $this->getData(['scores', 'blue']);
     }
 
@@ -98,8 +104,8 @@ class PvpGame extends AbstractObject {
      * 
      * @return string
      */
-    public function getScoreRed() {
+    public function getScoreRed()
+    {
         return $this->getData(['scores', 'red']);
     }
-
 }

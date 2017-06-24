@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Wardrobe extends AbstractObject {
+class Wardrobe extends AbstractObject
+{
 
     /**
      *
@@ -46,7 +45,8 @@ class Wardrobe extends AbstractObject {
      */
     static protected $cacheInitialized = false;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         $this->unlockedSkins = isset($data['unlocked']) ? $data['unlocked'] : [];
@@ -56,14 +56,16 @@ class Wardrobe extends AbstractObject {
      * 
      * @return integer
      */
-    public function getCount() {
+    public function getCount()
+    {
         return count($this->unlockedSkins);
     }
 
     /**
      * 
      */
-    protected function prepareObjects() {
+    protected function prepareObjects()
+    {
         $this->armors  = [
             Skin::WEIGHT_CLASS_CLOTHING => [],
             Skin::WEIGHT_CLASS_HEAVY    => [],
@@ -101,25 +103,23 @@ class Wardrobe extends AbstractObject {
                             $this->armors[$weightClass][$subtype] = $initData;
                         }
                         $this->armors[$weightClass][$subtype]['skins'][$skin->getId()] = $skin;
-                        $this->armors[$weightClass][$subtype]['count'] += $unlocked ? 1 : 0;
+                        $this->armors[$weightClass][$subtype]['count']                 += $unlocked ? 1 : 0;
                         $this->armors[$weightClass][$subtype]['total'] ++;
                     }
-                }
-                elseif ($type == Skin::TYPE_BACK) {
+                } elseif ($type == Skin::TYPE_BACK) {
                     if (!isset($this->backs[$type])) {
                         $this->backs[$type] = $initData;
                     }
                     $this->backs[$type]['skins'][$skin->getId()] = $skin;
-                    $this->backs[$type]['count'] += $unlocked ? 1 : 0;
+                    $this->backs[$type]['count']                 += $unlocked ? 1 : 0;
                     $this->backs[$type]['total'] ++;
-                }
-                elseif ($type == Skin::TYPE_WEAPON) {
+                } elseif ($type == Skin::TYPE_WEAPON) {
                     if (!isset($this->weapons[$subtype])) {
                         $this->weapons[$subtype] = $initData;
                     }
 
                     $this->weapons[$subtype]['skins'][$skin->getId()] = $skin;
-                    $this->weapons[$subtype]['count'] += $unlocked ? 1 : 0;
+                    $this->weapons[$subtype]['count']                 += $unlocked ? 1 : 0;
                     $this->weapons[$subtype]['total'] ++;
                 }
             }
@@ -135,7 +135,8 @@ class Wardrobe extends AbstractObject {
      * 
      * @return array
      */
-    public function getArmorsLight() {
+    public function getArmorsLight()
+    {
         if (!isset($this->armors)) {
             $this->prepareObjects();
         }
@@ -146,7 +147,8 @@ class Wardrobe extends AbstractObject {
      * 
      * @return array
      */
-    public function getArmorsMedium() {
+    public function getArmorsMedium()
+    {
         if (!isset($this->armors)) {
             $this->prepareObjects();
         }
@@ -157,7 +159,8 @@ class Wardrobe extends AbstractObject {
      * 
      * @return array
      */
-    public function getArmorsHeavy() {
+    public function getArmorsHeavy()
+    {
         if (!isset($this->armors)) {
             $this->prepareObjects();
         }
@@ -168,7 +171,8 @@ class Wardrobe extends AbstractObject {
      * 
      * @return array
      */
-    public function getArmorsClothing() {
+    public function getArmorsClothing()
+    {
         if (!isset($this->armors)) {
             $this->prepareObjects();
         }
@@ -179,7 +183,8 @@ class Wardrobe extends AbstractObject {
      * 
      * @return array
      */
-    public function getBacks() {
+    public function getBacks()
+    {
         if (!isset($this->backs)) {
             $this->prepareObjects();
         }
@@ -190,11 +195,11 @@ class Wardrobe extends AbstractObject {
      * 
      * @return array
      */
-    public function getWeapons() {
+    public function getWeapons()
+    {
         if (!isset($this->weapons)) {
             $this->prepareObjects();
         }
         return $this->weapons;
     }
-
 }

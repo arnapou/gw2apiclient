@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -17,7 +15,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getRating()
  * @method string isActive()
  */
-class Crafting extends AbstractObject {
+class Crafting extends AbstractObject
+{
 
     // DISCIPLINES
     const DISCIPLINE_ARMORSMITH    = 'Armorsmith';
@@ -52,7 +51,8 @@ class Crafting extends AbstractObject {
      */
     protected $icon = null;
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['discipline'], $this->files[$data['discipline']])) {
@@ -64,12 +64,13 @@ class Crafting extends AbstractObject {
      * 
      * @return File
      */
-    public function getIconFile() {
+    public function getIconFile()
+    {
         return $this->icon;
     }
 
-    public function __toString() {
+    public function __toString()
+    {
         return $this->getDiscipline();
     }
-
 }

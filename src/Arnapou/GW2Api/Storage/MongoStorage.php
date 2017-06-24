@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Storage;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -16,7 +14,8 @@ use MongoDB\BSON\UTCDateTime as MongoDate;
 use MongoDB\Database as MongoDatabase;
 use MongoDB\Collection as MongoCollection;
 
-class MongoStorage extends AbstractStorage {
+class MongoStorage extends AbstractStorage
+{
 
     /**
      *
@@ -56,7 +55,8 @@ class MongoStorage extends AbstractStorage {
      * 
      * @param MongoDatabase $mongoDB
      */
-    public function __construct(MongoDatabase $mongoDB, $collectionPrefix = 'storage_') {
+    public function __construct(MongoDatabase $mongoDB, $collectionPrefix = 'storage_')
+    {
         $error = \Arnapou\GW2Api\get_mongo_database_error($mongoDB);
         if ($error) {
             throw new WrongMongoDatabaseException($error);
@@ -65,7 +65,8 @@ class MongoStorage extends AbstractStorage {
         $this->collectionPrefix = $collectionPrefix;
     }
 
-    public function set($lang, $name, $id, $data) {
+    public function set($lang, $name, $id, $data)
+    {
         $this->getCollection($lang, $name)
             ->updateOne([
                 'key' => (string) $id,
@@ -81,7 +82,8 @@ class MongoStorage extends AbstractStorage {
         parent::set($lang, $name, $id, $data);
     }
 
-    protected function loadFromFallback($lang, $name, $fallback, $ids) {
+    protected function loadFromFallback($lang, $name, $fallback, $ids)
+    {
 
         $key        = $this->getKey($lang, $name);
         $collection = $this->getCollection($lang, $name);
@@ -97,8 +99,7 @@ class MongoStorage extends AbstractStorage {
             $remain = array_diff_key($this->prepared[$key], $this->cached[$key]);
             if (empty($remain) || count($ids) == count($remain) + count($found)) {
                 break;
-            }
-            else {
+            } else {
                 $ids = $remain;
             }
         }
@@ -113,7 +114,8 @@ class MongoStorage extends AbstractStorage {
      * @param string $name
      * @return MongoCollection
      */
-    public function getCollection($lang, $name) {
+    public function getCollection($lang, $name)
+    {
         $key = $this->getKey($lang, $name);
         if (!isset($this->collections[$key])) {
             $collectionName = $this->collectionPrefix . $key;
@@ -133,8 +135,8 @@ class MongoStorage extends AbstractStorage {
      * 
      * @return MongoDatabase
      */
-    function getMongoDB() {
+    function getMongoDB()
+    {
         return $this->mongoDB;
     }
-
 }

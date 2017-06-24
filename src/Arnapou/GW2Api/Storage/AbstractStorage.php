@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Storage;
 
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Exception\AllIdsProvidedAreInvalidException;
 
-abstract class AbstractStorage implements StorageInterface {
+abstract class AbstractStorage implements StorageInterface
+{
 
     /**
      *
@@ -61,27 +60,30 @@ abstract class AbstractStorage implements StorageInterface {
         ],
     ];
 
-    public function clearCache() {
+    public function clearCache()
+    {
         $this->cached = [];
     }
 
-    public function getKey($lang, $name) {
+    public function getKey($lang, $name)
+    {
         return $lang . '_' . $name;
     }
 
-    public function prepare($lang, $name, $id) {
+    public function prepare($lang, $name, $id)
+    {
         $key = $this->getKey($lang, $name);
         if ($id && !isset($this->cached[$key], $this->cached[$key][$id])) {
             $this->prepared[$key][$id] = (string) $id;
         }
     }
 
-    public function get($lang, $name, $id, $fallback) {
+    public function get($lang, $name, $id, $fallback)
+    {
         $key = $this->getKey($lang, $name);
         if (isset($this->cached[$key], $this->cached[$key][$id])) {
             return $this->cached[$key][$id];
-        }
-        elseif ($this->loadPrepared($lang, $name, $fallback)) {
+        } elseif ($this->loadPrepared($lang, $name, $fallback)) {
             if (isset($this->cached[$key], $this->cached[$key][$id])) {
                 return $this->cached[$key][$id];
             }
@@ -89,7 +91,8 @@ abstract class AbstractStorage implements StorageInterface {
         return null;
     }
 
-    public function set($lang, $name, $id, $data) {
+    public function set($lang, $name, $id, $data)
+    {
         $this->cached[$this->getKey($lang, $name)][$id] = $data;
 
         if (isset($this->recursivePreparedLogic[$name])) {
@@ -99,8 +102,7 @@ abstract class AbstractStorage implements StorageInterface {
                         foreach ($data[$logic['key']] as $itemid) {
                             $this->prepare($lang, $logic['collection'], $itemid);
                         }
-                    }
-                    else {
+                    } else {
                         $this->prepare($lang, $logic['collection'], $data[$logic['key']]);
                     }
                 }
@@ -108,7 +110,8 @@ abstract class AbstractStorage implements StorageInterface {
         }
     }
 
-    protected function loadPrepared($lang, $name, $fallback) {
+    protected function loadPrepared($lang, $name, $fallback)
+    {
         $key = $this->getKey($lang, $name);
         if (!empty($this->prepared[$key])) {
             if (!isset($this->cached[$key])) {
@@ -121,15 +124,14 @@ abstract class AbstractStorage implements StorageInterface {
         return false;
     }
 
-    protected function loadFromFallback($lang, $name, $fallback, $ids) {
+    protected function loadFromFallback($lang, $name, $fallback, $ids)
+    {
         if ($fallback && is_callable($fallback) && !empty($ids)) {
             try {
                 $items = call_user_func($fallback, array_values($ids));
-            }
-            catch (AllIdsProvidedAreInvalidException $ex) {
+            } catch (AllIdsProvidedAreInvalidException $ex) {
                 $items = [];
-            }
-            catch (\Exception $ex) {
+            } catch (\Exception $ex) {
                 $items = null;
             }
             if (is_array($items)) {
@@ -147,5 +149,4 @@ abstract class AbstractStorage implements StorageInterface {
             }
         }
     }
-
 }

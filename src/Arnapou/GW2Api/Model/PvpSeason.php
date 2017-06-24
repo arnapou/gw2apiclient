@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,18 +7,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  * @method string getName()
  */
-class PvpSeason extends AbstractStoredObject {
+class PvpSeason extends AbstractStoredObject
+{
 
     protected $divisions = [];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['divisions']) && is_array($data['divisions'])) {
@@ -34,7 +34,8 @@ class PvpSeason extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getDivisions() {
+    public function getDivisions()
+    {
         return $this->divisions;
     }
 
@@ -42,7 +43,8 @@ class PvpSeason extends AbstractStoredObject {
      * 
      * @return boolean
      */
-    public function isActive() {
+    public function isActive()
+    {
         return $this->getData('active') ? true : false;
     }
 
@@ -50,7 +52,8 @@ class PvpSeason extends AbstractStoredObject {
      * 
      * @return string YYYY-MM-DD HH:MM UTC format
      */
-    public function getDateStart() {
+    public function getDateStart()
+    {
         $date = $this->getData('start');
         return $date ? gmdate('Y-m-d H:i', strtotime($date)) : null;
     }
@@ -59,13 +62,14 @@ class PvpSeason extends AbstractStoredObject {
      * 
      * @return string YYYY-MM-DD HH:MM UTC format
      */
-    public function getDateEnd() {
+    public function getDateEnd()
+    {
         $date = $this->getData('end');
         return $date ? gmdate('Y-m-d H:i', strtotime($date)) : null;
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'pvpseasons';
     }
-
 }

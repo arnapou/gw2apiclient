@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api;
 
 use Arnapou\GW2Api\Exception\JsonException;
@@ -20,7 +18,8 @@ use MongoDB\Database as MongoDatabase;
  * @param string $id
  * @return string
  */
-function id_to_name($id) {
+function id_to_name($id)
+{
     return ucfirst(str_replace('_', ' ', $id));
 }
 
@@ -33,7 +32,8 @@ function id_to_name($id) {
  * @param integer $upgrade2
  * @return string
  */
-function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity = 1) {
+function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity = 1)
+{
     if (empty($item)) {
         return null;
     }
@@ -79,7 +79,8 @@ function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity
  * @param MongoDatabase $mongoDB
  * @return string
  */
-function get_mongo_database_error(MongoDatabase $mongoDB) {
+function get_mongo_database_error(MongoDatabase $mongoDB)
+{
     if (!method_exists($mongoDB, '__debugInfo')) {
         return "Magic method '__debugInfo' not found.";
     }
@@ -101,7 +102,8 @@ function get_mongo_database_error(MongoDatabase $mongoDB) {
  * @param Item $item
  * @return boolean
  */
-function is_two_handed_weapon($item) {
+function is_two_handed_weapon($item)
+{
     if ($item) {
         return in_array($item->getSubType(), [
                 Item::SUBTYPE_WEAPON_GREATSWORD, Item::SUBTYPE_WEAPON_HAMMER,
@@ -117,7 +119,8 @@ function is_two_handed_weapon($item) {
  * @param array $array
  * @return boolean
  */
-function is_associative_array($array) {
+function is_associative_array($array)
+{
     $values = array_values($array);
     $diff   = array_diff_key($values, $array);
     return empty($diff) ? false : true;
@@ -129,7 +132,8 @@ function is_associative_array($array) {
  * @param string|array $params
  * @return string
  */
-function url_append($url, $params) {
+function url_append($url, $params)
+{
     if (empty($params)) {
         return $url;
     }
@@ -141,8 +145,7 @@ function url_append($url, $params) {
     $url .= (strpos($url, '?') === false) ? '?' : '&';
     if (is_array($params)) {
         $url .= http_build_query($params);
-    }
-    else {
+    } else {
         $url .= (string) $params;
     }
     return $url;
@@ -153,7 +156,8 @@ function url_append($url, $params) {
  * @param string $json
  * @return array
  */
-function json_decode($json) {
+function json_decode($json)
+{
     $json = trim($json);
     if ($json === '' || ($json[0] !== '{' && $json[0] !== '[' && $json[0] !== '"')) {
         throw new JsonException('Json not valid : ' . $json);
@@ -181,7 +185,8 @@ function json_decode($json) {
  * @param array $attributes
  * @return string
  */
-function attributes_to_statname($attributes) {
+function attributes_to_statname($attributes)
+{
     $flatten = '';
     if (is_array($attributes)) {
         if (count($attributes) >= 7) {

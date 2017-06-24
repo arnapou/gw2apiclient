@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,10 +7,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Core;
 
-class Curl {
+class Curl
+{
 
     /**
      *
@@ -22,7 +21,8 @@ class Curl {
     /**
      * 
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->curl = curl_init();
         curl_setopt($this->curl, CURLOPT_HEADER, 1);
         curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, 1);
@@ -32,7 +32,8 @@ class Curl {
     /**
      * 
      */
-    public function __destruct() {
+    public function __destruct()
+    {
         if ($this->curl) {
             @curl_close($this->curl);
             $this->curl = null;
@@ -44,7 +45,8 @@ class Curl {
      * @param string $url
      * @return Curl
      */
-    public function setUrl($url) {
+    public function setUrl($url)
+    {
         curl_setopt($this->curl, CURLOPT_URL, $url);
         return $this;
     }
@@ -54,7 +56,8 @@ class Curl {
      * @param int $port
      * @return Curl
      */
-    public function setPort($port) {
+    public function setPort($port)
+    {
         curl_setopt($this->curl, CURLOPT_PORT, $port);
         return $this;
     }
@@ -64,7 +67,8 @@ class Curl {
      * @param bool $bool
      * @return Curl
      */
-    public function setFollowLocation($bool = true) {
+    public function setFollowLocation($bool = true)
+    {
         curl_setopt($this->curl, CURLOPT_FOLLOWLOCATION, $bool ? 1 : 0);
         return $this;
     }
@@ -74,7 +78,8 @@ class Curl {
      * @param string $ua
      * @return Curl
      */
-    public function setUserAgent($ua) {
+    public function setUserAgent($ua)
+    {
         curl_setopt($this->curl, CURLOPT_USERAGENT, $ua);
         return $this;
     }
@@ -84,7 +89,8 @@ class Curl {
      * @param int $seconds
      * @return Curl
      */
-    public function setTimeout($seconds) {
+    public function setTimeout($seconds)
+    {
         curl_setopt($this->curl, CURLOPT_TIMEOUT, $seconds);
         return $this;
     }
@@ -94,7 +100,8 @@ class Curl {
      * @param array $array
      * @return Curl
      */
-    public function setHeaders($array) {
+    public function setHeaders($array)
+    {
         if (\Arnapou\GW2Api\is_associative_array($array)) {
             $tmp = array();
             foreach ($array as $key => $value) {
@@ -112,7 +119,8 @@ class Curl {
      * 
      * @return Curl
      */
-    public function setGet() {
+    public function setGet()
+    {
         curl_setopt($this->curl, CURLOPT_HTTPGET, 1);
         return $this;
     }
@@ -121,7 +129,8 @@ class Curl {
      * 
      * @return Curl
      */
-    public function setMethod($method) {
+    public function setMethod($method)
+    {
         curl_setopt($this->curl, CURLOPT_CUSTOMREQUEST, $method);
         return $this;
     }
@@ -131,13 +140,13 @@ class Curl {
      * @param array|string $data
      * @return Curl
      */
-    public function setPost($data = null) {
+    public function setPost($data = null)
+    {
         curl_setopt($this->curl, CURLOPT_POST, 1);
         if (!empty($data)) {
             if (is_array($data)) {
                 curl_setopt($this->curl, CURLOPT_POSTFIELDS, http_build_query($data));
-            }
-            else {
+            } else {
                 curl_setopt($this->curl, CURLOPT_POSTFIELDS, (string) $data);
             }
         }
@@ -148,7 +157,8 @@ class Curl {
      * 
      * @return resource
      */
-    public function getCurl() {
+    public function getCurl()
+    {
         return $this->curl;
     }
 
@@ -156,10 +166,10 @@ class Curl {
      * 
      * @return CurlResponse
      */
-    public function execute() {
+    public function execute()
+    {
         $response   = new CurlResponse($this);
         $this->curl = null;
         return $response;
     }
-
 }

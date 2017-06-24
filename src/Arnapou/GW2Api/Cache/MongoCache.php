@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Cache;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -16,7 +14,8 @@ use Arnapou\GW2Api\Exception\WrongMongoDatabaseException;
 use MongoDB\Database as MongoDatabase;
 use MongoDB\Collection as MongoCollection;
 
-class MongoCache implements CacheInterface {
+class MongoCache implements CacheInterface
+{
 
     /**
      *
@@ -58,7 +57,8 @@ class MongoCache implements CacheInterface {
      * @param MongoDatabase $mongoDB
      * @param string $collectionName
      */
-    public function __construct(MongoDatabase $mongoDB, $collectionName = 'cache') {
+    public function __construct(MongoDatabase $mongoDB, $collectionName = 'cache')
+    {
         $error = \Arnapou\GW2Api\get_mongo_database_error($mongoDB);
         if ($error) {
             throw new WrongMongoDatabaseException($error);
@@ -73,7 +73,8 @@ class MongoCache implements CacheInterface {
     /**
      * Ran when php exits : automatically run of GC if conditions are met
      */
-    public function __destruct() {
+    public function __destruct()
+    {
         $rand = mt_rand(1, $this->gcDivisor);
         if ($rand <= $this->gcProbability) {
             $this->runGarbageCollector();
@@ -83,11 +84,11 @@ class MongoCache implements CacheInterface {
     /**
      * Run the garbage collector which clean expired files
      */
-    public function runGarbageCollector() {
+    public function runGarbageCollector()
+    {
         try {
             $this->collection->deleteMany(['expiration' => ['$lt' => time()]]);
-        }
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
             return null;
         }
     }
@@ -96,7 +97,8 @@ class MongoCache implements CacheInterface {
      * 
      * @return MongoDatabase
      */
-    public function getMongoDB() {
+    public function getMongoDB()
+    {
         return $this->mongoDB;
     }
 
@@ -104,7 +106,8 @@ class MongoCache implements CacheInterface {
      * 
      * @return MongoCollection
      */
-    public function getCollection() {
+    public function getCollection()
+    {
         return $this->collection;
     }
 
@@ -112,7 +115,8 @@ class MongoCache implements CacheInterface {
      * 
      * @return string
      */
-    public function getCollectionName() {
+    public function getCollectionName()
+    {
         return $this->collectionName;
     }
 
@@ -127,7 +131,8 @@ class MongoCache implements CacheInterface {
      * @param int $gcProbability
      * @param int $gcDivisor
      */
-    public function setGarbageCollectorParameters($gcProbability, $gcDivisor) {
+    public function setGarbageCollectorParameters($gcProbability, $gcDivisor)
+    {
         if ($gcDivisor < 1) {
             throw new Exception('gcDivisor should be strictly > 0.');
         }
@@ -138,11 +143,13 @@ class MongoCache implements CacheInterface {
         $this->gcProbability = $gcProbability;
     }
 
-    protected function hash($key) {
+    protected function hash($key)
+    {
         return hash('sha256', $key);
     }
 
-    public function get($key) {
+    public function get($key)
+    {
         $document = $this->collection->findOne([
             'key'        => $this->hash($key),
             'expiration' => ['$gte' => time()],
@@ -150,15 +157,15 @@ class MongoCache implements CacheInterface {
         if ($document && isset($document['value'])) {
             try {
                 return $document['value'];
-            }
-            catch (\Exception $e) {
+            } catch (\Exception $e) {
                 return null;
             }
         }
         return null;
     }
 
-    public function exists($key) {
+    public function exists($key)
+    {
         $document = $this->collection->findOne([
             'key'        => $this->hash($key),
             'expiration' => ['$gte' => time()],
@@ -169,7 +176,8 @@ class MongoCache implements CacheInterface {
         return null;
     }
 
-    public function set($key, $value, $expiration = 0) {
+    public function set($key, $value, $expiration = 0)
+    {
         if ($expiration != 0 && $expiration <= 30 * 86400) {
             $expiration += time();
         }
@@ -187,13 +195,12 @@ class MongoCache implements CacheInterface {
         ]);
     }
 
-    public function remove($key) {
+    public function remove($key)
+    {
         try {
             $this->collection->deleteOne(['key' => $this->hash($key)]);
-        }
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
             return null;
         }
     }
-
 }

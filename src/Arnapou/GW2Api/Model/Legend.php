@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Arnapou GW2 API Client package.
  *
@@ -8,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Arnapou\GW2Api\Model;
 
 /**
  *
  */
-class Legend extends AbstractStoredObject {
+class Legend extends AbstractStoredObject
+{
 
     /**
      *
@@ -27,7 +26,8 @@ class Legend extends AbstractStoredObject {
         'elite'     => null,
     ];
 
-    protected function setData($data) {
+    protected function setData($data)
+    {
         parent::setData($data);
 
         if (isset($data['swap'])) {
@@ -50,16 +50,15 @@ class Legend extends AbstractStoredObject {
      * 
      * @return Skill
      */
-    public function getSkill($number) {
+    public function getSkill($number)
+    {
         if ($number == 6) {
             return $this->getSkillHeal();
-        }
-        elseif ($number >= 7 and $number <= 9) {
+        } elseif ($number >= 7 and $number <= 9) {
             $utilities = $this->getSkillUtilities();
             $index     = $number - 7;
             return isset($utilities[$index]) ? $utilities[$index] : null;
-        }
-        elseif ($number == 0) {
+        } elseif ($number == 0) {
             return $this->getSkillElite();
         }
         return null;
@@ -69,7 +68,8 @@ class Legend extends AbstractStoredObject {
      * 
      * @return Skill
      */
-    public function getSkillSwap() {
+    public function getSkillSwap()
+    {
         $this->checkLoadData();
         return $this->skills['swap'];
     }
@@ -78,7 +78,8 @@ class Legend extends AbstractStoredObject {
      * 
      * @return Skill
      */
-    public function getSkillHeal() {
+    public function getSkillHeal()
+    {
         $this->checkLoadData();
         return $this->skills['heal'];
     }
@@ -87,7 +88,8 @@ class Legend extends AbstractStoredObject {
      * 
      * @return Skill
      */
-    public function getSkillElite() {
+    public function getSkillElite()
+    {
         $this->checkLoadData();
         return $this->skills['elite'];
     }
@@ -96,13 +98,14 @@ class Legend extends AbstractStoredObject {
      * 
      * @return array
      */
-    public function getSkillUtilities() {
+    public function getSkillUtilities()
+    {
         $this->checkLoadData();
         return $this->skills['utilities'];
     }
 
-    public function getApiName() {
+    public function getApiName()
+    {
         return 'legends';
     }
-
 }
