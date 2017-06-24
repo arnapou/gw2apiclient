@@ -40,6 +40,9 @@ abstract class AbstractStorage implements StorageInterface
             ['key' => 'unlock_items', 'collection' => 'items'],
             ['key' => 'default_dyes', 'collection' => 'colors'],
         ],
+        'mailcarriers'           => [
+            ['key' => 'unlock_items', 'collection' => 'items'],
+        ],
         'backstoryquestions'     => [['key' => 'answers', 'collection' => 'backstoryanswers']],
         'backstoryanswers'       => [['key' => 'question', 'collection' => 'backstoryquestions']],
         'specializations'        => [

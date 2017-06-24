@@ -14,15 +14,13 @@ namespace Arnapou\GW2Api\Model;
  * @method string getName()
  * @method string getOrder()
  * @method string getIcon()
- * @method string getDescription()
  */
-class Glider extends AbstractStoredObject
+class Mailcarrier extends AbstractStoredObject
 {
 
     use UnlockTrait;
 
     protected $unlockItems = [];
-    protected $defaultDyes = [];
 
     protected function setData($data)
     {
@@ -31,12 +29,6 @@ class Glider extends AbstractStoredObject
         if (isset($data['unlock_items']) && is_array($data['unlock_items'])) {
             foreach ($data['unlock_items'] as $id) {
                 $this->unlockItems[] = new Item($this->getEnvironment(), $id);
-            }
-        }
-
-        if (isset($data['default_dyes']) && is_array($data['default_dyes'])) {
-            foreach ($data['default_dyes'] as $id) {
-                $this->defaultDyes[] = new Color($this->getEnvironment(), $id);
             }
         }
     }
@@ -54,31 +46,32 @@ class Glider extends AbstractStoredObject
      * 
      * @return array
      */
+    public function getFlags()
+    {
+        return $this->getData('flags', []);
+    }
+
+    /**
+     * 
+     * @param string $flag
+     * @return boolean
+     */
+    public function hasFlag($flag)
+    {
+        return in_array($flag, (array) $this->getFlags());
+    }
+
+    /**
+     * 
+     * @return array
+     */
     public function getUnlockItems()
     {
         return $this->unlockItems;
     }
 
-    /**
-     * 
-     * @return array
-     */
-    public function getDefaultDye($index)
-    {
-        return isset($this->defaultDyes[$index]) ? $this->defaultDyes[$index] : null;
-    }
-
-    /**
-     * 
-     * @return array
-     */
-    public function getDefaultDyes()
-    {
-        return $this->defaultDyes;
-    }
-
     public function getApiName()
     {
-        return 'gliders';
+        return 'mailcarriers';
     }
 }

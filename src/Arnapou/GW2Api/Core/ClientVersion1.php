@@ -61,11 +61,7 @@ class ClientVersion1 extends AbstractClientVersion
      */
     public function apiEventDetails($eventId = null)
     {
-        $parameters = [];
-        if ($eventId) {
-            $parameters['event_id'] = $eventId;
-        }
-        return $this->request('event_details.json', $parameters);
+        return $this->request('event_details.json', empty($eventId) ? [] : ['event_id' => $eventId]);
     }
 
     /**
@@ -123,11 +119,7 @@ class ClientVersion1 extends AbstractClientVersion
      */
     public function apiItemDetails($itemId = null)
     {
-        $parameters = [];
-        if ($itemId) {
-            $parameters['item_id'] = $itemId;
-        }
-        return $this->request('item_details.json', $parameters);
+        return $this->request('item_details.json', empty($itemId) ? [] : ['item_id' => $itemId]);
     }
 
     /**
@@ -170,11 +162,7 @@ class ClientVersion1 extends AbstractClientVersion
      */
     public function apiMaps($mapId = null)
     {
-        $parameters = [];
-        if ($mapId) {
-            $parameters['map_id'] = $mapId;
-        }
-        return $this->request('maps.json', $parameters);
+        return $this->request('maps.json', empty($mapId) ? [] : ['map_id' => $mapId]);
     }
 
     /**
@@ -184,10 +172,7 @@ class ClientVersion1 extends AbstractClientVersion
      */
     public function apiRecipeDetails($recipeId)
     {
-        $parameters = [
-            'recipe_id' => $recipeId,
-        ];
-        return $this->request('recipe_details.json', $parameters);
+        return $this->request('recipe_details.json', ['recipe_id' => $recipeId]);
     }
 
     /**
@@ -206,10 +191,7 @@ class ClientVersion1 extends AbstractClientVersion
      */
     public function apiSkinDetails($skinId)
     {
-        $parameters = [
-            'skin_id' => $skinId,
-        ];
-        return $this->request('skin_details.json', $parameters);
+        return $this->request('skin_details.json', ['skin_id' => $skinId]);
     }
 
     /**
@@ -237,10 +219,7 @@ class ClientVersion1 extends AbstractClientVersion
      */
     public function apiWvwMatchDetails($matchId)
     {
-        $parameters = [
-            'match_id' => $matchId,
-        ];
-        return $this->request('wvw/match_details.json', $parameters);
+        return $this->request('wvw/match_details.json', ['match_id' => $matchId]);
     }
 
     /**

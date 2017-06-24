@@ -179,6 +179,18 @@ class Account extends AbstractObject
 
     /**
      *
+     * @var array
+     */
+    protected $pvpHeroes = [];
+
+    /**
+     *
+     * @var array
+     */
+    protected $masteryRegionTotals = [];
+
+    /**
+     *
      * @var integer
      */
     protected $otherAP;
@@ -224,6 +236,24 @@ class Account extends AbstractObject
      * @var array
      */
     protected $gliders;
+
+    /**
+     *
+     * @var array
+     */
+    protected $mailcarriers;
+
+    /**
+     *
+     * @var array
+     */
+    protected $homecats;
+
+    /**
+     *
+     * @var array
+     */
+    protected $homenodes;
 
     /**
      *
@@ -317,6 +347,26 @@ class Account extends AbstractObject
 
     /**
      * 
+     * @return PvpHeroes
+     */
+    public function getPvpHeroes()
+    {
+        if (empty($this->pvpHeroes)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env             = $this->getEnvironment();
+            $this->pvpHeroes = new PvpHeroes($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountPvpHeroes(),
+            ]);
+        }
+        return $this->pvpHeroes;
+    }
+
+    /**
+     * 
      * @return Gliders
      */
     public function getGliders()
@@ -333,6 +383,66 @@ class Account extends AbstractObject
             ]);
         }
         return $this->gliders;
+    }
+
+    /**
+     * 
+     * @return Mailcarriers
+     */
+    public function getMailcarriers()
+    {
+        if (empty($this->mailcarriers)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env                = $this->getEnvironment();
+            $this->mailcarriers = new Mailcarriers($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountMailcarriers(),
+            ]);
+        }
+        return $this->mailcarriers;
+    }
+
+    /**
+     * 
+     * @return HomeNodes
+     */
+    public function getHomeNodes()
+    {
+        if (empty($this->homenodes)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env             = $this->getEnvironment();
+            $this->homenodes = new HomeNodes($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountHomeNodes(),
+            ]);
+        }
+        return $this->homenodes;
+    }
+
+    /**
+     * 
+     * @return HomeCats
+     */
+    public function getHomeCats()
+    {
+        if (empty($this->homecats)) {
+
+            if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
+                throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
+            }
+
+            $env            = $this->getEnvironment();
+            $this->homecats = new HomeCats($env, [
+                'unlocked' => $env->getClientVersion2()->apiAccountHomeCats(),
+            ]);
+        }
+        return $this->homecats;
     }
 
     /**
@@ -953,10 +1063,33 @@ class Account extends AbstractObject
     public function getMasteriesSpentPoints()
     {
         $sum = 0;
-        foreach ($this->getMasteries() as /* @var $mastery Mastery */ $mastery) {
-            $sum += $mastery->getSpentPoints();
+        if ($this->hasPermission(self::PERMISSION_PROGRESSION)) {
+            $sum = 0;
+            foreach ($this->getMasteries() as /* @var $mastery Mastery */ $mastery) {
+                $sum += $mastery->getSpentPoints();
+            }
         }
         return $sum;
+    }
+
+    /**
+     * 
+     * @return array
+     */
+    public function getMasteryRegionTotals()
+    {
+        if (empty($this->masteryRegionTotals)) {
+            if ($this->hasPermission(self::PERMISSION_PROGRESSION)) {
+                $env  = $this->getEnvironment();
+                $data = $env->getClientVersion2()->apiAccountMasteryPoints();
+                foreach ($data['totals'] as $item) {
+                    if (isset($item['region'], $item['spent'], $item['earned'])) {
+                        $this->masteryRegionTotals[$item['region']] = $item;
+                    }
+                }
+            }
+        }
+        return $this->masteryRegionTotals;
     }
 
     /**
