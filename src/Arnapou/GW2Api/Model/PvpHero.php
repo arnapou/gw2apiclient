@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -38,7 +39,7 @@ class PvpHero extends AbstractStoredObject
 
         if (isset($data['skins']) && is_array($data['skins'])) {
             foreach ($data['skins'] as $item) {
-                $skin          = new PvpHeroSkin($this->getEnvironment(), $item);
+                $skin = new PvpHeroSkin($this->getEnvironment(), $item);
                 $skin->setUnlocked(in_array($item['id'], $this->unlocked));
                 $this->skins[] = $skin;
             }
@@ -46,7 +47,7 @@ class PvpHero extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @param array $unlocked
      */
     public function setUnlocked($unlocked)
@@ -55,7 +56,7 @@ class PvpHero extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getSkins()

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -40,7 +41,7 @@ class TradingPost extends AbstractObject
     protected $historySells;
 
     /**
-     * 
+     *
      * @param array $items
      * @return array
      */
@@ -66,7 +67,7 @@ class TradingPost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCurrentBuys()
@@ -79,7 +80,7 @@ class TradingPost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCurrentSells()
@@ -92,7 +93,7 @@ class TradingPost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getHistoryBuys()
@@ -105,7 +106,7 @@ class TradingPost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getHistorySells()

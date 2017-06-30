@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Skills;
 
 use Arnapou\GW2Api\Core\Curl;
@@ -56,7 +57,7 @@ class LinkBuilder
 
     /**
      *
-     * @var Environment 
+     * @var Environment
      */
     protected $environment;
 
@@ -66,7 +67,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @return Client
      */
     protected function getClient()
@@ -78,7 +79,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
      * @return string
      */
@@ -90,7 +91,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
      * @return string
      */
@@ -102,7 +103,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
      * @return string
      */
@@ -113,9 +114,9 @@ class LinkBuilder
 
         $parts = [];
         foreach ([
-        $character->getEquipmentWeapon1('A'),
-        $character->getEquipmentWeapon2('A'),
-        ] as $equipment) {
+                     $character->getEquipmentWeapon1('A'),
+                     $character->getEquipmentWeapon2('A'),
+                 ] as $equipment) {
             if (empty($equipment)) {
                 $parts[] = '0';
             } else {
@@ -127,9 +128,9 @@ class LinkBuilder
 
         $parts = [];
         foreach ([
-        $character->getEquipmentWeapon1('B'),
-        $character->getEquipmentWeapon2('B'),
-        ] as $equipment) {
+                     $character->getEquipmentWeapon1('B'),
+                     $character->getEquipmentWeapon2('B'),
+                 ] as $equipment) {
             if (empty($equipment)) {
                 $parts[] = '0';
             } else {
@@ -143,9 +144,9 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
-     * @param string $mode
+     * @param string    $mode
      * @return string
      */
     protected function getInfusions(Character $character, $mode)
@@ -155,13 +156,13 @@ class LinkBuilder
 
         $parts = [];
         foreach ([
-        $character->getEquipmentWeapon1('A'),
-        $character->getEquipmentWeapon2('A'),
-        $character->getEquipmentWeapon1('B'),
-        $character->getEquipmentWeapon2('B'),
-        $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_A),
-        $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_B),
-        ] as $equipment) {
+                     $character->getEquipmentWeapon1('A'),
+                     $character->getEquipmentWeapon2('A'),
+                     $character->getEquipmentWeapon1('B'),
+                     $character->getEquipmentWeapon2('B'),
+                     $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_A),
+                     $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_B),
+                 ] as $equipment) {
             if (empty($equipment)) {
                 $parts[] = '0.0';
             } else {
@@ -174,13 +175,13 @@ class LinkBuilder
 
         $parts = [];
         foreach ([
-        $character->getEquipment(Character::SLOT_HELM),
-        $character->getEquipment(Character::SLOT_SHOULDERS),
-        $character->getEquipment(Character::SLOT_COAT),
-        $character->getEquipment(Character::SLOT_GLOVES),
-        $character->getEquipment(Character::SLOT_LEGGINGS),
-        $character->getEquipment(Character::SLOT_BOOTS),
-        ] as $equipment) {
+                     $character->getEquipment(Character::SLOT_HELM),
+                     $character->getEquipment(Character::SLOT_SHOULDERS),
+                     $character->getEquipment(Character::SLOT_COAT),
+                     $character->getEquipment(Character::SLOT_GLOVES),
+                     $character->getEquipment(Character::SLOT_LEGGINGS),
+                     $character->getEquipment(Character::SLOT_BOOTS),
+                 ] as $equipment) {
             if (empty($equipment)) {
                 $parts[] = '0';
             } else {
@@ -192,13 +193,13 @@ class LinkBuilder
 
         $parts = [];
         foreach ([
-        $character->getEquipment(Character::SLOT_AMULET),
-        $character->getEquipment(Character::SLOT_RING1),
-        $character->getEquipment(Character::SLOT_RING2),
-        $character->getEquipment(Character::SLOT_ACCESSORY1),
-        $character->getEquipment(Character::SLOT_ACCESSORY2),
-        $character->getEquipment(Character::SLOT_BACKPACK),
-        ] as $equipment) {
+                     $character->getEquipment(Character::SLOT_AMULET),
+                     $character->getEquipment(Character::SLOT_RING1),
+                     $character->getEquipment(Character::SLOT_RING2),
+                     $character->getEquipment(Character::SLOT_ACCESSORY1),
+                     $character->getEquipment(Character::SLOT_ACCESSORY2),
+                     $character->getEquipment(Character::SLOT_BACKPACK),
+                 ] as $equipment) {
             if (empty($equipment)) {
                 $parts[] = '0';
             } else {
@@ -212,9 +213,9 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
-     * @param string $mode
+     * @param string    $mode
      * @return string
      */
     protected function getUpgradesArmor(Character $character, $mode)
@@ -236,13 +237,13 @@ class LinkBuilder
             $mapUpgrade = $this->getClient()->getMap('upgrades');
             $parts      = [];
             foreach ([
-            $character->getEquipment(Character::SLOT_HELM),
-            $character->getEquipment(Character::SLOT_SHOULDERS),
-            $character->getEquipment(Character::SLOT_COAT),
-            $character->getEquipment(Character::SLOT_GLOVES),
-            $character->getEquipment(Character::SLOT_LEGGINGS),
-            $character->getEquipment(Character::SLOT_BOOTS),
-            ] as $equipment) {
+                         $character->getEquipment(Character::SLOT_HELM),
+                         $character->getEquipment(Character::SLOT_SHOULDERS),
+                         $character->getEquipment(Character::SLOT_COAT),
+                         $character->getEquipment(Character::SLOT_GLOVES),
+                         $character->getEquipment(Character::SLOT_LEGGINGS),
+                         $character->getEquipment(Character::SLOT_BOOTS),
+                     ] as $equipment) {
                 if (empty($equipment)) {
                     $parts[] = '0.0.0.0';
                 } else {
@@ -256,9 +257,9 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
-     * @param string $mode
+     * @param string    $mode
      * @return string
      */
     protected function getUpgradesTrinkets(Character $character, $mode)
@@ -284,13 +285,13 @@ class LinkBuilder
             $mapUpgrade = $this->getClient()->getMap('upgrades');
             $parts      = [];
             foreach ([
-            $character->getEquipment(Character::SLOT_AMULET),
-            $character->getEquipment(Character::SLOT_RING1),
-            $character->getEquipment(Character::SLOT_RING2),
-            $character->getEquipment(Character::SLOT_ACCESSORY1),
-            $character->getEquipment(Character::SLOT_ACCESSORY2),
-            $character->getEquipment(Character::SLOT_BACKPACK),
-            ] as $equipment) {
+                         $character->getEquipment(Character::SLOT_AMULET),
+                         $character->getEquipment(Character::SLOT_RING1),
+                         $character->getEquipment(Character::SLOT_RING2),
+                         $character->getEquipment(Character::SLOT_ACCESSORY1),
+                         $character->getEquipment(Character::SLOT_ACCESSORY2),
+                         $character->getEquipment(Character::SLOT_BACKPACK),
+                     ] as $equipment) {
                 if (empty($equipment)) {
                     $parts[] = '0.0.0.0';
                 } else {
@@ -304,9 +305,9 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
-     * @param string $mode
+     * @param string    $mode
      * @return string
      */
     protected function getUpgradesWeapons(Character $character, $mode)
@@ -350,13 +351,13 @@ class LinkBuilder
             $mapUpgrade = $this->getClient()->getMap('upgrades');
             $parts      = [];
             foreach ([
-            $character->getEquipmentWeapon1('A'),
-            $character->getEquipmentWeapon2('A'),
-            $character->getEquipmentWeapon1('B'),
-            $character->getEquipmentWeapon2('B'),
-            $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_A),
-            $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_B),
-            ] as $equipment) {
+                         $character->getEquipmentWeapon1('A'),
+                         $character->getEquipmentWeapon2('A'),
+                         $character->getEquipmentWeapon1('B'),
+                         $character->getEquipmentWeapon2('B'),
+                         $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_A),
+                         $character->getEquipment(Character::SLOT_WEAPON_AQUATIC_B),
+                     ] as $equipment) {
                 if (empty($equipment)) {
                     $parts[] = '0.0.0.0.0.0';
                 } else {
@@ -371,9 +372,9 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
-     * @param string $mode
+     * @param string    $mode
      * @return string
      */
     protected function getBuffs(Character $character, $mode)
@@ -383,8 +384,10 @@ class LinkBuilder
         $parts     = ['0', '0'];
         $utilities = [];
         $foods     = [];
-        foreach ($character->getBags() as /* @var $bag Bag */ $bag) {
-            foreach ($bag->getInventorySlots() as /* @var $item Item */ $item) {
+        foreach ($character->getBags() as /* @var $bag Bag */
+                 $bag) {
+            foreach ($bag->getInventorySlots() as /* @var $item Item */
+                     $item) {
                 if (empty($item)) {
                     continue;
                 }
@@ -420,10 +423,10 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param string $mode
-     * @param array $map
-     * @param Item $item
+     * @param array  $map
+     * @param Item   $item
      * @return string
      */
     protected function getMappedInfusion($mode, $map, Item $item = null)
@@ -441,10 +444,10 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param string $mode
-     * @param array $map
-     * @param Item $item
+     * @param array  $map
+     * @param Item   $item
      * @return string
      */
     protected function getMappedUpgrade($mode, $map, Item $item = null)
@@ -462,9 +465,9 @@ class LinkBuilder
     }
 
     /**
-     * 
-     * @param string $mode
-     * @param array $map
+     *
+     * @param string        $mode
+     * @param array         $map
      * @param InventorySlot $item
      * @return string
      */
@@ -488,7 +491,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Build $build
      * @return string
      */
@@ -500,11 +503,13 @@ class LinkBuilder
         $mapSpecializations = $this->getClient()->getMap('specializations');
         $mapTraits          = $this->getClient()->getMap('traits');
         $parts              = [];
-        foreach ($build->getSpecializations() as /* @var $spe SpecializationLine */ $spe) {
+        foreach ($build->getSpecializations() as /* @var $spe SpecializationLine */
+                 $spe) {
             if (isset($mapSpecializations[$spe->getId()])) {
                 $selected = $spe->getTraitsIds();
                 $ids      = [$mapSpecializations[$spe->getId()], 'false', 'false', 'false'];
-                foreach ($spe->getMajorTraits() as /* @var $trait SpecializationTrait */ $trait) {
+                foreach ($spe->getMajorTraits() as /* @var $trait SpecializationTrait */
+                         $trait) {
                     if (in_array($trait->getId(), $selected) && isset($mapTraits[$trait->getId()])) {
                         $ids[$trait->getTier()] = $mapTraits[$trait->getId()];
                     }
@@ -516,7 +521,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Build $build
      * @return string
      */
@@ -563,7 +568,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Build $build
      * @return string
      */
@@ -582,7 +587,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Build $build
      * @return string
      */
@@ -608,10 +613,10 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
-     * @param int $mode
-     * @param boolean $nocache
+     * @param int       $mode
+     * @param boolean   $nocache
      * @return string
      */
     public function getLink(Character $character, $mode, $nocache = false)
@@ -649,7 +654,7 @@ class LinkBuilder
                 'bf'   => $this->getBuffs($character, $mode),
             ];
 
-            $curl     = new Curl();
+            $curl = new Curl();
             $curl->setUrl('http://api.gw2skills.net/v1/tcode/');
             $curl->setPost($data);
             $response = $curl->execute();
@@ -675,13 +680,13 @@ class LinkBuilder
                 }
             }
         } catch (Exception $e) {
-            
+
         }
         return null;
     }
 
     /**
-     * 
+     *
      * @param Character $character
      * @return string
      */
@@ -691,7 +696,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
      * @return string
      */
@@ -701,7 +706,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param Character $character
      * @return string
      */
@@ -711,7 +716,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     function getCacheDuration()
@@ -720,7 +725,7 @@ class LinkBuilder
     }
 
     /**
-     * 
+     *
      * @param integer $duration
      * @return LinkBuilder
      */

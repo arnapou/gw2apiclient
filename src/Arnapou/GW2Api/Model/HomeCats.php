@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -64,14 +65,14 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
         }
 
         foreach ($env->getClientVersion2()->apiCats() as $id) {
-            $unlocked         = isset($map[$id]);
-            $homecat          = new HomeCat($env, $id);
+            $unlocked = isset($map[$id]);
+            $homecat  = new HomeCat($env, $id);
             $homecat->setUnlocked($unlocked);
-            $this->count      += $unlocked ? 1 : 0;
+            $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->homecats[] = $homecat;
         }
-        uasort($this->homecats, function(HomeCat $homecat1, HomeCat $homecat2) {
+        uasort($this->homecats, function (HomeCat $homecat1, HomeCat $homecat2) {
             $n1 = $homecat1->getHint();
             $n2 = $homecat2->getHint();
             if ($n1 == $n2) {
@@ -82,7 +83,7 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getHomeCats()
@@ -94,7 +95,7 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -103,7 +104,7 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -33,7 +34,7 @@ class PvpStats extends AbstractObject
     protected $total;
 
     /**
-     * 
+     *
      * @return float
      */
     public function getWinRate()
@@ -47,7 +48,7 @@ class PvpStats extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

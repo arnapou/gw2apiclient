@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -61,7 +62,7 @@ class SpecializationLine extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function isElite()
@@ -70,7 +71,7 @@ class SpecializationLine extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTraitsIds()
@@ -79,7 +80,7 @@ class SpecializationLine extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTraits()
@@ -88,7 +89,7 @@ class SpecializationLine extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getMajorTraitsSelected()
@@ -104,7 +105,7 @@ class SpecializationLine extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getSpecializationId()
@@ -113,7 +114,7 @@ class SpecializationLine extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Specialization
      */
     public function getSpecialization()

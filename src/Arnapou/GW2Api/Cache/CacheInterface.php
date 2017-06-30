@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Cache;
 
 interface CacheInterface
@@ -14,7 +15,7 @@ interface CacheInterface
 
     /**
      * Retrieve the value stored. Returns null if not found.
-     * 
+     *
      * @param string $key
      * @return mixed
      */
@@ -22,24 +23,24 @@ interface CacheInterface
 
     /**
      * Store a key/value pair.
-     * 
+     *
      * @param string $key
-     * @param mixed $value
-     * @param int $expiration Number of seconds after when the data will expire. 
-     *                        If the value is equal to zero, the data will never expire.
-     *                        If the value represents more than 30 days, the expiration is a timestamp.
+     * @param mixed  $value
+     * @param int    $expiration Number of seconds after when the data will expire.
+     *                           If the value is equal to zero, the data will never expire.
+     *                           If the value represents more than 30 days, the expiration is a timestamp.
      */
     public function set($key, $value, $expiration = 0);
 
     /**
-     * 
+     *
      * @param string $key
      * @return boolean
      */
     public function exists($key);
 
     /**
-     * 
+     *
      * @param string $key
      */
     public function remove($key);

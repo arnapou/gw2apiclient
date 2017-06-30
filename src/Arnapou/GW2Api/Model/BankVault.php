@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -31,7 +32,7 @@ class BankVault extends AbstractObject
     protected $price;
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getId()
@@ -51,7 +52,7 @@ class BankVault extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getInventorySlots()
@@ -60,7 +61,7 @@ class BankVault extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getPrice()
@@ -70,7 +71,8 @@ class BankVault extends AbstractObject
                 'buy'  => 0,
                 'sell' => 0,
             ];
-            foreach ($this->inventorySlots as /* @var $item InventorySlot */ $item) {
+            foreach ($this->inventorySlots as /* @var $item InventorySlot */
+                     $item) {
                 if ($item && empty($item->getBinding())) {
                     $price               = $item->getPrice();
                     $this->price['buy']  += $price['buy_total'];

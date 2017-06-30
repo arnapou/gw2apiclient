@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -27,7 +28,7 @@ class StorySeason extends AbstractStoredObject
             foreach ($data['stories'] as $id) {
                 $this->stories[] = new Story($this->getEnvironment(), $id);
             }
-            usort($this->stories, function(Story $a, Story $b) {
+            usort($this->stories, function (Story $a, Story $b) {
                 $na = $a->getOrder();
                 $nb = $b->getOrder();
                 if ($na = $nb) {
@@ -39,7 +40,7 @@ class StorySeason extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getStories()

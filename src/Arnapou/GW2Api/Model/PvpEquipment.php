@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -37,7 +38,7 @@ class PvpEquipment extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return PvpAmulet
      */
     public function getAmulet()
@@ -46,7 +47,7 @@ class PvpEquipment extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Item
      */
     public function getRune()
@@ -55,7 +56,7 @@ class PvpEquipment extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getSigils()

@@ -7,14 +7,17 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  * @method string getId()
  * @method string getSlot()
- * @method string getOffhand() The name of the offhand weapon this skill requires to be equipped. This field is usually only present for Thief skills.
- * @method string getAttunement() The Elementalist attunement that this skill requires. This field is usually only present for Elementalist skills.
+ * @method string getOffhand() The name of the offhand weapon this skill requires to be equipped. This field is usually
+ *         only present for Thief skills.
+ * @method string getAttunement() The Elementalist attunement that this skill requires. This field is usually only
+ *         present for Elementalist skills.
  */
 class ProfessionWeaponSkill extends AbstractObject
 {
@@ -47,7 +50,7 @@ class ProfessionWeaponSkill extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkill()

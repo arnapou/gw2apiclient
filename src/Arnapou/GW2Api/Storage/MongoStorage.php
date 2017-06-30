@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Storage;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -47,12 +48,13 @@ class MongoStorage extends AbstractStorage
     ];
 
     /**
-     * 
+     *
      * Example to instanciate a valid mongoDB variable : <pre>
-     *     $mongo   = new MongoDB\Client('mongodb://localhost:27017', [], ['typeMap' => ['root' => 'array', 'document' => 'array']]);
+     *     $mongo   = new MongoDB\Client('mongodb://localhost:27017', [], ['typeMap' => ['root' => 'array', 'document'
+     *     => 'array']]);
      *     $mongoDB = $mongo->selectDatabase("test");
      * </pre>
-     * 
+     *
      * @param MongoDatabase $mongoDB
      */
     public function __construct(MongoDatabase $mongoDB, $collectionPrefix = 'storage_')
@@ -69,16 +71,16 @@ class MongoStorage extends AbstractStorage
     {
         $this->getCollection($lang, $name)
             ->updateOne([
-                'key' => (string) $id,
-                ], [
+                'key' => (string)$id,
+            ], [
                 '$set' => [
-                    'key'         => (string) $id,
+                    'key'         => (string)$id,
                     'data'        => $data,
                     'datecreated' => new MongoDate(floor(microtime(true) * 1000)),
-                ]
-                ], [
-                'upsert' => true
-        ]);
+                ],
+            ], [
+                'upsert' => true,
+            ]);
         parent::set($lang, $name, $id, $data);
     }
 
@@ -109,7 +111,7 @@ class MongoStorage extends AbstractStorage
     }
 
     /**
-     * 
+     *
      * @param string $lang
      * @param string $name
      * @return MongoCollection
@@ -132,7 +134,7 @@ class MongoStorage extends AbstractStorage
     }
 
     /**
-     * 
+     *
      * @return MongoDatabase
      */
     function getMongoDB()

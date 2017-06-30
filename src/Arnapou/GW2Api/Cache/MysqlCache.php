@@ -21,6 +21,7 @@
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
  */
+
 namespace Arnapou\GW2Api\Cache;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -59,7 +60,7 @@ class MysqlCache implements CacheInterface
     protected $prepared;
 
     /**
-     * 
+     *
      * @param \PDO $pdo
      */
     public function __construct(\PDO $pdo, $table)
@@ -88,13 +89,13 @@ class MysqlCache implements CacheInterface
     }
 
     /**
-     * Set the probability for the garbage collector to clean expired 
+     * Set the probability for the garbage collector to clean expired
      * data (gcProbability/gcDivisor) when the script finishes.
-     * 
+     *
      * If gcProbability = 0 then the garbage collector will never run.
-     * 
+     *
      * If gcProbability > gcDivisor then the garbage collector will always run.
-     * 
+     *
      * @param int $gcProbability
      * @param int $gcDivisor
      */
@@ -168,7 +169,7 @@ class MysqlCache implements CacheInterface
     }
 
     /**
-     * 
+     *
      * @return \PDOStatement
      */
     protected function getPreparedRemove()
@@ -181,7 +182,7 @@ class MysqlCache implements CacheInterface
     }
 
     /**
-     * 
+     *
      * @return \PDOStatement
      */
     protected function getPreparedGet()
@@ -194,7 +195,7 @@ class MysqlCache implements CacheInterface
     }
 
     /**
-     * 
+     *
      * @return \PDOStatement
      */
     protected function getPreparedSet()

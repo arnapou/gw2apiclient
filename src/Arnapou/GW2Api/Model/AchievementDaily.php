@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -48,7 +49,7 @@ class AchievementDaily extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Achievement
      */
     public function getAchievement()
@@ -57,7 +58,7 @@ class AchievementDaily extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getLevelMin()
@@ -66,7 +67,7 @@ class AchievementDaily extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getLevelMax()
@@ -75,7 +76,7 @@ class AchievementDaily extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function requireGuildWars2()
@@ -84,7 +85,7 @@ class AchievementDaily extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function requireHeartOfThorns()

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -37,7 +38,7 @@ class Finisher extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getUnlockItem($index)
@@ -46,7 +47,7 @@ class Finisher extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getUnlockItems()
@@ -55,7 +56,7 @@ class Finisher extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getQuantity()
@@ -64,7 +65,7 @@ class Finisher extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @param integer $nb
      */
     public function setQuantity($nb)
@@ -73,7 +74,7 @@ class Finisher extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function isPermanent()
@@ -82,7 +83,7 @@ class Finisher extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @param boolean $bool
      */
     public function setPermanent($bool)

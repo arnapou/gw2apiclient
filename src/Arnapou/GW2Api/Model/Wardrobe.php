@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -53,7 +54,7 @@ class Wardrobe extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -62,7 +63,7 @@ class Wardrobe extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -104,7 +105,7 @@ class Wardrobe extends AbstractObject
                         }
                         $this->armors[$weightClass][$subtype]['skins'][$skin->getId()] = $skin;
                         $this->armors[$weightClass][$subtype]['count']                 += $unlocked ? 1 : 0;
-                        $this->armors[$weightClass][$subtype]['total'] ++;
+                        $this->armors[$weightClass][$subtype]['total']++;
                     }
                 } elseif ($type == Skin::TYPE_BACK) {
                     if (!isset($this->backs[$type])) {
@@ -112,7 +113,7 @@ class Wardrobe extends AbstractObject
                     }
                     $this->backs[$type]['skins'][$skin->getId()] = $skin;
                     $this->backs[$type]['count']                 += $unlocked ? 1 : 0;
-                    $this->backs[$type]['total'] ++;
+                    $this->backs[$type]['total']++;
                 } elseif ($type == Skin::TYPE_WEAPON) {
                     if (!isset($this->weapons[$subtype])) {
                         $this->weapons[$subtype] = $initData;
@@ -120,7 +121,7 @@ class Wardrobe extends AbstractObject
 
                     $this->weapons[$subtype]['skins'][$skin->getId()] = $skin;
                     $this->weapons[$subtype]['count']                 += $unlocked ? 1 : 0;
-                    $this->weapons[$subtype]['total'] ++;
+                    $this->weapons[$subtype]['total']++;
                 }
             }
         }
@@ -132,7 +133,7 @@ class Wardrobe extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getArmorsLight()
@@ -144,7 +145,7 @@ class Wardrobe extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getArmorsMedium()
@@ -156,7 +157,7 @@ class Wardrobe extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getArmorsHeavy()
@@ -168,7 +169,7 @@ class Wardrobe extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getArmorsClothing()
@@ -180,7 +181,7 @@ class Wardrobe extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBacks()
@@ -192,7 +193,7 @@ class Wardrobe extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getWeapons()

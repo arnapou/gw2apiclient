@@ -7,13 +7,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Skills\LinkBuilder;
 
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/characters
- * 
+ *
  * @method string  getAge()
  * @method string  getDeaths()
  * @method string  getGender()
@@ -25,14 +26,14 @@ class Character extends AbstractObject
 {
 
     // RACES
-    const RACE_ASURA              = 'Asura';
-    const RACE_CHARR              = 'Charr';
-    const RACE_HUMAN              = 'Human';
-    const RACE_NORN               = 'Norn';
-    const RACE_SYLVARI            = 'Sylvari';
+    const RACE_ASURA   = 'Asura';
+    const RACE_CHARR   = 'Charr';
+    const RACE_HUMAN   = 'Human';
+    const RACE_NORN    = 'Norn';
+    const RACE_SYLVARI = 'Sylvari';
     // GENDERS
-    const GENDER_MALE             = 'Male';
-    const GENDER_FEMALE           = 'Female';
+    const GENDER_MALE   = 'Male';
+    const GENDER_FEMALE = 'Female';
     // PROFESSIONS
     const PROFESSION_ELEMENTALIST = 'Elementalist';
     const PROFESSION_TEMPEST      = 'Tempest';
@@ -53,28 +54,28 @@ class Character extends AbstractObject
     const PROFESSION_REVENANT     = 'Revenant';
     const PROFESSION_HERALD       = 'Herald';
     // SLOTS
-    const SLOT_HELM_AQUATIC       = 'HelmAquatic';
-    const SLOT_HELM               = 'Helm';
-    const SLOT_SHOULDERS          = 'Shoulders';
-    const SLOT_COAT               = 'Coat';
-    const SLOT_GLOVES             = 'Gloves';
-    const SLOT_LEGGINGS           = 'Leggings';
-    const SLOT_BOOTS              = 'Boots';
-    const SLOT_BACKPACK           = 'Backpack';
-    const SLOT_AMULET             = 'Amulet';
-    const SLOT_ACCESSORY1         = 'Accessory1';
-    const SLOT_ACCESSORY2         = 'Accessory2';
-    const SLOT_RING1              = 'Ring1';
-    const SLOT_RING2              = 'Ring2';
-    const SLOT_WEAPON_AQUATIC_A   = 'WeaponAquaticA';
-    const SLOT_WEAPON_AQUATIC_B   = 'WeaponAquaticB';
-    const SLOT_WEAPON_A1          = 'WeaponA1';
-    const SLOT_WEAPON_A2          = 'WeaponA2';
-    const SLOT_WEAPON_B1          = 'WeaponB1';
-    const SLOT_WEAPON_B2          = 'WeaponB2';
-    const SLOT_SICKLE             = 'Sickle';
-    const SLOT_AXE                = 'Axe';
-    const SLOT_PICK               = 'Pick';
+    const SLOT_HELM_AQUATIC     = 'HelmAquatic';
+    const SLOT_HELM             = 'Helm';
+    const SLOT_SHOULDERS        = 'Shoulders';
+    const SLOT_COAT             = 'Coat';
+    const SLOT_GLOVES           = 'Gloves';
+    const SLOT_LEGGINGS         = 'Leggings';
+    const SLOT_BOOTS            = 'Boots';
+    const SLOT_BACKPACK         = 'Backpack';
+    const SLOT_AMULET           = 'Amulet';
+    const SLOT_ACCESSORY1       = 'Accessory1';
+    const SLOT_ACCESSORY2       = 'Accessory2';
+    const SLOT_RING1            = 'Ring1';
+    const SLOT_RING2            = 'Ring2';
+    const SLOT_WEAPON_AQUATIC_A = 'WeaponAquaticA';
+    const SLOT_WEAPON_AQUATIC_B = 'WeaponAquaticB';
+    const SLOT_WEAPON_A1        = 'WeaponA1';
+    const SLOT_WEAPON_A2        = 'WeaponA2';
+    const SLOT_WEAPON_B1        = 'WeaponB1';
+    const SLOT_WEAPON_B2        = 'WeaponB2';
+    const SLOT_SICKLE           = 'Sickle';
+    const SLOT_AXE              = 'Axe';
+    const SLOT_PICK             = 'Pick';
 
     /**
      *
@@ -221,7 +222,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getWvwAbilities()
@@ -230,7 +231,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return PvpEquipment
      */
     public function getPvpEquipment()
@@ -239,7 +240,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getGw2SkillsLink($mode)
@@ -252,7 +253,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBagsPrice()
@@ -262,7 +263,8 @@ class Character extends AbstractObject
                 'buy'  => 0,
                 'sell' => 0,
             ];
-            foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
+            foreach ($this->getBags() as /* @var $bag Bag */
+                     $bag) {
                 if ($bag) {
                     $price                   = $bag->getBagPrice();
                     $this->bagsprice['buy']  += $price['buy'];
@@ -274,7 +276,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Build
      */
     public function getBuild($type)
@@ -284,7 +286,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBuilds()
@@ -293,7 +295,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBags()
@@ -302,7 +304,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getEquipments()
@@ -311,13 +313,14 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Equipment
      */
     public function getEquipmentsBySubtype()
     {
         $data = [];
-        foreach ($this->getEquipments() as $slot => /* @var $item InventorySlot */ $item) {
+        foreach ($this->getEquipments() as $slot => /* @var $item InventorySlot */
+                 $item) {
             if (in_array($slot, [self::SLOT_AXE, self::SLOT_PICK, self::SLOT_SICKLE])) {
                 $key = $item->getSubType();
             } else {
@@ -327,8 +330,10 @@ class Character extends AbstractObject
         }
         $allowedRarities = [Item::RARITY_LEGENDARY, Item::RARITY_ASCENDED, Item::RARITY_EXOTIC];
         $allowedTypes    = [Item::TYPE_ARMOR, Item::TYPE_BACK, Item::TYPE_WEAPON, Item::TYPE_TRINKET, Item::TYPE_GATHERING];
-        foreach ($this->getBags() as /* @var $bag Bag */ $bag) {
-            foreach ($bag->getInventorySlots() as /* @var $item InventorySlot */ $item) {
+        foreach ($this->getBags() as /* @var $bag Bag */
+                 $bag) {
+            foreach ($bag->getInventorySlots() as /* @var $item InventorySlot */
+                     $item) {
                 if (empty($item) ||
                     !in_array($item->getRarity(), $allowedRarities) ||
                     !in_array($item->getType(), $allowedTypes)
@@ -344,7 +349,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Equipment
      */
     public function getEquipment($slot)
@@ -353,7 +358,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function canSwapWeapons()
@@ -366,7 +371,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getProfession($object = false)
@@ -379,7 +384,8 @@ class Character extends AbstractObject
         } else {
             if ($this->profession === null) {
                 $this->profession = $this->getData('profession');
-                $build            = $this->getBuild('pve'); /* @var $build Build */
+                $build            = $this->getBuild('pve');
+                /* @var $build Build */
                 if ($build && $this->profession) {
                     $mapping = [
                         self::PROFESSION_ELEMENTALIST => self::PROFESSION_TEMPEST,
@@ -392,7 +398,8 @@ class Character extends AbstractObject
                         self::PROFESSION_THIEF        => self::PROFESSION_DAREDEVIL,
                         self::PROFESSION_WARRIOR      => self::PROFESSION_BERSERKER,
                     ];
-                    foreach ($build->getSpecializations() as /* @var $specialization SpecializationLine */ $specialization) {
+                    foreach ($build->getSpecializations() as /* @var $specialization SpecializationLine */
+                             $specialization) {
                         if ($specialization->isElite()) {
                             if (isset($mapping[$this->profession])) {
                                 $this->profession = $mapping[$this->profession];
@@ -407,7 +414,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCrafting()
@@ -416,13 +423,13 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBackstoryAnswers()
     {
         if (!$this->backstorySorted) {
-            usort($this->backstory, function($a, $b) {
+            usort($this->backstory, function ($a, $b) {
                 try {
                     $oa = $a->getQuestion()->getOrder();
                     $ob = $b->getQuestion()->getOrder();
@@ -440,7 +447,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTraining()
@@ -466,7 +473,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Guild
      */
     public function getGuild()
@@ -479,14 +486,14 @@ class Character extends AbstractObject
                     $this->guild = new Guild($this->getEnvironment(), $data);
                 }
             } catch (\Exception $e) {
-                
+
             }
         }
         return $this->guild;
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getGuildId()
@@ -495,7 +502,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string YYYY-MM-DD HH:MM UTC format
      */
     public function getCreated()
@@ -505,16 +512,16 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTitleId()
     {
-        return (int) $this->getData('title');
+        return (int)$this->getData('title');
     }
 
     /**
-     * 
+     *
      * @return Title
      */
     public function getTitle()
@@ -523,7 +530,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return int
      */
     public function getCreatedEllapsedTime()
@@ -541,7 +548,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return InventorySlot
      */
     public function getEquipmentWeapon1($set = 'A')
@@ -571,7 +578,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return InventorySlot
      */
     public function getEquipmentWeapon2($set = 'A')
@@ -601,7 +608,7 @@ class Character extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAttributes()
@@ -624,11 +631,11 @@ class Character extends AbstractObject
             ];
             $items      = [$this->getEquipmentWeapon1(), $this->getEquipmentWeapon2()];
             foreach ([
-            self::SLOT_HELM, self::SLOT_SHOULDERS, self::SLOT_COAT,
-            self::SLOT_GLOVES, self::SLOT_LEGGINGS, self::SLOT_BOOTS,
-            self::SLOT_AMULET, self::SLOT_ACCESSORY1, self::SLOT_ACCESSORY2,
-            self::SLOT_BACKPACK, self::SLOT_RING1, self::SLOT_RING2,
-            ] as $slot) {
+                         self::SLOT_HELM, self::SLOT_SHOULDERS, self::SLOT_COAT,
+                         self::SLOT_GLOVES, self::SLOT_LEGGINGS, self::SLOT_BOOTS,
+                         self::SLOT_AMULET, self::SLOT_ACCESSORY1, self::SLOT_ACCESSORY2,
+                         self::SLOT_BACKPACK, self::SLOT_RING1, self::SLOT_RING2,
+                     ] as $slot) {
                 $items[] = $this->getEquipment($slot);
             }
 
@@ -637,10 +644,10 @@ class Character extends AbstractObject
                     $attrs = $item->getAttributes();
                     foreach ($attrs as $attr => $value) {
                         if (isset($attributes[$attr])) {
-                            $attributes[$attr] += (int) $value;
+                            $attributes[$attr] += (int)$value;
                         }
                     }
-                    $attributes['Armor']                         += (int) $item->getArmorDefense();
+                    $attributes['Armor']                         += (int)$item->getArmorDefense();
                     $attributes[Item::ATTRIBUTE_AGONYRESISTANCE] += $item->getAgonyResistance();
                 }
             }
@@ -661,7 +668,7 @@ class Character extends AbstractObject
                         70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70,
                         140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140,
                         210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210,
-                        280
+                        280,
                     ],
                 ], [
                     'professions' => [self::PROFESSION_REVENANT, self::PROFESSION_ENGINEER, self::PROFESSION_RANGER, self::PROFESSION_MESMER],
@@ -670,7 +677,7 @@ class Character extends AbstractObject
                         45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45,
                         90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90,
                         135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135, 135,
-                        180
+                        180,
                     ],
                 ], [
                     'professions' => [self::PROFESSION_GUARDIAN, self::PROFESSION_THIEF, self::PROFESSION_ELEMENTALIST],
@@ -679,9 +686,9 @@ class Character extends AbstractObject
                         12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5,
                         25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25,
                         37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5, 37.5,
-                        50
+                        50,
                     ],
-                ]
+                ],
             ];
             $attributes['Armor']  += $attributes[Item::ATTRIBUTE_THOUGHNESS];
             $attributes['Health'] = 0;

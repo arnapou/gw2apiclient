@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api;
 
 use Arnapou\GW2Api\Cache\CacheInterface;
@@ -22,12 +23,12 @@ class Environment
     // EVENTS
     const onRequest = 'onRequest';
     // LANGS
-    const LANG_DE   = 'de';
-    const LANG_EN   = 'en';
-    const LANG_ES   = 'es';
-    const LANG_FR   = 'fr';
-    const LANG_KO   = 'ko';
-    const LANG_ZH   = 'zh';
+    const LANG_DE = 'de';
+    const LANG_EN = 'en';
+    const LANG_ES = 'es';
+    const LANG_FR = 'fr';
+    const LANG_KO = 'ko';
+    const LANG_ZH = 'zh';
 
     /**
      *
@@ -108,7 +109,7 @@ class Environment
     protected $useSmartCaching = false;
 
     /**
-     * 
+     *
      * @param string $lang
      */
     public function __construct($lang = self::LANG_EN)
@@ -118,8 +119,8 @@ class Environment
     }
 
     /**
-     * 
-     * @param string $pattern
+     *
+     * @param string  $pattern
      * @param integer $seconds
      * @return Environment
      */
@@ -133,7 +134,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param Core\ClientVersion1 $client
      * @return Environment
      */
@@ -144,7 +145,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return Core\ClientVersion1
      */
     public function getClientVersion1()
@@ -156,7 +157,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param Core\ClientVersion2 $client
      * @return Environment
      */
@@ -167,7 +168,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return Core\ClientVersion2
      */
     public function getClientVersion2()
@@ -179,7 +180,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param CacheInterface $cache
      * @return Environment
      */
@@ -190,7 +191,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return CacheInterface
      */
     public function getCache()
@@ -199,7 +200,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param StorageInterface $storage
      * @return Environment
      */
@@ -210,7 +211,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return StorageInterface
      */
     public function getStorage()
@@ -222,7 +223,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     function getUseSmartCaching()
@@ -231,7 +232,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param boolean $bool
      * @return Environment
      */
@@ -242,7 +243,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param string $lang
      * @return Environment
      */
@@ -256,7 +257,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getLang()
@@ -265,7 +266,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param string $token
      * @return Environment
      */
@@ -276,7 +277,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getAccessToken()
@@ -285,7 +286,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param integer $seconds default cache retention
      * @return Environment
      */
@@ -299,7 +300,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getCacheRetention($url = null)
@@ -315,7 +316,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param string $userAgent
      * @return Environment
      */
@@ -326,7 +327,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getCurlUserAgent()
@@ -335,7 +336,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param integer $seconds
      * @return Environment
      */
@@ -346,7 +347,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCurlRequestTimeout()
@@ -355,7 +356,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param integer $retries
      * @return Environment
      */
@@ -366,7 +367,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getRequestRetries()
@@ -375,7 +376,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @param integer $delay cannot be lower than 20 ms
      * @return Environment
      */
@@ -389,7 +390,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getRequestRetryDelay()
@@ -398,7 +399,7 @@ class Environment
     }
 
     /**
-     * 
+     *
      * @return Event\EventListener
      */
     public function getEventListener()

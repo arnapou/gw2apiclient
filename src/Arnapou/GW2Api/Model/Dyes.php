@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class Dyes extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -58,21 +59,21 @@ class Dyes extends AbstractObject
         $env             = $this->getEnvironment();
         $flippedUnlocked = array_flip($this->unlocked);
         foreach ($env->getClientVersion2()->apiColors() as $id) {
-            $unlocked       = isset($flippedUnlocked[$id]);
-            $color          = new Color($env, $id);
+            $unlocked = isset($flippedUnlocked[$id]);
+            $color    = new Color($env, $id);
             $color->setUnlocked($unlocked);
-            $this->count    += $unlocked ? 1 : 0;
+            $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->colors[] = $color;
         }
 
-        uasort($this->colors, function(Color $color1, Color $color2) {
+        uasort($this->colors, function (Color $color1, Color $color2) {
             return strcmp($color1->getName(), $color2->getName());
         });
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getColors()
@@ -84,7 +85,7 @@ class Dyes extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -93,7 +94,7 @@ class Dyes extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

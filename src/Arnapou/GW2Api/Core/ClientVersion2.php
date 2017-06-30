@@ -7,12 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Exception\Exception;
 
 /**
- * 
+ *
  * @doc https://wiki.guildwars2.com/wiki/API:2
  */
 class ClientVersion2 extends AbstractClientVersion
@@ -21,9 +22,9 @@ class ClientVersion2 extends AbstractClientVersion
     protected $maxRequestIdsLength = 1000;
 
     /**
-     * 
+     *
      * @param string $cachePrefix
-     * @param array $ids
+     * @param array  $ids
      * @return array
      */
     protected function preRequestSmartCaching($cachePrefix, &$ids)
@@ -46,9 +47,9 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param string $cachePrefix
-     * @param array $results
+     * @param array  $results
      */
     protected function postRequestSmartCaching($cachePrefix, $results)
     {
@@ -64,13 +65,13 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param string $url
-     * @param array $parameters
-     * @param array $headers
+     * @param array  $parameters
+     * @param array  $headers
      * @return array
      */
-    protected function request($url, $parameters = array(), $headers = array())
+    protected function request($url, $parameters = [], $headers = [])
     {
         if (isset($parameters['ids']) && is_array($parameters['ids']) && !empty($parameters['ids'])) {
             $cachePrefix = __CLASS__ . $url;
@@ -98,13 +99,13 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param string $url
-     * @param array $parameters
-     * @param array $headers
+     * @param array  $parameters
+     * @param array  $headers
      * @return array
      */
-    protected function requestAccessToken($url, $parameters = array(), $headers = array())
+    protected function requestAccessToken($url, $parameters = [], $headers = [])
     {
         if (empty($this->getEnvironment()->getAccessToken())) {
             throw new Exception('You should provide the access token before using this api.');
@@ -114,7 +115,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getBaseUrl()
@@ -123,7 +124,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccount()
@@ -132,7 +133,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountAchievements()
@@ -141,7 +142,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountInventory()
@@ -150,7 +151,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountBank()
@@ -159,7 +160,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountDyes()
@@ -168,7 +169,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountTitles()
@@ -177,7 +178,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountMinis()
@@ -186,7 +187,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountGliders()
@@ -195,7 +196,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountFinishers()
@@ -204,7 +205,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountOutfits()
@@ -213,7 +214,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountMasteryPoints()
@@ -222,7 +223,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountMasteries()
@@ -231,7 +232,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountMailcarriers()
@@ -240,7 +241,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountMaterials()
@@ -249,7 +250,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountSkins()
@@ -258,7 +259,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountWallet()
@@ -267,7 +268,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountDungeons()
@@ -276,7 +277,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountPvpHeroes()
@@ -285,7 +286,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountRaids()
@@ -294,7 +295,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountRecipes()
@@ -303,7 +304,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountHomeCats()
@@ -312,7 +313,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAccountHomeNodes()
@@ -321,7 +322,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiPvpStats()
@@ -330,7 +331,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiPvpStandings()
@@ -339,7 +340,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiPvpGames($ids = null)
@@ -348,7 +349,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiPvpHeroes($ids = null)
@@ -357,7 +358,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiPvpRanks($ids = null)
@@ -366,7 +367,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiPvpAmulets($ids = null)
@@ -375,7 +376,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiPvpSeasons($ids = null)
@@ -384,7 +385,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiBuild()
@@ -393,7 +394,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCharacters($ids = null)
@@ -402,7 +403,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiColors($ids = null)
@@ -411,7 +412,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiDungeons($ids = null)
@@ -420,7 +421,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiRaids($ids = null)
@@ -429,7 +430,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceDelivery()
@@ -438,7 +439,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceExchange()
@@ -447,7 +448,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceExchangeCoins($quantity)
@@ -456,7 +457,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceExchangeGems($quantity)
@@ -465,7 +466,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceListings($ids = null)
@@ -474,7 +475,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommercePrices($ids = null)
@@ -483,7 +484,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceTransactionsCurrentBuys()
@@ -496,7 +497,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceTransactionsCurrentSells()
@@ -509,7 +510,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceTransactionsHistoryBuys()
@@ -522,7 +523,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCommerceTransactionsHistorySells()
@@ -535,7 +536,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiContinents($continentId = null, $floorId = null, $regionId = null, $mapId = null)
@@ -557,7 +558,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCats($ids = null)
@@ -566,7 +567,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiCurrencies($ids = null)
@@ -575,7 +576,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiFiles($ids = null)
@@ -584,7 +585,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAchievements($ids = null)
@@ -593,7 +594,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAchievementsDaily()
@@ -602,7 +603,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAchievementsDailyTomorrow()
@@ -611,7 +612,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAchievementsGroups($ids = null)
@@ -620,7 +621,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiAchievementsCategories($ids = null)
@@ -629,7 +630,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiBackstoryAnswers($ids = null)
@@ -638,7 +639,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiBackstoryQuestions($ids = null)
@@ -647,7 +648,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiItems($ids = null)
@@ -656,7 +657,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiItemstats($ids = null)
@@ -665,7 +666,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiEmblem($ids = null)
@@ -676,7 +677,7 @@ class ClientVersion2 extends AbstractClientVersion
     /**
      * !!!
      * this function has two output depending on the parameters,
-     * if you pass a guild id to this function, it will retrieve 
+     * if you pass a guild id to this function, it will retrieve
      * the specific guild upgrades list
      * !!!
      * @return array
@@ -690,7 +691,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGuildPermissions($ids = null)
@@ -699,7 +700,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGuild($guildId)
@@ -712,7 +713,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGuildLog($guildId)
@@ -721,7 +722,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGuildMembers($guildId)
@@ -730,7 +731,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGuildRanks($guildId)
@@ -739,7 +740,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGuildStash($guildId)
@@ -748,7 +749,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGuildTeams($guildId)
@@ -757,7 +758,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGuildTreasury($guildId)
@@ -766,7 +767,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiLegends($ids = null)
@@ -775,7 +776,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiGliders($ids = null)
@@ -784,7 +785,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiFinishers($ids = null)
@@ -793,7 +794,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiOutfits($ids = null)
@@ -802,7 +803,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiMasteries($ids = null)
@@ -811,7 +812,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiMinis($ids = null)
@@ -820,7 +821,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiNodes($ids = null)
@@ -829,7 +830,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiProfessions($ids = null)
@@ -838,7 +839,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiPets($ids = null)
@@ -847,7 +848,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiMaps($ids = null)
@@ -856,7 +857,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiMailcarriers($ids = null)
@@ -865,7 +866,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiMaterials($ids = null)
@@ -874,7 +875,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiQuaggans($ids = null)
@@ -883,7 +884,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiRecipes($ids = null)
@@ -892,7 +893,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiRecipesSearch($input = null, $output = null)
@@ -909,7 +910,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiSkins($ids = null)
@@ -918,7 +919,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiRaces($ids = null)
@@ -927,7 +928,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiSkills($ids = null)
@@ -936,7 +937,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiSpecializations($ids = null)
@@ -945,7 +946,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiTokeninfo()
@@ -954,7 +955,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiTitles($ids = null)
@@ -963,7 +964,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiStories($ids = null)
@@ -972,7 +973,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiStoriesSeasons($ids = null)
@@ -981,7 +982,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiTraits($ids = null)
@@ -990,7 +991,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWorlds($ids = null)
@@ -999,7 +1000,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWvwObjectives($ids = null)
@@ -1008,7 +1009,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWvwRanks($ids = null)
@@ -1017,7 +1018,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWvwUpgrades($ids = null)
@@ -1026,7 +1027,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWvwAbilities($ids = null)
@@ -1035,7 +1036,7 @@ class ClientVersion2 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWvwMatches($ids = null)

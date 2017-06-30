@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class Outfits extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -62,14 +63,14 @@ class Outfits extends AbstractObject
         }
 
         foreach ($env->getClientVersion2()->apiOutfits() as $id) {
-            $unlocked        = isset($map[$id]);
-            $outfit          = new Outfit($env, $id);
+            $unlocked = isset($map[$id]);
+            $outfit   = new Outfit($env, $id);
             $outfit->setUnlocked($unlocked);
-            $this->count     += $unlocked ? 1 : 0;
+            $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->outfits[] = $outfit;
         }
-        uasort($this->outfits, function(Outfit $outfit1, Outfit $outfit2) {
+        uasort($this->outfits, function (Outfit $outfit1, Outfit $outfit2) {
             $n1 = $outfit1->getOrder();
             $n2 = $outfit2->getOrder();
             if ($n1 == $n2) {
@@ -80,7 +81,7 @@ class Outfits extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getOutfits()
@@ -92,7 +93,7 @@ class Outfits extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -101,7 +102,7 @@ class Outfits extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

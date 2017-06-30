@@ -7,11 +7,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/achievements
- * 
+ *
  * @method string  getDescription()
  * @method string  getIcon()
  * @method string  getName()
@@ -23,7 +24,7 @@ class AchievementGroup extends AbstractStoredObject
     protected $categories = [];
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCategoriesIds()
@@ -32,7 +33,7 @@ class AchievementGroup extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCategories()
@@ -49,7 +50,7 @@ class AchievementGroup extends AbstractStoredObject
             foreach ($data['categories'] as $id) {
                 $this->categories[$id] = new AchievementCategory($this->getEnvironment(), $id);
             }
-            uasort($this->categories, function($a, $b) {
+            uasort($this->categories, function ($a, $b) {
                 $ia = $a->getOrder();
                 $ib = $b->getOrder();
                 if ($ia == $ib) {
@@ -61,7 +62,7 @@ class AchievementGroup extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

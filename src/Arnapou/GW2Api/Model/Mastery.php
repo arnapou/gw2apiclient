@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -56,7 +57,8 @@ class Mastery extends AbstractStoredObject
     public function getSpentPoints()
     {
         $spent = 0;
-        foreach ($this->getLevels() as /* @var $level MasteryLevel */ $i => $level) {
+        foreach ($this->getLevels() as /* @var $level MasteryLevel */
+                 $i => $level) {
             if ($this->unlocked >= $i) {
                 $spent += $level->getPointCost();
             }
@@ -65,7 +67,7 @@ class Mastery extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getLevels()

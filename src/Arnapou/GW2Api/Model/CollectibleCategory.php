@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -66,7 +67,7 @@ class CollectibleCategory extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getOrder()
@@ -78,7 +79,7 @@ class CollectibleCategory extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getName()
@@ -90,7 +91,7 @@ class CollectibleCategory extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getId()
@@ -99,7 +100,7 @@ class CollectibleCategory extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getItems()
@@ -108,7 +109,7 @@ class CollectibleCategory extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getPrice()
@@ -118,7 +119,8 @@ class CollectibleCategory extends AbstractObject
                 'buy'  => 0,
                 'sell' => 0,
             ];
-            foreach ($this->getItems() as /* @var $item InventorySlot */ $item) {
+            foreach ($this->getItems() as /* @var $item InventorySlot */
+                     $item) {
                 if ($item) {
                     $price               = $item->getPrice();
                     $this->price['buy']  += $price['buy_total'];

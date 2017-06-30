@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -24,18 +25,18 @@ class Skin extends AbstractStoredObject
     use UnlockTrait;
 
     // TYPES
-    const TYPE_ARMOR                   = 'Armor';
-    const TYPE_BACK                    = 'Back';
-    const TYPE_WEAPON                  = 'Weapon';
+    const TYPE_ARMOR  = 'Armor';
+    const TYPE_BACK   = 'Back';
+    const TYPE_WEAPON = 'Weapon';
     // WEIGHT_CLASS
-    const WEIGHT_CLASS_HEAVY           = 'Heavy';
-    const WEIGHT_CLASS_MEDIUM          = 'Medium';
-    const WEIGHT_CLASS_LIGHT           = 'Light';
-    const WEIGHT_CLASS_CLOTHING        = 'Clothing';
+    const WEIGHT_CLASS_HEAVY    = 'Heavy';
+    const WEIGHT_CLASS_MEDIUM   = 'Medium';
+    const WEIGHT_CLASS_LIGHT    = 'Light';
+    const WEIGHT_CLASS_CLOTHING = 'Clothing';
     // FLAGS
-    const FLAG_SHOW_IN_WARDROBE        = 'ShowInWardrobe';
-    const FLAG_NO_COST                 = 'NoCost';
-    const FLAG_HIDE_IF_LOCKED          = 'HideIfLocked';
+    const FLAG_SHOW_IN_WARDROBE = 'ShowInWardrobe';
+    const FLAG_NO_COST          = 'NoCost';
+    const FLAG_HIDE_IF_LOCKED   = 'HideIfLocked';
     // WEAPON_DAMAGE_TYPE
     const WEAPON_DAMAGE_TYPE_FIRE      = 'Fire';
     const WEAPON_DAMAGE_TYPE_ICE       = 'Ice';
@@ -44,7 +45,7 @@ class Skin extends AbstractStoredObject
     const WEAPON_DAMAGE_TYPE_CHOKING   = 'Choking';
 
     /**
-     * 
+     *
      * @return array
      */
     public function getFlags()
@@ -53,17 +54,17 @@ class Skin extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @param string $flag
      * @return boolean
      */
     public function hasFlag($flag)
     {
-        return in_array($flag, (array) $this->getFlags());
+        return in_array($flag, (array)$this->getFlags());
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getRestrictions()
@@ -72,17 +73,17 @@ class Skin extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @param string $restriction
      * @return boolean
      */
     public function hasRestriction($restriction)
     {
-        return in_array($restriction, (array) $this->getRestrictions());
+        return in_array($restriction, (array)$this->getRestrictions());
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getSubType()
@@ -91,7 +92,7 @@ class Skin extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getArmorWeightClass()
@@ -100,7 +101,7 @@ class Skin extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getWeaponDamageType()

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Skills;
 
 use Arnapou\GW2Api\Environment;
@@ -82,12 +83,12 @@ class Client
      *
      * @var integer
      */
-    protected $requestTimeout     = 5; // seconds
+    protected $requestTimeout = 5; // seconds
     /**
      *
      * @var string
      */
-    protected $requestUserAgent   = 'GW2 Api client';
+    protected $requestUserAgent = 'GW2 Api client';
 
     /**
      *
@@ -137,7 +138,7 @@ class Client
     ];
 
     /**
-     * 
+     *
      * @param Environment $env
      */
     public function __construct(Environment $env)
@@ -154,9 +155,9 @@ class Client
     }
 
     /**
-     * 
+     *
      * @param string $filename
-     * @param mixed $data
+     * @param mixed  $data
      */
     protected function exportToFile($filename, $data)
     {
@@ -164,7 +165,7 @@ class Client
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getRevision()
@@ -190,7 +191,7 @@ class Client
                     }
                     if ($revision != $this->revision) {
                         $this->reloadData();
-                        $this->exportToFile($filename, (int) $revision);
+                        $this->exportToFile($filename, (int)$revision);
                     } else {
                         @touch($filename);
                     }
@@ -206,7 +207,7 @@ class Client
     }
 
     /**
-     * 
+     *
      */
     public function buildMap()
     {
@@ -296,7 +297,7 @@ class Client
             $name  = str_replace('nopalitos saute', 'nopalitos sauté', $name);
             $name  = str_replace('plate of lemongrass poultry', 'plates of lemongrass poultry', $name);
             $name  = str_replace('strawberries and biscuts', 'strawberries and biscuits', $name);
-            $pvx   = (int) $item['pvx'];
+            $pvx   = (int)$item['pvx'];
             $found = false;
             foreach ($this->modes as $mode => $int) {
                 if ($pvx & $int) {
@@ -350,7 +351,7 @@ class Client
             $rarity     = strtolower($item['rarity']);
             $rarity     = str_replace('common', 'fine', $rarity);
             $is_profile = $item['is_profile'];
-            $pvx        = (int) $item['pvx'];
+            $pvx        = (int)$item['pvx'];
             $found      = false;
             foreach ($this->modes as $mode => $int) {
                 if ($pvx & $int) {
@@ -379,7 +380,7 @@ class Client
             $name        = strtolower($item['name']);
             $rarity      = strtolower($item['rarity']);
             $is_profile  = $item['is_profile'];
-            $pvx         = (int) $item['pvx'];
+            $pvx         = (int)$item['pvx'];
             $found       = false;
             $stats_class = isset($item['stats_class']) ? strtolower($item['stats_class']) : '';
             $group       = !empty($item['group']) ? strtolower($item['group']) : '';
@@ -479,8 +480,8 @@ class Client
     }
 
     /**
-     * 
-     * 
+     *
+     *
      */
     public function buildGw2Names()
     {
@@ -604,7 +605,7 @@ class Client
     }
 
     /**
-     * 
+     *
      * @param $key
      * @return array
      */
@@ -624,7 +625,7 @@ class Client
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getData()
@@ -640,7 +641,7 @@ class Client
     }
 
     /**
-     * 
+     *
      */
     protected function reloadData()
     {
@@ -662,7 +663,7 @@ class Client
     }
 
     /**
-     * 
+     *
      * @return array
      */
     protected function request($uri)

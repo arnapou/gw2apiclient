@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  */
 class GuildTreasury extends AbstractObject
 {
@@ -46,7 +47,7 @@ class GuildTreasury extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getId()
@@ -55,7 +56,7 @@ class GuildTreasury extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -64,7 +65,7 @@ class GuildTreasury extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotalCount()
@@ -73,7 +74,7 @@ class GuildTreasury extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getNeededBy()
@@ -82,7 +83,7 @@ class GuildTreasury extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return InventorySlot
      */
     public function getItem()

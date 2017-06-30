@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -85,10 +86,10 @@ class InventorySlot extends AbstractObject
             $this->item = new Item($this->getEnvironment(), $data['id']);
         }
         if (isset($data['charges'])) {
-            $this->charges = (int) $data['charges'];
+            $this->charges = (int)$data['charges'];
         }
         if (isset($data['count'])) {
-            $this->count = (int) $data['count'];
+            $this->count = (int)$data['count'];
         } else {
             $this->count = 1;
         }
@@ -98,7 +99,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     public function getChatLink()
     {
@@ -112,7 +113,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array [buy: x, sell: y]
      */
     public function getPrice()
@@ -142,7 +143,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getInfusions()
@@ -151,7 +152,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCharges()
@@ -160,7 +161,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -169,7 +170,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getUpgrades()
@@ -178,7 +179,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Skin
      */
     public function getSkin()
@@ -187,7 +188,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Item
      */
     public function getItem()
@@ -196,7 +197,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return ItemStat
      */
     public function getItemStat()
@@ -210,7 +211,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAttributes()
@@ -223,7 +224,7 @@ class InventorySlot extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getAgonyResistance()
@@ -239,11 +240,11 @@ class InventorySlot extends AbstractObject
                 $ar += $item->getAgonyResistance();
             }
         }
-        return (int) $ar;
+        return (int)$ar;
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getStatName()

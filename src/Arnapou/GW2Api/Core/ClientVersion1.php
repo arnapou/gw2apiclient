@@ -7,19 +7,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Exception\Exception;
 
 /**
- * 
+ *
  * @doc https://wiki.guildwars2.com/wiki/API:1
  */
 class ClientVersion1 extends AbstractClientVersion
 {
 
     /**
-     * 
+     *
      * @return string
      */
     public function getBaseUrl()
@@ -28,7 +29,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiBuild()
@@ -37,7 +38,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiColors()
@@ -46,7 +47,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiContinents()
@@ -55,7 +56,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param string $eventId
      * @return array
      */
@@ -65,7 +66,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiEventNames()
@@ -74,7 +75,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiEvents()
@@ -83,7 +84,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiFiles()
@@ -92,7 +93,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param string $guildId
      * @param string $guildName
      * @return array
@@ -113,7 +114,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param int $itemId
      * @return array
      */
@@ -123,7 +124,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiItems()
@@ -132,7 +133,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param integer $continentId
      * @param integer $floor
      * @return array
@@ -147,7 +148,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiMapNames()
@@ -156,7 +157,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param int $mapId
      * @return array
      */
@@ -166,7 +167,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param int $recipeId
      * @return array
      */
@@ -176,7 +177,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiRecipes()
@@ -185,7 +186,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param int $skinId
      * @return array
      */
@@ -195,7 +196,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiSkins()
@@ -204,7 +205,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWorldNames()
@@ -213,7 +214,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param string $matchId
      * @return array
      */
@@ -223,7 +224,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWvwMatches()
@@ -232,7 +233,7 @@ class ClientVersion1 extends AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function apiWvwObjectiveNames()

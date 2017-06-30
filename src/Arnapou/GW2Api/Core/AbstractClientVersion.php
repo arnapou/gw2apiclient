@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Core;
 
 use Arnapou\GW2Api\Environment;
@@ -24,7 +25,7 @@ abstract class AbstractClientVersion
     private $environment;
 
     /**
-     * 
+     *
      */
     public function __construct(Environment $environment)
     {
@@ -32,7 +33,7 @@ abstract class AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param array $parameters
      */
     protected function checkParameters(&$parameters)
@@ -43,9 +44,9 @@ abstract class AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param string $url
-     * @param array $headers
+     * @param array  $headers
      * @return Curl
      */
     protected function createCurl($url, $headers)
@@ -60,10 +61,10 @@ abstract class AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @param string $url
-     * @param array $parameters
-     * @param array $headers
+     * @param array  $parameters
+     * @param array  $headers
      * @return array
      */
     protected function request($url, $parameters = [], $headers = [])
@@ -109,9 +110,9 @@ abstract class AbstractClientVersion
                 throw new AllIdsProvidedAreInvalidException();
             } elseif ($httpCode != 200 && $httpCode != 206) {
                 throw new RequestException(
-                "HTTP Error " . $httpCode . ".\n"
-                . "URL = " . $requestUrl . ".\n"
-                . "Content = " . $response->getContent()
+                    "HTTP Error " . $httpCode . ".\n"
+                    . "URL = " . $requestUrl . ".\n"
+                    . "Content = " . $response->getContent()
                 );
             }
 
@@ -131,7 +132,7 @@ abstract class AbstractClientVersion
             $cache->set($cacheKey, [
                 'headers' => $responseHeaders,
                 'data'    => $data,
-                ], $this->getEnvironment()->getCacheRetention($this->getBaseUrl() . $url)
+            ], $this->getEnvironment()->getCacheRetention($this->getBaseUrl() . $url)
             );
         }
 
@@ -139,7 +140,7 @@ abstract class AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return Environment
      */
     public function getEnvironment()
@@ -148,7 +149,7 @@ abstract class AbstractClientVersion
     }
 
     /**
-     * 
+     *
      * @return string base url with ending slash
      */
     abstract public function getBaseUrl();

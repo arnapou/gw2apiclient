@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -42,7 +43,7 @@ class Glider extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getUnlockItem($index)
@@ -51,7 +52,7 @@ class Glider extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getUnlockItems()
@@ -60,7 +61,7 @@ class Glider extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getDefaultDye($index)
@@ -69,7 +70,7 @@ class Glider extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getDefaultDyes()

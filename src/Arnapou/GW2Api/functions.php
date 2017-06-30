@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api;
 
 use Arnapou\GW2Api\Exception\JsonException;
@@ -14,7 +15,7 @@ use Arnapou\GW2Api\Model\Item;
 use MongoDB\Database as MongoDatabase;
 
 /**
- * 
+ *
  * @param string $id
  * @return string
  */
@@ -25,7 +26,7 @@ function id_to_name($id)
 
 /**
  * https://wiki.guildwars2.com/wiki/Chat_link_format
- * 
+ *
  * @param integer $item
  * @param integer $skin
  * @param integer $upgrade1
@@ -40,34 +41,29 @@ function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity
     if ($quantity > 250) {
         $quantity = 250;
     }
-    $hex = function($id) {
-        $h = dechex((int) $id);
+    $hex = function ($id) {
+        $h = dechex((int)$id);
         $n = 6 - strlen($h);
         $s = ($n > 0 ? str_repeat('0', $n) : '') . $h;
         return $s[4] . $s[5] . $s[2] . $s[3] . $s[0] . $s[1];
     };
-    $s = '02' . substr($hex($quantity), 0, 2) . $hex($item);
+    $s   = '02' . substr($hex($quantity), 0, 2) . $hex($item);
     // 0x00 – Default item
     if (empty($skin) && empty($upgrade1) && empty($upgrade2)) {
         $s .= '00';
-    }
-    // 0x40 – 1 upgrade component
+    } // 0x40 – 1 upgrade component
     elseif (empty($skin) && !empty($upgrade1) && empty($upgrade2)) {
         $s .= '40' . $hex($upgrade1) . '00';
-    }
-    // 0x60 – 2 upgrade components
+    } // 0x60 – 2 upgrade components
     elseif (empty($skin) && !empty($upgrade1) && !empty($upgrade2)) {
         $s .= '60' . $hex($upgrade1) . '00' . $hex($upgrade2) . '00';
-    }
-    // 0x80 – Skinned
+    } // 0x80 – Skinned
     elseif (!empty($skin) && empty($upgrade1) && empty($upgrade2)) {
         $s .= '80' . $hex($skin) . '00';
-    }
-    // 0xC0 – Skinned + 1 upgrade component
+    } // 0xC0 – Skinned + 1 upgrade component
     elseif (!empty($skin) && !empty($upgrade1) && empty($upgrade2)) {
         $s .= 'C0' . $hex($skin) . '00' . $hex($upgrade1) . '00';
-    }
-    // 0xE0 – Skinned + 2 upgrade components
+    } // 0xE0 – Skinned + 2 upgrade components
     elseif (!empty($skin) && !empty($upgrade1) && !empty($upgrade2)) {
         $s .= 'E0' . $hex($skin) . '00' . $hex($upgrade1) . '00' . $hex($upgrade2) . '00';
     }
@@ -75,7 +71,7 @@ function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity
 }
 
 /**
- * 
+ *
  * @param MongoDatabase $mongoDB
  * @return string
  */
@@ -98,7 +94,7 @@ function get_mongo_database_error(MongoDatabase $mongoDB)
 }
 
 /**
- * 
+ *
  * @param Item $item
  * @return boolean
  */
@@ -106,16 +102,16 @@ function is_two_handed_weapon($item)
 {
     if ($item) {
         return in_array($item->getSubType(), [
-                Item::SUBTYPE_WEAPON_GREATSWORD, Item::SUBTYPE_WEAPON_HAMMER,
-                Item::SUBTYPE_WEAPON_LONGBOW, Item::SUBTYPE_WEAPON_RIFLE,
-                Item::SUBTYPE_WEAPON_SHORTBOW, Item::SUBTYPE_WEAPON_STAFF
-            ]) ? true : false;
+            Item::SUBTYPE_WEAPON_GREATSWORD, Item::SUBTYPE_WEAPON_HAMMER,
+            Item::SUBTYPE_WEAPON_LONGBOW, Item::SUBTYPE_WEAPON_RIFLE,
+            Item::SUBTYPE_WEAPON_SHORTBOW, Item::SUBTYPE_WEAPON_STAFF,
+        ]) ? true : false;
     }
     return false;
 }
 
 /**
- * 
+ *
  * @param array $array
  * @return boolean
  */
@@ -127,8 +123,8 @@ function is_associative_array($array)
 }
 
 /**
- * 
- * @param string $url
+ *
+ * @param string       $url
  * @param string|array $params
  * @return string
  */
@@ -146,13 +142,13 @@ function url_append($url, $params)
     if (is_array($params)) {
         $url .= http_build_query($params);
     } else {
-        $url .= (string) $params;
+        $url .= (string)$params;
     }
     return $url;
 }
 
 /**
- * 
+ *
  * @param string $json
  * @return array
  */
@@ -165,7 +161,7 @@ function json_decode($json)
     $array         = \json_decode($json, true);
     $jsonLastError = json_last_error();
     if ($jsonLastError !== JSON_ERROR_NONE) {
-        $errors = array(
+        $errors = [
             JSON_ERROR_DEPTH            => 'Max depth reached.',
             JSON_ERROR_STATE_MISMATCH   => 'Mismatch modes or underflow.',
             JSON_ERROR_CTRL_CHAR        => 'Character control error.',
@@ -174,14 +170,14 @@ function json_decode($json)
             JSON_ERROR_RECURSION        => 'Recursion detected.',
             JSON_ERROR_INF_OR_NAN       => 'Inf or NaN',
             JSON_ERROR_UNSUPPORTED_TYPE => 'Unsupported type.',
-        );
+        ];
         throw new JsonException('Json error : ' . (isset($errors[$jsonLastError]) ? $errors[$jsonLastError] : 'Unknown error'));
     }
     return $array;
 }
 
 /**
- * 
+ *
  * @param array $attributes
  * @return string
  */
@@ -192,7 +188,7 @@ function attributes_to_statname($attributes)
         if (count($attributes) >= 7) {
             return 'Celestial';
         }
-        uasort($attributes, function($a, $b) {
+        uasort($attributes, function ($a, $b) {
             if ($a == $b) {
                 return 0;
             }

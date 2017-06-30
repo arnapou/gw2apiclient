@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  */
 class Title extends AbstractStoredObject
 {
@@ -20,7 +21,7 @@ class Title extends AbstractStoredObject
     protected $achievement = null;
 
     /**
-     * 
+     *
      * @return string
      */
     public function getName()
@@ -29,7 +30,7 @@ class Title extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getAchievementId()
@@ -38,7 +39,7 @@ class Title extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Achievement
      */
     public function getAchievement()
@@ -57,7 +58,7 @@ class Title extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

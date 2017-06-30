@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  * @method string getId()
  * @method string getName()
  * @method string getState)
@@ -51,7 +52,7 @@ class GuildTeam extends AbstractObject
             foreach ($data['members'] as $item) {
                 $this->members[] = new GuildTeamMember($env, $item);
             }
-            usort($this->members, function($a, $b) {
+            usort($this->members, function ($a, $b) {
                 return strcasecmp($a->getRole() . ':' . $a->getName(), $b->getRole() . ':' . $b->getName());
             });
         }
@@ -62,7 +63,7 @@ class GuildTeam extends AbstractObject
             foreach ($data['games'] as $item) {
                 $this->games[] = new PvpGame($env, $item);
             }
-            uasort($this->games, function($a, $b) {
+            uasort($this->games, function ($a, $b) {
                 return -strcmp($a->getDateEnded(), $b->getDateEnded());
             });
         }
@@ -75,7 +76,7 @@ class GuildTeam extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getMembers()
@@ -84,7 +85,7 @@ class GuildTeam extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return PvpStats
      */
     public function getAggregateStats()
@@ -93,7 +94,7 @@ class GuildTeam extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getGames()
@@ -102,7 +103,7 @@ class GuildTeam extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @param string $key
      * @return array
      */
@@ -115,7 +116,7 @@ class GuildTeam extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return PvpStats
      */
     public function getLadderRanked()
@@ -124,7 +125,7 @@ class GuildTeam extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return PvpStats
      */
     public function getLadderUnranked()

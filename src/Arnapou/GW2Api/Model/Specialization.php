@@ -7,11 +7,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/traits
- * 
+ *
  * @method getBackground()
  * @method getIcon()
  * @method getName()
@@ -34,7 +35,7 @@ class Specialization extends AbstractStoredObject
     protected $majorTraits = [];
 
     /**
-     * 
+     *
      * @return string
      */
     public function getMinorTraitsIds()
@@ -43,7 +44,7 @@ class Specialization extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getMinorTraits()
@@ -53,7 +54,7 @@ class Specialization extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getMajorTraitsIds()
@@ -62,7 +63,7 @@ class Specialization extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getMajorTraits()
@@ -88,7 +89,7 @@ class Specialization extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

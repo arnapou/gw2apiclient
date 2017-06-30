@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -37,7 +38,7 @@ abstract class AbstractObject
     private static $UNCAMELED = [];
 
     /**
-     * 
+     *
      */
     public function __construct(Environment $environment, $data)
     {
@@ -46,7 +47,7 @@ abstract class AbstractObject
     }
 
     /**
-     * 
+     *
      * @param string $cameled
      * @return string
      */
@@ -72,7 +73,7 @@ abstract class AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Environment
      */
     public function getEnvironment()
@@ -81,7 +82,7 @@ abstract class AbstractObject
     }
 
     /**
-     * 
+     *
      * @param array $keys
      * @param mixed $default
      * @param array $array
@@ -91,7 +92,7 @@ abstract class AbstractObject
     {
         $return = $array ? $array : $this->data;
         if ($keys !== null) {
-            $keys = (array) $keys;
+            $keys = (array)$keys;
             foreach ($keys as $key) {
                 if (!isset($return[$key])) {
                     return $default;
@@ -103,7 +104,7 @@ abstract class AbstractObject
     }
 
     /**
-     * 
+     *
      * @param array $data
      */
     protected function setData($data)

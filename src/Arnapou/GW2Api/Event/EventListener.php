@@ -7,31 +7,32 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Event;
 
 class EventListener
 {
 
-    protected $events = array();
+    protected $events = [];
 
     /**
-     * 
+     *
      */
     public function __construct()
     {
-        
+
     }
 
     /**
-     * 
+     *
      * @param string $eventName
-     * @param mixed $callable
-     * @param type $append
+     * @param mixed  $callable
+     * @param type   $append
      */
     public function bind($eventName, $callable, $append = true)
     {
         if (!isset($this->events[$eventName])) {
-            $this->events[$eventName] = array();
+            $this->events[$eventName] = [];
         }
         if ($append) {
             array_push($this->events[$eventName], $callable);
@@ -41,9 +42,9 @@ class EventListener
     }
 
     /**
-     * 
+     *
      * @param string $eventName
-     * @param Event $event
+     * @param Event  $event
      */
     public function trigger($eventName, $event = null)
     {

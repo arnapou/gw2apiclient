@@ -7,11 +7,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/itemstats
- * 
+ *
  * @method string getName()
  */
 class ItemStat extends AbstractStoredObject
@@ -30,7 +31,7 @@ class ItemStat extends AbstractStoredObject
     const ATTRIBUTE_VITALITY           = 'Vitality';
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAttributes()
@@ -39,7 +40,7 @@ class ItemStat extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getStatName()

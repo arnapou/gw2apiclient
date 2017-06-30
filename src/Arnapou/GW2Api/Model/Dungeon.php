@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -35,7 +36,7 @@ class Dungeon extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getPaths()
@@ -45,7 +46,7 @@ class Dungeon extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getName()
@@ -59,7 +60,7 @@ class Dungeon extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()
