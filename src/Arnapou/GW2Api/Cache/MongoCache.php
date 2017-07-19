@@ -58,6 +58,7 @@ class MongoCache implements CacheInterface
      *
      * @param MongoDatabase $mongoDB
      * @param string        $collectionName
+     * @throws WrongMongoDatabaseException
      */
     public function __construct(MongoDatabase $mongoDB, $collectionName = 'cache')
     {
@@ -132,6 +133,7 @@ class MongoCache implements CacheInterface
      *
      * @param int $gcProbability
      * @param int $gcDivisor
+     * @throws Exception
      */
     public function setGarbageCollectorParameters($gcProbability, $gcDivisor)
     {
