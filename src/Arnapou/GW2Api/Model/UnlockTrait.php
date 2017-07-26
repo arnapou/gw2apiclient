@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,7 +19,7 @@ trait UnlockTrait
     protected $__unlocked = false;
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function isUnlocked()
@@ -27,7 +28,7 @@ trait UnlockTrait
     }
 
     /**
-     * 
+     *
      * @param boolean $bool
      */
     public function setUnlocked($bool)

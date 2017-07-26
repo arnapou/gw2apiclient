@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -41,7 +42,7 @@ class PvpHeroes extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -51,14 +52,15 @@ class PvpHeroes extends AbstractObject
         $env = $this->getEnvironment();
 
         foreach ($env->getClientVersion2()->apiPvpHeroes() as $id) {
-            $hero           = new PvpHero($env, $id);
+            $hero = new PvpHero($env, $id);
             $hero->setUnlocked($this->unlocked);
             $this->heroes[] = $hero;
         }
-        foreach ($this->heroes as /* @var $hero PvpHero */ $hero) {
+        foreach ($this->heroes as /* @var $hero PvpHero */
+                 $hero) {
             $this->total += count($hero->getSkins());
         }
-        uasort($this->mailcarriers, function(PvpHero $hero1, PvpHero $hero2) {
+        uasort($this->mailcarriers, function (PvpHero $hero1, PvpHero $hero2) {
             $n1 = $hero1->getName();
             $n2 = $hero2->getName();
             if ($n1 == $n2) {
@@ -69,7 +71,7 @@ class PvpHeroes extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getHeroes()
@@ -81,7 +83,7 @@ class PvpHeroes extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -90,7 +92,7 @@ class PvpHeroes extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

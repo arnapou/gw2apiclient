@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -15,7 +16,7 @@ use Arnapou\GW2Api\Exception\MissingPermissionException;
 use Arnapou\GW2Api\Environment;
 
 /**
- * 
+ *
  */
 class Account extends AbstractObject
 {
@@ -44,7 +45,7 @@ class Account extends AbstractObject
     const PERMISSION_GUILDS      = 'guilds';
 
     /**
-     * 
+     *
      * @return array
      */
     public static function permissionsList()
@@ -62,6 +63,7 @@ class Account extends AbstractObject
             self::PERMISSION_GUILDS,
         ];
     }
+
     /*
      * game access constants
      */
@@ -268,7 +270,7 @@ class Account extends AbstractObject
     protected $tradingPost;
 
     /**
-     * 
+     *
      */
     public function __construct(Environment $environment)
     {
@@ -304,7 +306,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAccountAchievements()
@@ -329,7 +331,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return TradingPost
      */
     public function getTradingPost()
@@ -346,7 +348,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return PvpHeroes
      */
     public function getPvpHeroes()
@@ -366,7 +368,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Gliders
      */
     public function getGliders()
@@ -386,7 +388,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Mailcarriers
      */
     public function getMailcarriers()
@@ -406,7 +408,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return HomeNodes
      */
     public function getHomeNodes()
@@ -426,7 +428,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return HomeCats
      */
     public function getHomeCats()
@@ -446,7 +448,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Finishers
      */
     public function getFinishers()
@@ -466,7 +468,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Outfits
      */
     public function getOutfits()
@@ -486,7 +488,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Titles
      */
     public function getTitles()
@@ -506,7 +508,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Minis
      */
     public function getMinis()
@@ -526,7 +528,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Dyes
      */
     public function getDyes()
@@ -546,7 +548,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Wardrobe
      */
     public function getWardrobe()
@@ -566,7 +568,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Pvp
      */
     public function getPvp()
@@ -584,7 +586,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCollectibles()
@@ -617,7 +619,7 @@ class Account extends AbstractObject
                 ]);
             }
 
-            usort($this->collectibles, function($a, $b) {
+            usort($this->collectibles, function ($a, $b) {
                 $na = $a->getOrder();
                 $nb = $b->getOrder();
                 if ($na == $nb) {
@@ -630,7 +632,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBankVaults()
@@ -657,7 +659,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array ["Name 1", "Name 2"]
      */
     public function getCharacterNames()
@@ -675,7 +677,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCharacters()
@@ -700,7 +702,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @param string $name
      * @return Character
      */
@@ -714,7 +716,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string "1E25809D-6A79-EE39-E111-736E8E79F0D1"
      */
     public function getId()
@@ -723,7 +725,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string "My Name.1234"
      */
     public function getName()
@@ -732,16 +734,16 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer 2102
      */
     public function getWorldId()
     {
-        return (int) $this->getData('world', null, $this->dataAccount);
+        return (int)$this->getData('world', null, $this->dataAccount);
     }
 
     /**
-     * 
+     *
      * @return World
      */
     public function getWorld()
@@ -753,7 +755,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array ["27E8635F-2B2F-44BC-A58F-03F66F2083E2", "52BD8E08-7F38-449E-ADB7-37CC6CE47230"]
      */
     public function getGuildIds($onlyLeader = false)
@@ -766,7 +768,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return World
      */
     public function getGuilds($onlyLeader = false)
@@ -785,13 +787,14 @@ class Account extends AbstractObject
                         $this->guilds[] = new Guild($env, $data);
                     }
                 } catch (\Exception $e) {
-                    
+
                 }
             }
         }
         if ($onlyLeader) {
             $tmp = [];
-            foreach ($this->guilds as /* @var $guild Guild */ $guild) {
+            foreach ($this->guilds as /* @var $guild Guild */
+                     $guild) {
                 if ($guild->isLeader()) {
                     $tmp[] = $guild;
                 }
@@ -803,7 +806,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return World
      */
     public function getInventory()
@@ -821,7 +824,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return World
      */
     public function getWallet()
@@ -833,12 +836,12 @@ class Account extends AbstractObject
             $items = $env->getClientVersion2()->apiAccountWallet();
             foreach ($items as $item) {
                 if (isset($item['id'], $item['value'])) {
-                    $currency                  = new Currency($env, $item['id']);
+                    $currency = new Currency($env, $item['id']);
                     $currency->setQuantity($item['value']);
                     $this->wallet[$item['id']] = $currency;
                 }
             }
-            uasort($this->wallet, function($a, $b) {
+            uasort($this->wallet, function ($a, $b) {
                 $orderA = $a->getOrder();
                 $orderB = $b->getOrder();
                 if ($orderA == $orderB) {
@@ -851,35 +854,35 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer 100
      */
     public function getFractalLevel()
     {
-        return (int) $this->getData('fractal_level', null, $this->dataAccount);
+        return (int)$this->getData('fractal_level', null, $this->dataAccount);
     }
 
     /**
-     * 
+     *
      * @return integer 12309
      */
     public function getDailyAP()
     {
-        return (int) $this->getData('daily_ap', null, $this->dataAccount);
+        return (int)$this->getData('daily_ap', null, $this->dataAccount);
     }
 
     /**
-     * 
+     *
      * @return integer 2691
      */
     public function getMonthlyAP()
     {
-        return (int) $this->getData('monthly_ap', null, $this->dataAccount);
+        return (int)$this->getData('monthly_ap', null, $this->dataAccount);
     }
 
     /**
-     * 
-     * @return integer 
+     *
+     * @return integer
      */
     public function getOtherAP()
     {
@@ -887,9 +890,12 @@ class Account extends AbstractObject
             $this->otherAP = 0;
             $ids           = [];
             $aps           = $this->getAccountAchievements();
-            foreach ($this->getAchievementsGroups() as /* @var $group AchievementGroup */ $group) {
-                foreach ($group->getCategories() as /* @var $category AchievementCategory */ $category) {
-                    foreach ($category->getAchievements() as /* @var $item Achievement */ $item) {
+            foreach ($this->getAchievementsGroups() as /* @var $group AchievementGroup */
+                     $group) {
+                foreach ($group->getCategories() as /* @var $category AchievementCategory */
+                         $category) {
+                    foreach ($category->getAchievements() as /* @var $item Achievement */
+                             $item) {
                         if (isset($aps[$item->getId()])) {
                             $this->otherAP += $aps[$item->getId()]->getTotalAP();
                             $ids[]         = $item->getId();
@@ -902,8 +908,8 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
-     * @return integer 
+     *
+     * @return integer
      */
     public function getTotalAP()
     {
@@ -911,16 +917,16 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer 245
      */
     public function getWvwRank()
     {
-        return (int) $this->getData('wvw_rank', null, $this->dataAccount);
+        return (int)$this->getData('wvw_rank', null, $this->dataAccount);
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function hasAccessHeartOfThorns()
@@ -929,7 +935,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function hasCommanderTag()
@@ -938,7 +944,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string YYYY-MM-DD HH:MM UTC format
      */
     public function getCreated()
@@ -948,7 +954,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getAccessToken()
@@ -957,7 +963,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @param string $permission
      * @return boolean
      */
@@ -967,7 +973,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getDungeons()
@@ -979,8 +985,10 @@ class Account extends AbstractObject
                 $this->dungeons[] = new Dungeon($env, $id);
             }
             $pathIds = $client->apiAccountDungeons();
-            foreach ($this->dungeons as /* @var $dungeon Dungeon */ $dungeon) {
-                foreach ($dungeon->getPaths() as /* @var $path DungeonPath */ $path) {
+            foreach ($this->dungeons as /* @var $dungeon Dungeon */
+                     $dungeon) {
+                foreach ($dungeon->getPaths() as /* @var $path DungeonPath */
+                         $path) {
                     if (in_array($path->getId(), $pathIds)) {
                         $path->setUnlocked(true);
                     }
@@ -991,7 +999,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getRaids()
@@ -1003,9 +1011,12 @@ class Account extends AbstractObject
                 $this->raids[] = new Raid($env, $id);
             }
             $eventIds = $client->apiAccountRaids();
-            foreach ($this->raids as /* @var $raid Raid */ $raid) {
-                foreach ($raid->getWings() as /* @var $wing RaidWing */ $wing) {
-                    foreach ($wing->getEvents() as /* @var $event RaidWingEvent */ $event) {
+            foreach ($this->raids as /* @var $raid Raid */
+                     $raid) {
+                foreach ($raid->getWings() as /* @var $wing RaidWing */
+                         $wing) {
+                    foreach ($wing->getEvents() as /* @var $event RaidWingEvent */
+                             $event) {
                         if (in_array($event->getId(), $eventIds)) {
                             $event->setUnlocked(true);
                         }
@@ -1017,7 +1028,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAchievementsDaily()
@@ -1034,7 +1045,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAchievementsGroups()
@@ -1044,7 +1055,7 @@ class Account extends AbstractObject
             foreach ($env->getClientVersion2()->apiAchievementsGroups() as $id) {
                 $this->achievementsGroups[$id] = new AchievementGroup($env, $id);
             }
-            uasort($this->achievementsGroups, function($a, $b) {
+            uasort($this->achievementsGroups, function ($a, $b) {
                 $ia = $a->getOrder();
                 $ib = $b->getOrder();
                 if ($ia == $ib) {
@@ -1057,7 +1068,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getMasteriesSpentPoints()
@@ -1065,7 +1076,8 @@ class Account extends AbstractObject
         $sum = 0;
         if ($this->hasPermission(self::PERMISSION_PROGRESSION)) {
             $sum = 0;
-            foreach ($this->getMasteries() as /* @var $mastery Mastery */ $mastery) {
+            foreach ($this->getMasteries() as /* @var $mastery Mastery */
+                     $mastery) {
                 $sum += $mastery->getSpentPoints();
             }
         }
@@ -1073,7 +1085,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getMasteryRegionTotals()
@@ -1093,7 +1105,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getMasteries()
@@ -1117,7 +1129,7 @@ class Account extends AbstractObject
                 }
                 $this->masteries[$id] = $mastery;
             }
-            uasort($this->masteries, function($a, $b) {
+            uasort($this->masteries, function ($a, $b) {
                 $n = strcmp($a->getRegion(), $b->getRegion());
                 if ($n != 0) {
                     return $n;
@@ -1134,7 +1146,7 @@ class Account extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getStorySeasons()
@@ -1144,7 +1156,7 @@ class Account extends AbstractObject
             foreach ($env->getClientVersion2()->apiStoriesSeasons() as $id) {
                 $this->storySeasons[] = new StorySeason($env, $id);
             }
-            usort($this->storySeasons, function(StorySeason $a, StorySeason $b) {
+            usort($this->storySeasons, function (StorySeason $a, StorySeason $b) {
                 $ia = $a->getOrder();
                 $ib = $b->getOrder();
                 if ($ia == $ib) {

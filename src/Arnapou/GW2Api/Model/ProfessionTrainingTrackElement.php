@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  * @method string getCost()
  * @method string getType()
  * @method string getSkillId()
@@ -50,7 +51,7 @@ class ProfessionTrainingTrackElement extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkill()
@@ -59,7 +60,7 @@ class ProfessionTrainingTrackElement extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return SpecializationTrait
      */
     public function getTrait()

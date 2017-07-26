@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class Titles extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -58,20 +59,20 @@ class Titles extends AbstractObject
         $env             = $this->getEnvironment();
         $flippedUnlocked = array_flip($this->unlocked);
         foreach ($env->getClientVersion2()->apiTitles() as $id) {
-            $unlocked          = isset($flippedUnlocked[$id]);
-            $title             = new Title($env, $id);
+            $unlocked = isset($flippedUnlocked[$id]);
+            $title    = new Title($env, $id);
             $title->setUnlocked($unlocked);
-            $this->count       += $unlocked ? 1 : 0;
+            $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->titles[$id] = $title;
         }
-        uasort($this->titles, function(Title $title1, Title $title2) {
+        uasort($this->titles, function (Title $title1, Title $title2) {
             return strcmp($title1->getName(), $title2->getName());
         });
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTitles()
@@ -83,7 +84,7 @@ class Titles extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -92,7 +93,7 @@ class Titles extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

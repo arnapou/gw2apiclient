@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -31,7 +32,7 @@ class PvpSeason extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getDivisions()
@@ -40,7 +41,7 @@ class PvpSeason extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function isActive()
@@ -49,7 +50,7 @@ class PvpSeason extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string YYYY-MM-DD HH:MM UTC format
      */
     public function getDateStart()
@@ -59,7 +60,7 @@ class PvpSeason extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string YYYY-MM-DD HH:MM UTC format
      */
     public function getDateEnd()

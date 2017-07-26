@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  * @method string getType()
  * @method string getCount()
  * @method string getName()
@@ -38,7 +39,7 @@ class GuildUpgradeCost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return InventorySlot
      */
     public function getItem()
@@ -48,6 +49,6 @@ class GuildUpgradeCost extends AbstractObject
 
     public function __toString()
     {
-        return (string) $this->getName();
+        return (string)$this->getName();
     }
 }

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -62,14 +63,14 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
         }
 
         foreach ($env->getClientVersion2()->apiNodes() as $id) {
-            $unlocked          = isset($map[$id]);
-            $homenode          = new HomeNode($env, $id);
+            $unlocked = isset($map[$id]);
+            $homenode = new HomeNode($env, $id);
             $homenode->setUnlocked($unlocked);
-            $this->count       += $unlocked ? 1 : 0;
+            $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->homenodes[] = $homenode;
         }
-        uasort($this->homenodes, function(HomeNode $homenode1, HomeNode $homenode2) {
+        uasort($this->homenodes, function (HomeNode $homenode1, HomeNode $homenode2) {
             $n1 = $homenode1->getId();
             $n2 = $homenode2->getId();
             if ($n1 == $n2) {
@@ -80,7 +81,7 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getHomeNodes()
@@ -92,7 +93,7 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -101,7 +102,7 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

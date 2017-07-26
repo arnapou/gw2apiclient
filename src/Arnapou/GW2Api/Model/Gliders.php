@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class Gliders extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -62,14 +63,14 @@ class Gliders extends AbstractObject
         }
 
         foreach ($env->getClientVersion2()->apiGliders() as $id) {
-            $unlocked        = isset($map[$id]);
-            $glider          = new Glider($env, $id);
+            $unlocked = isset($map[$id]);
+            $glider   = new Glider($env, $id);
             $glider->setUnlocked($unlocked);
-            $this->count     += $unlocked ? 1 : 0;
+            $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->gliders[] = $glider;
         }
-        uasort($this->gliders, function(Glider $glider1, Glider $glider2) {
+        uasort($this->gliders, function (Glider $glider1, Glider $glider2) {
             $n1 = $glider1->getOrder();
             $n2 = $glider2->getOrder();
             if ($n1 == $n2) {
@@ -80,7 +81,7 @@ class Gliders extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getGliders()
@@ -92,7 +93,7 @@ class Gliders extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -101,7 +102,7 @@ class Gliders extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

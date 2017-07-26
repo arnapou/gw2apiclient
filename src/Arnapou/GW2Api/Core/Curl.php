@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Core;
 
 class Curl
@@ -19,7 +20,7 @@ class Curl
     protected $curl;
 
     /**
-     * 
+     *
      */
     public function __construct()
     {
@@ -30,7 +31,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      */
     public function __destruct()
     {
@@ -41,7 +42,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @param string $url
      * @return Curl
      */
@@ -52,7 +53,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @param int $port
      * @return Curl
      */
@@ -63,7 +64,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @param bool $bool
      * @return Curl
      */
@@ -74,7 +75,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @param string $ua
      * @return Curl
      */
@@ -85,7 +86,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @param int $seconds
      * @return Curl
      */
@@ -96,14 +97,14 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @param array $array
      * @return Curl
      */
     public function setHeaders($array)
     {
         if (\Arnapou\GW2Api\is_associative_array($array)) {
-            $tmp = array();
+            $tmp = [];
             foreach ($array as $key => $value) {
                 if ("$value" !== '') {
                     $tmp[] = "$key: $value";
@@ -116,7 +117,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @return Curl
      */
     public function setGet()
@@ -126,7 +127,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @return Curl
      */
     public function setMethod($method)
@@ -136,7 +137,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @param array|string $data
      * @return Curl
      */
@@ -147,14 +148,14 @@ class Curl
             if (is_array($data)) {
                 curl_setopt($this->curl, CURLOPT_POSTFIELDS, http_build_query($data));
             } else {
-                curl_setopt($this->curl, CURLOPT_POSTFIELDS, (string) $data);
+                curl_setopt($this->curl, CURLOPT_POSTFIELDS, (string)$data);
             }
         }
         return $this;
     }
 
     /**
-     * 
+     *
      * @return resource
      */
     public function getCurl()
@@ -163,7 +164,7 @@ class Curl
     }
 
     /**
-     * 
+     *
      * @return CurlResponse
      */
     public function execute()

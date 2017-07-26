@@ -7,11 +7,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/skills
- * 
+ *
  * @method getAttunement()
  * @method getChatLink()
  * @method getCost()
@@ -28,21 +29,21 @@ class Skill extends AbstractStoredObject
 {
 
     // TYPES
-    const TYPE_BUNDLE             = 'Bundle';
-    const TYPE_ELITE              = 'Elite';
-    const TYPE_HEAL               = 'Heal';
-    const TYPE_PROFESSION         = 'Profession';
-    const TYPE_UTILITY            = 'Utility';
-    const TYPE_WEAPON             = 'Weapon';
+    const TYPE_BUNDLE     = 'Bundle';
+    const TYPE_ELITE      = 'Elite';
+    const TYPE_HEAL       = 'Heal';
+    const TYPE_PROFESSION = 'Profession';
+    const TYPE_UTILITY    = 'Utility';
+    const TYPE_WEAPON     = 'Weapon';
     // CATEGORIES
     const CATEGORY_TRANSFORM      = 'Transform';
     const CATEGORY_DUAL_WIELD     = 'DualWield';
     const CATEGORY_STEALTH_ATTACK = 'StealthAttack';
     // ATTUNEMENT
-    const ATTUNEMENT_FIRE         = 'Fire';
-    const ATTUNEMENT_WATER        = 'Water';
-    const ATTUNEMENT_AIR          = 'Air';
-    const ATTUNEMENT_EARTH        = 'Earth';
+    const ATTUNEMENT_FIRE  = 'Fire';
+    const ATTUNEMENT_WATER = 'Water';
+    const ATTUNEMENT_AIR   = 'Air';
+    const ATTUNEMENT_EARTH = 'Earth';
 
     /**
      *
@@ -81,7 +82,7 @@ class Skill extends AbstractStoredObject
     protected $bundleSkills = [];
 
     /**
-     * 
+     *
      * @return string
      */
     public function getPrevChainId()
@@ -90,7 +91,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getFlags()
@@ -99,7 +100,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getPrevChain()
@@ -109,7 +110,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getNextChainId()
@@ -118,7 +119,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getNextChain()
@@ -128,7 +129,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getFlipSkillId()
@@ -137,7 +138,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getFlipSkill()
@@ -147,7 +148,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getToolbeltSkillId()
@@ -156,7 +157,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getToolbeltSkill()
@@ -166,7 +167,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getTransformSkillsIds()
@@ -175,7 +176,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTransformSkills()
@@ -185,7 +186,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getBundleSkillsIds()
@@ -194,7 +195,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBundleSkills()
@@ -204,7 +205,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getProfessions()
@@ -213,7 +214,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getFacts()
@@ -222,7 +223,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTraitedFacts()
@@ -231,7 +232,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCategories()
@@ -268,7 +269,7 @@ class Skill extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

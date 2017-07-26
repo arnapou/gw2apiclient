@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -52,7 +53,7 @@ class Bag extends InventorySlot
     }
 
     /**
-     * 
+     *
      * @return Item
      */
     public function getItem()
@@ -61,7 +62,7 @@ class Bag extends InventorySlot
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getInventorySlots()
@@ -70,7 +71,7 @@ class Bag extends InventorySlot
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBagPrice()
@@ -80,7 +81,8 @@ class Bag extends InventorySlot
                 'buy'  => 0,
                 'sell' => 0,
             ];
-            foreach ($this->inventorySlots as /* @var $item InventorySlot */ $item) {
+            foreach ($this->inventorySlots as /* @var $item InventorySlot */
+                     $item) {
                 if ($item && empty($item->getBinding())) {
                     $price                  = $item->getPrice();
                     $this->bagprice['buy']  += $price['buy_total'];

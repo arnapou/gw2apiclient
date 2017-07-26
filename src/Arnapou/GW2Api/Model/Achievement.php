@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  * @method string getDescription()
  * @method string getIcon()
  * @method string getName()
@@ -23,8 +24,8 @@ class Achievement extends AbstractStoredObject
 {
 
     // TYPES
-    const TYPE_DEFAULT                = 'Default';
-    const TYPE_ITEMSET                = 'ItemSet';
+    const TYPE_DEFAULT = 'Default';
+    const TYPE_ITEMSET = 'ItemSet';
     // FLAGS
     const FLAG_PVP                    = 'Pvp';
     const FLAG_CATEGORY_DISPLAY       = 'CategoryDisplay';
@@ -32,15 +33,15 @@ class Achievement extends AbstractStoredObject
     const FLAG_IGNORE_NEARLY_COMPLETE = 'IgnoreNearlyComplete';
     const FLAG_REPEATABLE             = 'Repeatable';
     // BITS TYPE
-    const BITS_TYPE_TEXT              = 'Text';
-    const BITS_TYPE_ITEM              = 'Item';
-    const BITS_TYPE_MINIPET           = 'Minipet';
-    const BITS_TYPE_SKIN              = 'Skin';
+    const BITS_TYPE_TEXT    = 'Text';
+    const BITS_TYPE_ITEM    = 'Item';
+    const BITS_TYPE_MINIPET = 'Minipet';
+    const BITS_TYPE_SKIN    = 'Skin';
     // REWARDS TYPE
-    const REWARDS_TYPE_TEXT           = 'Coins';
-    const REWARDS_TYPE_ITEM           = 'Item';
-    const REWARDS_TYPE_MASTERY        = 'Mastery';
-    const REWARDS_TYPE_TITLE          = 'Title';
+    const REWARDS_TYPE_TEXT    = 'Coins';
+    const REWARDS_TYPE_ITEM    = 'Item';
+    const REWARDS_TYPE_MASTERY = 'Mastery';
+    const REWARDS_TYPE_TITLE   = 'Title';
 
     protected $total   = null;
     protected $rewards = [];
@@ -82,7 +83,7 @@ class Achievement extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getBits()
@@ -91,7 +92,7 @@ class Achievement extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getFlags()
@@ -100,7 +101,7 @@ class Achievement extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTiers()
@@ -109,7 +110,7 @@ class Achievement extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotalAP()
@@ -134,7 +135,7 @@ class Achievement extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getRewards()
@@ -143,17 +144,17 @@ class Achievement extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @param string $flag
      * @return boolean
      */
     public function hasFlag($flag)
     {
-        return in_array($flag, (array) $this->getFlags());
+        return in_array($flag, (array)$this->getFlags());
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

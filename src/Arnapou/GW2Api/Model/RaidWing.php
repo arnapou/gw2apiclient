@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -32,7 +33,7 @@ class RaidWing extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getEvents()
@@ -41,7 +42,7 @@ class RaidWing extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getId()
@@ -50,7 +51,7 @@ class RaidWing extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getNumber()
@@ -59,7 +60,7 @@ class RaidWing extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getName()
@@ -68,7 +69,7 @@ class RaidWing extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

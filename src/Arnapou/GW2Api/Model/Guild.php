@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  * @method string getLevel()
  * @method string getMotd()
  * @method string getInfluence()
@@ -86,7 +87,7 @@ class Guild extends AbstractObject
     protected $stashprice;
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function isLeader()
@@ -95,7 +96,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function hasEmblem()
@@ -108,7 +109,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getLog()
@@ -127,7 +128,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTreasury()
@@ -145,16 +146,18 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTreasuryByUpgrade()
     {
         if (empty($this->treasuryByUpgrade)) {
             $data = [];
-            foreach ($this->getTreasury() as /* @var $treasury GuildTreasury */ $treasury) {
+            foreach ($this->getTreasury() as /* @var $treasury GuildTreasury */
+                     $treasury) {
                 foreach ($treasury->getNeededBy() as $needed) {
-                    $upgrade = $needed['upgrade']; /* @var $upgrade GuildUpgrade */
+                    $upgrade = $needed['upgrade'];
+                    /* @var $upgrade GuildUpgrade */
                     if (!isset($data[$upgrade->getId()])) {
                         $data[$upgrade->getId()] = [
                             'upgrade'    => $upgrade,
@@ -164,8 +167,8 @@ class Guild extends AbstractObject
                     $data[$upgrade->getId()]['treasuries'][$treasury->getId()] = $treasury;
                 }
             }
-            uasort($data, function($a, $b) {
-                return strcmp((string) $a['upgrade'], (string) $b['upgrade']);
+            uasort($data, function ($a, $b) {
+                return strcmp((string)$a['upgrade'], (string)$b['upgrade']);
             });
             $this->treasuryByUpgrade = $data;
         }
@@ -173,7 +176,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTeams()
@@ -192,7 +195,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getMembers()
@@ -206,7 +209,7 @@ class Guild extends AbstractObject
                     $this->members[$obj->getId()] = $obj;
                 }
                 $ranks = $this->getRanks();
-                uasort($this->members, function($a, $b) use($ranks) {
+                uasort($this->members, function ($a, $b) use ($ranks) {
                     $ra = isset($ranks[$a->getRank()]) ? $ranks[$a->getRank()]->getOrder() : 999;
                     $rb = isset($ranks[$b->getRank()]) ? $ranks[$b->getRank()]->getOrder() : 999;
                     $sa = sprintf('%04d : %s : %s', $ra, $a->getData('joined'), $a->getName());
@@ -219,7 +222,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getUpgradeIds()
@@ -231,7 +234,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getUpgrades()
@@ -244,8 +247,8 @@ class Guild extends AbstractObject
                     $obj                           = new GuildUpgrade($env, $id);
                     $this->upgrades[$obj->getId()] = $obj;
                 }
-                uasort($this->upgrades, function($a, $b) {
-                    return strcmp((string) $a, (string) $b);
+                uasort($this->upgrades, function ($a, $b) {
+                    return strcmp((string)$a, (string)$b);
                 });
             }
         }
@@ -253,7 +256,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getRanks()
@@ -266,7 +269,7 @@ class Guild extends AbstractObject
                     $obj                        = new GuildRank($env, $item);
                     $this->ranks[$obj->getId()] = $obj;
                 }
-                uasort($this->ranks, function($a, $b) {
+                uasort($this->ranks, function ($a, $b) {
                     $na = $a->getOrder();
                     $nb = $b->getOrder();
                     if ($na == $nb) {
@@ -280,7 +283,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getStash()
@@ -298,7 +301,7 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getStashPrice()
@@ -308,7 +311,8 @@ class Guild extends AbstractObject
                 'buy'  => $this->getCoins(),
                 'sell' => $this->getCoins(),
             ];
-            foreach ($this->getStash() as /* @var $item GuildStash */ $item) {
+            foreach ($this->getStash() as /* @var $item GuildStash */
+                     $item) {
                 $price                    = $item->getStashPrice();
                 $this->stashprice['buy']  += $price['buy'];
                 $this->stashprice['sell'] += $price['sell'];
@@ -318,13 +322,13 @@ class Guild extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()
     {
-        $name = (string) $this->getName();
-        $tag  = (string) $this->getTag();
+        $name = (string)$this->getName();
+        $tag  = (string)$this->getTag();
         if ($name && $tag) {
             return $name . ' [' . $tag . ']';
         } else {

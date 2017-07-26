@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -38,7 +39,7 @@ class AccountAchievement extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotalAP()
@@ -85,7 +86,7 @@ class AccountAchievement extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Achievement
      */
     public function getAchievement()

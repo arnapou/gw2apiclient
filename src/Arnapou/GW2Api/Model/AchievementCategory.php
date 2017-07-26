@@ -7,11 +7,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/achievements
- * 
+ *
  * @method string  getDescription()
  * @method string  getIcon()
  * @method string  getName()
@@ -23,7 +24,7 @@ class AchievementCategory extends AbstractStoredObject
     protected $achievements = [];
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAchievementsIds()
@@ -32,7 +33,7 @@ class AchievementCategory extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAchievements()
@@ -53,7 +54,7 @@ class AchievementCategory extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

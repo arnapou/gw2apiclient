@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -21,7 +22,7 @@ class RaidWingEvent extends AbstractObject
     const TYPE_BOSS       = 'Boss';
 
     /**
-     * 
+     *
      * @return string
      */
     public function getType()
@@ -30,7 +31,7 @@ class RaidWingEvent extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getId()
@@ -39,7 +40,7 @@ class RaidWingEvent extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getName()
@@ -48,7 +49,7 @@ class RaidWingEvent extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class Finishers extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -71,11 +72,11 @@ class Finishers extends AbstractObject
             if ($unlocked && isset($map[$id]['permanent'])) {
                 $finisher->setPermanent($map[$id]['permanent']);
             }
-            $this->count       += $unlocked ? 1 : 0;
+            $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->finishers[] = $finisher;
         }
-        uasort($this->finishers, function(Finisher $finisher1, Finisher $finisher2) {
+        uasort($this->finishers, function (Finisher $finisher1, Finisher $finisher2) {
             $n1 = $finisher1->getOrder();
             $n2 = $finisher2->getOrder();
             if ($n1 == $n2) {
@@ -86,7 +87,7 @@ class Finishers extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getFinishers()
@@ -98,7 +99,7 @@ class Finishers extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -107,7 +108,7 @@ class Finishers extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

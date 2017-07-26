@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Cache;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -48,14 +49,16 @@ class MongoCache implements CacheInterface
     protected $mongoDB;
 
     /**
-     * 
+     *
      * Example to instanciate a valid mongoDB variable : <pre>
-     *     $mongo   = new MongoDB\Client('mongodb://localhost:27017', [], ['typeMap' => ['root' => 'array', 'document' => 'array']]);
+     *     $mongo   = new MongoDB\Client('mongodb://localhost:27017', [], ['typeMap' => ['root' => 'array', 'document'
+     *     => 'array']]);
      *     $mongoDB = $mongo->selectDatabase("test");
      * </pre>
-     * 
+     *
      * @param MongoDatabase $mongoDB
-     * @param string $collectionName
+     * @param string        $collectionName
+     * @throws WrongMongoDatabaseException
      */
     public function __construct(MongoDatabase $mongoDB, $collectionName = 'cache')
     {
@@ -94,7 +97,7 @@ class MongoCache implements CacheInterface
     }
 
     /**
-     * 
+     *
      * @return MongoDatabase
      */
     public function getMongoDB()
@@ -103,7 +106,7 @@ class MongoCache implements CacheInterface
     }
 
     /**
-     * 
+     *
      * @return MongoCollection
      */
     public function getCollection()
@@ -112,7 +115,7 @@ class MongoCache implements CacheInterface
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getCollectionName()
@@ -121,15 +124,16 @@ class MongoCache implements CacheInterface
     }
 
     /**
-     * Set the probability for the garbage collector to clean expired 
+     * Set the probability for the garbage collector to clean expired
      * data (gcProbability/gcDivisor) when the script finishes.
-     * 
+     *
      * If gcProbability = 0 then the garbage collector will never run.
-     * 
+     *
      * If gcProbability > gcDivisor then the garbage collector will always run.
-     * 
+     *
      * @param int $gcProbability
      * @param int $gcDivisor
+     * @throws Exception
      */
     public function setGarbageCollectorParameters($gcProbability, $gcDivisor)
     {
@@ -184,14 +188,14 @@ class MongoCache implements CacheInterface
         $hash = $this->hash($key);
         $this->collection->updateOne([
             'key' => $hash,
-            ], [
+        ], [
             '$set' => [
                 'key'        => $hash,
                 'value'      => $value,
                 'expiration' => $expiration,
-            ]
-            ], [
-            'upsert' => true
+            ],
+        ], [
+            'upsert' => true,
         ]);
     }
 

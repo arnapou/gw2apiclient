@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class Mailcarriers extends AbstractObject
     }
 
     /**
-     * 
+     *
      */
     protected function prepareObjects()
     {
@@ -62,14 +63,14 @@ class Mailcarriers extends AbstractObject
         }
 
         foreach ($env->getClientVersion2()->apiMailcarriers() as $id) {
-            $unlocked             = isset($map[$id]);
-            $mailcarrier          = new Mailcarrier($env, $id);
+            $unlocked    = isset($map[$id]);
+            $mailcarrier = new Mailcarrier($env, $id);
             $mailcarrier->setUnlocked($unlocked);
-            $this->count          += $unlocked ? 1 : 0;
+            $this->count += $unlocked ? 1 : 0;
             $this->total++;
             $this->mailcarriers[] = $mailcarrier;
         }
-        uasort($this->mailcarriers, function(Mailcarrier $mailcarrier1, Mailcarrier $mailcarrier2) {
+        uasort($this->mailcarriers, function (Mailcarrier $mailcarrier1, Mailcarrier $mailcarrier2) {
             $n1 = $mailcarrier1->getOrder();
             $n2 = $mailcarrier2->getOrder();
             if ($n1 == $n2) {
@@ -80,7 +81,7 @@ class Mailcarriers extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getMailcarriers()
@@ -92,7 +93,7 @@ class Mailcarriers extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getCount()
@@ -101,7 +102,7 @@ class Mailcarriers extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getTotal()

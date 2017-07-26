@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -47,7 +48,7 @@ class Legend extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkill($number)
@@ -65,7 +66,7 @@ class Legend extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkillSwap()
@@ -75,7 +76,7 @@ class Legend extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkillHeal()
@@ -85,7 +86,7 @@ class Legend extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkillElite()
@@ -95,7 +96,7 @@ class Legend extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getSkillUtilities()

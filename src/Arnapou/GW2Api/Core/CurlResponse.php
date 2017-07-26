@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Core;
 
 class CurlResponse
@@ -22,13 +23,13 @@ class CurlResponse
      *
      * @var array
      */
-    protected $info = array();
+    protected $info = [];
 
     /**
      *
      * @var array
      */
-    protected $headers = array();
+    protected $headers = [];
 
     /**
      *
@@ -46,7 +47,7 @@ class CurlResponse
      *
      * @var array
      */
-    protected $curlErrorCodes = array(
+    protected $curlErrorCodes = [
         1  => 'CURLE_UNSUPPORTED_PROTOCOL',
         2  => 'CURLE_FAILED_INIT',
         3  => 'CURLE_URL_MALFORMAT',
@@ -123,8 +124,8 @@ class CurlResponse
         85 => 'CURLE_RTSP_CSEQ_ERROR',
         86 => 'CURLE_RTSP_SESSION_ERROR',
         87 => 'CURLE_FTP_BAD_FILE_LIST',
-        88 => 'CURLE_CHUNK_FAILED'
-    );
+        88 => 'CURLE_CHUNK_FAILED',
+    ];
 
     /**
      *
@@ -139,7 +140,7 @@ class CurlResponse
     protected $curlError = null;
 
     /**
-     * 
+     *
      * @param Curl $curl
      */
     public function __construct(Curl $curl)
@@ -159,7 +160,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @param string $response
      */
     protected function parseResponse(&$response)
@@ -188,7 +189,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getHeaders()
@@ -197,7 +198,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return string|null
      */
     public function getHeader($directive)
@@ -210,7 +211,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getContent()
@@ -219,7 +220,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return int
      */
     public function getErrorCode()
@@ -228,7 +229,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return string|null
      */
     public function getErrorTitle()
@@ -243,7 +244,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return string|null
      */
     public function getErrorDetail()
@@ -252,8 +253,9 @@ class CurlResponse
     }
 
     /**
-     * 
-     * @return string The request string sent. For this to work, add the CURLINFO_HEADER_OUT option to the handle by calling curl_setopt()
+     *
+     * @return string The request string sent. For this to work, add the CURLINFO_HEADER_OUT option to the handle by
+     *                calling curl_setopt()
      */
     public function getInfoRequestHeader()
     {
@@ -261,8 +263,8 @@ class CurlResponse
     }
 
     /**
-     * 
-     * @return mixed 
+     *
+     * @return mixed
      */
     public function getInfoCertinfo()
     {
@@ -270,7 +272,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Time in seconds of all redirection steps before final transaction was started
      */
     public function getInfoRedirectTime()
@@ -279,7 +281,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Time in seconds until the first byte is about to be transferred
      */
     public function getInfoStartTransferTime()
@@ -288,7 +290,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Specified size of upload
      */
     public function getInfoUploadContentLength()
@@ -297,7 +299,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed content-length of download, read from Content-Length: field
      */
     public function getInfoDownloadContentLength()
@@ -306,7 +308,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Average upload speed
      */
     public function getInfoSpeedUpload()
@@ -315,7 +317,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Average download speed
      */
     public function getInfoSpeedDownload()
@@ -324,7 +326,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return int Total number of bytes downloaded
      */
     public function getInfoSizeDownload()
@@ -333,7 +335,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return int Total number of bytes uploaded
      */
     public function getInfoSizeUpload()
@@ -342,7 +344,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Time in seconds from start until just before file transfer begins
      */
     public function getInfoPreTransferTime()
@@ -351,7 +353,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Time in seconds it took to establish the connection
      */
     public function getInfoConnectTime()
@@ -360,7 +362,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Time in seconds until name resolving was complete
      */
     public function getInfoNamelookupTime()
@@ -369,7 +371,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Total transaction time in seconds for last transfer
      */
     public function getInfoTotalTime()
@@ -378,7 +380,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Number of redirects
      */
     public function getInfoRedirectCount()
@@ -387,7 +389,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Result of SSL certification verification requested by setting CURLOPT_SSL_VERIFYPEER
      */
     public function getInfoSslVerifyResult()
@@ -396,7 +398,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Remote time of the retrieved document, if -1 is returned the time of the document is unknown
      */
     public function getInfoFiletime()
@@ -405,7 +407,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Last effective URL
      */
     public function getInfoEffectiveUrl()
@@ -414,8 +416,9 @@ class CurlResponse
     }
 
     /**
-     * 
-     * @return mixed Content-Type: of the requested document, NULL indicates server did not send valid Content-Type: header
+     *
+     * @return mixed Content-Type: of the requested document, NULL indicates server did not send valid Content-Type:
+     *               header
      */
     public function getInfoContentType()
     {
@@ -423,16 +426,16 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Last received HTTP code
      */
     public function getInfoHttpCode()
     {
-        return (int) $this->getInfo('http_code');
+        return (int)$this->getInfo('http_code');
     }
 
     /**
-     * 
+     *
      * @return mixed Total size of all headers received
      */
     public function getInfoHeaderSize()
@@ -441,7 +444,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @return mixed Total size of issued requests, currently only for HTTP requests
      */
     public function getInfoRequestSize()
@@ -450,7 +453,7 @@ class CurlResponse
     }
 
     /**
-     * 
+     *
      * @param string $key
      * @return string|null
      */

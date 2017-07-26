@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -79,7 +80,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getProfession()
@@ -91,7 +92,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getSpecializations()
@@ -100,7 +101,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkill($number)
@@ -118,7 +119,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkillHeal()
@@ -127,7 +128,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Skill
      */
     public function getSkillElite()
@@ -136,7 +137,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getSkillUtilities()
@@ -145,7 +146,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getLegends()
@@ -154,7 +155,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getPets()
@@ -163,7 +164,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getPetsTerrestrial()
@@ -172,7 +173,7 @@ class Build extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getPetsAquatic()

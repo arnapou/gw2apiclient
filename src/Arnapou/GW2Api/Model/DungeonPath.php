@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -18,7 +19,7 @@ class DungeonPath extends AbstractObject
     use UnlockTrait;
 
     /**
-     * 
+     *
      * @return string
      */
     public function getId()
@@ -27,7 +28,7 @@ class DungeonPath extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return integer
      */
     public function getNumber()
@@ -36,7 +37,7 @@ class DungeonPath extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getName()
@@ -45,7 +46,7 @@ class DungeonPath extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

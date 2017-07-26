@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Storage;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -77,7 +78,7 @@ abstract class AbstractStorage implements StorageInterface
     {
         $key = $this->getKey($lang, $name);
         if ($id && !isset($this->cached[$key], $this->cached[$key][$id])) {
-            $this->prepared[$key][$id] = (string) $id;
+            $this->prepared[$key][$id] = (string)$id;
         }
     }
 

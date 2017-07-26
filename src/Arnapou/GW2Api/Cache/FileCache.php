@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Cache;
 
 use \FilesystemIterator;
@@ -21,7 +22,7 @@ class FileCache implements CacheInterface
      *
      * @var string
      */
-    protected $cachePath = array();
+    protected $cachePath = [];
 
     /**
      *
@@ -42,7 +43,7 @@ class FileCache implements CacheInterface
     protected $opcacheInvalidateExists;
 
     /**
-     * 
+     *
      * @param string $path
      */
     public function __construct($path)
@@ -81,7 +82,8 @@ class FileCache implements CacheInterface
         $flags    = RecursiveIteratorIterator::LEAVES_ONLY;
         $iterator = new RecursiveIteratorIterator($directoryIterator, $flags);
         $time     = time();
-        foreach ($iterator as /* @var $file \SplFileInfo */ $file) {
+        foreach ($iterator as /* @var $file \SplFileInfo */
+                 $file) {
             if ($file->getExtension() == 'php') {
                 include $file->getPathname();
                 if ($expires != 0 && $expires < $time) {
@@ -92,13 +94,13 @@ class FileCache implements CacheInterface
     }
 
     /**
-     * Set the probability for the garbage collector to clean expired 
+     * Set the probability for the garbage collector to clean expired
      * data (gcProbability/gcDivisor) when the script finishes.
-     * 
+     *
      * If gcProbability = 0 then the garbage collector will never run.
-     * 
+     *
      * If gcProbability > gcDivisor then the garbage collector will always run.
-     * 
+     *
      * @param int $gcProbability
      * @param int $gcDivisor
      */
@@ -115,7 +117,7 @@ class FileCache implements CacheInterface
     }
 
     /**
-     * 
+     *
      * @param string $key
      * @return type
      */
@@ -163,7 +165,7 @@ class FileCache implements CacheInterface
     }
 
     /**
-     * 
+     *
      * @param string $path
      */
     protected function directoryCreateIfNotExists($path)

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -25,7 +26,7 @@ class PvpDivision extends AbstractObject
     const FLAG_REPEATABLE      = 'Repeatable';
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTiers()
@@ -34,7 +35,7 @@ class PvpDivision extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getFlags()
@@ -43,12 +44,12 @@ class PvpDivision extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @param string $flag
      * @return boolean
      */
     public function hasFlag($flag)
     {
-        return in_array($flag, (array) $this->getFlags());
+        return in_array($flag, (array)$this->getFlags());
     }
 }

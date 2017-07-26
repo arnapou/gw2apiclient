@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -22,8 +23,8 @@ class PvpGame extends AbstractObject
     const RESULT_VICTORY = 'Victory';
     const RESULT_DEFEAT  = 'Defeat';
     // teams
-    const TEAM_RED       = 'Red';
-    const TEAM_BLUE      = 'Blue';
+    const TEAM_RED  = 'Red';
+    const TEAM_BLUE = 'Blue';
 
     /**
      *
@@ -47,7 +48,7 @@ class PvpGame extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return Map
      */
     public function getMap()
@@ -56,7 +57,7 @@ class PvpGame extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function isVictory()
@@ -65,7 +66,7 @@ class PvpGame extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getDateStarted()
@@ -74,7 +75,7 @@ class PvpGame extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getDateEnded()
@@ -83,7 +84,7 @@ class PvpGame extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getDuration()
@@ -92,7 +93,7 @@ class PvpGame extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getScoreBlue()
@@ -101,7 +102,7 @@ class PvpGame extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getScoreRed()

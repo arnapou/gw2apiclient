@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  * @method integer getId()
  * @method string getSize()
  * @method string getCoins()
@@ -39,7 +40,7 @@ class GuildStash extends AbstractObject
     protected $stashprice;
 
     /**
-     * 
+     *
      * @param array $data
      */
     protected function setData($data)
@@ -59,7 +60,7 @@ class GuildStash extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getInventorySlots()
@@ -68,7 +69,7 @@ class GuildStash extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return GuildUpgrade
      */
     public function getUpgrade()
@@ -77,7 +78,7 @@ class GuildStash extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getStashPrice()
@@ -87,7 +88,8 @@ class GuildStash extends AbstractObject
                 'buy'  => $this->getCoins(),
                 'sell' => $this->getCoins(),
             ];
-            foreach ($this->inventorySlots as /* @var $item InventorySlot */ $item) {
+            foreach ($this->inventorySlots as /* @var $item InventorySlot */
+                     $item) {
                 if ($item && empty($item->getBinding())) {
                     $price                    = $item->getPrice();
                     $this->stashprice['buy']  += $price['buy_total'];

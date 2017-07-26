@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 use Arnapou\GW2Api\Exception\Exception;
@@ -59,7 +60,7 @@ abstract class AbstractStoredObject extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getApiMethod()
@@ -68,7 +69,7 @@ abstract class AbstractStoredObject extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return boolean
      */
     public function isEmpty()

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Cache;
 
 class PrefixCacheDecorator implements CacheInterface
@@ -25,8 +26,8 @@ class PrefixCacheDecorator implements CacheInterface
     protected $cache;
 
     /**
-     * 
-     * @param string $prefix
+     *
+     * @param string         $prefix
      * @param CacheInterface $cache
      */
     public function __construct($prefix, CacheInterface $cache)

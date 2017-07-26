@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -42,7 +43,7 @@ class Color extends AbstractStoredObject
     const CATEGORY_RARITY_RARE      = 'Rare';
 
     /**
-     * 
+     *
      * @return string
      */
     public function getBaseRgbHex()
@@ -55,7 +56,7 @@ class Color extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return float
      */
     public function getCategoryBrightness($category)
@@ -64,7 +65,7 @@ class Color extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return float
      */
     public function getCategoryContrast($category)
@@ -73,7 +74,7 @@ class Color extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return float
      */
     public function getCategoryHue($category)
@@ -82,7 +83,7 @@ class Color extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return float
      */
     public function getCategorySaturation($category)
@@ -91,7 +92,7 @@ class Color extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return float
      */
     public function getCategoryLightness($category)
@@ -100,7 +101,7 @@ class Color extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCategoryRgb($category)
@@ -109,7 +110,7 @@ class Color extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getCategoryRgbHex($category)

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
@@ -43,7 +44,7 @@ class WvwMatch extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getWorlds()
@@ -53,7 +54,7 @@ class WvwMatch extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAllWorlds()
@@ -63,7 +64,7 @@ class WvwMatch extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string YYYY-MM-DD HH:MM UTC format
      */
     public function getStartTime()
@@ -73,7 +74,7 @@ class WvwMatch extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string YYYY-MM-DD HH:MM UTC format
      */
     public function getEndTime()

@@ -7,11 +7,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/specializations
- * 
+ *
  * @method getName()
  * @method getIcon()
  * @method getDescription()
@@ -31,7 +32,7 @@ class SpecializationTrait extends AbstractStoredObject
     protected $skills = [];
 
     /**
-     * 
+     *
      * @return array
      */
     public function getSkills()
@@ -40,7 +41,7 @@ class SpecializationTrait extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getFacts()
@@ -49,7 +50,7 @@ class SpecializationTrait extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getTraitedFacts()
@@ -58,7 +59,7 @@ class SpecializationTrait extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()

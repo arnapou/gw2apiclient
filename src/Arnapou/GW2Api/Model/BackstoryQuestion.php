@@ -7,10 +7,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Arnapou\GW2Api\Model;
 
 /**
- * 
+ *
  * @method string  getTitle()
  * @method string  getDescription()
  * @method string  getOrder()
@@ -25,7 +26,7 @@ class BackstoryQuestion extends AbstractStoredObject
     protected $answers = [];
 
     /**
-     * 
+     *
      * @return array
      */
     public function getRaces()
@@ -34,7 +35,7 @@ class BackstoryQuestion extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getProfessions()
@@ -43,7 +44,7 @@ class BackstoryQuestion extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function getAnswersIds()
@@ -52,7 +53,7 @@ class BackstoryQuestion extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getAnswers()
@@ -73,7 +74,7 @@ class BackstoryQuestion extends AbstractStoredObject
     }
 
     /**
-     * 
+     *
      * @return string
      */
     public function __toString()
