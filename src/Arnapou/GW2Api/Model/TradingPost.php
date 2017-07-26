@@ -109,19 +109,21 @@ class TradingPost extends AbstractObject
                 $items = [];
                 foreach ($this->delivery['items'] as $item) {
                     if(isset($item['id'], $item['count'])) {
-                        $items[] = [
-                            'item'=> new Item($this->getEnvironment(), $item['id']),
-                            'item_id'=> $item['id'],
-                            'quantity'=> $item['count'],
-                            'created'=> null,
-                            'delivery'=> true,
-                        ];
+                        if(!isset($items[$item['id']])) {
+                            $items[$item['id']] = [
+                                'item'=> new Item($this->getEnvironment(), $item['id']),
+                                'item_id'=> $item['id'],
+                                'quantity'=> $item['count'],
+                            ];
+                        } else {
+                            $items[$item['id']]['quantity'] += $item['count'];
+                        }
                     }
                 }
                 foreach ($items as &$item) {
                     $item['price'] = $item['item']->getPrice();
                 }
-                $this->deliveryItems = $items;
+                $this->deliveryItems = array_values($items);
             }
         }
         return $this->deliveryItems;
