@@ -434,7 +434,7 @@ class ClientVersion2 extends AbstractClientVersion
      */
     public function apiCommerceDelivery()
     {
-        return $this->request('commerce/delivery');
+        return $this->requestAccessToken('commerce/delivery');
     }
 
     /**

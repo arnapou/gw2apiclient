@@ -40,6 +40,18 @@ class TradingPost extends AbstractObject
     protected $historySells;
 
     /**
+     *
+     * @var array
+     */
+    protected $delivery;
+
+    /**
+     *
+     * @var array
+     */
+    protected $deliveryItems;
+
+    /**
      * 
      * @param array $items
      * @return array
@@ -63,6 +75,55 @@ class TradingPost extends AbstractObject
             }
         }
         return array_values($return);
+    }
+
+    /**
+     *
+     */
+    protected function checkDelivery()
+    {
+        if (!isset($this->delivery)) {
+            $this->delivery = $this->getEnvironment()->getClientVersion2()->apiCommerceDelivery();
+        }
+    }
+
+    /**
+     * @return mixed|null
+     */
+    public function getDeliveryAmount()
+    {
+        $this->checkDelivery();
+        return isset($this->delivery['coins']) ? $this->delivery['coins'] : null;
+    }
+
+    /**
+     * @return mixed|null
+     */
+    public function getDeliveryItems()
+    {
+        $this->checkDelivery();
+        if (!isset($this->deliveryItems)) {
+            $this->deliveryItems = [];
+            if (isset($this->delivery['items']) && \is_array($this->delivery['items'])) {
+                $items = [];
+                foreach ($this->delivery['items'] as $item) {
+                    if(isset($item['id'], $item['count'])) {
+                        $items[] = [
+                            'item'=> new Item($this->getEnvironment(), $item['id']),
+                            'item_id'=> $item['id'],
+                            'quantity'=> $item['count'],
+                            'created'=> null,
+                            'delivery'=> true,
+                        ];
+                    }
+                }
+                foreach ($items as &$item) {
+                    $item['price'] = $item['item']->getPrice();
+                }
+                $this->deliveryItems = $items;
+            }
+        }
+        return $this->deliveryItems;
     }
 
     /**
