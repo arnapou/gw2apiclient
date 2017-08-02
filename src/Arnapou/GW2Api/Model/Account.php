@@ -1076,9 +1076,16 @@ class Account extends AbstractObject
         $sum = 0;
         if ($this->hasPermission(self::PERMISSION_PROGRESSION)) {
             $sum = 0;
-            foreach ($this->getMasteries() as /* @var $mastery Mastery */
-                     $mastery) {
-                $sum += $mastery->getSpentPoints();
+            try {
+                foreach ($this->getMasteries() as /* @var $mastery Mastery */
+                         $mastery) {
+                    $sum += $mastery->getSpentPoints();
+                }
+            } catch (\Exception $e) {
+                $data = $this->getEnvironment()->getClientVersion2()->apiAccountMasteryPoints();
+                foreach($data['totals'] as $item) {
+                    $sum += $item['spent'];
+                }
             }
         }
         return $sum;
