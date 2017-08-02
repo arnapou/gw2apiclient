@@ -63,7 +63,8 @@ class Title extends AbstractStoredObject
      */
     public function __toString()
     {
-        return $this->getName();
+        $name = $this->getName();
+        return $name ?? 'No title';
     }
 
     public function getApiName()
