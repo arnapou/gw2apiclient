@@ -50,16 +50,25 @@
     ),
     4 => 
     array (
-      'id' => 182,
+      'id' => 132,
+      'name' => 'Oysters_with_Spicy_Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    5 => 
+    array (
+      'id' => 189,
       'name' => 'Blessing Of Bear',
       'type' => 'Food',
       'rarity' => 'Common',
       'level' => 41,
       'pvx' => 6,
     ),
-    5 => 
+    6 => 
     array (
-      'id' => 420,
+      'id' => 427,
       'name' => 'Prickly Pear Stuffed Nopale',
       'type' => 'Food',
       'rarity' => 'Fine',
@@ -116,7 +125,7 @@
   array (
     0 => 
     array (
-      'id' => 58,
+      'id' => 59,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Annulment',
@@ -126,7 +135,7 @@
     ),
     1 => 
     array (
-      'id' => 59,
+      'id' => 60,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Compounding',
@@ -136,7 +145,7 @@
     ),
     2 => 
     array (
-      'id' => 60,
+      'id' => 61,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Confusion',
@@ -146,7 +155,7 @@
     ),
     3 => 
     array (
-      'id' => 61,
+      'id' => 62,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Courage',
@@ -156,7 +165,7 @@
     ),
     4 => 
     array (
-      'id' => 62,
+      'id' => 63,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Enhancement',
@@ -166,7 +175,7 @@
     ),
     5 => 
     array (
-      'id' => 63,
+      'id' => 64,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Escape',
@@ -176,7 +185,7 @@
     ),
     6 => 
     array (
-      'id' => 64,
+      'id' => 65,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Exploitation',
@@ -186,7 +195,7 @@
     ),
     7 => 
     array (
-      'id' => 65,
+      'id' => 66,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Exposure',
@@ -196,7 +205,7 @@
     ),
     8 => 
     array (
-      'id' => 67,
+      'id' => 68,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Misery',
@@ -206,7 +215,7 @@
     ),
     9 => 
     array (
-      'id' => 68,
+      'id' => 69,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Opportunity',
@@ -216,7 +225,7 @@
     ),
     10 => 
     array (
-      'id' => 69,
+      'id' => 70,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Purging',
@@ -226,7 +235,7 @@
     ),
     11 => 
     array (
-      'id' => 70,
+      'id' => 71,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Revocation',
@@ -236,7 +245,7 @@
     ),
     12 => 
     array (
-      'id' => 71,
+      'id' => 72,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Savagery',
@@ -246,7 +255,7 @@
     ),
     13 => 
     array (
-      'id' => 72,
+      'id' => 73,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Separation',
@@ -256,7 +265,7 @@
     ),
     14 => 
     array (
-      'id' => 73,
+      'id' => 74,
       'type' => 'Sigil',
       'rarity' => 'Exotic',
       'name' => 'Superior Sigil of Stagnation',
@@ -266,7 +275,7 @@
     ),
     15 => 
     array (
-      'id' => 169,
+      'id' => 170,
       'type' => 'Rune',
       'rarity' => 'Exotic',
       'name' => 'Superior Rune of the Lynx',
@@ -276,7 +285,7 @@
     ),
     16 => 
     array (
-      'id' => 204,
+      'id' => 205,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Malign Infusion',
@@ -285,7 +294,7 @@
     ),
     17 => 
     array (
-      'id' => 205,
+      'id' => 206,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Mighty Infusion',
@@ -294,7 +303,7 @@
     ),
     18 => 
     array (
-      'id' => 206,
+      'id' => 207,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Precise Infusion',
@@ -303,7 +312,7 @@
     ),
     19 => 
     array (
-      'id' => 207,
+      'id' => 208,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Malign Infusion',
@@ -312,7 +321,7 @@
     ),
     20 => 
     array (
-      'id' => 208,
+      'id' => 209,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Mighty Infusion',
@@ -321,7 +330,7 @@
     ),
     21 => 
     array (
-      'id' => 209,
+      'id' => 210,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Precise Infusion',
@@ -330,7 +339,7 @@
     ),
     22 => 
     array (
-      'id' => 213,
+      'id' => 214,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Healing Infusion',
@@ -339,7 +348,7 @@
     ),
     23 => 
     array (
-      'id' => 214,
+      'id' => 215,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Resilient Infusion',
@@ -348,7 +357,7 @@
     ),
     24 => 
     array (
-      'id' => 215,
+      'id' => 216,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Vital Infusion',
@@ -357,7 +366,7 @@
     ),
     25 => 
     array (
-      'id' => 216,
+      'id' => 217,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Healing Infusion',
@@ -366,7 +375,7 @@
     ),
     26 => 
     array (
-      'id' => 217,
+      'id' => 218,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Resilient Infusion',
@@ -375,7 +384,7 @@
     ),
     27 => 
     array (
-      'id' => 218,
+      'id' => 219,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Vital Infusion',
@@ -384,7 +393,7 @@
     ),
     28 => 
     array (
-      'id' => 222,
+      'id' => 223,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Gilded Infusion',
@@ -393,7 +402,7 @@
     ),
     29 => 
     array (
-      'id' => 223,
+      'id' => 224,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Magical Infusion',
@@ -402,7 +411,7 @@
     ),
     30 => 
     array (
-      'id' => 224,
+      'id' => 225,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Experienced Infusion',
@@ -411,7 +420,7 @@
     ),
     31 => 
     array (
-      'id' => 225,
+      'id' => 226,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Karmic Infusion',
@@ -420,7 +429,7 @@
     ),
     32 => 
     array (
-      'id' => 226,
+      'id' => 227,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Versatile Simple Infusion',
@@ -429,7 +438,7 @@
     ),
     33 => 
     array (
-      'id' => 227,
+      'id' => 228,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Malign Infusion',
@@ -438,7 +447,7 @@
     ),
     34 => 
     array (
-      'id' => 228,
+      'id' => 229,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Mighty Infusion',
@@ -447,7 +456,7 @@
     ),
     35 => 
     array (
-      'id' => 229,
+      'id' => 230,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Precise Infusion',
@@ -456,7 +465,7 @@
     ),
     36 => 
     array (
-      'id' => 230,
+      'id' => 231,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Healing Infusion',
@@ -465,7 +474,7 @@
     ),
     37 => 
     array (
-      'id' => 231,
+      'id' => 232,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Resilient Infusion',
@@ -474,7 +483,7 @@
     ),
     38 => 
     array (
-      'id' => 232,
+      'id' => 233,
       'type' => 'Infusion',
       'rarity' => 'Fine',
       'name' => 'Versatile Vital Infusion',

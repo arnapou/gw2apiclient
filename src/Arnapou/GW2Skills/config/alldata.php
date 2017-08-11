@@ -1,8617 +1,9 @@
 <?php return array (
-  'buffs' => 
-  array (
-    0 => 
-    array (
-      'id' => 1,
-      'name' => 'Potent Master Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    1 => 
-    array (
-      'id' => 2,
-      'name' => 'Toxic Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    2 => 
-    array (
-      'id' => 3,
-      'name' => 'Hylek Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    3 => 
-    array (
-      'id' => 4,
-      'name' => 'Maintenance Oil Station',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    4 => 
-    array (
-      'id' => 5,
-      'name' => 'Bountiful Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    5 => 
-    array (
-      'id' => 6,
-      'name' => 'Furious Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    6 => 
-    array (
-      'id' => 7,
-      'name' => 'Magnanimous Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    7 => 
-    array (
-      'id' => 8,
-      'name' => 'Master Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    8 => 
-    array (
-      'id' => 9,
-      'name' => 'Quality Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    9 => 
-    array (
-      'id' => 10,
-      'name' => 'Artisan Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    10 => 
-    array (
-      'id' => 11,
-      'name' => 'Standard Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    11 => 
-    array (
-      'id' => 12,
-      'name' => 'Journeyman Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    12 => 
-    array (
-      'id' => 13,
-      'name' => 'Apprentice Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    13 => 
-    array (
-      'id' => 14,
-      'name' => 'Rough Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    14 => 
-    array (
-      'id' => 15,
-      'name' => 'Simple Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    15 => 
-    array (
-      'id' => 16,
-      'name' => 'Standard Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    16 => 
-    array (
-      'id' => 17,
-      'name' => 'Quality Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    17 => 
-    array (
-      'id' => 18,
-      'name' => 'Hardened Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    18 => 
-    array (
-      'id' => 19,
-      'name' => 'Superior Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    19 => 
-    array (
-      'id' => 20,
-      'name' => 'Toxic Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    20 => 
-    array (
-      'id' => 21,
-      'name' => 'Ogre Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    21 => 
-    array (
-      'id' => 22,
-      'name' => 'Sharpening Stone Station',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    22 => 
-    array (
-      'id' => 23,
-      'name' => 'Bountiful Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    23 => 
-    array (
-      'id' => 24,
-      'name' => 'Furious Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    24 => 
-    array (
-      'id' => 25,
-      'name' => 'Magnanimous Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    25 => 
-    array (
-      'id' => 26,
-      'name' => 'Potent Superior Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    26 => 
-    array (
-      'id' => 27,
-      'name' => 'Potent Master Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    27 => 
-    array (
-      'id' => 28,
-      'name' => 'Toxic Focusing Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    28 => 
-    array (
-      'id' => 29,
-      'name' => 'Krait Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    29 => 
-    array (
-      'id' => 30,
-      'name' => 'Tuning Crystal Station',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    30 => 
-    array (
-      'id' => 31,
-      'name' => 'Bountiful Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    31 => 
-    array (
-      'id' => 32,
-      'name' => 'Furious Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    32 => 
-    array (
-      'id' => 33,
-      'name' => 'Magnanimous Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    33 => 
-    array (
-      'id' => 34,
-      'name' => 'Master Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    34 => 
-    array (
-      'id' => 35,
-      'name' => 'Quality Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    35 => 
-    array (
-      'id' => 36,
-      'name' => 'Artisan Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    36 => 
-    array (
-      'id' => 37,
-      'name' => 'Standard Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    37 => 
-    array (
-      'id' => 38,
-      'name' => 'Journeyman Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    38 => 
-    array (
-      'id' => 39,
-      'name' => 'Apprentice Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    39 => 
-    array (
-      'id' => 40,
-      'name' => 'Writ of Masterful Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    40 => 
-    array (
-      'id' => 41,
-      'name' => 'Writ of Masterful Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    41 => 
-    array (
-      'id' => 42,
-      'name' => 'Writ of Masterful Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    42 => 
-    array (
-      'id' => 43,
-      'name' => 'Writ of Learned Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    43 => 
-    array (
-      'id' => 44,
-      'name' => 'Writ of Learned Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    44 => 
-    array (
-      'id' => 45,
-      'name' => 'Writ of Learned Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    45 => 
-    array (
-      'id' => 46,
-      'name' => 'Writ of Calculated Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    46 => 
-    array (
-      'id' => 47,
-      'name' => 'Writ of Calculated Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    47 => 
-    array (
-      'id' => 48,
-      'name' => 'Writ of Calculated Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    48 => 
-    array (
-      'id' => 49,
-      'name' => 'Writ of Studied Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    49 => 
-    array (
-      'id' => 50,
-      'name' => 'Writ of Studied Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    50 => 
-    array (
-      'id' => 51,
-      'name' => 'Writ of Studied Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    51 => 
-    array (
-      'id' => 52,
-      'name' => 'Writ of Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    52 => 
-    array (
-      'id' => 53,
-      'name' => 'Writ of Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    53 => 
-    array (
-      'id' => 54,
-      'name' => 'Writ of Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    54 => 
-    array (
-      'id' => 55,
-      'name' => 'Writ of Basic Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    55 => 
-    array (
-      'id' => 56,
-      'name' => 'Writ of Basic Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    56 => 
-    array (
-      'id' => 57,
-      'name' => 'Writ of Basic Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    57 => 
-    array (
-      'id' => 58,
-      'name' => 'Onion Ring',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    58 => 
-    array (
-      'id' => 59,
-      'name' => 'Cinnamon Apple',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    59 => 
-    array (
-      'id' => 60,
-      'name' => 'Bowl of Apple Sauce',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    60 => 
-    array (
-      'id' => 61,
-      'name' => 'Beetletun Omelette',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    61 => 
-    array (
-      'id' => 62,
-      'name' => 'Meat Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    62 => 
-    array (
-      'id' => 63,
-      'name' => 'Blueberry Tart',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    63 => 
-    array (
-      'id' => 64,
-      'name' => 'Strawberries and Biscuts',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    64 => 
-    array (
-      'id' => 65,
-      'name' => 'Lemon Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    65 => 
-    array (
-      'id' => 66,
-      'name' => 'Strawberry Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    66 => 
-    array (
-      'id' => 67,
-      'name' => 'Candy Corn Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    67 => 
-    array (
-      'id' => 68,
-      'name' => 'Clam Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    68 => 
-    array (
-      'id' => 69,
-      'name' => 'Caramel',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    69 => 
-    array (
-      'id' => 70,
-      'name' => 'Caramel Apple',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    70 => 
-    array (
-      'id' => 71,
-      'name' => 'Candied Apple',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    71 => 
-    array (
-      'id' => 72,
-      'name' => 'Chocolate Banana',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    72 => 
-    array (
-      'id' => 73,
-      'name' => 'Strawberry Ghost',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    73 => 
-    array (
-      'id' => 74,
-      'name' => 'Chocolate Cherry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    74 => 
-    array (
-      'id' => 75,
-      'name' => 'Chocolate Orange',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    75 => 
-    array (
-      'id' => 76,
-      'name' => 'Chocolate Raspberry Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    76 => 
-    array (
-      'id' => 77,
-      'name' => 'Chocolate Omnomberry Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    77 => 
-    array (
-      'id' => 78,
-      'name' => 'Cherry Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    78 => 
-    array (
-      'id' => 79,
-      'name' => 'Ginger Pear Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    79 => 
-    array (
-      'id' => 80,
-      'name' => 'Glazed Pear Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    80 => 
-    array (
-      'id' => 81,
-      'name' => 'Peach Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    81 => 
-    array (
-      'id' => 82,
-      'name' => 'Glazed Peach Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    82 => 
-    array (
-      'id' => 83,
-      'name' => 'Dragonfly Cupcake',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    83 => 
-    array (
-      'id' => 84,
-      'name' => 'Omnomberry Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    84 => 
-    array (
-      'id' => 85,
-      'name' => 'Yam Fritter',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    85 => 
-    array (
-      'id' => 86,
-      'name' => 'Chickpea Fritter',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    86 => 
-    array (
-      'id' => 87,
-      'name' => 'Eggplant Fritter',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    87 => 
-    array (
-      'id' => 88,
-      'name' => 'Cup of Lotus Fries',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    88 => 
-    array (
-      'id' => 89,
-      'name' => 'Spicy Pumpkin Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    89 => 
-    array (
-      'id' => 90,
-      'name' => 'Cherry Almond Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    90 => 
-    array (
-      'id' => 91,
-      'name' => 'Piece of Candy Corn Almond Brittle',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    91 => 
-    array (
-      'id' => 92,
-      'name' => 'Orange Coconut Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    92 => 
-    array (
-      'id' => 93,
-      'name' => 'Raspberry Peach Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    93 => 
-    array (
-      'id' => 94,
-      'name' => 'Omnomberry Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    94 => 
-    array (
-      'id' => 95,
-      'name' => 'Cooked Fish Steak',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    95 => 
-    array (
-      'id' => 96,
-      'name' => 'Cup of Potato Fries',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    96 => 
-    array (
-      'id' => 97,
-      'name' => 'Mashed Potato',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    97 => 
-    array (
-      'id' => 98,
-      'name' => 'Bowl of Outrider Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 24,
-      'pvx' => 6,
-    ),
-    98 => 
-    array (
-      'id' => 99,
-      'name' => 'Turnip Casserole',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    99 => 
-    array (
-      'id' => 100,
-      'name' => 'Bowl of Mashed Yams',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    100 => 
-    array (
-      'id' => 101,
-      'name' => 'Bowl of Spiced Mashed Yams',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    101 => 
-    array (
-      'id' => 102,
-      'name' => 'Roasted Rutabaga',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    102 => 
-    array (
-      'id' => 103,
-      'name' => 'Roasted Parsnip',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    103 => 
-    array (
-      'id' => 104,
-      'name' => 'Bowl of Roasted Lotus Root',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    104 => 
-    array (
-      'id' => 105,
-      'name' => 'Cooked Crawdad',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    105 => 
-    array (
-      'id' => 106,
-      'name' => 'Slice of Buttered Toast',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    106 => 
-    array (
-      'id' => 107,
-      'name' => 'Cheese Triangle',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    107 => 
-    array (
-      'id' => 108,
-      'name' => 'Slice of Cinnamon Toast',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    108 => 
-    array (
-      'id' => 109,
-      'name' => 'Slice of Garlic Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    109 => 
-    array (
-      'id' => 110,
-      'name' => 'Loaf of Rosemary Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    110 => 
-    array (
-      'id' => 111,
-      'name' => 'Slice of Spiced Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    111 => 
-    array (
-      'id' => 112,
-      'name' => 'Loaf of Tarragon Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    112 => 
-    array (
-      'id' => 113,
-      'name' => 'Loaf of Saffron Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    113 => 
-    array (
-      'id' => 115,
-      'name' => 'Bowl of Wurm Meat Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    114 => 
-    array (
-      'id' => 116,
-      'name' => 'Jug of Autumn Nectar',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    115 => 
-    array (
-      'id' => 117,
-      'name' => 'Bowl of Basic Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    116 => 
-    array (
-      'id' => 118,
-      'name' => 'Bowl of Simple Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    117 => 
-    array (
-      'id' => 119,
-      'name' => 'Moa Egg Omelet',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 13,
-      'pvx' => 6,
-    ),
-    118 => 
-    array (
-      'id' => 120,
-      'name' => 'Spinach Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    119 => 
-    array (
-      'id' => 121,
-      'name' => 'Bowl of Clam Chowder',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    120 => 
-    array (
-      'id' => 122,
-      'name' => 'Bowl of Dilled Clam Chowder',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    121 => 
-    array (
-      'id' => 123,
-      'name' => 'Bowl of Chickpea and Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    122 => 
-    array (
-      'id' => 124,
-      'name' => 'Bowl of Poultry and Leek Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    123 => 
-    array (
-      'id' => 125,
-      'name' => 'Bowl of Lemongrass Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    124 => 
-    array (
-      'id' => 126,
-      'name' => 'Bowl of Red Meat Stock',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    125 => 
-    array (
-      'id' => 127,
-      'name' => 'Strip of Dolyak Jerky',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    126 => 
-    array (
-      'id' => 128,
-      'name' => 'Bowl of Simple Meat Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    127 => 
-    array (
-      'id' => 129,
-      'name' => 'Bowl of Onion Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    128 => 
-    array (
-      'id' => 130,
-      'name' => 'Poached Griffon Egg',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 18,
-      'pvx' => 6,
-    ),
-    129 => 
-    array (
-      'id' => 131,
-      'name' => 'Bowl of Hearty Red Meat Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    130 => 
-    array (
-      'id' => 132,
-      'name' => 'Bowl of Herbed Meat Stock',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    131 => 
-    array (
-      'id' => 133,
-      'name' => 'Bowl of Meat and Cabbage Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    132 => 
-    array (
-      'id' => 134,
-      'name' => 'Bowl of Cabbage Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    133 => 
-    array (
-      'id' => 135,
-      'name' => 'Bowl of Spiced Meat and Cabbage Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    134 => 
-    array (
-      'id' => 136,
-      'name' => 'Bowl of Meat and Winter Vegetable Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    135 => 
-    array (
-      'id' => 137,
-      'name' => 'Bowl of Orrian Truffle and Meat Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    136 => 
-    array (
-      'id' => 138,
-      'name' => 'Seraph Standard Ration',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    137 => 
-    array (
-      'id' => 139,
-      'name' => 'Stick of Cotton Candy',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    138 => 
-    array (
-      'id' => 140,
-      'name' => 'Apple Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    139 => 
-    array (
-      'id' => 141,
-      'name' => 'Bowl of Gelatinous Ooze Custard',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    140 => 
-    array (
-      'id' => 142,
-      'name' => 'Apple Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    141 => 
-    array (
-      'id' => 143,
-      'name' => 'Bowl of Candy Corn Custard',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    142 => 
-    array (
-      'id' => 144,
-      'name' => 'Heart-Shaped Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    143 => 
-    array (
-      'id' => 145,
-      'name' => 'Kastaz Roasted Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 17,
-      'pvx' => 6,
-    ),
-    144 => 
-    array (
-      'id' => 146,
-      'name' => 'Banana Cream Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    145 => 
-    array (
-      'id' => 147,
-      'name' => 'Shiverpeak Popper',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 33,
-      'pvx' => 6,
-    ),
-    146 => 
-    array (
-      'id' => 148,
-      'name' => 'Grape Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    147 => 
-    array (
-      'id' => 149,
-      'name' => 'Pirate Hard Tack',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 41,
-      'pvx' => 6,
-    ),
-    148 => 
-    array (
-      'id' => 150,
-      'name' => 'Pumpkin Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    149 => 
-    array (
-      'id' => 151,
-      'name' => 'Raspberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    150 => 
-    array (
-      'id' => 152,
-      'name' => 'Glazed Pumpkin Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    151 => 
-    array (
-      'id' => 153,
-      'name' => 'Peach Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    152 => 
-    array (
-      'id' => 154,
-      'name' => 'Mango Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    153 => 
-    array (
-      'id' => 155,
-      'name' => 'Dragon\'s Revelry Starcake',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    154 => 
-    array (
-      'id' => 156,
-      'name' => 'Grilled Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    155 => 
-    array (
-      'id' => 157,
-      'name' => 'Poultry Piccata',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    156 => 
-    array (
-      'id' => 158,
-      'name' => 'Strip of Venison Jerky',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
-      'pvx' => 6,
-    ),
-    157 => 
-    array (
-      'id' => 159,
-      'name' => 'Sage Stuffed Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    158 => 
-    array (
-      'id' => 160,
-      'name' => 'Dilled Poultry Piccata',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    159 => 
-    array (
-      'id' => 161,
-      'name' => 'Plate of Citrus Poultry with Almonds',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    160 => 
-    array (
-      'id' => 162,
-      'name' => 'Tarragon Stuffed Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    161 => 
-    array (
-      'id' => 163,
-      'name' => 'Dragonfish Candy',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    162 => 
-    array (
-      'id' => 164,
-      'name' => 'Plate of Lemongrass Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    163 => 
-    array (
-      'id' => 165,
-      'name' => 'Rabbit Offering',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    164 => 
-    array (
-      'id' => 166,
-      'name' => 'Slice of Watermelon',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    165 => 
-    array (
-      'id' => 167,
-      'name' => 'Bowl of Salsa',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    166 => 
-    array (
-      'id' => 168,
-      'name' => 'Bowl of Bean Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    167 => 
-    array (
-      'id' => 169,
-      'name' => 'Bowl of Avocado Salsa',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    168 => 
-    array (
-      'id' => 170,
-      'name' => 'Bowl of Chickpea Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    169 => 
-    array (
-      'id' => 171,
-      'name' => 'Bowl of Mango Salsa',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    170 => 
-    array (
-      'id' => 172,
-      'name' => 'Bowl of Fire Salsa',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    171 => 
-    array (
-      'id' => 173,
-      'name' => 'Rice Ball',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    172 => 
-    array (
-      'id' => 174,
-      'name' => 'T-Bone Steak',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    173 => 
-    array (
-      'id' => 175,
-      'name' => 'Grilled Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    174 => 
-    array (
-      'id' => 176,
-      'name' => 'Eda\'s Apple Pie',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    175 => 
-    array (
-      'id' => 177,
-      'name' => 'Bowl of Cold Wurm Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    176 => 
-    array (
-      'id' => 178,
-      'name' => 'Spicy Flank Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    177 => 
-    array (
-      'id' => 179,
-      'name' => 'Roasted Meaty Sandwich',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    178 => 
-    array (
-      'id' => 180,
-      'name' => 'Pepper Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    179 => 
-    array (
-      'id' => 181,
-      'name' => 'Stick of Mystery Meat',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
-      'pvx' => 6,
-    ),
-    180 => 
-    array (
-      'id' => 182,
-      'name' => 'Blessing Of Bear',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 41,
-      'pvx' => 6,
-    ),
-    181 => 
-    array (
-      'id' => 183,
-      'name' => 'Filet of Sesame Roasted Meat',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    182 => 
-    array (
-      'id' => 184,
-      'name' => 'Griffon Egg Omelet',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 47,
-      'pvx' => 6,
-    ),
-    183 => 
-    array (
-      'id' => 185,
-      'name' => 'Plate of Coriander Crusted Meat',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    184 => 
-    array (
-      'id' => 186,
-      'name' => 'Plate of Steak and Asparagus',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    185 => 
-    array (
-      'id' => 187,
-      'name' => 'Plate of Truffle Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    186 => 
-    array (
-      'id' => 188,
-      'name' => 'Spicy Lime Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    187 => 
-    array (
-      'id' => 189,
-      'name' => 'Plate of Citrus Clove Meat',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    188 => 
-    array (
-      'id' => 190,
-      'name' => 'Spicier Flank Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    189 => 
-    array (
-      'id' => 191,
-      'name' => 'Plate of Fire Flank Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    190 => 
-    array (
-      'id' => 192,
-      'name' => 'Filet of Rosemary Roasted Meat',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    191 => 
-    array (
-      'id' => 193,
-      'name' => 'Plate of Roast Meat with Mint Sauce',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    192 => 
-    array (
-      'id' => 194,
-      'name' => 'Plate of Roast Meat with Braised Leeks',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    193 => 
-    array (
-      'id' => 195,
-      'name' => 'Plate of Orrian Steak Frittes',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    194 => 
-    array (
-      'id' => 196,
-      'name' => 'Bowl of Marjory\'s Experimental Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    195 => 
-    array (
-      'id' => 197,
-      'name' => 'Grilled Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    196 => 
-    array (
-      'id' => 198,
-      'name' => 'Veggie Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    197 => 
-    array (
-      'id' => 199,
-      'name' => 'Cheese Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    198 => 
-    array (
-      'id' => 200,
-      'name' => 'Veggie Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    199 => 
-    array (
-      'id' => 201,
-      'name' => 'Sweet Bean Bun',
-      'type' => 'Food',
-      'rarity' => 'Exotic',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    200 => 
-    array (
-      'id' => 202,
-      'name' => 'Mushroom Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    201 => 
-    array (
-      'id' => 203,
-      'name' => 'Bowl of Fly Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    202 => 
-    array (
-      'id' => 204,
-      'name' => 'Fancy Veggie Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    203 => 
-    array (
-      'id' => 205,
-      'name' => 'Super Veggie Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    204 => 
-    array (
-      'id' => 206,
-      'name' => 'Koi Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    205 => 
-    array (
-      'id' => 207,
-      'name' => 'Rare Veggie Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    206 => 
-    array (
-      'id' => 208,
-      'name' => 'Prickly Pear Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    207 => 
-    array (
-      'id' => 209,
-      'name' => 'Bowl of Cactus Fruit Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    208 => 
-    array (
-      'id' => 210,
-      'name' => 'Grilled Portobello Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    209 => 
-    array (
-      'id' => 211,
-      'name' => 'Bowl of Mushroom Risotto',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    210 => 
-    array (
-      'id' => 212,
-      'name' => 'Bowl of Mushroom and Asparagus Risotto',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    211 => 
-    array (
-      'id' => 213,
-      'name' => 'Bowl of Truffle Risotto',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    212 => 
-    array (
-      'id' => 214,
-      'name' => 'Bowl of Creamy Portobello Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    213 => 
-    array (
-      'id' => 215,
-      'name' => 'Bowl of Fancy Creamy Mushroom Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    214 => 
-    array (
-      'id' => 216,
-      'name' => 'Bowl of Snow Truffle Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    215 => 
-    array (
-      'id' => 217,
-      'name' => 'Bowl of Orrian Truffle Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    216 => 
-    array (
-      'id' => 218,
-      'name' => 'Spinach Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    217 => 
-    array (
-      'id' => 219,
-      'name' => 'Deluxe Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    218 => 
-    array (
-      'id' => 220,
-      'name' => 'Horseradish Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    219 => 
-    array (
-      'id' => 221,
-      'name' => 'Spicy Cheeseburger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    220 => 
-    array (
-      'id' => 222,
-      'name' => 'Fancy Truffle Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    221 => 
-    array (
-      'id' => 223,
-      'name' => 'Hamburger',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    222 => 
-    array (
-      'id' => 224,
-      'name' => 'Bowl of Meaty Wurm Surprise',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    223 => 
-    array (
-      'id' => 225,
-      'name' => 'Bowl of Green Bean Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    224 => 
-    array (
-      'id' => 226,
-      'name' => 'Bowl of Simple Meat Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    225 => 
-    array (
-      'id' => 227,
-      'name' => 'Cheeseburger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    226 => 
-    array (
-      'id' => 228,
-      'name' => 'White Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    227 => 
-    array (
-      'id' => 229,
-      'name' => 'Bowl of Meat and Bean Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    228 => 
-    array (
-      'id' => 230,
-      'name' => 'Chocolate Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    229 => 
-    array (
-      'id' => 231,
-      'name' => 'Bowl of Chili and Avocado',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    230 => 
-    array (
-      'id' => 232,
-      'name' => 'Bowl of Spiced Meat Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    231 => 
-    array (
-      'id' => 233,
-      'name' => 'Bowl of Spicy Meat Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    232 => 
-    array (
-      'id' => 234,
-      'name' => 'Bowl of Fire Meat Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    233 => 
-    array (
-      'id' => 235,
-      'name' => 'Chocolate Cherry Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    234 => 
-    array (
-      'id' => 236,
-      'name' => 'Orange Coconut Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    235 => 
-    array (
-      'id' => 237,
-      'name' => 'Chocolate Raspberry Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    236 => 
-    array (
-      'id' => 238,
-      'name' => 'Chocolate Omnomberry Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    237 => 
-    array (
-      'id' => 239,
-      'name' => 'Bowl of Vegetable Stock',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    238 => 
-    array (
-      'id' => 240,
-      'name' => 'Bowl of Simple Vegetable Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    239 => 
-    array (
-      'id' => 241,
-      'name' => 'Bowl of Tomato Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    240 => 
-    array (
-      'id' => 242,
-      'name' => 'Bowl of Ice Wurm Bisque',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
-      'pvx' => 6,
-    ),
-    241 => 
-    array (
-      'id' => 243,
-      'name' => 'Bowl of Beet and Bean Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    242 => 
-    array (
-      'id' => 244,
-      'name' => 'Bowl of Basic Vegetable Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    243 => 
-    array (
-      'id' => 245,
-      'name' => 'Bowl of Simple Bean Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    244 => 
-    array (
-      'id' => 246,
-      'name' => 'Bowl of Fancy Bean Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    245 => 
-    array (
-      'id' => 247,
-      'name' => 'Bowl of Zucchini Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    246 => 
-    array (
-      'id' => 248,
-      'name' => 'Bowl of Degun Shun Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 46,
-      'pvx' => 6,
-    ),
-    247 => 
-    array (
-      'id' => 249,
-      'name' => 'Bowl of Spiced Veggie Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    248 => 
-    array (
-      'id' => 250,
-      'name' => 'Bowl of Spicy Veggie Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    249 => 
-    array (
-      'id' => 251,
-      'name' => 'Bowl of Fire Veggie Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    250 => 
-    array (
-      'id' => 252,
-      'name' => 'Bowl of Skalefin Soup',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 33,
-      'pvx' => 6,
-    ),
-    251 => 
-    array (
-      'id' => 253,
-      'name' => 'Bowl of Tomato Zucchini Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    252 => 
-    array (
-      'id' => 254,
-      'name' => 'Bowl of Cauliflower Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    253 => 
-    array (
-      'id' => 255,
-      'name' => 'Minotaur Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    254 => 
-    array (
-      'id' => 256,
-      'name' => 'Bowl of Butternut Squash Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    255 => 
-    array (
-      'id' => 257,
-      'name' => 'Bowl of Curry Butternut Squash Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    256 => 
-    array (
-      'id' => 258,
-      'name' => 'Bowl of Yam Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    257 => 
-    array (
-      'id' => 259,
-      'name' => 'Bowl of Pumpkin Bisque',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    258 => 
-    array (
-      'id' => 260,
-      'name' => 'Bowl of Potato and Leek Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    259 => 
-    array (
-      'id' => 261,
-      'name' => 'Bowl of Fancy Potato and Leek Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    260 => 
-    array (
-      'id' => 262,
-      'name' => 'Bowl of Herbed Vegetable Stock',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    261 => 
-    array (
-      'id' => 263,
-      'name' => 'Bowl of Kale Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    262 => 
-    array (
-      'id' => 264,
-      'name' => 'Bowl of Chickpea Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    263 => 
-    array (
-      'id' => 265,
-      'name' => 'Bowl of Artichoke Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    264 => 
-    array (
-      'id' => 266,
-      'name' => 'Bowl of Curry Pumpkin Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    265 => 
-    array (
-      'id' => 267,
-      'name' => 'Grumble Cake',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    266 => 
-    array (
-      'id' => 268,
-      'name' => 'Loaf of Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    267 => 
-    array (
-      'id' => 269,
-      'name' => 'Buttermilk Biscuit',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    268 => 
-    array (
-      'id' => 270,
-      'name' => 'Cinnamon Pinwheel',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    269 => 
-    array (
-      'id' => 271,
-      'name' => 'Bowl of Dolyak Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    270 => 
-    array (
-      'id' => 272,
-      'name' => 'Loaf of Banana Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    271 => 
-    array (
-      'id' => 273,
-      'name' => 'Loaf of Walnut Sticky Bread',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 17,
-      'pvx' => 6,
-    ),
-    272 => 
-    array (
-      'id' => 274,
-      'name' => 'Curry Bun',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
-      'pvx' => 6,
-    ),
-    273 => 
-    array (
-      'id' => 275,
-      'name' => 'Loaf of Zucchini Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    274 => 
-    array (
-      'id' => 276,
-      'name' => 'Slice of Pumpkin Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    275 => 
-    array (
-      'id' => 277,
-      'name' => 'Loaf of Raspberry Peach Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    276 => 
-    array (
-      'id' => 278,
-      'name' => 'Loaf of Omnomberry Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    277 => 
-    array (
-      'id' => 279,
-      'name' => 'Passion Fruit Soufflé',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    278 => 
-    array (
-      'id' => 280,
-      'name' => 'Plate of Pasta with Tomato Sauce',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    279 => 
-    array (
-      'id' => 281,
-      'name' => 'Meatball',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    280 => 
-    array (
-      'id' => 282,
-      'name' => 'Meatball Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    281 => 
-    array (
-      'id' => 283,
-      'name' => 'Bowl of Grilled Bananas with Passion Fruit Sauce',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    282 => 
-    array (
-      'id' => 284,
-      'name' => 'Bowl of Krytan Meatball Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    283 => 
-    array (
-      'id' => 285,
-      'name' => 'Bowl of Pesto Pasta Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    284 => 
-    array (
-      'id' => 286,
-      'name' => 'Bowl of Poultry Tarragon Pasta',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    285 => 
-    array (
-      'id' => 287,
-      'name' => 'Bowl of Truffle Ravioli',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    286 => 
-    array (
-      'id' => 288,
-      'name' => 'Bowl of Salad a la Consortium',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    287 => 
-    array (
-      'id' => 289,
-      'name' => 'Passion Fruit Coconut Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    288 => 
-    array (
-      'id' => 290,
-      'name' => 'Stuffed Artichoke with Tropical Dressing',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    289 => 
-    array (
-      'id' => 291,
-      'name' => 'Bowl of Tropical Mousse',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    290 => 
-    array (
-      'id' => 292,
-      'name' => 'Bowl of Refugee\'s Beet Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    291 => 
-    array (
-      'id' => 293,
-      'name' => 'Blueberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    292 => 
-    array (
-      'id' => 294,
-      'name' => 'Sugar Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    293 => 
-    array (
-      'id' => 295,
-      'name' => 'Apple Passion Fruit Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    294 => 
-    array (
-      'id' => 296,
-      'name' => 'Strawberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    295 => 
-    array (
-      'id' => 297,
-      'name' => 'Bowl of Front Line Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    296 => 
-    array (
-      'id' => 298,
-      'name' => 'Passion Fruit Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    297 => 
-    array (
-      'id' => 299,
-      'name' => 'Delicious Rice Ball',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    298 => 
-    array (
-      'id' => 300,
-      'name' => 'Cherry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    299 => 
-    array (
-      'id' => 301,
-      'name' => 'Blackberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    300 => 
-    array (
-      'id' => 302,
-      'name' => 'Peach Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    301 => 
-    array (
-      'id' => 303,
-      'name' => 'Omnomberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    302 => 
-    array (
-      'id' => 304,
-      'name' => 'Chocolate Chip Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    303 => 
-    array (
-      'id' => 305,
-      'name' => 'Candy Corn Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    304 => 
-    array (
-      'id' => 306,
-      'name' => 'Chocolate Mint Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    305 => 
-    array (
-      'id' => 307,
-      'name' => 'Chocolate Raspberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    306 => 
-    array (
-      'id' => 308,
-      'name' => 'Glazed Chocolate Raspberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    307 => 
-    array (
-      'id' => 309,
-      'name' => 'Spicy Chocolate Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    308 => 
-    array (
-      'id' => 310,
-      'name' => 'Cherry Passion Fruit Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    309 => 
-    array (
-      'id' => 311,
-      'name' => 'Orange Passion Fruit Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    310 => 
-    array (
-      'id' => 312,
-      'name' => 'Raspberry Passion Fruit Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    311 => 
-    array (
-      'id' => 313,
-      'name' => 'Bowl of Tropical Fruit Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    312 => 
-    array (
-      'id' => 314,
-      'name' => 'Bowl of Poultry Stock',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    313 => 
-    array (
-      'id' => 315,
-      'name' => 'Bowl of Poultry Noodle Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    314 => 
-    array (
-      'id' => 316,
-      'name' => 'Bowl of Savory Spinach and Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    315 => 
-    array (
-      'id' => 317,
-      'name' => 'Bowl of Herbed Poultry Stock',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    316 => 
-    array (
-      'id' => 318,
-      'name' => 'Bowl of Kale and Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    317 => 
-    array (
-      'id' => 319,
-      'name' => 'Bowl of Hearty Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    318 => 
-    array (
-      'id' => 320,
-      'name' => 'Bowl of Saffron-scented Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    319 => 
-    array (
-      'id' => 321,
-      'name' => 'Bowl of Chocolate Chip Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    320 => 
-    array (
-      'id' => 322,
-      'name' => 'Bowl of Candy Corn Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    321 => 
-    array (
-      'id' => 323,
-      'name' => 'Bowl of Blueberry Chocolate Chunk Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    322 => 
-    array (
-      'id' => 324,
-      'name' => 'Bowl of Ginger-Lime Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    323 => 
-    array (
-      'id' => 325,
-      'name' => 'Bowl of Mint Chocolate Chip Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    324 => 
-    array (
-      'id' => 326,
-      'name' => 'Bowl of Peach Raspberry Swirl Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    325 => 
-    array (
-      'id' => 327,
-      'name' => 'Kralkachocolate Bar',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    326 => 
-    array (
-      'id' => 328,
-      'name' => 'Bowl of Saffron-Mango Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    327 => 
-    array (
-      'id' => 329,
-      'name' => 'Blueberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    328 => 
-    array (
-      'id' => 330,
-      'name' => 'Strawberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    329 => 
-    array (
-      'id' => 331,
-      'name' => 'Cherry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    330 => 
-    array (
-      'id' => 332,
-      'name' => 'Blackberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    331 => 
-    array (
-      'id' => 333,
-      'name' => 'Mixed Berry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    332 => 
-    array (
-      'id' => 334,
-      'name' => 'Slice of Candied Dragon Roll',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    333 => 
-    array (
-      'id' => 335,
-      'name' => 'Omnomberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    334 => 
-    array (
-      'id' => 336,
-      'name' => 'Omnomberry Ghost',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    335 => 
-    array (
-      'id' => 337,
-      'name' => 'Chili Pepper Popper',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    336 => 
-    array (
-      'id' => 338,
-      'name' => 'Stuffed Pepper',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    337 => 
-    array (
-      'id' => 339,
-      'name' => 'Stuffed Zucchini',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    338 => 
-    array (
-      'id' => 340,
-      'name' => 'Bowl of Hummus',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    339 => 
-    array (
-      'id' => 341,
-      'name' => 'Roasted Artichoke',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    340 => 
-    array (
-      'id' => 342,
-      'name' => 'Ghost Pepper Popper',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    341 => 
-    array (
-      'id' => 343,
-      'name' => 'Bowl of Sauteed Carrots',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    342 => 
-    array (
-      'id' => 344,
-      'name' => 'Celebratory Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    343 => 
-    array (
-      'id' => 345,
-      'name' => 'Bowl of Ettin Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 13,
-      'pvx' => 6,
-    ),
-    344 => 
-    array (
-      'id' => 346,
-      'name' => 'Bowl of Garlic Spinach Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    345 => 
-    array (
-      'id' => 347,
-      'name' => 'Bowl of Sauteed Zucchini with Nutmeg',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    346 => 
-    array (
-      'id' => 348,
-      'name' => 'Handful of Trail Mix',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    347 => 
-    array (
-      'id' => 349,
-      'name' => 'Bowl of Cauliflower Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    348 => 
-    array (
-      'id' => 350,
-      'name' => 'Bowl of Eggplant Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    349 => 
-    array (
-      'id' => 351,
-      'name' => 'Bowl of Truffle Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    350 => 
-    array (
-      'id' => 352,
-      'name' => 'Bowl of Simple Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    351 => 
-    array (
-      'id' => 353,
-      'name' => 'Bowl of Avocado Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    352 => 
-    array (
-      'id' => 354,
-      'name' => 'Bowl of Eggplant Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    353 => 
-    array (
-      'id' => 355,
-      'name' => 'Bowl of Lotus Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    354 => 
-    array (
-      'id' => 356,
-      'name' => 'Glass of Melon Juice',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    355 => 
-    array (
-      'id' => 357,
-      'name' => 'Bowl of Blueberry Apple Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    356 => 
-    array (
-      'id' => 358,
-      'name' => 'Bowl of Strawberry Apple Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    357 => 
-    array (
-      'id' => 359,
-      'name' => 'Bowl of Cherry Vanilla Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    358 => 
-    array (
-      'id' => 360,
-      'name' => 'Bowl of Blackberry Pear Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    359 => 
-    array (
-      'id' => 361,
-      'name' => 'Raspberry Peach Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    360 => 
-    array (
-      'id' => 362,
-      'name' => 'Mined Edible Root',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 68,
-      'pvx' => 6,
-    ),
-    361 => 
-    array (
-      'id' => 363,
-      'name' => 'Omnomberry Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    362 => 
-    array (
-      'id' => 364,
-      'name' => 'Bowl of Simple Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    363 => 
-    array (
-      'id' => 365,
-      'name' => 'Bowl of Ascalonian Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    364 => 
-    array (
-      'id' => 366,
-      'name' => 'Bowl of Coleslaw',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    365 => 
-    array (
-      'id' => 367,
-      'name' => 'Bowl of Cabbage and Chickpea Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    366 => 
-    array (
-      'id' => 368,
-      'name' => 'Bowl of Asparagus and Sage Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    367 => 
-    array (
-      'id' => 369,
-      'name' => 'Bowl of Seaweed Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    368 => 
-    array (
-      'id' => 370,
-      'name' => 'Experimental Remnant',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    369 => 
-    array (
-      'id' => 371,
-      'name' => 'Marinated Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    370 => 
-    array (
-      'id' => 372,
-      'name' => 'Sage Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    371 => 
-    array (
-      'id' => 373,
-      'name' => 'Triktiki Omelet',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 33,
-      'pvx' => 6,
-    ),
-    372 => 
-    array (
-      'id' => 374,
-      'name' => 'Divinity Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    373 => 
-    array (
-      'id' => 375,
-      'name' => 'Bowl of Tasty Wurm Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    374 => 
-    array (
-      'id' => 376,
-      'name' => 'Eztlitl Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    375 => 
-    array (
-      'id' => 377,
-      'name' => 'Spicy Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    376 => 
-    array (
-      'id' => 378,
-      'name' => 'Saffron Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    377 => 
-    array (
-      'id' => 379,
-      'name' => 'Steamed Red Dumpling',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    378 => 
-    array (
-      'id' => 380,
-      'name' => 'Moa Haunch',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    379 => 
-    array (
-      'id' => 381,
-      'name' => 'Spicy Meat Kabob',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    380 => 
-    array (
-      'id' => 382,
-      'name' => 'Pepper Steak Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    381 => 
-    array (
-      'id' => 383,
-      'name' => 'Sesame Roasted Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    382 => 
-    array (
-      'id' => 384,
-      'name' => 'Plate of Coriander Crusted Meat Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    383 => 
-    array (
-      'id' => 385,
-      'name' => 'Plate of Steak and Asparagus Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    384 => 
-    array (
-      'id' => 386,
-      'name' => 'Dragon\'s Breath Bun',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    385 => 
-    array (
-      'id' => 387,
-      'name' => 'Plate of Truffle Steak Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    386 => 
-    array (
-      'id' => 388,
-      'name' => 'Bowl of Garlic Kale Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    387 => 
-    array (
-      'id' => 389,
-      'name' => 'Bowl of Sweet and Spicy Butternut Squash Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    388 => 
-    array (
-      'id' => 390,
-      'name' => 'Bowl of Zesty Turnip Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    389 => 
-    array (
-      'id' => 391,
-      'name' => 'Carrot Soufflé',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    390 => 
-    array (
-      'id' => 392,
-      'name' => 'Mushroom Loaf',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    391 => 
-    array (
-      'id' => 393,
-      'name' => 'Plate of Frostgorge Clams',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    392 => 
-    array (
-      'id' => 394,
-      'name' => 'Plate of Spicy Herbed Chicken',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    393 => 
-    array (
-      'id' => 395,
-      'name' => 'Spicy Marinated Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    394 => 
-    array (
-      'id' => 396,
-      'name' => 'Potion Of Karka Toughness',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    395 => 
-    array (
-      'id' => 397,
-      'name' => 'Bowl of Cactus Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    396 => 
-    array (
-      'id' => 398,
-      'name' => 'Bowl of Black Pepper Cactus Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    397 => 
-    array (
-      'id' => 399,
-      'name' => 'Bowl of Nopalitos Sauté',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    398 => 
-    array (
-      'id' => 400,
-      'name' => 'Loaf of Candy Cactus Cornbread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    399 => 
-    array (
-      'id' => 401,
-      'name' => 'Spring Roll',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    400 => 
-    array (
-      'id' => 402,
-      'name' => 'Fried Golden Dumpling',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    401 => 
-    array (
-      'id' => 403,
-      'name' => 'Jerk Poultry and Nopal Flatbread Sandwich',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    402 => 
-    array (
-      'id' => 404,
-      'name' => 'Jerk Poultry Flatbread Sandwich',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    403 => 
-    array (
-      'id' => 405,
-      'name' => 'Cheesy Cassava Roll',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    404 => 
-    array (
-      'id' => 406,
-      'name' => 'Slice of Allspice Cake with Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    405 => 
-    array (
-      'id' => 407,
-      'name' => 'Slice of Allspice Cake',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    406 => 
-    array (
-      'id' => 408,
-      'name' => 'Plate of Mussels Gnashblade',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    407 => 
-    array (
-      'id' => 409,
-      'name' => 'Bowl of Curry Mussel Soup',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    408 => 
-    array (
-      'id' => 410,
-      'name' => 'Piece of Undersea Wurm Sushi',
-      'type' => 'Food',
-      'rarity' => 'Exotic',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    409 => 
-    array (
-      'id' => 411,
-      'name' => 'Bowl of Passion Fruit Tapioca Pudding',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    410 => 
-    array (
-      'id' => 412,
-      'name' => 'Bowl of Tapioca Pudding',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    411 => 
-    array (
-      'id' => 413,
-      'name' => 'Bowl of Sawgill Mushroom Risotto',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    412 => 
-    array (
-      'id' => 414,
-      'name' => 'Bowl of Prickly Pear Tapioca Pudding',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    413 => 
-    array (
-      'id' => 415,
-      'name' => 'Flatbread',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    414 => 
-    array (
-      'id' => 416,
-      'name' => 'Bowl of Chocolate Tapioca Pudding',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    415 => 
-    array (
-      'id' => 417,
-      'name' => 'Bowl of Mussel Soup',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    416 => 
-    array (
-      'id' => 418,
-      'name' => 'Bowl of Lemongrass Mussel Pasta',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    417 => 
-    array (
-      'id' => 419,
-      'name' => 'Plate of Jerk Poultry',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    418 => 
-    array (
-      'id' => 420,
-      'name' => 'Prickly Pear Stuffed Nopale',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    419 => 
-    array (
-      'id' => 421,
-      'name' => 'Bowl of Prickly Pear Sorbet',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    420 => 
-    array (
-      'id' => 422,
-      'name' => 'Bowl of Sweet and Spicy Beans',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    421 => 
-    array (
-      'id' => 423,
-      'name' => 'Plate of Roasted Cactus',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-  ),
-  'pets' => 
-  array (
-    0 => 
-    array (
-      'id' => 1,
-      'name' => 'Armor Fish',
-      'family' => 'Armor Fish',
-      'terrestrial' => false,
-      'aquatic' => true,
-    ),
-    1 => 
-    array (
-      'id' => 2,
-      'name' => 'Eagle',
-      'family' => 'Bird',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    2 => 
-    array (
-      'id' => 3,
-      'name' => 'Hawk',
-      'family' => 'Bird',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    3 => 
-    array (
-      'id' => 4,
-      'name' => 'Owl',
-      'family' => 'Bird',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    4 => 
-    array (
-      'id' => 5,
-      'name' => 'Raven',
-      'family' => 'Bird',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    5 => 
-    array (
-      'id' => 6,
-      'name' => 'White Raven',
-      'family' => 'Bird',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    6 => 
-    array (
-      'id' => 7,
-      'name' => 'Bristleback',
-      'family' => 'Bristleback',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    7 => 
-    array (
-      'id' => 8,
-      'name' => 'Krytan Drakehound',
-      'family' => 'Canine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    8 => 
-    array (
-      'id' => 9,
-      'name' => 'Fern Hound',
-      'family' => 'Canine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    9 => 
-    array (
-      'id' => 10,
-      'name' => 'Hyena',
-      'family' => 'Canine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    10 => 
-    array (
-      'id' => 11,
-      'name' => 'Alpine Wolf',
-      'family' => 'Canine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    11 => 
-    array (
-      'id' => 12,
-      'name' => 'Wolf',
-      'family' => 'Canine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    12 => 
-    array (
-      'id' => 13,
-      'name' => 'Carrion Devourer',
-      'family' => 'Devourer',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    13 => 
-    array (
-      'id' => 14,
-      'name' => 'Lashtail Devourer',
-      'family' => 'Devourer',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    14 => 
-    array (
-      'id' => 15,
-      'name' => 'Whiptail Devourer',
-      'family' => 'Devourer',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    15 => 
-    array (
-      'id' => 16,
-      'name' => 'Ice Drake',
-      'family' => 'Drake',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    16 => 
-    array (
-      'id' => 17,
-      'name' => 'River Drake',
-      'family' => 'Drake',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    17 => 
-    array (
-      'id' => 18,
-      'name' => 'Reef Drake',
-      'family' => 'Drake',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    18 => 
-    array (
-      'id' => 19,
-      'name' => 'Salamander Drake',
-      'family' => 'Drake',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    19 => 
-    array (
-      'id' => 20,
-      'name' => 'Marsh Drake',
-      'family' => 'Drake',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    20 => 
-    array (
-      'id' => 21,
-      'name' => 'Jaguar',
-      'family' => 'Feline',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    21 => 
-    array (
-      'id' => 22,
-      'name' => 'Jungle Stalker',
-      'family' => 'Feline',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    22 => 
-    array (
-      'id' => 23,
-      'name' => 'Lynx',
-      'family' => 'Feline',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    23 => 
-    array (
-      'id' => 24,
-      'name' => 'Snow Leopard',
-      'family' => 'Feline',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    24 => 
-    array (
-      'id' => 25,
-      'name' => 'Tiger',
-      'family' => 'Feline',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    25 => 
-    array (
-      'id' => 26,
-      'name' => 'Blue Jellyfish',
-      'family' => 'Jellyfish',
-      'terrestrial' => false,
-      'aquatic' => true,
-    ),
-    26 => 
-    array (
-      'id' => 28,
-      'name' => 'Red Jellyfish',
-      'family' => 'Jellyfish',
-      'terrestrial' => false,
-      'aquatic' => true,
-    ),
-    27 => 
-    array (
-      'id' => 29,
-      'name' => 'Rainbow Jellyfish',
-      'family' => 'Jellyfish',
-      'terrestrial' => false,
-      'aquatic' => true,
-    ),
-    28 => 
-    array (
-      'id' => 30,
-      'name' => 'Black Moa',
-      'family' => 'Moa',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    29 => 
-    array (
-      'id' => 31,
-      'name' => 'Blue Moa',
-      'family' => 'Moa',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    30 => 
-    array (
-      'id' => 32,
-      'name' => 'Pink Moa',
-      'family' => 'Moa',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    31 => 
-    array (
-      'id' => 33,
-      'name' => 'Red Moa',
-      'family' => 'Moa',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    32 => 
-    array (
-      'id' => 34,
-      'name' => 'White Moa',
-      'family' => 'Moa',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    33 => 
-    array (
-      'id' => 36,
-      'name' => 'Boar',
-      'family' => 'Porcine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    34 => 
-    array (
-      'id' => 37,
-      'name' => 'Pig',
-      'family' => 'Porcine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    35 => 
-    array (
-      'id' => 38,
-      'name' => 'Siamoth',
-      'family' => 'Porcine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    36 => 
-    array (
-      'id' => 39,
-      'name' => 'Warthog',
-      'family' => 'Porcine',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    37 => 
-    array (
-      'id' => 40,
-      'name' => 'Shark',
-      'family' => 'Shark',
-      'terrestrial' => false,
-      'aquatic' => true,
-    ),
-    38 => 
-    array (
-      'id' => 41,
-      'name' => 'Smokescale',
-      'family' => 'Smokescale',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    39 => 
-    array (
-      'id' => 42,
-      'name' => 'Black Widow Spider',
-      'family' => 'Spider',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    40 => 
-    array (
-      'id' => 43,
-      'name' => 'Cave Spider',
-      'family' => 'Spider',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    41 => 
-    array (
-      'id' => 44,
-      'name' => 'Forest Spider',
-      'family' => 'Spider',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    42 => 
-    array (
-      'id' => 45,
-      'name' => 'Jungle Spider',
-      'family' => 'Spider',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    43 => 
-    array (
-      'id' => 46,
-      'name' => 'Arctodus',
-      'family' => 'Ursine',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    44 => 
-    array (
-      'id' => 47,
-      'name' => 'Black Bear',
-      'family' => 'Ursine',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    45 => 
-    array (
-      'id' => 48,
-      'name' => 'Brown Bear',
-      'family' => 'Ursine',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    46 => 
-    array (
-      'id' => 49,
-      'name' => 'Murrelow',
-      'family' => 'Ursine',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    47 => 
-    array (
-      'id' => 50,
-      'name' => 'Polar Bear',
-      'family' => 'Ursine',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
-    48 => 
-    array (
-      'id' => 51,
-      'name' => 'Electric Wyvern',
-      'family' => 'Wyvern',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    49 => 
-    array (
-      'id' => 52,
-      'name' => 'Fire Wyvern',
-      'family' => 'Wyvern',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-  ),
-  'upgrades' => 
-  array (
-    0 => 
-    array (
-      'id' => 1,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Agony',
-      'pvp_name' => 'Sigil of Agony (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    1 => 
-    array (
-      'id' => 2,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Smoldering',
-      'pvp_name' => 'Sigil of Smoldering (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    2 => 
-    array (
-      'id' => 3,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Hobbling',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    3 => 
-    array (
-      'id' => 4,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Accuracy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    4 => 
-    array (
-      'id' => 5,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Force',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    5 => 
-    array (
-      'id' => 6,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of the Night',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    6 => 
-    array (
-      'id' => 7,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Bursting',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    7 => 
-    array (
-      'id' => 8,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Malice',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    8 => 
-    array (
-      'id' => 9,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Chilling',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    9 => 
-    array (
-      'id' => 10,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Venom',
-      'pvp_name' => 'Sigil of Venom (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    10 => 
-    array (
-      'id' => 11,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Paralyzation',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    11 => 
-    array (
-      'id' => 12,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Peril',
-      'pvp_name' => 'Sigil of Peril (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    12 => 
-    array (
-      'id' => 13,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Debility',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    13 => 
-    array (
-      'id' => 14,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Corruption',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    14 => 
-    array (
-      'id' => 15,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Stamina',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    15 => 
-    array (
-      'id' => 16,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Life',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    16 => 
-    array (
-      'id' => 17,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Restoration',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    17 => 
-    array (
-      'id' => 18,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Benevolence',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    18 => 
-    array (
-      'id' => 19,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Bloodlust',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    19 => 
-    array (
-      'id' => 20,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Perception',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    20 => 
-    array (
-      'id' => 21,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Momentum',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    21 => 
-    array (
-      'id' => 22,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Luck',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    22 => 
-    array (
-      'id' => 23,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Demon Summoning',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    23 => 
-    array (
-      'id' => 24,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Celerity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    24 => 
-    array (
-      'id' => 25,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Speed',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    25 => 
-    array (
-      'id' => 26,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Air',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    26 => 
-    array (
-      'id' => 27,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Earth',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    27 => 
-    array (
-      'id' => 28,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Fire',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    28 => 
-    array (
-      'id' => 29,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Ice',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    29 => 
-    array (
-      'id' => 30,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Blood',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    30 => 
-    array (
-      'id' => 31,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Strength',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    31 => 
-    array (
-      'id' => 32,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Frailty',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    32 => 
-    array (
-      'id' => 33,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Water',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    33 => 
-    array (
-      'id' => 34,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Intelligence',
-      'pvp_name' => 'Sigil of Intelligence (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    34 => 
-    array (
-      'id' => 35,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Doom',
-      'pvp_name' => 'Sigil of Doom (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    35 => 
-    array (
-      'id' => 36,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Geomancy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    36 => 
-    array (
-      'id' => 37,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Energy',
-      'pvp_name' => 'Sigil of Energy (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    37 => 
-    array (
-      'id' => 38,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Hydromancy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    38 => 
-    array (
-      'id' => 39,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Leeching',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    39 => 
-    array (
-      'id' => 40,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Battle',
-      'pvp_name' => 'Sigil of Battle (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    40 => 
-    array (
-      'id' => 41,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Renewal',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    41 => 
-    array (
-      'id' => 42,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Rage',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    42 => 
-    array (
-      'id' => 43,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Generosity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    43 => 
-    array (
-      'id' => 44,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Impact',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    44 => 
-    array (
-      'id' => 45,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Torment',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    45 => 
-    array (
-      'id' => 46,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Cleansing',
-      'pvp_name' => 'Sigil of Cleansing (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    46 => 
-    array (
-      'id' => 47,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Cruelty',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    47 => 
-    array (
-      'id' => 48,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Blight',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    48 => 
-    array (
-      'id' => 49,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Mischief',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    49 => 
-    array (
-      'id' => 50,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Incapacitation',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    50 => 
-    array (
-      'id' => 51,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Agility',
-      'pvp_name' => 'Sigil of Agility (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    51 => 
-    array (
-      'id' => 52,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Transference',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    52 => 
-    array (
-      'id' => 53,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Ruthlessness',
-      'pvp_name' => 'Sigil of Ruthlessness (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    53 => 
-    array (
-      'id' => 54,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Absorption',
-      'pvp_name' => 'Sigil of Absorption (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    54 => 
-    array (
-      'id' => 55,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Draining',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    55 => 
-    array (
-      'id' => 56,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Rending',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    56 => 
-    array (
-      'id' => 57,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Concentration',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    57 => 
-    array (
-      'id' => 58,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Annulment',
-      'pvp_name' => 'Sigil of Annulment (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    58 => 
-    array (
-      'id' => 59,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Compounding',
-      'pvp_name' => 'Sigil of Compounding (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    59 => 
-    array (
-      'id' => 60,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Confusion',
-      'pvp_name' => 'Sigil of Confusion (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    60 => 
-    array (
-      'id' => 61,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Courage',
-      'pvp_name' => 'Sigil of Courage (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    61 => 
-    array (
-      'id' => 62,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Enhancement',
-      'pvp_name' => 'Sigil of Enhancement (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    62 => 
-    array (
-      'id' => 63,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Escape',
-      'pvp_name' => 'Sigil of Escape (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    63 => 
-    array (
-      'id' => 64,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Exploitation',
-      'pvp_name' => 'Sigil of Exploitation (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    64 => 
-    array (
-      'id' => 65,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Exposure',
-      'pvp_name' => 'Sigil of Exposure (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    65 => 
-    array (
-      'id' => 66,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Fallibility',
-      'pvp_name' => 'Sigil of Fallibility (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    66 => 
-    array (
-      'id' => 67,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Misery',
-      'pvp_name' => 'Sigil of Misery (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    67 => 
-    array (
-      'id' => 68,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Opportunity',
-      'pvp_name' => 'Sigil of Opportunity (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    68 => 
-    array (
-      'id' => 69,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Purging',
-      'pvp_name' => 'Sigil of Purging (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    69 => 
-    array (
-      'id' => 70,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Revocation',
-      'pvp_name' => 'Sigil of Revocation (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    70 => 
-    array (
-      'id' => 71,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Savagery',
-      'pvp_name' => 'Sigil of Savagery (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    71 => 
-    array (
-      'id' => 72,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Separation',
-      'pvp_name' => 'Sigil of Separation (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    72 => 
-    array (
-      'id' => 73,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Stagnation',
-      'pvp_name' => 'Sigil of Stagnation (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    73 => 
-    array (
-      'id' => 74,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Nullification',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    74 => 
-    array (
-      'id' => 75,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Purity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    75 => 
-    array (
-      'id' => 86,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Afflicted',
-      'pvp_name' => 'Rune of the Afflicted (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    76 => 
-    array (
-      'id' => 87,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Air',
-      'pvp_name' => 'Rune of Air (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    77 => 
-    array (
-      'id' => 88,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Balthazar',
-      'pvp_name' => 'Rune of Balthazar (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    78 => 
-    array (
-      'id' => 89,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Centaur',
-      'pvp_name' => 'Rune of the Centaur (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    79 => 
-    array (
-      'id' => 90,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Citadel',
-      'pvp_name' => 'Rune of the Citadel (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    80 => 
-    array (
-      'id' => 91,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Divinity',
-      'pvp_name' => 'Rune of Divinity (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    81 => 
-    array (
-      'id' => 92,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Dolyak',
-      'pvp_name' => 'Rune of the Dolyak (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    82 => 
-    array (
-      'id' => 93,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Dwayna',
-      'pvp_name' => 'Rune of Dwayna (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    83 => 
-    array (
-      'id' => 94,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Eagle',
-      'pvp_name' => 'Rune of the Eagle (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    84 => 
-    array (
-      'id' => 95,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Strength',
-      'pvp_name' => 'Rune of Strength (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    85 => 
-    array (
-      'id' => 96,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Fire',
-      'pvp_name' => 'Rune of Fire (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    86 => 
-    array (
-      'id' => 97,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Earth',
-      'pvp_name' => 'Rune of Earth (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    87 => 
-    array (
-      'id' => 98,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Flame Legion',
-      'pvp_name' => 'Rune of the Flame Legion (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    88 => 
-    array (
-      'id' => 99,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Flock',
-      'pvp_name' => 'Rune of the Flock (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    89 => 
-    array (
-      'id' => 100,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Krait',
-      'pvp_name' => 'Rune of the Krait (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    90 => 
-    array (
-      'id' => 101,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Grenth',
-      'pvp_name' => 'Rune of Grenth (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    91 => 
-    array (
-      'id' => 102,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Grove',
-      'pvp_name' => 'Rune of the Grove (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    92 => 
-    array (
-      'id' => 103,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Hoelbrak',
-      'pvp_name' => 'Rune of Hoelbrak (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    93 => 
-    array (
-      'id' => 104,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ice',
-      'pvp_name' => 'Rune of Ice (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    94 => 
-    array (
-      'id' => 105,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Infiltration',
-      'pvp_name' => 'Rune of Infiltration (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    95 => 
-    array (
-      'id' => 106,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Lich',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    96 => 
-    array (
-      'id' => 107,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Lyssa',
-      'pvp_name' => 'Rune of Lyssa (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    97 => 
-    array (
-      'id' => 108,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Melandru',
-      'pvp_name' => 'Rune of Melandru (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    98 => 
-    array (
-      'id' => 109,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Mercy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    99 => 
-    array (
-      'id' => 110,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ogre',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    100 => 
-    array (
-      'id' => 111,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Pack',
-      'pvp_name' => 'Rune of the Pack (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    101 => 
-    array (
-      'id' => 112,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Rage',
-      'pvp_name' => 'Rune of Rage (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    102 => 
-    array (
-      'id' => 113,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Rata Sum',
-      'pvp_name' => 'Rune of Rata Sum (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    103 => 
-    array (
-      'id' => 114,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Speed',
-      'pvp_name' => 'Rune of Speed (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    104 => 
-    array (
-      'id' => 115,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Undead',
-      'pvp_name' => 'Rune of the Undead (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    105 => 
-    array (
-      'id' => 116,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Vampirism',
-      'pvp_name' => 'Rune of Vampirism (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    106 => 
-    array (
-      'id' => 117,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Wurm',
-      'pvp_name' => 'Rune of the Wurm (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    107 => 
-    array (
-      'id' => 118,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Svanir',
-      'pvp_name' => 'Rune of Svanir (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    108 => 
-    array (
-      'id' => 119,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Necromancer',
-      'pvp_name' => 'Rune of the Necromancer (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    109 => 
-    array (
-      'id' => 120,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Mesmer',
-      'pvp_name' => 'Rune of the Mesmer (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    110 => 
-    array (
-      'id' => 121,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Engineer',
-      'pvp_name' => 'Rune of the Engineer (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    111 => 
-    array (
-      'id' => 122,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ranger',
-      'pvp_name' => 'Rune of the Ranger (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    112 => 
-    array (
-      'id' => 123,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Elementalist',
-      'pvp_name' => 'Rune of the Elementalist (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    113 => 
-    array (
-      'id' => 124,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Thief',
-      'pvp_name' => 'Rune of the Thief (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    114 => 
-    array (
-      'id' => 125,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Warrior',
-      'pvp_name' => 'Rune of the Warrior (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    115 => 
-    array (
-      'id' => 126,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Guardian',
-      'pvp_name' => 'Rune of the Guardian (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    116 => 
-    array (
-      'id' => 127,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Trooper',
-      'pvp_name' => 'Rune of the Soldier (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    117 => 
-    array (
-      'id' => 128,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Adventurer',
-      'pvp_name' => 'Rune of Adventure (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    118 => 
-    array (
-      'id' => 129,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Brawler',
-      'pvp_name' => 'Rune of the Fighter (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    119 => 
-    array (
-      'id' => 130,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Scholar',
-      'pvp_name' => 'Rune of the Scholar (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    120 => 
-    array (
-      'id' => 131,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Water',
-      'pvp_name' => 'Rune of the Water (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    121 => 
-    array (
-      'id' => 132,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Monk',
-      'pvp_name' => 'Rune of the Monk (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    122 => 
-    array (
-      'id' => 133,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Nightmare',
-      'pvp_name' => 'Rune of the Nightmare (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    123 => 
-    array (
-      'id' => 134,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Forgeman',
-      'pvp_name' => 'Rune of the Forge (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    124 => 
-    array (
-      'id' => 135,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Baelfire',
-      'pvp_name' => 'Rune of the Baelfire (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    125 => 
-    array (
-      'id' => 136,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Sanctuary',
-      'pvp_name' => 'Rune of Sanctuary (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    126 => 
-    array (
-      'id' => 137,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Orr',
-      'pvp_name' => 'Rune of Orr (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    127 => 
-    array (
-      'id' => 138,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Exuberance',
-      'pvp_name' => 'Rune of Exuberance (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    128 => 
-    array (
-      'id' => 139,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Perplexity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    129 => 
-    array (
-      'id' => 140,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Tormenting',
-      'pvp_name' => 'Rune of Tormenting (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    130 => 
-    array (
-      'id' => 141,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Mad King',
-      'pvp_name' => 'Rune of the Mad King (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    131 => 
-    array (
-      'id' => 142,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Scavenging',
-      'pvp_name' => 'Rune of Scavenging (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    132 => 
-    array (
-      'id' => 143,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Altruism',
-      'pvp_name' => 'Rune of Altruism (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    133 => 
-    array (
-      'id' => 144,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Aristocracy',
-      'pvp_name' => 'Rune of the Aristocracy (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    134 => 
-    array (
-      'id' => 145,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Traveler',
-      'pvp_name' => 'Rune of the Traveler (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    135 => 
-    array (
-      'id' => 146,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Privateer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    136 => 
-    array (
-      'id' => 147,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Golemancer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    137 => 
-    array (
-      'id' => 148,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Sunless',
-      'pvp_name' => 'Rune of the Sunless (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    138 => 
-    array (
-      'id' => 149,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Resistance',
-      'pvp_name' => 'Rune of Resistance (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    139 => 
-    array (
-      'id' => 150,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Evasion',
-      'pvp_name' => 'Rune of Evasion (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    140 => 
-    array (
-      'id' => 151,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Trapper',
-      'pvp_name' => 'Rune of the Trapper (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    141 => 
-    array (
-      'id' => 152,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Radiance',
-      'pvp_name' => 'Rune of Radiance (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    142 => 
-    array (
-      'id' => 153,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Snowfall',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    143 => 
-    array (
-      'id' => 154,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Defender',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    144 => 
-    array (
-      'id' => 155,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Durability',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    145 => 
-    array (
-      'id' => 156,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Leadership',
-      'pvp_name' => 'Rune of Leadership (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    146 => 
-    array (
-      'id' => 157,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Surging',
-      'pvp_name' => 'Rune of Surging (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    147 => 
-    array (
-      'id' => 158,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Berserker',
-      'pvp_name' => 'Rune of the Berserker (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    148 => 
-    array (
-      'id' => 159,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Chronomancer',
-      'pvp_name' => 'Rune of the Chronomancer (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    149 => 
-    array (
-      'id' => 160,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Daredevil',
-      'pvp_name' => 'Rune of the Daredevil (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    150 => 
-    array (
-      'id' => 161,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Dragonhunter',
-      'pvp_name' => 'Rune of the Dragonhunter (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    151 => 
-    array (
-      'id' => 162,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Druid',
-      'pvp_name' => 'Rune of the Druid (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    152 => 
-    array (
-      'id' => 163,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Herald',
-      'pvp_name' => 'Rune of the Herald (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    153 => 
-    array (
-      'id' => 164,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Reaper',
-      'pvp_name' => 'Rune of the Reaper (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    154 => 
-    array (
-      'id' => 165,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Revenant',
-      'pvp_name' => 'Rune of the Revenant (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    155 => 
-    array (
-      'id' => 166,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Scrapper',
-      'pvp_name' => 'Rune of the Scrapper (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    156 => 
-    array (
-      'id' => 167,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Tempest',
-      'pvp_name' => 'Rune of the Tempest (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    157 => 
-    array (
-      'id' => 168,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Thorns',
-      'pvp_name' => 'Rune of Thorns (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    158 => 
-    array (
-      'id' => 169,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Lynx',
-      'pvp_name' => 'Rune of the Lynx (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    159 => 
-    array (
-      'id' => 170,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Antitoxin',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    160 => 
-    array (
-      'id' => 204,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Malign Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    161 => 
-    array (
-      'id' => 205,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Mighty Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    162 => 
-    array (
-      'id' => 206,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Precise Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    163 => 
-    array (
-      'id' => 207,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Malign Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    164 => 
-    array (
-      'id' => 208,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Mighty Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    165 => 
-    array (
-      'id' => 209,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Precise Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    166 => 
-    array (
-      'id' => 210,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Malign WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    167 => 
-    array (
-      'id' => 211,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Mighty WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    168 => 
-    array (
-      'id' => 212,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Precise WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    169 => 
-    array (
-      'id' => 213,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Healing Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    170 => 
-    array (
-      'id' => 214,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    171 => 
-    array (
-      'id' => 215,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Vital Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    172 => 
-    array (
-      'id' => 216,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Healing Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    173 => 
-    array (
-      'id' => 217,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    174 => 
-    array (
-      'id' => 218,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Vital Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    175 => 
-    array (
-      'id' => 219,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Healing WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    176 => 
-    array (
-      'id' => 220,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Resilient WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    177 => 
-    array (
-      'id' => 221,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Vital WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    178 => 
-    array (
-      'id' => 222,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Gilded Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    179 => 
-    array (
-      'id' => 223,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Magical Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    180 => 
-    array (
-      'id' => 224,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Experienced Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    181 => 
-    array (
-      'id' => 225,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Karmic Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    182 => 
-    array (
-      'id' => 226,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Versatile Simple Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    183 => 
-    array (
-      'id' => 227,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Malign Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    184 => 
-    array (
-      'id' => 228,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Mighty Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    185 => 
-    array (
-      'id' => 229,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Precise Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    186 => 
-    array (
-      'id' => 230,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Healing Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    187 => 
-    array (
-      'id' => 231,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    188 => 
-    array (
-      'id' => 232,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Vital Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    189 => 
-    array (
-      'id' => 233,
-      'type' => 'Doubloon',
-      'rarity' => 'Rare',
-      'name' => 'Copper Doubloon',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    190 => 
-    array (
-      'id' => 234,
-      'type' => 'Doubloon',
-      'rarity' => 'Rare',
-      'name' => 'Silver Doubloon',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    191 => 
-    array (
-      'id' => 235,
-      'type' => 'Doubloon',
-      'rarity' => 'Rare',
-      'name' => 'Gold Doubloon',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    192 => 
-    array (
-      'id' => 236,
-      'type' => 'Doubloon',
-      'rarity' => 'Rare',
-      'name' => 'Platinum Doubloon',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    193 => 
-    array (
-      'id' => 237,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Afflicted',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    194 => 
-    array (
-      'id' => 238,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Air',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    195 => 
-    array (
-      'id' => 239,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Balthazar',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    196 => 
-    array (
-      'id' => 240,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Centaur',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    197 => 
-    array (
-      'id' => 241,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Citadel',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    198 => 
-    array (
-      'id' => 242,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Divinity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    199 => 
-    array (
-      'id' => 243,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Dolyak',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    200 => 
-    array (
-      'id' => 244,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Dwayna',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    201 => 
-    array (
-      'id' => 245,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Eagle',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    202 => 
-    array (
-      'id' => 246,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Strength',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    203 => 
-    array (
-      'id' => 247,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Fire',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    204 => 
-    array (
-      'id' => 248,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Earth',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    205 => 
-    array (
-      'id' => 249,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Flame Legion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    206 => 
-    array (
-      'id' => 250,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Flock',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    207 => 
-    array (
-      'id' => 251,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Krait',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    208 => 
-    array (
-      'id' => 252,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Grenth',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    209 => 
-    array (
-      'id' => 253,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Grove',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    210 => 
-    array (
-      'id' => 254,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Hoelbrak',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    211 => 
-    array (
-      'id' => 255,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Ice',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    212 => 
-    array (
-      'id' => 256,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Infiltration',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    213 => 
-    array (
-      'id' => 257,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Lich',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    214 => 
-    array (
-      'id' => 258,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Lyssa',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    215 => 
-    array (
-      'id' => 259,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Melandru',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    216 => 
-    array (
-      'id' => 260,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Mercy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    217 => 
-    array (
-      'id' => 261,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Ogre',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    218 => 
-    array (
-      'id' => 262,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Pack',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    219 => 
-    array (
-      'id' => 263,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Rage',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    220 => 
-    array (
-      'id' => 264,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Rata Sum',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    221 => 
-    array (
-      'id' => 265,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Speed',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    222 => 
-    array (
-      'id' => 266,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Undead',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    223 => 
-    array (
-      'id' => 267,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Vampirism',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    224 => 
-    array (
-      'id' => 268,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Wurm',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    225 => 
-    array (
-      'id' => 269,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Svanir',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    226 => 
-    array (
-      'id' => 270,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Necromancer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    227 => 
-    array (
-      'id' => 271,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Mesmer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    228 => 
-    array (
-      'id' => 272,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Engineer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    229 => 
-    array (
-      'id' => 273,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Ranger',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    230 => 
-    array (
-      'id' => 274,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Elementalist',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    231 => 
-    array (
-      'id' => 275,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Thief',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    232 => 
-    array (
-      'id' => 276,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Warrior',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    233 => 
-    array (
-      'id' => 277,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Guardian',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    234 => 
-    array (
-      'id' => 278,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Trooper',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    235 => 
-    array (
-      'id' => 279,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Adventurer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    236 => 
-    array (
-      'id' => 280,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Brawler',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    237 => 
-    array (
-      'id' => 281,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Scholar',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    238 => 
-    array (
-      'id' => 282,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Water',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    239 => 
-    array (
-      'id' => 283,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Monk',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    240 => 
-    array (
-      'id' => 284,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Nightmare',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    241 => 
-    array (
-      'id' => 285,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Forgeman',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    242 => 
-    array (
-      'id' => 286,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Baelfire',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    243 => 
-    array (
-      'id' => 287,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Sanctuary',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    244 => 
-    array (
-      'id' => 288,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Orr',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    245 => 
-    array (
-      'id' => 289,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Exuberance',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    246 => 
-    array (
-      'id' => 290,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Perplexity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    247 => 
-    array (
-      'id' => 291,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Tormenting',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    248 => 
-    array (
-      'id' => 292,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Mad King',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    249 => 
-    array (
-      'id' => 293,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Scavenging',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    250 => 
-    array (
-      'id' => 294,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Altruism',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    251 => 
-    array (
-      'id' => 295,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Aristocracy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    252 => 
-    array (
-      'id' => 296,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Traveler',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    253 => 
-    array (
-      'id' => 297,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Privateer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    254 => 
-    array (
-      'id' => 298,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Golemancer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    255 => 
-    array (
-      'id' => 299,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Snowfall',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    256 => 
-    array (
-      'id' => 1,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    257 => 
-    array (
-      'id' => 2,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    258 => 
-    array (
-      'id' => 3,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Rabid',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    259 => 
-    array (
-      'id' => 4,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Magi',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    260 => 
-    array (
-      'id' => 5,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Assassin',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    261 => 
-    array (
-      'id' => 6,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Ruby Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    262 => 
-    array (
-      'id' => 7,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Beryl Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    263 => 
-    array (
-      'id' => 8,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Emerald Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    264 => 
-    array (
-      'id' => 9,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Coral Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    265 => 
-    array (
-      'id' => 10,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Chrysocola Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    266 => 
-    array (
-      'id' => 11,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Sapphire Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    267 => 
-    array (
-      'id' => 12,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Opal Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    268 => 
-    array (
-      'id' => 14,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Agate Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    269 => 
-    array (
-      'id' => 15,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Black Diamond',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    270 => 
-    array (
-      'id' => 16,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Freshwater Pearl',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    271 => 
-    array (
-      'id' => 17,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Ebony Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    272 => 
-    array (
-      'id' => 18,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Moonstone Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    273 => 
-    array (
-      'id' => 19,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Maguuma Burl',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    274 => 
-    array (
-      'id' => 20,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Maguuma Lily',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    275 => 
-    array (
-      'id' => 21,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Flax Blossom',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    276 => 
-    array (
-      'id' => 22,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Azurite Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    277 => 
-    array (
-      'id' => 23,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Ruby Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    278 => 
-    array (
-      'id' => 24,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Beryl Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    279 => 
-    array (
-      'id' => 25,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Emerald Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    280 => 
-    array (
-      'id' => 26,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Coral Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    281 => 
-    array (
-      'id' => 27,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Chrysocola Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    282 => 
-    array (
-      'id' => 28,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Sapphire Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    283 => 
-    array (
-      'id' => 29,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Opal Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    284 => 
-    array (
-      'id' => 30,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Azurite Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    285 => 
-    array (
-      'id' => 31,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Snowflake',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    286 => 
-    array (
-      'id' => 32,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Charged Quartz Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    287 => 
-    array (
-      'id' => 33,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Watchwork Sprocket',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    288 => 
-    array (
-      'id' => 34,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Ambrite Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    289 => 
-    array (
-      'id' => 35,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Charged Ambrite Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    290 => 
-    array (
-      'id' => 36,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Burl Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    291 => 
-    array (
-      'id' => 37,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Ebony Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    292 => 
-    array (
-      'id' => 38,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Agate Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    293 => 
-    array (
-      'id' => 39,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Freshwater Pearl Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    294 => 
-    array (
-      'id' => 40,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Lily Blossom',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    295 => 
-    array (
-      'id' => 41,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Flax Blossom',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    296 => 
-    array (
-      'id' => 42,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Black Diamond Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    297 => 
-    array (
-      'id' => 43,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Moonstone Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    298 => 
-    array (
-      'id' => 44,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Passion Flower',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-  ),
-  'professions' => 
-  array (
-    0 => 
-    array (
-      'id' => 1,
-      'name' => 'Elementalist',
-    ),
-    1 => 
-    array (
-      'id' => 2,
-      'name' => 'Warrior',
-    ),
-    2 => 
-    array (
-      'id' => 7,
-      'name' => 'Engineer',
-    ),
-    3 => 
-    array (
-      'id' => 3,
-      'name' => 'Ranger',
-    ),
-    4 => 
-    array (
-      'id' => 9,
-      'name' => 'Revenant',
-    ),
-    5 => 
-    array (
-      'id' => 5,
-      'name' => 'Guardian',
-    ),
-    6 => 
-    array (
-      'id' => 6,
-      'name' => 'Thief',
-    ),
-    7 => 
-    array (
-      'id' => 8,
-      'name' => 'Mesmer',
-    ),
-    8 => 
-    array (
-      'id' => 4,
-      'name' => 'Necromancer',
-    ),
-  ),
-  'weapons' => 
-  array (
-    0 => 
-    array (
-      'id' => 2,
-      'name' => 'Hammer',
-    ),
-    1 => 
-    array (
-      'id' => 1,
-      'name' => 'Greatsword',
-    ),
-    2 => 
-    array (
-      'id' => 3,
-      'name' => 'Longbow',
-    ),
-    3 => 
-    array (
-      'id' => 11,
-      'name' => 'Scepter',
-    ),
-    4 => 
-    array (
-      'id' => 6,
-      'name' => 'Staff',
-    ),
-    5 => 
-    array (
-      'id' => 14,
-      'name' => 'Shield',
-    ),
-    6 => 
-    array (
-      'id' => 10,
-      'name' => 'Pistol',
-    ),
-    7 => 
-    array (
-      'id' => 17,
-      'name' => 'Harpoon gun',
-    ),
-    8 => 
-    array (
-      'id' => 12,
-      'name' => 'Sword',
-    ),
-    9 => 
-    array (
-      'id' => 13,
-      'name' => 'Focus',
-    ),
-    10 => 
-    array (
-      'id' => 18,
-      'name' => 'Spear',
-    ),
-    11 => 
-    array (
-      'id' => 7,
-      'name' => 'Axe',
-    ),
-    12 => 
-    array (
-      'id' => 9,
-      'name' => 'Mace',
-    ),
-    13 => 
-    array (
-      'id' => 15,
-      'name' => 'Torch',
-    ),
-    14 => 
-    array (
-      'id' => 19,
-      'name' => 'Trident',
-    ),
-    15 => 
-    array (
-      'id' => 16,
-      'name' => 'Warhorn',
-    ),
-    16 => 
-    array (
-      'id' => 8,
-      'name' => 'Dagger',
-    ),
-    17 => 
-    array (
-      'id' => 5,
-      'name' => 'Shortbow',
-    ),
-    18 => 
-    array (
-      'id' => 4,
-      'name' => 'Rifle',
-    ),
-  ),
-  'specializations' => 
-  array (
-    0 => 
-    array (
-      'id' => 1,
-      'name' => 'Fire',
-      'profession_id' => 1,
-      'profession' => 'Elementalist',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 3,
-        1 => 4,
-        2 => 5,
-      ),
-      'major_traits' => 
-      array (
-        0 => 7,
-        1 => 8,
-        2 => 11,
-        3 => 9,
-        4 => 18,
-        5 => 17,
-        6 => 10,
-        7 => 14,
-        8 => 15,
-      ),
-    ),
-    1 => 
-    array (
-      'id' => 2,
-      'name' => 'Air',
-      'profession_id' => 1,
-      'profession' => 'Elementalist',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 22,
-        1 => 23,
-        2 => 24,
-      ),
-      'major_traits' => 
-      array (
-        0 => 28,
-        1 => 37,
-        2 => 38,
-        3 => 34,
-        4 => 26,
-        5 => 32,
-        6 => 36,
-        7 => 30,
-        8 => 25,
-      ),
-    ),
-    2 => 
-    array (
-      'id' => 3,
-      'name' => 'Earth',
-      'profession_id' => 1,
-      'profession' => 'Elementalist',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 42,
-        1 => 43,
-        2 => 44,
-      ),
-      'major_traits' => 
-      array (
-        0 => 55,
-        1 => 47,
-        2 => 56,
-        3 => 53,
-        4 => 57,
-        5 => 48,
-        6 => 50,
-        7 => 58,
-        8 => 45,
-      ),
-    ),
-    3 => 
-    array (
-      'id' => 4,
-      'name' => 'Water',
-      'profession_id' => 1,
-      'profession' => 'Elementalist',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 61,
-        1 => 62,
-        2 => 63,
-      ),
-      'major_traits' => 
-      array (
-        0 => 77,
-        1 => 69,
-        2 => 70,
-        3 => 67,
-        4 => 66,
-        5 => 76,
-        6 => 73,
-        7 => 64,
-        8 => 65,
-      ),
-    ),
-    4 => 
-    array (
-      'id' => 5,
-      'name' => 'Arcane',
-      'profession_id' => 1,
-      'profession' => 'Elementalist',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 81,
-        1 => 80,
-        2 => 82,
-      ),
-      'major_traits' => 
-      array (
-        0 => 86,
-        1 => 94,
-        2 => 87,
-        3 => 85,
-        4 => 83,
-        5 => 93,
-        6 => 90,
-        7 => 89,
-        8 => 91,
-      ),
-    ),
-    5 => 
-    array (
-      'id' => 6,
-      'name' => 'Tempest',
-      'profession_id' => 1,
-      'profession' => 'Elementalist',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 98,
-        1 => 99,
-        2 => 100,
-      ),
-      'major_traits' => 
-      array (
-        0 => 101,
-        1 => 102,
-        2 => 103,
-        3 => 104,
-        4 => 105,
-        5 => 106,
-        6 => 107,
-        7 => 108,
-        8 => 109,
-      ),
-    ),
-    6 => 
-    array (
-      'id' => 7,
-      'name' => 'Strength',
-      'profession_id' => 2,
-      'profession' => 'Warrior',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 112,
-        1 => 113,
-        2 => 114,
-      ),
-      'major_traits' => 
-      array (
-        0 => 115,
-        1 => 127,
-        2 => 125,
-        3 => 117,
-        4 => 116,
-        5 => 120,
-        6 => 126,
-        7 => 119,
-        8 => 122,
-      ),
-    ),
-    7 => 
-    array (
-      'id' => 8,
-      'name' => 'Arms',
-      'profession_id' => 2,
-      'profession' => 'Warrior',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 134,
-        1 => 135,
-        2 => 136,
-      ),
-      'major_traits' => 
-      array (
-        0 => 137,
-        1 => 138,
-        2 => 143,
-        3 => 142,
-        4 => 147,
-        5 => 153,
-        6 => 140,
-        7 => 149,
-        8 => 139,
-      ),
-    ),
-    8 => 
-    array (
-      'id' => 9,
-      'name' => 'Defense',
-      'profession_id' => 2,
-      'profession' => 'Warrior',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 156,
-        1 => 157,
-        2 => 158,
-      ),
-      'major_traits' => 
-      array (
-        0 => 163,
-        1 => 162,
-        2 => 166,
-        3 => 167,
-        4 => 168,
-        5 => 172,
-        6 => 165,
-        7 => 160,
-        8 => 159,
-      ),
-    ),
-    9 => 
-    array (
-      'id' => 10,
-      'name' => 'Tactics',
-      'profession_id' => 2,
-      'profession' => 'Warrior',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 175,
-        1 => 177,
-        2 => 176,
-      ),
-      'major_traits' => 
-      array (
-        0 => 181,
-        1 => 191,
-        2 => 184,
-        3 => 189,
-        4 => 185,
-        5 => 183,
-        6 => 179,
-        7 => 188,
-        8 => 178,
-      ),
-    ),
-    10 => 
-    array (
-      'id' => 11,
-      'name' => 'Discipline',
-      'profession_id' => 2,
-      'profession' => 'Warrior',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 194,
-        1 => 195,
-        2 => 196,
-      ),
-      'major_traits' => 
-      array (
-        0 => 197,
-        1 => 208,
-        2 => 211,
-        3 => 198,
-        4 => 206,
-        5 => 200,
-        6 => 199,
-        7 => 201,
-        8 => 205,
-      ),
-    ),
-    11 => 
-    array (
-      'id' => 12,
-      'name' => 'Berserker',
-      'profession_id' => 2,
-      'profession' => 'Warrior',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 213,
-        1 => 214,
-        2 => 215,
-      ),
-      'major_traits' => 
-      array (
-        0 => 216,
-        1 => 217,
-        2 => 218,
-        3 => 219,
-        4 => 220,
-        5 => 221,
-        6 => 222,
-        7 => 223,
-        8 => 224,
-      ),
-    ),
-    12 => 
-    array (
-      'id' => 13,
-      'name' => 'Marksmanship',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 227,
-        1 => 228,
-        2 => 229,
-      ),
-      'major_traits' => 
-      array (
-        0 => 230,
-        1 => 234,
-        2 => 231,
-        3 => 246,
-        4 => 236,
-        5 => 232,
-        6 => 245,
-        7 => 240,
-        8 => 233,
-      ),
-    ),
-    13 => 
-    array (
-      'id' => 14,
-      'name' => 'Skirmishing',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 249,
-        1 => 250,
-        2 => 251,
-      ),
-      'major_traits' => 
-      array (
-        0 => 255,
-        1 => 257,
-        2 => 263,
-        3 => 252,
-        4 => 253,
-        5 => 254,
-        6 => 259,
-        7 => 260,
-        8 => 261,
-      ),
-    ),
-    14 => 
-    array (
-      'id' => 15,
-      'name' => 'Wilderness Survival',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 268,
-        1 => 269,
-        2 => 270,
-      ),
-      'major_traits' => 
-      array (
-        0 => 275,
-        1 => 279,
-        2 => 276,
-        3 => 278,
-        4 => 272,
-        5 => 284,
-        6 => 283,
-        7 => 287,
-        8 => 271,
-      ),
-    ),
-    15 => 
-    array (
-      'id' => 16,
-      'name' => 'Nature Magic',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 290,
-        1 => 291,
-        2 => 292,
-      ),
-      'major_traits' => 
-      array (
-        0 => 293,
-        1 => 294,
-        2 => 295,
-        3 => 297,
-        4 => 298,
-        5 => 299,
-        6 => 305,
-        7 => 306,
-        8 => 307,
-      ),
-    ),
-    16 => 
-    array (
-      'id' => 17,
-      'name' => 'Beastmastery',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 315,
-        1 => 316,
-        2 => 317,
-      ),
-      'major_traits' => 
-      array (
-        0 => 321,
-        1 => 322,
-        2 => 339,
-        3 => 320,
-        4 => 323,
-        5 => 329,
-        6 => 319,
-        7 => 334,
-        8 => 318,
-      ),
-    ),
-    17 => 
-    array (
-      'id' => 18,
-      'name' => 'Druid',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 341,
-        1 => 342,
-        2 => 343,
-      ),
-      'major_traits' => 
-      array (
-        0 => 344,
-        1 => 345,
-        2 => 346,
-        3 => 347,
-        4 => 348,
-        5 => 349,
-        6 => 350,
-        7 => 351,
-        8 => 352,
-      ),
-    ),
-    18 => 
-    array (
-      'id' => 19,
-      'name' => 'Spite',
-      'profession_id' => 4,
-      'profession' => 'Necromancer',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 355,
-        1 => 356,
-        2 => 359,
-      ),
-      'major_traits' => 
-      array (
-        0 => 364,
-        1 => 369,
-        2 => 370,
-        3 => 363,
-        4 => 360,
-        5 => 361,
-        6 => 368,
-        7 => 367,
-        8 => 366,
-      ),
-    ),
-    19 => 
-    array (
-      'id' => 20,
-      'name' => 'Curses',
-      'profession_id' => 4,
-      'profession' => 'Necromancer',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 376,
-        1 => 377,
-        2 => 378,
-      ),
-      'major_traits' => 
-      array (
-        0 => 381,
-        1 => 382,
-        2 => 385,
-        3 => 386,
-        4 => 379,
-        5 => 380,
-        6 => 387,
-        7 => 388,
-        8 => 390,
-      ),
-    ),
-    20 => 
-    array (
-      'id' => 21,
-      'name' => 'Death Magic',
-      'profession_id' => 4,
-      'profession' => 'Necromancer',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 395,
-        1 => 396,
-        2 => 397,
-      ),
-      'major_traits' => 
-      array (
-        0 => 408,
-        1 => 410,
-        2 => 399,
-        3 => 409,
-        4 => 405,
-        5 => 398,
-        6 => 407,
-        7 => 400,
-        8 => 401,
-      ),
-    ),
-    21 => 
-    array (
-      'id' => 22,
-      'name' => 'Blood Magic',
-      'profession_id' => 4,
-      'profession' => 'Necromancer',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 415,
-        1 => 417,
-        2 => 418,
-      ),
-      'major_traits' => 
-      array (
-        0 => 433,
-        1 => 424,
-        2 => 419,
-        3 => 420,
-        4 => 421,
-        5 => 428,
-        6 => 431,
-        7 => 422,
-        8 => 427,
-      ),
-    ),
-    22 => 
-    array (
-      'id' => 23,
-      'name' => 'Soul Reaping',
-      'profession_id' => 4,
-      'profession' => 'Necromancer',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 436,
-        1 => 437,
-        2 => 438,
-      ),
-      'major_traits' => 
-      array (
-        0 => 448,
-        1 => 449,
-        2 => 442,
-        3 => 453,
-        4 => 451,
-        5 => 447,
-        6 => 443,
-        7 => 444,
-        8 => 439,
-      ),
-    ),
-    23 => 
-    array (
-      'id' => 24,
-      'name' => 'Reaper',
-      'profession_id' => 4,
-      'profession' => 'Necromancer',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 454,
-        1 => 455,
-        2 => 456,
-      ),
-      'major_traits' => 
-      array (
-        0 => 457,
-        1 => 458,
-        2 => 459,
-        3 => 460,
-        4 => 461,
-        5 => 462,
-        6 => 463,
-        7 => 464,
-        8 => 465,
-      ),
-    ),
-    24 => 
-    array (
-      'id' => 25,
-      'name' => 'Zeal',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 468,
-        1 => 469,
-        2 => 470,
-      ),
-      'major_traits' => 
-      array (
-        0 => 480,
-        1 => 471,
-        2 => 481,
-        3 => 479,
-        4 => 478,
-        5 => 477,
-        6 => 472,
-        7 => 473,
-        8 => 474,
-      ),
-    ),
-    25 => 
-    array (
-      'id' => 26,
-      'name' => 'Radiance',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 485,
-        1 => 486,
-        2 => 487,
-      ),
-      'major_traits' => 
-      array (
-        0 => 494,
-        1 => 491,
-        2 => 496,
-        3 => 497,
-        4 => 503,
-        5 => 498,
-        6 => 488,
-        7 => 500,
-        8 => 489,
-      ),
-    ),
-    26 => 
-    array (
-      'id' => 27,
-      'name' => 'Valor',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 506,
-        1 => 507,
-        2 => 508,
-      ),
-      'major_traits' => 
-      array (
-        0 => 512,
-        1 => 513,
-        2 => 514,
-        3 => 520,
-        4 => 510,
-        5 => 509,
-        6 => 515,
-        7 => 516,
-        8 => 522,
-      ),
-    ),
-    27 => 
-    array (
-      'id' => 28,
-      'name' => 'Honor',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 525,
-        1 => 526,
-        2 => 527,
-      ),
-      'major_traits' => 
-      array (
-        0 => 529,
-        1 => 532,
-        2 => 533,
-        3 => 537,
-        4 => 531,
-        5 => 542,
-        6 => 540,
-        7 => 541,
-        8 => 530,
-      ),
-    ),
-    28 => 
-    array (
-      'id' => 29,
-      'name' => 'Virtues',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 547,
-        1 => 548,
-        2 => 549,
-      ),
-      'major_traits' => 
-      array (
-        0 => 565,
-        1 => 560,
-        2 => 551,
-        3 => 563,
-        4 => 567,
-        5 => 568,
-        6 => 555,
-        7 => 556,
-        8 => 554,
-      ),
-    ),
-    29 => 
-    array (
-      'id' => 30,
-      'name' => 'Dragonhunter',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 571,
-        1 => 572,
-        2 => 573,
-      ),
-      'major_traits' => 
-      array (
-        0 => 574,
-        1 => 579,
-        2 => 576,
-        3 => 577,
-        4 => 575,
-        5 => 578,
-        6 => 580,
-        7 => 581,
-        8 => 582,
-      ),
-    ),
-    30 => 
-    array (
-      'id' => 31,
-      'name' => 'Deadly Arts',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 585,
-        1 => 586,
-        2 => 587,
-      ),
-      'major_traits' => 
-      array (
-        0 => 589,
-        1 => 597,
-        2 => 598,
-        3 => 599,
-        4 => 592,
-        5 => 588,
-        6 => 594,
-        7 => 602,
-        8 => 600,
-      ),
-    ),
-    31 => 
-    array (
-      'id' => 32,
-      'name' => 'Critical Strikes',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 607,
-        1 => 608,
-        2 => 609,
-      ),
-      'major_traits' => 
-      array (
-        0 => 616,
-        1 => 618,
-        2 => 611,
-        3 => 610,
-        4 => 622,
-        5 => 619,
-        6 => 612,
-        7 => 624,
-        8 => 613,
-      ),
-    ),
-    32 => 
-    array (
-      'id' => 33,
-      'name' => 'Shadow Arts',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 627,
-        1 => 628,
-        2 => 629,
-      ),
-      'major_traits' => 
-      array (
-        0 => 631,
-        1 => 632,
-        2 => 643,
-        3 => 641,
-        4 => 636,
-        5 => 645,
-        6 => 637,
-        7 => 642,
-        8 => 644,
-      ),
-    ),
-    33 => 
-    array (
-      'id' => 34,
-      'name' => 'Acrobatics',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 648,
-        1 => 649,
-        2 => 650,
-      ),
-      'major_traits' => 
-      array (
-        0 => 660,
-        1 => 665,
-        2 => 663,
-        3 => 652,
-        4 => 651,
-        5 => 657,
-        6 => 664,
-        7 => 659,
-        8 => 653,
-      ),
-    ),
-    34 => 
-    array (
-      'id' => 35,
-      'name' => 'Trickery',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 668,
-        1 => 669,
-        2 => 670,
-      ),
-      'major_traits' => 
-      array (
-        0 => 676,
-        1 => 677,
-        2 => 681,
-        3 => 680,
-        4 => 685,
-        5 => 672,
-        6 => 671,
-        7 => 683,
-        8 => 673,
-      ),
-    ),
-    35 => 
-    array (
-      'id' => 36,
-      'name' => 'Daredevil',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 686,
-        1 => 688,
-        2 => 687,
-      ),
-      'major_traits' => 
-      array (
-        0 => 689,
-        1 => 690,
-        2 => 691,
-        3 => 692,
-        4 => 693,
-        5 => 694,
-        6 => 695,
-        7 => 697,
-        8 => 696,
-      ),
-    ),
-    36 => 
-    array (
-      'id' => 37,
-      'name' => 'Explosives',
-      'profession_id' => 7,
-      'profession' => 'Engineer',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 700,
-        1 => 702,
-        2 => 703,
-      ),
-      'major_traits' => 
-      array (
-        0 => 713,
-        1 => 714,
-        2 => 715,
-        3 => 716,
-        4 => 717,
-        5 => 705,
-        6 => 718,
-        7 => 710,
-        8 => 719,
-      ),
-    ),
-    37 => 
-    array (
-      'id' => 38,
-      'name' => 'Firearms',
-      'profession_id' => 7,
-      'profession' => 'Engineer',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 726,
-        1 => 727,
-        2 => 728,
-      ),
-      'major_traits' => 
-      array (
-        0 => 729,
-        1 => 730,
-        2 => 731,
-        3 => 732,
-        4 => 739,
-        5 => 733,
-        6 => 737,
-        7 => 741,
-        8 => 742,
-      ),
-    ),
-    38 => 
-    array (
-      'id' => 39,
-      'name' => 'Inventions',
-      'profession_id' => 7,
-      'profession' => 'Engineer',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 751,
-        1 => 752,
-        2 => 753,
-      ),
-      'major_traits' => 
-      array (
-        0 => 766,
-        1 => 754,
-        2 => 757,
-        3 => 758,
-        4 => 755,
-        5 => 772,
-        6 => 759,
-        7 => 760,
-        8 => 756,
-      ),
-    ),
-    39 => 
-    array (
-      'id' => 40,
-      'name' => 'Alchemy',
-      'profession_id' => 7,
-      'profession' => 'Engineer',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 779,
-        1 => 780,
-        2 => 781,
-      ),
-      'major_traits' => 
-      array (
-        0 => 789,
-        1 => 790,
-        2 => 783,
-        3 => 784,
-        4 => 796,
-        5 => 797,
-        6 => 795,
-        7 => 785,
-        8 => 786,
-      ),
-    ),
-    40 => 
-    array (
-      'id' => 41,
-      'name' => 'Tools',
-      'profession_id' => 7,
-      'profession' => 'Engineer',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 802,
-        1 => 803,
-        2 => 804,
-      ),
-      'major_traits' => 
-      array (
-        0 => 822,
-        1 => 805,
-        2 => 819,
-        3 => 814,
-        4 => 806,
-        5 => 807,
-        6 => 808,
-        7 => 812,
-        8 => 809,
-      ),
-    ),
-    41 => 
-    array (
-      'id' => 42,
-      'name' => 'Scrapper',
-      'profession_id' => 7,
-      'profession' => 'Engineer',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 823,
-        1 => 824,
-        2 => 825,
-      ),
-      'major_traits' => 
-      array (
-        0 => 826,
-        1 => 835,
-        2 => 828,
-        3 => 829,
-        4 => 830,
-        5 => 831,
-        6 => 832,
-        7 => 833,
-        8 => 834,
-      ),
-    ),
-    42 => 
-    array (
-      'id' => 43,
-      'name' => 'Domination',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 838,
-        1 => 839,
-        2 => 840,
-      ),
-      'major_traits' => 
-      array (
-        0 => 846,
-        1 => 850,
-        2 => 855,
-        3 => 852,
-        4 => 841,
-        5 => 842,
-        6 => 848,
-        7 => 849,
-        8 => 843,
-      ),
-    ),
-    43 => 
-    array (
-      'id' => 44,
-      'name' => 'Dueling',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 858,
-        1 => 859,
-        2 => 860,
-      ),
-      'major_traits' => 
-      array (
-        0 => 871,
-        1 => 867,
-        2 => 872,
-        3 => 861,
-        4 => 862,
-        5 => 874,
-        6 => 866,
-        7 => 863,
-        8 => 868,
-      ),
-    ),
-    44 => 
-    array (
-      'id' => 45,
-      'name' => 'Chaos',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 877,
-        1 => 878,
-        2 => 879,
-      ),
-      'major_traits' => 
-      array (
-        0 => 888,
-        1 => 882,
-        2 => 889,
-        3 => 891,
-        4 => 880,
-        5 => 894,
-        6 => 887,
-        7 => 885,
-        8 => 881,
-      ),
-    ),
-    45 => 
-    array (
-      'id' => 46,
-      'name' => 'Inspiration',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 897,
-        1 => 899,
-        2 => 900,
-      ),
-      'major_traits' => 
-      array (
-        0 => 906,
-        1 => 910,
-        2 => 912,
-        3 => 907,
-        4 => 911,
-        5 => 901,
-        6 => 902,
-        7 => 903,
-        8 => 909,
-      ),
-    ),
-    46 => 
-    array (
-      'id' => 47,
-      'name' => 'Illusions',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 918,
-        1 => 917,
-        2 => 919,
-      ),
-      'major_traits' => 
-      array (
-        0 => 928,
-        1 => 921,
-        2 => 920,
-        3 => 922,
-        4 => 934,
-        5 => 924,
-        6 => 926,
-        7 => 923,
-        8 => 925,
-      ),
-    ),
-    47 => 
-    array (
-      'id' => 48,
-      'name' => 'Chronomancer',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 937,
-        1 => 938,
-        2 => 939,
-      ),
-      'major_traits' => 
-      array (
-        0 => 941,
-        1 => 942,
-        2 => 940,
-        3 => 943,
-        4 => 944,
-        5 => 945,
-        6 => 947,
-        7 => 948,
-        8 => 946,
-      ),
-    ),
-    48 => 
-    array (
-      'id' => 49,
-      'name' => 'Corruption',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => false,
-      'order' => 1,
-      'minor_traits' => 
-      array (
-        0 => 961,
-        1 => 962,
-        2 => 963,
-      ),
-      'major_traits' => 
-      array (
-        0 => 964,
-        1 => 965,
-        2 => 966,
-        3 => 967,
-        4 => 968,
-        5 => 969,
-        6 => 970,
-        7 => 971,
-        8 => 972,
-      ),
-    ),
-    49 => 
-    array (
-      'id' => 50,
-      'name' => 'Retribution',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => false,
-      'order' => 2,
-      'minor_traits' => 
-      array (
-        0 => 973,
-        1 => 974,
-        2 => 975,
-      ),
-      'major_traits' => 
-      array (
-        0 => 976,
-        1 => 977,
-        2 => 978,
-        3 => 979,
-        4 => 980,
-        5 => 981,
-        6 => 982,
-        7 => 983,
-        8 => 984,
-      ),
-    ),
-    50 => 
-    array (
-      'id' => 51,
-      'name' => 'Salvation',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => false,
-      'order' => 3,
-      'minor_traits' => 
-      array (
-        0 => 985,
-        1 => 986,
-        2 => 987,
-      ),
-      'major_traits' => 
-      array (
-        0 => 988,
-        1 => 989,
-        2 => 990,
-        3 => 991,
-        4 => 992,
-        5 => 993,
-        6 => 994,
-        7 => 995,
-        8 => 996,
-      ),
-    ),
-    51 => 
-    array (
-      'id' => 52,
-      'name' => 'Invocation',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => false,
-      'order' => 4,
-      'minor_traits' => 
-      array (
-        0 => 997,
-        1 => 998,
-        2 => 999,
-      ),
-      'major_traits' => 
-      array (
-        0 => 1000,
-        1 => 1001,
-        2 => 1002,
-        3 => 1003,
-        4 => 1004,
-        5 => 1005,
-        6 => 1006,
-        7 => 1007,
-        8 => 1008,
-      ),
-    ),
-    52 => 
-    array (
-      'id' => 53,
-      'name' => 'Devastation',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => false,
-      'order' => 5,
-      'minor_traits' => 
-      array (
-        0 => 949,
-        1 => 950,
-        2 => 951,
-      ),
-      'major_traits' => 
-      array (
-        0 => 957,
-        1 => 953,
-        2 => 954,
-        3 => 955,
-        4 => 956,
-        5 => 952,
-        6 => 958,
-        7 => 959,
-        8 => 960,
-      ),
-    ),
-    53 => 
-    array (
-      'id' => 54,
-      'name' => 'Herald',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'elite' => true,
-      'order' => 6,
-      'minor_traits' => 
-      array (
-        0 => 1009,
-        1 => 1010,
-        2 => 1011,
-      ),
-      'major_traits' => 
-      array (
-        0 => 1012,
-        1 => 1013,
-        2 => 1014,
-        3 => 1015,
-        4 => 1016,
-        5 => 1017,
-        6 => 1018,
-        7 => 1019,
-        8 => 1020,
-      ),
-    ),
-  ),
   'items' => 
   array (
     0 => 
     array (
-      'id' => 171,
+      'id' => 172,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Knight Amulet',
@@ -8620,7 +12,7 @@
     ),
     1 => 
     array (
-      'id' => 172,
+      'id' => 173,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Cavalier Amulet',
@@ -8629,7 +21,7 @@
     ),
     2 => 
     array (
-      'id' => 173,
+      'id' => 174,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Magi Amulet',
@@ -8638,7 +30,7 @@
     ),
     3 => 
     array (
-      'id' => 175,
+      'id' => 176,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Carrion Amulet',
@@ -8647,7 +39,7 @@
     ),
     4 => 
     array (
-      'id' => 176,
+      'id' => 177,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Rabid Amulet',
@@ -8656,7 +48,7 @@
     ),
     5 => 
     array (
-      'id' => 178,
+      'id' => 179,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Valkyrie Amulet',
@@ -8665,7 +57,7 @@
     ),
     6 => 
     array (
-      'id' => 179,
+      'id' => 180,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Berserker Amulet',
@@ -8674,7 +66,7 @@
     ),
     7 => 
     array (
-      'id' => 181,
+      'id' => 182,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Rampager Amulet',
@@ -8683,7 +75,7 @@
     ),
     8 => 
     array (
-      'id' => 182,
+      'id' => 183,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Barbarian Amulet',
@@ -8692,7 +84,7 @@
     ),
     9 => 
     array (
-      'id' => 183,
+      'id' => 184,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Assassin Amulet',
@@ -8701,7 +93,7 @@
     ),
     10 => 
     array (
-      'id' => 187,
+      'id' => 188,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Marauder Amulet',
@@ -8710,7 +102,7 @@
     ),
     11 => 
     array (
-      'id' => 191,
+      'id' => 192,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Viper Amulet',
@@ -8719,7 +111,7 @@
     ),
     12 => 
     array (
-      'id' => 192,
+      'id' => 193,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Wanderer Amulet',
@@ -8728,7 +120,7 @@
     ),
     13 => 
     array (
-      'id' => 193,
+      'id' => 194,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Sinister Amulet',
@@ -8737,7 +129,7 @@
     ),
     14 => 
     array (
-      'id' => 194,
+      'id' => 195,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Mender\'s Amulet',
@@ -8746,7 +138,7 @@
     ),
     15 => 
     array (
-      'id' => 196,
+      'id' => 197,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Paladin\'s Amulet',
@@ -8755,7 +147,7 @@
     ),
     16 => 
     array (
-      'id' => 197,
+      'id' => 198,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Sage\'s Amulet',
@@ -8764,7 +156,7 @@
     ),
     17 => 
     array (
-      'id' => 198,
+      'id' => 199,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Demolisher\'s Amulet',
@@ -8773,7 +165,7 @@
     ),
     18 => 
     array (
-      'id' => 199,
+      'id' => 200,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Destroyer\'s Amulet',
@@ -8782,7 +174,7 @@
     ),
     19 => 
     array (
-      'id' => 200,
+      'id' => 201,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Seeker\'s Amulet',
@@ -8791,7 +183,7 @@
     ),
     20 => 
     array (
-      'id' => 201,
+      'id' => 202,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Diviner\'s Amulet',
@@ -8800,7 +192,7 @@
     ),
     21 => 
     array (
-      'id' => 202,
+      'id' => 203,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Deadshot Amulet',
@@ -18780,6 +10172,5429 @@
       'number' => 9,
     ),
   ),
+  'specializations' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'name' => 'Fire',
+      'profession_id' => 1,
+      'profession' => 'Elementalist',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 3,
+        1 => 4,
+        2 => 5,
+      ),
+      'major_traits' => 
+      array (
+        0 => 7,
+        1 => 8,
+        2 => 11,
+        3 => 9,
+        4 => 18,
+        5 => 17,
+        6 => 10,
+        7 => 14,
+        8 => 15,
+      ),
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'name' => 'Air',
+      'profession_id' => 1,
+      'profession' => 'Elementalist',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 22,
+        1 => 23,
+        2 => 24,
+      ),
+      'major_traits' => 
+      array (
+        0 => 28,
+        1 => 37,
+        2 => 38,
+        3 => 34,
+        4 => 26,
+        5 => 32,
+        6 => 36,
+        7 => 30,
+        8 => 25,
+      ),
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'name' => 'Earth',
+      'profession_id' => 1,
+      'profession' => 'Elementalist',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 42,
+        1 => 43,
+        2 => 44,
+      ),
+      'major_traits' => 
+      array (
+        0 => 55,
+        1 => 47,
+        2 => 56,
+        3 => 53,
+        4 => 57,
+        5 => 48,
+        6 => 50,
+        7 => 58,
+        8 => 45,
+      ),
+    ),
+    3 => 
+    array (
+      'id' => 4,
+      'name' => 'Water',
+      'profession_id' => 1,
+      'profession' => 'Elementalist',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 61,
+        1 => 62,
+        2 => 63,
+      ),
+      'major_traits' => 
+      array (
+        0 => 77,
+        1 => 69,
+        2 => 70,
+        3 => 67,
+        4 => 66,
+        5 => 76,
+        6 => 73,
+        7 => 64,
+        8 => 65,
+      ),
+    ),
+    4 => 
+    array (
+      'id' => 5,
+      'name' => 'Arcane',
+      'profession_id' => 1,
+      'profession' => 'Elementalist',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 81,
+        1 => 80,
+        2 => 82,
+      ),
+      'major_traits' => 
+      array (
+        0 => 86,
+        1 => 94,
+        2 => 87,
+        3 => 85,
+        4 => 83,
+        5 => 93,
+        6 => 90,
+        7 => 89,
+        8 => 91,
+      ),
+    ),
+    5 => 
+    array (
+      'id' => 6,
+      'name' => 'Tempest',
+      'profession_id' => 1,
+      'profession' => 'Elementalist',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 98,
+        1 => 99,
+        2 => 100,
+      ),
+      'major_traits' => 
+      array (
+        0 => 101,
+        1 => 102,
+        2 => 103,
+        3 => 104,
+        4 => 105,
+        5 => 106,
+        6 => 107,
+        7 => 108,
+        8 => 109,
+      ),
+    ),
+    6 => 
+    array (
+      'id' => 7,
+      'name' => 'Strength',
+      'profession_id' => 2,
+      'profession' => 'Warrior',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 112,
+        1 => 113,
+        2 => 114,
+      ),
+      'major_traits' => 
+      array (
+        0 => 115,
+        1 => 127,
+        2 => 125,
+        3 => 117,
+        4 => 116,
+        5 => 120,
+        6 => 126,
+        7 => 119,
+        8 => 122,
+      ),
+    ),
+    7 => 
+    array (
+      'id' => 8,
+      'name' => 'Arms',
+      'profession_id' => 2,
+      'profession' => 'Warrior',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 134,
+        1 => 135,
+        2 => 136,
+      ),
+      'major_traits' => 
+      array (
+        0 => 137,
+        1 => 138,
+        2 => 143,
+        3 => 142,
+        4 => 147,
+        5 => 153,
+        6 => 140,
+        7 => 149,
+        8 => 139,
+      ),
+    ),
+    8 => 
+    array (
+      'id' => 9,
+      'name' => 'Defense',
+      'profession_id' => 2,
+      'profession' => 'Warrior',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 156,
+        1 => 157,
+        2 => 158,
+      ),
+      'major_traits' => 
+      array (
+        0 => 163,
+        1 => 162,
+        2 => 166,
+        3 => 167,
+        4 => 168,
+        5 => 172,
+        6 => 165,
+        7 => 160,
+        8 => 159,
+      ),
+    ),
+    9 => 
+    array (
+      'id' => 10,
+      'name' => 'Tactics',
+      'profession_id' => 2,
+      'profession' => 'Warrior',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 175,
+        1 => 177,
+        2 => 176,
+      ),
+      'major_traits' => 
+      array (
+        0 => 181,
+        1 => 191,
+        2 => 184,
+        3 => 189,
+        4 => 185,
+        5 => 183,
+        6 => 179,
+        7 => 188,
+        8 => 178,
+      ),
+    ),
+    10 => 
+    array (
+      'id' => 11,
+      'name' => 'Discipline',
+      'profession_id' => 2,
+      'profession' => 'Warrior',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 194,
+        1 => 195,
+        2 => 196,
+      ),
+      'major_traits' => 
+      array (
+        0 => 197,
+        1 => 208,
+        2 => 211,
+        3 => 198,
+        4 => 206,
+        5 => 200,
+        6 => 199,
+        7 => 201,
+        8 => 205,
+      ),
+    ),
+    11 => 
+    array (
+      'id' => 12,
+      'name' => 'Berserker',
+      'profession_id' => 2,
+      'profession' => 'Warrior',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 213,
+        1 => 214,
+        2 => 215,
+      ),
+      'major_traits' => 
+      array (
+        0 => 216,
+        1 => 217,
+        2 => 218,
+        3 => 219,
+        4 => 220,
+        5 => 221,
+        6 => 222,
+        7 => 223,
+        8 => 224,
+      ),
+    ),
+    12 => 
+    array (
+      'id' => 13,
+      'name' => 'Marksmanship',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 227,
+        1 => 228,
+        2 => 229,
+      ),
+      'major_traits' => 
+      array (
+        0 => 230,
+        1 => 234,
+        2 => 231,
+        3 => 246,
+        4 => 236,
+        5 => 232,
+        6 => 245,
+        7 => 240,
+        8 => 233,
+      ),
+    ),
+    13 => 
+    array (
+      'id' => 14,
+      'name' => 'Skirmishing',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 249,
+        1 => 250,
+        2 => 251,
+      ),
+      'major_traits' => 
+      array (
+        0 => 255,
+        1 => 257,
+        2 => 263,
+        3 => 252,
+        4 => 253,
+        5 => 254,
+        6 => 259,
+        7 => 260,
+        8 => 261,
+      ),
+    ),
+    14 => 
+    array (
+      'id' => 15,
+      'name' => 'Wilderness Survival',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 268,
+        1 => 269,
+        2 => 270,
+      ),
+      'major_traits' => 
+      array (
+        0 => 275,
+        1 => 279,
+        2 => 276,
+        3 => 278,
+        4 => 272,
+        5 => 284,
+        6 => 283,
+        7 => 287,
+        8 => 271,
+      ),
+    ),
+    15 => 
+    array (
+      'id' => 16,
+      'name' => 'Nature Magic',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 290,
+        1 => 291,
+        2 => 292,
+      ),
+      'major_traits' => 
+      array (
+        0 => 293,
+        1 => 294,
+        2 => 295,
+        3 => 297,
+        4 => 298,
+        5 => 299,
+        6 => 305,
+        7 => 306,
+        8 => 307,
+      ),
+    ),
+    16 => 
+    array (
+      'id' => 17,
+      'name' => 'Beastmastery',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 315,
+        1 => 316,
+        2 => 317,
+      ),
+      'major_traits' => 
+      array (
+        0 => 321,
+        1 => 322,
+        2 => 339,
+        3 => 320,
+        4 => 323,
+        5 => 329,
+        6 => 319,
+        7 => 334,
+        8 => 318,
+      ),
+    ),
+    17 => 
+    array (
+      'id' => 18,
+      'name' => 'Druid',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 341,
+        1 => 342,
+        2 => 343,
+      ),
+      'major_traits' => 
+      array (
+        0 => 344,
+        1 => 345,
+        2 => 346,
+        3 => 347,
+        4 => 348,
+        5 => 349,
+        6 => 350,
+        7 => 351,
+        8 => 352,
+      ),
+    ),
+    18 => 
+    array (
+      'id' => 19,
+      'name' => 'Spite',
+      'profession_id' => 4,
+      'profession' => 'Necromancer',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 355,
+        1 => 356,
+        2 => 359,
+      ),
+      'major_traits' => 
+      array (
+        0 => 364,
+        1 => 369,
+        2 => 370,
+        3 => 363,
+        4 => 360,
+        5 => 361,
+        6 => 368,
+        7 => 367,
+        8 => 366,
+      ),
+    ),
+    19 => 
+    array (
+      'id' => 20,
+      'name' => 'Curses',
+      'profession_id' => 4,
+      'profession' => 'Necromancer',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 376,
+        1 => 377,
+        2 => 378,
+      ),
+      'major_traits' => 
+      array (
+        0 => 381,
+        1 => 382,
+        2 => 385,
+        3 => 386,
+        4 => 379,
+        5 => 380,
+        6 => 387,
+        7 => 388,
+        8 => 390,
+      ),
+    ),
+    20 => 
+    array (
+      'id' => 21,
+      'name' => 'Death Magic',
+      'profession_id' => 4,
+      'profession' => 'Necromancer',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 395,
+        1 => 396,
+        2 => 397,
+      ),
+      'major_traits' => 
+      array (
+        0 => 408,
+        1 => 410,
+        2 => 399,
+        3 => 409,
+        4 => 405,
+        5 => 398,
+        6 => 407,
+        7 => 400,
+        8 => 401,
+      ),
+    ),
+    21 => 
+    array (
+      'id' => 22,
+      'name' => 'Blood Magic',
+      'profession_id' => 4,
+      'profession' => 'Necromancer',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 415,
+        1 => 417,
+        2 => 418,
+      ),
+      'major_traits' => 
+      array (
+        0 => 433,
+        1 => 424,
+        2 => 419,
+        3 => 420,
+        4 => 421,
+        5 => 428,
+        6 => 431,
+        7 => 422,
+        8 => 427,
+      ),
+    ),
+    22 => 
+    array (
+      'id' => 23,
+      'name' => 'Soul Reaping',
+      'profession_id' => 4,
+      'profession' => 'Necromancer',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 436,
+        1 => 437,
+        2 => 438,
+      ),
+      'major_traits' => 
+      array (
+        0 => 448,
+        1 => 449,
+        2 => 442,
+        3 => 453,
+        4 => 451,
+        5 => 447,
+        6 => 443,
+        7 => 444,
+        8 => 439,
+      ),
+    ),
+    23 => 
+    array (
+      'id' => 24,
+      'name' => 'Reaper',
+      'profession_id' => 4,
+      'profession' => 'Necromancer',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 454,
+        1 => 455,
+        2 => 456,
+      ),
+      'major_traits' => 
+      array (
+        0 => 457,
+        1 => 458,
+        2 => 459,
+        3 => 460,
+        4 => 461,
+        5 => 462,
+        6 => 463,
+        7 => 464,
+        8 => 465,
+      ),
+    ),
+    24 => 
+    array (
+      'id' => 25,
+      'name' => 'Zeal',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 468,
+        1 => 469,
+        2 => 470,
+      ),
+      'major_traits' => 
+      array (
+        0 => 480,
+        1 => 471,
+        2 => 481,
+        3 => 479,
+        4 => 478,
+        5 => 477,
+        6 => 472,
+        7 => 473,
+        8 => 474,
+      ),
+    ),
+    25 => 
+    array (
+      'id' => 26,
+      'name' => 'Radiance',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 485,
+        1 => 486,
+        2 => 487,
+      ),
+      'major_traits' => 
+      array (
+        0 => 494,
+        1 => 491,
+        2 => 496,
+        3 => 497,
+        4 => 503,
+        5 => 498,
+        6 => 488,
+        7 => 500,
+        8 => 489,
+      ),
+    ),
+    26 => 
+    array (
+      'id' => 27,
+      'name' => 'Valor',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 506,
+        1 => 507,
+        2 => 508,
+      ),
+      'major_traits' => 
+      array (
+        0 => 512,
+        1 => 513,
+        2 => 514,
+        3 => 520,
+        4 => 510,
+        5 => 509,
+        6 => 515,
+        7 => 516,
+        8 => 522,
+      ),
+    ),
+    27 => 
+    array (
+      'id' => 28,
+      'name' => 'Honor',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 525,
+        1 => 526,
+        2 => 527,
+      ),
+      'major_traits' => 
+      array (
+        0 => 529,
+        1 => 532,
+        2 => 533,
+        3 => 537,
+        4 => 531,
+        5 => 542,
+        6 => 540,
+        7 => 541,
+        8 => 530,
+      ),
+    ),
+    28 => 
+    array (
+      'id' => 29,
+      'name' => 'Virtues',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 547,
+        1 => 548,
+        2 => 549,
+      ),
+      'major_traits' => 
+      array (
+        0 => 565,
+        1 => 560,
+        2 => 551,
+        3 => 563,
+        4 => 567,
+        5 => 568,
+        6 => 555,
+        7 => 556,
+        8 => 554,
+      ),
+    ),
+    29 => 
+    array (
+      'id' => 30,
+      'name' => 'Dragonhunter',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 571,
+        1 => 572,
+        2 => 573,
+      ),
+      'major_traits' => 
+      array (
+        0 => 574,
+        1 => 579,
+        2 => 576,
+        3 => 577,
+        4 => 575,
+        5 => 578,
+        6 => 580,
+        7 => 581,
+        8 => 582,
+      ),
+    ),
+    30 => 
+    array (
+      'id' => 31,
+      'name' => 'Deadly Arts',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 585,
+        1 => 586,
+        2 => 587,
+      ),
+      'major_traits' => 
+      array (
+        0 => 589,
+        1 => 597,
+        2 => 598,
+        3 => 599,
+        4 => 592,
+        5 => 588,
+        6 => 594,
+        7 => 602,
+        8 => 600,
+      ),
+    ),
+    31 => 
+    array (
+      'id' => 32,
+      'name' => 'Critical Strikes',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 607,
+        1 => 608,
+        2 => 609,
+      ),
+      'major_traits' => 
+      array (
+        0 => 616,
+        1 => 618,
+        2 => 611,
+        3 => 610,
+        4 => 622,
+        5 => 619,
+        6 => 612,
+        7 => 624,
+        8 => 613,
+      ),
+    ),
+    32 => 
+    array (
+      'id' => 33,
+      'name' => 'Shadow Arts',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 627,
+        1 => 628,
+        2 => 629,
+      ),
+      'major_traits' => 
+      array (
+        0 => 631,
+        1 => 632,
+        2 => 643,
+        3 => 641,
+        4 => 636,
+        5 => 645,
+        6 => 637,
+        7 => 642,
+        8 => 644,
+      ),
+    ),
+    33 => 
+    array (
+      'id' => 34,
+      'name' => 'Acrobatics',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 648,
+        1 => 649,
+        2 => 650,
+      ),
+      'major_traits' => 
+      array (
+        0 => 660,
+        1 => 665,
+        2 => 663,
+        3 => 652,
+        4 => 651,
+        5 => 657,
+        6 => 664,
+        7 => 659,
+        8 => 653,
+      ),
+    ),
+    34 => 
+    array (
+      'id' => 35,
+      'name' => 'Trickery',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 668,
+        1 => 669,
+        2 => 670,
+      ),
+      'major_traits' => 
+      array (
+        0 => 676,
+        1 => 677,
+        2 => 681,
+        3 => 680,
+        4 => 685,
+        5 => 672,
+        6 => 671,
+        7 => 683,
+        8 => 673,
+      ),
+    ),
+    35 => 
+    array (
+      'id' => 36,
+      'name' => 'Daredevil',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 686,
+        1 => 688,
+        2 => 687,
+      ),
+      'major_traits' => 
+      array (
+        0 => 689,
+        1 => 690,
+        2 => 691,
+        3 => 692,
+        4 => 693,
+        5 => 694,
+        6 => 695,
+        7 => 697,
+        8 => 696,
+      ),
+    ),
+    36 => 
+    array (
+      'id' => 37,
+      'name' => 'Explosives',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 700,
+        1 => 702,
+        2 => 703,
+      ),
+      'major_traits' => 
+      array (
+        0 => 713,
+        1 => 714,
+        2 => 715,
+        3 => 716,
+        4 => 717,
+        5 => 705,
+        6 => 718,
+        7 => 710,
+        8 => 719,
+      ),
+    ),
+    37 => 
+    array (
+      'id' => 38,
+      'name' => 'Firearms',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 726,
+        1 => 727,
+        2 => 728,
+      ),
+      'major_traits' => 
+      array (
+        0 => 729,
+        1 => 730,
+        2 => 731,
+        3 => 732,
+        4 => 739,
+        5 => 733,
+        6 => 737,
+        7 => 741,
+        8 => 742,
+      ),
+    ),
+    38 => 
+    array (
+      'id' => 39,
+      'name' => 'Inventions',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 751,
+        1 => 752,
+        2 => 753,
+      ),
+      'major_traits' => 
+      array (
+        0 => 766,
+        1 => 754,
+        2 => 757,
+        3 => 758,
+        4 => 755,
+        5 => 772,
+        6 => 759,
+        7 => 760,
+        8 => 756,
+      ),
+    ),
+    39 => 
+    array (
+      'id' => 40,
+      'name' => 'Alchemy',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 779,
+        1 => 780,
+        2 => 781,
+      ),
+      'major_traits' => 
+      array (
+        0 => 789,
+        1 => 790,
+        2 => 783,
+        3 => 784,
+        4 => 796,
+        5 => 797,
+        6 => 795,
+        7 => 785,
+        8 => 786,
+      ),
+    ),
+    40 => 
+    array (
+      'id' => 41,
+      'name' => 'Tools',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 802,
+        1 => 803,
+        2 => 804,
+      ),
+      'major_traits' => 
+      array (
+        0 => 822,
+        1 => 805,
+        2 => 819,
+        3 => 814,
+        4 => 806,
+        5 => 807,
+        6 => 808,
+        7 => 812,
+        8 => 809,
+      ),
+    ),
+    41 => 
+    array (
+      'id' => 42,
+      'name' => 'Scrapper',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 823,
+        1 => 824,
+        2 => 825,
+      ),
+      'major_traits' => 
+      array (
+        0 => 826,
+        1 => 835,
+        2 => 828,
+        3 => 829,
+        4 => 830,
+        5 => 831,
+        6 => 832,
+        7 => 833,
+        8 => 834,
+      ),
+    ),
+    42 => 
+    array (
+      'id' => 43,
+      'name' => 'Domination',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 838,
+        1 => 839,
+        2 => 840,
+      ),
+      'major_traits' => 
+      array (
+        0 => 846,
+        1 => 850,
+        2 => 855,
+        3 => 852,
+        4 => 841,
+        5 => 842,
+        6 => 848,
+        7 => 849,
+        8 => 843,
+      ),
+    ),
+    43 => 
+    array (
+      'id' => 44,
+      'name' => 'Dueling',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 858,
+        1 => 859,
+        2 => 860,
+      ),
+      'major_traits' => 
+      array (
+        0 => 871,
+        1 => 867,
+        2 => 872,
+        3 => 861,
+        4 => 862,
+        5 => 874,
+        6 => 866,
+        7 => 863,
+        8 => 868,
+      ),
+    ),
+    44 => 
+    array (
+      'id' => 45,
+      'name' => 'Chaos',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 877,
+        1 => 878,
+        2 => 879,
+      ),
+      'major_traits' => 
+      array (
+        0 => 888,
+        1 => 882,
+        2 => 889,
+        3 => 891,
+        4 => 880,
+        5 => 894,
+        6 => 887,
+        7 => 885,
+        8 => 881,
+      ),
+    ),
+    45 => 
+    array (
+      'id' => 46,
+      'name' => 'Inspiration',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 897,
+        1 => 899,
+        2 => 900,
+      ),
+      'major_traits' => 
+      array (
+        0 => 906,
+        1 => 910,
+        2 => 912,
+        3 => 907,
+        4 => 911,
+        5 => 901,
+        6 => 902,
+        7 => 903,
+        8 => 909,
+      ),
+    ),
+    46 => 
+    array (
+      'id' => 47,
+      'name' => 'Illusions',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 918,
+        1 => 917,
+        2 => 919,
+      ),
+      'major_traits' => 
+      array (
+        0 => 928,
+        1 => 921,
+        2 => 920,
+        3 => 922,
+        4 => 934,
+        5 => 924,
+        6 => 926,
+        7 => 923,
+        8 => 925,
+      ),
+    ),
+    47 => 
+    array (
+      'id' => 48,
+      'name' => 'Chronomancer',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 937,
+        1 => 938,
+        2 => 939,
+      ),
+      'major_traits' => 
+      array (
+        0 => 941,
+        1 => 942,
+        2 => 940,
+        3 => 943,
+        4 => 944,
+        5 => 945,
+        6 => 947,
+        7 => 948,
+        8 => 946,
+      ),
+    ),
+    48 => 
+    array (
+      'id' => 49,
+      'name' => 'Corruption',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'elite' => false,
+      'order' => 1,
+      'minor_traits' => 
+      array (
+        0 => 961,
+        1 => 962,
+        2 => 963,
+      ),
+      'major_traits' => 
+      array (
+        0 => 964,
+        1 => 965,
+        2 => 966,
+        3 => 967,
+        4 => 968,
+        5 => 969,
+        6 => 970,
+        7 => 971,
+        8 => 972,
+      ),
+    ),
+    49 => 
+    array (
+      'id' => 50,
+      'name' => 'Retribution',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'elite' => false,
+      'order' => 2,
+      'minor_traits' => 
+      array (
+        0 => 973,
+        1 => 974,
+        2 => 975,
+      ),
+      'major_traits' => 
+      array (
+        0 => 976,
+        1 => 977,
+        2 => 978,
+        3 => 979,
+        4 => 980,
+        5 => 981,
+        6 => 982,
+        7 => 983,
+        8 => 984,
+      ),
+    ),
+    50 => 
+    array (
+      'id' => 51,
+      'name' => 'Salvation',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'elite' => false,
+      'order' => 3,
+      'minor_traits' => 
+      array (
+        0 => 985,
+        1 => 986,
+        2 => 987,
+      ),
+      'major_traits' => 
+      array (
+        0 => 988,
+        1 => 989,
+        2 => 990,
+        3 => 991,
+        4 => 992,
+        5 => 993,
+        6 => 994,
+        7 => 995,
+        8 => 996,
+      ),
+    ),
+    51 => 
+    array (
+      'id' => 52,
+      'name' => 'Invocation',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'elite' => false,
+      'order' => 4,
+      'minor_traits' => 
+      array (
+        0 => 997,
+        1 => 998,
+        2 => 999,
+      ),
+      'major_traits' => 
+      array (
+        0 => 1000,
+        1 => 1001,
+        2 => 1002,
+        3 => 1003,
+        4 => 1004,
+        5 => 1005,
+        6 => 1006,
+        7 => 1007,
+        8 => 1008,
+      ),
+    ),
+    52 => 
+    array (
+      'id' => 53,
+      'name' => 'Devastation',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'elite' => false,
+      'order' => 5,
+      'minor_traits' => 
+      array (
+        0 => 949,
+        1 => 950,
+        2 => 951,
+      ),
+      'major_traits' => 
+      array (
+        0 => 957,
+        1 => 953,
+        2 => 954,
+        3 => 955,
+        4 => 956,
+        5 => 952,
+        6 => 958,
+        7 => 959,
+        8 => 960,
+      ),
+    ),
+    53 => 
+    array (
+      'id' => 54,
+      'name' => 'Herald',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'elite' => true,
+      'order' => 6,
+      'minor_traits' => 
+      array (
+        0 => 1009,
+        1 => 1010,
+        2 => 1011,
+      ),
+      'major_traits' => 
+      array (
+        0 => 1012,
+        1 => 1013,
+        2 => 1014,
+        3 => 1015,
+        4 => 1016,
+        5 => 1017,
+        6 => 1018,
+        7 => 1019,
+        8 => 1020,
+      ),
+    ),
+  ),
+  'buffs' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'name' => 'Potent Master Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'name' => 'Toxic Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'name' => 'Hylek Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    3 => 
+    array (
+      'id' => 4,
+      'name' => 'Maintenance Oil Station',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    4 => 
+    array (
+      'id' => 5,
+      'name' => 'Bountiful Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    5 => 
+    array (
+      'id' => 6,
+      'name' => 'Furious Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    6 => 
+    array (
+      'id' => 7,
+      'name' => 'Magnanimous Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    7 => 
+    array (
+      'id' => 8,
+      'name' => 'Master Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    8 => 
+    array (
+      'id' => 9,
+      'name' => 'Quality Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    9 => 
+    array (
+      'id' => 10,
+      'name' => 'Artisan Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    10 => 
+    array (
+      'id' => 11,
+      'name' => 'Standard Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    11 => 
+    array (
+      'id' => 12,
+      'name' => 'Journeyman Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    12 => 
+    array (
+      'id' => 13,
+      'name' => 'Apprentice Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    13 => 
+    array (
+      'id' => 14,
+      'name' => 'Rough Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    14 => 
+    array (
+      'id' => 15,
+      'name' => 'Simple Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    15 => 
+    array (
+      'id' => 16,
+      'name' => 'Standard Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    16 => 
+    array (
+      'id' => 17,
+      'name' => 'Quality Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    17 => 
+    array (
+      'id' => 18,
+      'name' => 'Hardened Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    18 => 
+    array (
+      'id' => 19,
+      'name' => 'Superior Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    19 => 
+    array (
+      'id' => 20,
+      'name' => 'Toxic Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    20 => 
+    array (
+      'id' => 21,
+      'name' => 'Ogre Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    21 => 
+    array (
+      'id' => 22,
+      'name' => 'Sharpening Stone Station',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    22 => 
+    array (
+      'id' => 23,
+      'name' => 'Bountiful Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    23 => 
+    array (
+      'id' => 24,
+      'name' => 'Furious Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    24 => 
+    array (
+      'id' => 25,
+      'name' => 'Magnanimous Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    25 => 
+    array (
+      'id' => 26,
+      'name' => 'Potent Superior Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    26 => 
+    array (
+      'id' => 27,
+      'name' => 'Potent Master Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    27 => 
+    array (
+      'id' => 28,
+      'name' => 'Toxic Focusing Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    28 => 
+    array (
+      'id' => 29,
+      'name' => 'Krait Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    29 => 
+    array (
+      'id' => 30,
+      'name' => 'Tuning Crystal Station',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    30 => 
+    array (
+      'id' => 31,
+      'name' => 'Bountiful Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    31 => 
+    array (
+      'id' => 32,
+      'name' => 'Furious Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    32 => 
+    array (
+      'id' => 33,
+      'name' => 'Magnanimous Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    33 => 
+    array (
+      'id' => 34,
+      'name' => 'Master Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    34 => 
+    array (
+      'id' => 35,
+      'name' => 'Quality Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    35 => 
+    array (
+      'id' => 36,
+      'name' => 'Artisan Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    36 => 
+    array (
+      'id' => 37,
+      'name' => 'Standard Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    37 => 
+    array (
+      'id' => 38,
+      'name' => 'Journeyman Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    38 => 
+    array (
+      'id' => 39,
+      'name' => 'Apprentice Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    39 => 
+    array (
+      'id' => 40,
+      'name' => 'Writ of Masterful Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    40 => 
+    array (
+      'id' => 41,
+      'name' => 'Writ of Masterful Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    41 => 
+    array (
+      'id' => 42,
+      'name' => 'Writ of Masterful Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    42 => 
+    array (
+      'id' => 43,
+      'name' => 'Writ of Learned Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    43 => 
+    array (
+      'id' => 44,
+      'name' => 'Writ of Learned Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    44 => 
+    array (
+      'id' => 45,
+      'name' => 'Writ of Learned Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    45 => 
+    array (
+      'id' => 46,
+      'name' => 'Writ of Calculated Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    46 => 
+    array (
+      'id' => 47,
+      'name' => 'Writ of Calculated Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    47 => 
+    array (
+      'id' => 48,
+      'name' => 'Writ of Calculated Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    48 => 
+    array (
+      'id' => 49,
+      'name' => 'Writ of Studied Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    49 => 
+    array (
+      'id' => 50,
+      'name' => 'Writ of Studied Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    50 => 
+    array (
+      'id' => 51,
+      'name' => 'Writ of Studied Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    51 => 
+    array (
+      'id' => 52,
+      'name' => 'Writ of Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    52 => 
+    array (
+      'id' => 53,
+      'name' => 'Writ of Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    53 => 
+    array (
+      'id' => 54,
+      'name' => 'Writ of Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    54 => 
+    array (
+      'id' => 55,
+      'name' => 'Writ of Basic Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    55 => 
+    array (
+      'id' => 56,
+      'name' => 'Writ of Basic Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    56 => 
+    array (
+      'id' => 57,
+      'name' => 'Writ of Basic Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    57 => 
+    array (
+      'id' => 58,
+      'name' => 'Onion Ring',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    58 => 
+    array (
+      'id' => 59,
+      'name' => 'Cinnamon Apple',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    59 => 
+    array (
+      'id' => 60,
+      'name' => 'Bowl of Apple Sauce',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    60 => 
+    array (
+      'id' => 61,
+      'name' => 'Beetletun Omelette',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    61 => 
+    array (
+      'id' => 62,
+      'name' => 'Meat Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    62 => 
+    array (
+      'id' => 63,
+      'name' => 'Blueberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    63 => 
+    array (
+      'id' => 64,
+      'name' => 'Strawberries and Biscuts',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    64 => 
+    array (
+      'id' => 65,
+      'name' => 'Lemon Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    65 => 
+    array (
+      'id' => 66,
+      'name' => 'Strawberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    66 => 
+    array (
+      'id' => 67,
+      'name' => 'Candy Corn Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    67 => 
+    array (
+      'id' => 68,
+      'name' => 'Clam Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    68 => 
+    array (
+      'id' => 69,
+      'name' => 'Caramel',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    69 => 
+    array (
+      'id' => 70,
+      'name' => 'Caramel Apple',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    70 => 
+    array (
+      'id' => 71,
+      'name' => 'Candied Apple',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    71 => 
+    array (
+      'id' => 72,
+      'name' => 'Chocolate Banana',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    72 => 
+    array (
+      'id' => 73,
+      'name' => 'Strawberry Ghost',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    73 => 
+    array (
+      'id' => 74,
+      'name' => 'Chocolate Cherry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    74 => 
+    array (
+      'id' => 75,
+      'name' => 'Chocolate Orange',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    75 => 
+    array (
+      'id' => 76,
+      'name' => 'Chocolate Raspberry Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    76 => 
+    array (
+      'id' => 77,
+      'name' => 'Chocolate Omnomberry Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    77 => 
+    array (
+      'id' => 78,
+      'name' => 'Cherry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    78 => 
+    array (
+      'id' => 79,
+      'name' => 'Ginger Pear Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    79 => 
+    array (
+      'id' => 80,
+      'name' => 'Glazed Pear Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    80 => 
+    array (
+      'id' => 81,
+      'name' => 'Peach Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    81 => 
+    array (
+      'id' => 82,
+      'name' => 'Glazed Peach Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    82 => 
+    array (
+      'id' => 83,
+      'name' => 'Dragonfly Cupcake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    83 => 
+    array (
+      'id' => 84,
+      'name' => 'Omnomberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    84 => 
+    array (
+      'id' => 85,
+      'name' => 'Yam Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    85 => 
+    array (
+      'id' => 86,
+      'name' => 'Chickpea Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    86 => 
+    array (
+      'id' => 87,
+      'name' => 'Eggplant Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    87 => 
+    array (
+      'id' => 88,
+      'name' => 'Cup of Lotus Fries',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    88 => 
+    array (
+      'id' => 89,
+      'name' => 'Spicy Pumpkin Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    89 => 
+    array (
+      'id' => 90,
+      'name' => 'Cherry Almond Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    90 => 
+    array (
+      'id' => 91,
+      'name' => 'Piece of Candy Corn Almond Brittle',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    91 => 
+    array (
+      'id' => 92,
+      'name' => 'Orange Coconut Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    92 => 
+    array (
+      'id' => 93,
+      'name' => 'Raspberry Peach Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    93 => 
+    array (
+      'id' => 94,
+      'name' => 'Omnomberry Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    94 => 
+    array (
+      'id' => 95,
+      'name' => 'Cooked Fish Steak',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    95 => 
+    array (
+      'id' => 96,
+      'name' => 'Cup of Potato Fries',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    96 => 
+    array (
+      'id' => 97,
+      'name' => 'Mashed Potato',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    97 => 
+    array (
+      'id' => 98,
+      'name' => 'Bowl of Outrider Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 24,
+      'pvx' => 6,
+    ),
+    98 => 
+    array (
+      'id' => 99,
+      'name' => 'Turnip Casserole',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    99 => 
+    array (
+      'id' => 100,
+      'name' => 'Bowl of Mashed Yams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    100 => 
+    array (
+      'id' => 101,
+      'name' => 'Bowl of Spiced Mashed Yams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    101 => 
+    array (
+      'id' => 102,
+      'name' => 'Roasted Rutabaga',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    102 => 
+    array (
+      'id' => 103,
+      'name' => 'Roasted Parsnip',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    103 => 
+    array (
+      'id' => 104,
+      'name' => 'Bowl of Roasted Lotus Root',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    104 => 
+    array (
+      'id' => 105,
+      'name' => 'Cooked Crawdad',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    105 => 
+    array (
+      'id' => 106,
+      'name' => 'Slice of Buttered Toast',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    106 => 
+    array (
+      'id' => 107,
+      'name' => 'Cheese Triangle',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    107 => 
+    array (
+      'id' => 108,
+      'name' => 'Slice of Cinnamon Toast',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    108 => 
+    array (
+      'id' => 109,
+      'name' => 'Slice of Garlic Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    109 => 
+    array (
+      'id' => 110,
+      'name' => 'Loaf of Rosemary Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    110 => 
+    array (
+      'id' => 111,
+      'name' => 'Slice of Spiced Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    111 => 
+    array (
+      'id' => 112,
+      'name' => 'Loaf of Tarragon Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    112 => 
+    array (
+      'id' => 113,
+      'name' => 'Loaf of Saffron Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    113 => 
+    array (
+      'id' => 115,
+      'name' => 'Bowl of Wurm Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    114 => 
+    array (
+      'id' => 116,
+      'name' => 'Jug of Autumn Nectar',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    115 => 
+    array (
+      'id' => 117,
+      'name' => 'Bowl of Basic Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    116 => 
+    array (
+      'id' => 118,
+      'name' => 'Bowl of Simple Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    117 => 
+    array (
+      'id' => 119,
+      'name' => 'Moa Egg Omelet',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 13,
+      'pvx' => 6,
+    ),
+    118 => 
+    array (
+      'id' => 120,
+      'name' => 'Spinach Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    119 => 
+    array (
+      'id' => 121,
+      'name' => 'Bowl of Clam Chowder',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    120 => 
+    array (
+      'id' => 122,
+      'name' => 'Bowl of Dilled Clam Chowder',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    121 => 
+    array (
+      'id' => 123,
+      'name' => 'Bowl of Chickpea and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    122 => 
+    array (
+      'id' => 124,
+      'name' => 'Bowl of Poultry and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    123 => 
+    array (
+      'id' => 125,
+      'name' => 'Bowl of Lemongrass Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    124 => 
+    array (
+      'id' => 126,
+      'name' => 'Fried Oysters',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    125 => 
+    array (
+      'id' => 127,
+      'name' => 'Oysters Gnashblade',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    126 => 
+    array (
+      'id' => 128,
+      'name' => 'Oysters with Zesty Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    127 => 
+    array (
+      'id' => 129,
+      'name' => 'Fried Oyster Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    128 => 
+    array (
+      'id' => 130,
+      'name' => 'Oysters with Cocktail Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    129 => 
+    array (
+      'id' => 131,
+      'name' => 'Oysters with Pesto Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    130 => 
+    array (
+      'id' => 132,
+      'name' => 'Oysters_with_Spicy_Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    131 => 
+    array (
+      'id' => 133,
+      'name' => 'Bowl of Red Meat Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    132 => 
+    array (
+      'id' => 134,
+      'name' => 'Strip of Dolyak Jerky',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    133 => 
+    array (
+      'id' => 135,
+      'name' => 'Bowl of Simple Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    134 => 
+    array (
+      'id' => 136,
+      'name' => 'Bowl of Onion Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    135 => 
+    array (
+      'id' => 137,
+      'name' => 'Poached Griffon Egg',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 18,
+      'pvx' => 6,
+    ),
+    136 => 
+    array (
+      'id' => 138,
+      'name' => 'Bowl of Hearty Red Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    137 => 
+    array (
+      'id' => 139,
+      'name' => 'Bowl of Herbed Meat Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    138 => 
+    array (
+      'id' => 140,
+      'name' => 'Bowl of Meat and Cabbage Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    139 => 
+    array (
+      'id' => 141,
+      'name' => 'Bowl of Cabbage Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    140 => 
+    array (
+      'id' => 142,
+      'name' => 'Bowl of Spiced Meat and Cabbage Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    141 => 
+    array (
+      'id' => 143,
+      'name' => 'Bowl of Meat and Winter Vegetable Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    142 => 
+    array (
+      'id' => 144,
+      'name' => 'Bowl of Orrian Truffle and Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    143 => 
+    array (
+      'id' => 145,
+      'name' => 'Seraph Standard Ration',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    144 => 
+    array (
+      'id' => 146,
+      'name' => 'Stick of Cotton Candy',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    145 => 
+    array (
+      'id' => 147,
+      'name' => 'Apple Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    146 => 
+    array (
+      'id' => 148,
+      'name' => 'Bowl of Gelatinous Ooze Custard',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    147 => 
+    array (
+      'id' => 149,
+      'name' => 'Apple Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    148 => 
+    array (
+      'id' => 150,
+      'name' => 'Bowl of Candy Corn Custard',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    149 => 
+    array (
+      'id' => 151,
+      'name' => 'Heart-Shaped Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    150 => 
+    array (
+      'id' => 152,
+      'name' => 'Kastaz Roasted Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 17,
+      'pvx' => 6,
+    ),
+    151 => 
+    array (
+      'id' => 153,
+      'name' => 'Banana Cream Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    152 => 
+    array (
+      'id' => 154,
+      'name' => 'Shiverpeak Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    153 => 
+    array (
+      'id' => 155,
+      'name' => 'Grape Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    154 => 
+    array (
+      'id' => 156,
+      'name' => 'Pirate Hard Tack',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 41,
+      'pvx' => 6,
+    ),
+    155 => 
+    array (
+      'id' => 157,
+      'name' => 'Pumpkin Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    156 => 
+    array (
+      'id' => 158,
+      'name' => 'Raspberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    157 => 
+    array (
+      'id' => 159,
+      'name' => 'Glazed Pumpkin Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    158 => 
+    array (
+      'id' => 160,
+      'name' => 'Peach Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    159 => 
+    array (
+      'id' => 161,
+      'name' => 'Mango Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    160 => 
+    array (
+      'id' => 162,
+      'name' => 'Dragon\'s Revelry Starcake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    161 => 
+    array (
+      'id' => 163,
+      'name' => 'Grilled Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    162 => 
+    array (
+      'id' => 164,
+      'name' => 'Poultry Piccata',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    163 => 
+    array (
+      'id' => 165,
+      'name' => 'Strip of Venison Jerky',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    164 => 
+    array (
+      'id' => 166,
+      'name' => 'Sage Stuffed Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    165 => 
+    array (
+      'id' => 167,
+      'name' => 'Dilled Poultry Piccata',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    166 => 
+    array (
+      'id' => 168,
+      'name' => 'Plate of Citrus Poultry with Almonds',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    167 => 
+    array (
+      'id' => 169,
+      'name' => 'Tarragon Stuffed Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    168 => 
+    array (
+      'id' => 170,
+      'name' => 'Dragonfish Candy',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    169 => 
+    array (
+      'id' => 171,
+      'name' => 'Plate of Lemongrass Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    170 => 
+    array (
+      'id' => 172,
+      'name' => 'Rabbit Offering',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    171 => 
+    array (
+      'id' => 173,
+      'name' => 'Slice of Watermelon',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    172 => 
+    array (
+      'id' => 174,
+      'name' => 'Bowl of Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    173 => 
+    array (
+      'id' => 175,
+      'name' => 'Bowl of Bean Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    174 => 
+    array (
+      'id' => 176,
+      'name' => 'Bowl of Avocado Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    175 => 
+    array (
+      'id' => 177,
+      'name' => 'Bowl of Chickpea Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    176 => 
+    array (
+      'id' => 178,
+      'name' => 'Bowl of Mango Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    177 => 
+    array (
+      'id' => 179,
+      'name' => 'Bowl of Fire Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    178 => 
+    array (
+      'id' => 180,
+      'name' => 'Rice Ball',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    179 => 
+    array (
+      'id' => 181,
+      'name' => 'T-Bone Steak',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    180 => 
+    array (
+      'id' => 182,
+      'name' => 'Grilled Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    181 => 
+    array (
+      'id' => 183,
+      'name' => 'Eda\'s Apple Pie',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    182 => 
+    array (
+      'id' => 184,
+      'name' => 'Bowl of Cold Wurm Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    183 => 
+    array (
+      'id' => 185,
+      'name' => 'Spicy Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    184 => 
+    array (
+      'id' => 186,
+      'name' => 'Roasted Meaty Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    185 => 
+    array (
+      'id' => 187,
+      'name' => 'Pepper Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    186 => 
+    array (
+      'id' => 188,
+      'name' => 'Stick of Mystery Meat',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    187 => 
+    array (
+      'id' => 189,
+      'name' => 'Blessing Of Bear',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 41,
+      'pvx' => 6,
+    ),
+    188 => 
+    array (
+      'id' => 190,
+      'name' => 'Filet of Sesame Roasted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    189 => 
+    array (
+      'id' => 191,
+      'name' => 'Griffon Egg Omelet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 47,
+      'pvx' => 6,
+    ),
+    190 => 
+    array (
+      'id' => 192,
+      'name' => 'Plate of Coriander Crusted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    191 => 
+    array (
+      'id' => 193,
+      'name' => 'Plate of Steak and Asparagus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    192 => 
+    array (
+      'id' => 194,
+      'name' => 'Plate of Truffle Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    193 => 
+    array (
+      'id' => 195,
+      'name' => 'Spicy Lime Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    194 => 
+    array (
+      'id' => 196,
+      'name' => 'Plate of Citrus Clove Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    195 => 
+    array (
+      'id' => 197,
+      'name' => 'Spicier Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    196 => 
+    array (
+      'id' => 198,
+      'name' => 'Plate of Fire Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    197 => 
+    array (
+      'id' => 199,
+      'name' => 'Filet of Rosemary Roasted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    198 => 
+    array (
+      'id' => 200,
+      'name' => 'Plate of Roast Meat with Mint Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    199 => 
+    array (
+      'id' => 201,
+      'name' => 'Plate of Roast Meat with Braised Leeks',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    200 => 
+    array (
+      'id' => 202,
+      'name' => 'Plate of Orrian Steak Frittes',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    201 => 
+    array (
+      'id' => 203,
+      'name' => 'Bowl of Marjory\'s Experimental Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    202 => 
+    array (
+      'id' => 204,
+      'name' => 'Grilled Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    203 => 
+    array (
+      'id' => 205,
+      'name' => 'Veggie Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    204 => 
+    array (
+      'id' => 206,
+      'name' => 'Cheese Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    205 => 
+    array (
+      'id' => 207,
+      'name' => 'Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    206 => 
+    array (
+      'id' => 208,
+      'name' => 'Sweet Bean Bun',
+      'type' => 'Food',
+      'rarity' => 'Exotic',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    207 => 
+    array (
+      'id' => 209,
+      'name' => 'Mushroom Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    208 => 
+    array (
+      'id' => 210,
+      'name' => 'Bowl of Fly Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    209 => 
+    array (
+      'id' => 211,
+      'name' => 'Fancy Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    210 => 
+    array (
+      'id' => 212,
+      'name' => 'Super Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    211 => 
+    array (
+      'id' => 213,
+      'name' => 'Koi Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    212 => 
+    array (
+      'id' => 214,
+      'name' => 'Rare Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    213 => 
+    array (
+      'id' => 215,
+      'name' => 'Prickly Pear Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    214 => 
+    array (
+      'id' => 216,
+      'name' => 'Bowl of Cactus Fruit Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    215 => 
+    array (
+      'id' => 217,
+      'name' => 'Grilled Portobello Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    216 => 
+    array (
+      'id' => 218,
+      'name' => 'Bowl of Mushroom Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    217 => 
+    array (
+      'id' => 219,
+      'name' => 'Bowl of Mushroom and Asparagus Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    218 => 
+    array (
+      'id' => 220,
+      'name' => 'Bowl of Truffle Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    219 => 
+    array (
+      'id' => 221,
+      'name' => 'Bowl of Creamy Portobello Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    220 => 
+    array (
+      'id' => 222,
+      'name' => 'Bowl of Fancy Creamy Mushroom Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    221 => 
+    array (
+      'id' => 223,
+      'name' => 'Bowl of Snow Truffle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    222 => 
+    array (
+      'id' => 224,
+      'name' => 'Bowl of Orrian Truffle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    223 => 
+    array (
+      'id' => 225,
+      'name' => 'Spinach Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    224 => 
+    array (
+      'id' => 226,
+      'name' => 'Deluxe Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    225 => 
+    array (
+      'id' => 227,
+      'name' => 'Horseradish Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    226 => 
+    array (
+      'id' => 228,
+      'name' => 'Spicy Cheeseburger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    227 => 
+    array (
+      'id' => 229,
+      'name' => 'Fancy Truffle Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    228 => 
+    array (
+      'id' => 230,
+      'name' => 'Hamburger',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    229 => 
+    array (
+      'id' => 231,
+      'name' => 'Bowl of Meaty Wurm Surprise',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    230 => 
+    array (
+      'id' => 232,
+      'name' => 'Bowl of Green Bean Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    231 => 
+    array (
+      'id' => 233,
+      'name' => 'Bowl of Simple Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    232 => 
+    array (
+      'id' => 234,
+      'name' => 'Cheeseburger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    233 => 
+    array (
+      'id' => 235,
+      'name' => 'White Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    234 => 
+    array (
+      'id' => 236,
+      'name' => 'Bowl of Meat and Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    235 => 
+    array (
+      'id' => 237,
+      'name' => 'Chocolate Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    236 => 
+    array (
+      'id' => 238,
+      'name' => 'Bowl of Chili and Avocado',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    237 => 
+    array (
+      'id' => 239,
+      'name' => 'Bowl of Spiced Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    238 => 
+    array (
+      'id' => 240,
+      'name' => 'Bowl of Spicy Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    239 => 
+    array (
+      'id' => 241,
+      'name' => 'Bowl of Fire Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    240 => 
+    array (
+      'id' => 242,
+      'name' => 'Chocolate Cherry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    241 => 
+    array (
+      'id' => 243,
+      'name' => 'Orange Coconut Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    242 => 
+    array (
+      'id' => 244,
+      'name' => 'Chocolate Raspberry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    243 => 
+    array (
+      'id' => 245,
+      'name' => 'Chocolate Omnomberry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    244 => 
+    array (
+      'id' => 246,
+      'name' => 'Bowl of Vegetable Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    245 => 
+    array (
+      'id' => 247,
+      'name' => 'Bowl of Simple Vegetable Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    246 => 
+    array (
+      'id' => 248,
+      'name' => 'Bowl of Tomato Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    247 => 
+    array (
+      'id' => 249,
+      'name' => 'Bowl of Ice Wurm Bisque',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    248 => 
+    array (
+      'id' => 250,
+      'name' => 'Bowl of Beet and Bean Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    249 => 
+    array (
+      'id' => 251,
+      'name' => 'Bowl of Basic Vegetable Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    250 => 
+    array (
+      'id' => 252,
+      'name' => 'Bowl of Simple Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    251 => 
+    array (
+      'id' => 253,
+      'name' => 'Bowl of Fancy Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    252 => 
+    array (
+      'id' => 254,
+      'name' => 'Bowl of Zucchini Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    253 => 
+    array (
+      'id' => 255,
+      'name' => 'Bowl of Degun Shun Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 46,
+      'pvx' => 6,
+    ),
+    254 => 
+    array (
+      'id' => 256,
+      'name' => 'Bowl of Spiced Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    255 => 
+    array (
+      'id' => 257,
+      'name' => 'Bowl of Spicy Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    256 => 
+    array (
+      'id' => 258,
+      'name' => 'Bowl of Fire Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    257 => 
+    array (
+      'id' => 259,
+      'name' => 'Bowl of Skalefin Soup',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    258 => 
+    array (
+      'id' => 260,
+      'name' => 'Bowl of Tomato Zucchini Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    259 => 
+    array (
+      'id' => 261,
+      'name' => 'Bowl of Cauliflower Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    260 => 
+    array (
+      'id' => 262,
+      'name' => 'Minotaur Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    261 => 
+    array (
+      'id' => 263,
+      'name' => 'Bowl of Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    262 => 
+    array (
+      'id' => 264,
+      'name' => 'Bowl of Curry Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    263 => 
+    array (
+      'id' => 265,
+      'name' => 'Bowl of Yam Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    264 => 
+    array (
+      'id' => 266,
+      'name' => 'Bowl of Pumpkin Bisque',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    265 => 
+    array (
+      'id' => 267,
+      'name' => 'Bowl of Potato and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    266 => 
+    array (
+      'id' => 268,
+      'name' => 'Bowl of Fancy Potato and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    267 => 
+    array (
+      'id' => 269,
+      'name' => 'Bowl of Herbed Vegetable Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    268 => 
+    array (
+      'id' => 270,
+      'name' => 'Bowl of Kale Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    269 => 
+    array (
+      'id' => 271,
+      'name' => 'Bowl of Chickpea Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    270 => 
+    array (
+      'id' => 272,
+      'name' => 'Bowl of Artichoke Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    271 => 
+    array (
+      'id' => 273,
+      'name' => 'Bowl of Curry Pumpkin Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    272 => 
+    array (
+      'id' => 274,
+      'name' => 'Grumble Cake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    273 => 
+    array (
+      'id' => 275,
+      'name' => 'Loaf of Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    274 => 
+    array (
+      'id' => 276,
+      'name' => 'Buttermilk Biscuit',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    275 => 
+    array (
+      'id' => 277,
+      'name' => 'Cinnamon Pinwheel',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    276 => 
+    array (
+      'id' => 278,
+      'name' => 'Bowl of Dolyak Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    277 => 
+    array (
+      'id' => 279,
+      'name' => 'Loaf of Banana Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    278 => 
+    array (
+      'id' => 280,
+      'name' => 'Loaf of Walnut Sticky Bread',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 17,
+      'pvx' => 6,
+    ),
+    279 => 
+    array (
+      'id' => 281,
+      'name' => 'Curry Bun',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    280 => 
+    array (
+      'id' => 282,
+      'name' => 'Loaf of Zucchini Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    281 => 
+    array (
+      'id' => 283,
+      'name' => 'Slice of Pumpkin Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    282 => 
+    array (
+      'id' => 284,
+      'name' => 'Loaf of Raspberry Peach Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    283 => 
+    array (
+      'id' => 285,
+      'name' => 'Loaf of Omnomberry Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    284 => 
+    array (
+      'id' => 286,
+      'name' => 'Passion Fruit Soufflé',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    285 => 
+    array (
+      'id' => 287,
+      'name' => 'Plate of Pasta with Tomato Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    286 => 
+    array (
+      'id' => 288,
+      'name' => 'Meatball',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    287 => 
+    array (
+      'id' => 289,
+      'name' => 'Meatball Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    288 => 
+    array (
+      'id' => 290,
+      'name' => 'Bowl of Grilled Bananas with Passion Fruit Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    289 => 
+    array (
+      'id' => 291,
+      'name' => 'Bowl of Krytan Meatball Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    290 => 
+    array (
+      'id' => 292,
+      'name' => 'Bowl of Pesto Pasta Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    291 => 
+    array (
+      'id' => 293,
+      'name' => 'Bowl of Poultry Tarragon Pasta',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    292 => 
+    array (
+      'id' => 294,
+      'name' => 'Bowl of Truffle Ravioli',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    293 => 
+    array (
+      'id' => 295,
+      'name' => 'Bowl of Salad a la Consortium',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    294 => 
+    array (
+      'id' => 296,
+      'name' => 'Passion Fruit Coconut Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    295 => 
+    array (
+      'id' => 297,
+      'name' => 'Stuffed Artichoke with Tropical Dressing',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    296 => 
+    array (
+      'id' => 298,
+      'name' => 'Bowl of Tropical Mousse',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    297 => 
+    array (
+      'id' => 299,
+      'name' => 'Bowl of Refugee\'s Beet Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    298 => 
+    array (
+      'id' => 300,
+      'name' => 'Blueberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    299 => 
+    array (
+      'id' => 301,
+      'name' => 'Sugar Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    300 => 
+    array (
+      'id' => 302,
+      'name' => 'Apple Passion Fruit Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    301 => 
+    array (
+      'id' => 303,
+      'name' => 'Strawberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    302 => 
+    array (
+      'id' => 304,
+      'name' => 'Bowl of Front Line Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    303 => 
+    array (
+      'id' => 305,
+      'name' => 'Passion Fruit Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    304 => 
+    array (
+      'id' => 306,
+      'name' => 'Delicious Rice Ball',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    305 => 
+    array (
+      'id' => 307,
+      'name' => 'Cherry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    306 => 
+    array (
+      'id' => 308,
+      'name' => 'Blackberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    307 => 
+    array (
+      'id' => 309,
+      'name' => 'Peach Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    308 => 
+    array (
+      'id' => 310,
+      'name' => 'Omnomberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    309 => 
+    array (
+      'id' => 311,
+      'name' => 'Chocolate Chip Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    310 => 
+    array (
+      'id' => 312,
+      'name' => 'Candy Corn Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    311 => 
+    array (
+      'id' => 313,
+      'name' => 'Chocolate Mint Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    312 => 
+    array (
+      'id' => 314,
+      'name' => 'Chocolate Raspberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    313 => 
+    array (
+      'id' => 315,
+      'name' => 'Glazed Chocolate Raspberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    314 => 
+    array (
+      'id' => 316,
+      'name' => 'Spicy Chocolate Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    315 => 
+    array (
+      'id' => 317,
+      'name' => 'Cherry Passion Fruit Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    316 => 
+    array (
+      'id' => 318,
+      'name' => 'Orange Passion Fruit Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    317 => 
+    array (
+      'id' => 319,
+      'name' => 'Raspberry Passion Fruit Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    318 => 
+    array (
+      'id' => 320,
+      'name' => 'Bowl of Tropical Fruit Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    319 => 
+    array (
+      'id' => 321,
+      'name' => 'Bowl of Poultry Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    320 => 
+    array (
+      'id' => 322,
+      'name' => 'Bowl of Poultry Noodle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    321 => 
+    array (
+      'id' => 323,
+      'name' => 'Bowl of Savory Spinach and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    322 => 
+    array (
+      'id' => 324,
+      'name' => 'Bowl of Herbed Poultry Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    323 => 
+    array (
+      'id' => 325,
+      'name' => 'Bowl of Kale and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    324 => 
+    array (
+      'id' => 326,
+      'name' => 'Bowl of Hearty Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    325 => 
+    array (
+      'id' => 327,
+      'name' => 'Bowl of Saffron-scented Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    326 => 
+    array (
+      'id' => 328,
+      'name' => 'Bowl of Chocolate Chip Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    327 => 
+    array (
+      'id' => 329,
+      'name' => 'Bowl of Candy Corn Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    328 => 
+    array (
+      'id' => 330,
+      'name' => 'Bowl of Blueberry Chocolate Chunk Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    329 => 
+    array (
+      'id' => 331,
+      'name' => 'Bowl of Ginger-Lime Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    330 => 
+    array (
+      'id' => 332,
+      'name' => 'Bowl of Mint Chocolate Chip Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    331 => 
+    array (
+      'id' => 333,
+      'name' => 'Bowl of Peach Raspberry Swirl Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    332 => 
+    array (
+      'id' => 334,
+      'name' => 'Kralkachocolate Bar',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    333 => 
+    array (
+      'id' => 335,
+      'name' => 'Bowl of Saffron-Mango Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    334 => 
+    array (
+      'id' => 336,
+      'name' => 'Blueberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    335 => 
+    array (
+      'id' => 337,
+      'name' => 'Strawberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    336 => 
+    array (
+      'id' => 338,
+      'name' => 'Cherry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    337 => 
+    array (
+      'id' => 339,
+      'name' => 'Blackberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    338 => 
+    array (
+      'id' => 340,
+      'name' => 'Mixed Berry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    339 => 
+    array (
+      'id' => 341,
+      'name' => 'Slice of Candied Dragon Roll',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    340 => 
+    array (
+      'id' => 342,
+      'name' => 'Omnomberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    341 => 
+    array (
+      'id' => 343,
+      'name' => 'Omnomberry Ghost',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    342 => 
+    array (
+      'id' => 344,
+      'name' => 'Chili Pepper Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    343 => 
+    array (
+      'id' => 345,
+      'name' => 'Stuffed Pepper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    344 => 
+    array (
+      'id' => 346,
+      'name' => 'Stuffed Zucchini',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    345 => 
+    array (
+      'id' => 347,
+      'name' => 'Bowl of Hummus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    346 => 
+    array (
+      'id' => 348,
+      'name' => 'Roasted Artichoke',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    347 => 
+    array (
+      'id' => 349,
+      'name' => 'Ghost Pepper Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    348 => 
+    array (
+      'id' => 350,
+      'name' => 'Bowl of Sauteed Carrots',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    349 => 
+    array (
+      'id' => 351,
+      'name' => 'Celebratory Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    350 => 
+    array (
+      'id' => 352,
+      'name' => 'Bowl of Ettin Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 13,
+      'pvx' => 6,
+    ),
+    351 => 
+    array (
+      'id' => 353,
+      'name' => 'Bowl of Garlic Spinach Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    352 => 
+    array (
+      'id' => 354,
+      'name' => 'Bowl of Sauteed Zucchini with Nutmeg',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    353 => 
+    array (
+      'id' => 355,
+      'name' => 'Handful of Trail Mix',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    354 => 
+    array (
+      'id' => 356,
+      'name' => 'Bowl of Cauliflower Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    355 => 
+    array (
+      'id' => 357,
+      'name' => 'Bowl of Eggplant Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    356 => 
+    array (
+      'id' => 358,
+      'name' => 'Bowl of Truffle Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    357 => 
+    array (
+      'id' => 359,
+      'name' => 'Bowl of Simple Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    358 => 
+    array (
+      'id' => 360,
+      'name' => 'Bowl of Avocado Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    359 => 
+    array (
+      'id' => 361,
+      'name' => 'Bowl of Eggplant Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    360 => 
+    array (
+      'id' => 362,
+      'name' => 'Bowl of Lotus Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    361 => 
+    array (
+      'id' => 363,
+      'name' => 'Glass of Melon Juice',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    362 => 
+    array (
+      'id' => 364,
+      'name' => 'Bowl of Blueberry Apple Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    363 => 
+    array (
+      'id' => 365,
+      'name' => 'Bowl of Strawberry Apple Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    364 => 
+    array (
+      'id' => 366,
+      'name' => 'Bowl of Cherry Vanilla Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    365 => 
+    array (
+      'id' => 367,
+      'name' => 'Bowl of Blackberry Pear Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    366 => 
+    array (
+      'id' => 368,
+      'name' => 'Raspberry Peach Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    367 => 
+    array (
+      'id' => 369,
+      'name' => 'Mined Edible Root',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 68,
+      'pvx' => 6,
+    ),
+    368 => 
+    array (
+      'id' => 370,
+      'name' => 'Omnomberry Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    369 => 
+    array (
+      'id' => 371,
+      'name' => 'Bowl of Simple Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    370 => 
+    array (
+      'id' => 372,
+      'name' => 'Bowl of Ascalonian Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    371 => 
+    array (
+      'id' => 373,
+      'name' => 'Bowl of Coleslaw',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    372 => 
+    array (
+      'id' => 374,
+      'name' => 'Bowl of Cabbage and Chickpea Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    373 => 
+    array (
+      'id' => 375,
+      'name' => 'Bowl of Asparagus and Sage Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    374 => 
+    array (
+      'id' => 376,
+      'name' => 'Bowl of Seaweed Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    375 => 
+    array (
+      'id' => 377,
+      'name' => 'Experimental Remnant',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    376 => 
+    array (
+      'id' => 378,
+      'name' => 'Marinated Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    377 => 
+    array (
+      'id' => 379,
+      'name' => 'Sage Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    378 => 
+    array (
+      'id' => 380,
+      'name' => 'Triktiki Omelet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    379 => 
+    array (
+      'id' => 381,
+      'name' => 'Divinity Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    380 => 
+    array (
+      'id' => 382,
+      'name' => 'Bowl of Tasty Wurm Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    381 => 
+    array (
+      'id' => 383,
+      'name' => 'Eztlitl Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    382 => 
+    array (
+      'id' => 384,
+      'name' => 'Spicy Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    383 => 
+    array (
+      'id' => 385,
+      'name' => 'Saffron Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    384 => 
+    array (
+      'id' => 386,
+      'name' => 'Steamed Red Dumpling',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    385 => 
+    array (
+      'id' => 387,
+      'name' => 'Moa Haunch',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    386 => 
+    array (
+      'id' => 388,
+      'name' => 'Spicy Meat Kabob',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    387 => 
+    array (
+      'id' => 389,
+      'name' => 'Pepper Steak Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    388 => 
+    array (
+      'id' => 390,
+      'name' => 'Sesame Roasted Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    389 => 
+    array (
+      'id' => 391,
+      'name' => 'Plate of Coriander Crusted Meat Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    390 => 
+    array (
+      'id' => 392,
+      'name' => 'Plate of Steak and Asparagus Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    391 => 
+    array (
+      'id' => 393,
+      'name' => 'Dragon\'s Breath Bun',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    392 => 
+    array (
+      'id' => 394,
+      'name' => 'Plate of Truffle Steak Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    393 => 
+    array (
+      'id' => 395,
+      'name' => 'Bowl of Garlic Kale Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    394 => 
+    array (
+      'id' => 396,
+      'name' => 'Bowl of Sweet and Spicy Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    395 => 
+    array (
+      'id' => 397,
+      'name' => 'Bowl of Zesty Turnip Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    396 => 
+    array (
+      'id' => 398,
+      'name' => 'Carrot Soufflé',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    397 => 
+    array (
+      'id' => 399,
+      'name' => 'Mushroom Loaf',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    398 => 
+    array (
+      'id' => 400,
+      'name' => 'Plate of Frostgorge Clams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    399 => 
+    array (
+      'id' => 401,
+      'name' => 'Plate of Spicy Herbed Chicken',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    400 => 
+    array (
+      'id' => 402,
+      'name' => 'Spicy Marinated Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    401 => 
+    array (
+      'id' => 403,
+      'name' => 'Potion Of Karka Toughness',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    402 => 
+    array (
+      'id' => 404,
+      'name' => 'Bowl of Cactus Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    403 => 
+    array (
+      'id' => 405,
+      'name' => 'Bowl of Black Pepper Cactus Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    404 => 
+    array (
+      'id' => 406,
+      'name' => 'Bowl of Nopalitos Sauté',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    405 => 
+    array (
+      'id' => 407,
+      'name' => 'Loaf of Candy Cactus Cornbread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    406 => 
+    array (
+      'id' => 408,
+      'name' => 'Spring Roll',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    407 => 
+    array (
+      'id' => 409,
+      'name' => 'Fried Golden Dumpling',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    408 => 
+    array (
+      'id' => 410,
+      'name' => 'Jerk Poultry and Nopal Flatbread Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    409 => 
+    array (
+      'id' => 411,
+      'name' => 'Jerk Poultry Flatbread Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    410 => 
+    array (
+      'id' => 412,
+      'name' => 'Cheesy Cassava Roll',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    411 => 
+    array (
+      'id' => 413,
+      'name' => 'Slice of Allspice Cake with Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    412 => 
+    array (
+      'id' => 414,
+      'name' => 'Slice of Allspice Cake',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    413 => 
+    array (
+      'id' => 415,
+      'name' => 'Plate of Mussels Gnashblade',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    414 => 
+    array (
+      'id' => 416,
+      'name' => 'Bowl of Curry Mussel Soup',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    415 => 
+    array (
+      'id' => 417,
+      'name' => 'Piece of Undersea Wurm Sushi',
+      'type' => 'Food',
+      'rarity' => 'Exotic',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    416 => 
+    array (
+      'id' => 418,
+      'name' => 'Bowl of Passion Fruit Tapioca Pudding',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    417 => 
+    array (
+      'id' => 419,
+      'name' => 'Bowl of Tapioca Pudding',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    418 => 
+    array (
+      'id' => 420,
+      'name' => 'Bowl of Sawgill Mushroom Risotto',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    419 => 
+    array (
+      'id' => 421,
+      'name' => 'Bowl of Prickly Pear Tapioca Pudding',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    420 => 
+    array (
+      'id' => 422,
+      'name' => 'Flatbread',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    421 => 
+    array (
+      'id' => 423,
+      'name' => 'Bowl of Chocolate Tapioca Pudding',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    422 => 
+    array (
+      'id' => 424,
+      'name' => 'Bowl of Mussel Soup',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    423 => 
+    array (
+      'id' => 425,
+      'name' => 'Bowl of Lemongrass Mussel Pasta',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    424 => 
+    array (
+      'id' => 426,
+      'name' => 'Plate of Jerk Poultry',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    425 => 
+    array (
+      'id' => 427,
+      'name' => 'Prickly Pear Stuffed Nopale',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    426 => 
+    array (
+      'id' => 428,
+      'name' => 'Bowl of Prickly Pear Sorbet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    427 => 
+    array (
+      'id' => 429,
+      'name' => 'Bowl of Sweet and Spicy Beans',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    428 => 
+    array (
+      'id' => 430,
+      'name' => 'Plate of Roasted Cactus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+  ),
+  'weapons' => 
+  array (
+    0 => 
+    array (
+      'id' => 2,
+      'name' => 'Hammer',
+    ),
+    1 => 
+    array (
+      'id' => 4,
+      'name' => 'Rifle',
+    ),
+    2 => 
+    array (
+      'id' => 11,
+      'name' => 'Scepter',
+    ),
+    3 => 
+    array (
+      'id' => 8,
+      'name' => 'Dagger',
+    ),
+    4 => 
+    array (
+      'id' => 3,
+      'name' => 'Longbow',
+    ),
+    5 => 
+    array (
+      'id' => 1,
+      'name' => 'Greatsword',
+    ),
+    6 => 
+    array (
+      'id' => 19,
+      'name' => 'Trident',
+    ),
+    7 => 
+    array (
+      'id' => 15,
+      'name' => 'Torch',
+    ),
+    8 => 
+    array (
+      'id' => 16,
+      'name' => 'Warhorn',
+    ),
+    9 => 
+    array (
+      'id' => 12,
+      'name' => 'Sword',
+    ),
+    10 => 
+    array (
+      'id' => 17,
+      'name' => 'Harpoon gun',
+    ),
+    11 => 
+    array (
+      'id' => 5,
+      'name' => 'Shortbow',
+    ),
+    12 => 
+    array (
+      'id' => 9,
+      'name' => 'Mace',
+    ),
+    13 => 
+    array (
+      'id' => 14,
+      'name' => 'Shield',
+    ),
+    14 => 
+    array (
+      'id' => 13,
+      'name' => 'Focus',
+    ),
+    15 => 
+    array (
+      'id' => 7,
+      'name' => 'Axe',
+    ),
+    16 => 
+    array (
+      'id' => 6,
+      'name' => 'Staff',
+    ),
+    17 => 
+    array (
+      'id' => 10,
+      'name' => 'Pistol',
+    ),
+    18 => 
+    array (
+      'id' => 18,
+      'name' => 'Spear',
+    ),
+  ),
   'skills' => 
   array (
     0 => 
@@ -23413,33 +20228,3290 @@
       'pvx' => 6,
     ),
   ),
-  'revision' => 1495810697,
-  'races' => 
+  'pets' => 
   array (
     0 => 
     array (
       'id' => 1,
-      'name' => 'Human',
+      'name' => 'Armor Fish',
+      'family' => 'Armor Fish',
+      'terrestrial' => false,
+      'aquatic' => true,
     ),
     1 => 
     array (
-      'id' => 5,
-      'name' => 'Sylvari',
+      'id' => 2,
+      'name' => 'Eagle',
+      'family' => 'Bird',
+      'terrestrial' => true,
+      'aquatic' => false,
     ),
     2 => 
     array (
-      'id' => 2,
-      'name' => 'Charr',
+      'id' => 3,
+      'name' => 'Hawk',
+      'family' => 'Bird',
+      'terrestrial' => true,
+      'aquatic' => false,
     ),
     3 => 
+    array (
+      'id' => 4,
+      'name' => 'Owl',
+      'family' => 'Bird',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    4 => 
+    array (
+      'id' => 5,
+      'name' => 'Raven',
+      'family' => 'Bird',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    5 => 
+    array (
+      'id' => 6,
+      'name' => 'White Raven',
+      'family' => 'Bird',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    6 => 
+    array (
+      'id' => 7,
+      'name' => 'Bristleback',
+      'family' => 'Bristleback',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    7 => 
+    array (
+      'id' => 8,
+      'name' => 'Krytan Drakehound',
+      'family' => 'Canine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    8 => 
+    array (
+      'id' => 9,
+      'name' => 'Fern Hound',
+      'family' => 'Canine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    9 => 
+    array (
+      'id' => 10,
+      'name' => 'Hyena',
+      'family' => 'Canine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    10 => 
+    array (
+      'id' => 11,
+      'name' => 'Alpine Wolf',
+      'family' => 'Canine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    11 => 
+    array (
+      'id' => 12,
+      'name' => 'Wolf',
+      'family' => 'Canine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    12 => 
+    array (
+      'id' => 13,
+      'name' => 'Carrion Devourer',
+      'family' => 'Devourer',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    13 => 
+    array (
+      'id' => 14,
+      'name' => 'Lashtail Devourer',
+      'family' => 'Devourer',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    14 => 
+    array (
+      'id' => 15,
+      'name' => 'Whiptail Devourer',
+      'family' => 'Devourer',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    15 => 
+    array (
+      'id' => 16,
+      'name' => 'Ice Drake',
+      'family' => 'Drake',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    16 => 
+    array (
+      'id' => 17,
+      'name' => 'River Drake',
+      'family' => 'Drake',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    17 => 
+    array (
+      'id' => 18,
+      'name' => 'Reef Drake',
+      'family' => 'Drake',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    18 => 
+    array (
+      'id' => 19,
+      'name' => 'Salamander Drake',
+      'family' => 'Drake',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    19 => 
+    array (
+      'id' => 20,
+      'name' => 'Marsh Drake',
+      'family' => 'Drake',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    20 => 
+    array (
+      'id' => 21,
+      'name' => 'Jaguar',
+      'family' => 'Feline',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    21 => 
+    array (
+      'id' => 22,
+      'name' => 'Jungle Stalker',
+      'family' => 'Feline',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    22 => 
+    array (
+      'id' => 23,
+      'name' => 'Lynx',
+      'family' => 'Feline',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    23 => 
+    array (
+      'id' => 24,
+      'name' => 'Snow Leopard',
+      'family' => 'Feline',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    24 => 
+    array (
+      'id' => 25,
+      'name' => 'Tiger',
+      'family' => 'Feline',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    25 => 
+    array (
+      'id' => 26,
+      'name' => 'Blue Jellyfish',
+      'family' => 'Jellyfish',
+      'terrestrial' => false,
+      'aquatic' => true,
+    ),
+    26 => 
+    array (
+      'id' => 28,
+      'name' => 'Red Jellyfish',
+      'family' => 'Jellyfish',
+      'terrestrial' => false,
+      'aquatic' => true,
+    ),
+    27 => 
+    array (
+      'id' => 29,
+      'name' => 'Rainbow Jellyfish',
+      'family' => 'Jellyfish',
+      'terrestrial' => false,
+      'aquatic' => true,
+    ),
+    28 => 
+    array (
+      'id' => 30,
+      'name' => 'Black Moa',
+      'family' => 'Moa',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    29 => 
+    array (
+      'id' => 31,
+      'name' => 'Blue Moa',
+      'family' => 'Moa',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    30 => 
+    array (
+      'id' => 32,
+      'name' => 'Pink Moa',
+      'family' => 'Moa',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    31 => 
+    array (
+      'id' => 33,
+      'name' => 'Red Moa',
+      'family' => 'Moa',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    32 => 
+    array (
+      'id' => 34,
+      'name' => 'White Moa',
+      'family' => 'Moa',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    33 => 
+    array (
+      'id' => 36,
+      'name' => 'Boar',
+      'family' => 'Porcine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    34 => 
+    array (
+      'id' => 37,
+      'name' => 'Pig',
+      'family' => 'Porcine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    35 => 
+    array (
+      'id' => 38,
+      'name' => 'Siamoth',
+      'family' => 'Porcine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    36 => 
+    array (
+      'id' => 39,
+      'name' => 'Warthog',
+      'family' => 'Porcine',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    37 => 
+    array (
+      'id' => 40,
+      'name' => 'Shark',
+      'family' => 'Shark',
+      'terrestrial' => false,
+      'aquatic' => true,
+    ),
+    38 => 
+    array (
+      'id' => 41,
+      'name' => 'Smokescale',
+      'family' => 'Smokescale',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    39 => 
+    array (
+      'id' => 42,
+      'name' => 'Black Widow Spider',
+      'family' => 'Spider',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    40 => 
+    array (
+      'id' => 43,
+      'name' => 'Cave Spider',
+      'family' => 'Spider',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    41 => 
+    array (
+      'id' => 44,
+      'name' => 'Forest Spider',
+      'family' => 'Spider',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    42 => 
+    array (
+      'id' => 45,
+      'name' => 'Jungle Spider',
+      'family' => 'Spider',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    43 => 
+    array (
+      'id' => 46,
+      'name' => 'Arctodus',
+      'family' => 'Ursine',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    44 => 
+    array (
+      'id' => 47,
+      'name' => 'Black Bear',
+      'family' => 'Ursine',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    45 => 
+    array (
+      'id' => 48,
+      'name' => 'Brown Bear',
+      'family' => 'Ursine',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    46 => 
+    array (
+      'id' => 49,
+      'name' => 'Murrelow',
+      'family' => 'Ursine',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    47 => 
+    array (
+      'id' => 50,
+      'name' => 'Polar Bear',
+      'family' => 'Ursine',
+      'terrestrial' => true,
+      'aquatic' => true,
+    ),
+    48 => 
+    array (
+      'id' => 51,
+      'name' => 'Electric Wyvern',
+      'family' => 'Wyvern',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    49 => 
+    array (
+      'id' => 52,
+      'name' => 'Fire Wyvern',
+      'family' => 'Wyvern',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+  ),
+  'upgrades' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Agony',
+      'pvp_name' => 'Sigil of Agony (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Smoldering',
+      'pvp_name' => 'Sigil of Smoldering (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Hobbling',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    3 => 
+    array (
+      'id' => 4,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Accuracy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    4 => 
+    array (
+      'id' => 5,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Force',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    5 => 
+    array (
+      'id' => 6,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of the Night',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    6 => 
+    array (
+      'id' => 7,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Bursting',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    7 => 
+    array (
+      'id' => 8,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Malice',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    8 => 
+    array (
+      'id' => 9,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Chilling',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    9 => 
+    array (
+      'id' => 10,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Venom',
+      'pvp_name' => 'Sigil of Venom (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    10 => 
+    array (
+      'id' => 11,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Paralyzation',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    11 => 
+    array (
+      'id' => 12,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Peril',
+      'pvp_name' => 'Sigil of Peril (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    12 => 
+    array (
+      'id' => 13,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Debility',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    13 => 
+    array (
+      'id' => 14,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Corruption',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    14 => 
+    array (
+      'id' => 15,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Stamina',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    15 => 
+    array (
+      'id' => 16,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Life',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    16 => 
+    array (
+      'id' => 17,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Restoration',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    17 => 
+    array (
+      'id' => 18,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Benevolence',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    18 => 
+    array (
+      'id' => 19,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Bloodlust',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    19 => 
+    array (
+      'id' => 20,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Perception',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    20 => 
+    array (
+      'id' => 21,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Momentum',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    21 => 
+    array (
+      'id' => 22,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Luck',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    22 => 
+    array (
+      'id' => 23,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Demon Summoning',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    23 => 
+    array (
+      'id' => 24,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Celerity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    24 => 
+    array (
+      'id' => 25,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Speed',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    25 => 
+    array (
+      'id' => 26,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Bounty',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    26 => 
+    array (
+      'id' => 27,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Air',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    27 => 
+    array (
+      'id' => 28,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Earth',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    28 => 
+    array (
+      'id' => 29,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Fire',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    29 => 
+    array (
+      'id' => 30,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Ice',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    30 => 
+    array (
+      'id' => 31,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Blood',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    31 => 
+    array (
+      'id' => 32,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Strength',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    32 => 
+    array (
+      'id' => 33,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Frailty',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    33 => 
+    array (
+      'id' => 34,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Water',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    34 => 
+    array (
+      'id' => 35,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Intelligence',
+      'pvp_name' => 'Sigil of Intelligence (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    35 => 
+    array (
+      'id' => 36,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Doom',
+      'pvp_name' => 'Sigil of Doom (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    36 => 
+    array (
+      'id' => 37,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Geomancy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    37 => 
+    array (
+      'id' => 38,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Energy',
+      'pvp_name' => 'Sigil of Energy (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    38 => 
+    array (
+      'id' => 39,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Hydromancy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    39 => 
+    array (
+      'id' => 40,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Leeching',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    40 => 
+    array (
+      'id' => 41,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Battle',
+      'pvp_name' => 'Sigil of Battle (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    41 => 
+    array (
+      'id' => 42,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Renewal',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    42 => 
+    array (
+      'id' => 43,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Rage',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    43 => 
+    array (
+      'id' => 44,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Generosity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    44 => 
+    array (
+      'id' => 45,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Impact',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    45 => 
+    array (
+      'id' => 46,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Torment',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    46 => 
+    array (
+      'id' => 47,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Cleansing',
+      'pvp_name' => 'Sigil of Cleansing (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    47 => 
+    array (
+      'id' => 48,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Cruelty',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    48 => 
+    array (
+      'id' => 49,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Blight',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    49 => 
+    array (
+      'id' => 50,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Mischief',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    50 => 
+    array (
+      'id' => 51,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Incapacitation',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    51 => 
+    array (
+      'id' => 52,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Agility',
+      'pvp_name' => 'Sigil of Agility (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    52 => 
+    array (
+      'id' => 53,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Transference',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    53 => 
+    array (
+      'id' => 54,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Ruthlessness',
+      'pvp_name' => 'Sigil of Ruthlessness (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    54 => 
+    array (
+      'id' => 55,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Absorption',
+      'pvp_name' => 'Sigil of Absorption (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    55 => 
+    array (
+      'id' => 56,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Draining',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    56 => 
+    array (
+      'id' => 57,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Rending',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    57 => 
+    array (
+      'id' => 58,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Concentration',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    58 => 
+    array (
+      'id' => 59,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Annulment',
+      'pvp_name' => 'Sigil of Annulment (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    59 => 
+    array (
+      'id' => 60,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Compounding',
+      'pvp_name' => 'Sigil of Compounding (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    60 => 
+    array (
+      'id' => 61,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Confusion',
+      'pvp_name' => 'Sigil of Confusion (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    61 => 
+    array (
+      'id' => 62,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Courage',
+      'pvp_name' => 'Sigil of Courage (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    62 => 
+    array (
+      'id' => 63,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Enhancement',
+      'pvp_name' => 'Sigil of Enhancement (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    63 => 
+    array (
+      'id' => 64,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Escape',
+      'pvp_name' => 'Sigil of Escape (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    64 => 
+    array (
+      'id' => 65,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Exploitation',
+      'pvp_name' => 'Sigil of Exploitation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    65 => 
+    array (
+      'id' => 66,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Exposure',
+      'pvp_name' => 'Sigil of Exposure (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    66 => 
+    array (
+      'id' => 67,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Fallibility',
+      'pvp_name' => 'Sigil of Fallibility (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    67 => 
+    array (
+      'id' => 68,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Misery',
+      'pvp_name' => 'Sigil of Misery (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    68 => 
+    array (
+      'id' => 69,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Opportunity',
+      'pvp_name' => 'Sigil of Opportunity (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    69 => 
+    array (
+      'id' => 70,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Purging',
+      'pvp_name' => 'Sigil of Purging (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    70 => 
+    array (
+      'id' => 71,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Revocation',
+      'pvp_name' => 'Sigil of Revocation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    71 => 
+    array (
+      'id' => 72,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Savagery',
+      'pvp_name' => 'Sigil of Savagery (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    72 => 
+    array (
+      'id' => 73,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Separation',
+      'pvp_name' => 'Sigil of Separation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    73 => 
+    array (
+      'id' => 74,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Stagnation',
+      'pvp_name' => 'Sigil of Stagnation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    74 => 
+    array (
+      'id' => 75,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Nullification',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    75 => 
+    array (
+      'id' => 76,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Purity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    76 => 
+    array (
+      'id' => 87,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Afflicted',
+      'pvp_name' => 'Rune of the Afflicted (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    77 => 
+    array (
+      'id' => 88,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Air',
+      'pvp_name' => 'Rune of Air (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    78 => 
+    array (
+      'id' => 89,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Balthazar',
+      'pvp_name' => 'Rune of Balthazar (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    79 => 
+    array (
+      'id' => 90,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Centaur',
+      'pvp_name' => 'Rune of the Centaur (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    80 => 
+    array (
+      'id' => 91,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Citadel',
+      'pvp_name' => 'Rune of the Citadel (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    81 => 
+    array (
+      'id' => 92,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Divinity',
+      'pvp_name' => 'Rune of Divinity (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    82 => 
+    array (
+      'id' => 93,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Dolyak',
+      'pvp_name' => 'Rune of the Dolyak (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    83 => 
+    array (
+      'id' => 94,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Dwayna',
+      'pvp_name' => 'Rune of Dwayna (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    84 => 
+    array (
+      'id' => 95,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Eagle',
+      'pvp_name' => 'Rune of the Eagle (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    85 => 
+    array (
+      'id' => 96,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Strength',
+      'pvp_name' => 'Rune of Strength (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    86 => 
+    array (
+      'id' => 97,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Fire',
+      'pvp_name' => 'Rune of Fire (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    87 => 
+    array (
+      'id' => 98,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Earth',
+      'pvp_name' => 'Rune of Earth (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    88 => 
+    array (
+      'id' => 99,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Flame Legion',
+      'pvp_name' => 'Rune of the Flame Legion (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    89 => 
+    array (
+      'id' => 100,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Flock',
+      'pvp_name' => 'Rune of the Flock (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    90 => 
+    array (
+      'id' => 101,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Krait',
+      'pvp_name' => 'Rune of the Krait (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    91 => 
+    array (
+      'id' => 102,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Grenth',
+      'pvp_name' => 'Rune of Grenth (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    92 => 
+    array (
+      'id' => 103,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Grove',
+      'pvp_name' => 'Rune of the Grove (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    93 => 
+    array (
+      'id' => 104,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Hoelbrak',
+      'pvp_name' => 'Rune of Hoelbrak (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    94 => 
+    array (
+      'id' => 105,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Ice',
+      'pvp_name' => 'Rune of Ice (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    95 => 
+    array (
+      'id' => 106,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Infiltration',
+      'pvp_name' => 'Rune of Infiltration (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    96 => 
+    array (
+      'id' => 107,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Lich',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    97 => 
+    array (
+      'id' => 108,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Lyssa',
+      'pvp_name' => 'Rune of Lyssa (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    98 => 
+    array (
+      'id' => 109,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Melandru',
+      'pvp_name' => 'Rune of Melandru (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    99 => 
+    array (
+      'id' => 110,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Mercy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    100 => 
+    array (
+      'id' => 111,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Ogre',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    101 => 
+    array (
+      'id' => 112,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Pack',
+      'pvp_name' => 'Rune of the Pack (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    102 => 
+    array (
+      'id' => 113,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Rage',
+      'pvp_name' => 'Rune of Rage (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    103 => 
+    array (
+      'id' => 114,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Rata Sum',
+      'pvp_name' => 'Rune of Rata Sum (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    104 => 
+    array (
+      'id' => 115,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Speed',
+      'pvp_name' => 'Rune of Speed (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    105 => 
+    array (
+      'id' => 116,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Undead',
+      'pvp_name' => 'Rune of the Undead (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    106 => 
+    array (
+      'id' => 117,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Vampirism',
+      'pvp_name' => 'Rune of Vampirism (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    107 => 
+    array (
+      'id' => 118,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Wurm',
+      'pvp_name' => 'Rune of the Wurm (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    108 => 
+    array (
+      'id' => 119,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Svanir',
+      'pvp_name' => 'Rune of Svanir (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    109 => 
+    array (
+      'id' => 120,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Necromancer',
+      'pvp_name' => 'Rune of the Necromancer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    110 => 
+    array (
+      'id' => 121,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Mesmer',
+      'pvp_name' => 'Rune of the Mesmer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    111 => 
+    array (
+      'id' => 122,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Engineer',
+      'pvp_name' => 'Rune of the Engineer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    112 => 
+    array (
+      'id' => 123,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Ranger',
+      'pvp_name' => 'Rune of the Ranger (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    113 => 
+    array (
+      'id' => 124,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Elementalist',
+      'pvp_name' => 'Rune of the Elementalist (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    114 => 
+    array (
+      'id' => 125,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Thief',
+      'pvp_name' => 'Rune of the Thief (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    115 => 
+    array (
+      'id' => 126,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Warrior',
+      'pvp_name' => 'Rune of the Warrior (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    116 => 
+    array (
+      'id' => 127,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Guardian',
+      'pvp_name' => 'Rune of the Guardian (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    117 => 
+    array (
+      'id' => 128,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Trooper',
+      'pvp_name' => 'Rune of the Soldier (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    118 => 
+    array (
+      'id' => 129,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Adventurer',
+      'pvp_name' => 'Rune of Adventure (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    119 => 
+    array (
+      'id' => 130,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Brawler',
+      'pvp_name' => 'Rune of the Fighter (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    120 => 
+    array (
+      'id' => 131,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Scholar',
+      'pvp_name' => 'Rune of the Scholar (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    121 => 
+    array (
+      'id' => 132,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Water',
+      'pvp_name' => 'Rune of the Water (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    122 => 
+    array (
+      'id' => 133,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Monk',
+      'pvp_name' => 'Rune of the Monk (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    123 => 
+    array (
+      'id' => 134,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Nightmare',
+      'pvp_name' => 'Rune of the Nightmare (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    124 => 
+    array (
+      'id' => 135,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Forgeman',
+      'pvp_name' => 'Rune of the Forge (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    125 => 
+    array (
+      'id' => 136,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Baelfire',
+      'pvp_name' => 'Rune of the Baelfire (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    126 => 
+    array (
+      'id' => 137,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Sanctuary',
+      'pvp_name' => 'Rune of Sanctuary (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    127 => 
+    array (
+      'id' => 138,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Orr',
+      'pvp_name' => 'Rune of Orr (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    128 => 
+    array (
+      'id' => 139,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Exuberance',
+      'pvp_name' => 'Rune of Exuberance (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    129 => 
+    array (
+      'id' => 140,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Perplexity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    130 => 
+    array (
+      'id' => 141,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Tormenting',
+      'pvp_name' => 'Rune of Tormenting (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    131 => 
+    array (
+      'id' => 142,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Mad King',
+      'pvp_name' => 'Rune of the Mad King (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    132 => 
+    array (
+      'id' => 143,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Scavenging',
+      'pvp_name' => 'Rune of Scavenging (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    133 => 
+    array (
+      'id' => 144,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Altruism',
+      'pvp_name' => 'Rune of Altruism (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    134 => 
+    array (
+      'id' => 145,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Aristocracy',
+      'pvp_name' => 'Rune of the Aristocracy (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    135 => 
+    array (
+      'id' => 146,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Traveler',
+      'pvp_name' => 'Rune of the Traveler (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    136 => 
+    array (
+      'id' => 147,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Privateer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    137 => 
+    array (
+      'id' => 148,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Golemancer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    138 => 
+    array (
+      'id' => 149,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Sunless',
+      'pvp_name' => 'Rune of the Sunless (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    139 => 
+    array (
+      'id' => 150,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Resistance',
+      'pvp_name' => 'Rune of Resistance (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    140 => 
+    array (
+      'id' => 151,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Evasion',
+      'pvp_name' => 'Rune of Evasion (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    141 => 
+    array (
+      'id' => 152,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Trapper',
+      'pvp_name' => 'Rune of the Trapper (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    142 => 
+    array (
+      'id' => 153,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Radiance',
+      'pvp_name' => 'Rune of Radiance (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    143 => 
+    array (
+      'id' => 154,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Snowfall',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    144 => 
+    array (
+      'id' => 155,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Defender',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    145 => 
+    array (
+      'id' => 156,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Durability',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    146 => 
+    array (
+      'id' => 157,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Leadership',
+      'pvp_name' => 'Rune of Leadership (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    147 => 
+    array (
+      'id' => 158,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Surging',
+      'pvp_name' => 'Rune of Surging (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    148 => 
+    array (
+      'id' => 159,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Berserker',
+      'pvp_name' => 'Rune of the Berserker (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    149 => 
+    array (
+      'id' => 160,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Chronomancer',
+      'pvp_name' => 'Rune of the Chronomancer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    150 => 
+    array (
+      'id' => 161,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Daredevil',
+      'pvp_name' => 'Rune of the Daredevil (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    151 => 
+    array (
+      'id' => 162,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Dragonhunter',
+      'pvp_name' => 'Rune of the Dragonhunter (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    152 => 
+    array (
+      'id' => 163,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Druid',
+      'pvp_name' => 'Rune of the Druid (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    153 => 
+    array (
+      'id' => 164,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Herald',
+      'pvp_name' => 'Rune of the Herald (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    154 => 
+    array (
+      'id' => 165,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Reaper',
+      'pvp_name' => 'Rune of the Reaper (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    155 => 
+    array (
+      'id' => 166,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Revenant',
+      'pvp_name' => 'Rune of the Revenant (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    156 => 
+    array (
+      'id' => 167,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Scrapper',
+      'pvp_name' => 'Rune of the Scrapper (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    157 => 
+    array (
+      'id' => 168,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Tempest',
+      'pvp_name' => 'Rune of the Tempest (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    158 => 
+    array (
+      'id' => 169,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Thorns',
+      'pvp_name' => 'Rune of Thorns (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    159 => 
+    array (
+      'id' => 170,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Lynx',
+      'pvp_name' => 'Rune of the Lynx (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    160 => 
+    array (
+      'id' => 171,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Antitoxin',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    161 => 
+    array (
+      'id' => 205,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Malign Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    162 => 
+    array (
+      'id' => 206,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Mighty Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    163 => 
+    array (
+      'id' => 207,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Precise Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    164 => 
+    array (
+      'id' => 208,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Malign Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    165 => 
+    array (
+      'id' => 209,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Mighty Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    166 => 
+    array (
+      'id' => 210,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Precise Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    167 => 
+    array (
+      'id' => 211,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Malign WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    168 => 
+    array (
+      'id' => 212,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Mighty WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    169 => 
+    array (
+      'id' => 213,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Precise WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    170 => 
+    array (
+      'id' => 214,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Healing Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    171 => 
+    array (
+      'id' => 215,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Resilient Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    172 => 
+    array (
+      'id' => 216,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Vital Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    173 => 
+    array (
+      'id' => 217,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Healing Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    174 => 
+    array (
+      'id' => 218,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Resilient Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    175 => 
+    array (
+      'id' => 219,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Vital Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    176 => 
+    array (
+      'id' => 220,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Healing WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    177 => 
+    array (
+      'id' => 221,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Resilient WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    178 => 
+    array (
+      'id' => 222,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Vital WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    179 => 
+    array (
+      'id' => 223,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Gilded Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    180 => 
+    array (
+      'id' => 224,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Magical Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    181 => 
+    array (
+      'id' => 225,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Experienced Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    182 => 
+    array (
+      'id' => 226,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Karmic Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    183 => 
+    array (
+      'id' => 227,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Versatile Simple Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    184 => 
+    array (
+      'id' => 228,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Versatile Malign Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    185 => 
+    array (
+      'id' => 229,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Versatile Mighty Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    186 => 
+    array (
+      'id' => 230,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Versatile Precise Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    187 => 
+    array (
+      'id' => 231,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Versatile Healing Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    188 => 
+    array (
+      'id' => 232,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Versatile Resilient Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    189 => 
+    array (
+      'id' => 233,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Versatile Vital Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    190 => 
+    array (
+      'id' => 234,
+      'type' => 'Doubloon',
+      'rarity' => 'Rare',
+      'name' => 'Copper Doubloon',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    191 => 
+    array (
+      'id' => 235,
+      'type' => 'Doubloon',
+      'rarity' => 'Rare',
+      'name' => 'Silver Doubloon',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    192 => 
+    array (
+      'id' => 236,
+      'type' => 'Doubloon',
+      'rarity' => 'Rare',
+      'name' => 'Gold Doubloon',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    193 => 
+    array (
+      'id' => 237,
+      'type' => 'Doubloon',
+      'rarity' => 'Rare',
+      'name' => 'Platinum Doubloon',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    194 => 
+    array (
+      'id' => 238,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Afflicted',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    195 => 
+    array (
+      'id' => 239,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Air',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    196 => 
+    array (
+      'id' => 240,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Balthazar',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    197 => 
+    array (
+      'id' => 241,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Centaur',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    198 => 
+    array (
+      'id' => 242,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Citadel',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    199 => 
+    array (
+      'id' => 243,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Divinity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    200 => 
+    array (
+      'id' => 244,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Dolyak',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    201 => 
+    array (
+      'id' => 245,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Dwayna',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    202 => 
+    array (
+      'id' => 246,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Eagle',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    203 => 
+    array (
+      'id' => 247,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Strength',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    204 => 
+    array (
+      'id' => 248,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Fire',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    205 => 
+    array (
+      'id' => 249,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Earth',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    206 => 
+    array (
+      'id' => 250,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Flame Legion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    207 => 
+    array (
+      'id' => 251,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Flock',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    208 => 
+    array (
+      'id' => 252,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Krait',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    209 => 
+    array (
+      'id' => 253,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Grenth',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    210 => 
+    array (
+      'id' => 254,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Grove',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    211 => 
+    array (
+      'id' => 255,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Hoelbrak',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    212 => 
+    array (
+      'id' => 256,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Ice',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    213 => 
+    array (
+      'id' => 257,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Infiltration',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    214 => 
+    array (
+      'id' => 258,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Lich',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    215 => 
+    array (
+      'id' => 259,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Lyssa',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    216 => 
+    array (
+      'id' => 260,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Melandru',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    217 => 
+    array (
+      'id' => 261,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Mercy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    218 => 
+    array (
+      'id' => 262,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Ogre',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    219 => 
+    array (
+      'id' => 263,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Pack',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    220 => 
+    array (
+      'id' => 264,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Rage',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    221 => 
+    array (
+      'id' => 265,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Rata Sum',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    222 => 
+    array (
+      'id' => 266,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Speed',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    223 => 
+    array (
+      'id' => 267,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Undead',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    224 => 
+    array (
+      'id' => 268,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Vampirism',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    225 => 
+    array (
+      'id' => 269,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Wurm',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    226 => 
+    array (
+      'id' => 270,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Svanir',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    227 => 
+    array (
+      'id' => 271,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Necromancer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    228 => 
+    array (
+      'id' => 272,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Mesmer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    229 => 
+    array (
+      'id' => 273,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Engineer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    230 => 
+    array (
+      'id' => 274,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Ranger',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    231 => 
+    array (
+      'id' => 275,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Elementalist',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    232 => 
+    array (
+      'id' => 276,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Thief',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    233 => 
+    array (
+      'id' => 277,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Warrior',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    234 => 
+    array (
+      'id' => 278,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Guardian',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    235 => 
+    array (
+      'id' => 279,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Trooper',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    236 => 
+    array (
+      'id' => 280,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Adventurer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    237 => 
+    array (
+      'id' => 281,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Brawler',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    238 => 
+    array (
+      'id' => 282,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Scholar',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    239 => 
+    array (
+      'id' => 283,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Water',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    240 => 
+    array (
+      'id' => 284,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Monk',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    241 => 
+    array (
+      'id' => 285,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Nightmare',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    242 => 
+    array (
+      'id' => 286,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Forgeman',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    243 => 
+    array (
+      'id' => 287,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Baelfire',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    244 => 
+    array (
+      'id' => 288,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Sanctuary',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    245 => 
+    array (
+      'id' => 289,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Orr',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    246 => 
+    array (
+      'id' => 290,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Exuberance',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    247 => 
+    array (
+      'id' => 291,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Perplexity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    248 => 
+    array (
+      'id' => 292,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Tormenting',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    249 => 
+    array (
+      'id' => 293,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Mad King',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    250 => 
+    array (
+      'id' => 294,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Scavenging',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    251 => 
+    array (
+      'id' => 295,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Altruism',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    252 => 
+    array (
+      'id' => 296,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Aristocracy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    253 => 
+    array (
+      'id' => 297,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Traveler',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    254 => 
+    array (
+      'id' => 298,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Privateer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    255 => 
+    array (
+      'id' => 299,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Golemancer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    256 => 
+    array (
+      'id' => 300,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Snowfall',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    257 => 
+    array (
+      'id' => 1,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Soldier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    258 => 
+    array (
+      'id' => 2,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Shaman',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    259 => 
+    array (
+      'id' => 3,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Rabid',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    260 => 
+    array (
+      'id' => 4,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Magi',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    261 => 
+    array (
+      'id' => 5,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Assassin',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    262 => 
+    array (
+      'id' => 6,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Ruby Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    263 => 
+    array (
+      'id' => 7,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Beryl Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    264 => 
+    array (
+      'id' => 8,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Emerald Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    265 => 
+    array (
+      'id' => 9,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Coral Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    266 => 
+    array (
+      'id' => 10,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Chrysocola Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    267 => 
+    array (
+      'id' => 11,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Sapphire Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    268 => 
+    array (
+      'id' => 12,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Opal Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    269 => 
+    array (
+      'id' => 14,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Agate Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    270 => 
+    array (
+      'id' => 15,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Black Diamond',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    271 => 
+    array (
+      'id' => 16,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Freshwater Pearl',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    272 => 
+    array (
+      'id' => 17,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Ebony Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    273 => 
+    array (
+      'id' => 18,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Moonstone Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    274 => 
+    array (
+      'id' => 19,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Maguuma Burl',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    275 => 
+    array (
+      'id' => 20,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Maguuma Lily',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    276 => 
+    array (
+      'id' => 21,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Flax Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    277 => 
+    array (
+      'id' => 22,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Azurite Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    278 => 
+    array (
+      'id' => 23,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Ruby Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    279 => 
+    array (
+      'id' => 24,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Beryl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    280 => 
+    array (
+      'id' => 25,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Emerald Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    281 => 
+    array (
+      'id' => 26,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Coral Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    282 => 
+    array (
+      'id' => 27,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Chrysocola Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    283 => 
+    array (
+      'id' => 28,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Sapphire Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    284 => 
+    array (
+      'id' => 29,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Opal Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    285 => 
+    array (
+      'id' => 30,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Azurite Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    286 => 
+    array (
+      'id' => 31,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Snowflake',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    287 => 
+    array (
+      'id' => 32,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Charged Quartz Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    288 => 
+    array (
+      'id' => 33,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Watchwork Sprocket',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    289 => 
+    array (
+      'id' => 34,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Ambrite Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    290 => 
+    array (
+      'id' => 35,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Charged Ambrite Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    291 => 
+    array (
+      'id' => 36,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Burl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    292 => 
+    array (
+      'id' => 37,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Ebony Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    293 => 
+    array (
+      'id' => 38,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Agate Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    294 => 
+    array (
+      'id' => 39,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Freshwater Pearl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    295 => 
+    array (
+      'id' => 40,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Lily Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    296 => 
+    array (
+      'id' => 41,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Flax Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    297 => 
+    array (
+      'id' => 42,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Black Diamond Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    298 => 
+    array (
+      'id' => 43,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Moonstone Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    299 => 
+    array (
+      'id' => 44,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Passion Flower',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+  ),
+  'revision' => 1501807958,
+  'races' => 
+  array (
+    0 => 
     array (
       'id' => 3,
       'name' => 'Norn',
     ),
-    4 => 
+    1 => 
     array (
       'id' => 4,
       'name' => 'Asura',
+    ),
+    2 => 
+    array (
+      'id' => 5,
+      'name' => 'Sylvari',
+    ),
+    3 => 
+    array (
+      'id' => 2,
+      'name' => 'Charr',
+    ),
+    4 => 
+    array (
+      'id' => 1,
+      'name' => 'Human',
+    ),
+  ),
+  'professions' => 
+  array (
+    0 => 
+    array (
+      'id' => 8,
+      'name' => 'Mesmer',
+    ),
+    1 => 
+    array (
+      'id' => 3,
+      'name' => 'Ranger',
+    ),
+    2 => 
+    array (
+      'id' => 6,
+      'name' => 'Thief',
+    ),
+    3 => 
+    array (
+      'id' => 7,
+      'name' => 'Engineer',
+    ),
+    4 => 
+    array (
+      'id' => 2,
+      'name' => 'Warrior',
+    ),
+    5 => 
+    array (
+      'id' => 5,
+      'name' => 'Guardian',
+    ),
+    6 => 
+    array (
+      'id' => 9,
+      'name' => 'Revenant',
+    ),
+    7 => 
+    array (
+      'id' => 4,
+      'name' => 'Necromancer',
+    ),
+    8 => 
+    array (
+      'id' => 1,
+      'name' => 'Elementalist',
     ),
   ),
 );
