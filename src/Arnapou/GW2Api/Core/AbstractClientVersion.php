@@ -18,6 +18,12 @@ use Arnapou\GW2Api\Exception\RequestException;
 abstract class AbstractClientVersion
 {
 
+    const API_FLAG_DISABLED            = 'disabled';
+    const API_FLAG_LOCALE_AWARE        = 'locale-aware';
+    const API_FLAG_REQUIRE_AUTH        = 'require-auth';
+    const API_FLAG_PHP_IMPLEMENTED     = 'php-implemented';
+    const API_FLAG_PHP_NOT_IMPLEMENTED = 'php-not-implemented';
+
     /**
      *
      * @var Environment
@@ -137,6 +143,91 @@ abstract class AbstractClientVersion
         }
 
         return $data;
+    }
+
+    /**
+     * @param array $flags
+     * @return array
+     * @throws RequestException
+     */
+    public function getApiList($flags = [])
+    {
+        $url   = preg_replace('!/$!', '', $this->getBaseUrl());
+        $curl  = $this->createCurl($url, []);
+        $flags = (array)$flags;
+
+        $response = $curl->execute();
+        if ($response->getErrorCode()) {
+            throw new RequestException($response->getErrorTitle() . ': ' . $response->getErrorDetail(), $response->getErrorCode());
+        }
+
+        $content = $response->getContent();
+        if (preg_match('!The following paths[^\n]+((?:\n\s+/v[0-9]/[^\n]+)+)[\n\r\s]*\nKey!si', $content, $m)) {
+            $lines = explode("\n", trim($m[1]));
+            $lines = array_map('trim', $lines);
+            $apis  = [];
+            foreach ($lines as $line) {
+                $api = null;
+                if (preg_match('!^/v[0-9]/([^\s]+)(?:\s+\[(.+)\])$!', $line, $m)) {
+                    $api = [
+                        'url'   => $m[1],
+                        'flags' => $this->getApiFlags($m[1], $m[2]),
+                    ];
+                } elseif (preg_match('!^/v[0-9]/(.+)$!', $line, $m)) {
+                    $api = [
+                        'url'   => $m[1],
+                        'flags' => $this->getApiFlags($m[1], ''),
+                    ];
+                }
+                if ($api) {
+                    if (!empty($flags)) {
+                        $flagFound = false;
+                        foreach ($api['flags'] as $flag) {
+                            if (in_array($flag, $flags)) {
+                                $flagFound = true;
+                            }
+                        }
+                    } else {
+                        $flagFound = true;
+                    }
+                    if ($flagFound) {
+                        $apis[] = $api;
+                    }
+                }
+            }
+            return $apis;
+        }
+
+        throw new RequestException('Unable to detect apis list');
+    }
+
+    /**
+     * @param $apiUrl
+     * @param $apiLetters
+     * @return array
+     */
+    protected function getApiFlags($apiUrl, $apiLetters)
+    {
+        $letters = array_map('trim', array_map('strtolower', explode(',', $apiLetters)));
+        $flags   = [];
+        if (in_array('l', $letters)) {
+            $flags[] = self::API_FLAG_LOCALE_AWARE;
+        }
+        if (in_array('d', $letters)) {
+            $flags[] = self::API_FLAG_DISABLED;
+        }
+        if (in_array('a', $letters)) {
+            $flags[] = self::API_FLAG_REQUIRE_AUTH;
+        }
+        if (strpos($apiUrl, ':') === false) {
+            $method = 'api' . str_replace('/', '', $apiUrl);
+            if (method_exists($this, $method)) {
+                $flags[] = self::API_FLAG_PHP_IMPLEMENTED;
+            } else {
+                $flags[] = self::API_FLAG_PHP_NOT_IMPLEMENTED;
+            }
+        }
+        return $flags;
     }
 
     /**
