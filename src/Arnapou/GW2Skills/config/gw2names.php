@@ -49,7 +49,7 @@
       'celestial infusion (red)' => 81927,
       'celestial jewel' => 21169,
       'chak egg sac' => 72021,
-      'chak infusion' => 82044,
+      'chak infusion' => 81840,
       'cleric\'s jewel' => 21094,
       'exquisite agate jewel' => 75435,
       'exquisite ambrite jewel' => 66671,
@@ -74,7 +74,7 @@
       'exquisite snowflake' => 38143,
       'exquisite watchwork sprocket' => 49823,
       'ghostly infusion' => 77394,
-      'liquid aurillium infusion' => 82006,
+      'liquid aurillium infusion' => 81875,
       'phospholuminescent infusion' => 79674,
       'poly-luminescent undulating infusion (black)' => 82039,
       'poly-luminescent undulating infusion (green)' => 81727,
@@ -800,12 +800,14 @@
       'fire' => 31,
       'tempest' => 48,
       'water' => 17,
+      'weaver' => 56,
     ),
     'engineer' => 
     array (
       'alchemy' => 29,
       'explosives' => 6,
       'firearms' => 38,
+      'holosmith' => 57,
       'inventions' => 47,
       'scrapper' => 43,
       'tools' => 21,
@@ -813,6 +815,7 @@
     'guardian' => 
     array (
       'dragonhunter' => 27,
+      'firebrand' => 62,
       'honor' => 49,
       'radiance' => 16,
       'valor' => 13,
@@ -827,6 +830,7 @@
       'dueling' => 1,
       'illusions' => 24,
       'inspiration' => 23,
+      'mirage' => 59,
     ),
     'necromancer' => 
     array (
@@ -834,6 +838,7 @@
       'curses' => 39,
       'death magic' => 2,
       'reaper' => 34,
+      'scourge' => 60,
       'soul reaping' => 50,
       'spite' => 53,
     ),
@@ -844,6 +849,7 @@
       'marksmanship' => 8,
       'nature magic' => 25,
       'skirmishing' => 30,
+      'soulbeast' => 55,
       'wilderness survival' => 33,
     ),
     'revenant' => 
@@ -852,6 +858,7 @@
       'devastation' => 15,
       'herald' => 52,
       'invocation' => 3,
+      'renegade' => 63,
       'retribution' => 9,
       'salvation' => 12,
     ),
@@ -860,6 +867,7 @@
       'acrobatics' => 54,
       'critical strikes' => 35,
       'daredevil' => 7,
+      'deadeye' => 58,
       'deadly arts' => 28,
       'shadow arts' => 20,
       'trickery' => 44,
@@ -870,6 +878,7 @@
       'berserker' => 18,
       'defense' => 22,
       'discipline' => 51,
+      'spellbreaker' => 61,
       'strength' => 4,
       'tactics' => 11,
     ),
@@ -885,11 +894,11 @@
       'duelist\'s discipline' => 700,
       'evasive mirror' => 1960,
       'fencer\'s finesse' => 708,
-      'harmonious mantras' => 692,
+      'ineptitude' => 1950,
       'master fencer' => 707,
-      'mistrust' => 1950,
       'phantasmal fury' => 701,
       'sharper images' => 710,
+      'superiority complex' => 692,
     ),
     2 => 
     array (
@@ -923,14 +932,14 @@
     ),
     4 => 
     array (
-      'axe mastery' => 1440,
       'berserker\'s power' => 1437,
       'body blow' => 2000,
+      'brave stride' => 1447,
       'building momentum' => 1448,
-      'death from above' => 1447,
-      'distracting strikes' => 1454,
       'forceful greatsword' => 1338,
       'great fortitude' => 1449,
+      'merciless hammer' => 1440,
+      'might makes right' => 1454,
       'peak performance' => 1444,
       'reckless dodge' => 1446,
       'restorative strength' => 1451,
@@ -955,17 +964,17 @@
     6 => 
     array (
       'aim-assisted rocket' => 482,
+      'big boomer' => 1892,
+      'blasting zone' => 525,
       'evasive powder keg' => 432,
-      'explosive descent' => 525,
-      'explosive powder' => 429,
       'glass cannon' => 1882,
       'grenadier' => 514,
-      'shaped charge' => 1892,
+      'minesweeper' => 1947,
+      'orbital command' => 1541,
+      'shaped charge' => 429,
       'short fuse' => 1944,
       'shrapnel' => 505,
-      'siege rounds' => 1541,
       'steel-packed powder' => 517,
-      'thermobaric detonation' => 1947,
     ),
     7 => 
     array (
@@ -985,25 +994,24 @@
     ),
     8 => 
     array (
-      'alpha training' => 1009,
+      'alpha focus' => 1009,
       'brutish seals' => 1001,
       'clarion bond' => 986,
-      'enlargement' => 1021,
+      'hunter\'s gaze' => 1014,
       'lead the wind' => 1698,
       'moment of clarity' => 1070,
       'opening strike' => 1010,
       'precise strike' => 1011,
-      'predator\'s instinct' => 1014,
       'predator\'s onslaught' => 996,
       'remorseless' => 1015,
       'steady focus' => 1000,
+      'stoneform' => 1021,
     ),
     9 => 
     array (
       'close quarters' => 1728,
       'determined resolution' => 1713,
       'dwarven battle training' => 1740,
-      'empowering vengeance' => 1779,
       'enduring recovery' => 1783,
       'eye for an eye' => 1766,
       'improved aggression' => 1810,
@@ -1012,6 +1020,7 @@
       'steadfast rejuvenation' => 1790,
       'unwavering avoidance' => 1757,
       'versed in stone' => 1770,
+      'vicious reprisal' => 1779,
     ),
     10 => 
     array (
@@ -1095,8 +1104,8 @@
       'dismantle fortifications' => 1800,
       'ferocious strikes' => 1776,
       'focused siphoning' => 1792,
-      'jade echo' => 1786,
-      'malicious reprisal' => 1755,
+      'jade echo' => 1755,
+      'malicious reprisal' => 1786,
       'mutilate defenses' => 1808,
       'nefarious momentum' => 1765,
       'swift termination' => 1715,
@@ -1112,10 +1121,10 @@
       'perfect inscriptions' => 579,
       'radiant fire' => 567,
       'radiant power' => 568,
-      'radiant retaliation' => 1683,
       'renewed justice' => 571,
       'retribution' => 565,
       'right-hand strength' => 566,
+      'righteous instincts' => 1683,
       'wrath of justice' => 578,
     ),
     17 => 
@@ -1229,12 +1238,12 @@
       'compounding power' => 721,
       'illusionary retribution' => 734,
       'illusionist\'s celerity' => 723,
-      'ineptitude' => 733,
       'maim the disillusioned' => 1690,
       'malicious sorcery' => 753,
       'master of fragmentation' => 2035,
       'master of misdirection' => 731,
       'persistence of memory' => 1869,
+      'phantasmal force' => 733,
       'phantasmal haste' => 729,
       'shattered strength' => 722,
       'the pledge' => 691,
@@ -1251,7 +1260,7 @@
       'nature\'s vengeance' => 1038,
       'protective ward' => 1988,
       'rejuvenation' => 1055,
-      'vigorous training' => 965,
+      'spirited arrival' => 965,
       'windborne notes' => 964,
     ),
     26 => 
@@ -1321,7 +1330,6 @@
       'hidden barbs' => 1846,
       'hunter\'s tactics' => 1068,
       'light on your feet' => 1912,
-      'most dangerous game' => 1888,
       'primal reflexes' => 1067,
       'quick draw' => 1064,
       'sharpened edges' => 1069,
@@ -1329,6 +1337,7 @@
       'strider\'s defense' => 1700,
       'tail wind' => 1080,
       'trapper\'s expertise' => 1075,
+      'vicious quarry' => 1888,
     ),
     31 => 
     array (
@@ -1348,13 +1357,13 @@
     32 => 
     array (
       'beastly warden' => 1945,
-      'companion\'s might' => 1072,
       'go for the eyes' => 1861,
       'honed axes' => 1066,
       'loud whistle' => 974,
       'natural healing' => 970,
       'pack alpha' => 1900,
       'pet\'s prowess' => 1065,
+      'potent ally' => 1072,
       'resounding timbre' => 1606,
       'two-handed training' => 1047,
       'wilting strike' => 975,
@@ -1363,16 +1372,16 @@
     33 => 
     array (
       'ambidexterity' => 1101,
-      'bark skin' => 1089,
       'companion\'s defense' => 1090,
       'empathic bond' => 1094,
-      'expertise training' => 1099,
       'natural vigor' => 1096,
       'oakheart salve' => 1086,
       'poison master' => 1701,
       'refined toxins' => 2032,
+      'rugged growth' => 1089,
       'shared anguish' => 1100,
       'soften the fall' => 1098,
+      'taste for danger' => 1099,
       'wilderness knowledge' => 1699,
     ),
     34 => 
@@ -1394,32 +1403,32 @@
     35 => 
     array (
       'ankle shots' => 1299,
+      'assassin\'s fury' => 1209,
       'ferocious strikes' => 1282,
-      'flawless strike' => 1268,
       'hidden killer' => 1215,
       'invigorating precision' => 1702,
       'keen observer' => 1281,
       'no quarter' => 1904,
       'practiced tolerance' => 1272,
-      'side strike' => 1209,
       'signets of power' => 1267,
       'sundering strikes' => 1170,
+      'twin fangs' => 1268,
       'unrelenting strikes' => 1210,
     ),
     36 => 
     array (
-      'berserker\'s fury' => 1455,
       'blademaster' => 1333,
       'bloodlust' => 1337,
       'burst precision' => 1336,
-      'deep strike' => 1316,
+      'deep strikes' => 1343,
       'dual wielding' => 1707,
       'furious' => 1346,
+      'furious burst' => 1342,
       'opportunist' => 1334,
-      'precise strikes' => 1342,
-      'rending strikes' => 1343,
+      'rending strikes' => 1316,
       'signet mastery' => 1344,
       'unsuspecting foe' => 1315,
+      'wounding precision' => 1455,
     ),
     37 => 
     array (
@@ -1500,7 +1509,7 @@
     42 => 
     array (
       'binding jeopardy' => 628,
-      'expeditious spirit' => 635,
+      'eternal armory' => 635,
       'fiery wrath' => 634,
       'kindled zeal' => 1556,
       'shattered aegis' => 637,
@@ -1532,7 +1541,7 @@
     array (
       'bewildering ambush' => 1706,
       'bountiful theft' => 1277,
-      'flanking strikes' => 1252,
+      'burst of agility' => 1252,
       'kleptomaniac' => 1137,
       'lead attacks' => 1157,
       'preparedness' => 1232,
@@ -1636,6 +1645,7 @@
     ),
     51 => 
     array (
+      'axe mastery' => 1369,
       'brawler\'s recovery' => 1709,
       'burst mastery' => 1657,
       'crack shot' => 1329,
@@ -1643,7 +1653,6 @@
       'fast hands' => 1416,
       'heightened focus' => 1317,
       'inspiring battle standard' => 1484,
-      'merciless hammer' => 1369,
       'vengeful return' => 1381,
       'versatile power' => 1417,
       'versatile rage' => 1415,
@@ -1695,6 +1704,150 @@
       'upper hand' => 1295,
       'vigorous recovery' => 1289,
     ),
+    55 => 
+    array (
+      'dagger proficiency' => 2088,
+      'elevated bond' => 2151,
+      'essence of speed' => 2085,
+      'eternal bond' => 2155,
+      'fresh reinforcement' => 2134,
+      'furious strength' => 2156,
+      'leader of the pack' => 2128,
+      'live fast' => 2071,
+      'oppressive superiority' => 2143,
+      'predator\'s cunning' => 2161,
+      'second skin' => 2119,
+      'twice as vicious' => 2127,
+      'unstoppable union' => 2072,
+    ),
+    56 => 
+    array (
+      'bolstered elements' => 2170,
+      'elemental polyphony' => 2081,
+      'elemental pursuit' => 2165,
+      'elemental refreshment' => 2077,
+      'elements of rage' => 2131,
+      'invigorating strikes' => 2138,
+      'master\'s fortitude' => 2115,
+      'superior elements' => 2177,
+      'swift revenge' => 2061,
+      'sword proficiency' => 2149,
+      'unravel hexes' => 2090,
+      'weaver' => 2109,
+      'weaver\'s prowess' => 2180,
+    ),
+    57 => 
+    array (
+      'crystal configuration: eclipse' => 2152,
+      'crystal configuration: storm' => 2103,
+      'crystal configuration: zephyr' => 2091,
+      'enhanced capacity storage unit' => 2137,
+      'heat therapy' => 2135,
+      'laser\'s edge' => 2122,
+      'light density amplifier' => 2114,
+      'photon projector' => 2158,
+      'photonic blasting module' => 2064,
+      'prismatic converter' => 2157,
+      'solar focusing lens' => 2106,
+      'sword proficiency' => 2125,
+      'thermal release valve' => 2066,
+    ),
+    58 => 
+    array (
+      'be quick or be killed' => 2093,
+      'deadeye\'s gaze' => 2171,
+      'fire for effect' => 2146,
+      'iron sight' => 2173,
+      'maleficent seven' => 2111,
+      'one in the chamber' => 2136,
+      'perfectionist' => 2084,
+      'peripheral vision' => 2160,
+      'renewing gaze' => 2172,
+      'revealed malice' => 2145,
+      'rifle proficiency' => 2129,
+      'silent scope' => 2118,
+      'unforgiving' => 2078,
+    ),
+    59 => 
+    array (
+      'axe proficiency' => 2087,
+      'dune cloak' => 2169,
+      'elusive mind' => 2113,
+      'infinite horizon' => 2070,
+      'mirage cloak' => 2150,
+      'mirage mantle' => 2174,
+      'mirrored axes' => 2098,
+      'nomad\'s endurance' => 2069,
+      'renewing oasis' => 2082,
+      'riddle of sand' => 2110,
+      'self-deception' => 2141,
+      'shards of glass' => 2178,
+      'speed of sand' => 2117,
+    ),
+    60 => 
+    array (
+      'abrasive grit' => 2167,
+      'blood as sand' => 2096,
+      'demonic lore' => 2164,
+      'desert empowerment' => 2059,
+      'feed from corruption' => 2080,
+      'fell beacon' => 2074,
+      'mantle of sand' => 2147,
+      'nourishing rot' => 2102,
+      'sadistic searing' => 2067,
+      'sand sage' => 2121,
+      'sand savant' => 2112,
+      'torch proficiency' => 2144,
+      'unending corruption' => 2123,
+    ),
+    61 => 
+    array (
+      'attacker\'s insight' => 2130,
+      'dagger proficiency' => 2124,
+      'dispelling force' => 2162,
+      'enchantment collapse' => 2163,
+      'guard counter' => 2153,
+      'loss aversion' => 2126,
+      'magebane tether' => 2060,
+      'no escape' => 2140,
+      'pure strike' => 2107,
+      'revenge counter' => 2168,
+      'slow counter' => 2097,
+      'spellbreaker\'s conviction' => 2175,
+      'sun and moon style' => 2095,
+    ),
+    62 => 
+    array (
+      'archivist of whispers' => 2086,
+      'axe proficiency' => 2073,
+      'imbued haste' => 2148,
+      'legendary lore' => 2116,
+      'liberator\'s vow' => 2101,
+      'loremaster' => 2159,
+      'purity of word' => 2089,
+      'quickfire' => 2179,
+      'stalwart speed' => 2076,
+      'stoic demeanor' => 2105,
+      'swift scholar' => 2062,
+      'unrelenting criticism' => 2075,
+      'weighty terms' => 2063,
+    ),
+    63 => 
+    array (
+      'all for one' => 2108,
+      'ambush commander' => 2181,
+      'ashen demeanor' => 2166,
+      'blood fury' => 2079,
+      'brutal momentum' => 2142,
+      'endless enmity' => 2154,
+      'heartpiercer' => 2092,
+      'lasting legacy' => 2100,
+      'righteous rebel' => 2182,
+      'short bow proficiency' => 2099,
+      'sudden reversal' => 2133,
+      'vindication' => 2094,
+      'wrought-iron will' => 2120,
+    ),
   ),
   'buffs' => 
   array (
@@ -1709,6 +1862,7 @@
     'artisan tuning crystal' => 9472,
     'ash legion spy kit' => 8686,
     'assassin pill' => 2,
+    'bag of simple cat food' => 84429,
     'banana cream pie' => 12230,
     'bear offering' => 8536,
     'bit of enchanted clam bait' => 8537,
@@ -2666,7 +2820,7 @@
       array (
         0 => 30745,
       ),
-      '"search and rescue."' => 
+      '"search and rescue!"' => 
       array (
         0 => 30123,
       ),
@@ -2682,13 +2836,14 @@
       array (
         0 => 38266,
       ),
+      '[[820442]]' => 
+      array (
+        0 => 41119,
+        1 => 43766,
+      ),
       'aim-assisted rocket' => 
       array (
         0 => 29889,
-      ),
-      'analyze' => 
-      array (
-        0 => 29606,
       ),
       'anguished bolt' => 
       array (
@@ -2727,10 +2882,6 @@
       array (
         0 => 30142,
       ),
-      'banish enchantment' => 
-      array (
-        0 => 28388,
-      ),
       'bash' => 
       array (
         0 => 14486,
@@ -2760,7 +2911,6 @@
       'blinding powder' => 
       array (
         0 => 13107,
-        1 => 21777,
       ),
       'blinding radiance' => 
       array (
@@ -2806,6 +2956,10 @@
       array (
         0 => 1115,
       ),
+      'bright slash—storm' => 
+      array (
+        0 => 42475,
+      ),
       'brutal aura' => 
       array (
         0 => 38258,
@@ -2817,18 +2971,6 @@
       'bunker down' => 
       array (
         0 => 24329,
-      ),
-      'call of the wild' => 
-      array (
-        0 => 29449,
-      ),
-      'caltrops' => 
-      array (
-        0 => 14136,
-      ),
-      'chaos storm' => 
-      array (
-        0 => 13733,
       ),
       'chilling howl' => 
       array (
@@ -2842,13 +2984,13 @@
       array (
         0 => 12748,
       ),
-      'chilling wind' => 
-      array (
-        0 => 10633,
-      ),
       'chomp' => 
       array (
         0 => 10373,
+      ),
+      'citadel bombardment' => 
+      array (
+        0 => 41513,
       ),
       'claw' => 
       array (
@@ -2899,6 +3041,10 @@
       'continuum split' => 
       array (
         0 => 29830,
+      ),
+      'controlled analysis' => 
+      array (
+        0 => 45709,
       ),
       'corporal punishment' => 
       array (
@@ -2975,6 +3121,10 @@
       array (
         0 => 29152,
       ),
+      'crystalline impact' => 
+      array (
+        0 => 42235,
+      ),
       'curved shot' => 
       array (
         0 => 39163,
@@ -2992,6 +3142,11 @@
       array (
         0 => 12708,
         1 => 12709,
+      ),
+      'deactivate photon forge' => 
+      array (
+        0 => 41123,
+        1 => 45219,
       ),
       'deadly venom' => 
       array (
@@ -3087,10 +3242,6 @@
       array (
         0 => 13464,
       ),
-      'endure pain' => 
-      array (
-        0 => 21813,
-      ),
       'enemy tile' => 
       array (
         0 => 38184,
@@ -3098,10 +3249,6 @@
       'energy surge' => 
       array (
         0 => 38060,
-      ),
-      'enfeeble' => 
-      array (
-        0 => 13907,
       ),
       'enfeebling maul' => 
       array (
@@ -3111,14 +3258,17 @@
       array (
         0 => 12685,
       ),
+      'engage photon forge' => 
+      array (
+        0 => 42938,
+      ),
       'essence sap' => 
       array (
         0 => 31438,
       ),
       'executioner\'s scythe' => 
       array (
-        0 => 30557,
-        1 => 30558,
+        0 => 30558,
       ),
       'explode' => 
       array (
@@ -3127,6 +3277,10 @@
         2 => 39491,
         3 => 39551,
         4 => 39849,
+      ),
+      'explosive descent' => 
+      array (
+        0 => 6050,
       ),
       'feedback' => 
       array (
@@ -3148,6 +3302,10 @@
       'flame burst' => 
       array (
         0 => 5794,
+      ),
+      'flash cutter—storm' => 
+      array (
+        0 => 41684,
       ),
       'flee' => 
       array (
@@ -3220,6 +3378,10 @@
       array (
         0 => 12712,
       ),
+      'geyser' => 
+      array (
+        0 => 5782,
+      ),
       'glacial heart' => 
       array (
         0 => 21795,
@@ -3239,10 +3401,6 @@
       array (
         0 => 37910,
       ),
-      'grenade barrage' => 
-      array (
-        0 => 6050,
-      ),
       'grim specter' => 
       array (
         0 => 10632,
@@ -3250,10 +3408,6 @@
       'growl' => 
       array (
         0 => 12430,
-      ),
-      'haste' => 
-      array (
-        0 => 30239,
       ),
       'head kick' => 
       array (
@@ -3263,6 +3417,10 @@
       'healing seed' => 
       array (
         0 => 1139,
+      ),
+      'holoforge overheated' => 
+      array (
+        0 => 44386,
       ),
       'horizon strike' => 
       array (
@@ -3369,6 +3527,10 @@
       array (
         0 => 12715,
       ),
+      'invisible analysis' => 
+      array (
+        0 => 29606,
+      ),
       'jab' => 
       array (
         0 => 37607,
@@ -3384,10 +3546,6 @@
       'jade explosion' => 
       array (
         0 => 37788,
-      ),
-      'jade winds' => 
-      array (
-        0 => 27741,
       ),
       'judgment of war' => 
       array (
@@ -3415,13 +3573,141 @@
       array (
         0 => 12389,
       ),
+      'lesser banish enchantment' => 
+      array (
+        0 => 28388,
+      ),
+      'lesser blinding powder' => 
+      array (
+        0 => 21777,
+      ),
+      'lesser call of the wild' => 
+      array (
+        0 => 29449,
+      ),
+      'lesser caltrops' => 
+      array (
+        0 => 14136,
+      ),
+      'lesser chaos storm' => 
+      array (
+        0 => 13733,
+      ),
+      'lesser endure pain' => 
+      array (
+        0 => 21813,
+      ),
+      'lesser enfeeble' => 
+      array (
+        0 => 13907,
+      ),
+      'lesser haste' => 
+      array (
+        0 => 30239,
+      ),
+      'lesser jade winds' => 
+      array (
+        0 => 27741,
+      ),
+      'lesser mark of blood' => 
+      array (
+        0 => 13918,
+      ),
+      'lesser muddy terrain' => 
+      array (
+        0 => 13938,
+      ),
+      'lesser needle trap' => 
+      array (
+        0 => 13101,
+      ),
+      'lesser phantasmal defender' => 
+      array (
+        0 => 30192,
+      ),
+      'lesser poison cloud' => 
+      array (
+        0 => 13920,
+      ),
+      'lesser power cleanse' => 
+      array (
+        0 => 30166,
+      ),
+      'lesser quickening zephyr' => 
+      array (
+        0 => 44240,
+      ),
+      'lesser seed of life' => 
+      array (
+        0 => 31776,
+      ),
+      'lesser shield of absorption' => 
+      array (
+        0 => 13688,
+      ),
+      'lesser signet of inspiration' => 
+      array (
+        0 => 29724,
+      ),
+      'lesser signet of might' => 
+      array (
+        0 => 29977,
+      ),
+      'lesser signet of stone' => 
+      array (
+        0 => 42470,
+      ),
       'lesser signet of vampirism' => 
       array (
         0 => 29894,
       ),
+      'lesser signet of wrath' => 
+      array (
+        0 => 30255,
+      ),
+      'lesser smite condition' => 
+      array (
+        0 => 9101,
+      ),
+      'lesser smoke screen' => 
+      array (
+        0 => 14184,
+      ),
+      'lesser spectral armor' => 
+      array (
+        0 => 21808,
+      ),
+      'lesser spinal shivers' => 
+      array (
+        0 => 13906,
+      ),
+      'lesser stone resonance' => 
+      array (
+        0 => 42913,
+      ),
+      'lesser symbol of protection' => 
+      array (
+        0 => 13684,
+      ),
+      'lesser symbol of wrath' => 
+      array (
+        0 => 13677,
+      ),
+      'lesser terrify' => 
+      array (
+        0 => 29700,
+      ),
       'lesser well of blood' => 
       array (
         0 => 13849,
+      ),
+      'lich\'s gaze' => 
+      array (
+        0 => 10635,
+      ),
+      'light strike—storm' => 
+      array (
+        0 => 44260,
       ),
       'lightning assault' => 
       array (
@@ -3467,6 +3753,10 @@
       array (
         0 => 37660,
       ),
+      'magebane tether' => 
+      array (
+        0 => 43532,
+      ),
       'magnetic aura' => 
       array (
         0 => 17814,
@@ -3487,9 +3777,9 @@
       array (
         0 => 38749,
       ),
-      'mark of blood' => 
+      'march of undeath' => 
       array (
-        0 => 13918,
+        0 => 45780,
       ),
       'mark of horror' => 
       array (
@@ -3524,6 +3814,10 @@
       array (
         0 => 10191,
       ),
+      'mine trail' => 
+      array (
+        0 => 45067,
+      ),
       'mist bomb' => 
       array (
         0 => 39638,
@@ -3540,9 +3834,9 @@
         1 => 39479,
         2 => 39521,
       ),
-      'muddy terrain' => 
+      'mystic rebuke' => 
       array (
-        0 => 13938,
+        0 => 22499,
       ),
       'oakheart swipe' => 
       array (
@@ -3552,6 +3846,10 @@
       array (
         0 => 39470,
         1 => 39247,
+      ),
+      'orbital command strike' => 
+      array (
+        0 => 41612,
       ),
       'orbital sweep' => 
       array (
@@ -3563,6 +3861,10 @@
         1 => 39401,
         2 => 39920,
       ),
+      'overheat' => 
+      array (
+        0 => 43937,
+      ),
       'paralyzing venom' => 
       array (
         0 => 12729,
@@ -3571,9 +3873,13 @@
       array (
         0 => 10181,
       ),
-      'phantasmal defender' => 
+      'phantasmal seeking axe' => 
       array (
-        0 => 30192,
+        0 => 41324,
+      ),
+      'phantasmal spinning axe' => 
+      array (
+        0 => 40614,
       ),
       'plague signet' => 
       array (
@@ -3592,7 +3898,6 @@
         0 => 12687,
         1 => 12700,
         2 => 12702,
-        3 => 13920,
       ),
       'poisonous cloud' => 
       array (
@@ -3605,10 +3910,6 @@
       'pounce' => 
       array (
         0 => 12431,
-      ),
-      'power cleanse' => 
-      array (
-        0 => 30166,
       ),
       'prison shank' => 
       array (
@@ -3668,6 +3969,10 @@
         0 => 39029,
         1 => 39863,
       ),
+      'reformed mirage mirror' => 
+      array (
+        0 => 42183,
+      ),
       'regenerate' => 
       array (
         0 => 12703,
@@ -3712,6 +4017,10 @@
       array (
         0 => 16940,
       ),
+      'ripple of horror' => 
+      array (
+        0 => 10633,
+      ),
       'rite of the great dwarf' => 
       array (
         0 => 32588,
@@ -3728,6 +4037,10 @@
         3 => 39346,
         4 => 39894,
       ),
+      'sand shards' => 
+      array (
+        0 => 45711,
+      ),
       'sand squall' => 
       array (
         0 => 31835,
@@ -3743,10 +4056,6 @@
       'searing heat' => 
       array (
         0 => 39235,
-      ),
-      'seed of life' => 
-      array (
-        0 => 31776,
       ),
       'seismic leap' => 
       array (
@@ -3768,10 +4077,6 @@
       'shared shock' => 
       array (
         0 => 39539,
-      ),
-      'shield of absorption' => 
-      array (
-        0 => 13688,
       ),
       'shield smack' => 
       array (
@@ -3797,21 +4102,9 @@
       array (
         0 => 12408,
       ),
-      'signet of inspiration' => 
-      array (
-        0 => 29724,
-      ),
-      'signet of might' => 
-      array (
-        0 => 29977,
-      ),
       'signet of the wild' => 
       array (
         0 => 22556,
-      ),
-      'signet of wrath' => 
-      array (
-        0 => 30255,
       ),
       'skull fear' => 
       array (
@@ -3825,10 +4118,6 @@
       array (
         0 => 14485,
       ),
-      'smite condition' => 
-      array (
-        0 => 9101,
-      ),
       'smoke bomb' => 
       array (
         0 => 13551,
@@ -3836,10 +4125,6 @@
       'smoke cloud' => 
       array (
         0 => 31568,
-      ),
-      'smoke screen' => 
-      array (
-        0 => 14184,
       ),
       'snarl' => 
       array (
@@ -3920,17 +4205,9 @@
       array (
         0 => 38180,
       ),
-      'spectral armor' => 
-      array (
-        0 => 21808,
-      ),
       'spike barrage' => 
       array (
         0 => 31367,
-      ),
-      'spinal shivers' => 
-      array (
-        0 => 13906,
       ),
       'spiral strike' => 
       array (
@@ -3979,9 +4256,17 @@
       array (
         0 => 12744,
       ),
+      'sudden reversal' => 
+      array (
+        0 => 46183,
+      ),
       'summon healing spring' => 
       array (
         0 => 12375,
+      ),
+      'summon madness' => 
+      array (
+        0 => 10636,
       ),
       'supernova' => 
       array (
@@ -4001,18 +4286,6 @@
       'swoop' => 
       array (
         0 => 12409,
-      ),
-      'symbol of protection' => 
-      array (
-        0 => 13684,
-      ),
-      'symbol of wrath' => 
-      array (
-        0 => 13677,
-      ),
-      'tainted shackles' => 
-      array (
-        0 => 19504,
       ),
       'taw shot' => 
       array (
@@ -4052,6 +4325,7 @@
       'throw gunk' => 
       array (
         0 => 1110,
+        1 => 45094,
       ),
       'throw stimulant' => 
       array (
@@ -4083,6 +4357,10 @@
       'vault' => 
       array (
         0 => 38977,
+      ),
+      'vent exhaust' => 
+      array (
+        0 => 43630,
       ),
       'warp' => 
       array (
@@ -4150,6 +4428,10 @@
       array (
         0 => 29535,
       ),
+      'absolute zero' => 
+      array (
+        0 => 46360,
+      ),
       'air attunement' => 
       array (
         0 => 5494,
@@ -4165,6 +4447,14 @@
       'air pocket' => 
       array (
         0 => 5652,
+      ),
+      'aqua siphon' => 
+      array (
+        0 => 41167,
+      ),
+      'aquatic stance' => 
+      array (
+        0 => 44239,
       ),
       'arc lightning' => 
       array (
@@ -4198,6 +4488,10 @@
       'artillery barrage' => 
       array (
         0 => 12343,
+      ),
+      'ashen blast' => 
+      array (
+        0 => 42379,
       ),
       'avatar of melandru' => 
       array (
@@ -4239,6 +4533,10 @@
       array (
         0 => 5842,
       ),
+      'breaking wave' => 
+      array (
+        0 => 43199,
+      ),
       'brutal swipe' => 
       array (
         0 => 12433,
@@ -4252,6 +4550,10 @@
       array (
         0 => 5644,
       ),
+      'call lightning' => 
+      array (
+        0 => 45216,
+      ),
       'call owl' => 
       array (
         0 => 12387,
@@ -4259,6 +4561,10 @@
       'call wurm' => 
       array (
         0 => 12417,
+      ),
+      'cauterizing strike' => 
+      array (
+        0 => 44451,
       ),
       'chain lightning' => 
       array (
@@ -4268,6 +4574,10 @@
       array (
         0 => 12380,
       ),
+      'charged strike' => 
+      array (
+        0 => 44681,
+      ),
       'charrzooka' => 
       array (
         0 => 12344,
@@ -4275,6 +4585,10 @@
       'churning earth' => 
       array (
         0 => 5522,
+      ),
+      'clapotis' => 
+      array (
+        0 => 45983,
       ),
       'cleansing fire' => 
       array (
@@ -4320,6 +4634,18 @@
       array (
         0 => 25492,
       ),
+      'crystal slash' => 
+      array (
+        0 => 43616,
+      ),
+      'crystalline strike' => 
+      array (
+        0 => 43080,
+      ),
+      'crystalline sunder' => 
+      array (
+        0 => 46024,
+      ),
       'cyclone' => 
       array (
         0 => 30008,
@@ -4343,6 +4669,10 @@
       'discharge lightning' => 
       array (
         0 => 5504,
+      ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
       ),
       'dragon\'s claw' => 
       array (
@@ -4377,6 +4707,14 @@
       array (
         0 => 5495,
       ),
+      'earthen synergy' => 
+      array (
+        0 => 40794,
+      ),
+      'earthen vortex' => 
+      array (
+        0 => 40709,
+      ),
       'earthquake' => 
       array (
         0 => 5690,
@@ -4388,6 +4726,10 @@
       'electrocute' => 
       array (
         0 => 5655,
+      ),
+      'elemental compression' => 
+      array (
+        0 => 41001,
       ),
       'elemental requiem' => 
       array (
@@ -4421,6 +4763,10 @@
       array (
         0 => 5533,
       ),
+      'fiery frost' => 
+      array (
+        0 => 42181,
+      ),
       'fiery rush' => 
       array (
         0 => 5517,
@@ -4453,6 +4799,14 @@
       array (
         0 => 5678,
       ),
+      'fire strike' => 
+      array (
+        0 => 39964,
+      ),
+      'fire swipe' => 
+      array (
+        0 => 40326,
+      ),
       'fireball' => 
       array (
         0 => 5491,
@@ -4483,6 +4837,10 @@
       array (
         0 => 5719,
       ),
+      'flame uprising' => 
+      array (
+        0 => 45313,
+      ),
       'flame wave' => 
       array (
         0 => 5532,
@@ -4502,6 +4860,10 @@
       'forked lightning' => 
       array (
         0 => 5656,
+      ),
+      'fracturing strike' => 
+      array (
+        0 => 42954,
       ),
       'freezing gust' => 
       array (
@@ -4532,10 +4894,18 @@
       array (
         0 => 5562,
       ),
+      'gale strike' => 
+      array (
+        0 => 46295,
+      ),
       'geyser' => 
       array (
         0 => 5681,
         1 => 5560,
+      ),
+      'glacial drift' => 
+      array (
+        0 => 45742,
       ),
       'glue bomb' => 
       array (
@@ -4593,6 +4963,10 @@
       array (
         0 => 12453,
       ),
+      'grinding stones' => 
+      array (
+        0 => 40963,
+      ),
       'gust' => 
       array (
         0 => 5553,
@@ -4633,6 +5007,10 @@
       array (
         0 => 5780,
       ),
+      'hydrothermal vent' => 
+      array (
+        0 => 40378,
+      ),
       'ice globe' => 
       array (
         0 => 5605,
@@ -4660,6 +5038,14 @@
         0 => 15717,
         1 => 5486,
       ),
+      'katabatic wind' => 
+      array (
+        0 => 46140,
+      ),
+      'lahar' => 
+      array (
+        0 => 44550,
+      ),
       'lava axe' => 
       array (
         0 => 5541,
@@ -4671,6 +5057,14 @@
       'lava font' => 
       array (
         0 => 5548,
+      ),
+      'lava skin' => 
+      array (
+        0 => 46447,
+      ),
+      'lesser fiery eruption' => 
+      array (
+        0 => 44918,
       ),
       'lightning cage' => 
       array (
@@ -4746,9 +5140,21 @@
       array (
         0 => 10800,
       ),
+      'molten burst' => 
+      array (
+        0 => 46185,
+      ),
+      'monsoon' => 
+      array (
+        0 => 41184,
+      ),
       'mortar shot' => 
       array (
         0 => 30371,
+      ),
+      'mud slide' => 
+      array (
+        0 => 46018,
       ),
       'murky water' => 
       array (
@@ -4757,6 +5163,10 @@
       'napalm' => 
       array (
         0 => 5929,
+      ),
+      'natural frenzy' => 
+      array (
+        0 => 40170,
       ),
       'obsidian flesh' => 
       array (
@@ -4786,6 +5196,10 @@
       array (
         0 => 5675,
       ),
+      'pile driver' => 
+      array (
+        0 => 42321,
+      ),
       'plague of darkness' => 
       array (
         0 => 10662,
@@ -4794,10 +5208,34 @@
       array (
         0 => 10663,
       ),
+      'plasma beam' => 
+      array (
+        0 => 43576,
+      ),
+      'plasma blast' => 
+      array (
+        0 => 41125,
+      ),
+      'plasma burst' => 
+      array (
+        0 => 44652,
+      ),
+      'plasmic strike' => 
+      array (
+        0 => 41712,
+      ),
       'poison gas shell' => 
       array (
         0 => 30885,
         1 => 30886,
+      ),
+      'polaric leap' => 
+      array (
+        0 => 44998,
+      ),
+      'polaric slash' => 
+      array (
+        0 => 45259,
       ),
       'prayer to dwayna' => 
       array (
@@ -4810,6 +5248,26 @@
       'prayer to lyssa' => 
       array (
         0 => 12362,
+      ),
+      'pressure blast' => 
+      array (
+        0 => 40332,
+      ),
+      'primordial stance' => 
+      array (
+        0 => 40183,
+      ),
+      'pyro vortex' => 
+      array (
+        0 => 43074,
+      ),
+      'pyroclastic blast' => 
+      array (
+        0 => 43762,
+      ),
+      'quantum strike' => 
+      array (
+        0 => 43803,
       ),
       'radiation field' => 
       array (
@@ -4873,6 +5331,10 @@
         1 => 5718,
         2 => 5668,
       ),
+      'riptide' => 
+      array (
+        0 => 44405,
+      ),
       'roar' => 
       array (
         0 => 12435,
@@ -4901,6 +5363,10 @@
       array (
         0 => 12348,
       ),
+      'rust frenzy' => 
+      array (
+        0 => 40139,
+      ),
       'sand squall' => 
       array (
         0 => 29453,
@@ -4909,13 +5375,25 @@
       array (
         0 => 5738,
       ),
+      'searing slash' => 
+      array (
+        0 => 43657,
+      ),
       'seed turret' => 
       array (
         0 => 12456,
       ),
+      'seiche' => 
+      array (
+        0 => 41052,
+      ),
       'shatterstone' => 
       array (
         0 => 5538,
+      ),
+      'shearing edge' => 
+      array (
+        0 => 42867,
       ),
       'shock wave' => 
       array (
@@ -4965,6 +5443,10 @@
       array (
         0 => 6159,
       ),
+      'sodden swath' => 
+      array (
+        0 => 39981,
+      ),
       'static field' => 
       array (
         0 => 5671,
@@ -4972,6 +5454,10 @@
       'steam' => 
       array (
         0 => 5566,
+      ),
+      'steam surge' => 
+      array (
+        0 => 42330,
       ),
       'steam vent' => 
       array (
@@ -4985,9 +5471,17 @@
       array (
         0 => 5609,
       ),
+      'stone resonance' => 
+      array (
+        0 => 44926,
+      ),
       'stone shards' => 
       array (
         0 => 5500,
+      ),
+      'stone tide' => 
+      array (
+        0 => 46014,
       ),
       'stoning' => 
       array (
@@ -5021,6 +5515,10 @@
       array (
         0 => 5530,
       ),
+      'tailored victory' => 
+      array (
+        0 => 44637,
+      ),
       'take root' => 
       array (
         0 => 12457,
@@ -5042,9 +5540,21 @@
       array (
         0 => 5534,
       ),
+      'twin strike' => 
+      array (
+        0 => 42271,
+      ),
+      'twist of fate' => 
+      array (
+        0 => 45746,
+      ),
       'undercurrent' => 
       array (
         0 => 5748,
+      ),
+      'unravel' => 
+      array (
+        0 => 44612,
       ),
       'unsteady ground' => 
       array (
@@ -5097,6 +5607,10 @@
       'water trident' => 
       array (
         0 => 5510,
+      ),
+      'weave self' => 
+      array (
+        0 => 43638,
       ),
       'whirlpool' => 
       array (
@@ -5186,6 +5700,10 @@
       array (
         0 => 5813,
       ),
+      'blade burst' => 
+      array (
+        0 => 42163,
+      ),
       'blast gyro self-destruct' => 
       array (
         0 => 31264,
@@ -5268,6 +5786,10 @@
       array (
         0 => 12417,
       ),
+      'cauterize' => 
+      array (
+        0 => 43845,
+      ),
       'charge' => 
       array (
         0 => 12380,
@@ -5291,6 +5813,10 @@
       'confusing speech' => 
       array (
         0 => 12334,
+      ),
+      'coolant blast' => 
+      array (
+        0 => 40507,
       ),
       'debris tornado' => 
       array (
@@ -5396,6 +5922,10 @@
       'detonate thumper turret' => 
       array (
         0 => 5960,
+      ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
       ),
       'dust charge' => 
       array (
@@ -5554,6 +6084,10 @@
       array (
         0 => 30121,
       ),
+      'flash spark' => 
+      array (
+        0 => 43176,
+      ),
       'floating mine' => 
       array (
         0 => 5916,
@@ -5583,6 +6117,10 @@
       'gear shield' => 
       array (
         0 => 5998,
+      ),
+      'gleam saber' => 
+      array (
+        0 => 45979,
       ),
       'glob shot' => 
       array (
@@ -5619,6 +6157,10 @@
       array (
         0 => 5805,
         1 => 6020,
+      ),
+      'hard light arena' => 
+      array (
+        0 => 44646,
       ),
       'harpoon' => 
       array (
@@ -5685,9 +6227,17 @@
       array (
         0 => 6005,
       ),
+      'laser disk' => 
+      array (
+        0 => 42842,
+      ),
       'launch personal battering ram' => 
       array (
         0 => 5982,
+      ),
+      'launch wall' => 
+      array (
+        0 => 40533,
       ),
       'lava axe' => 
       array (
@@ -5795,10 +6345,18 @@
       array (
         0 => 12335,
       ),
+      'particle accelerator' => 
+      array (
+        0 => 45732,
+      ),
       'personal battering ram' => 
       array (
         0 => 5811,
         1 => 29991,
+      ),
+      'photon wall' => 
+      array (
+        0 => 43739,
       ),
       'plague of darkness' => 
       array (
@@ -5839,6 +6397,14 @@
       array (
         0 => 12362,
       ),
+      'prime light beam' => 
+      array (
+        0 => 42009,
+      ),
+      'prismatic singularity' => 
+      array (
+        0 => 41843,
+      ),
       'pry bar' => 
       array (
         0 => 5905,
@@ -5852,6 +6418,10 @@
         0 => 30777,
         1 => 30778,
       ),
+      'radiant arc' => 
+      array (
+        0 => 40160,
+      ),
       'radiation field' => 
       array (
         0 => 12319,
@@ -5863,6 +6433,10 @@
       'reconstruction field' => 
       array (
         0 => 29505,
+      ),
+      'refraction cutter' => 
+      array (
+        0 => 44110,
       ),
       'regenerating mist' => 
       array (
@@ -6010,6 +6584,10 @@
       array (
         0 => 31167,
       ),
+      'spectrum shield' => 
+      array (
+        0 => 41218,
+      ),
       'static shield' => 
       array (
         0 => 6054,
@@ -6070,6 +6648,14 @@
       'summon sylvan hound' => 
       array (
         0 => 12450,
+      ),
+      'sun edge' => 
+      array (
+        0 => 43476,
+      ),
+      'sun ripper' => 
+      array (
+        0 => 45581,
       ),
       'super elixir' => 
       array (
@@ -6323,6 +6909,14 @@
       array (
         0 => 9147,
       ),
+      'blazing edge' => 
+      array (
+        0 => 45402,
+      ),
+      'bleeding edge' => 
+      array (
+        0 => 44602,
+      ),
       'bomb' => 
       array (
         0 => 5842,
@@ -6330,6 +6924,7 @@
       'bow of truth' => 
       array (
         0 => 9175,
+        1 => 43565,
       ),
       'brilliance' => 
       array (
@@ -6363,6 +6958,10 @@
       array (
         0 => 12344,
       ),
+      'clarified conclusion' => 
+      array (
+        0 => 44248,
+      ),
       'cleansing flame' => 
       array (
         0 => 9088,
@@ -6381,6 +6980,10 @@
       'contemplation of purity' => 
       array (
         0 => 9248,
+      ),
+      'core cleave' => 
+      array (
+        0 => 45047,
       ),
       'debris tornado' => 
       array (
@@ -6402,6 +7005,10 @@
       array (
         0 => 9141,
       ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
+      ),
       'dragon\'s maw' => 
       array (
         0 => 30273,
@@ -6413,6 +7020,10 @@
       'dust tornado' => 
       array (
         0 => 5753,
+      ),
+      'echo of truth' => 
+      array (
+        0 => 42360,
       ),
       'electrified tornado' => 
       array (
@@ -6482,6 +7093,14 @@
       array (
         0 => 5719,
       ),
+      'flame rush' => 
+      array (
+        0 => 45082,
+      ),
+      'flame surge' => 
+      array (
+        0 => 42924,
+      ),
       'flame wave' => 
       array (
         0 => 5532,
@@ -6522,6 +7141,7 @@
       'hammer of wisdom' => 
       array (
         0 => 9125,
+        1 => 46170,
       ),
       'hammer swing' => 
       array (
@@ -6590,6 +7210,30 @@
       array (
         0 => 21664,
       ),
+      'mantra of flame' => 
+      array (
+        0 => 46148,
+      ),
+      'mantra of liberation' => 
+      array (
+        0 => 43357,
+      ),
+      'mantra of lore' => 
+      array (
+        0 => 45460,
+      ),
+      'mantra of potence' => 
+      array (
+        0 => 40915,
+      ),
+      'mantra of solace' => 
+      array (
+        0 => 41714,
+      ),
+      'mantra of truth' => 
+      array (
+        0 => 44080,
+      ),
       'maul' => 
       array (
         0 => 12436,
@@ -6614,6 +7258,10 @@
       array (
         0 => 5929,
       ),
+      'opening passage' => 
+      array (
+        0 => 42864,
+      ),
       'orb of light' => 
       array (
         0 => 9140,
@@ -6621,6 +7269,10 @@
       'orb of wrath' => 
       array (
         0 => 9098,
+      ),
+      'overwhelming celerity' => 
+      array (
+        0 => 41988,
       ),
       'pain inverter' => 
       array (
@@ -6642,6 +7294,14 @@
       array (
         0 => 30885,
         1 => 30886,
+      ),
+      'portent of freedom' => 
+      array (
+        0 => 40114,
+      ),
+      'potent haste' => 
+      array (
+        0 => 42983,
       ),
       'prayer to dwayna' => 
       array (
@@ -6708,6 +7368,10 @@
       array (
         0 => 9209,
       ),
+      'rejuvenating respite' => 
+      array (
+        0 => 42960,
+      ),
       'release the bear' => 
       array (
         0 => 12386,
@@ -6735,6 +7399,10 @@
       'renewing current' => 
       array (
         0 => 9210,
+      ),
+      'restoring reprieve' => 
+      array (
+        0 => 41475,
       ),
       'reveal the depths' => 
       array (
@@ -6764,6 +7432,10 @@
       array (
         0 => 9128,
         1 => 31295,
+      ),
+      'searing slash' => 
+      array (
+        0 => 43826,
       ),
       'seed turret' => 
       array (
@@ -6795,6 +7467,7 @@
       'shield of the avenger' => 
       array (
         0 => 9182,
+        1 => 41571,
       ),
       'shield of wrath' => 
       array (
@@ -6857,6 +7530,10 @@
       array (
         0 => 9192,
       ),
+      'stow tome' => 
+      array (
+        0 => 41380,
+      ),
       'strike' => 
       array (
         0 => 9137,
@@ -6892,6 +7569,7 @@
       'sword of justice' => 
       array (
         0 => 9168,
+        1 => 44846,
       ),
       'sword of wrath' => 
       array (
@@ -6929,6 +7607,10 @@
       array (
         0 => 9143,
       ),
+      'symbol of vengeance' => 
+      array (
+        0 => 40624,
+      ),
       'symbol of wrath' => 
       array (
         0 => 9146,
@@ -6945,6 +7627,20 @@
       array (
         0 => 29786,
       ),
+      'tome of courage' => 
+      array (
+        0 => 42259,
+        1 => 42371,
+      ),
+      'tome of justice' => 
+      array (
+        0 => 44364,
+      ),
+      'tome of resolve' => 
+      array (
+        0 => 41780,
+        1 => 45023,
+      ),
       'true shot' => 
       array (
         0 => 30229,
@@ -6952,6 +7648,10 @@
       'true strike' => 
       array (
         0 => 9109,
+      ),
+      'unhindered delivery' => 
+      array (
+        0 => 41328,
       ),
       'vengeful strike' => 
       array (
@@ -6970,6 +7670,10 @@
       array (
         0 => 9120,
         1 => 9250,
+      ),
+      'voice of truth' => 
+      array (
+        0 => 44008,
       ),
       'wall of reflection' => 
       array (
@@ -7054,6 +7758,10 @@
       array (
         0 => 5930,
       ),
+      'ambush assault' => 
+      array (
+        0 => 44864,
+      ),
       'arcane thievery' => 
       array (
         0 => 10185,
@@ -7065,6 +7773,10 @@
       'avatar of melandru' => 
       array (
         0 => 12373,
+      ),
+      'axes of symmetry' => 
+      array (
+        0 => 43761,
       ),
       'bandage' => 
       array (
@@ -7130,6 +7842,10 @@
       array (
         0 => 10169,
       ),
+      'chaos vortex' => 
+      array (
+        0 => 40184,
+      ),
       'charge' => 
       array (
         0 => 12380,
@@ -7154,6 +7870,10 @@
       array (
         0 => 10314,
       ),
+      'crystal sands' => 
+      array (
+        0 => 41065,
+      ),
       'debris tornado' => 
       array (
         0 => 5754,
@@ -7177,6 +7897,10 @@
       'detonate flame blast' => 
       array (
         0 => 17260,
+      ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
       ),
       'dust charge' => 
       array (
@@ -7206,6 +7930,10 @@
       array (
         0 => 30307,
       ),
+      'ether barrage' => 
+      array (
+        0 => 42304,
+      ),
       'ether blast' => 
       array (
         0 => 10290,
@@ -7222,6 +7950,10 @@
       array (
         0 => 10176,
       ),
+      'ethereal chop' => 
+      array (
+        0 => 44840,
+      ),
       'evasive strike' => 
       array (
         0 => 10317,
@@ -7229,6 +7961,10 @@
       'explosive lava axe' => 
       array (
         0 => 5593,
+      ),
+      'false oasis' => 
+      array (
+        0 => 40200,
       ),
       'feedback' => 
       array (
@@ -7344,6 +8080,10 @@
         0 => 10244,
         1 => 25541,
       ),
+      'illusionary ambush' => 
+      array (
+        0 => 45046,
+      ),
       'illusionary counter' => 
       array (
         0 => 10276,
@@ -7368,6 +8108,10 @@
       array (
         0 => 10328,
       ),
+      'imaginary axes' => 
+      array (
+        0 => 44321,
+      ),
       'into the void' => 
       array (
         0 => 10363,
@@ -7376,9 +8120,21 @@
       array (
         0 => 10316,
       ),
+      'jaunt' => 
+      array (
+        0 => 45449,
+      ),
+      'lacerating chop' => 
+      array (
+        0 => 44791,
+      ),
       'lava axe' => 
       array (
         0 => 5541,
+      ),
+      'lingering thoughts' => 
+      array (
+        0 => 45243,
       ),
       'magic bullet' => 
       array (
@@ -7436,6 +8192,22 @@
       array (
         0 => 10218,
       ),
+      'mirage advance' => 
+      array (
+        0 => 42851,
+      ),
+      'mirage mirror' => 
+      array (
+        0 => 44677,
+      ),
+      'mirage retreat' => 
+      array (
+        0 => 45666,
+      ),
+      'mirage thrust' => 
+      array (
+        0 => 45230,
+      ),
       'mirror' => 
       array (
         0 => 10177,
@@ -7447,6 +8219,10 @@
       'mirror images' => 
       array (
         0 => 10202,
+      ),
+      'mirror strikes' => 
+      array (
+        0 => 41164,
       ),
       'mistfire wolf' => 
       array (
@@ -7605,6 +8381,10 @@
       array (
         0 => 12348,
       ),
+      'sand through glass' => 
+      array (
+        0 => 43064,
+      ),
       'seed turret' => 
       array (
         0 => 12456,
@@ -7665,6 +8445,10 @@
       'spinning revenge' => 
       array (
         0 => 10327,
+      ),
+      'split surge' => 
+      array (
+        0 => 44241,
       ),
       'stab' => 
       array (
@@ -7739,6 +8523,10 @@
       'water arrow' => 
       array (
         0 => 5595,
+      ),
+      'wave of panic' => 
+      array (
+        0 => 39959,
       ),
       'well of action' => 
       array (
@@ -7966,6 +8754,15 @@
       array (
         0 => 5721,
       ),
+      'desert shroud' => 
+      array (
+        0 => 44663,
+        1 => 46058,
+      ),
+      'dessicate' => 
+      array (
+        0 => 42935,
+      ),
       'detonate flame blast' => 
       array (
         0 => 17260,
@@ -7978,6 +8775,10 @@
       'doom' => 
       array (
         0 => 10588,
+      ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
       ),
       'dusk strike' => 
       array (
@@ -8018,6 +8819,10 @@
       'epidemic' => 
       array (
         0 => 10606,
+      ),
+      'executioner\'s scythe' => 
+      array (
+        0 => 30557,
       ),
       'exit reaper\'s shroud' => 
       array (
@@ -8115,9 +8920,17 @@
       array (
         0 => 10629,
       ),
+      'garish pillar' => 
+      array (
+        0 => 44428,
+      ),
       'gathering plague' => 
       array (
         0 => 10643,
+      ),
+      'ghastly breach' => 
+      array (
+        0 => 42355,
       ),
       'ghastly claws' => 
       array (
@@ -8142,6 +8955,10 @@
       'gravedigger' => 
       array (
         0 => 30163,
+      ),
+      'harrowing wave' => 
+      array (
+        0 => 45846,
       ),
       'haunt' => 
       array (
@@ -8220,6 +9037,11 @@
       array (
         0 => 10557,
       ),
+      'manifest sand shade' => 
+      array (
+        0 => 44946,
+        1 => 42297,
+      ),
       'mark of blood' => 
       array (
         0 => 19117,
@@ -8260,9 +9082,17 @@
       array (
         0 => 10600,
       ),
+      'nefarious favor' => 
+      array (
+        0 => 40813,
+      ),
       'nightfall' => 
       array (
         0 => 29855,
+      ),
+      'oppressive collapse' => 
+      array (
+        0 => 44296,
       ),
       'pain inverter' => 
       array (
@@ -8394,9 +9224,25 @@
       array (
         0 => 12348,
       ),
+      'sand cascade' => 
+      array (
+        0 => 43448,
+      ),
+      'sand flare' => 
+      array (
+        0 => 43148,
+      ),
+      'sand swell' => 
+      array (
+        0 => 42917,
+      ),
       'seed turret' => 
       array (
         0 => 12456,
+      ),
+      'serpent siphon' => 
+      array (
+        0 => 41615,
       ),
       'shrapnel mine' => 
       array (
@@ -8512,6 +9358,10 @@
       array (
         0 => 12432,
       ),
+      'tainted shackles' => 
+      array (
+        0 => 19504,
+      ),
       'take root' => 
       array (
         0 => 12457,
@@ -8527,6 +9377,10 @@
       'terrify' => 
       array (
         0 => 29709,
+      ),
+      'trail of anguish' => 
+      array (
+        0 => 40274,
       ),
       'unholy burst' => 
       array (
@@ -8659,6 +9513,15 @@
       array (
         0 => 12338,
       ),
+      'bear stance' => 
+      array (
+        0 => 44948,
+      ),
+      'beastmode' => 
+      array (
+        0 => 42944,
+        1 => 43061,
+      ),
       'become the bear' => 
       array (
         0 => 12385,
@@ -8675,6 +9538,11 @@
       array (
         0 => 12391,
       ),
+      'bite' => 
+      array (
+        0 => 40625,
+        1 => 43136,
+      ),
       'bomb' => 
       array (
         0 => 5842,
@@ -8682,6 +9550,11 @@
       'bonfire' => 
       array (
         0 => 12504,
+      ),
+      'brutal charge' => 
+      array (
+        0 => 42894,
+        1 => 46432,
       ),
       'brutal swipe' => 
       array (
@@ -8694,6 +9567,7 @@
       'call lightning' => 
       array (
         0 => 12594,
+        1 => 43788,
       ),
       'call of the wild' => 
       array (
@@ -8717,10 +9591,20 @@
       'charge' => 
       array (
         0 => 12380,
+        1 => 45743,
+      ),
+      'charging bite' => 
+      array (
+        0 => 42797,
       ),
       'charrzooka' => 
       array (
         0 => 12344,
+      ),
+      'chomp' => 
+      array (
+        0 => 41537,
+        1 => 44885,
       ),
       'cold snap' => 
       array (
@@ -8755,6 +9639,14 @@
       array (
         0 => 12561,
       ),
+      'crippling anguish' => 
+      array (
+        0 => 44384,
+      ),
+      'crippling leap' => 
+      array (
+        0 => 43726,
+      ),
       'crippling shot' => 
       array (
         0 => 12507,
@@ -8776,9 +9668,17 @@
       array (
         0 => 12470,
       ),
+      'dark water' => 
+      array (
+        0 => 41837,
+      ),
       'dart' => 
       array (
         0 => 12557,
+      ),
+      'deadly delivery' => 
+      array (
+        0 => 44278,
       ),
       'debris tornado' => 
       array (
@@ -8788,9 +9688,29 @@
       array (
         0 => 5721,
       ),
+      'defy pain' => 
+      array (
+        0 => 43060,
+      ),
       'detonate flame blast' => 
       array (
         0 => 17260,
+      ),
+      'devourer retreat' => 
+      array (
+        0 => 41461,
+      ),
+      'dolyak stance' => 
+      array (
+        0 => 45789,
+      ),
+      'double arc' => 
+      array (
+        0 => 43536,
+      ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
       ),
       'dust charge' => 
       array (
@@ -8820,6 +9740,10 @@
       array (
         0 => 12580,
       ),
+      'entangling web' => 
+      array (
+        0 => 44097,
+      ),
       'evasive strike' => 
       array (
         0 => 12556,
@@ -8827,6 +9751,10 @@
       'explosive lava axe' => 
       array (
         0 => 5593,
+      ),
+      'fear' => 
+      array (
+        0 => 44360,
       ),
       'feeding frenzy' => 
       array (
@@ -8884,6 +9812,10 @@
       'flash shell' => 
       array (
         0 => 30121,
+      ),
+      'frenzied attack' => 
+      array (
+        0 => 43548,
       ),
       'frost fan' => 
       array (
@@ -8957,6 +9889,22 @@
       array (
         0 => 12453,
       ),
+      'griffon stance' => 
+      array (
+        0 => 45142,
+      ),
+      'groundwork gouge' => 
+      array (
+        0 => 45426,
+      ),
+      'harmonic cry' => 
+      array (
+        0 => 44617,
+      ),
+      'healing cloud' => 
+      array (
+        0 => 43186,
+      ),
       'healing seed' => 
       array (
         0 => 12440,
@@ -9005,13 +9953,29 @@
       array (
         0 => 12530,
       ),
+      'instinctive engage' => 
+      array (
+        0 => 46123,
+      ),
       'jab' => 
       array (
         0 => 12555,
       ),
+      'kick' => 
+      array (
+        0 => 41524,
+      ),
       'lava axe' => 
       array (
         0 => 5541,
+      ),
+      'leading swipe' => 
+      array (
+        0 => 40301,
+      ),
+      'leave beastmode' => 
+      array (
+        0 => 43014,
       ),
       'lick wounds' => 
       array (
@@ -9038,6 +10002,8 @@
       array (
         0 => 12436,
         1 => 12525,
+        2 => 41406,
+        3 => 44514,
       ),
       'mercy shot' => 
       array (
@@ -9046,6 +10012,10 @@
       'mistfire wolf' => 
       array (
         0 => 10800,
+      ),
+      'moa stance' => 
+      array (
+        0 => 45970,
       ),
       'monarch\'s leap' => 
       array (
@@ -9063,6 +10033,10 @@
       array (
         0 => 5929,
       ),
+      'narcotic spores' => 
+      array (
+        0 => 40111,
+      ),
       'natural convergence' => 
       array (
         0 => 31503,
@@ -9072,6 +10046,10 @@
       array (
         0 => 12596,
       ),
+      'one wolf pack' => 
+      array (
+        0 => 45717,
+      ),
       'pain inverter' => 
       array (
         0 => 12320,
@@ -9079,6 +10057,10 @@
       'path of scars' => 
       array (
         0 => 12638,
+      ),
+      'photosynthesize' => 
+      array (
+        0 => 43701,
       ),
       'plague of darkness' => 
       array (
@@ -9091,6 +10073,10 @@
       'point blank shot' => 
       array (
         0 => 12511,
+      ),
+      'poison gas' => 
+      array (
+        0 => 43671,
       ),
       'poison gas shell' => 
       array (
@@ -9121,9 +10107,25 @@
       array (
         0 => 12473,
       ),
+      'prelude lash' => 
+      array (
+        0 => 43375,
+      ),
+      'primal cry' => 
+      array (
+        0 => 40588,
+      ),
+      'protection' => 
+      array (
+        0 => 42717,
+      ),
       'quick shot' => 
       array (
         0 => 12517,
+      ),
+      'quickening screech' => 
+      array (
+        0 => 42042,
       ),
       'quickening zephyr' => 
       array (
@@ -9136,6 +10138,10 @@
       'radiation field' => 
       array (
         0 => 12319,
+      ),
+      'rain of spikes' => 
+      array (
+        0 => 41206,
       ),
       'rapid fire' => 
       array (
@@ -9204,9 +10210,17 @@
       array (
         0 => 12456,
       ),
+      'serpent stab' => 
+      array (
+        0 => 41800,
+      ),
       'serpent\'s strike' => 
       array (
         0 => 12481,
+      ),
+      'sharpen spines' => 
+      array (
+        0 => 45479,
       ),
       'sharpening stone' => 
       array (
@@ -9245,6 +10259,10 @@
       array (
         0 => 12487,
       ),
+      'smoke assault' => 
+      array (
+        0 => 40255,
+      ),
       'smoke bomb' => 
       array (
         0 => 5824,
@@ -9270,6 +10288,10 @@
       'spirit of nature' => 
       array (
         0 => 12569,
+      ),
+      'spiritual reprieve' => 
+      array (
+        0 => 44626,
       ),
       'splinter shot' => 
       array (
@@ -9336,10 +10358,24 @@
       'swoop' => 
       array (
         0 => 12521,
+        1 => 44991,
+      ),
+      'tail lash' => 
+      array (
+        0 => 43068,
+        1 => 46386,
+      ),
+      'tail swipe' => 
+      array (
+        0 => 41575,
       ),
       'take root' => 
       array (
         0 => 12457,
+      ),
+      'takedown' => 
+      array (
+        0 => 42907,
       ),
       'technobabble' => 
       array (
@@ -9365,6 +10401,10 @@
       array (
         0 => 12483,
       ),
+      'unflinching fortitude' => 
+      array (
+        0 => 45797,
+      ),
       'vine surge' => 
       array (
         0 => 31700,
@@ -9374,6 +10414,10 @@
       array (
         0 => 12496,
         1 => 12533,
+      ),
+      'vulture stance' => 
+      array (
+        0 => 40498,
       ),
       'warband support' => 
       array (
@@ -9395,6 +10439,10 @@
       array (
         0 => 5603,
       ),
+      'wing buffet' => 
+      array (
+        0 => 41908,
+      ),
       'winter\'s bite' => 
       array (
         0 => 12490,
@@ -9402,6 +10450,11 @@
       'withering plague' => 
       array (
         0 => 10661,
+      ),
+      'worldly impact' => 
+      array (
+        0 => 40729,
+        1 => 42809,
       ),
     ),
     'revenant' => 
@@ -9422,9 +10475,17 @@
       array (
         0 => 27505,
       ),
+      'bloodbane path' => 
+      array (
+        0 => 40175,
+      ),
       'bomb' => 
       array (
         0 => 5842,
+      ),
+      'breakrazor\'s bastion' => 
+      array (
+        0 => 45686,
       ),
       'brutal blade' => 
       array (
@@ -9450,6 +10511,11 @@
       array (
         0 => 12380,
       ),
+      'citadel bombardment' => 
+      array (
+        0 => 41294,
+        1 => 42836,
+      ),
       'coalescence of ruin' => 
       array (
         0 => 28253,
@@ -9461,6 +10527,10 @@
       'crystal hibernation' => 
       array (
         0 => 28262,
+      ),
+      'darkrazor\'s daring' => 
+      array (
+        0 => 41220,
       ),
       'debilitating slam' => 
       array (
@@ -9485,6 +10555,14 @@
       'diminish solace' => 
       array (
         0 => 27628,
+      ),
+      'dismiss lieutenant soulcleave' => 
+      array (
+        0 => 42752,
+      ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
       ),
       'drop the hammer' => 
       array (
@@ -9687,9 +10765,17 @@
       array (
         0 => 12434,
       ),
+      'heroic command' => 
+      array (
+        0 => 44076,
+      ),
       'ice storm' => 
       array (
         0 => 5723,
+      ),
+      'icerazor\'s ire' => 
+      array (
+        0 => 40485,
       ),
       'igniting brand' => 
       array (
@@ -9741,6 +10827,11 @@
         0 => 26650,
         1 => 28419,
       ),
+      'legendary renegade stance' => 
+      array (
+        0 => 41858,
+        1 => 46409,
+      ),
       'manifest toxin' => 
       array (
         0 => 26666,
@@ -9769,6 +10860,10 @@
       'one with nature' => 
       array (
         0 => 29393,
+      ),
+      'orders from above' => 
+      array (
+        0 => 45537,
       ),
       'pain absorption' => 
       array (
@@ -9829,6 +10924,10 @@
       array (
         0 => 29180,
       ),
+      'razorclaw\'s rage' => 
+      array (
+        0 => 42949,
+      ),
       'rejuvenating assault' => 
       array (
         0 => 29002,
@@ -9881,13 +10980,25 @@
       array (
         0 => 12348,
       ),
+      'scorchrazor' => 
+      array (
+        0 => 41820,
+      ),
       'searing fissure' => 
       array (
         0 => 28357,
       ),
+      'sevenshot' => 
+      array (
+        0 => 41829,
+      ),
       'shackling wave' => 
       array (
         0 => 28472,
+      ),
+      'shattershot' => 
+      array (
+        0 => 40497,
       ),
       'signet of agony' => 
       array (
@@ -9905,9 +11016,17 @@
       array (
         0 => 27372,
       ),
+      'soulcleave\'s summit' => 
+      array (
+        0 => 45773,
+      ),
       'spear of anguish' => 
       array (
         0 => 28714,
+      ),
+      'spiritcrush' => 
+      array (
+        0 => 43993,
       ),
       'surge of the mists' => 
       array (
@@ -10022,6 +11141,10 @@
       array (
         0 => 12391,
       ),
+      'binding shadow' => 
+      array (
+        0 => 41205,
+      ),
       'black powder' => 
       array (
         0 => 13113,
@@ -10041,6 +11164,10 @@
       'break stance' => 
       array (
         0 => 13130,
+      ),
+      'brutal aim' => 
+      array (
+        0 => 41422,
       ),
       'brutal swipe' => 
       array (
@@ -10099,6 +11226,10 @@
       array (
         0 => 13116,
       ),
+      'cursed bullet' => 
+      array (
+        0 => 44087,
+      ),
       'dagger storm' => 
       array (
         0 => 13085,
@@ -10107,6 +11238,14 @@
       array (
         0 => 13019,
       ),
+      'deadeye\'s mark' => 
+      array (
+        0 => 43390,
+      ),
+      'deadly aim' => 
+      array (
+        0 => 40710,
+      ),
       'deadly strike' => 
       array (
         0 => 13125,
@@ -10114,6 +11253,14 @@
       'death blossom' => 
       array (
         0 => 13006,
+      ),
+      'death\'s judgment' => 
+      array (
+        0 => 40436,
+      ),
+      'death\'s retreat' => 
+      array (
+        0 => 41937,
       ),
       'debilitating arc' => 
       array (
@@ -10165,9 +11312,17 @@
       array (
         0 => 13079,
       ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
+      ),
       'double strike' => 
       array (
         0 => 13004,
+      ),
+      'double tap' => 
+      array (
+        0 => 43916,
       ),
       'dust charge' => 
       array (
@@ -10259,14 +11414,21 @@
       array (
         0 => 5532,
       ),
+      'flanking dive' => 
+      array (
+        0 => 13069,
+      ),
       'flanking strike' => 
       array (
         0 => 13016,
-        1 => 13069,
       ),
       'flash shell' => 
       array (
         0 => 30121,
+      ),
+      'free action' => 
+      array (
+        0 => 41068,
       ),
       'frost fan' => 
       array (
@@ -10365,6 +11527,10 @@
       array (
         0 => 13120,
       ),
+      'kneel' => 
+      array (
+        0 => 40600,
+      ),
       'larcenous strike' => 
       array (
         0 => 13007,
@@ -10377,9 +11543,17 @@
       array (
         0 => 13108,
       ),
+      'malicious restoration' => 
+      array (
+        0 => 45088,
+      ),
       'maul' => 
       array (
         0 => 12436,
+      ),
+      'mercy' => 
+      array (
+        0 => 41372,
       ),
       'mistfire wolf' => 
       array (
@@ -10396,7 +11570,6 @@
       'needle trap' => 
       array (
         0 => 13026,
-        1 => 13101,
       ),
       'nine-tailed strike' => 
       array (
@@ -10524,6 +11697,18 @@
       array (
         0 => 13140,
       ),
+      'shadow flare' => 
+      array (
+        0 => 41158,
+      ),
+      'shadow gust' => 
+      array (
+        0 => 46335,
+      ),
+      'shadow meld' => 
+      array (
+        0 => 45508,
+      ),
       'shadow pursuit' => 
       array (
         0 => 16436,
@@ -10543,6 +11728,10 @@
       'shadow strike' => 
       array (
         0 => 13010,
+      ),
+      'shadow swap' => 
+      array (
+        0 => 45672,
       ),
       'shadow trap' => 
       array (
@@ -10580,6 +11769,10 @@
       array (
         0 => 21778,
       ),
+      'skirmisher\'s shot' => 
+      array (
+        0 => 41494,
+      ),
       'slash' => 
       array (
         0 => 13088,
@@ -10609,9 +11802,17 @@
       array (
         0 => 13115,
       ),
+      'sniper\'s cover' => 
+      array (
+        0 => 45218,
+      ),
       'spider venom' => 
       array (
         0 => 13037,
+      ),
+      'spotter\'s shot' => 
+      array (
+        0 => 44591,
       ),
       'stab' => 
       array (
@@ -10630,6 +11831,42 @@
       'steal' => 
       array (
         0 => 13014,
+      ),
+      'steal defenses' => 
+      array (
+        0 => 43768,
+      ),
+      'steal durability' => 
+      array (
+        0 => 43373,
+      ),
+      'steal health' => 
+      array (
+        0 => 40903,
+      ),
+      'steal mobility' => 
+      array (
+        0 => 44526,
+      ),
+      'steal precision' => 
+      array (
+        0 => 40888,
+      ),
+      'steal resistance' => 
+      array (
+        0 => 40133,
+      ),
+      'steal strength' => 
+      array (
+        0 => 40904,
+      ),
+      'steal time' => 
+      array (
+        0 => 42863,
+      ),
+      'steal warmth' => 
+      array (
+        0 => 39960,
       ),
       'summon 7-series golem' => 
       array (
@@ -10679,6 +11916,10 @@
       'thieves guild' => 
       array (
         0 => 13082,
+      ),
+      'three round burst' => 
+      array (
+        0 => 44695,
       ),
       'tow line' => 
       array (
@@ -10810,10 +12051,15 @@
         1 => 14545,
         2 => 14546,
         3 => 14547,
+        4 => 42707,
       ),
       'artillery barrage' => 
       array (
         0 => 12343,
+      ),
+      'aura slicer' => 
+      array (
+        0 => 46233,
       ),
       'avatar of melandru' => 
       array (
@@ -10885,6 +12131,10 @@
       array (
         0 => 14406,
       ),
+      'bladestorm' => 
+      array (
+        0 => 45160,
+      ),
       'bladetrail' => 
       array (
         0 => 14510,
@@ -10900,6 +12150,18 @@
       'bomb' => 
       array (
         0 => 5842,
+      ),
+      'boon crusher' => 
+      array (
+        0 => 41283,
+      ),
+      'breaching strike' => 
+      array (
+        0 => 45252,
+      ),
+      'break enchantments' => 
+      array (
+        0 => 43123,
       ),
       'brutal shot' => 
       array (
@@ -10957,6 +12219,7 @@
         1 => 14520,
         2 => 14521,
         3 => 14522,
+        4 => 42803,
       ),
       'concussion bomb' => 
       array (
@@ -10995,6 +12258,14 @@
       array (
         0 => 17260,
       ),
+      'disrupting stab' => 
+      array (
+        0 => 44937,
+      ),
+      'dissonance' => 
+      array (
+        0 => 44397,
+      ),
       'dolyak signet' => 
       array (
         0 => 14413,
@@ -11002,6 +12273,10 @@
       'double chop' => 
       array (
         0 => 14370,
+      ),
+      'double lava axe' => 
+      array (
+        0 => 40229,
       ),
       'dual shot' => 
       array (
@@ -11025,6 +12300,7 @@
         1 => 14512,
         2 => 14513,
         3 => 14514,
+        4 => 40601,
       ),
       'electrified tornado' => 
       array (
@@ -11052,6 +12328,7 @@
         1 => 14422,
         2 => 14423,
         3 => 14424,
+        4 => 43566,
       ),
       'explosive lava axe' => 
       array (
@@ -11060,6 +12337,10 @@
       'fan of fire' => 
       array (
         0 => 14519,
+      ),
+      'featherfoot grace' => 
+      array (
+        0 => 45380,
       ),
       'fierce blow' => 
       array (
@@ -11130,12 +12411,21 @@
       array (
         0 => 30121,
       ),
+      'fleeting stability' => 
+      array (
+        0 => 43488,
+      ),
       'flurry' => 
       array (
         0 => 14367,
         1 => 14428,
         2 => 14429,
         3 => 14430,
+        4 => 42494,
+      ),
+      'focused slash' => 
+      array (
+        0 => 40560,
       ),
       'forceful shot' => 
       array (
@@ -11143,6 +12433,7 @@
         1 => 14470,
         2 => 14471,
         3 => 14544,
+        4 => 41330,
       ),
       'frenzy' => 
       array (
@@ -11155,6 +12446,10 @@
       'frost volley' => 
       array (
         0 => 5720,
+      ),
+      'full counter' => 
+      array (
+        0 => 44165,
       ),
       'gash' => 
       array (
@@ -11244,6 +12539,10 @@
       array (
         0 => 5723,
       ),
+      'imminent threat' => 
+      array (
+        0 => 41919,
+      ),
       'impale' => 
       array (
         0 => 14439,
@@ -11252,6 +12551,10 @@
       'jab' => 
       array (
         0 => 14438,
+      ),
+      'keen strike' => 
+      array (
+        0 => 40275,
       ),
       'kick' => 
       array (
@@ -11264,6 +12567,7 @@
         1 => 14473,
         2 => 14474,
         3 => 14475,
+        4 => 42041,
       ),
       'knot shot' => 
       array (
@@ -11284,6 +12588,10 @@
       'mace smash' => 
       array (
         0 => 14376,
+      ),
+      'magehunter strike' => 
+      array (
+        0 => 46044,
       ),
       'mariner\'s frenzy' => 
       array (
@@ -11312,6 +12620,10 @@
       'napalm' => 
       array (
         0 => 5929,
+      ),
+      'natural healing' => 
+      array (
+        0 => 41100,
       ),
       'outrage' => 
       array (
@@ -11357,6 +12669,10 @@
       'prayer to lyssa' => 
       array (
         0 => 12362,
+      ),
+      'precise cut' => 
+      array (
+        0 => 42745,
       ),
       'pulverize' => 
       array (
@@ -11471,6 +12787,10 @@
       array (
         0 => 12337,
       ),
+      'sight beyond sight' => 
+      array (
+        0 => 43745,
+      ),
       'signet of agony' => 
       array (
         0 => 37873,
@@ -11491,12 +12811,17 @@
       array (
         0 => 14479,
       ),
+      'silencer' => 
+      array (
+        0 => 39972,
+      ),
       'skull crack' => 
       array (
         0 => 14414,
         1 => 14425,
         2 => 14426,
         3 => 14427,
+        4 => 41110,
       ),
       'skull grinder' => 
       array (
@@ -11602,6 +12927,10 @@
       array (
         0 => 12340,
       ),
+      'wastrel\'s ruin' => 
+      array (
+        0 => 44004,
+      ),
       'water arrow' => 
       array (
         0 => 5595,
@@ -11616,6 +12945,7 @@
         1 => 14549,
         2 => 14550,
         3 => 14551,
+        4 => 41746,
       ),
       'whirlpool' => 
       array (
@@ -11633,9 +12963,17 @@
       array (
         0 => 31048,
       ),
+      'winds of disenchantment' => 
+      array (
+        0 => 45333,
+      ),
       'withering plague' => 
       array (
         0 => 10661,
+      ),
+      'wounding strike' => 
+      array (
+        0 => 41543,
       ),
     ),
   ),

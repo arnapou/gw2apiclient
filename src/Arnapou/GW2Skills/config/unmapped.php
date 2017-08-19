@@ -94,7 +94,7 @@
     ),
     1 => 
     array (
-      'id' => 479,
+      'id' => 563,
       'name' => '"Sick \'Em!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -108,13 +108,13 @@
     ),
     2 => 
     array (
-      'id' => 701,
+      'id' => 826,
       'name' => 'Light\'s Judgement',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 30,
+      'specialization_id' => 34,
       'specialization' => 'Dragonhunter',
       'group' => 'Utility skills',
       'type' => 'Trap',
@@ -504,20 +504,19 @@
   array (
     0 => 
     array (
-      'id' => 133,
-      'type' => '',
+      'id' => 72,
+      'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
-      'group' => 'Weapon',
       'stats_class' => 'Seraph',
       'pvx' => 6,
       'is_profile' => true,
     ),
     1 => 
     array (
-      'id' => 163,
+      'id' => 134,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
       'stats_class' => 'Seraph',
@@ -526,20 +525,20 @@
     ),
     2 => 
     array (
-      'id' => 193,
+      'id' => 164,
       'type' => '',
-      'rarity' => 'Exotic',
+      'rarity' => 'Ascended',
       'name' => '',
-      'group' => 'Armor',
+      'group' => 'Weapon',
       'stats_class' => 'Seraph',
       'pvx' => 6,
       'is_profile' => true,
     ),
     3 => 
     array (
-      'id' => 222,
+      'id' => 194,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Armor',
       'stats_class' => 'Seraph',
@@ -548,7 +547,18 @@
     ),
     4 => 
     array (
-      'id' => 254,
+      'id' => 223,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    5 => 
+    array (
+      'id' => 255,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -557,9 +567,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    5 => 
+    6 => 
     array (
-      'id' => 288,
+      'id' => 289,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -568,9 +578,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    6 => 
+    7 => 
     array (
-      'id' => 324,
+      'id' => 325,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
