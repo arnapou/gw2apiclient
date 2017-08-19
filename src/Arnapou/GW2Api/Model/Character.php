@@ -37,22 +37,31 @@ class Character extends AbstractObject
     // PROFESSIONS
     const PROFESSION_ELEMENTALIST = 'Elementalist';
     const PROFESSION_TEMPEST      = 'Tempest';
+    const PROFESSION_WEAVER       = 'Weaver';
     const PROFESSION_ENGINEER     = 'Engineer';
     const PROFESSION_SCRAPPER     = 'Scrapper';
+    const PROFESSION_HOLOSMITH    = 'Holosmith';
     const PROFESSION_GUARDIAN     = 'Guardian';
     const PROFESSION_DRAGONHUNTER = 'DragonHunter';
+    const PROFESSION_FIREBRAND    = 'Firebrand';
     const PROFESSION_MESMER       = 'Mesmer';
     const PROFESSION_CHRONOMANCER = 'Chronomancer';
+    const PROFESSION_MIRAGE       = 'Mirage';
     const PROFESSION_NECROMANCER  = 'Necromancer';
     const PROFESSION_REAPER       = 'Reaper';
+    const PROFESSION_SCOURGE      = 'Scourge';
     const PROFESSION_RANGER       = 'Ranger';
     const PROFESSION_DRUID        = 'Druid';
+    const PROFESSION_SOULBEAST    = 'Soulbeast';
     const PROFESSION_THIEF        = 'Thief';
     const PROFESSION_DAREDEVIL    = 'Daredevil';
+    const PROFESSION_DEADEYE      = 'Deadeye';
     const PROFESSION_WARRIOR      = 'Warrior';
     const PROFESSION_BERSERKER    = 'Berserker';
+    const PROFESSION_SPELLBREAKER = 'Spellbreaker';
     const PROFESSION_REVENANT     = 'Revenant';
     const PROFESSION_HERALD       = 'Herald';
+    const PROFESSION_RENEGADE     = 'Renegade';
     // SLOTS
     const SLOT_HELM_AQUATIC     = 'HelmAquatic';
     const SLOT_HELM             = 'Helm';
@@ -388,23 +397,21 @@ class Character extends AbstractObject
                 /* @var $build Build */
                 if ($build && $this->profession) {
                     $mapping = [
-                        self::PROFESSION_ELEMENTALIST => self::PROFESSION_TEMPEST,
-                        self::PROFESSION_ENGINEER     => self::PROFESSION_SCRAPPER,
-                        self::PROFESSION_GUARDIAN     => self::PROFESSION_DRAGONHUNTER,
-                        self::PROFESSION_MESMER       => self::PROFESSION_CHRONOMANCER,
-                        self::PROFESSION_NECROMANCER  => self::PROFESSION_REAPER,
-                        self::PROFESSION_RANGER       => self::PROFESSION_DRUID,
-                        self::PROFESSION_REVENANT     => self::PROFESSION_HERALD,
-                        self::PROFESSION_THIEF        => self::PROFESSION_DAREDEVIL,
-                        self::PROFESSION_WARRIOR      => self::PROFESSION_BERSERKER,
+                        48 => self::PROFESSION_TEMPEST, 56 => self::PROFESSION_WEAVER,
+                        43 => self::PROFESSION_SCRAPPER, 57 => self::PROFESSION_HOLOSMITH,
+                        27 => self::PROFESSION_DRAGONHUNTER, 62 => self::PROFESSION_FIREBRAND,
+                        40 => self::PROFESSION_CHRONOMANCER, 59 => self::PROFESSION_MIRAGE,
+                        34 => self::PROFESSION_REAPER, 60 => self::PROFESSION_SCOURGE,
+                        5  => self::PROFESSION_DRUID, 55 => self::PROFESSION_SOULBEAST,
+                        52 => self::PROFESSION_HERALD, 63 => self::PROFESSION_RENEGADE,
+                        7  => self::PROFESSION_DAREDEVIL, 58 => self::PROFESSION_DEADEYE,
+                        18 => self::PROFESSION_BERSERKER, 61 => self::PROFESSION_SPELLBREAKER,
                     ];
                     foreach ($build->getSpecializations() as /* @var $specialization SpecializationLine */
                              $specialization) {
-                        if ($specialization->isElite()) {
-                            if (isset($mapping[$this->profession])) {
-                                $this->profession = $mapping[$this->profession];
-                                break;
-                            }
+                        if ($specialization->isElite() && isset($mapping[$specialization->getId()])) {
+                            $this->profession = $mapping[$specialization->getId()];
+                            break;
                         }
                     }
                 }
