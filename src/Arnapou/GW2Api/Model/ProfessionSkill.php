@@ -15,6 +15,8 @@ namespace Arnapou\GW2Api\Model;
  * @method string getId()
  * @method string getType()
  * @method string getSlot()
+ * @method string getAttunement() The Elementalist attunement that this skill requires. This field is usually only
+ *         present for Elementalist skills.
  */
 class ProfessionSkill extends AbstractObject
 {

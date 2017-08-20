@@ -240,6 +240,17 @@ class Skill extends AbstractStoredObject
         return $this->getData('categories', []);
     }
 
+    /**
+     *
+     * @param int $index
+     * @return string
+     */
+    public function getCategory($index = 0)
+    {
+        $categories = $this->getCategories();
+        return isset($categories[$index]) ? $categories[$index] : null;
+    }
+
     protected function setData($data)
     {
         parent::setData($data);

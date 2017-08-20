@@ -56,6 +56,16 @@ class Profession extends AbstractStoredObject
                 $obj                         = new ProfessionSkill($env, $item);
                 $this->skills[$obj->getId()] = $obj;
             }
+            usort($this->skills, function ($a, $b) {
+                $ret = ((string)$a->getType()) <=> ($b->getType());
+                if ($ret == 0) {
+                    $ret = $a->getSlot() <=> $b->getSlot();
+                    if ($ret == 0) {
+                        $ret = $a->getSKill()->getCategory() <=> $b->getSKill()->getCategory();
+                    }
+                }
+                return $ret;
+            });
         }
     }
 
@@ -67,6 +77,24 @@ class Profession extends AbstractStoredObject
     {
         $this->checkLoadData();
         return $this->skills;
+    }
+
+    /**
+     *
+     * @return array
+     */
+    public function getSkillsByType()
+    {
+        $skills = [
+            'Profession' => [],
+            'Heal'       => [],
+            'Utility'    => [],
+            'Elite'      => [],
+        ];
+        foreach ($this->getSkills() as $skill) {
+            $skills[$skill->getType()][] = $skill;
+        }
+        return $skills;
     }
 
     /**

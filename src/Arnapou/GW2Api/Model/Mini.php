@@ -40,6 +40,7 @@ class Mini extends AbstractStoredObject
      */
     public function getItem()
     {
+        $this->checkLoadData();
         return $this->item;
     }
 

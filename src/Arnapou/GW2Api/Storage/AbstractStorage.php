@@ -37,6 +37,7 @@ abstract class AbstractStorage implements StorageInterface
         'achievementscategories' => [['key' => 'achievements', 'collection' => 'achievements']],
         'titles'                 => [['key' => 'achievement', 'collection' => 'achievements']],
         'finishers'              => [['key' => 'unlock_items', 'collection' => 'items']],
+        'minis'                  => [['key' => 'item_id', 'collection' => 'items']],
         'gliders'                => [
             ['key' => 'unlock_items', 'collection' => 'items'],
             ['key' => 'default_dyes', 'collection' => 'colors'],

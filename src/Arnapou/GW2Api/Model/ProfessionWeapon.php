@@ -38,6 +38,13 @@ class ProfessionWeapon extends AbstractObject
             foreach ($data['skills'] as $item) {
                 $this->skills[] = new ProfessionWeaponSkill($env, $item);
             }
+            usort($this->skills, function ($a, $b) {
+                $ret = ((string)$a->getAttunement()) <=> ($b->getAttunement());
+                if ($ret == 0) {
+                    return $a->getSlot() <=> $b->getSlot();
+                }
+                return $ret;
+            });
         }
 
         if (isset($data['specialization'])) {

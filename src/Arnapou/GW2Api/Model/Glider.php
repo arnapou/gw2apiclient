@@ -48,6 +48,7 @@ class Glider extends AbstractStoredObject
      */
     public function getUnlockItem($index)
     {
+        $this->checkLoadData();
         return isset($this->unlockItems[$index]) ? $this->unlockItems[$index] : null;
     }
 
