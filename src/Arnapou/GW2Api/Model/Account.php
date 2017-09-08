@@ -659,8 +659,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return array ["Name 1", "Name 2"]
+     * @throws MissingPermissionException
      */
     public function getCharacterNames()
     {
@@ -677,8 +677,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return array
+     * @throws MissingPermissionException
      */
     public function getCharacters()
     {
