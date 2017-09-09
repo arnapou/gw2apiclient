@@ -11,6 +11,7 @@
 namespace Arnapou\GW2Api\Storage;
 
 use Arnapou\GW2Api\Exception\Exception;
+use Arnapou\GW2Api\Exception\WrongMongoDatabaseException;
 use MongoDB\BSON\UTCDateTime as MongoDate;
 use MongoDB\Database as MongoDatabase;
 use MongoDB\Collection as MongoCollection;
@@ -50,12 +51,16 @@ class MongoStorage extends AbstractStorage
     /**
      *
      * Example to instanciate a valid mongoDB variable : <pre>
-     *     $mongo   = new MongoDB\Client('mongodb://localhost:27017', [], ['typeMap' => ['root' => 'array', 'document'
-     *     => 'array']]);
+     *     $mongo   = new MongoDB\Client(
+     *         'mongodb://localhost:27017', [],
+     *         ['typeMap' => ['root' => 'array', 'document' => 'array']]
+     *     );
      *     $mongoDB = $mongo->selectDatabase("test");
      * </pre>
      *
      * @param MongoDatabase $mongoDB
+     * @param string        $collectionPrefix
+     * @throws WrongMongoDatabaseException
      */
     public function __construct(MongoDatabase $mongoDB, $collectionPrefix = 'storage_')
     {

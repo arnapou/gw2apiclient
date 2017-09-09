@@ -37,7 +37,8 @@ class SpecializationTrait extends AbstractStoredObject
      */
     public function getSkills()
     {
-        return $this->getData('skills');
+        $this->checkLoadData();
+        return $this->skills;
     }
 
     /**
@@ -46,6 +47,7 @@ class SpecializationTrait extends AbstractStoredObject
      */
     public function getFacts()
     {
+        $this->checkLoadData();
         return $this->getData('facts', []);
     }
 
@@ -55,6 +57,7 @@ class SpecializationTrait extends AbstractStoredObject
      */
     public function getTraitedFacts()
     {
+        $this->checkLoadData();
         return $this->getData('traited_facts', []);
     }
 
@@ -65,6 +68,19 @@ class SpecializationTrait extends AbstractStoredObject
     public function __toString()
     {
         return $this->getName();
+    }
+
+    protected function setData($data)
+    {
+        parent::setData($data);
+
+        if (isset($data['skills']) && is_array($data['skills'])) {
+            foreach ($data['skills'] as $item) {
+                if (isset($item['id'])) {
+                    $this->skills[] = new Skill($this->getEnvironment(), $item['id']);
+                }
+            }
+        }
     }
 
     public function getApiName()
