@@ -272,8 +272,7 @@ class Character extends AbstractObject
                 'buy'  => 0,
                 'sell' => 0,
             ];
-            foreach ($this->getBags() as /* @var $bag Bag */
-                     $bag) {
+            foreach ($this->getBags() as $bag) {
                 if ($bag) {
                     $price                   = $bag->getBagPrice();
                     $this->bagsprice['buy']  += $price['buy'];
@@ -296,7 +295,7 @@ class Character extends AbstractObject
 
     /**
      *
-     * @return array
+     * @return Build[]
      */
     public function getBuilds()
     {
@@ -305,7 +304,7 @@ class Character extends AbstractObject
 
     /**
      *
-     * @return array
+     * @return Bag[]
      */
     public function getBags()
     {
@@ -314,7 +313,7 @@ class Character extends AbstractObject
 
     /**
      *
-     * @return array
+     * @return InventorySlot[]
      */
     public function getEquipments()
     {
@@ -328,8 +327,7 @@ class Character extends AbstractObject
     public function getEquipmentsBySubtype()
     {
         $data = [];
-        foreach ($this->getEquipments() as $slot => /* @var $item InventorySlot */
-                 $item) {
+        foreach ($this->getEquipments() as $slot => $item) {
             if (in_array($slot, [self::SLOT_AXE, self::SLOT_PICK, self::SLOT_SICKLE])) {
                 $key = $item->getSubType();
             } else {
@@ -339,10 +337,8 @@ class Character extends AbstractObject
         }
         $allowedRarities = [Item::RARITY_LEGENDARY, Item::RARITY_ASCENDED, Item::RARITY_EXOTIC];
         $allowedTypes    = [Item::TYPE_ARMOR, Item::TYPE_BACK, Item::TYPE_WEAPON, Item::TYPE_TRINKET, Item::TYPE_GATHERING];
-        foreach ($this->getBags() as /* @var $bag Bag */
-                 $bag) {
-            foreach ($bag->getInventorySlots() as /* @var $item InventorySlot */
-                     $item) {
+        foreach ($this->getBags() as $bag) {
+            foreach ($bag->getInventorySlots() as $item) {
                 if (empty($item) ||
                     !in_array($item->getRarity(), $allowedRarities) ||
                     !in_array($item->getType(), $allowedTypes)
@@ -381,6 +377,7 @@ class Character extends AbstractObject
 
     /**
      *
+     * @param bool $object
      * @return array
      */
     public function getProfession($object = false)
@@ -407,8 +404,7 @@ class Character extends AbstractObject
                         7  => self::PROFESSION_DAREDEVIL, 58 => self::PROFESSION_DEADEYE,
                         18 => self::PROFESSION_BERSERKER, 61 => self::PROFESSION_SPELLBREAKER,
                     ];
-                    foreach ($build->getSpecializations() as /* @var $specialization SpecializationLine */
-                             $specialization) {
+                    foreach ($build->getSpecializations() as $specialization) {
                         if ($specialization->isElite() && isset($mapping[$specialization->getId()])) {
                             $this->profession = $mapping[$specialization->getId()];
                             break;

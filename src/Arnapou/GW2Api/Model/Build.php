@@ -93,7 +93,7 @@ class Build extends AbstractObject
 
     /**
      *
-     * @return array
+     * @return SpecializationLine[]
      */
     public function getSpecializations()
     {

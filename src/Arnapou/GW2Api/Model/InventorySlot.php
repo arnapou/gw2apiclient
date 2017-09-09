@@ -144,7 +144,7 @@ class InventorySlot extends AbstractObject
 
     /**
      *
-     * @return array
+     * @return Item[]
      */
     public function getInfusions()
     {
@@ -171,7 +171,7 @@ class InventorySlot extends AbstractObject
 
     /**
      *
-     * @return array
+     * @return Item[]
      */
     public function getUpgrades()
     {

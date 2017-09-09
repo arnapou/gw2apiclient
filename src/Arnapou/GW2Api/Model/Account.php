@@ -306,8 +306,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
-     * @return array
+     * @return AccountAchievement[]
+     * @throws MissingPermissionException
      */
     public function getAccountAchievements()
     {
@@ -331,8 +331,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return TradingPost
+     * @throws MissingPermissionException
      */
     public function getTradingPost()
     {
@@ -348,8 +348,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return PvpHeroes
+     * @throws MissingPermissionException
      */
     public function getPvpHeroes()
     {
@@ -368,8 +368,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Gliders
+     * @throws MissingPermissionException
      */
     public function getGliders()
     {
@@ -388,8 +388,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Mailcarriers
+     * @throws MissingPermissionException
      */
     public function getMailcarriers()
     {
@@ -408,8 +408,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return HomeNodes
+     * @throws MissingPermissionException
      */
     public function getHomeNodes()
     {
@@ -428,8 +428,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return HomeCats
+     * @throws MissingPermissionException
      */
     public function getHomeCats()
     {
@@ -448,8 +448,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Finishers
+     * @throws MissingPermissionException
      */
     public function getFinishers()
     {
@@ -468,8 +468,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Outfits
+     * @throws MissingPermissionException
      */
     public function getOutfits()
     {
@@ -488,8 +488,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Titles
+     * @throws MissingPermissionException
      */
     public function getTitles()
     {
@@ -508,8 +508,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Minis
+     * @throws MissingPermissionException
      */
     public function getMinis()
     {
@@ -528,8 +528,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Dyes
+     * @throws MissingPermissionException
      */
     public function getDyes()
     {
@@ -548,8 +548,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Wardrobe
+     * @throws MissingPermissionException
      */
     public function getWardrobe()
     {
@@ -568,8 +568,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return Pvp
+     * @throws MissingPermissionException
      */
     public function getPvp()
     {
@@ -586,8 +586,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
-     * @return array
+     * @return CollectibleCategory[]
+     * @throws MissingPermissionException
      */
     public function getCollectibles()
     {
@@ -632,8 +632,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
-     * @return array
+     * @return BankVault[]
+     * @throws MissingPermissionException
      */
     public function getBankVaults()
     {
@@ -659,8 +659,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
      * @return array ["Name 1", "Name 2"]
+     * @throws MissingPermissionException
      */
     public function getCharacterNames()
     {
@@ -677,8 +677,8 @@ class Account extends AbstractObject
     }
 
     /**
-     *
-     * @return array
+     * @return Character[]
+     * @throws MissingPermissionException
      */
     public function getCharacters()
     {
@@ -1083,7 +1083,7 @@ class Account extends AbstractObject
                 }
             } catch (\Exception $e) {
                 $data = $this->getEnvironment()->getClientVersion2()->apiAccountMasteryPoints();
-                foreach($data['totals'] as $item) {
+                foreach ($data['totals'] as $item) {
                     $sum += $item['spent'];
                 }
             }
