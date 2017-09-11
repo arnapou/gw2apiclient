@@ -245,6 +245,7 @@ function attributes_to_statname($attributes)
         // PoF stats
         'Healing/Power/ConditionDamage/Precision'              => "Marshal's",
         'Power/BoonDuration/Healing'                           => "Harrier's",
+        'ConditionDamage/Power/CritDamage/Precision'           => "Grieving",
     ];
     if ($flatten && isset($statNames[$flatten])) {
         return $statNames[$flatten];

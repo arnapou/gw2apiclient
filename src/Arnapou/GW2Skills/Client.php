@@ -135,6 +135,12 @@ class Client
         'trailblazer'          => "Trailblazer",
         'minstrel'             => "Minstrel",
         'vigilant'             => "Vigilant",
+        // HoT stats - Episode 4
+        'seraph'               => "Seraph",
+        // PoF stats
+        'marshal'              => "Marshal's",
+        'harrier'              => "Harrier's",
+        'grieving'             => "Grieving",
     ];
 
     /**
