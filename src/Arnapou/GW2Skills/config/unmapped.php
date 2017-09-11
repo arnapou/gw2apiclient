@@ -3,7 +3,47 @@
   array (
     0 => 
     array (
-      'id' => 49,
+      'id' => 21,
+      'name' => 'Cheetah',
+      'family' => 'Feline',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    1 => 
+    array (
+      'id' => 25,
+      'name' => 'Sand Lion',
+      'family' => 'Feline',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    2 => 
+    array (
+      'id' => 28,
+      'name' => 'Rock Gazelle',
+      'family' => 'Gazelle',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    3 => 
+    array (
+      'id' => 29,
+      'name' => 'Fanged Iboga',
+      'family' => 'Iboga',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    4 => 
+    array (
+      'id' => 30,
+      'name' => 'Jacaranda',
+      'family' => 'Jacaranda',
+      'terrestrial' => true,
+      'aquatic' => false,
+    ),
+    5 => 
+    array (
+      'id' => 54,
       'name' => 'Murrelow',
       'family' => 'Ursine',
       'terrestrial' => true,
@@ -108,7 +148,7 @@
     ),
     2 => 
     array (
-      'id' => 826,
+      'id' => 821,
       'name' => 'Light\'s Judgement',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -312,33 +352,6 @@
     ),
     19 => 
     array (
-      'id' => 208,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Malign Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    20 => 
-    array (
-      'id' => 209,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Mighty Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    21 => 
-    array (
-      'id' => 210,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Precise Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    22 => 
-    array (
       'id' => 214,
       'type' => 'Infusion',
       'rarity' => 'Common',
@@ -346,7 +359,7 @@
       'pvx' => 6,
       'is_profile' => false,
     ),
-    23 => 
+    20 => 
     array (
       'id' => 215,
       'type' => 'Infusion',
@@ -355,7 +368,7 @@
       'pvx' => 6,
       'is_profile' => false,
     ),
-    24 => 
+    21 => 
     array (
       'id' => 216,
       'type' => 'Infusion',
@@ -364,133 +377,7 @@
       'pvx' => 6,
       'is_profile' => false,
     ),
-    25 => 
-    array (
-      'id' => 217,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Healing Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    26 => 
-    array (
-      'id' => 218,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    27 => 
-    array (
-      'id' => 219,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Vital Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    28 => 
-    array (
-      'id' => 223,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Gilded Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    29 => 
-    array (
-      'id' => 224,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Magical Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    30 => 
-    array (
-      'id' => 225,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Experienced Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    31 => 
-    array (
-      'id' => 226,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Karmic Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    32 => 
-    array (
-      'id' => 227,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Versatile Simple Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    33 => 
-    array (
-      'id' => 228,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Malign Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    34 => 
-    array (
-      'id' => 229,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Mighty Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    35 => 
-    array (
-      'id' => 230,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Precise Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    36 => 
-    array (
-      'id' => 231,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Healing Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    37 => 
-    array (
-      'id' => 232,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    38 => 
-    array (
-      'id' => 233,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Versatile Vital Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    39 => 
+    22 => 
     array (
       'id' => 39,
       'type' => 'Jewel',
@@ -514,51 +401,213 @@
     ),
     1 => 
     array (
-      'id' => 134,
-      'type' => '',
+      'id' => 74,
+      'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Seraph',
+      'stats_class' => 'Harrier',
       'pvx' => 6,
       'is_profile' => true,
     ),
     2 => 
     array (
-      'id' => 164,
-      'type' => '',
-      'rarity' => 'Ascended',
+      'id' => 76,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
       'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Seraph',
+      'stats_class' => 'Grieving',
       'pvx' => 6,
       'is_profile' => true,
     ),
     3 => 
     array (
-      'id' => 194,
-      'type' => '',
+      'id' => 77,
+      'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Seraph',
+      'stats_class' => 'Marshal',
       'pvx' => 6,
       'is_profile' => true,
     ),
     4 => 
     array (
-      'id' => 223,
+      'id' => 139,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
-      'group' => 'Armor',
+      'group' => 'Weapon',
       'stats_class' => 'Seraph',
       'pvx' => 6,
       'is_profile' => true,
     ),
     5 => 
     array (
-      'id' => 255,
+      'id' => 141,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    6 => 
+    array (
+      'id' => 143,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Grieving',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    7 => 
+    array (
+      'id' => 144,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Marshal',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    8 => 
+    array (
+      'id' => 174,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    9 => 
+    array (
+      'id' => 176,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    10 => 
+    array (
+      'id' => 178,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Grieving',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    11 => 
+    array (
+      'id' => 179,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Marshal',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    12 => 
+    array (
+      'id' => 209,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    13 => 
+    array (
+      'id' => 211,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    14 => 
+    array (
+      'id' => 213,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Grieving',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    15 => 
+    array (
+      'id' => 214,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Marshal',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    16 => 
+    array (
+      'id' => 243,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    17 => 
+    array (
+      'id' => 245,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    18 => 
+    array (
+      'id' => 247,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Grieving',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    19 => 
+    array (
+      'id' => 248,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Marshal',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    20 => 
+    array (
+      'id' => 280,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -567,9 +616,42 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    6 => 
+    21 => 
     array (
-      'id' => 289,
+      'id' => 282,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    22 => 
+    array (
+      'id' => 284,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Grieving',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    23 => 
+    array (
+      'id' => 285,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Marshal',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    24 => 
+    array (
+      'id' => 319,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -578,13 +660,76 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    7 => 
+    25 => 
     array (
-      'id' => 325,
+      'id' => 321,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    26 => 
+    array (
+      'id' => 323,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Grieving',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    27 => 
+    array (
+      'id' => 324,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Marshal',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    28 => 
+    array (
+      'id' => 360,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
       'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    29 => 
+    array (
+      'id' => 362,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    30 => 
+    array (
+      'id' => 364,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Grieving',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    31 => 
+    array (
+      'id' => 365,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Marshal',
       'pvx' => 6,
       'is_profile' => true,
     ),
