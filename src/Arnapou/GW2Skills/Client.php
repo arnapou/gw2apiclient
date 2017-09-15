@@ -10,12 +10,10 @@
 
 namespace Arnapou\GW2Skills;
 
-use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Core\Curl;
-use Arnapou\GW2Api\Core\CurlResponse;
+use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Exception\RequestException;
 use Arnapou\GW2Api\Model\Item;
-use Arnapou\GW2Api\Model\Character;
 use Arnapou\GW2Api\Storage\MongoStorage;
 
 /* * ********************************************************************** *
@@ -298,6 +296,7 @@ class Client
         ksort($mapped['pets']);
 
         // buffs
+        $fallbackbuffmap = [];
         foreach ($alldata['buffs'] as $item) {
             $name  = strtolower($item['name']);
             $name = isset($fixednames['buffs']) ? strtr($name, $fixednames['buffs']) : $name;
@@ -315,6 +314,30 @@ class Client
             }
             if (!$found) {
                 $unmapped['buffs'][] = $item;
+            } elseif(isset(
+                $gw2names['buffstats'],
+                $gw2names['buffstats']['byname'],
+                $gw2names['buffstats']['byname'][$name]
+            )) {
+                $buffstat = $gw2names['buffstats']['byname'][$name];
+                if($buffstat) {
+                    foreach ($gw2names['buffstats']['bystat'][$buffstat] as $fallbackname) {
+                        foreach ($this->modes as $mode => $int) {
+                            if ($pvx & $int) {
+                                if (isset($gw2names['buffs'][$fallbackname])) {
+                                    $gw2id = $gw2names['buffs'][$fallbackname];
+                                    $key = $mode . '.' . $gw2id;
+                                    $fallbackbuffmap[$key] = $item['id'];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        foreach ($fallbackbuffmap as $key => $id) {
+            if (!isset($mapped['buffs'][$key])) {
+                $mapped['buffs'][$key] = $id;
             }
         }
         ksort($mapped['buffs']);
@@ -486,6 +509,30 @@ class Client
     }
 
     /**
+     * @param $data
+     * @return null|string
+     */
+    protected function getBuffStatKey($data)
+    {
+        if (isset($data['details'], $data['details']['description'])) {
+            $lines = [];
+            foreach (explode("\n", $data['details']['description']) as $line) {
+                if (\stripos($line, ' Karma') !== false ||
+                    \stripos($line, ' Experience') !== false ||
+                    \stripos($line, ' Magic Find') !== false ||
+                    \stripos($line, ' Gold from Monsters') !== false
+                ){
+                    continue;
+                }
+                $lines[] = trim($line);
+            }
+            sort($lines);
+            return implode(" | ", $lines);
+        }
+        return null;
+    }
+
+    /**
      *
      *
      */
@@ -526,11 +573,17 @@ class Client
 
             // buffs
             $buffs      = [];
+            $buffstats  = [];
             $collection = $storage->getCollection('en', 'items');
             foreach ($collection->find(['data.type' => 'Consumable', 'data.details.type' => ['$in' => ['Utility', 'Food']]]) as $row) {
                 if (isset($row['data']['name'])) {
                     $name         = strtolower($row['data']['name']);
                     $buffs[$name] = $row['data']['id'];
+                    $buffstat     = $this->getBuffStatKey($row['data']);
+                    if ($buffstat) {
+                        $buffstats['bystat'][$buffstat][] = $name;
+                        $buffstats['byname'][$name]       = $buffstat;
+                    }
                 }
             }
             ksort($buffs);
@@ -578,9 +631,9 @@ class Client
             $skills     = [];
             $collection = $storage->getCollection('en', 'skills');
             foreach ($collection->find() as $row) {
-                if (isset($row['data']['name'])) {
-                    $professions = $row['data']['professions'];
+                if (isset($row['data']['name'], $row['data']['professions'])) {
                     $name        = strtolower($row['data']['name']);
+                    $professions = $row['data']['professions'];
                     if (empty($professions) || !is_array($professions)) {
                         $professions = [''];
                     }
@@ -600,6 +653,7 @@ class Client
                 'specializations' => $specializations,
                 'traits'          => $traits,
                 'buffs'           => $buffs,
+                'buffstats'       => $buffstats,
                 'skills'          => $skills,
                 'pvp_items'       => $pvp_items,
                 'pets'            => $pets,
@@ -670,7 +724,9 @@ class Client
 
     /**
      *
+     * @param $uri
      * @return array
+     * @throws RequestException
      */
     protected function request($uri)
     {

@@ -391,10 +391,8 @@ class LinkBuilder
         $parts     = ['0', '0'];
         $utilities = [];
         $foods     = [];
-        foreach ($character->getBags() as /* @var $bag Bag */
-                 $bag) {
-            foreach ($bag->getInventorySlots() as /* @var $item Item */
-                     $item) {
+        foreach ($character->getBags() as $bag) {
+            foreach ($bag->getInventorySlots() as $item) {
                 if (empty($item)) {
                     continue;
                 }
