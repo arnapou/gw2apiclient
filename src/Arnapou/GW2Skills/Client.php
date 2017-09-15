@@ -151,11 +151,12 @@ class Client
     {
         $this->environment = $env;
         $this->files       = [
-            'revision' => __DIR__ . '/config/revision.php',
-            'alldata'  => __DIR__ . '/config/alldata.php',
-            'gw2names' => __DIR__ . '/config/gw2names.php',
-            'mapped'   => __DIR__ . '/config/mapped.php',
-            'unmapped' => __DIR__ . '/config/unmapped.php',
+            'revision'   => __DIR__ . '/config/revision.php',
+            'alldata'    => __DIR__ . '/config/alldata.php',
+            'gw2names'   => __DIR__ . '/config/gw2names.php',
+            'mapped'     => __DIR__ . '/config/mapped.php',
+            'unmapped'   => __DIR__ . '/config/unmapped.php',
+            'fixednames' => __DIR__ . '/config/fixednames.php',
         ];
         $this->getRevision();
     }
@@ -171,8 +172,8 @@ class Client
     }
 
     /**
-     *
-     * @return integer
+     * @return int
+     * @throws \Exception
      */
     public function getRevision()
     {
@@ -217,8 +218,9 @@ class Client
      */
     public function buildMap()
     {
-        $gw2names = include($this->files['gw2names']);
-        $alldata  = include($this->files['alldata']);
+        $gw2names   = include($this->files['gw2names']);
+        $alldata    = include($this->files['alldata']);
+        $fixednames = include($this->files['fixednames']);
 
         $mapped   = [
             'professions'     => [],
@@ -248,8 +250,7 @@ class Client
         // weapons
         foreach ($alldata['weapons'] as $item) {
             $name                     = strtolower($item['name']);
-            $name                     = str_replace('harpoon gun', 'harpoon', $name);
-            $name                     = str_replace('spear', 'speargun', $name);
+            $name                     = isset($fixednames['weapons']) ? strtr($name, $fixednames['weapons']) : $name;
             $mapped['weapons'][$name] = $item['id'];
         }
         asort($mapped['weapons']);
@@ -259,6 +260,7 @@ class Client
         foreach ($alldata['specializations'] as $item) {
             $profession = strtolower($item['profession']);
             $name       = strtolower($item['name']);
+            $name       = isset($fixednames['specializations']) ? strtr($name, $fixednames['specializations']) : $name;
             if (isset($gw2names['specializations'][$profession][$name])) {
                 $gw2id                             = $gw2names['specializations'][$profession][$name];
                 $mapped['specializations'][$gw2id] = $item['id'];
@@ -272,6 +274,7 @@ class Client
         // traits
         foreach ($alldata['traits'] as $item) {
             $name = strtolower($item['name']);
+            $name = isset($fixednames['traits']) ? strtr($name, $fixednames['traits']) : $name;
             if (isset($specializations[$item['specialization_id']], $gw2names['traits'][$specializations[$item['specialization_id']]][$name])) {
                 $gw2id                    = $gw2names['traits'][$specializations[$item['specialization_id']]][$name];
                 $mapped['traits'][$gw2id] = $item['id'];
@@ -284,6 +287,7 @@ class Client
         // pets
         foreach ($alldata['pets'] as $item) {
             $name = strtolower($item['name']);
+            $name = isset($fixednames['pets']) ? strtr($name, $fixednames['pets']) : $name;
             if (isset($gw2names['pets'][$name])) {
                 $gw2id                  = $gw2names['pets'][$name];
                 $mapped['pets'][$gw2id] = $item['id'];
@@ -296,6 +300,7 @@ class Client
         // buffs
         foreach ($alldata['buffs'] as $item) {
             $name  = strtolower($item['name']);
+            $name = isset($fixednames['buffs']) ? strtr($name, $fixednames['buffs']) : $name;
             $pvx   = (int)$item['pvx'];
             $found = false;
             foreach ($this->modes as $mode => $int) {
@@ -317,6 +322,7 @@ class Client
         // skills
         foreach ($alldata['skills'] as $item) {
             $name       = strtolower($item['name']);
+            $name       = isset($fixednames['skills']) ? strtr($name, $fixednames['skills']) : $name;
             $profession = strtolower($item['profession']);
             $found      = false;
             if (isset($gw2names['skills'][$profession], $gw2names['skills'][$profession][$name])) {
@@ -345,6 +351,7 @@ class Client
         // upgrades
         foreach ($alldata['upgrades'] as $item) {
             $name       = strtolower($item['name']);
+            $name       = isset($fixednames['upgrades']) ? strtr($name, $fixednames['upgrades']) : $name;
             $pvpname    = isset($item['pvp_name']) ? str_replace(' (pvp)', '', strtolower($item['pvp_name'])) : '';
             $rarity     = strtolower($item['rarity']);
             $rarity     = str_replace('common', 'fine', $rarity);
@@ -376,6 +383,7 @@ class Client
         // stats
         foreach ($alldata['items'] as $item) {
             $name        = strtolower($item['name']);
+            $name        = isset($fixednames['items']) ? strtr($name, $fixednames['items']) : $name;
             $rarity      = strtolower($item['rarity']);
             $is_profile  = $item['is_profile'];
             $pvx         = (int)$item['pvx'];
@@ -605,6 +613,7 @@ class Client
      *
      * @param $key
      * @return array
+     * @throws RequestException
      */
     public function getMap($key = null)
     {
@@ -622,8 +631,8 @@ class Client
     }
 
     /**
-     *
      * @return array
+     * @throws RequestException
      */
     public function getData()
     {
