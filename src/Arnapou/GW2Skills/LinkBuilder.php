@@ -204,7 +204,14 @@ class LinkBuilder
                 $parts[] = '0';
             } else {
                 $infusions = $equipment->getInfusions();
-                $parts[]   = $this->getMappedInfusion($mode, $map, isset($infusions[0]) ? $infusions[0] : null);
+                $ids = [];
+                foreach ($infusions as $infusion) {
+                    $id = $this->getMappedInfusion($mode, $map, $infusion);
+                    if ($id != '0'){
+                        $ids[] = $id;
+                    }
+                }
+                $parts[] = empty($ids) ? '0' : implode('-', $ids);
             }
         }
         $return[] = implode('.', $parts);
