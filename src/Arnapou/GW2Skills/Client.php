@@ -272,10 +272,6 @@ class Client
         // traits
         foreach ($alldata['traits'] as $item) {
             $name = strtolower($item['name']);
-            $name = str_replace('element bastion', 'elemental bastion', $name);
-            $name = str_replace('spontanous destruction', 'spontaneous destruction', $name);
-            $name = str_replace('trappers respite', 'trapper\'s respite', $name);
-            $name = str_replace('illusionists celerity', 'illusionist\'s celerity', $name);
             if (isset($specializations[$item['specialization_id']], $gw2names['traits'][$specializations[$item['specialization_id']]][$name])) {
                 $gw2id                    = $gw2names['traits'][$specializations[$item['specialization_id']]][$name];
                 $mapped['traits'][$gw2id] = $item['id'];
@@ -300,9 +296,6 @@ class Client
         // buffs
         foreach ($alldata['buffs'] as $item) {
             $name  = strtolower($item['name']);
-            $name  = str_replace('nopalitos saute', 'nopalitos sauté', $name);
-            $name  = str_replace('plate of lemongrass poultry', 'plates of lemongrass poultry', $name);
-            $name  = str_replace('strawberries and biscuts', 'strawberries and biscuits', $name);
             $pvx   = (int)$item['pvx'];
             $found = false;
             foreach ($this->modes as $mode => $int) {
@@ -353,7 +346,6 @@ class Client
         foreach ($alldata['upgrades'] as $item) {
             $name       = strtolower($item['name']);
             $pvpname    = isset($item['pvp_name']) ? str_replace(' (pvp)', '', strtolower($item['pvp_name'])) : '';
-            $name       = str_replace('of flame legion', 'of the flame legion', $name);
             $rarity     = strtolower($item['rarity']);
             $rarity     = str_replace('common', 'fine', $rarity);
             $is_profile = $item['is_profile'];
@@ -501,7 +493,6 @@ class Client
                 if (isset($row['data']['name'])) {
                     $group                   = strtolower($row['data']['rarity']);
                     $name                    = strtolower($row['data']['name']);
-                    $name                    = str_replace('of rata sum', 'of the rata sum', $name);
                     $upgrades[$group][$name] = $row['data']['id'];
                 }
             }
