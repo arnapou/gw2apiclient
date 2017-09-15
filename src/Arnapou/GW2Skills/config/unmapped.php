@@ -41,14 +41,6 @@
       'terrestrial' => true,
       'aquatic' => false,
     ),
-    5 => 
-    array (
-      'id' => 54,
-      'name' => 'Murrelow',
-      'family' => 'Ursine',
-      'terrestrial' => true,
-      'aquatic' => true,
-    ),
   ),
   'buffs' => 
   array (
@@ -90,15 +82,6 @@
     ),
     4 => 
     array (
-      'id' => 64,
-      'name' => 'Strawberries and Biscuts',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    5 => 
-    array (
       'id' => 132,
       'name' => 'Oysters_with_Spicy_Sauce',
       'type' => 'Food',
@@ -106,16 +89,7 @@
       'level' => 80,
       'pvx' => 6,
     ),
-    6 => 
-    array (
-      'id' => 171,
-      'name' => 'Plate of Lemongrass Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    7 => 
+    5 => 
     array (
       'id' => 189,
       'name' => 'Blessing Of Bear',
@@ -124,7 +98,7 @@
       'level' => 41,
       'pvx' => 6,
     ),
-    8 => 
+    6 => 
     array (
       'id' => 427,
       'name' => 'Prickly Pear Stuffed Nopale',
@@ -396,24 +370,6 @@
       'is_profile' => false,
     ),
     22 => 
-    array (
-      'id' => 256,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Flame Legion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    23 => 
-    array (
-      'id' => 271,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Rata Sum',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    24 => 
     array (
       'id' => 39,
       'type' => 'Jewel',
