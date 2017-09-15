@@ -82,29 +82,11 @@
     ),
     4 => 
     array (
-      'id' => 132,
-      'name' => 'Oysters_with_Spicy_Sauce',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    5 => 
-    array (
       'id' => 189,
       'name' => 'Blessing Of Bear',
       'type' => 'Food',
       'rarity' => 'Common',
       'level' => 41,
-      'pvx' => 6,
-    ),
-    6 => 
-    array (
-      'id' => 427,
-      'name' => 'Prickly Pear Stuffed Nopale',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
       'pvx' => 6,
     ),
   ),
