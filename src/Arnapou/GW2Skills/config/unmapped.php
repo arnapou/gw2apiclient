@@ -138,20 +138,6 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    2 => 
-    array (
-      'id' => 821,
-      'name' => 'Light\'s Judgement',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'group' => 'Utility skills',
-      'type' => 'Trap',
-      'pvx' => 7,
-    ),
   ),
   'upgrades' => 
   array (
@@ -368,15 +354,6 @@
       'name' => 'Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
-    ),
-    22 => 
-    array (
-      'id' => 39,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Freshwater Pearl Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
     ),
   ),
 );
