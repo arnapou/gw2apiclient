@@ -90,15 +90,18 @@ class SpecializationLine extends AbstractObject
 
     /**
      *
-     * @return array
+     * @return SpecializationTrait[]
      */
     public function getMajorTraitsSelected()
     {
-        $ids    = $this->getTraitsIds();
-        $traits = [];
-        foreach ($this->getMajorTraits() as $trait) {
-            if (in_array($trait->getId(), $ids)) {
-                $traits[] = $trait;
+        $ids     = $this->getTraitsIds();
+        $traits  = [];
+        $objects = $this->getMajorTraits();
+        if (is_array($objects)) {
+            foreach ($objects as $trait) {
+                if (in_array($trait->getId(), $ids)) {
+                    $traits[] = $trait;
+                }
             }
         }
         return $traits;

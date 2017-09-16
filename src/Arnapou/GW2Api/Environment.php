@@ -107,6 +107,11 @@ class Environment
      * @var boolean
      */
     protected $useSmartCaching = false;
+    
+    /**
+     * @var Event\EventListener
+     */
+    protected $eventListener;
 
     /**
      *
@@ -123,6 +128,7 @@ class Environment
      * @param string  $pattern
      * @param integer $seconds
      * @return Environment
+     * @throws Exception
      */
     public function addCacheRetentionRule($pattern, $seconds)
     {
@@ -246,6 +252,7 @@ class Environment
      *
      * @param string $lang
      * @return Environment
+     * @throws Exception
      */
     public function setLang($lang)
     {
@@ -289,6 +296,7 @@ class Environment
      *
      * @param integer $seconds default cache retention
      * @return Environment
+     * @throws Exception
      */
     public function setCacheRetention($seconds)
     {
@@ -301,6 +309,7 @@ class Environment
 
     /**
      *
+     * @param null $url
      * @return string
      */
     public function getCacheRetention($url = null)

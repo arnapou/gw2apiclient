@@ -250,19 +250,6 @@ class Character extends AbstractObject
 
     /**
      *
-     * @return string
-     */
-    public function getGw2SkillsLink($mode)
-    {
-        if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
-            throw new \Exception('Mode should be either "pve", "pvp" or "wvw"');
-        }
-        $builder = new LinkBuilder($this->getEnvironment());
-        return $builder->getLink($this, $mode);
-    }
-
-    /**
-     *
      * @return array
      */
     public function getBagsPrice()

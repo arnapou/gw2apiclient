@@ -503,13 +503,11 @@ class LinkBuilder
         $mapSpecializations = $this->getClient()->getMap('specializations');
         $mapTraits          = $this->getClient()->getMap('traits');
         $parts              = [];
-        foreach ($build->getSpecializations() as /* @var $spe SpecializationLine */
-                 $spe) {
+        foreach ($build->getSpecializations() as $spe) {
             if (isset($mapSpecializations[$spe->getId()])) {
                 $selected = $spe->getTraitsIds();
                 $ids      = [$mapSpecializations[$spe->getId()], 'false', 'false', 'false'];
-                foreach ($spe->getMajorTraits() as /* @var $trait SpecializationTrait */
-                         $trait) {
+                foreach ($spe->getMajorTraits() as $trait) {
                     if (in_array($trait->getId(), $selected) && isset($mapTraits[$trait->getId()])) {
                         $ids[$trait->getTier()] = $mapTraits[$trait->getId()];
                     }

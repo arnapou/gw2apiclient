@@ -10,6 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
+use Arnapou\GW2Skills\LinkBuilder;
+
 /**
  *
  * @method string  getType()

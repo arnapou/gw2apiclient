@@ -53,7 +53,7 @@ class TradingPost extends AbstractObject
     protected $deliveryItems;
 
     /**
-     * 
+     *
      * @param array $items
      * @return array
      */
@@ -108,12 +108,12 @@ class TradingPost extends AbstractObject
             if (isset($this->delivery['items']) && \is_array($this->delivery['items'])) {
                 $items = [];
                 foreach ($this->delivery['items'] as $item) {
-                    if(isset($item['id'], $item['count'])) {
-                        if(!isset($items[$item['id']])) {
+                    if (isset($item['id'], $item['count'])) {
+                        if (!isset($items[$item['id']])) {
                             $items[$item['id']] = [
-                                'item'=> new Item($this->getEnvironment(), $item['id']),
-                                'item_id'=> $item['id'],
-                                'quantity'=> $item['count'],
+                                'item'     => new Item($this->getEnvironment(), $item['id']),
+                                'item_id'  => $item['id'],
+                                'quantity' => $item['count'],
                             ];
                         } else {
                             $items[$item['id']]['quantity'] += $item['count'];
@@ -130,7 +130,7 @@ class TradingPost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCurrentBuys()
@@ -143,7 +143,7 @@ class TradingPost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getCurrentSells()
@@ -156,7 +156,7 @@ class TradingPost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getHistoryBuys()
@@ -169,7 +169,7 @@ class TradingPost extends AbstractObject
     }
 
     /**
-     * 
+     *
      * @return array
      */
     public function getHistorySells()
