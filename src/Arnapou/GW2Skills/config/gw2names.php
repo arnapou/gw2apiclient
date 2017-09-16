@@ -44,9 +44,10 @@
       '' => 63366,
       'barbarian\'s jewel' => 21162,
       'berserker\'s jewel' => 21093,
+      'brandspark jewel' => 84765,
       'carrion jewel' => 21164,
       'celestial infusion (blue)' => 81878,
-      'celestial infusion (red)' => 81927,
+      'celestial infusion (red)' => 82062,
       'celestial jewel' => 21169,
       'chak egg sac' => 72021,
       'chak infusion' => 81840,
@@ -74,7 +75,7 @@
       'exquisite snowflake' => 38143,
       'exquisite watchwork sprocket' => 49823,
       'ghostly infusion' => 77394,
-      'liquid aurillium infusion' => 81875,
+      'liquid aurillium infusion' => 81975,
       'phospholuminescent infusion' => 79674,
       'poly-luminescent undulating infusion (black)' => 82039,
       'poly-luminescent undulating infusion (green)' => 81727,
@@ -105,6 +106,7 @@
       'rune of mercy' => 21193,
       'rune of orr' => 21222,
       'rune of rage' => 21197,
+      'rune of rata sum' => 21198,
       'rune of sanctuary' => 21221,
       'rune of scavenging' => 65235,
       'rune of speed' => 21200,
@@ -134,7 +136,6 @@
       'rune of the ogre' => 21194,
       'rune of the pack' => 21195,
       'rune of the ranger' => 21207,
-      'rune of the rata sum' => 21198,
       'rune of the scholar' => 21215,
       'rune of the soldier' => 21212,
       'rune of the svanir' => 21199,
@@ -257,6 +258,7 @@
       'superior rune of the ranger' => 24815,
       'superior rune of the rata sum' => 24726,
       'superior rune of the reaper' => 70829,
+      'superior rune of the rebirth' => 84171,
       'superior rune of the revenant' => 69370,
       'superior rune of the scholar' => 24836,
       'superior rune of the scrapper' => 71276,
@@ -337,6 +339,7 @@
       'superior sigil of restoration' => 24594,
       'superior sigil of ruthlessness' => 71130,
       'superior sigil of serpent slaying' => 24658,
+      'superior sigil of severance' => 84505,
       'superior sigil of smoldering' => 24624,
       'superior sigil of smothering' => 24675,
       'superior sigil of sorrow' => 24684,
@@ -478,6 +481,7 @@
       'minor rune of orr' => 24858,
       'minor rune of perplexity' => 44959,
       'minor rune of rage' => 24715,
+      'minor rune of rata sum' => 24724,
       'minor rune of sanctuary' => 24855,
       'minor rune of scavenging' => 24736,
       'minor rune of snowfall' => 68438,
@@ -516,7 +520,6 @@
       'minor rune of the pack' => 24700,
       'minor rune of the privateer' => 24780,
       'minor rune of the ranger' => 24813,
-      'minor rune of the rata sum' => 24724,
       'minor rune of the scholar' => 24834,
       'minor rune of the thief' => 24816,
       'minor rune of the traveler' => 24693,
@@ -668,6 +671,7 @@
       'major rune of orr' => 24859,
       'major rune of perplexity' => 44958,
       'major rune of rage' => 24716,
+      'major rune of rata sum' => 24725,
       'major rune of sanctuary' => 24856,
       'major rune of scavenging' => 24737,
       'major rune of snowfall' => 68435,
@@ -706,7 +710,6 @@
       'major rune of the pack' => 24701,
       'major rune of the privateer' => 24781,
       'major rune of the ranger' => 24814,
-      'major rune of the rata sum' => 24725,
       'major rune of the scholar' => 24835,
       'major rune of the thief' => 24817,
       'major rune of the traveler' => 24692,
@@ -2375,6 +2378,7 @@
     'murrellow stimulant snack' => 8628,
     'mushroom loaf' => 41566,
     'mushroom pizza' => 12368,
+    'mystery quaggan tonic' => 84676,
     'offering basket' => 79848,
     'offering to koda' => 79729,
     'ogre pet snack' => 8541,
@@ -2807,94 +2811,2676 @@
     'writ of studied strength' => 70883,
     'yam fritter' => 12372,
   ),
+  'buffstats' => 
+  array (
+    'bystat' => 
+    array (
+      '+10% Damage vs. Undead | -10% Damage from Undead' => 
+      array (
+        0 => 'extended potion of undead slaying',
+        1 => 'powerful potion of undead slaying',
+      ),
+      '+10% Damage vs. Nightmare Court | -10% Damage from Nightmare Court' => 
+      array (
+        0 => 'extended potion of nightmare court slaying',
+        1 => 'powerful potion of nightmare court slaying',
+      ),
+      '+10% Damage vs. Sons of Svanir | -10% Damage from Sons of Svanir' => 
+      array (
+        0 => 'extended potion of sons of svanir slaying',
+        1 => 'powerful potion of sons of svanir slaying',
+      ),
+      '+10% Damage vs. Outlaws | -10% Damage from Outlaws' => 
+      array (
+        0 => 'extended potion of outlaw slaying',
+        1 => 'powerful potion of outlaw slaying',
+      ),
+      '+10% Damage vs. Flame Legion | -10% Damage from Flame Legion' => 
+      array (
+        0 => 'extended potion of flame legion slaying',
+        1 => 'powerful potion of flame legion slaying',
+      ),
+      '+10% Damage vs. Inquest | -10% Damage from Inquest' => 
+      array (
+        0 => 'extended potion of inquest slaying',
+        1 => 'powerful potion of inquest slaying',
+      ),
+      '+10% Damage vs. Dredge | -10% Damage from Dredge' => 
+      array (
+        0 => 'extended potion of dredge slaying',
+        1 => 'powerful potion of dredge slaying',
+      ),
+      '+10% Damage vs. Ghosts | -10% Damage from Ghosts' => 
+      array (
+        0 => 'extended potion of ghost slaying',
+      ),
+      '+30 Healing' => 
+      array (
+        0 => 'prismatic soylent',
+        1 => 'delicious cave spore',
+        2 => 'strawberry cookie',
+        3 => 'passion fruit bar',
+      ),
+      '28% Chance to Gain Swiftness on Kill' => 
+      array (
+        0 => 'flask of emergency supplies',
+        1 => 'bowl of ascalonian salad',
+      ),
+      '+20 Healing' => 
+      array (
+        0 => 'slice of eda\'s apple pie',
+        1 => 'prototype nutriment',
+        2 => 'stranglebloom heart',
+        3 => 'bowl of front line stew',
+        4 => 'sugar cookie',
+        5 => 'blueberry cookie',
+        6 => 'apple passion fruit pie',
+      ),
+      '20% Chance to Gain Health on Kill' => 
+      array (
+        0 => 'glass of melon juice',
+        1 => 'bowl of blueberry apple compote',
+      ),
+      'Gain Health Every Second' => 
+      array (
+        0 => 'heart-shaped cookie',
+        1 => 'seraph standard ration',
+        2 => 'experimental skritt wafer',
+        3 => 'stick of cotton candy',
+        4 => 'seraph spicy ration',
+        5 => 'shiverpeak ration',
+        6 => 'healing salve',
+        7 => 'bowl of gelatinous ooze custard',
+        8 => 'apple pie',
+        9 => 'banana cream pie',
+        10 => 'apple tart',
+        11 => 'kastaz roasted poultry',
+        12 => 'bowl of candy corn custard',
+      ),
+      '+20 Vitality' => 
+      array (
+        0 => 'krewe bar',
+        1 => 'grumble cake',
+        2 => 'strip of boar jerky',
+        3 => 'loaf of travelers bread',
+        4 => 'quaggan fish snack',
+        5 => 'loaf of bread',
+        6 => 'buttermilk biscuit',
+        7 => 'handful of bjarni\'s rabbit food',
+        8 => 'grilled poultry',
+        9 => 'poultry piccata',
+        10 => 'cinnamon pinwheel',
+      ),
+      '+40 Expertise' => 
+      array (
+        0 => 'petri dish delight',
+        1 => 'veggie pizza',
+      ),
+      '+20 Power' => 
+      array (
+        0 => 't-bone steak',
+        1 => 'pickled wurm egg',
+        2 => 'drottot\'s poached egg',
+        3 => 'bowl of watery mushroom soup',
+        4 => 'warden ration',
+        5 => 'rice ball',
+        6 => 'spicy flank steak',
+        7 => 'eda\'s apple pie',
+        8 => 'roasted meaty sandwich',
+        9 => 'grilled steak',
+      ),
+      '+20 Expertise' => 
+      array (
+        0 => 'crunchy firefly snack',
+        1 => 'cheese pizza',
+      ),
+      '20% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'slice of rainbow cake',
+        1 => 'blueberry pie',
+      ),
+      '28% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'cupcake',
+        1 => 'strawberry pie',
+      ),
+      '+4% Damage While Moving | 50% to Gain Swiftness on Kill' => 
+      array (
+        0 => 'experimental remnant',
+        1 => 'bowl of asparagus and sage salad',
+      ),
+      '20% Chance to Gain Swiftness on Kill' => 
+      array (
+        0 => 'aquatic elixir',
+        1 => 'bowl of simple salad',
+      ),
+      '+3% Burning Duration' => 
+      array (
+        0 => 'drake steak',
+        1 => 'bowl of meaty wurm surprise',
+        2 => 'bowl of simple meat chili',
+        3 => 'bowl of green bean stew',
+      ),
+      '+40 Power for 30 Seconds on Kill' => 
+      array (
+        0 => 'moa haunch',
+        1 => 'spicy meat kabob',
+      ),
+      '+30 Power' => 
+      array (
+        0 => 'stick of mystery meat',
+        1 => 'pepper steak',
+      ),
+      '-4% Incoming Condition Duration' => 
+      array (
+        0 => 'jug of autumn nectar',
+        1 => 'grawl snack',
+        2 => 'bowl of wurm meat stew',
+        3 => 'bowl of simple poultry soup',
+        4 => 'bowl of basic poultry soup',
+      ),
+      '+20 condition damage' => 
+      array (
+        0 => 'seared beef steak',
+        1 => 'ogre pet snack',
+        2 => 'peeled spikeroot fruit',
+        3 => 'grilled mushroom',
+      ),
+      'Your Vitality is increased.' => 
+      array (
+        0 => 'wolf offering',
+      ),
+      '-6% Incoming Damage While Stunned, Knocked Down, or Knocked Back' => 
+      array (
+        0 => 'cooked crawdad',
+        1 => 'cheese triangle',
+        2 => 'slice of buttered toast',
+        3 => 'slice of cinnamon toast',
+      ),
+      '-8% Incoming Stun Duration' => 
+      array (
+        0 => 'cooked fish steak',
+        1 => 'loaf of shaemoor bread',
+        2 => 'cup of potato fries',
+        3 => 'mashed potato',
+      ),
+      'Your toughness is increased.' => 
+      array (
+        0 => 'bear offering',
+      ),
+      '-14% Incoming Condition Duration | -18% Incoming Damage while Stunned, Knocked Down, or Knocked Back' => 
+      array (
+        0 => 'bit of enchanted clam bait',
+        1 => 'loaf of tarragon bread',
+        2 => 'canned tarragon bread',
+      ),
+      'Your power is increased.' => 
+      array (
+        0 => 'snow leopard offering',
+      ),
+      '+20% Downed Health' => 
+      array (
+        0 => 'slice of watermelon',
+        1 => 'rabbit offering',
+        2 => 'bowl of salsa',
+      ),
+      'Your attacks are more precise.' => 
+      array (
+        0 => 'raven offering',
+      ),
+      '+40 Precision | +50 Toughness' => 
+      array (
+        0 => 'boiled crawdad',
+        1 => 'bowl of gladiator gruel',
+        2 => 'bowl of krytan meatball dinner',
+      ),
+      '+60 Power for 30 Seconds on Kill' => 
+      array (
+        0 => 'griffon egg',
+        1 => 'pepper steak dinner',
+      ),
+      '+20 Toughness' => 
+      array (
+        0 => 'blueberry muffin',
+        1 => 'poached salmon filet',
+        2 => 'plate of pasta with tomato sauce',
+        3 => 'passion fruit soufflé',
+      ),
+      '+40 Condition Damage for 30 Seconds on Kill' => 
+      array (
+        0 => 'magical fruit',
+        1 => 'marinated mushroom',
+      ),
+      '+30 Vitality' => 
+      array (
+        0 => 'fish steak',
+        1 => 'curry bun',
+        2 => 'strip of venison jerky',
+        3 => 'loaf of banana bread',
+        4 => 'sage stuffed poultry',
+        5 => 'bag of simple cat food',
+      ),
+      '30% Chance to Gain Might on Dodge' => 
+      array (
+        0 => 'poached griffon egg',
+        1 => 'bowl of kappa soup',
+        2 => 'bowl of hearty red meat stew',
+        3 => 'bowl of onion soup',
+      ),
+      '20% Chance to Gain Might on Dodge' => 
+      array (
+        0 => 'strip of dolyak jerky',
+        1 => 'bowl of red meat stock',
+        2 => 'bowl of simple meat stew',
+      ),
+      '+14% Damage While Downed | +80% Downed Health' => 
+      array (
+        0 => 'variloo\'s swift algae snack',
+        1 => 'bowl of mango salsa',
+        2 => 'can of mango salsa',
+      ),
+      '+30 Toughness' => 
+      array (
+        0 => 'blackened fish steak',
+        1 => 'meatball',
+        2 => 'meatball dinner',
+        3 => 'bowl of grilled bananas with passion fruit sauce',
+      ),
+      '30% Chance to Remove a Condition on Using a Heal Skill' => 
+      array (
+        0 => 'bowl of kraitweed salad',
+        1 => 'bowl of savory spinach and poultry soup',
+      ),
+      '+30 Condition Damage' => 
+      array (
+        0 => 'bowl of overlake soup',
+        1 => 'jar of juniberry jam',
+        2 => 'veggie burger',
+      ),
+      '+40 Ferocity | +50 Precision' => 
+      array (
+        0 => 'bowl of skalefin soup',
+        1 => 'bowl of tomato zucchini soup',
+      ),
+      '+40 Toughness | +50 Vitality' => 
+      array (
+        0 => 'red bean cake',
+        1 => 'loaf of zucchini bread',
+      ),
+      '20% Chance to Remove a Condition on Using a Heal Skill' => 
+      array (
+        0 => 'roasted aloe seed',
+        1 => 'bowl of poultry stock',
+        2 => 'bowl of poultry noodle soup',
+      ),
+      '-16% Incoming Stun Duration' => 
+      array (
+        0 => 'loaf of kodan bread',
+        1 => 'bowl of outrider stew',
+        2 => 'turnip casserole',
+      ),
+      '+120 Power When Health below 50% | +60 Vitality' => 
+      array (
+        0 => 'crab cake',
+        1 => 'plate of citrus poultry with almonds',
+      ),
+      '+60 Vitality | +80 Precision' => 
+      array (
+        0 => 'slice of ice worm sashimi',
+        1 => 'bowl of artichoke soup',
+        2 => 'can of artichoke soup',
+      ),
+      '+40 Vitality | Gain Health Every Second' => 
+      array (
+        0 => 'shiverpeak popper',
+        1 => 'dredge worker ration',
+        2 => 'pirate hard tack',
+        3 => 'raspberry pie',
+        4 => 'grape pie',
+      ),
+      '+30 Precision' => 
+      array (
+        0 => 'bowl of ice wurm bisque',
+        1 => 'bowl of tomato soup',
+        2 => 'bowl of beet and bean stew',
+        3 => 'bowl of tomato soup',
+      ),
+      '+50 Vitality | Gain Health Every Second' => 
+      array (
+        0 => 'slice of vigil hard tack',
+        1 => 'pumpkin pie',
+        2 => 'glazed pumpkin pie',
+      ),
+      '-8% Incoming Condition Duration' => 
+      array (
+        0 => 'moa egg omelet',
+        1 => 'bowl of clam chowder',
+      ),
+      '+50 Condition Damage | +60 Expertise' => 
+      array (
+        0 => 'bowl of fly soup',
+        1 => 'fancy veggie pizza',
+      ),
+      '+50 Precision | +60 Toughness' => 
+      array (
+        0 => 'blessing of azantil',
+        1 => 'bowl of pesto pasta salad',
+      ),
+      '+60 Vitality | Gain Health Every Second' => 
+      array (
+        0 => 'standard pact ration',
+        1 => 'peach pie',
+        2 => 'canned peach pie filling',
+      ),
+      '+40 Precision | +50 Healing' => 
+      array (
+        0 => 'murrellow stimulant snack',
+        1 => 'chocolate chip cookie',
+        2 => 'candy corn cookie',
+      ),
+      '+160 Power while Health Is Below 50% | +80 Vitality' => 
+      array (
+        0 => 'icy fish snack',
+        1 => 'tarragon stuffed poultry',
+      ),
+      '+60 Healing Power | 80% Chance to Gain Health on Kill' => 
+      array (
+        0 => 'mined edible root',
+        1 => 'raspberry peach compote',
+        2 => 'canned raspberry peach compote',
+      ),
+      '+40 Vitality | +50 Condition Damage' => 
+      array (
+        0 => 'crab food',
+        1 => 'bowl of creamy portobello soup',
+      ),
+      '+20 Precision' => 
+      array (
+        0 => 'kodan incense',
+        1 => 'bowl of vegetable stock',
+        2 => 'bowl of simple vegetable soup',
+      ),
+      '12% Chance to Gain Swiftness on Kill' => 
+      array (
+        0 => 'explorers kit',
+      ),
+      '+7% Damage vs. Undead | -4% Damage from Undead' => 
+      array (
+        0 => 'potion of azantil',
+        1 => 'undead battle potion',
+        2 => 'potion of undead slaying',
+      ),
+      '+3% Damage vs. Flame Legion' => 
+      array (
+        0 => 'weak potion of flame legion slaying',
+      ),
+      '+3% Damage vs. Centaur' => 
+      array (
+        0 => 'weak potion of centaur slaying',
+      ),
+      '+3% Damage vs. Outlaws' => 
+      array (
+        0 => 'weak potion of outlaw slaying',
+      ),
+      '+3% Damage vs. Nightmare Court' => 
+      array (
+        0 => 'weak potion of nightmare court slaying',
+      ),
+      '+3% Damage vs. Sons of Svanir' => 
+      array (
+        0 => 'weak potion of sons of svanir slaying',
+      ),
+      '+3% Damage vs. Destroyers' => 
+      array (
+        0 => 'weak potion of destroyer slaying',
+      ),
+      '+3% Damage vs. Elementals' => 
+      array (
+        0 => 'weak potion of elemental slaying',
+      ),
+      '+3% Damage vs. Demons' => 
+      array (
+        0 => 'weak potion of demon slaying',
+      ),
+      '+3% Damage vs. Inquest' => 
+      array (
+        0 => 'weak potion of inquest slaying',
+      ),
+      '+3% Damage vs. Ogres' => 
+      array (
+        0 => 'weak potion of ogre slaying',
+      ),
+      '+3% Damage vs. Ice Brood' => 
+      array (
+        0 => 'weak potion of ice brood slaying',
+      ),
+      '+3% Damage vs. Grawl' => 
+      array (
+        0 => 'weak potion of grawl slaying',
+      ),
+      '+3% Damage vs. Krait' => 
+      array (
+        0 => 'weak potion of krait slaying',
+      ),
+      '+3% Damage vs. Dredge' => 
+      array (
+        0 => 'weak potion of dredge slaying',
+      ),
+      '+3% Damage vs. Undead' => 
+      array (
+        0 => 'weak potion of undead slaying',
+      ),
+      '+5% Damage vs. Flame Legion' => 
+      array (
+        0 => 'minor potion of flame legion slaying',
+      ),
+      '+5% Damage vs. Centaur' => 
+      array (
+        0 => 'minor potion of centaur slaying',
+      ),
+      '+5% damage vs outlaws' => 
+      array (
+        0 => 'minor potion of outlaw slaying',
+      ),
+      '+5% Damage vs. Nightmare Court' => 
+      array (
+        0 => 'minor potion of nightmare court slaying',
+      ),
+      '+5% Damage vs. Sons of Svanir' => 
+      array (
+        0 => 'minor potion of sons of svanir slaying',
+      ),
+      '+5% Damage vs. Destroyers' => 
+      array (
+        0 => 'minor potion of destroyer slaying',
+      ),
+      '+5% Damage vs. Elementals' => 
+      array (
+        0 => 'minor potion of elemental slaying',
+      ),
+      '+5% Damage vs. Demons' => 
+      array (
+        0 => 'minor potion of demon slaying',
+      ),
+      '+5% Damage vs. Inquest' => 
+      array (
+        0 => 'minor potion of inquest slaying',
+      ),
+      '+5% Damage vs. Ogres' => 
+      array (
+        0 => 'minor potion of ogre slaying',
+      ),
+      '+5% Damage vs. Ice Brood' => 
+      array (
+        0 => 'minor potion of ice brood slaying',
+      ),
+      '+5% Damage vs. Grawl' => 
+      array (
+        0 => 'minor potion of grawl slaying',
+      ),
+      '+5% Damage vs. Krait' => 
+      array (
+        0 => 'minor potion of krait slaying',
+      ),
+      '+5% Damage vs. Dredge' => 
+      array (
+        0 => 'minor potion of dredge slaying',
+      ),
+      '+5% Damage vs. Undead' => 
+      array (
+        0 => 'minor potion of undead slaying',
+      ),
+      '+7% Damage vs. Flame Legion | -4% Damage from Flame Legion' => 
+      array (
+        0 => 'potion of flame legion slaying',
+      ),
+      '+7% Damage vs. Centaur | -4% Damage from Centaur' => 
+      array (
+        0 => 'potion of centaur slaying',
+      ),
+      '+7% Damage vs. Outlaws | -4% Damage from Outlaws' => 
+      array (
+        0 => 'potion of outlaw slaying',
+      ),
+      '+7% Damage vs. Nightmare Court | -4% Damage from Nightmare Court' => 
+      array (
+        0 => 'potion of nightmare court slaying',
+      ),
+      '+7% Damage vs. Sons of Svanir | -4% Damage from Sons of Svanir' => 
+      array (
+        0 => 'potion of sons of svanir slaying',
+      ),
+      '+7% Damage vs. Destroyers | -4% Damage from Destroyers' => 
+      array (
+        0 => 'potion of destroyer slaying',
+      ),
+      '+7% damage vs elementals | -4% damage from elementals' => 
+      array (
+        0 => 'potion of elemental slaying',
+      ),
+      '+7% Damage vs. Demons | -4% Damage from Demons' => 
+      array (
+        0 => 'potion of demon slaying',
+      ),
+      '+7% Damage vs. Inquest | -4% Damage from Inquest' => 
+      array (
+        0 => 'potion of inquest slaying',
+      ),
+      '+7% Damage vs. Ogre | -4% Damage from Ogre' => 
+      array (
+        0 => 'potion of ogre slaying',
+      ),
+      '+7% Damage vs. Ice Brood | -4% Damage from Ice Brood' => 
+      array (
+        0 => 'potion of ice brood slaying',
+      ),
+      '+7% Damage vs. Grawl | -4% Damage from Grawl' => 
+      array (
+        0 => 'potion of grawl slaying',
+      ),
+      '+7% Damage vs. Krait | -4% Damage from Krait' => 
+      array (
+        0 => 'potion of krait slaying',
+      ),
+      '+7% Damage vs. Dredge | -4% Damage from Dredge' => 
+      array (
+        0 => 'potion of dredge slaying',
+      ),
+      '+8% Damage vs. Flame Legion | -6% Damage from Flame Legion' => 
+      array (
+        0 => 'strong potion of flame legion slaying',
+      ),
+      '+8% Damage vs. Centaur | -6% Damage from Centaur' => 
+      array (
+        0 => 'strong potion of centaur slaying',
+      ),
+      '+8% Damage vs. Outlaws | -6% Damage from Outlaws' => 
+      array (
+        0 => 'strong potion of outlaw slaying',
+      ),
+      '+8% Damage vs. Nightmare Court | -6% Damage from Nightmare Court' => 
+      array (
+        0 => 'strong potion of nightmare court slaying',
+      ),
+      '+8% Damage vs. Sons of Svanir | -6% Damage from Sons of Svanir' => 
+      array (
+        0 => 'strong potion of sons of svanir slaying',
+      ),
+      '+8% Damage vs. Destroyers | -6% Damage from Destroyers' => 
+      array (
+        0 => 'strong potion of destroyer slaying',
+      ),
+      '+8% damage vs elementals | -6% damage from elementals' => 
+      array (
+        0 => 'strong potion of elemental slaying',
+      ),
+      '+8% Damage vs. Demons | -6% Damage from Demons' => 
+      array (
+        0 => 'strong potion of demon slaying',
+      ),
+      '+8% Damage vs. Inquest | -6% Damage from Inquest' => 
+      array (
+        0 => 'strong potion of inquest slaying',
+      ),
+      '+8% Damage vs. Ogres | -6% Damage from Ogres' => 
+      array (
+        0 => 'strong potion of ogre slaying',
+      ),
+      '+8% Damage vs. Ice Brood | -6% Damage from Ice Brood' => 
+      array (
+        0 => 'strong potion of ice brood slaying',
+      ),
+      '+8% Damage vs. Grawl | -6% Damage from Grawl' => 
+      array (
+        0 => 'strong potion of grawl slaying',
+      ),
+      '+8% Damage vs. Krait | -6% Damage from Krait' => 
+      array (
+        0 => 'strong potion of krait slaying',
+      ),
+      '+8% Damage vs. Dredge | -6% Damage from Dredge' => 
+      array (
+        0 => 'strong potion of dredge slaying',
+      ),
+      '+8% Damage vs. Undead | -6% Damage from Undead' => 
+      array (
+        0 => 'strong potion of undead slaying',
+      ),
+      '+9% Damage vs. Flame Legion | -8% Damage from Flame Legion' => 
+      array (
+        0 => 'potent potion of flame legion slaying',
+      ),
+      '+9% Damage vs. Centaur | -8% Damage from Centaur' => 
+      array (
+        0 => 'potent potion of centaur slaying',
+      ),
+      '+9% Damage vs. Outlaws | -8% Damage from Outlaws' => 
+      array (
+        0 => 'potent potion of outlaw slaying',
+      ),
+      '+9% Damage vs. Nightmare Court | -8% Damage from Nightmare Court' => 
+      array (
+        0 => 'potent potion of nightmare court slaying',
+      ),
+      '+9% Damage vs. Sons of Svanir | -8% Damage from Sons of Svanir' => 
+      array (
+        0 => 'potent potion of sons of svanir slaying',
+      ),
+      '+9% Damage vs. Destroyers | -8% Damage from Destroyers' => 
+      array (
+        0 => 'potent potion of destroyer slaying',
+      ),
+      '+9% Damage vs. Elementals | -8% Damage from Elementals' => 
+      array (
+        0 => 'potent potion of elemental slaying',
+      ),
+      '+9% Damage vs. Demons | -8% Damage from Demons' => 
+      array (
+        0 => 'potent potion of demon slaying',
+      ),
+      '+9% Damage vs. Inquest | -8% Damage from Inquest' => 
+      array (
+        0 => 'potent potion of inquest slaying',
+      ),
+      '+9% Damage vs. Ogres | -8% Damage from Ogres' => 
+      array (
+        0 => 'potent potion of ogre slaying',
+      ),
+      '+9% Damage vs. Ice Brood | -8% Damage from Ice Brood' => 
+      array (
+        0 => 'potent potion of ice brood slaying',
+      ),
+      '+9% Damage vs. Grawl | -8% Damage from Grawl' => 
+      array (
+        0 => 'potent potion of grawl slaying',
+      ),
+      '+9% Damage vs. Krait | -8% Damage from Krait' => 
+      array (
+        0 => 'potent potion of krait slaying',
+      ),
+      '+9% Damage vs. Dredge | -8% Damage from Dredge' => 
+      array (
+        0 => 'potent potion of dredge slaying',
+      ),
+      '+9% Damage vs. Undead | -8% Damage from Undead' => 
+      array (
+        0 => 'potent potion of undead slaying',
+      ),
+      '+10% Damage vs. Centaur | -10% Damage from Centaur' => 
+      array (
+        0 => 'powerful potion of centaur slaying',
+      ),
+      '+10% Damage vs. Destroyers | -10% Damage from Destroyers' => 
+      array (
+        0 => 'powerful potion of destroyer slaying',
+      ),
+      '+10% Damage vs. Elementals | -10% Damage from Elementals' => 
+      array (
+        0 => 'powerful potion of elemental slaying',
+      ),
+      '+10% Damage vs. Demons | -10% Damage from Demons' => 
+      array (
+        0 => 'powerful potion of demon slaying',
+      ),
+      '+10% Damage vs. Ogres | -10% Damage from Ogres' => 
+      array (
+        0 => 'powerful potion of ogre slaying',
+      ),
+      '+10% Damage vs. Ice Brood | -10% Damage from Ice Brood' => 
+      array (
+        0 => 'powerful potion of ice brood slaying',
+      ),
+      '+10% Damage vs. Grawl | -10% Damage from Grawl' => 
+      array (
+        0 => 'powerful potion of grawl slaying',
+      ),
+      '+10% Damage vs. Krait | -10% Damage from Krait' => 
+      array (
+        0 => 'powerful potion of krait slaying',
+      ),
+      'Gain Power Equal to 1% of Your Precision' => 
+      array (
+        0 => 'rough sharpening stone',
+      ),
+      'Gain Power Equal to 2% of Your Precision' => 
+      array (
+        0 => 'simple sharpening stone',
+        1 => 'simple sharpening stone',
+      ),
+      'Gain Power Equal to 1% of Your Precision | Gain Power Equal to 3% of Your Ferocity' => 
+      array (
+        0 => 'standard sharpening stone',
+      ),
+      'Gain Power Equal to 2% of Your Ferocity | Gain Power Equal to 2% of Your Precision' => 
+      array (
+        0 => 'quality sharpening stone',
+      ),
+      'Gain Power Equal to 2% of Your Precision | Gain Power Equal to 4% of Your Ferocity' => 
+      array (
+        0 => 'hardened sharpening stone',
+      ),
+      'Gain Power Equal to 3% of Your Precision | Gain Power Equal to 6% of Your Ferocity' => 
+      array (
+        0 => 'superior sharpening stone',
+        1 => 'potent superior sharpening stone',
+        2 => 'ogre sharpening stone',
+        3 => 'tin of fruitcake',
+        4 => 'superior sharpening stone',
+      ),
+      'Gain Concentration Equal to 1% of Your Precision' => 
+      array (
+        0 => 'apprentice maintenance oil',
+      ),
+      'Gain Concentration Equal to 2% of Your Precision' => 
+      array (
+        0 => 'journeyman maintenance oil',
+        1 => 'journeyman maintenance oil',
+      ),
+      'Gain Concentration Equal to 1% of Your Precision | Gain Concentration Equal to 2% of Your Healing Power' => 
+      array (
+        0 => 'standard maintenance oil',
+      ),
+      'Gain Concentration Equal to 2% of Your Healing Power | Gain Concentration Equal to 2% of Your Precision' => 
+      array (
+        0 => 'artisan maintenance oil',
+      ),
+      'Gain Concentration Equal to 2% of Your Precision | Gain Concentration Equal to 4% of Your Healing Power' => 
+      array (
+        0 => 'quality maintenance oil',
+      ),
+      'Gain Concentration Equal to 3% of Your Precision | Gain Concentration Equal to 6% of Your Healing Power' => 
+      array (
+        0 => 'master maintenance oil',
+        1 => 'potent master maintenance oil',
+        2 => 'hylek maintenance oil',
+        3 => 'peppermint oil',
+      ),
+      'Gain Condition Damage Equal to 1% of Your Precision' => 
+      array (
+        0 => 'apprentice tuning crystal',
+      ),
+      'Gain Condition Damage Equal to 2% of Your Precision' => 
+      array (
+        0 => 'journeyman tuning crystal',
+        1 => 'journeyman tuning crystal',
+      ),
+      'Gain Condition Damage Equal to 1% of Your Precision | Gain Condition Damage Equal to 3% of Your Expertise' => 
+      array (
+        0 => 'standard tuning crystal',
+      ),
+      'Gain Condition Damage Equal to 2% of Your Precision | Gain Condition Damage Equal to 3% of Your Expertise' => 
+      array (
+        0 => 'artisan tuning crystal',
+      ),
+      'Gain Condition Damage Equal to 2% of Your Precision | Gain Condition Damage Equal to 5% of Your Expertise' => 
+      array (
+        0 => 'quality tuning crystal',
+      ),
+      'Gain Condition Damage Equal to 3% of Your Precision | Gain Condition Damage Equal to 8% of Your Expertise' => 
+      array (
+        0 => 'master tuning crystal',
+        1 => 'potent master tuning crystal',
+        2 => 'krait tuning crystal',
+        3 => 'tuning icicle',
+      ),
+      '+50 Toughness | -28% Incoming Stun Duration' => 
+      array (
+        0 => 'roasted rutabaga',
+      ),
+      '-3% Incoming Condition Duration' => 
+      array (
+        0 => 'spinach salad',
+      ),
+      '20% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'bowl of ettin stew',
+        1 => 'celebratory steak',
+        2 => 'bowl of simple stirfry',
+        3 => 'bowl of sauteed carrots',
+      ),
+      '+12 vitality' => 
+      array (
+        0 => 'loaf of walnut sticky bread',
+        1 => 'bowl of dolyak stew',
+      ),
+      '-10% Incoming Damage While Stunned, Knocked Down, or Knocked Back' => 
+      array (
+        0 => 'slice of garlic bread',
+      ),
+      '+40 Precision | +7% Poison Duration' => 
+      array (
+        0 => 'deluxe burger',
+      ),
+      '+3% Poison Duration' => 
+      array (
+        0 => 'hamburger',
+        1 => 'cheeseburger',
+      ),
+      '+12 Power' => 
+      array (
+        0 => 'bowl of cold wurm stew',
+        1 => 'bowl of sharkfin soup',
+      ),
+      '16% Chance to Gain Might on Critical Hit During the Day' => 
+      array (
+        0 => 'stuffed pepper',
+      ),
+      '+5% Chill Duration' => 
+      array (
+        0 => 'chocolate cake',
+      ),
+      '+3% Chill Duration' => 
+      array (
+        0 => 'white cake',
+      ),
+      '+40 Ferocity | 50% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'handful of trail mix',
+        1 => 'bowl of sauteed zucchini with nutmeg',
+      ),
+      '+50 Ferocity | +60 Precision' => 
+      array (
+        0 => 'minotaur steak',
+        1 => 'bowl of cauliflower soup',
+      ),
+      '+40 Toughness | -24% Incoming Stun Duration' => 
+      array (
+        0 => 'bowl of mashed yams',
+        1 => 'bowl of spiced mashed yams',
+      ),
+      '+100 Condition Damage for 30 Seconds on Kill | +40 Precision' => 
+      array (
+        0 => 'divinity stuffed mushroom',
+        1 => 'triktiki omelet',
+      ),
+      '+40 Precision | +50 Condition Damage' => 
+      array (
+        0 => 'grilled portobello mushroom',
+      ),
+      '+120 Condition Damage for 30 Seconds on Kill | +50 Precision' => 
+      array (
+        0 => 'bowl of tasty wurm stew',
+        1 => 'eztlitl stuffed mushroom',
+      ),
+      '+50% Downed Health | +6% Damage while Downed' => 
+      array (
+        0 => 'bowl of avocado salsa',
+      ),
+      '+2% Damage While Moving | 36% to Gain Swiftness on Kill' => 
+      array (
+        0 => 'bowl of coleslaw',
+      ),
+      '+30 Ferocity | Day: 12% Chance to Burn on Critical Hit | Night: 12% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'bowl of degun shun stew',
+        1 => 'bowl of zucchini chili',
+      ),
+      '+50 Vitality | +60 Condition Damage' => 
+      array (
+        0 => 'bowl of fancy creamy mushroom soup',
+      ),
+      '+40 Vitality | -12% Incoming Condition Duration' => 
+      array (
+        0 => 'bowl of dilled clam chowder',
+      ),
+      '+5% Burning Duration' => 
+      array (
+        0 => 'bowl of meat and bean chili',
+      ),
+      '+12 Ferocity' => 
+      array (
+        0 => 'bowl of simple bean chili',
+        1 => 'bowl of basic vegetable soup',
+      ),
+      '+10% to Endurance Regeneration | 50% Chance to Gain Might on Dodge' => 
+      array (
+        0 => 'bowl of cabbage stirfry',
+        1 => 'bowl of meat and cabbage stew',
+        2 => 'bowl of herbed meat stock',
+      ),
+      '+40 Precision | +50 Power' => 
+      array (
+        0 => 'filet of sesame roasted meat',
+      ),
+      '+100 Power for 30 Seconds on Kill | +40 Ferocity' => 
+      array (
+        0 => 'sesame roasted dinner',
+      ),
+      '+40 Vitality | +50 Power' => 
+      array (
+        0 => 'filet of rosemary roasted meat',
+      ),
+      '30% Chance to Gain Health on Kill' => 
+      array (
+        0 => 'bowl of strawberry apple compote',
+      ),
+      '+50 Concentration' => 
+      array (
+        0 => 'chocolate cherry',
+      ),
+      '+40 Vitality | +50 Healing' => 
+      array (
+        0 => 'cherry cookie',
+      ),
+      '+40 Precision | 36% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'cherry pie',
+      ),
+      '+50 Precision | +60 Power' => 
+      array (
+        0 => 'griffon egg omelet',
+        1 => 'plate of coriander crusted meat',
+      ),
+      '+5% Poison Duration' => 
+      array (
+        0 => 'spinach burger',
+      ),
+      '+60 Condition Damage for 30 Seconds on Kill' => 
+      array (
+        0 => 'sage stuffed mushroom',
+      ),
+      '+30% Downed Health' => 
+      array (
+        0 => 'bowl of bean salad',
+      ),
+      '30% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'bowl of garlic spinach sautee',
+      ),
+      '+20 Ferocity | Day: 8% Chance to Burn on Critical Hit | Night: 8% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'bowl of fancy bean chili',
+      ),
+      '+40 Healing Power | 50% Chance to Gain Health on Kill' => 
+      array (
+        0 => 'bowl of cherry vanilla compote',
+      ),
+      '+40 Power' => 
+      array (
+        0 => 'cherry tart',
+      ),
+      '+40 Power | +7% Chill Duration' => 
+      array (
+        0 => 'chocolate cherry cake',
+      ),
+      '+50 Vitality | +80 Power When Health below 50%' => 
+      array (
+        0 => 'dilled poultry piccata',
+      ),
+      '+40 Condition Damage | +50 Expertise' => 
+      array (
+        0 => 'mushroom pizza',
+      ),
+      '24% Chance to Gain Might on Critical Hit during the Day | 24% Chance to Inflict Chill on Critical Hit during the Night' => 
+      array (
+        0 => 'stuffed zucchini',
+      ),
+      '+40 Condition Damage | +50 Power' => 
+      array (
+        0 => 'spicy lime steak',
+      ),
+      '+40 Condition Damage' => 
+      array (
+        0 => 'yam fritter',
+      ),
+      '-14% Incoming Damage while Stunned, Knocked Down, or Knocked Back | -6% Incoming Condition Duration' => 
+      array (
+        0 => 'loaf of rosemary bread',
+      ),
+      '+40 Healing | 50% Chance to Remove a Condition on Using a Heal Skill' => 
+      array (
+        0 => 'bowl of kale and poultry soup',
+        1 => 'bowl of herbed poultry stock',
+      ),
+      '+40 Vitality | +50 Precision' => 
+      array (
+        0 => 'bowl of kale soup',
+        1 => 'bowl of herbed vegetable stock',
+      ),
+      '+40 Precision | +7% Burning Duration' => 
+      array (
+        0 => 'bowl of chili and avocado',
+      ),
+      '+40 Condition Damage | +50 Precision' => 
+      array (
+        0 => 'bowl of yam soup',
+      ),
+      '+60 Concentration' => 
+      array (
+        0 => 'chocolate orange',
+      ),
+      '+50 Precision | +60 Healing' => 
+      array (
+        0 => 'chocolate mint cookie',
+      ),
+      '+50 Vitality | +60 Healing' => 
+      array (
+        0 => 'blackberry cookie',
+      ),
+      '+50 Precision | 40% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'blackberry pie',
+      ),
+      '+50 Healing Power | 60% Chance to Gain Health on Kill' => 
+      array (
+        0 => 'bowl of blackberry pear compote',
+      ),
+      '+50 Power' => 
+      array (
+        0 => 'ginger pear tart',
+        1 => 'glazed pear tart',
+      ),
+      '+10% Chill Duration | +50 Power' => 
+      array (
+        0 => 'orange coconut cake',
+        1 => 'orange cake',
+      ),
+      '+10% Poison Duration | +50 Precision' => 
+      array (
+        0 => 'horseradish burger',
+      ),
+      '+50 Precision | +60 Condition Damage' => 
+      array (
+        0 => 'bowl of mushroom risotto',
+      ),
+      '+50 Condition Damage | +60 Power' => 
+      array (
+        0 => 'plate of citrus clove meat',
+      ),
+      '+50 Vitality | +60 Power' => 
+      array (
+        0 => 'plate of roast meat with mint sauce',
+      ),
+      '+120 Power for 30 Seconds on Kill | +50 Ferocity' => 
+      array (
+        0 => 'plate of coriander crusted meat dinner',
+      ),
+      '+50 Power | 60% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'bowl of avocado stirfry',
+      ),
+      '+10% Damage While Downed | +60% Downed Health' => 
+      array (
+        0 => 'bowl of chickpea salad',
+      ),
+      '+50 Condition Damage' => 
+      array (
+        0 => 'chickpea fritter',
+      ),
+      '+50 Toughness | +60 Vitality' => 
+      array (
+        0 => 'slice of pumpkin bread',
+      ),
+      '-10% Incoming Condition Duration | -16% Incoming Damage while Stunned, Knocked Down, or Knocked Back' => 
+      array (
+        0 => 'slice of spiced bread',
+      ),
+      '+3% Damage While Moving | 40% Chance to Gain Swiftness on Kill' => 
+      array (
+        0 => 'bowl of cabbage and chickpea salad',
+      ),
+      '+50 Ferocity | 60% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'bowl of cauliflower sautee',
+      ),
+      '28% Chance to Gain Might on Critical Hit during the Day | 28% Chance to Inflict Chill on Critical Hit during the Night' => 
+      array (
+        0 => 'bowl of hummus',
+      ),
+      '+20% to Endurance Regeneration | 60% Chance to Gain Might on Dodge' => 
+      array (
+        0 => 'bowl of spiced meat and cabbage stew',
+      ),
+      '+20 Ferocity | Day: 14% Chance to Burn on Critical Hit | Night: 14% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'bowl of spiced veggie chili',
+      ),
+      '+10% Burning Duration | +50 Precision' => 
+      array (
+        0 => 'bowl of spiced meat chili',
+      ),
+      '+50 Condition Damage | +60 Precision' => 
+      array (
+        0 => 'bowl of pumpkin bisque',
+      ),
+      '+50 Vitality | +60 Precision' => 
+      array (
+        0 => 'bowl of chickpea soup',
+      ),
+      '+50 Healing | 60% Chance to Remove a Condition on Using a Heal Skill' => 
+      array (
+        0 => 'bowl of hearty poultry soup',
+      ),
+      '+50 Vitality | -16% Incoming Condition Duration' => 
+      array (
+        0 => 'bowl of chickpea and poultry soup',
+      ),
+      '+80 Concentration' => 
+      array (
+        0 => 'chocolate raspberry cream',
+        1 => 'boxed chocolate raspberry cream',
+      ),
+      '+60 Precision | +80 Healing' => 
+      array (
+        0 => 'chocolate raspberry cookie',
+        1 => 'glazed chocolate raspberry cookie',
+        2 => 'boxed chocolate raspberry cookie',
+      ),
+      '+60 Vitality | +80 Healing' => 
+      array (
+        0 => 'peach cookie',
+        1 => 'boxed peach cookie',
+      ),
+      '+60 Precision | 50% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'mixed berry pie',
+        1 => 'canned mixed berry pie',
+      ),
+      '+60 Power' => 
+      array (
+        0 => 'peach tart',
+        1 => 'glazed peach tart',
+        2 => 'canned peach tart',
+      ),
+      '+12% Chill Duration | +60 Power' => 
+      array (
+        0 => 'chocolate raspberry cake',
+        1 => 'canned chocolate raspberry cake',
+      ),
+      '+60 Precision | +80 Toughness' => 
+      array (
+        0 => 'bowl of poultry tarragon pasta',
+        1 => 'can of poultry tarragon pasta',
+      ),
+      '+12% Poison Duration | +60 Precision' => 
+      array (
+        0 => 'spicy cheeseburger',
+        1 => 'boxed spicy cheeseburger',
+      ),
+      '+60 Condition Damage | +80 Expertise' => 
+      array (
+        0 => 'super veggie pizza',
+        1 => 'boxed super veggie pizza',
+      ),
+      '+60 Precision | +80 Condition Damage' => 
+      array (
+        0 => 'bowl of mushroom and asparagus risotto',
+        1 => 'can of mushroom and asparagus risotto',
+      ),
+      '+60 Condition Damage | +80 Power' => 
+      array (
+        0 => 'spicier flank steak',
+        1 => 'canned spicier flank steak',
+      ),
+      '+60 Precision | +80 Power' => 
+      array (
+        0 => 'plate of steak and asparagus',
+        1 => 'can of steak and asparagus',
+      ),
+      '+60 Vitality | +80 Power' => 
+      array (
+        0 => 'plate of roast meat with braised leeks',
+        1 => 'can of roasted meat with braised leeks',
+      ),
+      '+160 Power for 30 Seconds on Kill | +60 Ferocity' => 
+      array (
+        0 => 'plate of steak and asparagus dinner',
+        1 => 'can of steak and asparagus dinner',
+      ),
+      '+60 Power | 80% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'bowl of eggplant stirfry',
+        1 => 'can of eggplant stir-fry',
+      ),
+      '+60 Condition Damage' => 
+      array (
+        0 => 'eggplant fritter',
+        1 => 'canned eggplant fritter',
+      ),
+      '+60 Toughness | +80 Vitality' => 
+      array (
+        0 => 'loaf of raspberry peach bread',
+        1 => 'can of raspberry peach bread',
+      ),
+      '+60 Toughness | -36% Incoming Stun Duration' => 
+      array (
+        0 => 'roasted parsnip',
+      ),
+      '+160 Condition Damage for 30 Seconds on Kill | +60 Precision' => 
+      array (
+        0 => 'spicy stuffed mushroom',
+        1 => 'canned spicy stuffed mushroom',
+      ),
+      '+60 Ferocity | 80% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'bowl of eggplant sautee',
+        1 => 'can of eggplant saute',
+      ),
+      '36% Chance to Gain Might on Critical Hit during the Day | 36% Chance to Inflict Chill on Critical Hit during the Night' => 
+      array (
+        0 => 'roasted artichoke',
+        1 => 'canned roasted artichoke',
+      ),
+      '+60 Healing | 80% Chance to Remove a Condition on Using a Heal Skill' => 
+      array (
+        0 => 'bowl of poultry and winter vegetable soup',
+        1 => 'super-hot poultry and winter vegetable soup',
+      ),
+      '+60 Vitality | -18% Incoming Condition Duration' => 
+      array (
+        0 => 'bowl of poultry and leek soup',
+        1 => 'can of poultry and leek soup',
+        2 => 'super-hot poultry and leek soup',
+      ),
+      '+60 Vitality | +80 Condition Damage' => 
+      array (
+        0 => 'bowl of snow truffle soup',
+        1 => 'can of snow truffle soup',
+      ),
+      '+40 Ferocity | Day: 18% Chance to Burn on Critical Hit | Night: 18% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'bowl of spicy veggie chili',
+        1 => 'can of spicy veggie chili',
+      ),
+      '+12% Burning Duration | +60 Precision' => 
+      array (
+        0 => 'bowl of spicy meat chili',
+        1 => 'can of spicy meat chili',
+      ),
+      '+60 Condition Damage | +80 Precision' => 
+      array (
+        0 => 'bowl of potato and leek soup',
+        1 => 'can of potato and leek soup',
+      ),
+      '+60 Ferocity | +80 Precision' => 
+      array (
+        0 => 'bowl of butternut squash soup',
+        1 => 'can of butternut squash soup',
+      ),
+      '+30% to Endurance Regeneration | 80% Chance to Gain Might on Dodge' => 
+      array (
+        0 => 'bowl of meat and winter vegetable stew',
+      ),
+      '+100 Concentration' => 
+      array (
+        0 => 'chocolate omnomberry cream',
+      ),
+      '+100 Healing | +70 Precision' => 
+      array (
+        0 => 'spicy chocolate cookie',
+      ),
+      '+100 Healing | +70 Vitality' => 
+      array (
+        0 => 'omnomberry cookie',
+        1 => 'honeypot ant',
+      ),
+      '+70 Vitality | Gain Health Every Second' => 
+      array (
+        0 => 'mango pie',
+        1 => 'tropical peppermint cake',
+        2 => 'mango pie',
+      ),
+      '+70 Precision | 66% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'omnomberry pie',
+        1 => 'omnomberry ghost',
+        2 => 'slice of candied dragon roll',
+        3 => 'indigo mushroom milkshake',
+        4 => 'scoop of mintberry swirl ice cream',
+        5 => 'winterberry pie',
+      ),
+      '+70 Healing Power | 100% Chance to Gain Health on Kill' => 
+      array (
+        0 => 'omnomberry compote',
+      ),
+      '+70 Power' => 
+      array (
+        0 => 'omnomberry tart',
+        1 => 'dragonfly cupcake',
+      ),
+      '+15% Chill Duration | +70 Power' => 
+      array (
+        0 => 'chocolate omnomberry cake',
+      ),
+      '+100 Toughness | +70 Precision' => 
+      array (
+        0 => 'bowl of truffle ravioli',
+        1 => 'plate of frostgorge clams',
+      ),
+      '+100 Vitality | +200 Power when Health below 50%' => 
+      array (
+        0 => 'plates of lemongrass poultry',
+        1 => 'dragonfish candy',
+      ),
+      '+15% Poison Duration | +70 Precision' => 
+      array (
+        0 => 'fancy truffle burger',
+      ),
+      '+100 Expertise | +70 Condition Damage' => 
+      array (
+        0 => 'rare veggie pizza',
+        1 => 'bowl of garlic kale sautee',
+        2 => 'koi cake',
+        3 => 'blood orange',
+      ),
+      '+100 Condition Damage | +70 Precision' => 
+      array (
+        0 => 'bowl of truffle risotto',
+      ),
+      '+100 Power | +70 Condition Damage' => 
+      array (
+        0 => 'plate of fire flank steak',
+      ),
+      '+100 Power | +70 Precision' => 
+      array (
+        0 => 'plate of truffle steak',
+        1 => 'steak with winterberry sauce',
+      ),
+      '+100 Power | +70 Vitality' => 
+      array (
+        0 => 'plate of orrian steak frittes',
+        1 => 'crunchy grasshopper',
+      ),
+      '+200 Power for 30 Seconds on Kill | +70 Ferocity' => 
+      array (
+        0 => 'plate of truffle steak dinner',
+        1 => 'carrot soufflé',
+        2 => 'dragon\'s breath bun',
+      ),
+      '+70 Power | 100% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'bowl of lotus stirfry',
+        1 => 'plate of mushrooms yakkington',
+      ),
+      '+5% Damage While Moving | 60% to Gain Swiftness on Kill' => 
+      array (
+        0 => 'bowl of seaweed salad',
+        1 => 'swiftly scrambled eggs',
+        2 => 'bowl of winterberry seaweed salad',
+      ),
+      '+70 Condition Damage' => 
+      array (
+        0 => 'cup of lotus fries',
+        1 => 'spicy pumpkin cookie',
+      ),
+      '+100 Vitality | +70 Toughness' => 
+      array (
+        0 => 'loaf of omnomberry bread',
+      ),
+      '-20% Incoming Condition Duration | -20% Incoming Damage while Stunned, Knocked Down, or Knocked Back' => 
+      array (
+        0 => 'loaf of saffron bread',
+      ),
+      '+70 Toughness | -40% Incoming Stun Duration' => 
+      array (
+        0 => 'bowl of roasted lotus root',
+        1 => 'mashed purple potatoes',
+      ),
+      '+200 Condition Damage for 30 Seconds on Kill | +70 Precision' => 
+      array (
+        0 => 'saffron stuffed mushroom',
+        1 => 'karka egg omelet',
+        2 => 'karka cake',
+        3 => 'piece of orrian sea urchin roe sushi',
+      ),
+      '+100% Downed Health | +20% Damage While Downed' => 
+      array (
+        0 => 'bowl of fire salsa',
+      ),
+      '+70 Ferocity | 100% Chance to Gain Might on Kill' => 
+      array (
+        0 => 'bowl of truffle sautee',
+        1 => 'egg in a cloud',
+      ),
+      '40% Chance to Gain Might on Critical Hit during the Day | 40% Chance to Inflict Chill on Critical Hit during the Night' => 
+      array (
+        0 => 'ghost pepper popper',
+      ),
+      '+70 Healing | 100% Chance to Remove a Condition on Using a Heal Skill (Cooldown: 10 Seconds)' => 
+      array (
+        0 => 'bowl of saffron-scented poultry soup',
+        1 => 'super-hot saffron-scented poultry soup',
+      ),
+      '+70 Vitality | -20% Incoming Condition Duration' => 
+      array (
+        0 => 'bowl of lemongrass poultry soup',
+        1 => 'quiche of darkness',
+        2 => 'super-hot lemongrass poultry soup',
+      ),
+      '+100 Condition Damage | +70 Vitality' => 
+      array (
+        0 => 'bowl of orrian truffle soup',
+      ),
+      '+50 Ferocity | Day: 20% Chance to Burn on Critical Hit | Night: 20% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'bowl of fire veggie chili',
+      ),
+      '+15% Burning Duration | +70 Precision' => 
+      array (
+        0 => 'bowl of fire meat chili',
+        1 => 'flaming fire flakes',
+      ),
+      '+100 Precision | +70 Condition Damage' => 
+      array (
+        0 => 'bowl of fancy potato and leek soup',
+      ),
+      '+100 Precision | +70 Ferocity' => 
+      array (
+        0 => 'bowl of curry butternut squash soup',
+      ),
+      '+100 Precision | +70 Vitality' => 
+      array (
+        0 => 'bowl of curry pumpkin soup',
+      ),
+      '+40% to Endurance Regeneration | 100% Chance to Gain Might on Dodge' => 
+      array (
+        0 => 'bowl of orrian truffle and meat stew',
+      ),
+      '8% Chance to Gain Might on Critical Hit during the Day' => 
+      array (
+        0 => 'chili pepper popper',
+      ),
+      '+3% Damage vs. Halloween Creatures' => 
+      array (
+        0 => 'weak potion of halloween slaying',
+      ),
+      '+10% Damage vs. Halloween Creatures | -10% Damage from Halloween Creatures' => 
+      array (
+        0 => 'powerful potion of halloween slaying',
+      ),
+      '+8% Damage vs. Halloween Creatures | -6% Damage from Halloween Creatures' => 
+      array (
+        0 => 'strong potion of halloween slaying',
+      ),
+      '+9% Damage vs. Halloween Creatures | -8% Damage from Halloween Creatures' => 
+      array (
+        0 => 'potent potion of halloween slaying',
+      ),
+      '+5% Damage vs. Halloween Creatures' => 
+      array (
+        0 => 'minor potion of halloween slaying',
+      ),
+      '+7% Damage vs. Halloween Creatures | -4% Damage from Halloween Creatures' => 
+      array (
+        0 => 'potion of halloween slaying',
+      ),
+      '+40 Condition Damage | +50 Toughness' => 
+      array (
+        0 => 'bowl of salad a la consortium',
+      ),
+      '+50 Condition Damage | +60 Healing' => 
+      array (
+        0 => 'orange passion fruit tart',
+      ),
+      '+60 Condition Damage | +80 Healing' => 
+      array (
+        0 => 'raspberry passion fruit compote',
+        1 => 'canned raspberry passion fruit compote',
+      ),
+      '+100 Healing | +70 Condition Damage' => 
+      array (
+        0 => 'bowl of tropical fruit salad',
+        1 => 'gummy wurms',
+      ),
+      '+40 Condition Damage | +50 Healing' => 
+      array (
+        0 => 'cherry passion fruit cake',
+      ),
+      '+50 Condition Damage | +60 Toughness' => 
+      array (
+        0 => 'passion fruit coconut cookie',
+      ),
+      '+60 Condition Damage | +80 Toughness' => 
+      array (
+        0 => 'stuffed artichoke with tropical dressing',
+        1 => 'canned stuffed artichoke with tropical dressing',
+      ),
+      '+100 Toughness | +70 Condition Damage' => 
+      array (
+        0 => 'bowl of tropical mousse',
+      ),
+      '+100 Healing Power | +70 Toughness' => 
+      array (
+        0 => 'bowl of saffron-mango ice cream',
+        1 => 'kralkachocolate bar',
+      ),
+      '+60 Toughness | +80 Healing Power' => 
+      array (
+        0 => 'bowl of peach raspberry swirl ice cream',
+      ),
+      '+50 Toughness | +60 Healing Power' => 
+      array (
+        0 => 'bowl of mint chocolate chip ice cream',
+      ),
+      '+40 Toughness | +50 Healing Power' => 
+      array (
+        0 => 'bowl of ginger-lime ice cream',
+      ),
+      '+30 Healing Power' => 
+      array (
+        0 => 'bowl of blueberry chocolate chunk ice cream',
+      ),
+      '+20 Healing Power' => 
+      array (
+        0 => 'bowl of chocolate chip ice cream',
+        1 => 'bowl of candy corn ice cream',
+      ),
+      '+100 toughness' => 
+      array (
+        0 => 'bowl of refugee\'s beet soup',
+      ),
+      '+100 power | +70 toughness' => 
+      array (
+        0 => 'spicy marinated mushroom',
+      ),
+      '+100 vitality | +70 power' => 
+      array (
+        0 => 'mushroom loaf',
+      ),
+      '+100 toughness | +70 power' => 
+      array (
+        0 => 'plate of spicy herbed chicken',
+      ),
+      '+100 vitality' => 
+      array (
+        0 => 'bowl of zesty turnip soup',
+      ),
+      '+100 Power | +70 Ferocity' => 
+      array (
+        0 => 'bowl of sweet and spicy butternut squash soup',
+      ),
+      '+8% Damage vs. Karka | -6% Damage from Karka' => 
+      array (
+        0 => 'potion of karka slaying',
+      ),
+      '+150 toughness' => 
+      array (
+        0 => 'potion of karka toughness',
+      ),
+      'Your movement speed is increased by 15% while swimming.' => 
+      array (
+        0 => 'swim speed boost',
+      ),
+      '+45 All Attributes' => 
+      array (
+        0 => 'dragon\'s revelry starcake',
+      ),
+      'Gain Power Equal to 6% of Your Condition Damage | Gain Power Equal to 8% of Your Expertise' => 
+      array (
+        0 => 'toxic sharpening stone',
+      ),
+      'Gain Concentration Equal to 3% of Your Power | Gain Concentration Equal to 6% of Your Condition Damage' => 
+      array (
+        0 => 'toxic maintenance oil',
+      ),
+      'Gain Condition Damage Equal to 3% of Your Power | Gain Condition Damage Equal to 3% of Your Precision' => 
+      array (
+        0 => 'toxic focusing crystal',
+      ),
+      '+50 Condition Damage | +50 Power | Gain Might When Using a Heal Skill' => 
+      array (
+        0 => 'bowl of marjory\'s experimental chili',
+      ),
+      '+10% damage vs. Toxic Alliance, Watchwork, Aetherblade, and Molten Alliance | -10% damage from Toxic Alliance, Watchwork, Aetherblade, and Molten Alliance' => 
+      array (
+        0 => 'powerful potion of slaying scarlet\'s armies',
+      ),
+      'Movement speed increased.' => 
+      array (
+        0 => 'swift moa feather',
+      ),
+      '+100 Expertise | 33% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'bowl of cactus fruit salad',
+        1 => 'prickly pear pie',
+      ),
+      '+100 Expertise | +70 Power' => 
+      array (
+        0 => 'prickly pear stuffed nopal',
+        1 => 'bowl of sweet and spicy beans',
+      ),
+      '+100 Concentration | +70 Toughness' => 
+      array (
+        0 => 'loaf of candy cactus cornbread',
+        1 => 'bowl of nopalitos sauté',
+      ),
+      '+70 Toughness | Gain Health Every Second' => 
+      array (
+        0 => 'bowl of black pepper cactus salad',
+        1 => 'bowl of cactus soup',
+        2 => 'rock candy',
+      ),
+      '+100 Ferocity | 33% Chance to Gain Might on Critical Hit' => 
+      array (
+        0 => 'plate of roasted cactus',
+      ),
+      '+80 Ferocity | 28% Chance to Gain Might on Critical Hit' => 
+      array (
+        0 => 'bowl of prickly pear sorbet',
+      ),
+      'Grants a random boost that stacks duration if the same boost is awarded more than once.' => 
+      array (
+        0 => 'foil-wrapped candy',
+      ),
+      'Ghoul\'s Grasp increases condition damage, precision, and toughness. | Reviving an ally grants Ghoul\'s Grasp to both you and your revived ally.' => 
+      array (
+        0 => 'lump of crystallized nougat',
+      ),
+      'Feline Fury increases all attributes by a small amount. | Reviving an ally grants Feline Fury to both you and your revived ally.' => 
+      array (
+        0 => 'sharpening skull',
+      ),
+      'Pumpkin Prowess increases power, toughness, and vitality. | Reviving an ally grants Pumpkin Prowess to both you and your revived ally.' => 
+      array (
+        0 => 'flask of pumpkin oil',
+      ),
+      'Gain Condition Damage Equal to 6% of Your Healing Power | Gain Condition Damage Equal to 8% of Your Concentration' => 
+      array (
+        0 => 'bountiful tuning crystal',
+      ),
+      'Gain Condition Damage Equal to 3% of Your Precision | Gain Expertise Equal to 3% of Your Precision' => 
+      array (
+        0 => 'furious tuning crystal',
+      ),
+      'Gain 0.6% Outgoing Healing Increase for Every 100 Healing Power | Gain 0.8% Outgoing Healing Increase for Every 100 Concentration' => 
+      array (
+        0 => 'bountiful maintenance oil',
+      ),
+      'Gain Concentration Equal to 3% of Your Precision | Gain Healing Power Equal to 3% of Your Precision' => 
+      array (
+        0 => 'furious maintenance oil',
+      ),
+      'Gain Ferocity Equal to 3% of Your Precision | Gain Power Equal to 3% of Your Precision' => 
+      array (
+        0 => 'furious sharpening stone',
+      ),
+      'Gain Power Equal to 6% of Your Healing Power | Gain Power Equal to 8% of Your Concentration' => 
+      array (
+        0 => 'bountiful sharpening stone',
+      ),
+      'Healing effectiveness is halved.' => 
+      array (
+        0 => 'bloodstone pot pie',
+      ),
+      '+100 Concentration | Swiftness for 30 Seconds on Kill' => 
+      array (
+        0 => 'spring roll',
+      ),
+      '+100 Concentration | 33% Chance for Might (5 Seconds) on Critical Hit' => 
+      array (
+        0 => 'fried golden dumpling',
+      ),
+      '+10% Healing Effectiveness (Outgoing) | +100 Healing Power' => 
+      array (
+        0 => 'delicious rice ball',
+      ),
+      '+140 Condition Damage for 30 seconds on Kill | +200 Power for 30 seconds on Kill' => 
+      array (
+        0 => 'steamed red dumpling',
+      ),
+      '+70 Expertise | -20% Incoming Condition Duration' => 
+      array (
+        0 => 'sweet bean bun',
+      ),
+      'Grants 10 agony resistance.' => 
+      array (
+        0 => 'anguished tear of alba',
+      ),
+      'Gain 100 Power When Health above 90%' => 
+      array (
+        0 => 'thesis on studied strength',
+        1 => 'writ of studied strength',
+      ),
+      'Gain 120 Condition Damage When Health above 90%' => 
+      array (
+        0 => 'thesis on calculated malice',
+        1 => 'writ of calculated malice',
+      ),
+      'Gain 160 Condition Damage When Health above 90%' => 
+      array (
+        0 => 'thesis on learned malice',
+        1 => 'writ of learned malice',
+      ),
+      'Gain 60 Power When Health above 90%' => 
+      array (
+        0 => 'thesis on strength',
+        1 => 'writ of strength',
+      ),
+      'Gain 100 Precision When Health above 90%' => 
+      array (
+        0 => 'writ of studied accuracy',
+        1 => 'thesis on studied accuracy',
+      ),
+      'Outgoing damage in fractals is increased by 3% per stack. Outgoing condition damage in fractals is increased by 3% per stack.' => 
+      array (
+        0 => 'large mist offensive potion',
+        1 => 'mist offensive potion',
+      ),
+      '+150 Power' => 
+      array (
+        0 => 'plate of jerk poultry',
+      ),
+      'Gain 160 Precision When Health above 90%' => 
+      array (
+        0 => 'thesis on learned accuracy',
+        1 => 'writ of learned accuracy',
+      ),
+      '+100 Power | +70 Healing Power' => 
+      array (
+        0 => 'bowl of passion fruit tapioca pudding',
+      ),
+      'Gain 60 Precision When Health above 90%' => 
+      array (
+        0 => 'writ of accuracy',
+        1 => 'thesis on accuracy',
+      ),
+      'Gain 200 Condition Damage When Health Is above 90%' => 
+      array (
+        0 => 'writ of masterful malice',
+        1 => 'thesis on masterful malice',
+      ),
+      'Gain 40 Condition Damage When Health above 90%' => 
+      array (
+        0 => 'writ of basic malice',
+        1 => 'thesis on basic malice',
+      ),
+      '-10% Incoming Damage | -5% Incoming Condition Damage' => 
+      array (
+        0 => 'bowl of curry mussel soup',
+      ),
+      'Gain 160 Power When Health above 90%' => 
+      array (
+        0 => 'writ of learned strength',
+        1 => 'thesis on learned strength',
+      ),
+      'Gain 60 Condition Damage When Health above 90%' => 
+      array (
+        0 => 'writ of malice',
+        1 => 'thesis on malice',
+      ),
+      'Gain 120 Precision When Health above 90%' => 
+      array (
+        0 => 'writ of calculated accuracy',
+        1 => 'thesis on calculated accuracy',
+      ),
+      'Gain 40 Power When Health above 90%' => 
+      array (
+        0 => 'thesis on basic strength',
+        1 => 'writ of basic strength',
+      ),
+      'Gain 200 Power When Health above 90%' => 
+      array (
+        0 => 'writ of masterful strength',
+        1 => 'thesis on masterful strength',
+      ),
+      '+70 Toughness | -10% Incoming Damage' => 
+      array (
+        0 => 'bowl of lemongrass mussel pasta',
+      ),
+      '+150 Vitality' => 
+      array (
+        0 => 'pact ration',
+        1 => 'order of whispers rations',
+        2 => 'vigil rations',
+        3 => 'priory rations',
+        4 => 'flatbread',
+      ),
+      'Gain 40 Precision When Health above 90%' => 
+      array (
+        0 => 'writ of basic accuracy',
+        1 => 'thesis on basic accuracy',
+      ),
+      '+200 Power for 10 Seconds on Using a Heal Skill (Cooldown: 20 seconds) | +70 Precision' => 
+      array (
+        0 => 'jerk poultry and nopal flatbread sandwich',
+      ),
+      'Movement Speed in fractals is increased by 5% per stack. Endurance recharge rate in fractals is increased by 10% per stack.' => 
+      array (
+        0 => 'mist mobility potion',
+        1 => 'large mist mobility potion',
+      ),
+      '+150 Power and Condition Damage for 30 Seconds on Kill' => 
+      array (
+        0 => 'piece of undersea wurm sushi',
+      ),
+      'Incoming damage in fractals is reduced by 5% per stack.' => 
+      array (
+        0 => 'mist defensive potion',
+        1 => 'large mist defensive potion',
+      ),
+      'Gain 120 Power When Health above 90%' => 
+      array (
+        0 => 'thesis on calculated strength',
+        1 => 'writ of calculated strength',
+      ),
+      '+200 Toughness for 10 Seconds on Using a Heal Skill (Cooldown: 20 seconds) | +70 Healing Power' => 
+      array (
+        0 => 'cheesy cassava roll',
+      ),
+      '+70 Vitality | -10% Incoming Damage' => 
+      array (
+        0 => 'bowl of mussel soup',
+      ),
+      '+70 Concentration | -10% Incoming Damage' => 
+      array (
+        0 => 'plate of mussels gnashblade',
+      ),
+      '+150 Precision' => 
+      array (
+        0 => 'bowl of sawgill mushroom risotto',
+      ),
+      'Gain 100 Condition Damage When Health above 90%' => 
+      array (
+        0 => 'writ of studied malice',
+        1 => 'thesis on studied malice',
+      ),
+      '+70 Power | 66% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'slice of allspice cake',
+      ),
+      '+100 Condition Damage | +70 Healing Power' => 
+      array (
+        0 => 'bowl of prickly pear tapioca pudding',
+        1 => 'saffron mussels',
+      ),
+      '+150 Power and Vitality for 30 Seconds on Kill' => 
+      array (
+        0 => 'jerk poultry flatbread sandwich',
+      ),
+      '+70 Condition Damage | 66% Chance to Steal Life on Critical Hit' => 
+      array (
+        0 => 'slice of allspice cake with ice cream',
+      ),
+      '+100 Toughness | +70 Healing Power' => 
+      array (
+        0 => 'bowl of chocolate tapioca pudding',
+      ),
+      'Gain 200 Precision When Health above 90%' => 
+      array (
+        0 => 'thesis on masterful accuracy',
+        1 => 'writ of masterful accuracy',
+      ),
+      '+ 10% Outgoing Healing | +200 Healing Power for 10 Seconds on Using a Heal Skill (Cooldown: 20 seconds)' => 
+      array (
+        0 => 'bowl of tapioca pudding',
+      ),
+      'Gain Power Equal to 2% of Your Toughness | Gain Power Equal to 2% of Your Vitality' => 
+      array (
+        0 => 'compact hardened sharpening stone',
+      ),
+      '+160 Power when Health below 50% | +80 Vitality' => 
+      array (
+        0 => 'canned tarragon stuffed poultry',
+      ),
+      'Gain Condition Damage Equal to 2% of Your Toughness | Gain Condition Damage Equal to 2% of Your Vitality' => 
+      array (
+        0 => 'compact quality tuning crystal',
+      ),
+      '+30% Endurance Regeneration | 80% Chance to Gain Might on Dodge' => 
+      array (
+        0 => 'can of meat and winter vegetable stew',
+      ),
+      '+4% Damage while Moving | 50% Chance to Gain Swiftness on Kill' => 
+      array (
+        0 => 'can of asparagus and sage salad',
+      ),
+      '+60 Healing | 80% Chance to Remove a Condition Using a Heal Skill' => 
+      array (
+        0 => 'can of hearty poultry soup',
+      ),
+      'Gain Concentration Equal to 2% of Your Toughness | Gain Concentration Equal to 2% of Your Vitality' => 
+      array (
+        0 => 'compact quality maintenance oil',
+      ),
+      '+70 Ferocity | 100% Chance to Gain Fury on Kill' => 
+      array (
+        0 => 'plate of sweet curried mussels',
+      ),
+      '+100 Ferocity | 28% Chance to Gain Might on Critical Hit' => 
+      array (
+        0 => 'winterberry sorbet',
+      ),
+      '+100 Precision | +70 Healing Power' => 
+      array (
+        0 => 'lake doric mussels',
+      ),
+      'Gain Power Equal to 3% of Your Toughness | Gain Power Equal to 3% of Your Vitality' => 
+      array (
+        0 => 'magnanimous sharpening stone',
+      ),
+      'Gain Condition Damage Equal to 3% of Your Toughness | Gain Condition Damage Equal to 3% of Your Vitality' => 
+      array (
+        0 => 'magnanimous tuning crystal',
+      ),
+      'Gain Concentration Equal to 3% of Your Toughness | Gain Concentration Equal to 3% of Your Vitality' => 
+      array (
+        0 => 'magnanimous maintenance oil',
+      ),
+      '+10% Damage Reduction | +70 Expertise' => 
+      array (
+        0 => 'oysters gnashblade',
+      ),
+      '+10% Damage Reduction' => 
+      array (
+        0 => 'fried oysters',
+      ),
+      '+10% Damage Reduction | +70 Healing Power' => 
+      array (
+        0 => 'oysters with pesto sauce',
+      ),
+      '+10% Damage Reduction | +70 Ferocity' => 
+      array (
+        0 => 'oysters with zesty sauce',
+      ),
+      '+10% Damage Reduction | +70 Power' => 
+      array (
+        0 => 'fried oyster sandwich',
+      ),
+      '+10% Damage Reduction | +70 Condition Damage' => 
+      array (
+        0 => 'oysters with spicy sauce',
+      ),
+      '+10% Damage Reduction | +70 Precision' => 
+      array (
+        0 => 'oysters with cocktail sauce',
+      ),
+    ),
+    'byname' => 
+    array (
+      'extended potion of undead slaying' => '+10% Damage vs. Undead | -10% Damage from Undead',
+      'extended potion of nightmare court slaying' => '+10% Damage vs. Nightmare Court | -10% Damage from Nightmare Court',
+      'extended potion of sons of svanir slaying' => '+10% Damage vs. Sons of Svanir | -10% Damage from Sons of Svanir',
+      'extended potion of outlaw slaying' => '+10% Damage vs. Outlaws | -10% Damage from Outlaws',
+      'extended potion of flame legion slaying' => '+10% Damage vs. Flame Legion | -10% Damage from Flame Legion',
+      'extended potion of inquest slaying' => '+10% Damage vs. Inquest | -10% Damage from Inquest',
+      'extended potion of dredge slaying' => '+10% Damage vs. Dredge | -10% Damage from Dredge',
+      'extended potion of ghost slaying' => '+10% Damage vs. Ghosts | -10% Damage from Ghosts',
+      'prismatic soylent' => '+30 Healing',
+      'flask of emergency supplies' => '28% Chance to Gain Swiftness on Kill',
+      'slice of eda\'s apple pie' => '+20 Healing',
+      'glass of melon juice' => '20% Chance to Gain Health on Kill',
+      'heart-shaped cookie' => 'Gain Health Every Second',
+      'krewe bar' => '+20 Vitality',
+      'seraph standard ration' => 'Gain Health Every Second',
+      'prototype nutriment' => '+20 Healing',
+      'petri dish delight' => '+40 Expertise',
+      't-bone steak' => '+20 Power',
+      'experimental skritt wafer' => 'Gain Health Every Second',
+      'crunchy firefly snack' => '+20 Expertise',
+      'slice of rainbow cake' => '20% Chance to Steal Life on Critical Hit',
+      'cupcake' => '28% Chance to Steal Life on Critical Hit',
+      'experimental remnant' => '+4% Damage While Moving | 50% to Gain Swiftness on Kill',
+      'aquatic elixir' => '20% Chance to Gain Swiftness on Kill',
+      'drake steak' => '+3% Burning Duration',
+      'moa haunch' => '+40 Power for 30 Seconds on Kill',
+      'stick of mystery meat' => '+30 Power',
+      'jug of autumn nectar' => '-4% Incoming Condition Duration',
+      'seared beef steak' => '+20 condition damage',
+      'wolf offering' => 'Your Vitality is increased.',
+      'cooked crawdad' => '-6% Incoming Damage While Stunned, Knocked Down, or Knocked Back',
+      'cooked fish steak' => '-8% Incoming Stun Duration',
+      'grumble cake' => '+20 Vitality',
+      'bear offering' => 'Your toughness is increased.',
+      'bit of enchanted clam bait' => '-14% Incoming Condition Duration | -18% Incoming Damage while Stunned, Knocked Down, or Knocked Back',
+      'snow leopard offering' => 'Your power is increased.',
+      'slice of watermelon' => '+20% Downed Health',
+      'ogre pet snack' => '+20 condition damage',
+      'raven offering' => 'Your attacks are more precise.',
+      'strip of boar jerky' => '+20 Vitality',
+      'boiled crawdad' => '+40 Precision | +50 Toughness',
+      'griffon egg' => '+60 Power for 30 Seconds on Kill',
+      'blueberry muffin' => '+20 Toughness',
+      'grawl snack' => '-4% Incoming Condition Duration',
+      'magical fruit' => '+40 Condition Damage for 30 Seconds on Kill',
+      'fish steak' => '+30 Vitality',
+      'pickled wurm egg' => '+20 Power',
+      'poached griffon egg' => '30% Chance to Gain Might on Dodge',
+      'strip of dolyak jerky' => '20% Chance to Gain Might on Dodge',
+      'variloo\'s swift algae snack' => '+14% Damage While Downed | +80% Downed Health',
+      'rabbit offering' => '+20% Downed Health',
+      'blackened fish steak' => '+30 Toughness',
+      'bowl of wurm meat stew' => '-4% Incoming Condition Duration',
+      'bowl of kraitweed salad' => '30% Chance to Remove a Condition on Using a Heal Skill',
+      'bowl of kappa soup' => '30% Chance to Gain Might on Dodge',
+      'bowl of overlake soup' => '+30 Condition Damage',
+      'bowl of skalefin soup' => '+40 Ferocity | +50 Precision',
+      'loaf of shaemoor bread' => '-8% Incoming Stun Duration',
+      'curry bun' => '+30 Vitality',
+      'loaf of travelers bread' => '+20 Vitality',
+      'red bean cake' => '+40 Toughness | +50 Vitality',
+      'jar of juniberry jam' => '+30 Condition Damage',
+      'peeled spikeroot fruit' => '+20 condition damage',
+      'quaggan fish snack' => '+20 Vitality',
+      'roasted aloe seed' => '20% Chance to Remove a Condition on Using a Heal Skill',
+      'stick of cotton candy' => 'Gain Health Every Second',
+      'loaf of kodan bread' => '-16% Incoming Stun Duration',
+      'drottot\'s poached egg' => '+20 Power',
+      'stranglebloom heart' => '+20 Healing',
+      'crab cake' => '+120 Power When Health below 50% | +60 Vitality',
+      'seraph spicy ration' => 'Gain Health Every Second',
+      'slice of ice worm sashimi' => '+60 Vitality | +80 Precision',
+      'bowl of meaty wurm surprise' => '+3% Burning Duration',
+      'shiverpeak popper' => '+40 Vitality | Gain Health Every Second',
+      'bowl of ice wurm bisque' => '+30 Precision',
+      'delicious cave spore' => '+30 Healing',
+      'strip of venison jerky' => '+30 Vitality',
+      'slice of vigil hard tack' => '+50 Vitality | Gain Health Every Second',
+      'moa egg omelet' => '-8% Incoming Condition Duration',
+      'bowl of fly soup' => '+50 Condition Damage | +60 Expertise',
+      'blessing of azantil' => '+50 Precision | +60 Toughness',
+      'poached salmon filet' => '+20 Toughness',
+      'shiverpeak ration' => 'Gain Health Every Second',
+      'dredge worker ration' => '+40 Vitality | Gain Health Every Second',
+      'standard pact ration' => '+60 Vitality | Gain Health Every Second',
+      'bowl of gladiator gruel' => '+40 Precision | +50 Toughness',
+      'murrellow stimulant snack' => '+40 Precision | +50 Healing',
+      'icy fish snack' => '+160 Power while Health Is Below 50% | +80 Vitality',
+      'mined edible root' => '+60 Healing Power | 80% Chance to Gain Health on Kill',
+      'crab food' => '+40 Vitality | +50 Condition Damage',
+      'pirate hard tack' => '+40 Vitality | Gain Health Every Second',
+      'healing salve' => 'Gain Health Every Second',
+      'kodan incense' => '+20 Precision',
+      'explorers kit' => '12% Chance to Gain Swiftness on Kill',
+      'potion of azantil' => '+7% Damage vs. Undead | -4% Damage from Undead',
+      'undead battle potion' => '+7% Damage vs. Undead | -4% Damage from Undead',
+      'weak potion of flame legion slaying' => '+3% Damage vs. Flame Legion',
+      'weak potion of centaur slaying' => '+3% Damage vs. Centaur',
+      'weak potion of outlaw slaying' => '+3% Damage vs. Outlaws',
+      'weak potion of nightmare court slaying' => '+3% Damage vs. Nightmare Court',
+      'weak potion of sons of svanir slaying' => '+3% Damage vs. Sons of Svanir',
+      'weak potion of destroyer slaying' => '+3% Damage vs. Destroyers',
+      'weak potion of elemental slaying' => '+3% Damage vs. Elementals',
+      'weak potion of demon slaying' => '+3% Damage vs. Demons',
+      'weak potion of inquest slaying' => '+3% Damage vs. Inquest',
+      'weak potion of ogre slaying' => '+3% Damage vs. Ogres',
+      'weak potion of ice brood slaying' => '+3% Damage vs. Ice Brood',
+      'weak potion of grawl slaying' => '+3% Damage vs. Grawl',
+      'weak potion of krait slaying' => '+3% Damage vs. Krait',
+      'weak potion of dredge slaying' => '+3% Damage vs. Dredge',
+      'weak potion of undead slaying' => '+3% Damage vs. Undead',
+      'minor potion of flame legion slaying' => '+5% Damage vs. Flame Legion',
+      'minor potion of centaur slaying' => '+5% Damage vs. Centaur',
+      'minor potion of outlaw slaying' => '+5% damage vs outlaws',
+      'minor potion of nightmare court slaying' => '+5% Damage vs. Nightmare Court',
+      'minor potion of sons of svanir slaying' => '+5% Damage vs. Sons of Svanir',
+      'minor potion of destroyer slaying' => '+5% Damage vs. Destroyers',
+      'minor potion of elemental slaying' => '+5% Damage vs. Elementals',
+      'minor potion of demon slaying' => '+5% Damage vs. Demons',
+      'minor potion of inquest slaying' => '+5% Damage vs. Inquest',
+      'minor potion of ogre slaying' => '+5% Damage vs. Ogres',
+      'minor potion of ice brood slaying' => '+5% Damage vs. Ice Brood',
+      'minor potion of grawl slaying' => '+5% Damage vs. Grawl',
+      'minor potion of krait slaying' => '+5% Damage vs. Krait',
+      'minor potion of dredge slaying' => '+5% Damage vs. Dredge',
+      'minor potion of undead slaying' => '+5% Damage vs. Undead',
+      'potion of flame legion slaying' => '+7% Damage vs. Flame Legion | -4% Damage from Flame Legion',
+      'potion of centaur slaying' => '+7% Damage vs. Centaur | -4% Damage from Centaur',
+      'potion of outlaw slaying' => '+7% Damage vs. Outlaws | -4% Damage from Outlaws',
+      'potion of nightmare court slaying' => '+7% Damage vs. Nightmare Court | -4% Damage from Nightmare Court',
+      'potion of sons of svanir slaying' => '+7% Damage vs. Sons of Svanir | -4% Damage from Sons of Svanir',
+      'potion of destroyer slaying' => '+7% Damage vs. Destroyers | -4% Damage from Destroyers',
+      'potion of elemental slaying' => '+7% damage vs elementals | -4% damage from elementals',
+      'potion of demon slaying' => '+7% Damage vs. Demons | -4% Damage from Demons',
+      'potion of inquest slaying' => '+7% Damage vs. Inquest | -4% Damage from Inquest',
+      'potion of ogre slaying' => '+7% Damage vs. Ogre | -4% Damage from Ogre',
+      'potion of ice brood slaying' => '+7% Damage vs. Ice Brood | -4% Damage from Ice Brood',
+      'potion of grawl slaying' => '+7% Damage vs. Grawl | -4% Damage from Grawl',
+      'potion of krait slaying' => '+7% Damage vs. Krait | -4% Damage from Krait',
+      'potion of dredge slaying' => '+7% Damage vs. Dredge | -4% Damage from Dredge',
+      'potion of undead slaying' => '+7% Damage vs. Undead | -4% Damage from Undead',
+      'strong potion of flame legion slaying' => '+8% Damage vs. Flame Legion | -6% Damage from Flame Legion',
+      'strong potion of centaur slaying' => '+8% Damage vs. Centaur | -6% Damage from Centaur',
+      'strong potion of outlaw slaying' => '+8% Damage vs. Outlaws | -6% Damage from Outlaws',
+      'strong potion of nightmare court slaying' => '+8% Damage vs. Nightmare Court | -6% Damage from Nightmare Court',
+      'strong potion of sons of svanir slaying' => '+8% Damage vs. Sons of Svanir | -6% Damage from Sons of Svanir',
+      'strong potion of destroyer slaying' => '+8% Damage vs. Destroyers | -6% Damage from Destroyers',
+      'strong potion of elemental slaying' => '+8% damage vs elementals | -6% damage from elementals',
+      'strong potion of demon slaying' => '+8% Damage vs. Demons | -6% Damage from Demons',
+      'strong potion of inquest slaying' => '+8% Damage vs. Inquest | -6% Damage from Inquest',
+      'strong potion of ogre slaying' => '+8% Damage vs. Ogres | -6% Damage from Ogres',
+      'strong potion of ice brood slaying' => '+8% Damage vs. Ice Brood | -6% Damage from Ice Brood',
+      'strong potion of grawl slaying' => '+8% Damage vs. Grawl | -6% Damage from Grawl',
+      'strong potion of krait slaying' => '+8% Damage vs. Krait | -6% Damage from Krait',
+      'strong potion of dredge slaying' => '+8% Damage vs. Dredge | -6% Damage from Dredge',
+      'strong potion of undead slaying' => '+8% Damage vs. Undead | -6% Damage from Undead',
+      'potent potion of flame legion slaying' => '+9% Damage vs. Flame Legion | -8% Damage from Flame Legion',
+      'potent potion of centaur slaying' => '+9% Damage vs. Centaur | -8% Damage from Centaur',
+      'potent potion of outlaw slaying' => '+9% Damage vs. Outlaws | -8% Damage from Outlaws',
+      'potent potion of nightmare court slaying' => '+9% Damage vs. Nightmare Court | -8% Damage from Nightmare Court',
+      'potent potion of sons of svanir slaying' => '+9% Damage vs. Sons of Svanir | -8% Damage from Sons of Svanir',
+      'potent potion of destroyer slaying' => '+9% Damage vs. Destroyers | -8% Damage from Destroyers',
+      'potent potion of elemental slaying' => '+9% Damage vs. Elementals | -8% Damage from Elementals',
+      'potent potion of demon slaying' => '+9% Damage vs. Demons | -8% Damage from Demons',
+      'potent potion of inquest slaying' => '+9% Damage vs. Inquest | -8% Damage from Inquest',
+      'potent potion of ogre slaying' => '+9% Damage vs. Ogres | -8% Damage from Ogres',
+      'potent potion of ice brood slaying' => '+9% Damage vs. Ice Brood | -8% Damage from Ice Brood',
+      'potent potion of grawl slaying' => '+9% Damage vs. Grawl | -8% Damage from Grawl',
+      'potent potion of krait slaying' => '+9% Damage vs. Krait | -8% Damage from Krait',
+      'potent potion of dredge slaying' => '+9% Damage vs. Dredge | -8% Damage from Dredge',
+      'potent potion of undead slaying' => '+9% Damage vs. Undead | -8% Damage from Undead',
+      'powerful potion of flame legion slaying' => '+10% Damage vs. Flame Legion | -10% Damage from Flame Legion',
+      'powerful potion of centaur slaying' => '+10% Damage vs. Centaur | -10% Damage from Centaur',
+      'powerful potion of outlaw slaying' => '+10% Damage vs. Outlaws | -10% Damage from Outlaws',
+      'powerful potion of nightmare court slaying' => '+10% Damage vs. Nightmare Court | -10% Damage from Nightmare Court',
+      'powerful potion of sons of svanir slaying' => '+10% Damage vs. Sons of Svanir | -10% Damage from Sons of Svanir',
+      'powerful potion of destroyer slaying' => '+10% Damage vs. Destroyers | -10% Damage from Destroyers',
+      'powerful potion of elemental slaying' => '+10% Damage vs. Elementals | -10% Damage from Elementals',
+      'powerful potion of demon slaying' => '+10% Damage vs. Demons | -10% Damage from Demons',
+      'powerful potion of inquest slaying' => '+10% Damage vs. Inquest | -10% Damage from Inquest',
+      'powerful potion of ogre slaying' => '+10% Damage vs. Ogres | -10% Damage from Ogres',
+      'powerful potion of ice brood slaying' => '+10% Damage vs. Ice Brood | -10% Damage from Ice Brood',
+      'powerful potion of grawl slaying' => '+10% Damage vs. Grawl | -10% Damage from Grawl',
+      'powerful potion of krait slaying' => '+10% Damage vs. Krait | -10% Damage from Krait',
+      'powerful potion of dredge slaying' => '+10% Damage vs. Dredge | -10% Damage from Dredge',
+      'powerful potion of undead slaying' => '+10% Damage vs. Undead | -10% Damage from Undead',
+      'rough sharpening stone' => 'Gain Power Equal to 1% of Your Precision',
+      'simple sharpening stone' => 'Gain Power Equal to 2% of Your Precision',
+      'standard sharpening stone' => 'Gain Power Equal to 1% of Your Precision | Gain Power Equal to 3% of Your Ferocity',
+      'quality sharpening stone' => 'Gain Power Equal to 2% of Your Ferocity | Gain Power Equal to 2% of Your Precision',
+      'hardened sharpening stone' => 'Gain Power Equal to 2% of Your Precision | Gain Power Equal to 4% of Your Ferocity',
+      'superior sharpening stone' => 'Gain Power Equal to 3% of Your Precision | Gain Power Equal to 6% of Your Ferocity',
+      'apprentice maintenance oil' => 'Gain Concentration Equal to 1% of Your Precision',
+      'journeyman maintenance oil' => 'Gain Concentration Equal to 2% of Your Precision',
+      'standard maintenance oil' => 'Gain Concentration Equal to 1% of Your Precision | Gain Concentration Equal to 2% of Your Healing Power',
+      'artisan maintenance oil' => 'Gain Concentration Equal to 2% of Your Healing Power | Gain Concentration Equal to 2% of Your Precision',
+      'quality maintenance oil' => 'Gain Concentration Equal to 2% of Your Precision | Gain Concentration Equal to 4% of Your Healing Power',
+      'master maintenance oil' => 'Gain Concentration Equal to 3% of Your Precision | Gain Concentration Equal to 6% of Your Healing Power',
+      'apprentice tuning crystal' => 'Gain Condition Damage Equal to 1% of Your Precision',
+      'journeyman tuning crystal' => 'Gain Condition Damage Equal to 2% of Your Precision',
+      'standard tuning crystal' => 'Gain Condition Damage Equal to 1% of Your Precision | Gain Condition Damage Equal to 3% of Your Expertise',
+      'artisan tuning crystal' => 'Gain Condition Damage Equal to 2% of Your Precision | Gain Condition Damage Equal to 3% of Your Expertise',
+      'quality tuning crystal' => 'Gain Condition Damage Equal to 2% of Your Precision | Gain Condition Damage Equal to 5% of Your Expertise',
+      'master tuning crystal' => 'Gain Condition Damage Equal to 3% of Your Precision | Gain Condition Damage Equal to 8% of Your Expertise',
+      'spicy meat kabob' => '+40 Power for 30 Seconds on Kill',
+      'roasted rutabaga' => '+50 Toughness | -28% Incoming Stun Duration',
+      'bowl of watery mushroom soup' => '+20 Power',
+      'loaf of bread' => '+20 Vitality',
+      'warden ration' => '+20 Power',
+      'bowl of front line stew' => '+20 Healing',
+      'bowl of gelatinous ooze custard' => 'Gain Health Every Second',
+      'rice ball' => '+20 Power',
+      'spinach salad' => '-3% Incoming Condition Duration',
+      'spicy flank steak' => '+20 Power',
+      'bowl of ettin stew' => '20% Chance to Gain Might on Kill',
+      'eda\'s apple pie' => '+20 Power',
+      'bowl of outrider stew' => '-16% Incoming Stun Duration',
+      'loaf of walnut sticky bread' => '+12 vitality',
+      'buttermilk biscuit' => '+20 Vitality',
+      'cup of potato fries' => '-8% Incoming Stun Duration',
+      'handful of bjarni\'s rabbit food' => '+20 Vitality',
+      'cheese triangle' => '-6% Incoming Damage While Stunned, Knocked Down, or Knocked Back',
+      'slice of buttered toast' => '-6% Incoming Damage While Stunned, Knocked Down, or Knocked Back',
+      'bowl of simple salad' => '20% Chance to Gain Swiftness on Kill',
+      'marinated mushroom' => '+40 Condition Damage for 30 Seconds on Kill',
+      'mashed potato' => '-8% Incoming Stun Duration',
+      'slice of garlic bread' => '-10% Incoming Damage While Stunned, Knocked Down, or Knocked Back',
+      'meatball' => '+30 Toughness',
+      'bowl of ascalonian salad' => '28% Chance to Gain Swiftness on Kill',
+      'celebratory steak' => '20% Chance to Gain Might on Kill',
+      'bowl of red meat stock' => '20% Chance to Gain Might on Dodge',
+      'bowl of hearty red meat stew' => '30% Chance to Gain Might on Dodge',
+      'bowl of simple meat stew' => '20% Chance to Gain Might on Dodge',
+      'bowl of poultry stock' => '20% Chance to Remove a Condition on Using a Heal Skill',
+      'bowl of dolyak stew' => '+12 vitality',
+      'bowl of poultry noodle soup' => '20% Chance to Remove a Condition on Using a Heal Skill',
+      'bowl of simple poultry soup' => '-4% Incoming Condition Duration',
+      'bowl of vegetable stock' => '+20 Precision',
+      'bowl of simple vegetable soup' => '+20 Precision',
+      'deluxe burger' => '+40 Precision | +7% Poison Duration',
+      'grilled poultry' => '+20 Vitality',
+      'hamburger' => '+3% Poison Duration',
+      'bowl of cold wurm stew' => '+12 Power',
+      'roasted meaty sandwich' => '+20 Power',
+      'cheeseburger' => '+3% Poison Duration',
+      'poultry piccata' => '+20 Vitality',
+      'stuffed pepper' => '16% Chance to Gain Might on Critical Hit During the Day',
+      'turnip casserole' => '-16% Incoming Stun Duration',
+      'plate of pasta with tomato sauce' => '+20 Toughness',
+      'cheese pizza' => '+20 Expertise',
+      'meatball dinner' => '+30 Toughness',
+      'chocolate cake' => '+5% Chill Duration',
+      'apple pie' => 'Gain Health Every Second',
+      'white cake' => '+3% Chill Duration',
+      'sugar cookie' => '+20 Healing',
+      'banana cream pie' => 'Gain Health Every Second',
+      'handful of trail mix' => '+40 Ferocity | 50% Chance to Gain Might on Kill',
+      'raspberry pie' => '+40 Vitality | Gain Health Every Second',
+      'minotaur steak' => '+50 Ferocity | +60 Precision',
+      'grilled mushroom' => '+20 condition damage',
+      'loaf of banana bread' => '+30 Vitality',
+      'bowl of mashed yams' => '+40 Toughness | -24% Incoming Stun Duration',
+      'divinity stuffed mushroom' => '+100 Condition Damage for 30 Seconds on Kill | +40 Precision',
+      'grilled portobello mushroom' => '+40 Precision | +50 Condition Damage',
+      'bowl of spiced mashed yams' => '+40 Toughness | -24% Incoming Stun Duration',
+      'loaf of zucchini bread' => '+40 Toughness | +50 Vitality',
+      'bowl of salsa' => '+20% Downed Health',
+      'bowl of tasty wurm stew' => '+120 Condition Damage for 30 Seconds on Kill | +50 Precision',
+      'bowl of avocado salsa' => '+50% Downed Health | +6% Damage while Downed',
+      'bowl of coleslaw' => '+2% Damage While Moving | 36% to Gain Swiftness on Kill',
+      'bowl of sauteed zucchini with nutmeg' => '+40 Ferocity | 50% Chance to Gain Might on Kill',
+      'bowl of degun shun stew' => '+30 Ferocity | Day: 12% Chance to Burn on Critical Hit | Night: 12% Chance to Steal Life on Critical Hit',
+      'bowl of tomato soup' => '+30 Precision',
+      'bowl of clam chowder' => '-8% Incoming Condition Duration',
+      'bowl of creamy portobello soup' => '+40 Vitality | +50 Condition Damage',
+      'bowl of tomato zucchini soup' => '+40 Ferocity | +50 Precision',
+      'bowl of fancy creamy mushroom soup' => '+50 Vitality | +60 Condition Damage',
+      'bowl of dilled clam chowder' => '+40 Vitality | -12% Incoming Condition Duration',
+      'bowl of meat and bean chili' => '+5% Burning Duration',
+      'bowl of simple bean chili' => '+12 Ferocity',
+      'sage stuffed poultry' => '+30 Vitality',
+      'bowl of cabbage stirfry' => '+10% to Endurance Regeneration | 50% Chance to Gain Might on Dodge',
+      'veggie burger' => '+30 Condition Damage',
+      'filet of sesame roasted meat' => '+40 Precision | +50 Power',
+      'sesame roasted dinner' => '+100 Power for 30 Seconds on Kill | +40 Ferocity',
+      'filet of rosemary roasted meat' => '+40 Vitality | +50 Power',
+      'pepper steak dinner' => '+60 Power for 30 Seconds on Kill',
+      'apple tart' => 'Gain Health Every Second',
+      'bowl of blueberry apple compote' => '20% Chance to Gain Health on Kill',
+      'bowl of strawberry apple compote' => '30% Chance to Gain Health on Kill',
+      'chocolate chip cookie' => '+40 Precision | +50 Healing',
+      'blueberry pie' => '20% Chance to Steal Life on Critical Hit',
+      'chocolate cherry' => '+50 Concentration',
+      'cherry cookie' => '+40 Vitality | +50 Healing',
+      'cherry pie' => '+40 Precision | 36% Chance to Steal Life on Critical Hit',
+      'grape pie' => '+40 Vitality | Gain Health Every Second',
+      'kastaz roasted poultry' => 'Gain Health Every Second',
+      'blueberry cookie' => '+20 Healing',
+      'strawberry cookie' => '+30 Healing',
+      'veggie pizza' => '+40 Expertise',
+      'bowl of beet and bean stew' => '+30 Precision',
+      'bowl of savory spinach and poultry soup' => '30% Chance to Remove a Condition on Using a Heal Skill',
+      'griffon egg omelet' => '+50 Precision | +60 Power',
+      'bowl of simple meat chili' => '+3% Burning Duration',
+      'strawberry pie' => '28% Chance to Steal Life on Critical Hit',
+      'spinach burger' => '+5% Poison Duration',
+      'pepper steak' => '+30 Power',
+      'sage stuffed mushroom' => '+60 Condition Damage for 30 Seconds on Kill',
+      'bowl of bean salad' => '+30% Downed Health',
+      'bowl of garlic spinach sautee' => '30% Chance to Gain Might on Kill',
+      'bowl of fancy bean chili' => '+20 Ferocity | Day: 8% Chance to Burn on Critical Hit | Night: 8% Chance to Steal Life on Critical Hit',
+      'bowl of cherry vanilla compote' => '+40 Healing Power | 50% Chance to Gain Health on Kill',
+      'cherry tart' => '+40 Power',
+      'chocolate cherry cake' => '+40 Power | +7% Chill Duration',
+      'dilled poultry piccata' => '+50 Vitality | +80 Power When Health below 50%',
+      'mushroom pizza' => '+40 Condition Damage | +50 Expertise',
+      'bowl of krytan meatball dinner' => '+40 Precision | +50 Toughness',
+      'stuffed zucchini' => '24% Chance to Gain Might on Critical Hit during the Day | 24% Chance to Inflict Chill on Critical Hit during the Night',
+      'spicy lime steak' => '+40 Condition Damage | +50 Power',
+      'yam fritter' => '+40 Condition Damage',
+      'loaf of rosemary bread' => '-14% Incoming Damage while Stunned, Knocked Down, or Knocked Back | -6% Incoming Condition Duration',
+      'bowl of kale and poultry soup' => '+40 Healing | 50% Chance to Remove a Condition on Using a Heal Skill',
+      'bowl of kale soup' => '+40 Vitality | +50 Precision',
+      'bowl of zucchini chili' => '+30 Ferocity | Day: 12% Chance to Burn on Critical Hit | Night: 12% Chance to Steal Life on Critical Hit',
+      'bowl of chili and avocado' => '+40 Precision | +7% Burning Duration',
+      'bowl of yam soup' => '+40 Condition Damage | +50 Precision',
+      'bowl of meat and cabbage stew' => '+10% to Endurance Regeneration | 50% Chance to Gain Might on Dodge',
+      'chocolate orange' => '+60 Concentration',
+      'chocolate mint cookie' => '+50 Precision | +60 Healing',
+      'blackberry cookie' => '+50 Vitality | +60 Healing',
+      'pumpkin pie' => '+50 Vitality | Gain Health Every Second',
+      'blackberry pie' => '+50 Precision | 40% Chance to Steal Life on Critical Hit',
+      'bowl of blackberry pear compote' => '+50 Healing Power | 60% Chance to Gain Health on Kill',
+      'ginger pear tart' => '+50 Power',
+      'orange coconut cake' => '+10% Chill Duration | +50 Power',
+      'plate of citrus poultry with almonds' => '+120 Power When Health below 50% | +60 Vitality',
+      'horseradish burger' => '+10% Poison Duration | +50 Precision',
+      'fancy veggie pizza' => '+50 Condition Damage | +60 Expertise',
+      'bowl of mushroom risotto' => '+50 Precision | +60 Condition Damage',
+      'plate of citrus clove meat' => '+50 Condition Damage | +60 Power',
+      'plate of coriander crusted meat' => '+50 Precision | +60 Power',
+      'plate of roast meat with mint sauce' => '+50 Vitality | +60 Power',
+      'plate of coriander crusted meat dinner' => '+120 Power for 30 Seconds on Kill | +50 Ferocity',
+      'bowl of avocado stirfry' => '+50 Power | 60% Chance to Gain Might on Kill',
+      'bowl of chickpea salad' => '+10% Damage While Downed | +60% Downed Health',
+      'chickpea fritter' => '+50 Condition Damage',
+      'slice of pumpkin bread' => '+50 Toughness | +60 Vitality',
+      'bowl of pesto pasta salad' => '+50 Precision | +60 Toughness',
+      'slice of spiced bread' => '-10% Incoming Condition Duration | -16% Incoming Damage while Stunned, Knocked Down, or Knocked Back',
+      'eztlitl stuffed mushroom' => '+120 Condition Damage for 30 Seconds on Kill | +50 Precision',
+      'bowl of cabbage and chickpea salad' => '+3% Damage While Moving | 40% Chance to Gain Swiftness on Kill',
+      'bowl of cauliflower sautee' => '+50 Ferocity | 60% Chance to Gain Might on Kill',
+      'bowl of hummus' => '28% Chance to Gain Might on Critical Hit during the Day | 28% Chance to Inflict Chill on Critical Hit during the Night',
+      'bowl of spiced meat and cabbage stew' => '+20% to Endurance Regeneration | 60% Chance to Gain Might on Dodge',
+      'bowl of spiced veggie chili' => '+20 Ferocity | Day: 14% Chance to Burn on Critical Hit | Night: 14% Chance to Steal Life on Critical Hit',
+      'bowl of spiced meat chili' => '+10% Burning Duration | +50 Precision',
+      'bowl of pumpkin bisque' => '+50 Condition Damage | +60 Precision',
+      'bowl of cauliflower soup' => '+50 Ferocity | +60 Precision',
+      'bowl of chickpea soup' => '+50 Vitality | +60 Precision',
+      'bowl of hearty poultry soup' => '+50 Healing | 60% Chance to Remove a Condition on Using a Heal Skill',
+      'bowl of chickpea and poultry soup' => '+50 Vitality | -16% Incoming Condition Duration',
+      'chocolate raspberry cream' => '+80 Concentration',
+      'chocolate raspberry cookie' => '+60 Precision | +80 Healing',
+      'peach cookie' => '+60 Vitality | +80 Healing',
+      'peach pie' => '+60 Vitality | Gain Health Every Second',
+      'mixed berry pie' => '+60 Precision | 50% Chance to Steal Life on Critical Hit',
+      'raspberry peach compote' => '+60 Healing Power | 80% Chance to Gain Health on Kill',
+      'peach tart' => '+60 Power',
+      'chocolate raspberry cake' => '+12% Chill Duration | +60 Power',
+      'bowl of poultry tarragon pasta' => '+60 Precision | +80 Toughness',
+      'tarragon stuffed poultry' => '+160 Power while Health Is Below 50% | +80 Vitality',
+      'spicy cheeseburger' => '+12% Poison Duration | +60 Precision',
+      'super veggie pizza' => '+60 Condition Damage | +80 Expertise',
+      'bowl of mushroom and asparagus risotto' => '+60 Precision | +80 Condition Damage',
+      'spicier flank steak' => '+60 Condition Damage | +80 Power',
+      'plate of steak and asparagus' => '+60 Precision | +80 Power',
+      'plate of roast meat with braised leeks' => '+60 Vitality | +80 Power',
+      'plate of steak and asparagus dinner' => '+160 Power for 30 Seconds on Kill | +60 Ferocity',
+      'bowl of eggplant stirfry' => '+60 Power | 80% Chance to Gain Might on Kill',
+      'bowl of asparagus and sage salad' => '+4% Damage While Moving | 50% to Gain Swiftness on Kill',
+      'eggplant fritter' => '+60 Condition Damage',
+      'loaf of raspberry peach bread' => '+60 Toughness | +80 Vitality',
+      'loaf of tarragon bread' => '-14% Incoming Condition Duration | -18% Incoming Damage while Stunned, Knocked Down, or Knocked Back',
+      'roasted parsnip' => '+60 Toughness | -36% Incoming Stun Duration',
+      'spicy stuffed mushroom' => '+160 Condition Damage for 30 Seconds on Kill | +60 Precision',
+      'bowl of mango salsa' => '+14% Damage While Downed | +80% Downed Health',
+      'bowl of eggplant sautee' => '+60 Ferocity | 80% Chance to Gain Might on Kill',
+      'roasted artichoke' => '36% Chance to Gain Might on Critical Hit during the Day | 36% Chance to Inflict Chill on Critical Hit during the Night',
+      'bowl of poultry and winter vegetable soup' => '+60 Healing | 80% Chance to Remove a Condition on Using a Heal Skill',
+      'bowl of poultry and leek soup' => '+60 Vitality | -18% Incoming Condition Duration',
+      'bowl of snow truffle soup' => '+60 Vitality | +80 Condition Damage',
+      'bowl of spicy veggie chili' => '+40 Ferocity | Day: 18% Chance to Burn on Critical Hit | Night: 18% Chance to Steal Life on Critical Hit',
+      'bowl of spicy meat chili' => '+12% Burning Duration | +60 Precision',
+      'bowl of potato and leek soup' => '+60 Condition Damage | +80 Precision',
+      'bowl of butternut squash soup' => '+60 Ferocity | +80 Precision',
+      'bowl of artichoke soup' => '+60 Vitality | +80 Precision',
+      'bowl of meat and winter vegetable stew' => '+30% to Endurance Regeneration | 80% Chance to Gain Might on Dodge',
+      'chocolate omnomberry cream' => '+100 Concentration',
+      'spicy chocolate cookie' => '+100 Healing | +70 Precision',
+      'omnomberry cookie' => '+100 Healing | +70 Vitality',
+      'mango pie' => '+70 Vitality | Gain Health Every Second',
+      'omnomberry pie' => '+70 Precision | 66% Chance to Steal Life on Critical Hit',
+      'omnomberry compote' => '+70 Healing Power | 100% Chance to Gain Health on Kill',
+      'omnomberry tart' => '+70 Power',
+      'chocolate omnomberry cake' => '+15% Chill Duration | +70 Power',
+      'bowl of truffle ravioli' => '+100 Toughness | +70 Precision',
+      'plates of lemongrass poultry' => '+100 Vitality | +200 Power when Health below 50%',
+      'fancy truffle burger' => '+15% Poison Duration | +70 Precision',
+      'rare veggie pizza' => '+100 Expertise | +70 Condition Damage',
+      'bowl of truffle risotto' => '+100 Condition Damage | +70 Precision',
+      'plate of fire flank steak' => '+100 Power | +70 Condition Damage',
+      'plate of truffle steak' => '+100 Power | +70 Precision',
+      'plate of orrian steak frittes' => '+100 Power | +70 Vitality',
+      'plate of truffle steak dinner' => '+200 Power for 30 Seconds on Kill | +70 Ferocity',
+      'bowl of lotus stirfry' => '+70 Power | 100% Chance to Gain Might on Kill',
+      'bowl of seaweed salad' => '+5% Damage While Moving | 60% to Gain Swiftness on Kill',
+      'cup of lotus fries' => '+70 Condition Damage',
+      'loaf of omnomberry bread' => '+100 Vitality | +70 Toughness',
+      'loaf of saffron bread' => '-20% Incoming Condition Duration | -20% Incoming Damage while Stunned, Knocked Down, or Knocked Back',
+      'bowl of roasted lotus root' => '+70 Toughness | -40% Incoming Stun Duration',
+      'saffron stuffed mushroom' => '+200 Condition Damage for 30 Seconds on Kill | +70 Precision',
+      'bowl of fire salsa' => '+100% Downed Health | +20% Damage While Downed',
+      'bowl of truffle sautee' => '+70 Ferocity | 100% Chance to Gain Might on Kill',
+      'ghost pepper popper' => '40% Chance to Gain Might on Critical Hit during the Day | 40% Chance to Inflict Chill on Critical Hit during the Night',
+      'bowl of saffron-scented poultry soup' => '+70 Healing | 100% Chance to Remove a Condition on Using a Heal Skill (Cooldown: 10 Seconds)',
+      'bowl of lemongrass poultry soup' => '+70 Vitality | -20% Incoming Condition Duration',
+      'bowl of orrian truffle soup' => '+100 Condition Damage | +70 Vitality',
+      'bowl of fire veggie chili' => '+50 Ferocity | Day: 20% Chance to Burn on Critical Hit | Night: 20% Chance to Steal Life on Critical Hit',
+      'bowl of fire meat chili' => '+15% Burning Duration | +70 Precision',
+      'bowl of fancy potato and leek soup' => '+100 Precision | +70 Condition Damage',
+      'bowl of curry butternut squash soup' => '+100 Precision | +70 Ferocity',
+      'bowl of curry pumpkin soup' => '+100 Precision | +70 Vitality',
+      'bowl of orrian truffle and meat stew' => '+40% to Endurance Regeneration | 100% Chance to Gain Might on Dodge',
+      'bowl of herbed meat stock' => '+10% to Endurance Regeneration | 50% Chance to Gain Might on Dodge',
+      'bowl of herbed poultry stock' => '+40 Healing | 50% Chance to Remove a Condition on Using a Heal Skill',
+      'bowl of herbed vegetable stock' => '+40 Vitality | +50 Precision',
+      'orange cake' => '+10% Chill Duration | +50 Power',
+      'bowl of simple stirfry' => '20% Chance to Gain Might on Kill',
+      'chili pepper popper' => '8% Chance to Gain Might on Critical Hit during the Day',
+      'bowl of basic vegetable soup' => '+12 Ferocity',
+      'bowl of onion soup' => '30% Chance to Gain Might on Dodge',
+      'bowl of basic poultry soup' => '-4% Incoming Condition Duration',
+      'bowl of green bean stew' => '+3% Burning Duration',
+      'slice of cinnamon toast' => '-6% Incoming Damage While Stunned, Knocked Down, or Knocked Back',
+      'cinnamon pinwheel' => '+20 Vitality',
+      'bowl of sauteed carrots' => '20% Chance to Gain Might on Kill',
+      'grilled steak' => '+20 Power',
+      'triktiki omelet' => '+100 Condition Damage for 30 Seconds on Kill | +40 Precision',
+      'bowl of candy corn custard' => 'Gain Health Every Second',
+      'candy corn cookie' => '+40 Precision | +50 Healing',
+      'glazed pumpkin pie' => '+50 Vitality | Gain Health Every Second',
+      'glazed pear tart' => '+50 Power',
+      'glazed peach tart' => '+60 Power',
+      'glazed chocolate raspberry cookie' => '+60 Precision | +80 Healing',
+      'omnomberry ghost' => '+70 Precision | 66% Chance to Steal Life on Critical Hit',
+      'spicy pumpkin cookie' => '+70 Condition Damage',
+      'weak potion of halloween slaying' => '+3% Damage vs. Halloween Creatures',
+      'powerful potion of halloween slaying' => '+10% Damage vs. Halloween Creatures | -10% Damage from Halloween Creatures',
+      'strong potion of halloween slaying' => '+8% Damage vs. Halloween Creatures | -6% Damage from Halloween Creatures',
+      'potent potion of halloween slaying' => '+9% Damage vs. Halloween Creatures | -8% Damage from Halloween Creatures',
+      'minor potion of halloween slaying' => '+5% Damage vs. Halloween Creatures',
+      'potion of halloween slaying' => '+7% Damage vs. Halloween Creatures | -4% Damage from Halloween Creatures',
+      'karka egg omelet' => '+200 Condition Damage for 30 Seconds on Kill | +70 Precision',
+      'passion fruit soufflé' => '+20 Toughness',
+      'passion fruit bar' => '+30 Healing',
+      'bowl of salad a la consortium' => '+40 Condition Damage | +50 Toughness',
+      'orange passion fruit tart' => '+50 Condition Damage | +60 Healing',
+      'raspberry passion fruit compote' => '+60 Condition Damage | +80 Healing',
+      'bowl of tropical fruit salad' => '+100 Healing | +70 Condition Damage',
+      'apple passion fruit pie' => '+20 Healing',
+      'bowl of grilled bananas with passion fruit sauce' => '+30 Toughness',
+      'cherry passion fruit cake' => '+40 Condition Damage | +50 Healing',
+      'passion fruit coconut cookie' => '+50 Condition Damage | +60 Toughness',
+      'stuffed artichoke with tropical dressing' => '+60 Condition Damage | +80 Toughness',
+      'bowl of tropical mousse' => '+100 Toughness | +70 Condition Damage',
+      'bowl of saffron-mango ice cream' => '+100 Healing Power | +70 Toughness',
+      'bowl of peach raspberry swirl ice cream' => '+60 Toughness | +80 Healing Power',
+      'bowl of mint chocolate chip ice cream' => '+50 Toughness | +60 Healing Power',
+      'bowl of ginger-lime ice cream' => '+40 Toughness | +50 Healing Power',
+      'bowl of blueberry chocolate chunk ice cream' => '+30 Healing Power',
+      'bowl of chocolate chip ice cream' => '+20 Healing Power',
+      'bowl of candy corn ice cream' => '+20 Healing Power',
+      'carrot soufflé' => '+200 Power for 30 Seconds on Kill | +70 Ferocity',
+      'bowl of refugee\'s beet soup' => '+100 toughness',
+      'spicy marinated mushroom' => '+100 power | +70 toughness',
+      'plate of frostgorge clams' => '+100 Toughness | +70 Precision',
+      'bowl of garlic kale sautee' => '+100 Expertise | +70 Condition Damage',
+      'mushroom loaf' => '+100 vitality | +70 power',
+      'plate of spicy herbed chicken' => '+100 toughness | +70 power',
+      'bowl of zesty turnip soup' => '+100 vitality',
+      'bowl of sweet and spicy butternut squash soup' => '+100 Power | +70 Ferocity',
+      'potion of karka slaying' => '+8% Damage vs. Karka | -6% Damage from Karka',
+      'potion of karka toughness' => '+150 toughness',
+      'swim speed boost' => 'Your movement speed is increased by 15% while swimming.',
+      'kralkachocolate bar' => '+100 Healing Power | +70 Toughness',
+      'dragonfly cupcake' => '+70 Power',
+      'dragon\'s breath bun' => '+200 Power for 30 Seconds on Kill | +70 Ferocity',
+      'koi cake' => '+100 Expertise | +70 Condition Damage',
+      'slice of candied dragon roll' => '+70 Precision | 66% Chance to Steal Life on Critical Hit',
+      'dragonfish candy' => '+100 Vitality | +200 Power when Health below 50%',
+      'potent master tuning crystal' => 'Gain Condition Damage Equal to 3% of Your Precision | Gain Condition Damage Equal to 8% of Your Expertise',
+      'potent master maintenance oil' => 'Gain Concentration Equal to 3% of Your Precision | Gain Concentration Equal to 6% of Your Healing Power',
+      'potent superior sharpening stone' => 'Gain Power Equal to 3% of Your Precision | Gain Power Equal to 6% of Your Ferocity',
+      'dragon\'s revelry starcake' => '+45 All Attributes',
+      'toxic sharpening stone' => 'Gain Power Equal to 6% of Your Condition Damage | Gain Power Equal to 8% of Your Expertise',
+      'toxic maintenance oil' => 'Gain Concentration Equal to 3% of Your Power | Gain Concentration Equal to 6% of Your Condition Damage',
+      'toxic focusing crystal' => 'Gain Condition Damage Equal to 3% of Your Power | Gain Condition Damage Equal to 3% of Your Precision',
+      'bowl of marjory\'s experimental chili' => '+50 Condition Damage | +50 Power | Gain Might When Using a Heal Skill',
+      'powerful potion of slaying scarlet\'s armies' => '+10% damage vs. Toxic Alliance, Watchwork, Aetherblade, and Molten Alliance | -10% damage from Toxic Alliance, Watchwork, Aetherblade, and Molten Alliance',
+      'swift moa feather' => 'Movement speed increased.',
+      'bowl of cactus fruit salad' => '+100 Expertise | 33% Chance to Steal Life on Critical Hit',
+      'prickly pear stuffed nopal' => '+100 Expertise | +70 Power',
+      'loaf of candy cactus cornbread' => '+100 Concentration | +70 Toughness',
+      'bowl of sweet and spicy beans' => '+100 Expertise | +70 Power',
+      'bowl of black pepper cactus salad' => '+70 Toughness | Gain Health Every Second',
+      'bowl of nopalitos sauté' => '+100 Concentration | +70 Toughness',
+      'bowl of cactus soup' => '+70 Toughness | Gain Health Every Second',
+      'plate of roasted cactus' => '+100 Ferocity | 33% Chance to Gain Might on Critical Hit',
+      'prickly pear pie' => '+100 Expertise | 33% Chance to Steal Life on Critical Hit',
+      'bowl of prickly pear sorbet' => '+80 Ferocity | 28% Chance to Gain Might on Critical Hit',
+      'ogre sharpening stone' => 'Gain Power Equal to 3% of Your Precision | Gain Power Equal to 6% of Your Ferocity',
+      'hylek maintenance oil' => 'Gain Concentration Equal to 3% of Your Precision | Gain Concentration Equal to 6% of Your Healing Power',
+      'krait tuning crystal' => 'Gain Condition Damage Equal to 3% of Your Precision | Gain Condition Damage Equal to 8% of Your Expertise',
+      'foil-wrapped candy' => 'Grants a random boost that stacks duration if the same boost is awarded more than once.',
+      'lump of crystallized nougat' => 'Ghoul\'s Grasp increases condition damage, precision, and toughness. | Reviving an ally grants Ghoul\'s Grasp to both you and your revived ally.',
+      'sharpening skull' => 'Feline Fury increases all attributes by a small amount. | Reviving an ally grants Feline Fury to both you and your revived ally.',
+      'flask of pumpkin oil' => 'Pumpkin Prowess increases power, toughness, and vitality. | Reviving an ally grants Pumpkin Prowess to both you and your revived ally.',
+      'bountiful tuning crystal' => 'Gain Condition Damage Equal to 6% of Your Healing Power | Gain Condition Damage Equal to 8% of Your Concentration',
+      'furious tuning crystal' => 'Gain Condition Damage Equal to 3% of Your Precision | Gain Expertise Equal to 3% of Your Precision',
+      'bountiful maintenance oil' => 'Gain 0.6% Outgoing Healing Increase for Every 100 Healing Power | Gain 0.8% Outgoing Healing Increase for Every 100 Concentration',
+      'furious maintenance oil' => 'Gain Concentration Equal to 3% of Your Precision | Gain Healing Power Equal to 3% of Your Precision',
+      'furious sharpening stone' => 'Gain Ferocity Equal to 3% of Your Precision | Gain Power Equal to 3% of Your Precision',
+      'bountiful sharpening stone' => 'Gain Power Equal to 6% of Your Healing Power | Gain Power Equal to 8% of Your Concentration',
+      'bloodstone pot pie' => 'Healing effectiveness is halved.',
+      'spring roll' => '+100 Concentration | Swiftness for 30 Seconds on Kill',
+      'fried golden dumpling' => '+100 Concentration | 33% Chance for Might (5 Seconds) on Critical Hit',
+      'delicious rice ball' => '+10% Healing Effectiveness (Outgoing) | +100 Healing Power',
+      'steamed red dumpling' => '+140 Condition Damage for 30 seconds on Kill | +200 Power for 30 seconds on Kill',
+      'sweet bean bun' => '+70 Expertise | -20% Incoming Condition Duration',
+      'karka cake' => '+200 Condition Damage for 30 Seconds on Kill | +70 Precision',
+      'anguished tear of alba' => 'Grants 10 agony resistance.',
+      'thesis on studied strength' => 'Gain 100 Power When Health above 90%',
+      'writ of studied strength' => 'Gain 100 Power When Health above 90%',
+      'thesis on calculated malice' => 'Gain 120 Condition Damage When Health above 90%',
+      'thesis on learned malice' => 'Gain 160 Condition Damage When Health above 90%',
+      'gummy wurms' => '+100 Healing | +70 Condition Damage',
+      'thesis on strength' => 'Gain 60 Power When Health above 90%',
+      'writ of studied accuracy' => 'Gain 100 Precision When Health above 90%',
+      'large mist offensive potion' => 'Outgoing damage in fractals is increased by 3% per stack. Outgoing condition damage in fractals is increased by 3% per stack.',
+      'plate of jerk poultry' => '+150 Power',
+      'thesis on learned accuracy' => 'Gain 160 Precision When Health above 90%',
+      'bowl of passion fruit tapioca pudding' => '+100 Power | +70 Healing Power',
+      'indigo mushroom milkshake' => '+70 Precision | 66% Chance to Steal Life on Critical Hit',
+      'writ of strength' => 'Gain 60 Power When Health above 90%',
+      'writ of accuracy' => 'Gain 60 Precision When Health above 90%',
+      'bowl of sharkfin soup' => '+12 Power',
+      'writ of masterful malice' => 'Gain 200 Condition Damage When Health Is above 90%',
+      'writ of basic malice' => 'Gain 40 Condition Damage When Health above 90%',
+      'writ of calculated malice' => 'Gain 120 Condition Damage When Health above 90%',
+      'bowl of curry mussel soup' => '-10% Incoming Damage | -5% Incoming Condition Damage',
+      'crunchy grasshopper' => '+100 Power | +70 Vitality',
+      'piece of orrian sea urchin roe sushi' => '+200 Condition Damage for 30 Seconds on Kill | +70 Precision',
+      'mashed purple potatoes' => '+70 Toughness | -40% Incoming Stun Duration',
+      'writ of learned strength' => 'Gain 160 Power When Health above 90%',
+      'writ of malice' => 'Gain 60 Condition Damage When Health above 90%',
+      'writ of calculated accuracy' => 'Gain 120 Precision When Health above 90%',
+      'thesis on basic strength' => 'Gain 40 Power When Health above 90%',
+      'mist offensive potion' => 'Outgoing damage in fractals is increased by 3% per stack. Outgoing condition damage in fractals is increased by 3% per stack.',
+      'thesis on learned strength' => 'Gain 160 Power When Health above 90%',
+      'writ of masterful strength' => 'Gain 200 Power When Health above 90%',
+      'bowl of lemongrass mussel pasta' => '+70 Toughness | -10% Incoming Damage',
+      'writ of basic strength' => 'Gain 40 Power When Health above 90%',
+      'blood orange' => '+100 Expertise | +70 Condition Damage',
+      'honeypot ant' => '+100 Healing | +70 Vitality',
+      'pact ration' => '+150 Vitality',
+      'writ of basic accuracy' => 'Gain 40 Precision When Health above 90%',
+      'order of whispers rations' => '+150 Vitality',
+      'jerk poultry and nopal flatbread sandwich' => '+200 Power for 10 Seconds on Using a Heal Skill (Cooldown: 20 seconds) | +70 Precision',
+      'mist mobility potion' => 'Movement Speed in fractals is increased by 5% per stack. Endurance recharge rate in fractals is increased by 10% per stack.',
+      'rock candy' => '+70 Toughness | Gain Health Every Second',
+      'piece of undersea wurm sushi' => '+150 Power and Condition Damage for 30 Seconds on Kill',
+      'mist defensive potion' => 'Incoming damage in fractals is reduced by 5% per stack.',
+      'thesis on calculated strength' => 'Gain 120 Power When Health above 90%',
+      'vigil rations' => '+150 Vitality',
+      'cheesy cassava roll' => '+200 Toughness for 10 Seconds on Using a Heal Skill (Cooldown: 20 seconds) | +70 Healing Power',
+      'bowl of mussel soup' => '+70 Vitality | -10% Incoming Damage',
+      'plate of mussels gnashblade' => '+70 Concentration | -10% Incoming Damage',
+      'bowl of sawgill mushroom risotto' => '+150 Precision',
+      'writ of studied malice' => 'Gain 100 Condition Damage When Health above 90%',
+      'swiftly scrambled eggs' => '+5% Damage While Moving | 60% to Gain Swiftness on Kill',
+      'thesis on basic accuracy' => 'Gain 40 Precision When Health above 90%',
+      'slice of allspice cake' => '+70 Power | 66% Chance to Steal Life on Critical Hit',
+      'flaming fire flakes' => '+15% Burning Duration | +70 Precision',
+      'thesis on studied accuracy' => 'Gain 100 Precision When Health above 90%',
+      'large mist mobility potion' => 'Movement Speed in fractals is increased by 5% per stack. Endurance recharge rate in fractals is increased by 10% per stack.',
+      'priory rations' => '+150 Vitality',
+      'thesis on malice' => 'Gain 60 Condition Damage When Health above 90%',
+      'writ of learned accuracy' => 'Gain 160 Precision When Health above 90%',
+      'thesis on accuracy' => 'Gain 60 Precision When Health above 90%',
+      'plate of mushrooms yakkington' => '+70 Power | 100% Chance to Gain Might on Kill',
+      'bowl of prickly pear tapioca pudding' => '+100 Condition Damage | +70 Healing Power',
+      'large mist defensive potion' => 'Incoming damage in fractals is reduced by 5% per stack.',
+      'jerk poultry flatbread sandwich' => '+150 Power and Vitality for 30 Seconds on Kill',
+      'thesis on basic malice' => 'Gain 40 Condition Damage When Health above 90%',
+      'slice of allspice cake with ice cream' => '+70 Condition Damage | 66% Chance to Steal Life on Critical Hit',
+      'egg in a cloud' => '+70 Ferocity | 100% Chance to Gain Might on Kill',
+      'bowl of chocolate tapioca pudding' => '+100 Toughness | +70 Healing Power',
+      'writ of learned malice' => 'Gain 160 Condition Damage When Health above 90%',
+      'thesis on masterful accuracy' => 'Gain 200 Precision When Health above 90%',
+      'flatbread' => '+150 Vitality',
+      'thesis on masterful malice' => 'Gain 200 Condition Damage When Health Is above 90%',
+      'writ of masterful accuracy' => 'Gain 200 Precision When Health above 90%',
+      'bowl of tapioca pudding' => '+ 10% Outgoing Healing | +200 Healing Power for 10 Seconds on Using a Heal Skill (Cooldown: 20 seconds)',
+      'thesis on calculated accuracy' => 'Gain 120 Precision When Health above 90%',
+      'quiche of darkness' => '+70 Vitality | -20% Incoming Condition Duration',
+      'thesis on studied malice' => 'Gain 100 Condition Damage When Health above 90%',
+      'writ of calculated strength' => 'Gain 120 Power When Health above 90%',
+      'thesis on masterful strength' => 'Gain 200 Power When Health above 90%',
+      'tuning icicle' => 'Gain Condition Damage Equal to 3% of Your Precision | Gain Condition Damage Equal to 8% of Your Expertise',
+      'tin of fruitcake' => 'Gain Power Equal to 3% of Your Precision | Gain Power Equal to 6% of Your Ferocity',
+      'tropical peppermint cake' => '+70 Vitality | Gain Health Every Second',
+      'scoop of mintberry swirl ice cream' => '+70 Precision | 66% Chance to Steal Life on Critical Hit',
+      'peppermint oil' => 'Gain Concentration Equal to 3% of Your Precision | Gain Concentration Equal to 6% of Your Healing Power',
+      'compact hardened sharpening stone' => 'Gain Power Equal to 2% of Your Toughness | Gain Power Equal to 2% of Your Vitality',
+      'canned chocolate raspberry cake' => '+12% Chill Duration | +60 Power',
+      'can of poultry tarragon pasta' => '+60 Precision | +80 Toughness',
+      'can of raspberry peach bread' => '+60 Toughness | +80 Vitality',
+      'can of mango salsa' => '+14% Damage While Downed | +80% Downed Health',
+      'canned tarragon stuffed poultry' => '+160 Power when Health below 50% | +80 Vitality',
+      'canned raspberry peach compote' => '+60 Healing Power | 80% Chance to Gain Health on Kill',
+      'can of poultry and leek soup' => '+60 Vitality | -18% Incoming Condition Duration',
+      'compact quality tuning crystal' => 'Gain Condition Damage Equal to 2% of Your Toughness | Gain Condition Damage Equal to 2% of Your Vitality',
+      'boxed super veggie pizza' => '+60 Condition Damage | +80 Expertise',
+      'can of artichoke soup' => '+60 Vitality | +80 Precision',
+      'canned eggplant fritter' => '+60 Condition Damage',
+      'can of meat and winter vegetable stew' => '+30% Endurance Regeneration | 80% Chance to Gain Might on Dodge',
+      'can of spicy meat chili' => '+12% Burning Duration | +60 Precision',
+      'can of eggplant stir-fry' => '+60 Power | 80% Chance to Gain Might on Kill',
+      'can of asparagus and sage salad' => '+4% Damage while Moving | 50% Chance to Gain Swiftness on Kill',
+      'canned mixed berry pie' => '+60 Precision | 50% Chance to Steal Life on Critical Hit',
+      'boxed chocolate raspberry cream' => '+80 Concentration',
+      'canned spicier flank steak' => '+60 Condition Damage | +80 Power',
+      'can of hearty poultry soup' => '+60 Healing | 80% Chance to Remove a Condition Using a Heal Skill',
+      'canned tarragon bread' => '-14% Incoming Condition Duration | -18% Incoming Damage while Stunned, Knocked Down, or Knocked Back',
+      'boxed spicy cheeseburger' => '+12% Poison Duration | +60 Precision',
+      'can of steak and asparagus' => '+60 Precision | +80 Power',
+      'boxed chocolate raspberry cookie' => '+60 Precision | +80 Healing',
+      'can of eggplant saute' => '+60 Ferocity | 80% Chance to Gain Might on Kill',
+      'canned peach pie filling' => '+60 Vitality | Gain Health Every Second',
+      'can of spicy veggie chili' => '+40 Ferocity | Day: 18% Chance to Burn on Critical Hit | Night: 18% Chance to Steal Life on Critical Hit',
+      'boxed peach cookie' => '+60 Vitality | +80 Healing',
+      'canned spicy stuffed mushroom' => '+160 Condition Damage for 30 Seconds on Kill | +60 Precision',
+      'can of potato and leek soup' => '+60 Condition Damage | +80 Precision',
+      'can of roasted meat with braised leeks' => '+60 Vitality | +80 Power',
+      'can of snow truffle soup' => '+60 Vitality | +80 Condition Damage',
+      'can of butternut squash soup' => '+60 Ferocity | +80 Precision',
+      'can of steak and asparagus dinner' => '+160 Power for 30 Seconds on Kill | +60 Ferocity',
+      'canned peach tart' => '+60 Power',
+      'can of mushroom and asparagus risotto' => '+60 Precision | +80 Condition Damage',
+      'canned stuffed artichoke with tropical dressing' => '+60 Condition Damage | +80 Toughness',
+      'canned raspberry passion fruit compote' => '+60 Condition Damage | +80 Healing',
+      'compact quality maintenance oil' => 'Gain Concentration Equal to 2% of Your Toughness | Gain Concentration Equal to 2% of Your Vitality',
+      'canned roasted artichoke' => '36% Chance to Gain Might on Critical Hit during the Day | 36% Chance to Inflict Chill on Critical Hit during the Night',
+      'plate of sweet curried mussels' => '+70 Ferocity | 100% Chance to Gain Fury on Kill',
+      'winterberry pie' => '+70 Precision | 66% Chance to Steal Life on Critical Hit',
+      'winterberry sorbet' => '+100 Ferocity | 28% Chance to Gain Might on Critical Hit',
+      'steak with winterberry sauce' => '+100 Power | +70 Precision',
+      'bowl of winterberry seaweed salad' => '+5% Damage While Moving | 60% to Gain Swiftness on Kill',
+      'super-hot lemongrass poultry soup' => '+70 Vitality | -20% Incoming Condition Duration',
+      'super-hot poultry and leek soup' => '+60 Vitality | -18% Incoming Condition Duration',
+      'super-hot poultry and winter vegetable soup' => '+60 Healing | 80% Chance to Remove a Condition on Using a Heal Skill',
+      'super-hot saffron-scented poultry soup' => '+70 Healing | 100% Chance to Remove a Condition on Using a Heal Skill (Cooldown: 10 Seconds)',
+      'saffron mussels' => '+100 Condition Damage | +70 Healing Power',
+      'lake doric mussels' => '+100 Precision | +70 Healing Power',
+      'magnanimous sharpening stone' => 'Gain Power Equal to 3% of Your Toughness | Gain Power Equal to 3% of Your Vitality',
+      'magnanimous tuning crystal' => 'Gain Condition Damage Equal to 3% of Your Toughness | Gain Condition Damage Equal to 3% of Your Vitality',
+      'magnanimous maintenance oil' => 'Gain Concentration Equal to 3% of Your Toughness | Gain Concentration Equal to 3% of Your Vitality',
+      'oysters gnashblade' => '+10% Damage Reduction | +70 Expertise',
+      'fried oysters' => '+10% Damage Reduction',
+      'oysters with pesto sauce' => '+10% Damage Reduction | +70 Healing Power',
+      'oysters with zesty sauce' => '+10% Damage Reduction | +70 Ferocity',
+      'fried oyster sandwich' => '+10% Damage Reduction | +70 Power',
+      'oysters with spicy sauce' => '+10% Damage Reduction | +70 Condition Damage',
+      'oysters with cocktail sauce' => '+10% Damage Reduction | +70 Precision',
+      'bag of simple cat food' => '+30 Vitality',
+    ),
+  ),
   'skills' => 
   array (
     '' => 
     array (
-      '' => 
-      array (
-        0 => 39195,
-        1 => 39263,
-      ),
-      '"eye of the storm!"' => 
-      array (
-        0 => 30745,
-      ),
-      '"search and rescue!"' => 
-      array (
-        0 => 30123,
-      ),
-      '"shake it off!"' => 
-      array (
-        0 => 14568,
-      ),
-      '((804376))' => 
-      array (
-        0 => 39011,
-      ),
-      '??' => 
-      array (
-        0 => 38266,
-      ),
-      '[[820442]]' => 
-      array (
-        0 => 41119,
-        1 => 43766,
-      ),
-      'aim-assisted rocket' => 
-      array (
-        0 => 29889,
-      ),
-      'anguished bolt' => 
-      array (
-        0 => 38314,
-      ),
-      'anguished wail' => 
-      array (
-        0 => 37940,
-      ),
-      'annihilate' => 
-      array (
-        0 => 37929,
-        1 => 38208,
-      ),
-      'arcane shield' => 
-      array (
-        0 => 25579,
-      ),
-      'armor of earth' => 
-      array (
-        0 => 5777,
-      ),
-      'astral surge' => 
-      array (
-        0 => 39035,
-        1 => 39185,
-        2 => 39419,
-        3 => 39708,
-        4 => 38867,
-      ),
-      'balanced stance' => 
-      array (
-        0 => 14330,
-      ),
-      'bandage' => 
-      array (
-        0 => 30142,
-      ),
       'bash' => 
       array (
         0 => 14486,
-      ),
-      'beaming smile' => 
-      array (
-        0 => 39238,
-      ),
-      'big shot' => 
-      array (
-        0 => 38863,
-        1 => 39054,
-        2 => 39222,
       ),
       'binding roots' => 
       array (
@@ -2903,22 +5489,6 @@
       'bite' => 
       array (
         0 => 10372,
-      ),
-      'blinding flash' => 
-      array (
-        0 => 5792,
-      ),
-      'blinding powder' => 
-      array (
-        0 => 13107,
-      ),
-      'blinding radiance' => 
-      array (
-        0 => 39037,
-        1 => 39299,
-        2 => 39442,
-        3 => 39607,
-        4 => 39416,
       ),
       'blinding slash' => 
       array (
@@ -2932,45 +5502,13 @@
       array (
         0 => 12424,
       ),
-      'bludgeon' => 
-      array (
-        0 => 38305,
-      ),
       'boil' => 
       array (
         0 => 12695,
       ),
-      'bomb' => 
-      array (
-        0 => 13474,
-      ),
-      'bound' => 
-      array (
-        0 => 31129,
-      ),
-      'bowler marble' => 
-      array (
-        0 => 39867,
-      ),
       'branch leap' => 
       array (
         0 => 1115,
-      ),
-      'bright slash—storm' => 
-      array (
-        0 => 42475,
-      ),
-      'brutal aura' => 
-      array (
-        0 => 38258,
-      ),
-      'brutalize' => 
-      array (
-        0 => 38013,
-      ),
-      'bunker down' => 
-      array (
-        0 => 24329,
       ),
       'chilling howl' => 
       array (
@@ -2988,43 +5526,13 @@
       array (
         0 => 10373,
       ),
-      'citadel bombardment' => 
-      array (
-        0 => 41513,
-      ),
       'claw' => 
       array (
         0 => 10183,
-        1 => 37843,
-      ),
-      'cleansing fire' => 
-      array (
-        0 => 22521,
       ),
       'cleansing leaves' => 
       array (
         0 => 12374,
-      ),
-      'cleansing pulse' => 
-      array (
-        0 => 29712,
-      ),
-      'cleansing wave' => 
-      array (
-        0 => 5793,
-        1 => 16941,
-      ),
-      'cleave' => 
-      array (
-        0 => 38273,
-      ),
-      'combustion rush' => 
-      array (
-        0 => 39377,
-        1 => 39581,
-        2 => 39615,
-        3 => 39427,
-        4 => 39916,
       ),
       'consume plasma' => 
       array (
@@ -3042,69 +5550,6 @@
       array (
         0 => 29830,
       ),
-      'controlled analysis' => 
-      array (
-        0 => 45709,
-      ),
-      'corporal punishment' => 
-      array (
-        0 => 38006,
-      ),
-      'corporeal reassignment' => 
-      array (
-        0 => 39275,
-      ),
-      'corrupted ground' => 
-      array (
-        0 => 39801,
-      ),
-      'cosmic aura' => 
-      array (
-        0 => 37989,
-      ),
-      'cosmic streaks' => 
-      array (
-        0 => 39021,
-      ),
-      'cranial cascade' => 
-      array (
-        0 => 39220,
-        1 => 39394,
-        2 => 39063,
-        3 => 39534,
-        4 => 39686,
-      ),
-      'crimson dawn' => 
-      array (
-        0 => 38865,
-        1 => 39033,
-        2 => 39093,
-        3 => 39146,
-        4 => 39215,
-        5 => 39332,
-        6 => 39392,
-        7 => 39395,
-        8 => 39483,
-        9 => 39541,
-        10 => 39564,
-        11 => 39646,
-        12 => 39673,
-        13 => 39746,
-        14 => 39884,
-        15 => 39895,
-        16 => 39924,
-        17 => 38847,
-        18 => 38881,
-        19 => 38924,
-        20 => 38954,
-        21 => 38987,
-        22 => 39152,
-        23 => 39186,
-        24 => 39261,
-        25 => 39300,
-        26 => 39713,
-        27 => 39829,
-      ),
       'crippling shield' => 
       array (
         0 => 5746,
@@ -3117,26 +5562,10 @@
       array (
         0 => 10190,
       ),
-      'crystal hibernation' => 
-      array (
-        0 => 29152,
-      ),
-      'crystalline impact' => 
-      array (
-        0 => 42235,
-      ),
-      'curved shot' => 
-      array (
-        0 => 39163,
-        1 => 39217,
-        2 => 39322,
-        3 => 39816,
-      ),
       'dash' => 
       array (
         0 => 12427,
         1 => 14489,
-        2 => 31187,
       ),
       'dazing screech' => 
       array (
@@ -3152,51 +5581,6 @@
       array (
         0 => 12731,
       ),
-      'death from above' => 
-      array (
-        0 => 14267,
-      ),
-      'decoy' => 
-      array (
-        0 => 29477,
-      ),
-      'demonic aura' => 
-      array (
-        0 => 37872,
-      ),
-      'demonic projection' => 
-      array (
-        0 => 37881,
-      ),
-      'demonic shock wave' => 
-      array (
-        0 => 37980,
-        1 => 38046,
-        2 => 37982,
-      ),
-      'diffractive edge' => 
-      array (
-        0 => 38874,
-        1 => 39254,
-        2 => 39478,
-        3 => 39755,
-        4 => 39830,
-        5 => 39213,
-        6 => 39253,
-        7 => 39345,
-        8 => 39572,
-        9 => 39579,
-        10 => 39787,
-      ),
-      'discharge' => 
-      array (
-        0 => 39200,
-        1 => 39788,
-      ),
-      'displacement' => 
-      array (
-        0 => 38113,
-      ),
       'distortion' => 
       array (
         0 => 10192,
@@ -3205,50 +5589,13 @@
       array (
         0 => 10287,
       ),
-      'dome of the mists' => 
-      array (
-        0 => 27198,
-      ),
-      'drop gunk' => 
-      array (
-        0 => 29902,
-      ),
-      'drop mine' => 
-      array (
-        0 => 17810,
-      ),
-      'earthquake' => 
-      array (
-        0 => 16943,
-      ),
       'eat egg' => 
       array (
         0 => 1125,
       ),
-      'effigy pulse' => 
-      array (
-        0 => 37901,
-      ),
       'electrocute' => 
       array (
         0 => 12699,
-        1 => 39103,
-      ),
-      'elixir b' => 
-      array (
-        0 => 13465,
-      ),
-      'elixir s' => 
-      array (
-        0 => 13464,
-      ),
-      'enemy tile' => 
-      array (
-        0 => 38184,
-      ),
-      'energy surge' => 
-      array (
-        0 => 38060,
       ),
       'enfeebling maul' => 
       array (
@@ -3270,22 +5617,6 @@
       array (
         0 => 30558,
       ),
-      'explode' => 
-      array (
-        0 => 39122,
-        1 => 39216,
-        2 => 39491,
-        3 => 39551,
-        4 => 39849,
-      ),
-      'explosive descent' => 
-      array (
-        0 => 6050,
-      ),
-      'feedback' => 
-      array (
-        0 => 10356,
-      ),
       'feeding frenzy' => 
       array (
         0 => 12757,
@@ -3293,50 +5624,11 @@
       'fire breath' => 
       array (
         0 => 12670,
-        1 => 39099,
-      ),
-      'fire shield' => 
-      array (
-        0 => 17813,
-      ),
-      'flame burst' => 
-      array (
-        0 => 5794,
-      ),
-      'flash cutter—storm' => 
-      array (
-        0 => 41684,
       ),
       'flee' => 
       array (
         0 => 10375,
         1 => 15863,
-      ),
-      'flying knee' => 
-      array (
-        0 => 39433,
-        1 => 39504,
-      ),
-      'focused anger' => 
-      array (
-        0 => 39139,
-        1 => 39257,
-        2 => 39694,
-        3 => 39198,
-        4 => 39319,
-        5 => 39450,
-        6 => 39526,
-        7 => 39668,
-        8 => 39795,
-        9 => 39875,
-      ),
-      'focused rage' => 
-      array (
-        0 => 39204,
-        1 => 39308,
-        2 => 39775,
-        3 => 39251,
-        4 => 39711,
       ),
       'forage' => 
       array (
@@ -3344,10 +5636,6 @@
         1 => 12754,
         2 => 12755,
         3 => 12756,
-      ),
-      'force of the nightmare' => 
-      array (
-        0 => 39284,
       ),
       'fortify' => 
       array (
@@ -3366,10 +5654,6 @@
       array (
         0 => 12697,
       ),
-      'function gyro' => 
-      array (
-        0 => 31302,
-      ),
       'furious pounce' => 
       array (
         0 => 31451,
@@ -3377,29 +5661,6 @@
       'furious screech' => 
       array (
         0 => 12712,
-      ),
-      'geyser' => 
-      array (
-        0 => 5782,
-      ),
-      'glacial heart' => 
-      array (
-        0 => 21795,
-      ),
-      'globolla marble' => 
-      array (
-        0 => 39357,
-        1 => 39628,
-        2 => 39745,
-        3 => 39495,
-      ),
-      'glue trail' => 
-      array (
-        0 => 17815,
-      ),
-      'gravity wave' => 
-      array (
-        0 => 37910,
       ),
       'grim specter' => 
       array (
@@ -3409,11 +5670,6 @@
       array (
         0 => 12430,
       ),
-      'head kick' => 
-      array (
-        0 => 38894,
-        1 => 39582,
-      ),
       'healing seed' => 
       array (
         0 => 1139,
@@ -3421,47 +5677,6 @@
       'holoforge overheated' => 
       array (
         0 => 44386,
-      ),
-      'horizon strike' => 
-      array (
-        0 => 39019,
-        1 => 39053,
-        2 => 39064,
-        3 => 39110,
-        4 => 39212,
-        5 => 39267,
-        6 => 39276,
-        7 => 39297,
-        8 => 39335,
-        9 => 39485,
-        10 => 39590,
-        11 => 39653,
-        12 => 39714,
-        13 => 39839,
-        14 => 39854,
-        15 => 39879,
-        16 => 39889,
-        17 => 38878,
-        18 => 38927,
-        19 => 39001,
-        20 => 39007,
-        21 => 39025,
-        22 => 39031,
-        23 => 39135,
-        24 => 39242,
-        25 => 39278,
-        26 => 39323,
-        27 => 39363,
-        28 => 39423,
-        29 => 39426,
-        30 => 39458,
-        31 => 39507,
-        32 => 39583,
-        33 => 39685,
-        34 => 39765,
-        35 => 39770,
-        36 => 39790,
-        37 => 39853,
       ),
       'howl' => 
       array (
@@ -3499,26 +5714,6 @@
       array (
         0 => 12749,
       ),
-      'impact' => 
-      array (
-        0 => 37784,
-        1 => 38102,
-      ),
-      'impaling lotus' => 
-      array (
-        0 => 31267,
-      ),
-      'impaling stab' => 
-      array (
-        0 => 38231,
-      ),
-      'inevitable betrayal' => 
-      array (
-        0 => 37851,
-        1 => 38236,
-        2 => 38260,
-        3 => 38268,
-      ),
       'insect swarm' => 
       array (
         0 => 12701,
@@ -3526,30 +5721,6 @@
       'intimidating howl' => 
       array (
         0 => 12715,
-      ),
-      'invisible analysis' => 
-      array (
-        0 => 29606,
-      ),
-      'jab' => 
-      array (
-        0 => 37607,
-        1 => 38094,
-        2 => 39915,
-        3 => 39648,
-      ),
-      'jab combo' => 
-      array (
-        0 => 39116,
-        1 => 39388,
-      ),
-      'jade explosion' => 
-      array (
-        0 => 37788,
-      ),
-      'judgment of war' => 
-      array (
-        0 => 38451,
       ),
       'kick' => 
       array (
@@ -3565,157 +5736,17 @@
       array (
         0 => 12704,
       ),
-      'lava font' => 
-      array (
-        0 => 13339,
-      ),
       'leap' => 
       array (
         0 => 12389,
-      ),
-      'lesser banish enchantment' => 
-      array (
-        0 => 28388,
-      ),
-      'lesser blinding powder' => 
-      array (
-        0 => 21777,
-      ),
-      'lesser call of the wild' => 
-      array (
-        0 => 29449,
-      ),
-      'lesser caltrops' => 
-      array (
-        0 => 14136,
-      ),
-      'lesser chaos storm' => 
-      array (
-        0 => 13733,
-      ),
-      'lesser endure pain' => 
-      array (
-        0 => 21813,
-      ),
-      'lesser enfeeble' => 
-      array (
-        0 => 13907,
-      ),
-      'lesser haste' => 
-      array (
-        0 => 30239,
-      ),
-      'lesser jade winds' => 
-      array (
-        0 => 27741,
-      ),
-      'lesser mark of blood' => 
-      array (
-        0 => 13918,
-      ),
-      'lesser muddy terrain' => 
-      array (
-        0 => 13938,
-      ),
-      'lesser needle trap' => 
-      array (
-        0 => 13101,
-      ),
-      'lesser phantasmal defender' => 
-      array (
-        0 => 30192,
-      ),
-      'lesser poison cloud' => 
-      array (
-        0 => 13920,
-      ),
-      'lesser power cleanse' => 
-      array (
-        0 => 30166,
-      ),
-      'lesser quickening zephyr' => 
-      array (
-        0 => 44240,
-      ),
-      'lesser seed of life' => 
-      array (
-        0 => 31776,
-      ),
-      'lesser shield of absorption' => 
-      array (
-        0 => 13688,
-      ),
-      'lesser signet of inspiration' => 
-      array (
-        0 => 29724,
-      ),
-      'lesser signet of might' => 
-      array (
-        0 => 29977,
-      ),
-      'lesser signet of stone' => 
-      array (
-        0 => 42470,
-      ),
-      'lesser signet of vampirism' => 
-      array (
-        0 => 29894,
-      ),
-      'lesser signet of wrath' => 
-      array (
-        0 => 30255,
-      ),
-      'lesser smite condition' => 
-      array (
-        0 => 9101,
-      ),
-      'lesser smoke screen' => 
-      array (
-        0 => 14184,
-      ),
-      'lesser spectral armor' => 
-      array (
-        0 => 21808,
-      ),
-      'lesser spinal shivers' => 
-      array (
-        0 => 13906,
-      ),
-      'lesser stone resonance' => 
-      array (
-        0 => 42913,
-      ),
-      'lesser symbol of protection' => 
-      array (
-        0 => 13684,
-      ),
-      'lesser symbol of wrath' => 
-      array (
-        0 => 13677,
-      ),
-      'lesser terrify' => 
-      array (
-        0 => 29700,
-      ),
-      'lesser well of blood' => 
-      array (
-        0 => 13849,
       ),
       'lich\'s gaze' => 
       array (
         0 => 10635,
       ),
-      'light strike—storm' => 
-      array (
-        0 => 44260,
-      ),
       'lightning assault' => 
       array (
         0 => 31639,
-      ),
-      'lightning bolt' => 
-      array (
-        0 => 39082,
       ),
       'lightning breath' => 
       array (
@@ -3725,45 +5756,17 @@
       array (
         0 => 5625,
       ),
-      'lightning rod' => 
-      array (
-        0 => 24305,
-      ),
       'lightning storm' => 
       array (
         0 => 5725,
-      ),
-      'lightning strike' => 
-      array (
-        0 => 21636,
       ),
       'lightning swing' => 
       array (
         0 => 5726,
       ),
-      'long-fused powder pack' => 
-      array (
-        0 => 30686,
-      ),
       'mace head crack' => 
       array (
         0 => 1131,
-      ),
-      'mace smash' => 
-      array (
-        0 => 37660,
-      ),
-      'magebane tether' => 
-      array (
-        0 => 43532,
-      ),
-      'magnetic aura' => 
-      array (
-        0 => 17814,
-      ),
-      'magnetic bomb' => 
-      array (
-        0 => 17811,
       ),
       'magnetic shield' => 
       array (
@@ -3772,10 +5775,6 @@
       'magnetic surge' => 
       array (
         0 => 5547,
-      ),
-      'maniacal pulse' => 
-      array (
-        0 => 38749,
       ),
       'march of undeath' => 
       array (
@@ -3789,81 +5788,17 @@
       array (
         0 => 19113,
       ),
-      'merciful sanctuary' => 
-      array (
-        0 => 9254,
-      ),
-      'meteor swarm' => 
-      array (
-        0 => 38313,
-      ),
-      'mib ring' => 
-      array (
-        0 => 39398,
-        1 => 39557,
-      ),
       'mighty roar' => 
       array (
         0 => 12658,
-      ),
-      'mind crush' => 
-      array (
-        0 => 37613,
       ),
       'mind wrack' => 
       array (
         0 => 10191,
       ),
-      'mine trail' => 
-      array (
-        0 => 45067,
-      ),
-      'mist bomb' => 
-      array (
-        0 => 39638,
-        1 => 39107,
-        2 => 39350,
-      ),
-      'mist smash' => 
-      array (
-        0 => 39575,
-      ),
-      'mist-charged chop' => 
-      array (
-        0 => 38846,
-        1 => 39479,
-        2 => 39521,
-      ),
-      'mystic rebuke' => 
-      array (
-        0 => 22499,
-      ),
       'oakheart swipe' => 
       array (
         0 => 12370,
-      ),
-      'obliterate' => 
-      array (
-        0 => 39470,
-        1 => 39247,
-      ),
-      'orbital command strike' => 
-      array (
-        0 => 41612,
-      ),
-      'orbital sweep' => 
-      array (
-        0 => 37631,
-      ),
-      'overhead smash' => 
-      array (
-        0 => 38844,
-        1 => 39401,
-        2 => 39920,
-      ),
-      'overheat' => 
-      array (
-        0 => 43937,
       ),
       'paralyzing venom' => 
       array (
@@ -3872,22 +5807,6 @@
       'peck' => 
       array (
         0 => 10181,
-      ),
-      'phantasmal seeking axe' => 
-      array (
-        0 => 41324,
-      ),
-      'phantasmal spinning axe' => 
-      array (
-        0 => 40614,
-      ),
-      'plague signet' => 
-      array (
-        0 => 29467,
-      ),
-      'plunge' => 
-      array (
-        0 => 39078,
       ),
       'poison barbs' => 
       array (
@@ -3911,14 +5830,6 @@
       array (
         0 => 12431,
       ),
-      'prison shank' => 
-      array (
-        0 => 38040,
-      ),
-      'prisoner sweep' => 
-      array (
-        0 => 38168,
-      ),
       'protecting screech' => 
       array (
         0 => 12713,
@@ -3927,62 +5838,14 @@
       array (
         0 => 12399,
       ),
-      'pulmonary impact' => 
-      array (
-        0 => 30770,
-      ),
-      'pulsar blast' => 
-      array (
-        0 => 38986,
-        1 => 39847,
-      ),
-      'punishing kick' => 
-      array (
-        0 => 39482,
-        1 => 39520,
-        2 => 39619,
-        3 => 38896,
-        4 => 39910,
-      ),
-      'punishment aura' => 
-      array (
-        0 => 37952,
-      ),
       'purge conditions' => 
       array (
         0 => 12691,
-      ),
-      'radiant fury' => 
-      array (
-        0 => 38926,
-        1 => 39845,
-        2 => 39886,
-        3 => 38889,
-        4 => 39434,
-      ),
-      'rapid decay' => 
-      array (
-        0 => 37716,
-      ),
-      'red marble' => 
-      array (
-        0 => 39029,
-        1 => 39863,
-      ),
-      'reformed mirage mirror' => 
-      array (
-        0 => 42183,
       ),
       'regenerate' => 
       array (
         0 => 12703,
         1 => 12717,
-      ),
-      'regret' => 
-      array (
-        0 => 38116,
-        1 => 37703,
-        2 => 38055,
       ),
       'rending barbs' => 
       array (
@@ -4013,49 +5876,17 @@
         0 => 15861,
         1 => 15862,
       ),
-      'ring of fire' => 
-      array (
-        0 => 16940,
-      ),
       'ripple of horror' => 
       array (
         0 => 10633,
-      ),
-      'rite of the great dwarf' => 
-      array (
-        0 => 32588,
       ),
       'roar of the forest' => 
       array (
         0 => 12376,
       ),
-      'rolling chaos' => 
-      array (
-        0 => 39291,
-        1 => 39674,
-        2 => 39734,
-        3 => 39346,
-        4 => 39894,
-      ),
-      'sand shards' => 
-      array (
-        0 => 45711,
-      ),
-      'sand squall' => 
-      array (
-        0 => 31835,
-      ),
-      'saul\'s grace' => 
-      array (
-        0 => 38007,
-      ),
       'screech' => 
       array (
         0 => 10182,
-      ),
-      'searing heat' => 
-      array (
-        0 => 39235,
       ),
       'seismic leap' => 
       array (
@@ -4065,19 +5896,6 @@
       array (
         0 => 12666,
       ),
-      'shards of faith' => 
-      array (
-        0 => 31765,
-      ),
-      'shared agony' => 
-      array (
-        0 => 37775,
-        1 => 38210,
-      ),
-      'shared shock' => 
-      array (
-        0 => 39539,
-      ),
       'shield smack' => 
       array (
         0 => 5621,
@@ -4086,41 +5904,17 @@
       array (
         0 => 21646,
       ),
-      'shock wave' => 
-      array (
-        0 => 5795,
-      ),
-      'shocking aura' => 
-      array (
-        0 => 5791,
-      ),
-      'shockwave' => 
-      array (
-        0 => 37996,
-      ),
       'shriek' => 
       array (
         0 => 12408,
-      ),
-      'signet of the wild' => 
-      array (
-        0 => 22556,
       ),
       'skull fear' => 
       array (
         0 => 1141,
       ),
-      'small shot' => 
-      array (
-        0 => 39422,
-      ),
       'smash' => 
       array (
         0 => 14485,
-      ),
-      'smoke bomb' => 
-      array (
-        0 => 13551,
       ),
       'smoke cloud' => 
       array (
@@ -4130,47 +5924,6 @@
       array (
         0 => 12425,
       ),
-      'solar blast' => 
-      array (
-        0 => 39857,
-        1 => 39138,
-        2 => 39823,
-      ),
-      'solar bolt' => 
-      array (
-        0 => 38941,
-        1 => 39039,
-        2 => 39136,
-        3 => 39313,
-        4 => 39848,
-        5 => 38920,
-        6 => 39664,
-        7 => 39760,
-      ),
-      'solar cyclone' => 
-      array (
-        0 => 39228,
-      ),
-      'solar discharge' => 
-      array (
-        0 => 39691,
-      ),
-      'solar fury' => 
-      array (
-        0 => 39667,
-        1 => 39684,
-        2 => 39303,
-        3 => 39728,
-        4 => 39874,
-      ),
-      'solar stomp' => 
-      array (
-        0 => 39298,
-      ),
-      'soldier\'s aura' => 
-      array (
-        0 => 37677,
-      ),
       'sonic barrier' => 
       array (
         0 => 16427,
@@ -4179,70 +5932,21 @@
       array (
         0 => 16426,
       ),
-      'soul feast' => 
-      array (
-        0 => 37805,
-      ),
-      'soul swarm' => 
-      array (
-        0 => 37892,
-      ),
-      'spatial manipulation' => 
-      array (
-        0 => 37611,
-        1 => 37629,
-        2 => 37642,
-        3 => 37673,
-        4 => 38074,
-        5 => 38302,
-      ),
-      'spear impact' => 
-      array (
-        0 => 37816,
-        1 => 37927,
-      ),
-      'spear return' => 
-      array (
-        0 => 38180,
-      ),
       'spike barrage' => 
       array (
         0 => 31367,
-      ),
-      'spiral strike' => 
-      array (
-        0 => 39911,
-        1 => 38849,
       ),
       'spit' => 
       array (
         0 => 10376,
       ),
-      'spiteful spirit' => 
-      array (
-        0 => 29560,
-      ),
       'stalk' => 
       array (
         0 => 12681,
       ),
-      'starburst cascade' => 
-      array (
-        0 => 38982,
-        1 => 39274,
-        2 => 39383,
-        3 => 38966,
-        4 => 39018,
-        5 => 39523,
-      ),
-      'static discharge' => 
-      array (
-        0 => 13552,
-      ),
       'static field' => 
       array (
         0 => 5732,
-        1 => 16942,
       ),
       'static swing' => 
       array (
@@ -4256,10 +5960,6 @@
       array (
         0 => 12744,
       ),
-      'sudden reversal' => 
-      array (
-        0 => 46183,
-      ),
       'summon healing spring' => 
       array (
         0 => 12375,
@@ -4268,17 +5968,6 @@
       array (
         0 => 10636,
       ),
-      'supernova' => 
-      array (
-        0 => 39005,
-        1 => 39225,
-        2 => 39321,
-        3 => 39782,
-      ),
-      'superspeed' => 
-      array (
-        0 => 17812,
-      ),
       'swipe' => 
       array (
         0 => 12410,
@@ -4286,29 +5975,6 @@
       'swoop' => 
       array (
         0 => 12409,
-      ),
-      'taw shot' => 
-      array (
-        0 => 38897,
-        1 => 39171,
-        2 => 39232,
-        3 => 39602,
-        4 => 39748,
-        5 => 38991,
-        6 => 39160,
-        7 => 39306,
-        8 => 39417,
-        9 => 39454,
-        10 => 39609,
-      ),
-      'teleport lunge' => 
-      array (
-        0 => 39469,
-        1 => 39701,
-      ),
-      'temporal realignment' => 
-      array (
-        0 => 38858,
       ),
       'terrifying howl' => 
       array (
@@ -4327,61 +5993,17 @@
         0 => 1110,
         1 => 45094,
       ),
-      'throw stimulant' => 
-      array (
-        0 => 30022,
-      ),
       'thunderclap' => 
       array (
         0 => 5728,
       ),
-      'thwack' => 
-      array (
-        0 => 39540,
-      ),
-      'trampling rush' => 
-      array (
-        0 => 37974,
-        1 => 37797,
-      ),
       'uppercut' => 
       array (
         0 => 14487,
-        1 => 39375,
-        2 => 39466,
-      ),
-      'utility goggles' => 
-      array (
-        0 => 29812,
-      ),
-      'vault' => 
-      array (
-        0 => 38977,
-      ),
-      'vent exhaust' => 
-      array (
-        0 => 43630,
-      ),
-      'warp' => 
-      array (
-        0 => 39013,
-        1 => 39514,
-      ),
-      'wave of mutilation' => 
-      array (
-        0 => 39133,
-      ),
-      'weak minded' => 
-      array (
-        0 => 38187,
       ),
       'weakening venom' => 
       array (
         0 => 12730,
-      ),
-      'whirligig' => 
-      array (
-        0 => 38942,
       ),
       'whirling axe' => 
       array (
@@ -4395,10 +6017,6 @@
       array (
         0 => 5733,
         1 => 12406,
-      ),
-      'wrath' => 
-      array (
-        0 => 38304,
       ),
     ),
     'elementalist' => 
@@ -9041,6 +10659,8 @@
       array (
         0 => 44946,
         1 => 42297,
+        2 => 46473,
+        3 => 46474,
       ),
       'mark of blood' => 
       array (

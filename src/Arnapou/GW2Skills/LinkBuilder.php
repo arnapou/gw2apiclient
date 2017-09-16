@@ -204,7 +204,14 @@ class LinkBuilder
                 $parts[] = '0';
             } else {
                 $infusions = $equipment->getInfusions();
-                $parts[]   = $this->getMappedInfusion($mode, $map, isset($infusions[0]) ? $infusions[0] : null);
+                $ids = [];
+                foreach ($infusions as $infusion) {
+                    $id = $this->getMappedInfusion($mode, $map, $infusion);
+                    if ($id != '0'){
+                        $ids[] = $id;
+                    }
+                }
+                $parts[] = empty($ids) ? '0' : implode('-', $ids);
             }
         }
         $return[] = implode('.', $parts);
@@ -384,10 +391,8 @@ class LinkBuilder
         $parts     = ['0', '0'];
         $utilities = [];
         $foods     = [];
-        foreach ($character->getBags() as /* @var $bag Bag */
-                 $bag) {
-            foreach ($bag->getInventorySlots() as /* @var $item Item */
-                     $item) {
+        foreach ($character->getBags() as $bag) {
+            foreach ($bag->getInventorySlots() as $item) {
                 if (empty($item)) {
                     continue;
                 }
