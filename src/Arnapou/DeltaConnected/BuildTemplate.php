@@ -75,30 +75,63 @@ class BuildTemplate
      * @return string
      * @throws Exception
      */
-    public function getTraits(Character $character, $mode)
+    public function getTraitsFromCharacter(Character $character, $mode)
+    {
+        $build      = $character->getBuild($mode);
+        $speIds     = [0, 0, 0];
+        $traitIds   = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+        $profession = $character->getProfession(true)->getId();
+
+        if($build) {
+            foreach ($build->getSpecializations() as $i => $spe) {
+                $speIds[$i] = $spe->getId();
+            }
+
+            foreach ($build->getSpecializations() as $i => $spe) {
+                foreach ($spe->getMajorTraitsSelected() as $j => $trait) {
+                    $traitIds[$i * 3 + $j] = $trait->getId();
+                }
+            }
+        }
+
+        return $this->getTraits($profession, $speIds, $traitIds, $mode);
+    }
+
+    /**
+     * trait template code:
+     *    [*base64].
+     *    byte 0     = 't' (0x74).
+     *    byte 1     = u16 prof id.
+     *    byte 3-8   = u16[3] specialization line1, line2, line3.
+     *    byte 9-14  = u16[3] line1adept, line1master, line1grandmaster.
+     *    byte 15-20 = u16[3] line2adept, line2master, line2grandmaster.
+     *    byte 21-26 = u16[3] line3adept, line3master, line3grandmaster.
+     *
+     * @param string $profession
+     * @param array $speIds
+     * @param array $traitIds
+     * @param int   $mode
+     * @return string
+     * @throws Exception
+     */
+    public function getTraits($profession, array $speIds, array $traitIds, $mode)
     {
         if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
             throw new Exception('Mode not supported');
         }
-        $build      = $character->getBuild($mode);
-        $profession = $character->getProfession(true);
-        if (!isset($this->classToId[$profession->getId()])) {
+        if (!isset($this->classToId[$profession])) {
             throw new Exception('Profession not found');
         }
-        $professionId = $this->classToId[$profession->getId()];
-
-        $speIds   = [0, 0, 0];
-        $traitIds = [0, 0, 0, 0, 0, 0, 0, 0, 0];
-
-        foreach ($build->getSpecializations() as $i => $spe) {
-            $speIds[$i] = $spe->getId();
+        if(count($speIds) !== 3){
+            throw new Exception('Param $speIds should be an array int[3]');
         }
-
-        foreach ($build->getSpecializations() as $i => $spe) {
-            foreach ($spe->getMajorTraitsSelected() as $j => $trait) {
-                $traitIds[$i * 3 + $j] = $trait->getId();
-            }
+        if(count($traitIds) !== 9){
+            throw new Exception('Param $traitIds should be an array int[9]');
         }
+        $professionId = $this->classToId[$profession];
+
+        $speIds   = array_map('intval', $speIds);
+        $traitIds = array_map('intval', $traitIds);
 
         $hex = '74' . $this->dechex($professionId, 2);
         foreach ($speIds as $id) {
