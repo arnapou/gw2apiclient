@@ -13,6 +13,7 @@ namespace Arnapou\GW2Api\Core;
 use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Event\Event;
 use Arnapou\GW2Api\Exception\AllIdsProvidedAreInvalidException;
+use Arnapou\GW2Api\Exception\ApiUnavailableException;
 use Arnapou\GW2Api\Exception\RequestException;
 
 abstract class AbstractClientVersion
@@ -109,7 +110,7 @@ abstract class AbstractClientVersion
             if ($httpCode == 503) {
                 usleep($this->getEnvironment()->getRequestRetryDelay());
                 if ($retries-- <= 0) {
-                    throw new RequestException('HTTP Error 503. The GW2 API is unreachable.');
+                    throw new ApiUnavailableException('HTTP Error 503. The GW2 API is unreachable.');
                 }
                 continue;
             } elseif ($httpCode == 404 && stripos($response->getContent(), '"all ids provided are invalid"')) {
