@@ -10,6 +10,7 @@
 
 namespace Arnapou\GW2Api\Model;
 
+use Arnapou\GW2Api\Exception\ApiUnavailableException;
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Exception\InvalidTokenException;
 use Arnapou\GW2Api\Exception\MissingPermissionException;
@@ -296,6 +297,8 @@ class Account extends AbstractObject
         if (isset($account['text'])) {
             if (stripos($account['text'], 'invalid key') !== null) {
                 throw new InvalidTokenException('Invalid token.');
+            } elseif (stripos($account['text'], 'API not active') !== null) {
+                throw new ApiUnavailableException('API not active.');
             }
             throw new Exception($account['text']);
         }

@@ -249,7 +249,7 @@ class InventorySlot extends AbstractObject
      */
     public function getStatName()
     {
-        if ($this->itemStat) {
+        if ($this->itemStat && !$this->itemStat->isEmpty()) {
             return $this->itemStat->getStatName();
         }
         $name = \Arnapou\GW2Api\attributes_to_statname($this->getAttributes());

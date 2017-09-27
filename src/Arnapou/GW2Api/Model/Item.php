@@ -512,7 +512,7 @@ class Item extends AbstractStoredObject
      */
     public function getStatName()
     {
-        if ($this->itemStat) {
+        if ($this->itemStat && !$this->itemStat->isEmpty()) {
             return $this->itemStat->getStatName();
         }
         return \Arnapou\GW2Api\attributes_to_statname($this->getAttributes());
