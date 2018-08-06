@@ -12,7 +12,6 @@ namespace Arnapou\GW2Api\Cache;
 
 class PrefixCacheDecorator implements CacheInterface
 {
-
     /**
      *
      * @var string

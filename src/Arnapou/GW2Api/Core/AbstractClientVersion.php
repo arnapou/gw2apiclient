@@ -18,7 +18,6 @@ use Arnapou\GW2Api\Exception\RequestException;
 
 abstract class AbstractClientVersion
 {
-
     const API_FLAG_DISABLED            = 'disabled';
     const API_FLAG_LOCALE_AWARE        = 'locale-aware';
     const API_FLAG_REQUIRE_AUTH        = 'require-auth';
@@ -31,9 +30,7 @@ abstract class AbstractClientVersion
      */
     private $environment;
 
-    /**
-     *
-     */
+    
     public function __construct(Environment $environment)
     {
         $this->environment = $environment;
@@ -94,7 +91,6 @@ abstract class AbstractClientVersion
 
         $retries = $environment->getRequestRetries();
         while (true) {
-
             $time = microtime(true);
 
             $curl = $this->createCurl($requestUrl, $headers);
@@ -117,9 +113,9 @@ abstract class AbstractClientVersion
                 throw new AllIdsProvidedAreInvalidException();
             } elseif ($httpCode != 200 && $httpCode != 206) {
                 throw new RequestException(
-                    "HTTP Error " . $httpCode . ".\n"
-                    . "URL = " . $requestUrl . ".\n"
-                    . "Content = " . $response->getContent()
+                    'HTTP Error ' . $httpCode . ".\n"
+                    . 'URL = ' . $requestUrl . ".\n"
+                    . 'Content = ' . $response->getContent()
                 );
             }
 
@@ -136,10 +132,13 @@ abstract class AbstractClientVersion
 
         // store in cache if needed
         if ($cache) {
-            $cache->set($cacheKey, [
+            $cache->set(
+                $cacheKey,
+                [
                 'headers' => $responseHeaders,
                 'data'    => $data,
-            ], $this->getEnvironment()->getCacheRetention($this->getBaseUrl() . $url)
+            ],
+                $this->getEnvironment()->getCacheRetention($this->getBaseUrl() . $url)
             );
         }
 

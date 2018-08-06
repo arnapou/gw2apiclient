@@ -13,15 +13,10 @@ namespace Arnapou\GW2Skills;
 use Arnapou\GW2Api\Core\Curl;
 use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\Model\Bag;
 use Arnapou\GW2Api\Model\Build;
 use Arnapou\GW2Api\Model\Character;
 use Arnapou\GW2Api\Model\Item;
-use Arnapou\GW2Api\Model\Legend;
 use Arnapou\GW2Api\Model\InventorySlot;
-use Arnapou\GW2Api\Model\Specialization;
-use Arnapou\GW2Api\Model\SpecializationLine;
-use Arnapou\GW2Api\Model\SpecializationTrait;
 
 /* * ********************************************************************** *
  *                                                                          *
@@ -38,7 +33,6 @@ use Arnapou\GW2Api\Model\SpecializationTrait;
 
 class LinkBuilder
 {
-
     /**
      *
      * @var array
@@ -51,7 +45,7 @@ class LinkBuilder
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $cacheDuration = 300; // 5 minutes
 
@@ -207,7 +201,7 @@ class LinkBuilder
                 $ids = [];
                 foreach ($infusions as $infusion) {
                     $id = $this->getMappedInfusion($mode, $map, $infusion);
-                    if ($id != '0'){
+                    if ($id != '0') {
                         $ids[] = $id;
                     }
                 }
@@ -578,10 +572,10 @@ class LinkBuilder
     protected function getAquaticSkills(Build $build = null)
     {
         if ($build) {
-            // 
-            // 
+            //
+            //
             // aquatic skills: not implemented for the moment because not in gw2 api
-            // 
+            //
             //
             return '0.0.0.0.0';
         } else {
@@ -602,10 +596,10 @@ class LinkBuilder
             $aquatic     = $build->getPetsAquatic();
             $parts       = [0, 0, 0, 0];
             foreach ([0, 1] as $i) {
-                if (isset($terrestrial[$i]) && isset($mapPets[$terrestrial[$i]->getId()])) {
+                if (isset($terrestrial[$i], $mapPets[$terrestrial[$i]->getId()])) {
                     $parts[$i] = $mapPets[$terrestrial[$i]->getId()];
                 }
-                if (isset($aquatic[$i]) && isset($mapPets[$aquatic[$i]->getId()])) {
+                if (isset($aquatic[$i], $mapPets[$aquatic[$i]->getId()])) {
                     $parts[$i + 2] = $mapPets[$aquatic[$i]->getId()];
                 }
             }
@@ -619,7 +613,7 @@ class LinkBuilder
      *
      * @param Character $character
      * @param int       $mode
-     * @param boolean   $nocache
+     * @param bool   $nocache
      * @return string
      */
     public function getLink(Character $character, $mode, $nocache = false)
@@ -683,7 +677,6 @@ class LinkBuilder
                 }
             }
         } catch (Exception $e) {
-
         }
         return null;
     }
@@ -720,19 +713,19 @@ class LinkBuilder
 
     /**
      *
-     * @return integer
+     * @return int
      */
-    function getCacheDuration()
+    public function getCacheDuration()
     {
         return $this->cacheDuration;
     }
 
     /**
      *
-     * @param integer $duration
+     * @param int $duration
      * @return LinkBuilder
      */
-    function setCacheDuration($duration)
+    public function setCacheDuration($duration)
     {
         $this->cacheDuration = $duration;
         return $this;

@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class RaidWing extends AbstractObject
 {
-
     protected $events = [];
 
     protected function setData($data)
@@ -52,7 +48,7 @@ class RaidWing extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getNumber()
     {

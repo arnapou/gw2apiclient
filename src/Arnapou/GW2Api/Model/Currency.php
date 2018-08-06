@@ -20,7 +20,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Currency extends AbstractStoredObject
 {
-
     private $quantity = 0;
 
     /**

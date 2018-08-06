@@ -18,10 +18,9 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildRank extends AbstractObject
 {
-
     protected static $ALL_PERMISSIONS_IDS;
-    protected        $permissions   = [];
-    protected        $permissionIds = [];
+    protected $permissions   = [];
+    protected $permissionIds = [];
 
     protected function setData($data)
     {

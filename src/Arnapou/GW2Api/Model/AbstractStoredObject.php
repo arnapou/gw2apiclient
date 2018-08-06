@@ -10,15 +10,10 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Environment;
 
-/**
- *
- */
 abstract class AbstractStoredObject extends AbstractObject
 {
-
     protected $objectId;
     protected $objectLoaded  = false;
     protected $clientVersion = 2;
@@ -70,7 +65,7 @@ abstract class AbstractStoredObject extends AbstractObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function isEmpty()
     {

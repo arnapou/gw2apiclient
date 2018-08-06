@@ -17,10 +17,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildMember extends AbstractObject
 {
-
-    /**
-     *
-     */
     public function getId()
     {
         return $this->getData('name');

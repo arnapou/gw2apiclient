@@ -27,7 +27,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Map extends AbstractStoredObject
 {
-
     public function getApiName()
     {
         return 'maps';

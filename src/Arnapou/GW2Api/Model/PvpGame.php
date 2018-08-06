@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpGame extends AbstractObject
 {
-
     // results
     const RESULT_VICTORY = 'Victory';
     const RESULT_DEFEAT  = 'Defeat';

@@ -20,7 +20,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpHero extends AbstractStoredObject
 {
-
     /**
      *
      * @var array

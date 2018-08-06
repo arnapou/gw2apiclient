@@ -19,7 +19,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Glider extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     protected $unlockItems = [];

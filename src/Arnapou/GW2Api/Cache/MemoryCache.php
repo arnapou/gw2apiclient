@@ -12,7 +12,6 @@ namespace Arnapou\GW2Api\Cache;
 
 class MemoryCache implements CacheInterface
 {
-
     /**
      *
      * @var array

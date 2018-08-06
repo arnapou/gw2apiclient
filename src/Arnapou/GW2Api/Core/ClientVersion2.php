@@ -18,7 +18,6 @@ use Arnapou\GW2Api\Exception\Exception;
  */
 class ClientVersion2 extends AbstractClientVersion
 {
-
     protected $maxRequestIdsLength = 1000;
 
     /**

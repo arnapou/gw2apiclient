@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class TradingPost extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -78,9 +74,7 @@ class TradingPost extends AbstractObject
         return array_values($return);
     }
 
-    /**
-     *
-     */
+    
     protected function checkDelivery()
     {
         if (!isset($this->delivery)) {

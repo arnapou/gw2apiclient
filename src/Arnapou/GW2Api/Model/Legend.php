@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Legend extends AbstractStoredObject
 {
-
     /**
      *
      * @var array

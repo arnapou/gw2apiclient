@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class BackstoryAnswer extends AbstractStoredObject
 {
-
     /**
      *
      * @var BackstoryQuestion

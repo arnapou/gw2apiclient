@@ -22,7 +22,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Story extends AbstractStoredObject
 {
-
     protected $season;
 
     protected function setData($data)
@@ -55,7 +54,7 @@ class Story extends AbstractStoredObject
     /**
      *
      * @param string $flag
-     * @return boolean
+     * @return bool
      */
     public function hasFlag($flag)
     {

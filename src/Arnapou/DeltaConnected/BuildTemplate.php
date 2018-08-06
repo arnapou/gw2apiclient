@@ -10,18 +10,10 @@
 
 namespace Arnapou\DeltaConnected;
 
-use Arnapou\GW2Api\Core\Curl;
 use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\Model\Bag;
-use Arnapou\GW2Api\Model\Build;
 use Arnapou\GW2Api\Model\Character;
-use Arnapou\GW2Api\Model\Item;
-use Arnapou\GW2Api\Model\Legend;
-use Arnapou\GW2Api\Model\InventorySlot;
 use Arnapou\GW2Api\Model\Specialization;
-use Arnapou\GW2Api\Model\SpecializationLine;
-use Arnapou\GW2Api\Model\SpecializationTrait;
 
 /**
  *
@@ -29,7 +21,6 @@ use Arnapou\GW2Api\Model\SpecializationTrait;
  */
 class BuildTemplate
 {
-
     /**
      *
      * @var Environment

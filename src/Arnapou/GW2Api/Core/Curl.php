@@ -12,16 +12,13 @@ namespace Arnapou\GW2Api\Core;
 
 class Curl
 {
-
     /**
      *
      * @var resource
      */
     protected $curl;
 
-    /**
-     *
-     */
+    
     public function __construct()
     {
         $this->curl = curl_init();
@@ -30,9 +27,7 @@ class Curl
         $this->setFollowLocation();
     }
 
-    /**
-     *
-     */
+    
     public function __destruct()
     {
         if ($this->curl) {

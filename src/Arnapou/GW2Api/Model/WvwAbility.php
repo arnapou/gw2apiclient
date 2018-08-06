@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class WvwAbility extends AbstractStoredObject
 {
-
     protected $rank = 0;
 
     public function getRanks()

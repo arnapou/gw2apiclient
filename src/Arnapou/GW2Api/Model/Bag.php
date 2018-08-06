@@ -10,16 +10,13 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-
 /**
  *
- * @method integer getId()
- * @method integer getSize()
+ * @method int getId()
+ * @method int getSize()
  */
 class Bag extends InventorySlot
 {
-
     /**
      *
      * @var array

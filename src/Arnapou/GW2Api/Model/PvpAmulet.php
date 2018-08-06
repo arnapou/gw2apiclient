@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpAmulet extends AbstractStoredObject
 {
-
     public function getApiName()
     {
         return 'pvpamulets';

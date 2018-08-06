@@ -12,7 +12,6 @@ namespace Arnapou\GW2Api\Core;
 
 class CurlResponse
 {
-
     /**
      *
      * @var Curl

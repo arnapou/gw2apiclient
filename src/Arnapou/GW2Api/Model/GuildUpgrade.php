@@ -24,7 +24,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildUpgrade extends AbstractStoredObject
 {
-
     protected $prerequisites = [];
     protected $costs         = [];
 

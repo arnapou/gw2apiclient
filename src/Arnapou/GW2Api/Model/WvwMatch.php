@@ -19,7 +19,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class WvwMatch extends AbstractStoredObject
 {
-
     protected $worlds    = [];
     protected $allWorlds = [];
 

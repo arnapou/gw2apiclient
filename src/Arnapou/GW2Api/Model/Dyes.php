@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Dyes extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -30,13 +26,13 @@ class Dyes extends AbstractObject
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $count;
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $total;
 
@@ -47,9 +43,7 @@ class Dyes extends AbstractObject
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
-    /**
-     *
-     */
+    
     protected function prepareObjects()
     {
         $this->colors = [];
@@ -86,7 +80,7 @@ class Dyes extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
@@ -95,7 +89,7 @@ class Dyes extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotal()
     {

@@ -12,5 +12,4 @@ namespace Arnapou\GW2Api\Exception;
 
 class RequestException extends Exception
 {
-
 }

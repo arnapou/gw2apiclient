@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class HomeNode extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     public function getApiName()

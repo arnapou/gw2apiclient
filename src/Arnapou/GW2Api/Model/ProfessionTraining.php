@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class ProfessionTraining extends AbstractObject
 {
-
     const CATEGORY_SKILLS                = 'Skills';
     const CATEGORY_SPECIALIZATIONS       = 'Specializations';
     const CATEGORY_ELITE_SPECIALIZATIONS = 'EliteSpecializations';
@@ -43,7 +42,7 @@ class ProfessionTraining extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotalCost()
     {

@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Minis extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -30,13 +26,13 @@ class Minis extends AbstractObject
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $count;
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $total;
 
@@ -47,9 +43,7 @@ class Minis extends AbstractObject
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
-    /**
-     *
-     */
+    
     protected function prepareObjects()
     {
         $this->minis = [];
@@ -90,7 +84,7 @@ class Minis extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
@@ -99,7 +93,7 @@ class Minis extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotal()
     {

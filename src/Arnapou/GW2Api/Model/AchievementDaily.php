@@ -12,12 +12,11 @@ namespace Arnapou\GW2Api\Model;
 
 /**
  *
- * @method integer getId()
- * @method integer getRequiredAccess()
+ * @method int getId()
+ * @method int getRequiredAccess()
  */
 class AchievementDaily extends AbstractObject
 {
-
     /**
      *
      * @var array

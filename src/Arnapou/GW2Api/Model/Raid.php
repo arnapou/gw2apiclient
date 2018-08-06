@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Raid extends AbstractStoredObject
 {
-
     protected $wings = [];
 
     protected function setData($data)

@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class RaidWingEvent extends AbstractObject
 {
-
     use UnlockTrait;
 
     const TYPE_CHECKPOINT = 'Checkpoint';

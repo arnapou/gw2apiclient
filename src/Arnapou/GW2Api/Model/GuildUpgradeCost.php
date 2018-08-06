@@ -19,7 +19,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildUpgradeCost extends AbstractObject
 {
-
     const TYPE_ITEM        = 'Item';
     const TYPE_COLLECTIBLE = 'Collectible';
     const TYPE_CURRENCY    = 'Currency';

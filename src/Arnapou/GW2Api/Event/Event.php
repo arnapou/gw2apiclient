@@ -12,7 +12,6 @@ namespace Arnapou\GW2Api\Event;
 
 class Event implements \ArrayAccess, \IteratorAggregate
 {
-
     protected $data = [];
 
     public function __construct($array = null)

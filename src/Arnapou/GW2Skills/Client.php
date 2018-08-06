@@ -31,7 +31,6 @@ use Arnapou\GW2Api\Storage\MongoStorage;
 
 class Client
 {
-
     /**
      *
      * @var array
@@ -56,7 +55,7 @@ class Client
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $revision;
 
@@ -74,12 +73,12 @@ class Client
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $revisionCheckDelay = 900; // 15 min
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $requestTimeout = 5; // seconds
     /**
@@ -102,43 +101,43 @@ class Client
         'berserker'            => "Berserker's",
         'soldier'              => "Soldier's",
         'cavalier'             => "Cavalier's",
-        'rabid'                => "Rabid",
+        'rabid'                => 'Rabid',
         'magi'                 => "Magi's",
-        'dire'                 => "Dire",
+        'dire'                 => 'Dire',
         'apothecary'           => "Apothecary's",
         'assassin'             => "Assassin's",
-        'carrion'              => "Carrion",
+        'carrion'              => 'Carrion',
         'cleric'               => "Cleric's",
         'knight'               => "Knight's",
         'rampager'             => "Rampager's",
         'sentinel'             => "Sentinel's",
         'settler'              => "Settler's",
         'shaman'               => "Shaman's",
-        'valkyrie'             => "Valkyrie",
-        'sinister'             => "Sinister",
+        'valkyrie'             => 'Valkyrie',
+        'sinister'             => 'Sinister',
         'nomad'                => "Nomad's",
-        'celestial'            => "Celestial",
+        'celestial'            => 'Celestial',
         'giver'                => "Giver's",
         'zealot'               => "Zealot's",
         'berserker + valkyrie' => "Berserker's + Valkyrie",
         'captain'              => "Captain's",
-        'dire + rabid'         => "Dire + Rabid",
+        'dire + rabid'         => 'Dire + Rabid',
         'rabid + apothecary'   => "Rabid + Apothecary's",
         // HoT
         'viper'                => "Viper's",
-        'commander'            => "Commander",
-        'wanderer'             => "Wanderer",
-        'marauder'             => "Marauder",
-        'crusader'             => "Crusader",
-        'trailblazer'          => "Trailblazer",
-        'minstrel'             => "Minstrel",
-        'vigilant'             => "Vigilant",
+        'commander'            => 'Commander',
+        'wanderer'             => 'Wanderer',
+        'marauder'             => 'Marauder',
+        'crusader'             => 'Crusader',
+        'trailblazer'          => 'Trailblazer',
+        'minstrel'             => 'Minstrel',
+        'vigilant'             => 'Vigilant',
         // HoT stats - Episode 4
-        'seraph'               => "Seraph",
+        'seraph'               => 'Seraph',
         // PoF stats
         'marshal'              => "Marshal's",
         'harrier'              => "Harrier's",
-        'grieving'             => "Grieving",
+        'grieving'             => 'Grieving',
     ];
 
     /**
@@ -211,9 +210,7 @@ class Client
         return $this->revision;
     }
 
-    /**
-     *
-     */
+    
     public function buildMap()
     {
         $gw2names   = include($this->files['gw2names']);
@@ -314,13 +311,13 @@ class Client
             }
             if (!$found) {
                 $unmapped['buffs'][] = $item;
-            } elseif(isset(
+            } elseif (isset(
                 $gw2names['buffstats'],
                 $gw2names['buffstats']['byname'],
                 $gw2names['buffstats']['byname'][$name]
             )) {
                 $buffstat = $gw2names['buffstats']['byname'][$name];
-                if($buffstat) {
+                if ($buffstat) {
                     foreach ($gw2names['buffstats']['bystat'][$buffstat] as $fallbackname) {
                         foreach ($this->modes as $mode => $int) {
                             if ($pvx & $int) {
@@ -521,21 +518,18 @@ class Client
                     \stripos($line, ' Experience') !== false ||
                     \stripos($line, ' Magic Find') !== false ||
                     \stripos($line, ' Gold from Monsters') !== false
-                ){
+                ) {
                     continue;
                 }
                 $lines[] = trim($line);
             }
             sort($lines);
-            return implode(" | ", $lines);
+            return implode(' | ', $lines);
         }
         return null;
     }
 
-    /**
-     *
-     *
-     */
+    
     public function buildGw2Names()
     {
         $storage = $this->environment->getStorage();
@@ -594,7 +588,7 @@ class Client
             foreach ($collection->find() as $row) {
                 if (isset($row['data']['name'])) {
                     $name              = strtolower($row['data']['name']);
-                    $name              = str_replace("juvenile", '', $name);
+                    $name              = str_replace('juvenile', '', $name);
                     $pets[trim($name)] = $row['data']['id'];
                 }
             }
@@ -700,9 +694,7 @@ class Client
         return $this->data;
     }
 
-    /**
-     *
-     */
+    
     protected function reloadData()
     {
         try {

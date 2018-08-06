@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class CollectibleCategory extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -46,7 +42,7 @@ class CollectibleCategory extends AbstractObject
             if (isset($data['items']) && is_array($data['items']) && !empty($ids) && is_array($ids)) {
                 $items = array_combine($ids, $ids);
                 foreach ($data['items'] as $item) {
-                    if (isset($item['id'], $item['count']) && isset($items[$item['id']])) {
+                    if (isset($item['id'], $item['count'], $items[$item['id']])) {
                         $items[$item['id']] = new InventorySlot($env, [
                             'id'    => $item['id'],
                             'count' => $item['count'],
@@ -92,7 +88,7 @@ class CollectibleCategory extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {

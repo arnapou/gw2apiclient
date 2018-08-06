@@ -20,7 +20,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class AccountAchievement extends AbstractObject
 {
-
     protected $total = null;
     protected $achievement;
 
@@ -40,7 +39,7 @@ class AccountAchievement extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotalAP()
     {

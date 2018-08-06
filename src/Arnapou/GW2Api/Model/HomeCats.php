@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class HomeCats extends AbstractObject implements \IteratorAggregate
 {
-
     /**
      *
      * @var array
@@ -30,13 +26,13 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $count;
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $total;
 
@@ -47,9 +43,7 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
-    /**
-     *
-     */
+    
     protected function prepareObjects()
     {
         $this->homecats = [];
@@ -96,7 +90,7 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
@@ -105,7 +99,7 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotal()
     {

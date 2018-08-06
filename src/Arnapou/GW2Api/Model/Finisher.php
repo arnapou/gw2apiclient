@@ -19,7 +19,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Finisher extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     protected $quantity    = 0;
@@ -57,7 +56,7 @@ class Finisher extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getQuantity()
     {
@@ -66,7 +65,7 @@ class Finisher extends AbstractStoredObject
 
     /**
      *
-     * @param integer $nb
+     * @param int $nb
      */
     public function setQuantity($nb)
     {
@@ -75,7 +74,7 @@ class Finisher extends AbstractStoredObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function isPermanent()
     {
@@ -84,7 +83,7 @@ class Finisher extends AbstractStoredObject
 
     /**
      *
-     * @param boolean $bool
+     * @param bool $bool
      */
     public function setPermanent($bool)
     {

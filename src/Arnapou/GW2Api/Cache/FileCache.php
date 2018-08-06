@@ -10,14 +10,13 @@
 
 namespace Arnapou\GW2Api\Cache;
 
-use \FilesystemIterator;
-use \RecursiveIteratorIterator;
-use \RecursiveDirectoryIterator;
+use FilesystemIterator;
+use RecursiveIteratorIterator;
+use RecursiveDirectoryIterator;
 use Arnapou\GW2Api\Exception\Exception;
 
 class FileCache implements CacheInterface
 {
-
     /**
      *
      * @var string
@@ -49,10 +48,10 @@ class FileCache implements CacheInterface
     public function __construct($path)
     {
         if (!is_dir($path)) {
-            throw new Exception("The FileCache path does not exists.");
+            throw new Exception('The FileCache path does not exists.');
         }
         if (!is_writable($path)) {
-            throw new Exception("The FileCache path is not writable.");
+            throw new Exception('The FileCache path is not writable.');
         }
         $this->cachePath               = rtrim(rtrim($path, '\\'), '/');
         $this->opcacheInvalidateExists = function_exists('opcache_invalidate');
@@ -154,8 +153,8 @@ class FileCache implements CacheInterface
         $filename = $this->getFilename($key);
         $content  = "<?php\n";
         $content  .= "/* key = $key */\n";
-        $content  .= "\$expires = $expiration;" . ($expiration != 0 ? " // " . date('Y-m-d H:i:s', $expiration) : "") . "\n";
-        $content  .= "\$data = " . var_export($value, true) . ";\n";
+        $content  .= "\$expires = $expiration;" . ($expiration != 0 ? ' // ' . date('Y-m-d H:i:s', $expiration) : '') . "\n";
+        $content  .= '$data = ' . var_export($value, true) . ";\n";
         $this->directoryCreateIfNotExists(dirname($filename));
         file_put_contents($filename, $content, LOCK_EX);
         if ($this->opcacheInvalidateExists) {

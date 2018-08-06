@@ -22,7 +22,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Color extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     // CATEGORIES

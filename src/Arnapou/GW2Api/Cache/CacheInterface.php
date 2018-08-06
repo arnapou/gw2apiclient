@@ -12,7 +12,6 @@ namespace Arnapou\GW2Api\Cache;
 
 interface CacheInterface
 {
-
     /**
      * Retrieve the value stored. Returns null if not found.
      *
@@ -35,7 +34,7 @@ interface CacheInterface
     /**
      *
      * @param string $key
-     * @return boolean
+     * @return bool
      */
     public function exists($key);
 

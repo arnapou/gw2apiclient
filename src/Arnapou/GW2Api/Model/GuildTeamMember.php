@@ -17,5 +17,4 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildTeamMember extends AbstractObject
 {
-
 }

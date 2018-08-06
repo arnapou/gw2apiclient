@@ -20,7 +20,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class AchievementGroup extends AbstractStoredObject
 {
-
     protected $categories = [];
 
     /**

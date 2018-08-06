@@ -21,7 +21,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class ProfessionWeaponSkill extends AbstractObject
 {
-
     const SLOT_WEAPON_1 = 'Weapon_1';
     const SLOT_WEAPON_2 = 'Weapon_2';
     const SLOT_WEAPON_3 = 'Weapon_3';

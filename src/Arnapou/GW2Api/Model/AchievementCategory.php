@@ -16,11 +16,10 @@ namespace Arnapou\GW2Api\Model;
  * @method string  getDescription()
  * @method string  getIcon()
  * @method string  getName()
- * @method integer getOrder()
+ * @method int getOrder()
  */
 class AchievementCategory extends AbstractStoredObject
 {
-
     protected $achievements = [];
 
     /**

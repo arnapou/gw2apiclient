@@ -12,5 +12,4 @@ namespace Arnapou\GW2Api\Exception;
 
 class JsonException extends Exception
 {
-
 }

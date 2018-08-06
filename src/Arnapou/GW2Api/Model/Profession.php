@@ -19,7 +19,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Profession extends AbstractStoredObject
 {
-
     protected $specializations = [];
     protected $weapons         = [];
     protected $training        = [];

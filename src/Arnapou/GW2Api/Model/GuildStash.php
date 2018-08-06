@@ -12,7 +12,7 @@ namespace Arnapou\GW2Api\Model;
 
 /**
  *
- * @method integer getId()
+ * @method int getId()
  * @method string getSize()
  * @method string getCoins()
  * @method string getNote()
@@ -20,7 +20,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildStash extends AbstractObject
 {
-
     /**
      *
      * @var array

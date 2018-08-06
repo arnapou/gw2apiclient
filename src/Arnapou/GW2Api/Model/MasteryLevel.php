@@ -12,14 +12,13 @@ namespace Arnapou\GW2Api\Model;
 
 /**
  *
- * @method integer getName()
- * @method integer getDescription()
- * @method integer getInstruction()
- * @method integer getIcon()
- * @method integer getPointCost()
- * @method integer getExpCost()
+ * @method int getName()
+ * @method int getDescription()
+ * @method int getInstruction()
+ * @method int getIcon()
+ * @method int getPointCost()
+ * @method int getExpCost()
  */
 class MasteryLevel extends AbstractObject
 {
-
 }

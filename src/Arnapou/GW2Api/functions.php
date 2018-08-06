@@ -27,10 +27,10 @@ function id_to_name($id)
 /**
  * https://wiki.guildwars2.com/wiki/Chat_link_format
  *
- * @param integer $item
- * @param integer $skin
- * @param integer $upgrade1
- * @param integer $upgrade2
+ * @param int $item
+ * @param int $skin
+ * @param int $upgrade1
+ * @param int $upgrade2
  * @return string
  */
 function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity = 1)
@@ -96,7 +96,7 @@ function get_mongo_database_error(MongoDatabase $mongoDB)
 /**
  *
  * @param Item $item
- * @return boolean
+ * @return bool
  */
 function is_two_handed_weapon($item)
 {
@@ -113,7 +113,7 @@ function is_two_handed_weapon($item)
 /**
  *
  * @param array $array
- * @return boolean
+ * @return bool
  */
 function is_associative_array($array)
 {
@@ -207,8 +207,8 @@ function attributes_to_statname($attributes)
         'Power/CritDamage/Precision/Vitality'                  => "Berserker's + Valkyrie",
         'Power/Healing/Precision'                              => "Zealot's",
         'Power/Toughness/Vitality'                             => "Soldier's",
-        'Power/CritDamage/Vitality'                            => "Valkyrie",
-        'Power/Healing/Toughness'                              => "Forsaken",
+        'Power/CritDamage/Vitality'                            => 'Valkyrie',
+        'Power/Healing/Toughness'                              => 'Forsaken',
         'Precision/Power/Toughness'                            => "Captain's",
         'Precision/ConditionDamage/Power'                      => "Rampager's",
         'Precision/CritDamage/Power'                           => "Assassin's",
@@ -220,32 +220,32 @@ function attributes_to_statname($attributes)
         'ConditionDuration/Precision/Vitality'                 => "Giver's",
         'Vitality/Power/Toughness'                             => "Sentinel's",
         'Vitality/ConditionDamage/Healing'                     => "Shaman's",
-        'Vitality/Healing/Power'                               => "of the shaman",
-        'ConditionDamage/Power/Precision'                      => "Sinister",
-        'ConditionDamage/Power/Vitality'                       => "Carrion",
-        'ConditionDamage/Precision/Toughness'                  => "Rabid",
+        'Vitality/Healing/Power'                               => 'of the shaman',
+        'ConditionDamage/Power/Precision'                      => 'Sinister',
+        'ConditionDamage/Power/Vitality'                       => 'Carrion',
+        'ConditionDamage/Precision/Toughness'                  => 'Rabid',
         'ConditionDamage/Toughness/Precision/Healing'          => "Rabid + Apothecary's",
-        'ConditionDamage/Toughness/Vitality'                   => "Dire",
-        'ConditionDamage/Toughness/Vitality/Precision'         => "Dire + Rabid",
+        'ConditionDamage/Toughness/Vitality'                   => 'Dire',
+        'ConditionDamage/Toughness/Vitality/Precision'         => 'Dire + Rabid',
         'ConditionDamage/Healing/Toughness'                    => "Apostate's",
         'Healing/Power/Toughness'                              => "Cleric's",
         'Healing/Precision/Vitality'                           => "Magi's",
         'Healing/ConditionDamage/Toughness'                    => "Apothecary's",
         // HoT stats
-        'Power/Precision/BoonDuration/Toughness'               => "Commander",
-        'Power/Vitality/BoonDuration/Toughness'                => "Wanderer",
-        'Power/Precision/CritDamage/Vitality'                  => "Marauder",
-        'Power/Toughness/CritDamage/Healing'                   => "Crusader",
-        'ConditionDamage/Toughness/ConditionDuration/Vitality' => "Trailblazer",
-        'Healing/Toughness/BoonDuration/Vitality'              => "Minstrel",
-        'Power/Toughness/BoonDuration/ConditionDuration'       => "Vigilant",
+        'Power/Precision/BoonDuration/Toughness'               => 'Commander',
+        'Power/Vitality/BoonDuration/Toughness'                => 'Wanderer',
+        'Power/Precision/CritDamage/Vitality'                  => 'Marauder',
+        'Power/Toughness/CritDamage/Healing'                   => 'Crusader',
+        'ConditionDamage/Toughness/ConditionDuration/Vitality' => 'Trailblazer',
+        'Healing/Toughness/BoonDuration/Vitality'              => 'Minstrel',
+        'Power/Toughness/BoonDuration/ConditionDuration'       => 'Vigilant',
         'ConditionDamage/Power/ConditionDuration/Precision'    => "Viper's",
         // HoT stats - Episode 4
-        'ConditionDamage/Precision/BoonDuration/Healing'       => "Seraph",
+        'ConditionDamage/Precision/BoonDuration/Healing'       => 'Seraph',
         // PoF stats
         'Healing/Power/ConditionDamage/Precision'              => "Marshal's",
         'Power/BoonDuration/Healing'                           => "Harrier's",
-        'ConditionDamage/Power/CritDamage/Precision'           => "Grieving",
+        'ConditionDamage/Power/CritDamage/Precision'           => 'Grieving',
     ];
     if ($flatten && isset($statNames[$flatten])) {
         return $statNames[$flatten];

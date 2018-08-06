@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpHeroSkin extends AbstractObject
 {
-
     use UnlockTrait;
 
     protected $unlockItems = [];

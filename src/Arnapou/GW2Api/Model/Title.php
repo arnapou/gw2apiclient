@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Title extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     protected $achievement = null;
@@ -31,7 +27,7 @@ class Title extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getAchievementId()
     {

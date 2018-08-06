@@ -20,7 +20,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Mastery extends AbstractStoredObject
 {
-
     const REGION_MAGUUMA = 'Maguuma';
     const REGION_TYRIA   = 'Tyria';
 

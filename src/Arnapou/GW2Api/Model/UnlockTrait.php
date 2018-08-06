@@ -10,17 +10,13 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 trait UnlockTrait
 {
-
     protected $__unlocked = false;
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function isUnlocked()
     {
@@ -29,7 +25,7 @@ trait UnlockTrait
 
     /**
      *
-     * @param boolean $bool
+     * @param bool $bool
      */
     public function setUnlocked($bool)
     {

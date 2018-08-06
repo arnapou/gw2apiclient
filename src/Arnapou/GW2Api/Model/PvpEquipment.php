@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class PvpEquipment extends AbstractObject
 {
-
     protected $amulet;
     protected $rune;
     protected $sigils = [];

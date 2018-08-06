@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpStanding extends AbstractObject
 {
-
     protected $season;
 
     protected function setData($data)

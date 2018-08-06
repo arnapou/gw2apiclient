@@ -10,8 +10,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Skills\LinkBuilder;
-
 /**
  * @doc https://wiki.guildwars2.com/wiki/API:2/characters
  *
@@ -24,7 +22,6 @@ use Arnapou\GW2Skills\LinkBuilder;
  */
 class Character extends AbstractObject
 {
-
     // RACES
     const RACE_ASURA   = 'Asura';
     const RACE_CHARR   = 'Charr';
@@ -106,7 +103,7 @@ class Character extends AbstractObject
 
     /**
      *
-     * @var boolean
+     * @var bool
      */
     protected $backstorySorted = false;
 
@@ -351,7 +348,7 @@ class Character extends AbstractObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function canSwapWeapons()
     {
@@ -476,7 +473,6 @@ class Character extends AbstractObject
                     $this->guild = new Guild($this->getEnvironment(), $data);
                 }
             } catch (\Exception $e) {
-
             }
         }
         return $this->guild;
@@ -484,7 +480,7 @@ class Character extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getGuildId()
     {
@@ -503,7 +499,7 @@ class Character extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTitleId()
     {

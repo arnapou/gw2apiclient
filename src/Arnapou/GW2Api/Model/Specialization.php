@@ -21,7 +21,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Specialization extends AbstractStoredObject
 {
-
     /**
      *
      * @var array

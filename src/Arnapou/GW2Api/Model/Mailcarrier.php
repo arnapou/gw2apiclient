@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Mailcarrier extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     protected $unlockItems = [];
@@ -56,7 +55,7 @@ class Mailcarrier extends AbstractStoredObject
     /**
      *
      * @param string $flag
-     * @return boolean
+     * @return bool
      */
     public function hasFlag($flag)
     {

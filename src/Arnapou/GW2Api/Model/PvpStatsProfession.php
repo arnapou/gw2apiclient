@@ -16,5 +16,4 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpStatsProfession extends PvpStats
 {
-
 }

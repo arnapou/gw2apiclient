@@ -25,7 +25,6 @@ use Arnapou\GW2Api\Environment;
  */
 class Item extends AbstractStoredObject
 {
-
     // TYPES
     const TYPE_ARMOR             = 'Armor';
     const TYPE_BACK              = 'Back';
@@ -181,7 +180,6 @@ class Item extends AbstractStoredObject
      *
      * @var Skin
      */
-
     protected $defaultSkin = null;
 
     /**
@@ -205,9 +203,7 @@ class Item extends AbstractStoredObject
         }
     }
 
-    /**
-     *
-     */
+    
     public function getChatLink()
     {
         if ($this->getId()) {
@@ -279,7 +275,7 @@ class Item extends AbstractStoredObject
     /**
      *
      * @param string $flag
-     * @return boolean
+     * @return bool
      */
     public function hasFlag($flag)
     {
@@ -298,7 +294,7 @@ class Item extends AbstractStoredObject
     /**
      *
      * @param string $type
-     * @return boolean
+     * @return bool
      */
     public function hasGameType($type)
     {
@@ -317,7 +313,7 @@ class Item extends AbstractStoredObject
     /**
      *
      * @param string $restriction
-     * @return boolean
+     * @return bool
      */
     public function hasRestriction($restriction)
     {
@@ -344,7 +340,7 @@ class Item extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getArmorDefense()
     {
@@ -353,7 +349,7 @@ class Item extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getWeaponDamageType()
     {
@@ -362,7 +358,7 @@ class Item extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getWeaponMinPower()
     {
@@ -371,7 +367,7 @@ class Item extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getWeaponMaxPower()
     {
@@ -380,7 +376,7 @@ class Item extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getWeaponDefense()
     {
@@ -398,7 +394,7 @@ class Item extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getConsumableDurationMs()
     {
@@ -407,7 +403,7 @@ class Item extends AbstractStoredObject
 
     /**
      * The dye id for dyes
-     * @return integer
+     * @return int
      */
     public function getConsumableColorId()
     {
@@ -416,7 +412,7 @@ class Item extends AbstractStoredObject
 
     /**
      * The recipe id for recipe unlocks.
-     * @return integer
+     * @return int
      */
     public function getConsumableRecipeId()
     {
@@ -434,7 +430,7 @@ class Item extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getSalvageCharges()
     {
@@ -520,7 +516,7 @@ class Item extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getAgonyResistance()
     {

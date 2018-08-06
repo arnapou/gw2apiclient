@@ -17,7 +17,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildPermission extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     public function getApiName()

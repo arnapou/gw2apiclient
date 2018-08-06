@@ -27,7 +27,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Skill extends AbstractStoredObject
 {
-
     // TYPES
     const TYPE_BUNDLE     = 'Bundle';
     const TYPE_ELITE      = 'Elite';

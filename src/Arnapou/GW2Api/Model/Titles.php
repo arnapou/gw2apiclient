@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Titles extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -30,13 +26,13 @@ class Titles extends AbstractObject
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $count;
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $total;
 
@@ -47,9 +43,7 @@ class Titles extends AbstractObject
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
-    /**
-     *
-     */
+    
     protected function prepareObjects()
     {
         $this->titles = [];
@@ -85,7 +79,7 @@ class Titles extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
@@ -94,7 +88,7 @@ class Titles extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotal()
     {

@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Finishers extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -30,13 +26,13 @@ class Finishers extends AbstractObject
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $count;
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $total;
 
@@ -47,9 +43,7 @@ class Finishers extends AbstractObject
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
-    /**
-     *
-     */
+    
     protected function prepareObjects()
     {
         $this->finishers = [];
@@ -100,7 +94,7 @@ class Finishers extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
@@ -109,7 +103,7 @@ class Finishers extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotal()
     {

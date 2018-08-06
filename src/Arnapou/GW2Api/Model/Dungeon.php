@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Dungeon extends AbstractStoredObject
 {
-
     protected $paths = [];
 
     protected function setData($data)

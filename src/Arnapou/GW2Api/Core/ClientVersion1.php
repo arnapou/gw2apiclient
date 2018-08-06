@@ -18,7 +18,6 @@ use Arnapou\GW2Api\Exception\Exception;
  */
 class ClientVersion1 extends AbstractClientVersion
 {
-
     /**
      *
      * @return string
@@ -134,8 +133,8 @@ class ClientVersion1 extends AbstractClientVersion
 
     /**
      *
-     * @param integer $continentId
-     * @param integer $floor
+     * @param int $continentId
+     * @param int $floor
      * @return array
      */
     public function apiMapFloor($continentId, $floor)

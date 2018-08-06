@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Pvp extends AbstractObject
 {
-
     const RANK_RABBIT  = 'Rabbit';
     const RANK_DEER    = 'Deer';
     const RANK_DOLYAK  = 'Dolyak';
@@ -231,7 +227,7 @@ class Pvp extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getRank()
     {
@@ -240,7 +236,7 @@ class Pvp extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getRankPoints()
     {
@@ -249,7 +245,7 @@ class Pvp extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getRankRollovers()
     {

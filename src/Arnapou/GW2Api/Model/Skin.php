@@ -21,7 +21,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Skin extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     // TYPES
@@ -56,7 +55,7 @@ class Skin extends AbstractStoredObject
     /**
      *
      * @param string $flag
-     * @return boolean
+     * @return bool
      */
     public function hasFlag($flag)
     {
@@ -75,7 +74,7 @@ class Skin extends AbstractStoredObject
     /**
      *
      * @param string $restriction
-     * @return boolean
+     * @return bool
      */
     public function hasRestriction($restriction)
     {
@@ -102,7 +101,7 @@ class Skin extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getWeaponDamageType()
     {

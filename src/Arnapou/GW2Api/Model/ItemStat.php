@@ -17,7 +17,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class ItemStat extends AbstractStoredObject
 {
-
     // ATTRIBUTES
     const ATTRIBUTE_AGONY_RESISTANCE   = 'AgonyResistance';
     const ATTRIBUTE_BOON_DURATION      = 'BoonDuration';

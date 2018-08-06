@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Wardrobe extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -42,9 +38,9 @@ class Wardrobe extends AbstractObject
 
     /**
      *
-     * @var boolean
+     * @var bool
      */
-    static protected $cacheInitialized = false;
+    protected static $cacheInitialized = false;
 
     protected function setData($data)
     {
@@ -55,16 +51,14 @@ class Wardrobe extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
         return count($this->unlockedSkins);
     }
 
-    /**
-     *
-     */
+    
     protected function prepareObjects()
     {
         $this->armors  = [

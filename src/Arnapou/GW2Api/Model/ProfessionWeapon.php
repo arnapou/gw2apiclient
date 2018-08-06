@@ -16,7 +16,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class ProfessionWeapon extends AbstractObject
 {
-
     /**
      *
      * @var array

@@ -17,7 +17,6 @@ use MongoDB\Collection as MongoCollection;
 
 class MongoCache implements CacheInterface
 {
-
     /**
      *
      * @var int

@@ -12,7 +12,7 @@ namespace Arnapou\GW2Api\Model;
 
 /**
  *
- * @method integer getId()
+ * @method int getId()
  * @method string getType()
  * @method string getUser()
  * @method string getInvitedBy() for type = invited
@@ -34,7 +34,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class GuildLog extends AbstractObject
 {
-
     const TYPE_JOINED          = 'joined';
     const TYPE_INVITED         = 'invited';
     const TYPE_INVITE_DECLINED = 'invite_declined';

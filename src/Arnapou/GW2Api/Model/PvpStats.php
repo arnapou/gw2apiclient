@@ -20,7 +20,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpStats extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -29,7 +28,7 @@ class PvpStats extends AbstractObject
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $total;
 
@@ -49,7 +48,7 @@ class PvpStats extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotal()
     {

@@ -17,7 +17,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class StorySeason extends AbstractStoredObject
 {
-
     protected $stories;
 
     protected function setData($data)

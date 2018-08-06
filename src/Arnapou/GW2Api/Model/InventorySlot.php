@@ -19,7 +19,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class InventorySlot extends AbstractObject
 {
-
     const BINDING_ACCOUNT   = 'Account';
     const BINDING_CHARACTER = 'Character';
 
@@ -37,13 +36,13 @@ class InventorySlot extends AbstractObject
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $count = null;
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $charges = null;
 
@@ -98,9 +97,7 @@ class InventorySlot extends AbstractObject
         }
     }
 
-    /**
-     *
-     */
+    
     public function getChatLink()
     {
         if ($this->getId()) {
@@ -153,7 +150,7 @@ class InventorySlot extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCharges()
     {
@@ -162,7 +159,7 @@ class InventorySlot extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
@@ -225,7 +222,7 @@ class InventorySlot extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getAgonyResistance()
     {

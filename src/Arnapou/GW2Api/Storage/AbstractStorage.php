@@ -10,12 +10,10 @@
 
 namespace Arnapou\GW2Api\Storage;
 
-use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Exception\AllIdsProvidedAreInvalidException;
 
 abstract class AbstractStorage implements StorageInterface
 {
-
     /**
      *
      * @var array

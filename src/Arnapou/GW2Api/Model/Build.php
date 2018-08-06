@@ -10,15 +10,12 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Skills\LinkBuilder;
-
 /**
  *
  * @method string  getType()
  */
 class Build extends AbstractObject
 {
-
     // TYPES
     const TYPE_PVE = 'pve';
     const TYPE_PVP = 'pvp';

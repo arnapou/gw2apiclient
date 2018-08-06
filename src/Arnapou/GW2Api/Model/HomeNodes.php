@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class HomeNodes extends AbstractObject implements \IteratorAggregate
 {
-
     /**
      *
      * @var array
@@ -30,13 +26,13 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $count;
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $total;
 
@@ -47,9 +43,7 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
         $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
     }
 
-    /**
-     *
-     */
+    
     protected function prepareObjects()
     {
         $this->homenodes = [];
@@ -94,7 +88,7 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
@@ -103,7 +97,7 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotal()
     {

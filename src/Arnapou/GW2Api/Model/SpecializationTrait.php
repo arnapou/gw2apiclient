@@ -21,7 +21,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class SpecializationTrait extends AbstractStoredObject
 {
-
     const SLOT_MAJOR = 'Major';
     const SLOT_MINOR = 'Minor';
 

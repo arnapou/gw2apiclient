@@ -17,7 +17,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class File extends AbstractStoredObject
 {
-
     /**
      *
      * @return string

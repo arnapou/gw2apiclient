@@ -22,7 +22,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Achievement extends AbstractStoredObject
 {
-
     // TYPES
     const TYPE_DEFAULT = 'Default';
     const TYPE_ITEMSET = 'ItemSet';
@@ -111,7 +110,7 @@ class Achievement extends AbstractStoredObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotalAP()
     {
@@ -146,7 +145,7 @@ class Achievement extends AbstractStoredObject
     /**
      *
      * @param string $flag
-     * @return boolean
+     * @return bool
      */
     public function hasFlag($flag)
     {

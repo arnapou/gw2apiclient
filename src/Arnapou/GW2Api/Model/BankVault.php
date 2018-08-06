@@ -10,15 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-use Arnapou\GW2Api\SimpleClient;
-
-/**
- *
- */
 class BankVault extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -33,7 +26,7 @@ class BankVault extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {

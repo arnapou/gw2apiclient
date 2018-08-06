@@ -14,12 +14,8 @@ use Arnapou\GW2Api\Cache\CacheInterface;
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Storage\StorageInterface;
 
-/**
- *
- */
 class Environment
 {
-
     // EVENTS
     const onRequest = 'onRequest';
     // LANGS
@@ -50,7 +46,7 @@ class Environment
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $cacheRetention = 300; // 5 minutes
 
@@ -104,7 +100,7 @@ class Environment
 
     /**
      *
-     * @var boolean
+     * @var bool
      */
     protected $useSmartCaching = false;
     
@@ -126,7 +122,7 @@ class Environment
     /**
      *
      * @param string  $pattern
-     * @param integer $seconds
+     * @param int $seconds
      * @return Environment
      * @throws Exception
      */
@@ -230,19 +226,19 @@ class Environment
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
-    function getUseSmartCaching()
+    public function getUseSmartCaching()
     {
         return $this->useSmartCaching;
     }
 
     /**
      *
-     * @param boolean $bool
+     * @param bool $bool
      * @return Environment
      */
-    function setUseSmartCaching($bool)
+    public function setUseSmartCaching($bool)
     {
         $this->useSmartCaching = $bool ? true : false;
         return $this;
@@ -294,7 +290,7 @@ class Environment
 
     /**
      *
-     * @param integer $seconds default cache retention
+     * @param int $seconds default cache retention
      * @return Environment
      * @throws Exception
      */
@@ -346,7 +342,7 @@ class Environment
 
     /**
      *
-     * @param integer $seconds
+     * @param int $seconds
      * @return Environment
      */
     public function setCurlRequestTimeout($seconds)
@@ -357,7 +353,7 @@ class Environment
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCurlRequestTimeout()
     {
@@ -366,7 +362,7 @@ class Environment
 
     /**
      *
-     * @param integer $retries
+     * @param int $retries
      * @return Environment
      */
     public function setRequestRetries($retries)
@@ -377,7 +373,7 @@ class Environment
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getRequestRetries()
     {
@@ -386,7 +382,7 @@ class Environment
 
     /**
      *
-     * @param integer $delay cannot be lower than 20 ms
+     * @param int $delay cannot be lower than 20 ms
      * @return Environment
      */
     public function setRequestRetryDelay($delay)
@@ -400,7 +396,7 @@ class Environment
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getRequestRetryDelay()
     {

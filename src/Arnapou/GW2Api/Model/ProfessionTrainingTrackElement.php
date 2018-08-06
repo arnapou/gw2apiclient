@@ -19,7 +19,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class ProfessionTrainingTrackElement extends AbstractObject
 {
-
     const TYPE_TRAIT = 'Trait';
     const TYPE_SKILL = 'Skill';
 

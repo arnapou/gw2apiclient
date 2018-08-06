@@ -16,9 +16,6 @@ use Arnapou\GW2Api\Exception\InvalidTokenException;
 use Arnapou\GW2Api\Exception\MissingPermissionException;
 use Arnapou\GW2Api\Environment;
 
-/**
- *
- */
 class Account extends AbstractObject
 {
     /*
@@ -194,7 +191,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @var integer
+     * @var int
      */
     protected $otherAP;
 
@@ -270,9 +267,7 @@ class Account extends AbstractObject
      */
     protected $tradingPost;
 
-    /**
-     *
-     */
+    
     public function __construct(Environment $environment)
     {
         parent::__construct($environment, null);
@@ -315,7 +310,6 @@ class Account extends AbstractObject
     public function getAccountAchievements()
     {
         if (empty($this->accountAchievements)) {
-
             if (!$this->hasPermission(self::PERMISSION_PROGRESSION)) {
                 throw new MissingPermissionException(self::PERMISSION_PROGRESSION);
             }
@@ -340,7 +334,6 @@ class Account extends AbstractObject
     public function getTradingPost()
     {
         if (empty($this->tradingPost)) {
-
             if (!$this->hasPermission(self::PERMISSION_TRADINGPOST)) {
                 throw new MissingPermissionException(self::PERMISSION_TRADINGPOST);
             }
@@ -357,7 +350,6 @@ class Account extends AbstractObject
     public function getPvpHeroes()
     {
         if (empty($this->pvpHeroes)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -377,7 +369,6 @@ class Account extends AbstractObject
     public function getGliders()
     {
         if (empty($this->gliders)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -397,7 +388,6 @@ class Account extends AbstractObject
     public function getMailcarriers()
     {
         if (empty($this->mailcarriers)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -417,7 +407,6 @@ class Account extends AbstractObject
     public function getHomeNodes()
     {
         if (empty($this->homenodes)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -437,7 +426,6 @@ class Account extends AbstractObject
     public function getHomeCats()
     {
         if (empty($this->homecats)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -457,7 +445,6 @@ class Account extends AbstractObject
     public function getFinishers()
     {
         if (empty($this->finishers)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -477,7 +464,6 @@ class Account extends AbstractObject
     public function getOutfits()
     {
         if (empty($this->outfits)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -497,7 +483,6 @@ class Account extends AbstractObject
     public function getTitles()
     {
         if (empty($this->titles)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -517,7 +502,6 @@ class Account extends AbstractObject
     public function getMinis()
     {
         if (empty($this->minis)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -537,7 +521,6 @@ class Account extends AbstractObject
     public function getDyes()
     {
         if (empty($this->dyes)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -557,7 +540,6 @@ class Account extends AbstractObject
     public function getWardrobe()
     {
         if (empty($this->wardrobe)) {
-
             if (!$this->hasPermission(self::PERMISSION_UNLOCKS)) {
                 throw new MissingPermissionException(self::PERMISSION_UNLOCKS);
             }
@@ -577,7 +559,6 @@ class Account extends AbstractObject
     public function getPvp()
     {
         if (empty($this->pvp)) {
-
             if (!$this->hasPermission(self::PERMISSION_PVP)) {
                 throw new MissingPermissionException(self::PERMISSION_PVP);
             }
@@ -595,7 +576,6 @@ class Account extends AbstractObject
     public function getCollectibles()
     {
         if (empty($this->collectibles)) {
-
             if (!$this->hasPermission(self::PERMISSION_INVENTORIES)) {
                 throw new MissingPermissionException(self::PERMISSION_INVENTORIES);
             }
@@ -641,7 +621,6 @@ class Account extends AbstractObject
     public function getBankVaults()
     {
         if (empty($this->bankVaults)) {
-
             if (!$this->hasPermission(self::PERMISSION_INVENTORIES)) {
                 throw new MissingPermissionException(self::PERMISSION_INVENTORIES);
             }
@@ -738,7 +717,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return integer 2102
+     * @return int 2102
      */
     public function getWorldId()
     {
@@ -790,7 +769,6 @@ class Account extends AbstractObject
                         $this->guilds[] = new Guild($env, $data);
                     }
                 } catch (\Exception $e) {
-
                 }
             }
         }
@@ -858,7 +836,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return integer 100
+     * @return int 100
      */
     public function getFractalLevel()
     {
@@ -867,7 +845,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return integer 12309
+     * @return int 12309
      */
     public function getDailyAP()
     {
@@ -876,7 +854,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return integer 2691
+     * @return int 2691
      */
     public function getMonthlyAP()
     {
@@ -885,7 +863,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getOtherAP()
     {
@@ -912,7 +890,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotalAP()
     {
@@ -921,7 +899,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return integer 245
+     * @return int 245
      */
     public function getWvwRank()
     {
@@ -930,7 +908,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function hasAccessHeartOfThorns()
     {
@@ -939,7 +917,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function hasCommanderTag()
     {
@@ -968,7 +946,7 @@ class Account extends AbstractObject
     /**
      *
      * @param string $permission
-     * @return boolean
+     * @return bool
      */
     public function hasPermission($permission)
     {
@@ -1072,7 +1050,7 @@ class Account extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getMasteriesSpentPoints()
     {

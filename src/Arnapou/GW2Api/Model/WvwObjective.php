@@ -23,7 +23,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class WvwObjective extends AbstractStoredObject
 {
-
     const TYPE_CAMP      = 'Camp';
     const TYPE_CASTLE    = 'Castle';
     const TYPE_KEEP      = 'Keep';

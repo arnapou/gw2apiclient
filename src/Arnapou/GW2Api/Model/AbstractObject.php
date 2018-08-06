@@ -10,15 +10,10 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Environment;
 
-/**
- *
- */
 abstract class AbstractObject
 {
-
     /**
      *
      * @var Environment
@@ -37,9 +32,7 @@ abstract class AbstractObject
      */
     private static $UNCAMELED = [];
 
-    /**
-     *
-     */
+    
     public function __construct(Environment $environment, $data)
     {
         $this->environment = $environment;

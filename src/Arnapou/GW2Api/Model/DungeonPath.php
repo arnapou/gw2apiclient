@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class DungeonPath extends AbstractObject
 {
-
     use UnlockTrait;
 
     /**
@@ -29,7 +25,7 @@ class DungeonPath extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getNumber()
     {

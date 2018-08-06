@@ -12,15 +12,11 @@ namespace Arnapou\GW2Api\Event;
 
 class EventListener
 {
-
     protected $events = [];
 
-    /**
-     *
-     */
+    
     public function __construct()
     {
-
     }
 
     /**

@@ -12,7 +12,6 @@ namespace Arnapou\GW2Api\Storage;
 
 interface StorageInterface
 {
-
     /**
      *
      * @param string $lang

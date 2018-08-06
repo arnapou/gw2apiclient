@@ -17,7 +17,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Outfit extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     protected $unlockItems = [];

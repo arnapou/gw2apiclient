@@ -10,7 +10,7 @@
 
 /*
  * SQL schema
- * 
+ *
 
   CREATE TABLE IF NOT EXISTS `cache` (
   `hash` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
@@ -28,7 +28,6 @@ use Arnapou\GW2Api\Exception\Exception;
 
 class MysqlCache implements CacheInterface
 {
-
     /**
      *
      * @var int
@@ -175,7 +174,7 @@ class MysqlCache implements CacheInterface
     protected function getPreparedRemove()
     {
         if (empty($this->prepared['remove'])) {
-            $sql                      = "DELETE FROM `" . $this->table . "` WHERE `hash`=:hash";
+            $sql                      = 'DELETE FROM `' . $this->table . '` WHERE `hash`=:hash';
             $this->prepared['remove'] = $this->pdo->prepare($sql);
         }
         return $this->prepared['remove'];
@@ -188,7 +187,7 @@ class MysqlCache implements CacheInterface
     protected function getPreparedGet()
     {
         if (empty($this->prepared['get'])) {
-            $sql                   = "SELECT `value` FROM `" . $this->table . "` WHERE `hash`=:hash and `expiration`>=:expiration";
+            $sql                   = 'SELECT `value` FROM `' . $this->table . '` WHERE `hash`=:hash and `expiration`>=:expiration';
             $this->prepared['get'] = $this->pdo->prepare($sql);
         }
         return $this->prepared['get'];
@@ -201,7 +200,7 @@ class MysqlCache implements CacheInterface
     protected function getPreparedSet()
     {
         if (!isset($this->prepared['set'])) {
-            $sql                   = "REPLACE INTO `" . $this->table . "` (`hash`, `value`, `expiration` ) VALUES (:hash, :value, :expiration)";
+            $sql                   = 'REPLACE INTO `' . $this->table . '` (`hash`, `value`, `expiration` ) VALUES (:hash, :value, :expiration)';
             $this->prepared['set'] = $this->pdo->prepare($sql);
         }
         return $this->prepared['set'];

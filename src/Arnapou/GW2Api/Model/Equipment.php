@@ -10,10 +10,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class Equipment extends InventorySlot
 {
-
 }

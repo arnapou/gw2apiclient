@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Crafting extends AbstractObject
 {
-
     // DISCIPLINES
     const DISCIPLINE_ARMORSMITH    = 'Armorsmith';
     const DISCIPLINE_ARTIFICER     = 'Artificer';

@@ -20,7 +20,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Mini extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     protected $item;

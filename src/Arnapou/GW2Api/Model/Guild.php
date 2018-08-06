@@ -25,7 +25,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Guild extends AbstractObject
 {
-
     /**
      *
      * @var array
@@ -88,7 +87,7 @@ class Guild extends AbstractObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function isLeader()
     {
@@ -97,7 +96,7 @@ class Guild extends AbstractObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function hasEmblem()
     {

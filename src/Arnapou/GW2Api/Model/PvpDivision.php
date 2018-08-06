@@ -19,7 +19,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpDivision extends AbstractObject
 {
-
     // results
     const FLAG_CAN_LOSE_POINTS = 'CanLosePoints';
     const FLAG_CAN_LOSE_TIERS  = 'CanLoseTiers';
@@ -46,7 +45,7 @@ class PvpDivision extends AbstractObject
     /**
      *
      * @param string $flag
-     * @return boolean
+     * @return bool
      */
     public function hasFlag($flag)
     {

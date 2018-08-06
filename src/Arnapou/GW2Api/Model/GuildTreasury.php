@@ -10,12 +10,8 @@
 
 namespace Arnapou\GW2Api\Model;
 
-/**
- *
- */
 class GuildTreasury extends AbstractObject
 {
-
     protected $item;
     protected $neededBy   = [];
     protected $totalCount = 0;
@@ -48,7 +44,7 @@ class GuildTreasury extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -57,7 +53,7 @@ class GuildTreasury extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getCount()
     {
@@ -66,7 +62,7 @@ class GuildTreasury extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getTotalCount()
     {

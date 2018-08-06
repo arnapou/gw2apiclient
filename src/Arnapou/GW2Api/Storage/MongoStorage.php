@@ -10,7 +10,6 @@
 
 namespace Arnapou\GW2Api\Storage;
 
-use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Exception\WrongMongoDatabaseException;
 use MongoDB\BSON\UTCDateTime as MongoDate;
 use MongoDB\Database as MongoDatabase;
@@ -18,7 +17,6 @@ use MongoDB\Collection as MongoCollection;
 
 class MongoStorage extends AbstractStorage
 {
-
     /**
      *
      * @var MongoDatabase
@@ -91,7 +89,6 @@ class MongoStorage extends AbstractStorage
 
     protected function loadFromFallback($lang, $name, $fallback, $ids)
     {
-
         $key        = $this->getKey($lang, $name);
         $collection = $this->getCollection($lang, $name);
 
@@ -142,7 +139,7 @@ class MongoStorage extends AbstractStorage
      *
      * @return MongoDatabase
      */
-    function getMongoDB()
+    public function getMongoDB()
     {
         return $this->mongoDB;
     }

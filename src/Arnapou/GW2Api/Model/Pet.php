@@ -18,7 +18,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Pet extends AbstractStoredObject
 {
-
     use UnlockTrait;
 
     protected $item;

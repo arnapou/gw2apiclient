@@ -10,8 +10,6 @@
 
 namespace Arnapou\GW2Api\Model;
 
-use Arnapou\GW2Api\Exception\Exception;
-
 /**
  *
  * @method getName()
@@ -25,7 +23,6 @@ use Arnapou\GW2Api\Exception\Exception;
  */
 class SpecializationLine extends AbstractObject
 {
-
     /**
      *
      * @var Specialization
@@ -63,7 +60,7 @@ class SpecializationLine extends AbstractObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function isElite()
     {
@@ -109,7 +106,7 @@ class SpecializationLine extends AbstractObject
 
     /**
      *
-     * @return integer
+     * @return int
      */
     public function getSpecializationId()
     {

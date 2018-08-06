@@ -12,5 +12,4 @@ namespace Arnapou\GW2Api\Storage;
 
 class RuntimeStorage extends AbstractStorage
 {
-
 }

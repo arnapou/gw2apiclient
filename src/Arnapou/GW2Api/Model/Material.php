@@ -17,7 +17,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class Material extends AbstractStoredObject
 {
-
     /**
      *
      * @return string

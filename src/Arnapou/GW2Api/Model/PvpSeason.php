@@ -16,7 +16,6 @@ namespace Arnapou\GW2Api\Model;
  */
 class PvpSeason extends AbstractStoredObject
 {
-
     protected $divisions = [];
 
     protected function setData($data)
@@ -42,7 +41,7 @@ class PvpSeason extends AbstractStoredObject
 
     /**
      *
-     * @return boolean
+     * @return bool
      */
     public function isActive()
     {
