@@ -102,9 +102,12 @@ function is_two_handed_weapon($item)
 {
     if ($item) {
         return in_array($item->getSubType(), [
-            Item::SUBTYPE_WEAPON_GREATSWORD, Item::SUBTYPE_WEAPON_HAMMER,
-            Item::SUBTYPE_WEAPON_LONGBOW, Item::SUBTYPE_WEAPON_RIFLE,
-            Item::SUBTYPE_WEAPON_SHORTBOW, Item::SUBTYPE_WEAPON_STAFF,
+            Item::SUBTYPE_WEAPON_GREATSWORD,
+            Item::SUBTYPE_WEAPON_HAMMER,
+            Item::SUBTYPE_WEAPON_LONGBOW,
+            Item::SUBTYPE_WEAPON_RIFLE,
+            Item::SUBTYPE_WEAPON_SHORTBOW,
+            Item::SUBTYPE_WEAPON_STAFF,
         ]) ? true : false;
     }
     return false;
@@ -190,8 +193,17 @@ function attributes_to_statname($attributes)
             return 'Celestial';
         }
         $attrs = [];
-        foreach ($attributes as $attr => $value) {
-            $attrs[] = ['name' => $attr, 'value' => $value];
+        if (is_associative_array($attributes)) {
+            foreach ($attributes as $attr => $value) {
+                $attrs[] = ['name' => $attr, 'value' => $value];
+            }
+        } else {
+            foreach ($attributes as $attribute) {
+                $attr       = $attribute['attribute'] ?? '';
+                $multiplier = $attribute['multiplier'] ?? 0;
+                $value      = $attribute['value'] ?? 0;
+                $attrs[]    = ['name' => $attr, 'value' => $value ?: $multiplier];
+            }
         }
         usort($attrs, function ($a, $b) {
             $ret = $a['value'] <=> $b['value'];
@@ -240,12 +252,15 @@ function attributes_to_statname($attributes)
         'Healing/Toughness/BoonDuration/Vitality'              => 'Minstrel',
         'Power/Toughness/BoonDuration/ConditionDuration'       => 'Vigilant',
         'ConditionDamage/Power/ConditionDuration/Precision'    => "Viper's",
-        // HoT stats - Episode 4
+        // HoT stats - LS
         'ConditionDamage/Precision/BoonDuration/Healing'       => 'Seraph',
         // PoF stats
         'Healing/Power/ConditionDamage/Precision'              => "Marshal's",
         'Power/BoonDuration/Healing'                           => "Harrier's",
         'ConditionDamage/Power/CritDamage/Precision'           => 'Grieving',
+        // PoF stats - LS
+        'Vitality/ConditionDuration/Precision'                 => 'Bringer',
+        'ConditionDamage/Vitality/BoonDuration/Healing'        => 'Plaguedoctor',
     ];
     if ($flatten && isset($statNames[$flatten])) {
         return $statNames[$flatten];
