@@ -1,38 +1,10 @@
 <?php return array (
-  'revision' => 1505135479,
-  'races' => 
-  array (
-    0 => 
-    array (
-      'id' => 3,
-      'name' => 'Norn',
-    ),
-    1 => 
-    array (
-      'id' => 4,
-      'name' => 'Asura',
-    ),
-    2 => 
-    array (
-      'id' => 5,
-      'name' => 'Sylvari',
-    ),
-    3 => 
-    array (
-      'id' => 2,
-      'name' => 'Charr',
-    ),
-    4 => 
-    array (
-      'id' => 1,
-      'name' => 'Human',
-    ),
-  ),
+  'revision' => 1531731912,
   'items' => 
   array (
     0 => 
     array (
-      'id' => 172,
+      'id' => 188,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Knight Amulet',
@@ -41,7 +13,7 @@
     ),
     1 => 
     array (
-      'id' => 173,
+      'id' => 189,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Cavalier Amulet',
@@ -50,16 +22,16 @@
     ),
     2 => 
     array (
-      'id' => 174,
+      'id' => 191,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
-      'name' => 'Magi Amulet',
+      'name' => 'Celestial Amulet',
       'pvx' => 1,
       'is_profile' => false,
     ),
     3 => 
     array (
-      'id' => 176,
+      'id' => 192,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Carrion Amulet',
@@ -68,7 +40,7 @@
     ),
     4 => 
     array (
-      'id' => 177,
+      'id' => 193,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Rabid Amulet',
@@ -77,7 +49,7 @@
     ),
     5 => 
     array (
-      'id' => 179,
+      'id' => 195,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Valkyrie Amulet',
@@ -86,7 +58,7 @@
     ),
     6 => 
     array (
-      'id' => 180,
+      'id' => 196,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Berserker Amulet',
@@ -95,7 +67,7 @@
     ),
     7 => 
     array (
-      'id' => 182,
+      'id' => 198,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Rampager Amulet',
@@ -104,7 +76,7 @@
     ),
     8 => 
     array (
-      'id' => 183,
+      'id' => 199,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Barbarian Amulet',
@@ -113,7 +85,7 @@
     ),
     9 => 
     array (
-      'id' => 184,
+      'id' => 200,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Assassin Amulet',
@@ -122,7 +94,7 @@
     ),
     10 => 
     array (
-      'id' => 188,
+      'id' => 204,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Marauder Amulet',
@@ -131,7 +103,7 @@
     ),
     11 => 
     array (
-      'id' => 192,
+      'id' => 208,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Viper Amulet',
@@ -140,7 +112,7 @@
     ),
     12 => 
     array (
-      'id' => 193,
+      'id' => 209,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Wanderer Amulet',
@@ -149,7 +121,7 @@
     ),
     13 => 
     array (
-      'id' => 194,
+      'id' => 210,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Sinister Amulet',
@@ -158,7 +130,7 @@
     ),
     14 => 
     array (
-      'id' => 195,
+      'id' => 211,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Mender\'s Amulet',
@@ -167,7 +139,7 @@
     ),
     15 => 
     array (
-      'id' => 197,
+      'id' => 213,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Paladin\'s Amulet',
@@ -176,7 +148,7 @@
     ),
     16 => 
     array (
-      'id' => 198,
+      'id' => 214,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Sage\'s Amulet',
@@ -185,7 +157,7 @@
     ),
     17 => 
     array (
-      'id' => 199,
+      'id' => 215,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Demolisher\'s Amulet',
@@ -194,7 +166,7 @@
     ),
     18 => 
     array (
-      'id' => 200,
+      'id' => 216,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Destroyer\'s Amulet',
@@ -203,7 +175,7 @@
     ),
     19 => 
     array (
-      'id' => 201,
+      'id' => 217,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Seeker\'s Amulet',
@@ -212,7 +184,7 @@
     ),
     20 => 
     array (
-      'id' => 202,
+      'id' => 218,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Diviner\'s Amulet',
@@ -221,7 +193,7 @@
     ),
     21 => 
     array (
-      'id' => 203,
+      'id' => 219,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => 'Deadshot Amulet',
@@ -230,7 +202,61 @@
     ),
     22 => 
     array (
-      'id' => 45,
+      'id' => 220,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Avatar Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    23 => 
+    array (
+      'id' => 221,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Grieving Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    24 => 
+    array (
+      'id' => 222,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Harrier Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    25 => 
+    array (
+      'id' => 223,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Marshal Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    26 => 
+    array (
+      'id' => 224,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Swashbuckler Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    27 => 
+    array (
+      'id' => 225,
+      'type' => 'Amulet',
+      'rarity' => 'Exotic',
+      'name' => 'Wizard Amulet',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    28 => 
+    array (
+      'id' => 48,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -238,9 +264,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    23 => 
+    29 => 
     array (
-      'id' => 46,
+      'id' => 49,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -248,9 +274,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    24 => 
+    30 => 
     array (
-      'id' => 47,
+      'id' => 50,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -258,9 +284,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    25 => 
+    31 => 
     array (
-      'id' => 48,
+      'id' => 51,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -268,9 +294,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    26 => 
+    32 => 
     array (
-      'id' => 49,
+      'id' => 52,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -278,9 +304,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    27 => 
+    33 => 
     array (
-      'id' => 50,
+      'id' => 53,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -288,9 +314,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    28 => 
+    34 => 
     array (
-      'id' => 51,
+      'id' => 54,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -298,9 +324,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    29 => 
+    35 => 
     array (
-      'id' => 52,
+      'id' => 55,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -308,9 +334,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    30 => 
+    36 => 
     array (
-      'id' => 53,
+      'id' => 56,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -318,9 +344,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    31 => 
+    37 => 
     array (
-      'id' => 54,
+      'id' => 57,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -328,9 +354,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    32 => 
+    38 => 
     array (
-      'id' => 55,
+      'id' => 58,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -338,9 +364,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    33 => 
+    39 => 
     array (
-      'id' => 56,
+      'id' => 59,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -348,9 +374,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    34 => 
+    40 => 
     array (
-      'id' => 57,
+      'id' => 60,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -358,9 +384,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    35 => 
+    41 => 
     array (
-      'id' => 58,
+      'id' => 61,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -368,9 +394,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    36 => 
+    42 => 
     array (
-      'id' => 59,
+      'id' => 62,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -378,9 +404,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    37 => 
+    43 => 
     array (
-      'id' => 60,
+      'id' => 63,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -388,9 +414,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    38 => 
+    44 => 
     array (
-      'id' => 61,
+      'id' => 64,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -398,9 +424,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    39 => 
+    45 => 
     array (
-      'id' => 62,
+      'id' => 65,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -408,9 +434,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    40 => 
+    46 => 
     array (
-      'id' => 63,
+      'id' => 66,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -418,9 +444,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    41 => 
+    47 => 
     array (
-      'id' => 64,
+      'id' => 67,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -428,9 +454,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    42 => 
+    48 => 
     array (
-      'id' => 65,
+      'id' => 68,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -438,9 +464,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    43 => 
+    49 => 
     array (
-      'id' => 66,
+      'id' => 69,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -448,9 +474,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    44 => 
+    50 => 
     array (
-      'id' => 67,
+      'id' => 70,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -458,9 +484,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    45 => 
+    51 => 
     array (
-      'id' => 68,
+      'id' => 71,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -468,9 +494,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    46 => 
+    52 => 
     array (
-      'id' => 69,
+      'id' => 72,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -478,9 +504,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    47 => 
+    53 => 
     array (
-      'id' => 70,
+      'id' => 73,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -488,9 +514,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    48 => 
+    54 => 
     array (
-      'id' => 71,
+      'id' => 74,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -498,9 +524,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    49 => 
+    55 => 
     array (
-      'id' => 72,
+      'id' => 75,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -508,9 +534,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    50 => 
+    56 => 
     array (
-      'id' => 74,
+      'id' => 77,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -518,9 +544,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    51 => 
+    57 => 
     array (
-      'id' => 76,
+      'id' => 79,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -528,9 +554,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    52 => 
+    58 => 
     array (
-      'id' => 77,
+      'id' => 80,
       'type' => 'Back',
       'rarity' => 'Exotic',
       'name' => '',
@@ -538,9 +564,19 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    53 => 
+    59 => 
     array (
-      'id' => 79,
+      'id' => 81,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    60 => 
+    array (
+      'id' => 83,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -548,9 +584,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    54 => 
+    61 => 
     array (
-      'id' => 80,
+      'id' => 84,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -558,9 +594,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    55 => 
+    62 => 
     array (
-      'id' => 81,
+      'id' => 85,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -568,9 +604,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    56 => 
+    63 => 
     array (
-      'id' => 82,
+      'id' => 86,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -578,9 +614,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    57 => 
+    64 => 
     array (
-      'id' => 83,
+      'id' => 87,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -588,9 +624,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    58 => 
+    65 => 
     array (
-      'id' => 84,
+      'id' => 88,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -598,9 +634,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    59 => 
+    66 => 
     array (
-      'id' => 85,
+      'id' => 89,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -608,9 +644,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    60 => 
+    67 => 
     array (
-      'id' => 86,
+      'id' => 90,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -618,9 +654,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    61 => 
+    68 => 
     array (
-      'id' => 87,
+      'id' => 91,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -628,9 +664,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    62 => 
+    69 => 
     array (
-      'id' => 88,
+      'id' => 92,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -638,9 +674,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    63 => 
+    70 => 
     array (
-      'id' => 89,
+      'id' => 93,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -648,9 +684,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    64 => 
+    71 => 
     array (
-      'id' => 90,
+      'id' => 94,
       'type' => 'Back',
       'rarity' => 'Rare',
       'name' => '',
@@ -658,81 +694,11 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    65 => 
-    array (
-      'id' => 91,
-      'type' => 'Back',
-      'rarity' => 'Rare',
-      'name' => '',
-      'stats_class' => 'Rampager',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    66 => 
-    array (
-      'id' => 92,
-      'type' => 'Back',
-      'rarity' => 'Rare',
-      'name' => '',
-      'stats_class' => 'Sentinel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    67 => 
-    array (
-      'id' => 94,
-      'type' => 'Back',
-      'rarity' => 'Rare',
-      'name' => '',
-      'stats_class' => 'Settler',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    68 => 
+    72 => 
     array (
       'id' => 95,
       'type' => 'Back',
       'rarity' => 'Rare',
-      'name' => '',
-      'stats_class' => 'Valkyrie',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    69 => 
-    array (
-      'id' => 96,
-      'type' => 'Back',
-      'rarity' => 'Rare',
-      'name' => '',
-      'stats_class' => 'Celestial',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    70 => 
-    array (
-      'id' => 98,
-      'type' => 'Back',
-      'rarity' => 'Masterwork',
-      'name' => '',
-      'stats_class' => 'Berserker',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    71 => 
-    array (
-      'id' => 99,
-      'type' => 'Back',
-      'rarity' => 'Masterwork',
-      'name' => '',
-      'stats_class' => 'Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    72 => 
-    array (
-      'id' => 100,
-      'type' => 'Back',
-      'rarity' => 'Masterwork',
       'name' => '',
       'stats_class' => 'Rampager',
       'pvx' => 6,
@@ -740,7 +706,77 @@
     ),
     73 => 
     array (
-      'id' => 101,
+      'id' => 96,
+      'type' => 'Back',
+      'rarity' => 'Rare',
+      'name' => '',
+      'stats_class' => 'Sentinel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    74 => 
+    array (
+      'id' => 98,
+      'type' => 'Back',
+      'rarity' => 'Rare',
+      'name' => '',
+      'stats_class' => 'Settler',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    75 => 
+    array (
+      'id' => 99,
+      'type' => 'Back',
+      'rarity' => 'Rare',
+      'name' => '',
+      'stats_class' => 'Valkyrie',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    76 => 
+    array (
+      'id' => 100,
+      'type' => 'Back',
+      'rarity' => 'Rare',
+      'name' => '',
+      'stats_class' => 'Celestial',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    77 => 
+    array (
+      'id' => 102,
+      'type' => 'Back',
+      'rarity' => 'Masterwork',
+      'name' => '',
+      'stats_class' => 'Berserker',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    78 => 
+    array (
+      'id' => 103,
+      'type' => 'Back',
+      'rarity' => 'Masterwork',
+      'name' => '',
+      'stats_class' => 'Soldier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    79 => 
+    array (
+      'id' => 104,
+      'type' => 'Back',
+      'rarity' => 'Masterwork',
+      'name' => '',
+      'stats_class' => 'Rampager',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    80 => 
+    array (
+      'id' => 105,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -748,9 +784,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    74 => 
+    81 => 
     array (
-      'id' => 102,
+      'id' => 106,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -758,9 +794,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    75 => 
+    82 => 
     array (
-      'id' => 103,
+      'id' => 107,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -768,9 +804,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    76 => 
+    83 => 
     array (
-      'id' => 104,
+      'id' => 108,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -778,9 +814,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    77 => 
+    84 => 
     array (
-      'id' => 105,
+      'id' => 109,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -788,9 +824,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    78 => 
+    85 => 
     array (
-      'id' => 106,
+      'id' => 110,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -798,9 +834,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    79 => 
+    86 => 
     array (
-      'id' => 107,
+      'id' => 111,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -808,9 +844,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    80 => 
+    87 => 
     array (
-      'id' => 108,
+      'id' => 112,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -818,9 +854,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    81 => 
+    88 => 
     array (
-      'id' => 109,
+      'id' => 113,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -828,9 +864,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    82 => 
+    89 => 
     array (
-      'id' => 110,
+      'id' => 114,
       'type' => 'Back',
       'rarity' => 'Masterwork',
       'name' => '',
@@ -838,724 +874,768 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    83 => 
-    array (
-      'id' => 112,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Berserker',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    84 => 
-    array (
-      'id' => 113,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    85 => 
-    array (
-      'id' => 114,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Valkyrie',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    86 => 
-    array (
-      'id' => 115,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Rampager',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    87 => 
+    90 => 
     array (
       'id' => 116,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Knight',
+      'stats_class' => 'Berserker',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    88 => 
+    91 => 
     array (
       'id' => 117,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Settler',
+      'stats_class' => 'Soldier',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    89 => 
+    92 => 
     array (
       'id' => 118,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Shaman',
+      'stats_class' => 'Valkyrie',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    90 => 
+    93 => 
     array (
       'id' => 119,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Carrion',
+      'stats_class' => 'Rampager',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    91 => 
+    94 => 
     array (
       'id' => 120,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Rabid',
+      'stats_class' => 'Knight',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    92 => 
+    95 => 
     array (
       'id' => 121,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Giver',
+      'stats_class' => 'Settler',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    93 => 
+    96 => 
     array (
       'id' => 122,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Cleric',
+      'stats_class' => 'Shaman',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    94 => 
+    97 => 
     array (
       'id' => 123,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Magi',
+      'stats_class' => 'Carrion',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    95 => 
+    98 => 
     array (
       'id' => 124,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Apothecary',
+      'stats_class' => 'Rabid',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    96 => 
+    99 => 
     array (
       'id' => 125,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Assassin',
+      'stats_class' => 'Bringer',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    97 => 
+    100 => 
     array (
       'id' => 126,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Dire',
+      'stats_class' => 'Giver',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    98 => 
+    101 => 
     array (
       'id' => 127,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Zealot',
+      'stats_class' => 'Cleric',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    99 => 
+    102 => 
     array (
       'id' => 128,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Nomad',
+      'stats_class' => 'Magi',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    100 => 
+    103 => 
     array (
       'id' => 129,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Sinister',
+      'stats_class' => 'Apothecary',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    101 => 
+    104 => 
     array (
       'id' => 130,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Sentinel',
+      'stats_class' => 'Assassin',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    102 => 
+    105 => 
     array (
       'id' => 131,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Commander',
+      'stats_class' => 'Dire',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    103 => 
+    106 => 
     array (
       'id' => 132,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Crusader',
+      'stats_class' => 'Zealot',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    104 => 
+    107 => 
     array (
       'id' => 133,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Marauder',
+      'stats_class' => 'Nomad',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    105 => 
+    108 => 
     array (
       'id' => 134,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Minstrel',
+      'stats_class' => 'Sinister',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    106 => 
+    109 => 
     array (
       'id' => 135,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Trailblazer',
+      'stats_class' => 'Sentinel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    107 => 
+    110 => 
     array (
       'id' => 136,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Vigilant',
+      'stats_class' => 'Commander',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    108 => 
+    111 => 
     array (
       'id' => 137,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Viper',
+      'stats_class' => 'Crusader',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    109 => 
+    112 => 
     array (
       'id' => 138,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Wanderer',
+      'stats_class' => 'Marauder',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    110 => 
+    113 => 
     array (
       'id' => 139,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Seraph',
+      'stats_class' => 'Minstrel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    111 => 
+    114 => 
+    array (
+      'id' => 140,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    115 => 
     array (
       'id' => 141,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Harrier',
+      'stats_class' => 'Vigilant',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    112 => 
+    116 => 
+    array (
+      'id' => 142,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    117 => 
     array (
       'id' => 143,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Grieving',
+      'stats_class' => 'Wanderer',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    113 => 
+    118 => 
     array (
       'id' => 144,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Marshal',
+      'stats_class' => 'Seraph',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    114 => 
-    array (
-      'id' => 145,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Celestial',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    115 => 
+    119 => 
     array (
       'id' => 146,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Cavalier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    116 => 
-    array (
-      'id' => 147,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Berserker',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    117 => 
-    array (
-      'id' => 148,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    118 => 
-    array (
-      'id' => 149,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Valkyrie',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    119 => 
-    array (
-      'id' => 150,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Weapon',
-      'stats_class' => 'Rampager',
+      'stats_class' => 'Harrier',
       'pvx' => 6,
       'is_profile' => true,
     ),
     120 => 
     array (
-      'id' => 151,
+      'id' => 148,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Knight',
+      'stats_class' => 'Grieving',
       'pvx' => 6,
       'is_profile' => true,
     ),
     121 => 
     array (
-      'id' => 152,
+      'id' => 149,
       'type' => '',
-      'rarity' => 'Ascended',
+      'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Settler',
+      'stats_class' => 'Marshal',
       'pvx' => 6,
       'is_profile' => true,
     ),
     122 => 
+    array (
+      'id' => 150,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    123 => 
+    array (
+      'id' => 151,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Celestial',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    124 => 
+    array (
+      'id' => 152,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Cavalier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    125 => 
     array (
       'id' => 153,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Shaman',
+      'stats_class' => 'Berserker',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    123 => 
+    126 => 
     array (
       'id' => 154,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Carrion',
+      'stats_class' => 'Soldier',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    124 => 
+    127 => 
     array (
       'id' => 155,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Rabid',
+      'stats_class' => 'Valkyrie',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    125 => 
+    128 => 
     array (
       'id' => 156,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Giver',
+      'stats_class' => 'Rampager',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    126 => 
+    129 => 
     array (
       'id' => 157,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Cleric',
+      'stats_class' => 'Knight',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    127 => 
+    130 => 
     array (
       'id' => 158,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Magi',
+      'stats_class' => 'Settler',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    128 => 
+    131 => 
     array (
       'id' => 159,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Apothecary',
+      'stats_class' => 'Shaman',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    129 => 
+    132 => 
     array (
       'id' => 160,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Assassin',
+      'stats_class' => 'Carrion',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    130 => 
+    133 => 
     array (
       'id' => 161,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Dire',
+      'stats_class' => 'Rabid',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    131 => 
+    134 => 
     array (
       'id' => 162,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Zealot',
+      'stats_class' => 'Bringer',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    132 => 
+    135 => 
     array (
       'id' => 163,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Nomad',
+      'stats_class' => 'Giver',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    133 => 
+    136 => 
     array (
       'id' => 164,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Sinister',
+      'stats_class' => 'Cleric',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    134 => 
+    137 => 
     array (
       'id' => 165,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Sentinel',
+      'stats_class' => 'Magi',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    135 => 
+    138 => 
     array (
       'id' => 166,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Commander',
+      'stats_class' => 'Apothecary',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    136 => 
+    139 => 
     array (
       'id' => 167,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Crusader',
+      'stats_class' => 'Assassin',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    137 => 
+    140 => 
     array (
       'id' => 168,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Marauder',
+      'stats_class' => 'Dire',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    138 => 
+    141 => 
     array (
       'id' => 169,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Minstrel',
+      'stats_class' => 'Zealot',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    139 => 
+    142 => 
     array (
       'id' => 170,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Trailblazer',
+      'stats_class' => 'Nomad',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    140 => 
+    143 => 
     array (
       'id' => 171,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Vigilant',
+      'stats_class' => 'Sinister',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    141 => 
+    144 => 
     array (
       'id' => 172,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Viper',
+      'stats_class' => 'Sentinel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    142 => 
+    145 => 
     array (
       'id' => 173,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Wanderer',
+      'stats_class' => 'Commander',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    143 => 
+    146 => 
     array (
       'id' => 174,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Seraph',
+      'stats_class' => 'Crusader',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    144 => 
+    147 => 
+    array (
+      'id' => 175,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    148 => 
     array (
       'id' => 176,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Harrier',
+      'stats_class' => 'Minstrel',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    145 => 
+    149 => 
+    array (
+      'id' => 177,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    150 => 
     array (
       'id' => 178,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Grieving',
+      'stats_class' => 'Vigilant',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    146 => 
+    151 => 
     array (
       'id' => 179,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
-      'stats_class' => 'Marshal',
+      'stats_class' => 'Viper',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    147 => 
+    152 => 
     array (
       'id' => 180,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Weapon',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    153 => 
+    array (
+      'id' => 181,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    154 => 
+    array (
+      'id' => 183,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    155 => 
+    array (
+      'id' => 185,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Grieving',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    156 => 
+    array (
+      'id' => 186,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Marshal',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    157 => 
+    array (
+      'id' => 187,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    158 => 
+    array (
+      'id' => 188,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
       'stats_class' => 'Celestial',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    148 => 
+    159 => 
     array (
-      'id' => 181,
+      'id' => 189,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -1564,163 +1644,174 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    149 => 
-    array (
-      'id' => 182,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Berserker',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    150 => 
-    array (
-      'id' => 183,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    151 => 
-    array (
-      'id' => 184,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Valkyrie',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    152 => 
-    array (
-      'id' => 185,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Rampager',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    153 => 
-    array (
-      'id' => 186,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Knight',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    154 => 
-    array (
-      'id' => 187,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Settler',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    155 => 
-    array (
-      'id' => 188,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    156 => 
-    array (
-      'id' => 189,
-      'type' => '',
-      'rarity' => 'Exotic',
-      'name' => '',
-      'group' => 'Armor',
-      'stats_class' => 'Sentinel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    157 => 
+    160 => 
     array (
       'id' => 190,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Armor',
-      'stats_class' => 'Carrion',
+      'stats_class' => 'Berserker',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    158 => 
+    161 => 
     array (
       'id' => 191,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Armor',
-      'stats_class' => 'Rabid',
+      'stats_class' => 'Soldier',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    159 => 
+    162 => 
     array (
       'id' => 192,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Armor',
-      'stats_class' => 'Giver',
+      'stats_class' => 'Valkyrie',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    160 => 
+    163 => 
     array (
       'id' => 193,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Armor',
-      'stats_class' => 'Cavalier',
+      'stats_class' => 'Rampager',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    161 => 
+    164 => 
     array (
       'id' => 194,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Armor',
-      'stats_class' => 'Cleric',
+      'stats_class' => 'Knight',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    162 => 
+    165 => 
     array (
       'id' => 195,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
       'group' => 'Armor',
+      'stats_class' => 'Settler',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    166 => 
+    array (
+      'id' => 196,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Shaman',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    167 => 
+    array (
+      'id' => 197,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Sentinel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    168 => 
+    array (
+      'id' => 198,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Carrion',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    169 => 
+    array (
+      'id' => 199,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Rabid',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    170 => 
+    array (
+      'id' => 200,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Bringer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    171 => 
+    array (
+      'id' => 201,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Giver',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    172 => 
+    array (
+      'id' => 202,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Cavalier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    173 => 
+    array (
+      'id' => 203,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Cleric',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    174 => 
+    array (
+      'id' => 204,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
       'stats_class' => 'Magi',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    163 => 
+    175 => 
     array (
-      'id' => 196,
+      'id' => 205,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1729,9 +1820,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    164 => 
+    176 => 
     array (
-      'id' => 197,
+      'id' => 206,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1740,9 +1831,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    165 => 
+    177 => 
     array (
-      'id' => 198,
+      'id' => 207,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1751,9 +1842,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    166 => 
+    178 => 
     array (
-      'id' => 199,
+      'id' => 208,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1762,9 +1853,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    167 => 
+    179 => 
     array (
-      'id' => 200,
+      'id' => 209,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1773,9 +1864,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    168 => 
+    180 => 
     array (
-      'id' => 201,
+      'id' => 210,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1784,9 +1875,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    169 => 
+    181 => 
     array (
-      'id' => 202,
+      'id' => 211,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1795,9 +1886,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    170 => 
+    182 => 
     array (
-      'id' => 203,
+      'id' => 212,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1806,9 +1897,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    171 => 
+    183 => 
     array (
-      'id' => 204,
+      'id' => 213,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1817,9 +1908,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    172 => 
+    184 => 
     array (
-      'id' => 205,
+      'id' => 214,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1828,9 +1919,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    173 => 
+    185 => 
     array (
-      'id' => 206,
+      'id' => 215,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1839,9 +1930,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    174 => 
+    186 => 
     array (
-      'id' => 207,
+      'id' => 216,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1850,9 +1941,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    175 => 
+    187 => 
     array (
-      'id' => 208,
+      'id' => 217,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1861,9 +1952,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    176 => 
+    188 => 
     array (
-      'id' => 209,
+      'id' => 218,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1872,9 +1963,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    177 => 
+    189 => 
     array (
-      'id' => 211,
+      'id' => 220,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1883,9 +1974,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    178 => 
+    190 => 
     array (
-      'id' => 213,
+      'id' => 222,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1894,9 +1985,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    179 => 
+    191 => 
     array (
-      'id' => 214,
+      'id' => 223,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1905,9 +1996,20 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    180 => 
+    192 => 
     array (
-      'id' => 215,
+      'id' => 224,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    193 => 
+    array (
+      'id' => 225,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1916,9 +2018,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    181 => 
+    194 => 
     array (
-      'id' => 216,
+      'id' => 226,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -1927,9 +2029,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    182 => 
+    195 => 
     array (
-      'id' => 217,
+      'id' => 227,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -1938,9 +2040,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    183 => 
+    196 => 
     array (
-      'id' => 218,
+      'id' => 228,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -1949,9 +2051,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    184 => 
+    197 => 
     array (
-      'id' => 219,
+      'id' => 229,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -1960,9 +2062,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    185 => 
+    198 => 
     array (
-      'id' => 220,
+      'id' => 230,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -1971,9 +2073,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    186 => 
+    199 => 
     array (
-      'id' => 221,
+      'id' => 231,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -1982,9 +2084,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    187 => 
+    200 => 
     array (
-      'id' => 222,
+      'id' => 232,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -1993,9 +2095,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    188 => 
+    201 => 
     array (
-      'id' => 223,
+      'id' => 233,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2004,9 +2106,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    189 => 
+    202 => 
     array (
-      'id' => 224,
+      'id' => 234,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2015,9 +2117,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    190 => 
+    203 => 
     array (
-      'id' => 225,
+      'id' => 235,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2026,9 +2128,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    191 => 
+    204 => 
     array (
-      'id' => 226,
+      'id' => 236,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2037,9 +2139,31 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    192 => 
+    205 => 
     array (
-      'id' => 227,
+      'id' => 237,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Bringer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    206 => 
+    array (
+      'id' => 238,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Giver',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    207 => 
+    array (
+      'id' => 239,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2048,9 +2172,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    193 => 
+    208 => 
     array (
-      'id' => 228,
+      'id' => 240,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2059,9 +2183,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    194 => 
+    209 => 
     array (
-      'id' => 229,
+      'id' => 241,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2070,9 +2194,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    195 => 
+    210 => 
     array (
-      'id' => 230,
+      'id' => 242,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2081,9 +2205,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    196 => 
+    211 => 
     array (
-      'id' => 231,
+      'id' => 243,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2092,9 +2216,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    197 => 
+    212 => 
     array (
-      'id' => 232,
+      'id' => 244,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2103,9 +2227,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    198 => 
+    213 => 
     array (
-      'id' => 233,
+      'id' => 245,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2114,9 +2238,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    199 => 
+    214 => 
     array (
-      'id' => 234,
+      'id' => 246,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2125,9 +2249,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    200 => 
+    215 => 
     array (
-      'id' => 235,
+      'id' => 247,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2136,9 +2260,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    201 => 
+    216 => 
     array (
-      'id' => 236,
+      'id' => 248,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2147,9 +2271,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    202 => 
+    217 => 
     array (
-      'id' => 237,
+      'id' => 249,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2158,9 +2282,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    203 => 
+    218 => 
     array (
-      'id' => 238,
+      'id' => 250,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2169,9 +2293,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    204 => 
+    219 => 
     array (
-      'id' => 239,
+      'id' => 251,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2180,9 +2304,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    205 => 
+    220 => 
     array (
-      'id' => 240,
+      'id' => 252,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2191,9 +2315,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    206 => 
+    221 => 
     array (
-      'id' => 241,
+      'id' => 253,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2202,9 +2326,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    207 => 
+    222 => 
     array (
-      'id' => 242,
+      'id' => 254,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2213,9 +2337,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    208 => 
+    223 => 
     array (
-      'id' => 243,
+      'id' => 255,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2224,9 +2348,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    209 => 
+    224 => 
     array (
-      'id' => 245,
+      'id' => 257,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2235,9 +2359,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    210 => 
+    225 => 
     array (
-      'id' => 247,
+      'id' => 259,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2246,9 +2370,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    211 => 
+    226 => 
     array (
-      'id' => 248,
+      'id' => 260,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2257,9 +2381,20 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    212 => 
+    227 => 
     array (
-      'id' => 249,
+      'id' => 261,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    228 => 
+    array (
+      'id' => 262,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2268,9 +2403,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    213 => 
+    229 => 
     array (
-      'id' => 250,
+      'id' => 263,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2279,9 +2414,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    214 => 
+    230 => 
     array (
-      'id' => 251,
+      'id' => 264,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2290,9 +2425,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    215 => 
+    231 => 
     array (
-      'id' => 252,
+      'id' => 265,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2301,9 +2436,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    216 => 
+    232 => 
     array (
-      'id' => 253,
+      'id' => 266,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2312,9 +2447,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    217 => 
+    233 => 
     array (
-      'id' => 254,
+      'id' => 267,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2323,9 +2458,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    218 => 
+    234 => 
     array (
-      'id' => 255,
+      'id' => 268,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2334,9 +2469,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    219 => 
+    235 => 
     array (
-      'id' => 256,
+      'id' => 269,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2345,9 +2480,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    220 => 
+    236 => 
     array (
-      'id' => 257,
+      'id' => 270,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2356,9 +2491,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    221 => 
+    237 => 
     array (
-      'id' => 258,
+      'id' => 271,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2367,9 +2502,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    222 => 
+    238 => 
     array (
-      'id' => 259,
+      'id' => 272,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2378,9 +2513,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    223 => 
+    239 => 
     array (
-      'id' => 260,
+      'id' => 273,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2389,9 +2524,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    224 => 
+    240 => 
     array (
-      'id' => 261,
+      'id' => 274,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2400,9 +2535,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    225 => 
+    241 => 
     array (
-      'id' => 262,
+      'id' => 275,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2411,9 +2546,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    226 => 
+    242 => 
     array (
-      'id' => 263,
+      'id' => 276,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2422,9 +2557,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    227 => 
+    243 => 
     array (
-      'id' => 264,
+      'id' => 277,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2433,9 +2568,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    228 => 
+    244 => 
     array (
-      'id' => 265,
+      'id' => 278,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2444,9 +2579,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    229 => 
+    245 => 
     array (
-      'id' => 266,
+      'id' => 279,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2455,9 +2590,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    230 => 
+    246 => 
     array (
-      'id' => 267,
+      'id' => 280,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2466,9 +2601,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    231 => 
+    247 => 
     array (
-      'id' => 268,
+      'id' => 281,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2477,9 +2612,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    232 => 
+    248 => 
     array (
-      'id' => 269,
+      'id' => 282,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2488,9 +2623,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    233 => 
+    249 => 
     array (
-      'id' => 270,
+      'id' => 283,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2499,9 +2634,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    234 => 
+    250 => 
     array (
-      'id' => 272,
+      'id' => 285,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2510,9 +2645,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    235 => 
+    251 => 
     array (
-      'id' => 273,
+      'id' => 286,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2521,9 +2656,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    236 => 
+    252 => 
     array (
-      'id' => 274,
+      'id' => 287,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2532,9 +2667,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    237 => 
+    253 => 
     array (
-      'id' => 275,
+      'id' => 288,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2543,9 +2678,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    238 => 
+    254 => 
     array (
-      'id' => 276,
+      'id' => 289,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2554,9 +2689,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    239 => 
+    255 => 
     array (
-      'id' => 277,
+      'id' => 290,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2565,9 +2700,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    240 => 
+    256 => 
     array (
-      'id' => 278,
+      'id' => 291,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2576,9 +2711,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    241 => 
+    257 => 
     array (
-      'id' => 279,
+      'id' => 292,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2587,9 +2722,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    242 => 
+    258 => 
     array (
-      'id' => 280,
+      'id' => 293,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2598,9 +2733,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    243 => 
+    259 => 
     array (
-      'id' => 282,
+      'id' => 295,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2609,9 +2744,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    244 => 
+    260 => 
     array (
-      'id' => 284,
+      'id' => 297,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2620,9 +2755,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    245 => 
+    261 => 
     array (
-      'id' => 285,
+      'id' => 298,
       'type' => '',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2631,9 +2766,20 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    246 => 
+    262 => 
     array (
-      'id' => 286,
+      'id' => 299,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    263 => 
+    array (
+      'id' => 300,
       'type' => 'Amulet',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2641,9 +2787,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    247 => 
+    264 => 
     array (
-      'id' => 287,
+      'id' => 301,
       'type' => 'Ring',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2651,9 +2797,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    248 => 
+    265 => 
     array (
-      'id' => 288,
+      'id' => 302,
       'type' => 'Earring',
       'rarity' => 'Exotic',
       'name' => '',
@@ -2661,9 +2807,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    249 => 
+    266 => 
     array (
-      'id' => 289,
+      'id' => 303,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2672,9 +2818,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    250 => 
+    267 => 
     array (
-      'id' => 290,
+      'id' => 304,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2683,9 +2829,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    251 => 
+    268 => 
     array (
-      'id' => 291,
+      'id' => 305,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2694,9 +2840,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    252 => 
+    269 => 
     array (
-      'id' => 292,
+      'id' => 306,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2705,9 +2851,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    253 => 
+    270 => 
     array (
-      'id' => 293,
+      'id' => 307,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2716,9 +2862,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    254 => 
+    271 => 
     array (
-      'id' => 294,
+      'id' => 308,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2727,9 +2873,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    255 => 
+    272 => 
     array (
-      'id' => 295,
+      'id' => 309,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2738,9 +2884,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    256 => 
+    273 => 
     array (
-      'id' => 296,
+      'id' => 310,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2749,9 +2895,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    257 => 
+    274 => 
     array (
-      'id' => 297,
+      'id' => 311,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2760,9 +2906,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    258 => 
+    275 => 
     array (
-      'id' => 298,
+      'id' => 312,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2771,9 +2917,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    259 => 
+    276 => 
     array (
-      'id' => 299,
+      'id' => 313,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2782,9 +2928,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    260 => 
+    277 => 
     array (
-      'id' => 300,
+      'id' => 314,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2793,9 +2939,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    261 => 
+    278 => 
     array (
-      'id' => 301,
+      'id' => 315,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2804,9 +2950,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    262 => 
+    279 => 
     array (
-      'id' => 303,
+      'id' => 317,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2815,9 +2961,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    263 => 
+    280 => 
     array (
-      'id' => 304,
+      'id' => 318,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2826,9 +2972,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    264 => 
+    281 => 
     array (
-      'id' => 305,
+      'id' => 319,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2837,9 +2983,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    265 => 
+    282 => 
     array (
-      'id' => 306,
+      'id' => 320,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2848,9 +2994,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    266 => 
+    283 => 
     array (
-      'id' => 307,
+      'id' => 321,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2859,9 +3005,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    267 => 
+    284 => 
     array (
-      'id' => 308,
+      'id' => 322,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -2870,152 +3016,152 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    268 => 
-    array (
-      'id' => 309,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Marauder',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    269 => 
-    array (
-      'id' => 310,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Minstrel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    270 => 
-    array (
-      'id' => 311,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Trailblazer',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    271 => 
-    array (
-      'id' => 312,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Vigilant',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    272 => 
-    array (
-      'id' => 313,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Viper',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    273 => 
-    array (
-      'id' => 314,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Wanderer',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    274 => 
-    array (
-      'id' => 315,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Settler',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    275 => 
-    array (
-      'id' => 316,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    276 => 
-    array (
-      'id' => 317,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Dire',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    277 => 
-    array (
-      'id' => 318,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Valkyrie',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    278 => 
-    array (
-      'id' => 319,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Seraph',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    279 => 
-    array (
-      'id' => 321,
-      'type' => '',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'group' => 'Trinket',
-      'stats_class' => 'Harrier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    280 => 
+    285 => 
     array (
       'id' => 323,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
       'group' => 'Trinket',
+      'stats_class' => 'Marauder',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    286 => 
+    array (
+      'id' => 324,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Minstrel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    287 => 
+    array (
+      'id' => 325,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Trailblazer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    288 => 
+    array (
+      'id' => 326,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Vigilant',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    289 => 
+    array (
+      'id' => 327,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Viper',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    290 => 
+    array (
+      'id' => 328,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Wanderer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    291 => 
+    array (
+      'id' => 329,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Settler',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    292 => 
+    array (
+      'id' => 330,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Shaman',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    293 => 
+    array (
+      'id' => 331,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Dire',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    294 => 
+    array (
+      'id' => 332,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Valkyrie',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    295 => 
+    array (
+      'id' => 333,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Seraph',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    296 => 
+    array (
+      'id' => 335,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Harrier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    297 => 
+    array (
+      'id' => 337,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
       'stats_class' => 'Grieving',
       'pvx' => 6,
       'is_profile' => true,
     ),
-    281 => 
+    298 => 
     array (
-      'id' => 324,
+      'id' => 338,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3024,9 +3170,31 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    282 => 
+    299 => 
     array (
-      'id' => 325,
+      'id' => 339,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Giver',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    300 => 
+    array (
+      'id' => 340,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    301 => 
+    array (
+      'id' => 341,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3035,9 +3203,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    283 => 
+    302 => 
     array (
-      'id' => 326,
+      'id' => 342,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3046,9 +3214,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    284 => 
+    303 => 
     array (
-      'id' => 327,
+      'id' => 343,
       'type' => '',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3057,9 +3225,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    285 => 
+    304 => 
     array (
-      'id' => 328,
+      'id' => 344,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3067,9 +3235,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    286 => 
+    305 => 
     array (
-      'id' => 329,
+      'id' => 345,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3077,9 +3245,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    287 => 
+    306 => 
     array (
-      'id' => 330,
+      'id' => 346,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3087,9 +3255,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    288 => 
+    307 => 
     array (
-      'id' => 331,
+      'id' => 347,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3097,9 +3265,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    289 => 
+    308 => 
     array (
-      'id' => 332,
+      'id' => 348,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3107,9 +3275,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    290 => 
+    309 => 
     array (
-      'id' => 333,
+      'id' => 349,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3117,9 +3285,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    291 => 
+    310 => 
     array (
-      'id' => 334,
+      'id' => 350,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3127,9 +3295,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    292 => 
+    311 => 
     array (
-      'id' => 335,
+      'id' => 351,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3137,9 +3305,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    293 => 
+    312 => 
     array (
-      'id' => 336,
+      'id' => 352,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3147,9 +3315,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    294 => 
+    313 => 
     array (
-      'id' => 337,
+      'id' => 353,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3157,9 +3325,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    295 => 
+    314 => 
     array (
-      'id' => 338,
+      'id' => 354,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3167,9 +3335,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    296 => 
+    315 => 
     array (
-      'id' => 339,
+      'id' => 355,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3177,9 +3345,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    297 => 
+    316 => 
     array (
-      'id' => 340,
+      'id' => 356,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3187,9 +3355,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    298 => 
+    317 => 
     array (
-      'id' => 341,
+      'id' => 357,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3197,9 +3365,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    299 => 
+    318 => 
     array (
-      'id' => 342,
+      'id' => 358,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3207,9 +3375,9 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    300 => 
+    319 => 
     array (
-      'id' => 343,
+      'id' => 359,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
@@ -3217,4190 +3385,298 @@
       'pvx' => 6,
       'is_profile' => true,
     ),
-    301 => 
+    320 => 
     array (
-      'id' => 344,
+      'id' => 360,
       'type' => 'Back',
       'rarity' => 'Ascended',
       'name' => '',
       'stats_class' => 'Crusader',
       'pvx' => 6,
       'is_profile' => true,
-    ),
-    302 => 
-    array (
-      'id' => 345,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Marauder',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    303 => 
-    array (
-      'id' => 346,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Vigilant',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    304 => 
-    array (
-      'id' => 347,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Zealot',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    305 => 
-    array (
-      'id' => 348,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Minstrel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    306 => 
-    array (
-      'id' => 349,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Nomad',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    307 => 
-    array (
-      'id' => 350,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Sentinel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    308 => 
-    array (
-      'id' => 351,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Settler',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    309 => 
-    array (
-      'id' => 352,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    310 => 
-    array (
-      'id' => 353,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Trailblazer',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    311 => 
-    array (
-      'id' => 354,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Wanderer',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    312 => 
-    array (
-      'id' => 355,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Carrion',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    313 => 
-    array (
-      'id' => 356,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Dire',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    314 => 
-    array (
-      'id' => 357,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Sinister',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    315 => 
-    array (
-      'id' => 358,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Viper',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    316 => 
-    array (
-      'id' => 359,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Magi',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    317 => 
-    array (
-      'id' => 360,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Seraph',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    318 => 
-    array (
-      'id' => 362,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Harrier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    319 => 
-    array (
-      'id' => 364,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Grieving',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    320 => 
-    array (
-      'id' => 365,
-      'type' => 'Back',
-      'rarity' => 'Ascended',
-      'name' => '',
-      'stats_class' => 'Marshal',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-  ),
-  'professions' => 
-  array (
-    0 => 
-    array (
-      'id' => 3,
-      'name' => 'Ranger',
-    ),
-    1 => 
-    array (
-      'id' => 9,
-      'name' => 'Revenant',
-    ),
-    2 => 
-    array (
-      'id' => 8,
-      'name' => 'Mesmer',
-    ),
-    3 => 
-    array (
-      'id' => 7,
-      'name' => 'Engineer',
-    ),
-    4 => 
-    array (
-      'id' => 6,
-      'name' => 'Thief',
-    ),
-    5 => 
-    array (
-      'id' => 4,
-      'name' => 'Necromancer',
-    ),
-    6 => 
-    array (
-      'id' => 5,
-      'name' => 'Guardian',
-    ),
-    7 => 
-    array (
-      'id' => 2,
-      'name' => 'Warrior',
-    ),
-    8 => 
-    array (
-      'id' => 1,
-      'name' => 'Elementalist',
-    ),
-  ),
-  'buffs' => 
-  array (
-    0 => 
-    array (
-      'id' => 1,
-      'name' => 'Potent Master Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    1 => 
-    array (
-      'id' => 2,
-      'name' => 'Toxic Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    2 => 
-    array (
-      'id' => 3,
-      'name' => 'Hylek Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    3 => 
-    array (
-      'id' => 4,
-      'name' => 'Maintenance Oil Station',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    4 => 
-    array (
-      'id' => 5,
-      'name' => 'Bountiful Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    5 => 
-    array (
-      'id' => 6,
-      'name' => 'Furious Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    6 => 
-    array (
-      'id' => 7,
-      'name' => 'Magnanimous Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    7 => 
-    array (
-      'id' => 8,
-      'name' => 'Master Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    8 => 
-    array (
-      'id' => 9,
-      'name' => 'Quality Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    9 => 
-    array (
-      'id' => 10,
-      'name' => 'Artisan Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    10 => 
-    array (
-      'id' => 11,
-      'name' => 'Standard Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    11 => 
-    array (
-      'id' => 12,
-      'name' => 'Journeyman Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    12 => 
-    array (
-      'id' => 13,
-      'name' => 'Apprentice Maintenance Oil',
-      'type' => 'Oil',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    13 => 
-    array (
-      'id' => 14,
-      'name' => 'Rough Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    14 => 
-    array (
-      'id' => 15,
-      'name' => 'Simple Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    15 => 
-    array (
-      'id' => 16,
-      'name' => 'Standard Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    16 => 
-    array (
-      'id' => 17,
-      'name' => 'Quality Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    17 => 
-    array (
-      'id' => 18,
-      'name' => 'Hardened Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    18 => 
-    array (
-      'id' => 19,
-      'name' => 'Superior Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    19 => 
-    array (
-      'id' => 20,
-      'name' => 'Toxic Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    20 => 
-    array (
-      'id' => 21,
-      'name' => 'Ogre Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    21 => 
-    array (
-      'id' => 22,
-      'name' => 'Sharpening Stone Station',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    22 => 
-    array (
-      'id' => 23,
-      'name' => 'Bountiful Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    23 => 
-    array (
-      'id' => 24,
-      'name' => 'Furious Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    24 => 
-    array (
-      'id' => 25,
-      'name' => 'Magnanimous Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    25 => 
-    array (
-      'id' => 26,
-      'name' => 'Potent Superior Sharpening Stone',
-      'type' => 'Sharpen',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    26 => 
-    array (
-      'id' => 27,
-      'name' => 'Potent Master Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    27 => 
-    array (
-      'id' => 28,
-      'name' => 'Toxic Focusing Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    28 => 
-    array (
-      'id' => 29,
-      'name' => 'Krait Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    29 => 
-    array (
-      'id' => 30,
-      'name' => 'Tuning Crystal Station',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    30 => 
-    array (
-      'id' => 31,
-      'name' => 'Bountiful Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    31 => 
-    array (
-      'id' => 32,
-      'name' => 'Furious Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    32 => 
-    array (
-      'id' => 33,
-      'name' => 'Magnanimous Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    33 => 
-    array (
-      'id' => 34,
-      'name' => 'Master Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    34 => 
-    array (
-      'id' => 35,
-      'name' => 'Quality Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    35 => 
-    array (
-      'id' => 36,
-      'name' => 'Artisan Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    36 => 
-    array (
-      'id' => 37,
-      'name' => 'Standard Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    37 => 
-    array (
-      'id' => 38,
-      'name' => 'Journeyman Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    38 => 
-    array (
-      'id' => 39,
-      'name' => 'Apprentice Tuning Crystal',
-      'type' => 'Crystal',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    39 => 
-    array (
-      'id' => 40,
-      'name' => 'Writ of Masterful Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    40 => 
-    array (
-      'id' => 41,
-      'name' => 'Writ of Masterful Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    41 => 
-    array (
-      'id' => 42,
-      'name' => 'Writ of Masterful Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    42 => 
-    array (
-      'id' => 43,
-      'name' => 'Writ of Learned Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    43 => 
-    array (
-      'id' => 44,
-      'name' => 'Writ of Learned Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    44 => 
-    array (
-      'id' => 45,
-      'name' => 'Writ of Learned Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    45 => 
-    array (
-      'id' => 46,
-      'name' => 'Writ of Calculated Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    46 => 
-    array (
-      'id' => 47,
-      'name' => 'Writ of Calculated Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    47 => 
-    array (
-      'id' => 48,
-      'name' => 'Writ of Calculated Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    48 => 
-    array (
-      'id' => 49,
-      'name' => 'Writ of Studied Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    49 => 
-    array (
-      'id' => 50,
-      'name' => 'Writ of Studied Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    50 => 
-    array (
-      'id' => 51,
-      'name' => 'Writ of Studied Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    51 => 
-    array (
-      'id' => 52,
-      'name' => 'Writ of Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    52 => 
-    array (
-      'id' => 53,
-      'name' => 'Writ of Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    53 => 
-    array (
-      'id' => 54,
-      'name' => 'Writ of Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    54 => 
-    array (
-      'id' => 55,
-      'name' => 'Writ of Basic Strength',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    55 => 
-    array (
-      'id' => 56,
-      'name' => 'Writ of Basic Malice',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    56 => 
-    array (
-      'id' => 57,
-      'name' => 'Writ of Basic Accuracy',
-      'type' => 'Writ',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    57 => 
-    array (
-      'id' => 58,
-      'name' => 'Onion Ring',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    58 => 
-    array (
-      'id' => 59,
-      'name' => 'Cinnamon Apple',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    59 => 
-    array (
-      'id' => 60,
-      'name' => 'Bowl of Apple Sauce',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    60 => 
-    array (
-      'id' => 61,
-      'name' => 'Beetletun Omelette',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    61 => 
-    array (
-      'id' => 62,
-      'name' => 'Meat Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    62 => 
-    array (
-      'id' => 63,
-      'name' => 'Blueberry Tart',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    63 => 
-    array (
-      'id' => 64,
-      'name' => 'Strawberries and Biscuts',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    64 => 
-    array (
-      'id' => 65,
-      'name' => 'Lemon Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    65 => 
-    array (
-      'id' => 66,
-      'name' => 'Strawberry Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    66 => 
-    array (
-      'id' => 67,
-      'name' => 'Candy Corn Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    67 => 
-    array (
-      'id' => 68,
-      'name' => 'Clam Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    68 => 
-    array (
-      'id' => 69,
-      'name' => 'Caramel',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    69 => 
-    array (
-      'id' => 70,
-      'name' => 'Caramel Apple',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    70 => 
-    array (
-      'id' => 71,
-      'name' => 'Candied Apple',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    71 => 
-    array (
-      'id' => 72,
-      'name' => 'Chocolate Banana',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    72 => 
-    array (
-      'id' => 73,
-      'name' => 'Strawberry Ghost',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    73 => 
-    array (
-      'id' => 74,
-      'name' => 'Chocolate Cherry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    74 => 
-    array (
-      'id' => 75,
-      'name' => 'Chocolate Orange',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    75 => 
-    array (
-      'id' => 76,
-      'name' => 'Chocolate Raspberry Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    76 => 
-    array (
-      'id' => 77,
-      'name' => 'Chocolate Omnomberry Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    77 => 
-    array (
-      'id' => 78,
-      'name' => 'Cherry Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    78 => 
-    array (
-      'id' => 79,
-      'name' => 'Ginger Pear Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    79 => 
-    array (
-      'id' => 80,
-      'name' => 'Glazed Pear Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    80 => 
-    array (
-      'id' => 81,
-      'name' => 'Peach Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    81 => 
-    array (
-      'id' => 82,
-      'name' => 'Glazed Peach Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    82 => 
-    array (
-      'id' => 83,
-      'name' => 'Dragonfly Cupcake',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    83 => 
-    array (
-      'id' => 84,
-      'name' => 'Omnomberry Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    84 => 
-    array (
-      'id' => 85,
-      'name' => 'Yam Fritter',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    85 => 
-    array (
-      'id' => 86,
-      'name' => 'Chickpea Fritter',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    86 => 
-    array (
-      'id' => 87,
-      'name' => 'Eggplant Fritter',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    87 => 
-    array (
-      'id' => 88,
-      'name' => 'Cup of Lotus Fries',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    88 => 
-    array (
-      'id' => 89,
-      'name' => 'Spicy Pumpkin Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    89 => 
-    array (
-      'id' => 90,
-      'name' => 'Cherry Almond Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    90 => 
-    array (
-      'id' => 91,
-      'name' => 'Piece of Candy Corn Almond Brittle',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    91 => 
-    array (
-      'id' => 92,
-      'name' => 'Orange Coconut Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    92 => 
-    array (
-      'id' => 93,
-      'name' => 'Raspberry Peach Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    93 => 
-    array (
-      'id' => 94,
-      'name' => 'Omnomberry Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    94 => 
-    array (
-      'id' => 95,
-      'name' => 'Cooked Fish Steak',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    95 => 
-    array (
-      'id' => 96,
-      'name' => 'Cup of Potato Fries',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    96 => 
-    array (
-      'id' => 97,
-      'name' => 'Mashed Potato',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    97 => 
-    array (
-      'id' => 98,
-      'name' => 'Bowl of Outrider Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 24,
-      'pvx' => 6,
-    ),
-    98 => 
-    array (
-      'id' => 99,
-      'name' => 'Turnip Casserole',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    99 => 
-    array (
-      'id' => 100,
-      'name' => 'Bowl of Mashed Yams',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    100 => 
-    array (
-      'id' => 101,
-      'name' => 'Bowl of Spiced Mashed Yams',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    101 => 
-    array (
-      'id' => 102,
-      'name' => 'Roasted Rutabaga',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    102 => 
-    array (
-      'id' => 103,
-      'name' => 'Roasted Parsnip',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    103 => 
-    array (
-      'id' => 104,
-      'name' => 'Bowl of Roasted Lotus Root',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    104 => 
-    array (
-      'id' => 105,
-      'name' => 'Cooked Crawdad',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    105 => 
-    array (
-      'id' => 106,
-      'name' => 'Slice of Buttered Toast',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    106 => 
-    array (
-      'id' => 107,
-      'name' => 'Cheese Triangle',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    107 => 
-    array (
-      'id' => 108,
-      'name' => 'Slice of Cinnamon Toast',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    108 => 
-    array (
-      'id' => 109,
-      'name' => 'Slice of Garlic Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    109 => 
-    array (
-      'id' => 110,
-      'name' => 'Loaf of Rosemary Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    110 => 
-    array (
-      'id' => 111,
-      'name' => 'Slice of Spiced Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    111 => 
-    array (
-      'id' => 112,
-      'name' => 'Loaf of Tarragon Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    112 => 
-    array (
-      'id' => 113,
-      'name' => 'Loaf of Saffron Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    113 => 
-    array (
-      'id' => 115,
-      'name' => 'Bowl of Wurm Meat Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    114 => 
-    array (
-      'id' => 116,
-      'name' => 'Jug of Autumn Nectar',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    115 => 
-    array (
-      'id' => 117,
-      'name' => 'Bowl of Basic Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    116 => 
-    array (
-      'id' => 118,
-      'name' => 'Bowl of Simple Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    117 => 
-    array (
-      'id' => 119,
-      'name' => 'Moa Egg Omelet',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 13,
-      'pvx' => 6,
-    ),
-    118 => 
-    array (
-      'id' => 120,
-      'name' => 'Spinach Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    119 => 
-    array (
-      'id' => 121,
-      'name' => 'Bowl of Clam Chowder',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    120 => 
-    array (
-      'id' => 122,
-      'name' => 'Bowl of Dilled Clam Chowder',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    121 => 
-    array (
-      'id' => 123,
-      'name' => 'Bowl of Chickpea and Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    122 => 
-    array (
-      'id' => 124,
-      'name' => 'Bowl of Poultry and Leek Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    123 => 
-    array (
-      'id' => 125,
-      'name' => 'Bowl of Lemongrass Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    124 => 
-    array (
-      'id' => 126,
-      'name' => 'Fried Oysters',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    125 => 
-    array (
-      'id' => 127,
-      'name' => 'Oysters Gnashblade',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    126 => 
-    array (
-      'id' => 128,
-      'name' => 'Oysters with Zesty Sauce',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    127 => 
-    array (
-      'id' => 129,
-      'name' => 'Fried Oyster Sandwich',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    128 => 
-    array (
-      'id' => 130,
-      'name' => 'Oysters with Cocktail Sauce',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    129 => 
-    array (
-      'id' => 131,
-      'name' => 'Oysters with Pesto Sauce',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    130 => 
-    array (
-      'id' => 132,
-      'name' => 'Oysters_with_Spicy_Sauce',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    131 => 
-    array (
-      'id' => 133,
-      'name' => 'Bowl of Red Meat Stock',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    132 => 
-    array (
-      'id' => 134,
-      'name' => 'Strip of Dolyak Jerky',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    133 => 
-    array (
-      'id' => 135,
-      'name' => 'Bowl of Simple Meat Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    134 => 
-    array (
-      'id' => 136,
-      'name' => 'Bowl of Onion Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    135 => 
-    array (
-      'id' => 137,
-      'name' => 'Poached Griffon Egg',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 18,
-      'pvx' => 6,
-    ),
-    136 => 
-    array (
-      'id' => 138,
-      'name' => 'Bowl of Hearty Red Meat Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    137 => 
-    array (
-      'id' => 139,
-      'name' => 'Bowl of Herbed Meat Stock',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    138 => 
-    array (
-      'id' => 140,
-      'name' => 'Bowl of Meat and Cabbage Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    139 => 
-    array (
-      'id' => 141,
-      'name' => 'Bowl of Cabbage Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    140 => 
-    array (
-      'id' => 142,
-      'name' => 'Bowl of Spiced Meat and Cabbage Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    141 => 
-    array (
-      'id' => 143,
-      'name' => 'Bowl of Meat and Winter Vegetable Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    142 => 
-    array (
-      'id' => 144,
-      'name' => 'Bowl of Orrian Truffle and Meat Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    143 => 
-    array (
-      'id' => 145,
-      'name' => 'Seraph Standard Ration',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    144 => 
-    array (
-      'id' => 146,
-      'name' => 'Stick of Cotton Candy',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    145 => 
-    array (
-      'id' => 147,
-      'name' => 'Apple Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    146 => 
-    array (
-      'id' => 148,
-      'name' => 'Bowl of Gelatinous Ooze Custard',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    147 => 
-    array (
-      'id' => 149,
-      'name' => 'Apple Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    148 => 
-    array (
-      'id' => 150,
-      'name' => 'Bowl of Candy Corn Custard',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    149 => 
-    array (
-      'id' => 151,
-      'name' => 'Heart-Shaped Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    150 => 
-    array (
-      'id' => 152,
-      'name' => 'Kastaz Roasted Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 17,
-      'pvx' => 6,
-    ),
-    151 => 
-    array (
-      'id' => 153,
-      'name' => 'Banana Cream Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    152 => 
-    array (
-      'id' => 154,
-      'name' => 'Shiverpeak Popper',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 33,
-      'pvx' => 6,
-    ),
-    153 => 
-    array (
-      'id' => 155,
-      'name' => 'Grape Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    154 => 
-    array (
-      'id' => 156,
-      'name' => 'Pirate Hard Tack',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 41,
-      'pvx' => 6,
-    ),
-    155 => 
-    array (
-      'id' => 157,
-      'name' => 'Pumpkin Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    156 => 
-    array (
-      'id' => 158,
-      'name' => 'Raspberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    157 => 
-    array (
-      'id' => 159,
-      'name' => 'Glazed Pumpkin Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    158 => 
-    array (
-      'id' => 160,
-      'name' => 'Peach Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    159 => 
-    array (
-      'id' => 161,
-      'name' => 'Mango Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    160 => 
-    array (
-      'id' => 162,
-      'name' => 'Dragon\'s Revelry Starcake',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    161 => 
-    array (
-      'id' => 163,
-      'name' => 'Grilled Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    162 => 
-    array (
-      'id' => 164,
-      'name' => 'Poultry Piccata',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    163 => 
-    array (
-      'id' => 165,
-      'name' => 'Strip of Venison Jerky',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
-      'pvx' => 6,
-    ),
-    164 => 
-    array (
-      'id' => 166,
-      'name' => 'Sage Stuffed Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    165 => 
-    array (
-      'id' => 167,
-      'name' => 'Dilled Poultry Piccata',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    166 => 
-    array (
-      'id' => 168,
-      'name' => 'Plate of Citrus Poultry with Almonds',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    167 => 
-    array (
-      'id' => 169,
-      'name' => 'Tarragon Stuffed Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    168 => 
-    array (
-      'id' => 170,
-      'name' => 'Dragonfish Candy',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    169 => 
-    array (
-      'id' => 171,
-      'name' => 'Plate of Lemongrass Poultry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    170 => 
-    array (
-      'id' => 172,
-      'name' => 'Rabbit Offering',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    171 => 
-    array (
-      'id' => 173,
-      'name' => 'Slice of Watermelon',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    172 => 
-    array (
-      'id' => 174,
-      'name' => 'Bowl of Salsa',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    173 => 
-    array (
-      'id' => 175,
-      'name' => 'Bowl of Bean Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    174 => 
-    array (
-      'id' => 176,
-      'name' => 'Bowl of Avocado Salsa',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    175 => 
-    array (
-      'id' => 177,
-      'name' => 'Bowl of Chickpea Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    176 => 
-    array (
-      'id' => 178,
-      'name' => 'Bowl of Mango Salsa',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    177 => 
-    array (
-      'id' => 179,
-      'name' => 'Bowl of Fire Salsa',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    178 => 
-    array (
-      'id' => 180,
-      'name' => 'Rice Ball',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    179 => 
-    array (
-      'id' => 181,
-      'name' => 'T-Bone Steak',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    180 => 
-    array (
-      'id' => 182,
-      'name' => 'Grilled Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    181 => 
-    array (
-      'id' => 183,
-      'name' => 'Eda\'s Apple Pie',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    182 => 
-    array (
-      'id' => 184,
-      'name' => 'Bowl of Cold Wurm Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    183 => 
-    array (
-      'id' => 185,
-      'name' => 'Spicy Flank Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    184 => 
-    array (
-      'id' => 186,
-      'name' => 'Roasted Meaty Sandwich',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    185 => 
-    array (
-      'id' => 187,
-      'name' => 'Pepper Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    186 => 
-    array (
-      'id' => 188,
-      'name' => 'Stick of Mystery Meat',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
-      'pvx' => 6,
-    ),
-    187 => 
-    array (
-      'id' => 189,
-      'name' => 'Blessing Of Bear',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 41,
-      'pvx' => 6,
-    ),
-    188 => 
-    array (
-      'id' => 190,
-      'name' => 'Filet of Sesame Roasted Meat',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    189 => 
-    array (
-      'id' => 191,
-      'name' => 'Griffon Egg Omelet',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 47,
-      'pvx' => 6,
-    ),
-    190 => 
-    array (
-      'id' => 192,
-      'name' => 'Plate of Coriander Crusted Meat',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    191 => 
-    array (
-      'id' => 193,
-      'name' => 'Plate of Steak and Asparagus',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    192 => 
-    array (
-      'id' => 194,
-      'name' => 'Plate of Truffle Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    193 => 
-    array (
-      'id' => 195,
-      'name' => 'Spicy Lime Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    194 => 
-    array (
-      'id' => 196,
-      'name' => 'Plate of Citrus Clove Meat',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    195 => 
-    array (
-      'id' => 197,
-      'name' => 'Spicier Flank Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    196 => 
-    array (
-      'id' => 198,
-      'name' => 'Plate of Fire Flank Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    197 => 
-    array (
-      'id' => 199,
-      'name' => 'Filet of Rosemary Roasted Meat',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    198 => 
-    array (
-      'id' => 200,
-      'name' => 'Plate of Roast Meat with Mint Sauce',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    199 => 
-    array (
-      'id' => 201,
-      'name' => 'Plate of Roast Meat with Braised Leeks',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    200 => 
-    array (
-      'id' => 202,
-      'name' => 'Plate of Orrian Steak Frittes',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    201 => 
-    array (
-      'id' => 203,
-      'name' => 'Bowl of Marjory\'s Experimental Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    202 => 
-    array (
-      'id' => 204,
-      'name' => 'Grilled Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    203 => 
-    array (
-      'id' => 205,
-      'name' => 'Veggie Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    204 => 
-    array (
-      'id' => 206,
-      'name' => 'Cheese Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    205 => 
-    array (
-      'id' => 207,
-      'name' => 'Veggie Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    206 => 
-    array (
-      'id' => 208,
-      'name' => 'Sweet Bean Bun',
-      'type' => 'Food',
-      'rarity' => 'Exotic',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    207 => 
-    array (
-      'id' => 209,
-      'name' => 'Mushroom Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    208 => 
-    array (
-      'id' => 210,
-      'name' => 'Bowl of Fly Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    209 => 
-    array (
-      'id' => 211,
-      'name' => 'Fancy Veggie Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    210 => 
-    array (
-      'id' => 212,
-      'name' => 'Super Veggie Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    211 => 
-    array (
-      'id' => 213,
-      'name' => 'Koi Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    212 => 
-    array (
-      'id' => 214,
-      'name' => 'Rare Veggie Pizza',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    213 => 
-    array (
-      'id' => 215,
-      'name' => 'Prickly Pear Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    214 => 
-    array (
-      'id' => 216,
-      'name' => 'Bowl of Cactus Fruit Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    215 => 
-    array (
-      'id' => 217,
-      'name' => 'Grilled Portobello Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    216 => 
-    array (
-      'id' => 218,
-      'name' => 'Bowl of Mushroom Risotto',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    217 => 
-    array (
-      'id' => 219,
-      'name' => 'Bowl of Mushroom and Asparagus Risotto',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    218 => 
-    array (
-      'id' => 220,
-      'name' => 'Bowl of Truffle Risotto',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    219 => 
-    array (
-      'id' => 221,
-      'name' => 'Bowl of Creamy Portobello Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    220 => 
-    array (
-      'id' => 222,
-      'name' => 'Bowl of Fancy Creamy Mushroom Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    221 => 
-    array (
-      'id' => 223,
-      'name' => 'Bowl of Snow Truffle Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    222 => 
-    array (
-      'id' => 224,
-      'name' => 'Bowl of Orrian Truffle Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    223 => 
-    array (
-      'id' => 225,
-      'name' => 'Spinach Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    224 => 
-    array (
-      'id' => 226,
-      'name' => 'Deluxe Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    225 => 
-    array (
-      'id' => 227,
-      'name' => 'Horseradish Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    226 => 
-    array (
-      'id' => 228,
-      'name' => 'Spicy Cheeseburger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    227 => 
-    array (
-      'id' => 229,
-      'name' => 'Fancy Truffle Burger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    228 => 
-    array (
-      'id' => 230,
-      'name' => 'Hamburger',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    229 => 
-    array (
-      'id' => 231,
-      'name' => 'Bowl of Meaty Wurm Surprise',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    230 => 
-    array (
-      'id' => 232,
-      'name' => 'Bowl of Green Bean Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    231 => 
-    array (
-      'id' => 233,
-      'name' => 'Bowl of Simple Meat Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    232 => 
-    array (
-      'id' => 234,
-      'name' => 'Cheeseburger',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    233 => 
-    array (
-      'id' => 235,
-      'name' => 'White Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    234 => 
-    array (
-      'id' => 236,
-      'name' => 'Bowl of Meat and Bean Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    235 => 
-    array (
-      'id' => 237,
-      'name' => 'Chocolate Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    236 => 
-    array (
-      'id' => 238,
-      'name' => 'Bowl of Chili and Avocado',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    237 => 
-    array (
-      'id' => 239,
-      'name' => 'Bowl of Spiced Meat Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    238 => 
-    array (
-      'id' => 240,
-      'name' => 'Bowl of Spicy Meat Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    239 => 
-    array (
-      'id' => 241,
-      'name' => 'Bowl of Fire Meat Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    240 => 
-    array (
-      'id' => 242,
-      'name' => 'Chocolate Cherry Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    241 => 
-    array (
-      'id' => 243,
-      'name' => 'Orange Coconut Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    242 => 
-    array (
-      'id' => 244,
-      'name' => 'Chocolate Raspberry Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    243 => 
-    array (
-      'id' => 245,
-      'name' => 'Chocolate Omnomberry Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    244 => 
-    array (
-      'id' => 246,
-      'name' => 'Bowl of Vegetable Stock',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    245 => 
-    array (
-      'id' => 247,
-      'name' => 'Bowl of Simple Vegetable Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    246 => 
-    array (
-      'id' => 248,
-      'name' => 'Bowl of Tomato Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    247 => 
-    array (
-      'id' => 249,
-      'name' => 'Bowl of Ice Wurm Bisque',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
-      'pvx' => 6,
-    ),
-    248 => 
-    array (
-      'id' => 250,
-      'name' => 'Bowl of Beet and Bean Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    249 => 
-    array (
-      'id' => 251,
-      'name' => 'Bowl of Basic Vegetable Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    250 => 
-    array (
-      'id' => 252,
-      'name' => 'Bowl of Simple Bean Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    251 => 
-    array (
-      'id' => 253,
-      'name' => 'Bowl of Fancy Bean Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    252 => 
-    array (
-      'id' => 254,
-      'name' => 'Bowl of Zucchini Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    253 => 
-    array (
-      'id' => 255,
-      'name' => 'Bowl of Degun Shun Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 46,
-      'pvx' => 6,
-    ),
-    254 => 
-    array (
-      'id' => 256,
-      'name' => 'Bowl of Spiced Veggie Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    255 => 
-    array (
-      'id' => 257,
-      'name' => 'Bowl of Spicy Veggie Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    256 => 
-    array (
-      'id' => 258,
-      'name' => 'Bowl of Fire Veggie Chili',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    257 => 
-    array (
-      'id' => 259,
-      'name' => 'Bowl of Skalefin Soup',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 33,
-      'pvx' => 6,
-    ),
-    258 => 
-    array (
-      'id' => 260,
-      'name' => 'Bowl of Tomato Zucchini Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    259 => 
-    array (
-      'id' => 261,
-      'name' => 'Bowl of Cauliflower Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    260 => 
-    array (
-      'id' => 262,
-      'name' => 'Minotaur Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    261 => 
-    array (
-      'id' => 263,
-      'name' => 'Bowl of Butternut Squash Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    262 => 
-    array (
-      'id' => 264,
-      'name' => 'Bowl of Curry Butternut Squash Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    263 => 
-    array (
-      'id' => 265,
-      'name' => 'Bowl of Yam Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    264 => 
-    array (
-      'id' => 266,
-      'name' => 'Bowl of Pumpkin Bisque',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    265 => 
-    array (
-      'id' => 267,
-      'name' => 'Bowl of Potato and Leek Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    266 => 
-    array (
-      'id' => 268,
-      'name' => 'Bowl of Fancy Potato and Leek Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    267 => 
-    array (
-      'id' => 269,
-      'name' => 'Bowl of Herbed Vegetable Stock',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    268 => 
-    array (
-      'id' => 270,
-      'name' => 'Bowl of Kale Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    269 => 
-    array (
-      'id' => 271,
-      'name' => 'Bowl of Chickpea Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    270 => 
-    array (
-      'id' => 272,
-      'name' => 'Bowl of Artichoke Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    271 => 
-    array (
-      'id' => 273,
-      'name' => 'Bowl of Curry Pumpkin Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    272 => 
-    array (
-      'id' => 274,
-      'name' => 'Grumble Cake',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    273 => 
-    array (
-      'id' => 275,
-      'name' => 'Loaf of Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    274 => 
-    array (
-      'id' => 276,
-      'name' => 'Buttermilk Biscuit',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    275 => 
-    array (
-      'id' => 277,
-      'name' => 'Cinnamon Pinwheel',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    276 => 
-    array (
-      'id' => 278,
-      'name' => 'Bowl of Dolyak Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    277 => 
-    array (
-      'id' => 279,
-      'name' => 'Loaf of Banana Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    278 => 
-    array (
-      'id' => 280,
-      'name' => 'Loaf of Walnut Sticky Bread',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 17,
-      'pvx' => 6,
-    ),
-    279 => 
-    array (
-      'id' => 281,
-      'name' => 'Curry Bun',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 23,
-      'pvx' => 6,
-    ),
-    280 => 
-    array (
-      'id' => 282,
-      'name' => 'Loaf of Zucchini Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    281 => 
-    array (
-      'id' => 283,
-      'name' => 'Slice of Pumpkin Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    282 => 
-    array (
-      'id' => 284,
-      'name' => 'Loaf of Raspberry Peach Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    283 => 
-    array (
-      'id' => 285,
-      'name' => 'Loaf of Omnomberry Bread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    284 => 
-    array (
-      'id' => 286,
-      'name' => 'Passion Fruit Soufflé',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    285 => 
-    array (
-      'id' => 287,
-      'name' => 'Plate of Pasta with Tomato Sauce',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    286 => 
-    array (
-      'id' => 288,
-      'name' => 'Meatball',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    287 => 
-    array (
-      'id' => 289,
-      'name' => 'Meatball Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    288 => 
-    array (
-      'id' => 290,
-      'name' => 'Bowl of Grilled Bananas with Passion Fruit Sauce',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    289 => 
-    array (
-      'id' => 291,
-      'name' => 'Bowl of Krytan Meatball Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    290 => 
-    array (
-      'id' => 292,
-      'name' => 'Bowl of Pesto Pasta Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    291 => 
-    array (
-      'id' => 293,
-      'name' => 'Bowl of Poultry Tarragon Pasta',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    292 => 
-    array (
-      'id' => 294,
-      'name' => 'Bowl of Truffle Ravioli',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    293 => 
-    array (
-      'id' => 295,
-      'name' => 'Bowl of Salad a la Consortium',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    294 => 
-    array (
-      'id' => 296,
-      'name' => 'Passion Fruit Coconut Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    295 => 
-    array (
-      'id' => 297,
-      'name' => 'Stuffed Artichoke with Tropical Dressing',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    296 => 
-    array (
-      'id' => 298,
-      'name' => 'Bowl of Tropical Mousse',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    297 => 
-    array (
-      'id' => 299,
-      'name' => 'Bowl of Refugee\'s Beet Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    298 => 
-    array (
-      'id' => 300,
-      'name' => 'Blueberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    299 => 
-    array (
-      'id' => 301,
-      'name' => 'Sugar Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    300 => 
-    array (
-      'id' => 302,
-      'name' => 'Apple Passion Fruit Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    301 => 
-    array (
-      'id' => 303,
-      'name' => 'Strawberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    302 => 
-    array (
-      'id' => 304,
-      'name' => 'Bowl of Front Line Stew',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    303 => 
-    array (
-      'id' => 305,
-      'name' => 'Passion Fruit Bar',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    304 => 
-    array (
-      'id' => 306,
-      'name' => 'Delicious Rice Ball',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    305 => 
-    array (
-      'id' => 307,
-      'name' => 'Cherry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    306 => 
-    array (
-      'id' => 308,
-      'name' => 'Blackberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    307 => 
-    array (
-      'id' => 309,
-      'name' => 'Peach Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    308 => 
-    array (
-      'id' => 310,
-      'name' => 'Omnomberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    309 => 
-    array (
-      'id' => 311,
-      'name' => 'Chocolate Chip Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    310 => 
-    array (
-      'id' => 312,
-      'name' => 'Candy Corn Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    311 => 
-    array (
-      'id' => 313,
-      'name' => 'Chocolate Mint Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    312 => 
-    array (
-      'id' => 314,
-      'name' => 'Chocolate Raspberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    313 => 
-    array (
-      'id' => 315,
-      'name' => 'Glazed Chocolate Raspberry Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    314 => 
-    array (
-      'id' => 316,
-      'name' => 'Spicy Chocolate Cookie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    315 => 
-    array (
-      'id' => 317,
-      'name' => 'Cherry Passion Fruit Cake',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 45,
-      'pvx' => 6,
-    ),
-    316 => 
-    array (
-      'id' => 318,
-      'name' => 'Orange Passion Fruit Tart',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 60,
-      'pvx' => 6,
-    ),
-    317 => 
-    array (
-      'id' => 319,
-      'name' => 'Raspberry Passion Fruit Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    318 => 
-    array (
-      'id' => 320,
-      'name' => 'Bowl of Tropical Fruit Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    319 => 
-    array (
-      'id' => 321,
-      'name' => 'Bowl of Poultry Stock',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    320 => 
-    array (
-      'id' => 322,
-      'name' => 'Bowl of Poultry Noodle Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
     ),
     321 => 
     array (
-      'id' => 323,
-      'name' => 'Bowl of Savory Spinach and Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
+      'id' => 361,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Marauder',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     322 => 
     array (
-      'id' => 324,
-      'name' => 'Bowl of Herbed Poultry Stock',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
+      'id' => 362,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Vigilant',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     323 => 
     array (
-      'id' => 325,
-      'name' => 'Bowl of Kale and Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
+      'id' => 363,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Zealot',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     324 => 
     array (
-      'id' => 326,
-      'name' => 'Bowl of Hearty Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
+      'id' => 364,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Minstrel',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     325 => 
     array (
-      'id' => 327,
-      'name' => 'Bowl of Saffron-scented Poultry Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
+      'id' => 365,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Nomad',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     326 => 
     array (
-      'id' => 328,
-      'name' => 'Bowl of Chocolate Chip Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
+      'id' => 366,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Sentinel',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     327 => 
     array (
-      'id' => 329,
-      'name' => 'Bowl of Candy Corn Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
+      'id' => 367,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Settler',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     328 => 
     array (
-      'id' => 330,
-      'name' => 'Bowl of Blueberry Chocolate Chunk Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
+      'id' => 368,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Shaman',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     329 => 
     array (
-      'id' => 331,
-      'name' => 'Bowl of Ginger-Lime Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
+      'id' => 369,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Trailblazer',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     330 => 
     array (
-      'id' => 332,
-      'name' => 'Bowl of Mint Chocolate Chip Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
+      'id' => 370,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Wanderer',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     331 => 
     array (
-      'id' => 333,
-      'name' => 'Bowl of Peach Raspberry Swirl Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
+      'id' => 371,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Carrion',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     332 => 
     array (
-      'id' => 334,
-      'name' => 'Kralkachocolate Bar',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
+      'id' => 372,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Dire',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     333 => 
     array (
-      'id' => 335,
-      'name' => 'Bowl of Saffron-Mango Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
+      'id' => 373,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Sinister',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     334 => 
     array (
-      'id' => 336,
-      'name' => 'Blueberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
+      'id' => 374,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Viper',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     335 => 
     array (
-      'id' => 337,
-      'name' => 'Strawberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
+      'id' => 375,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Magi',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     336 => 
     array (
-      'id' => 338,
-      'name' => 'Cherry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
+      'id' => 376,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Seraph',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     337 => 
     array (
-      'id' => 339,
-      'name' => 'Blackberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
+      'id' => 378,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Harrier',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     338 => 
     array (
-      'id' => 340,
-      'name' => 'Mixed Berry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
+      'id' => 380,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Grieving',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     339 => 
     array (
-      'id' => 341,
-      'name' => 'Slice of Candied Dragon Roll',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
+      'id' => 381,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Marshal',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     340 => 
     array (
-      'id' => 342,
-      'name' => 'Omnomberry Pie',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
+      'id' => 382,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Giver',
       'pvx' => 6,
+      'is_profile' => true,
     ),
     341 => 
     array (
-      'id' => 343,
-      'name' => 'Omnomberry Ghost',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    342 => 
-    array (
-      'id' => 344,
-      'name' => 'Chili Pepper Popper',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    343 => 
-    array (
-      'id' => 345,
-      'name' => 'Stuffed Pepper',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    344 => 
-    array (
-      'id' => 346,
-      'name' => 'Stuffed Zucchini',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    345 => 
-    array (
-      'id' => 347,
-      'name' => 'Bowl of Hummus',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    346 => 
-    array (
-      'id' => 348,
-      'name' => 'Roasted Artichoke',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    347 => 
-    array (
-      'id' => 349,
-      'name' => 'Ghost Pepper Popper',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    348 => 
-    array (
-      'id' => 350,
-      'name' => 'Bowl of Sauteed Carrots',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    349 => 
-    array (
-      'id' => 351,
-      'name' => 'Celebratory Steak',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    350 => 
-    array (
-      'id' => 352,
-      'name' => 'Bowl of Ettin Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 13,
-      'pvx' => 6,
-    ),
-    351 => 
-    array (
-      'id' => 353,
-      'name' => 'Bowl of Garlic Spinach Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 15,
-      'pvx' => 6,
-    ),
-    352 => 
-    array (
-      'id' => 354,
-      'name' => 'Bowl of Sauteed Zucchini with Nutmeg',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    353 => 
-    array (
-      'id' => 355,
-      'name' => 'Handful of Trail Mix',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    354 => 
-    array (
-      'id' => 356,
-      'name' => 'Bowl of Cauliflower Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    355 => 
-    array (
-      'id' => 357,
-      'name' => 'Bowl of Eggplant Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 70,
-      'pvx' => 6,
-    ),
-    356 => 
-    array (
-      'id' => 358,
-      'name' => 'Bowl of Truffle Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    357 => 
-    array (
-      'id' => 359,
-      'name' => 'Bowl of Simple Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    358 => 
-    array (
-      'id' => 360,
-      'name' => 'Bowl of Avocado Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    359 => 
-    array (
-      'id' => 361,
-      'name' => 'Bowl of Eggplant Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    360 => 
-    array (
-      'id' => 362,
-      'name' => 'Bowl of Lotus Stirfry',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    361 => 
-    array (
-      'id' => 363,
-      'name' => 'Glass of Melon Juice',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    362 => 
-    array (
-      'id' => 364,
-      'name' => 'Bowl of Blueberry Apple Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    363 => 
-    array (
-      'id' => 365,
-      'name' => 'Bowl of Strawberry Apple Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    364 => 
-    array (
-      'id' => 366,
-      'name' => 'Bowl of Cherry Vanilla Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 30,
-      'pvx' => 6,
-    ),
-    365 => 
-    array (
-      'id' => 367,
-      'name' => 'Bowl of Blackberry Pear Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    366 => 
-    array (
-      'id' => 368,
-      'name' => 'Raspberry Peach Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    367 => 
-    array (
-      'id' => 369,
-      'name' => 'Mined Edible Root',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 68,
-      'pvx' => 6,
-    ),
-    368 => 
-    array (
-      'id' => 370,
-      'name' => 'Omnomberry Compote',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    369 => 
-    array (
-      'id' => 371,
-      'name' => 'Bowl of Simple Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 5,
-      'pvx' => 6,
-    ),
-    370 => 
-    array (
-      'id' => 372,
-      'name' => 'Bowl of Ascalonian Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    371 => 
-    array (
-      'id' => 373,
-      'name' => 'Bowl of Coleslaw',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    372 => 
-    array (
-      'id' => 374,
-      'name' => 'Bowl of Cabbage and Chickpea Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    373 => 
-    array (
-      'id' => 375,
-      'name' => 'Bowl of Asparagus and Sage Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    374 => 
-    array (
-      'id' => 376,
-      'name' => 'Bowl of Seaweed Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    375 => 
-    array (
-      'id' => 377,
-      'name' => 'Experimental Remnant',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    376 => 
-    array (
-      'id' => 378,
-      'name' => 'Marinated Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    377 => 
-    array (
-      'id' => 379,
-      'name' => 'Sage Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 20,
-      'pvx' => 6,
-    ),
-    378 => 
-    array (
-      'id' => 380,
-      'name' => 'Triktiki Omelet',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 33,
-      'pvx' => 6,
-    ),
-    379 => 
-    array (
-      'id' => 381,
-      'name' => 'Divinity Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 35,
-      'pvx' => 6,
-    ),
-    380 => 
-    array (
-      'id' => 382,
-      'name' => 'Bowl of Tasty Wurm Stew',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 50,
-      'pvx' => 6,
-    ),
-    381 => 
-    array (
       'id' => 383,
-      'name' => 'Eztlitl Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Plaguedoctor',
       'pvx' => 6,
-    ),
-    382 => 
-    array (
-      'id' => 384,
-      'name' => 'Spicy Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 65,
-      'pvx' => 6,
-    ),
-    383 => 
-    array (
-      'id' => 385,
-      'name' => 'Saffron Stuffed Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    384 => 
-    array (
-      'id' => 386,
-      'name' => 'Steamed Red Dumpling',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    385 => 
-    array (
-      'id' => 387,
-      'name' => 'Moa Haunch',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 0,
-      'pvx' => 6,
-    ),
-    386 => 
-    array (
-      'id' => 388,
-      'name' => 'Spicy Meat Kabob',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 10,
-      'pvx' => 6,
-    ),
-    387 => 
-    array (
-      'id' => 389,
-      'name' => 'Pepper Steak Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 25,
-      'pvx' => 6,
-    ),
-    388 => 
-    array (
-      'id' => 390,
-      'name' => 'Sesame Roasted Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 40,
-      'pvx' => 6,
-    ),
-    389 => 
-    array (
-      'id' => 391,
-      'name' => 'Plate of Coriander Crusted Meat Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    390 => 
-    array (
-      'id' => 392,
-      'name' => 'Plate of Steak and Asparagus Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 75,
-      'pvx' => 6,
-    ),
-    391 => 
-    array (
-      'id' => 393,
-      'name' => 'Dragon\'s Breath Bun',
-      'type' => 'Food',
-      'rarity' => 'Common',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    392 => 
-    array (
-      'id' => 394,
-      'name' => 'Plate of Truffle Steak Dinner',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    393 => 
-    array (
-      'id' => 395,
-      'name' => 'Bowl of Garlic Kale Sautee',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    394 => 
-    array (
-      'id' => 396,
-      'name' => 'Bowl of Sweet and Spicy Butternut Squash Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    395 => 
-    array (
-      'id' => 397,
-      'name' => 'Bowl of Zesty Turnip Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    396 => 
-    array (
-      'id' => 398,
-      'name' => 'Carrot Soufflé',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    397 => 
-    array (
-      'id' => 399,
-      'name' => 'Mushroom Loaf',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    398 => 
-    array (
-      'id' => 400,
-      'name' => 'Plate of Frostgorge Clams',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    399 => 
-    array (
-      'id' => 401,
-      'name' => 'Plate of Spicy Herbed Chicken',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    400 => 
-    array (
-      'id' => 402,
-      'name' => 'Spicy Marinated Mushroom',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    401 => 
-    array (
-      'id' => 403,
-      'name' => 'Potion Of Karka Toughness',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    402 => 
-    array (
-      'id' => 404,
-      'name' => 'Bowl of Cactus Soup',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    403 => 
-    array (
-      'id' => 405,
-      'name' => 'Bowl of Black Pepper Cactus Salad',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    404 => 
-    array (
-      'id' => 406,
-      'name' => 'Bowl of Nopalitos Sauté',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    405 => 
-    array (
-      'id' => 407,
-      'name' => 'Loaf of Candy Cactus Cornbread',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    406 => 
-    array (
-      'id' => 408,
-      'name' => 'Spring Roll',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    407 => 
-    array (
-      'id' => 409,
-      'name' => 'Fried Golden Dumpling',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    408 => 
-    array (
-      'id' => 410,
-      'name' => 'Jerk Poultry and Nopal Flatbread Sandwich',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    409 => 
-    array (
-      'id' => 411,
-      'name' => 'Jerk Poultry Flatbread Sandwich',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    410 => 
-    array (
-      'id' => 412,
-      'name' => 'Cheesy Cassava Roll',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    411 => 
-    array (
-      'id' => 413,
-      'name' => 'Slice of Allspice Cake with Ice Cream',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    412 => 
-    array (
-      'id' => 414,
-      'name' => 'Slice of Allspice Cake',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    413 => 
-    array (
-      'id' => 415,
-      'name' => 'Plate of Mussels Gnashblade',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    414 => 
-    array (
-      'id' => 416,
-      'name' => 'Bowl of Curry Mussel Soup',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    415 => 
-    array (
-      'id' => 417,
-      'name' => 'Piece of Undersea Wurm Sushi',
-      'type' => 'Food',
-      'rarity' => 'Exotic',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    416 => 
-    array (
-      'id' => 418,
-      'name' => 'Bowl of Passion Fruit Tapioca Pudding',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    417 => 
-    array (
-      'id' => 419,
-      'name' => 'Bowl of Tapioca Pudding',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    418 => 
-    array (
-      'id' => 420,
-      'name' => 'Bowl of Sawgill Mushroom Risotto',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 55,
-      'pvx' => 6,
-    ),
-    419 => 
-    array (
-      'id' => 421,
-      'name' => 'Bowl of Prickly Pear Tapioca Pudding',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    420 => 
-    array (
-      'id' => 422,
-      'name' => 'Flatbread',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    421 => 
-    array (
-      'id' => 423,
-      'name' => 'Bowl of Chocolate Tapioca Pudding',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    422 => 
-    array (
-      'id' => 424,
-      'name' => 'Bowl of Mussel Soup',
-      'type' => 'Food',
-      'rarity' => 'Rare',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    423 => 
-    array (
-      'id' => 425,
-      'name' => 'Bowl of Lemongrass Mussel Pasta',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    424 => 
-    array (
-      'id' => 426,
-      'name' => 'Plate of Jerk Poultry',
-      'type' => 'Food',
-      'rarity' => 'Masterwork',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    425 => 
-    array (
-      'id' => 427,
-      'name' => 'Prickly Pear Stuffed Nopale',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    426 => 
-    array (
-      'id' => 428,
-      'name' => 'Bowl of Prickly Pear Sorbet',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    427 => 
-    array (
-      'id' => 429,
-      'name' => 'Bowl of Sweet and Spicy Beans',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
-    ),
-    428 => 
-    array (
-      'id' => 430,
-      'name' => 'Plate of Roasted Cactus',
-      'type' => 'Food',
-      'rarity' => 'Fine',
-      'level' => 80,
-      'pvx' => 6,
+      'is_profile' => true,
     ),
   ),
   'weapons' => 
   array (
     0 => 
     array (
-      'id' => 9,
-      'name' => 'Mace',
+      'id' => 4,
+      'name' => 'Rifle',
     ),
     1 => 
-    array (
-      'id' => 18,
-      'name' => 'Spear',
-    ),
-    2 => 
-    array (
-      'id' => 19,
-      'name' => 'Trident',
-    ),
-    3 => 
-    array (
-      'id' => 14,
-      'name' => 'Shield',
-    ),
-    4 => 
-    array (
-      'id' => 6,
-      'name' => 'Staff',
-    ),
-    5 => 
-    array (
-      'id' => 17,
-      'name' => 'Harpoon gun',
-    ),
-    6 => 
-    array (
-      'id' => 7,
-      'name' => 'Axe',
-    ),
-    7 => 
-    array (
-      'id' => 12,
-      'name' => 'Sword',
-    ),
-    8 => 
-    array (
-      'id' => 8,
-      'name' => 'Dagger',
-    ),
-    9 => 
-    array (
-      'id' => 13,
-      'name' => 'Focus',
-    ),
-    10 => 
-    array (
-      'id' => 11,
-      'name' => 'Scepter',
-    ),
-    11 => 
     array (
       'id' => 3,
       'name' => 'Longbow',
     ),
-    12 => 
+    2 => 
+    array (
+      'id' => 8,
+      'name' => 'Dagger',
+    ),
+    3 => 
+    array (
+      'id' => 6,
+      'name' => 'Staff',
+    ),
+    4 => 
     array (
       'id' => 16,
       'name' => 'Warhorn',
     ),
-    13 => 
+    5 => 
+    array (
+      'id' => 10,
+      'name' => 'Pistol',
+    ),
+    6 => 
+    array (
+      'id' => 5,
+      'name' => 'Shortbow',
+    ),
+    7 => 
+    array (
+      'id' => 7,
+      'name' => 'Axe',
+    ),
+    8 => 
+    array (
+      'id' => 13,
+      'name' => 'Focus',
+    ),
+    9 => 
+    array (
+      'id' => 19,
+      'name' => 'Trident',
+    ),
+    10 => 
+    array (
+      'id' => 12,
+      'name' => 'Sword',
+    ),
+    11 => 
+    array (
+      'id' => 11,
+      'name' => 'Scepter',
+    ),
+    12 => 
     array (
       'id' => 1,
       'name' => 'Greatsword',
+    ),
+    13 => 
+    array (
+      'id' => 2,
+      'name' => 'Hammer',
     ),
     14 => 
     array (
@@ -7409,11193 +3685,23 @@
     ),
     15 => 
     array (
-      'id' => 2,
-      'name' => 'Hammer',
+      'id' => 17,
+      'name' => 'Harpoon gun',
     ),
     16 => 
-    array (
-      'id' => 10,
-      'name' => 'Pistol',
-    ),
-    17 => 
-    array (
-      'id' => 4,
-      'name' => 'Rifle',
-    ),
-    18 => 
-    array (
-      'id' => 5,
-      'name' => 'Shortbow',
-    ),
-  ),
-  'upgrades' => 
-  array (
-    0 => 
-    array (
-      'id' => 1,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Agony',
-      'pvp_name' => 'Sigil of Agony (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    1 => 
-    array (
-      'id' => 2,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Smoldering',
-      'pvp_name' => 'Sigil of Smoldering (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    2 => 
-    array (
-      'id' => 3,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Hobbling',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    3 => 
-    array (
-      'id' => 4,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Accuracy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    4 => 
-    array (
-      'id' => 5,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Force',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    5 => 
-    array (
-      'id' => 6,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of the Night',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    6 => 
-    array (
-      'id' => 7,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Bursting',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    7 => 
-    array (
-      'id' => 8,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Malice',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    8 => 
     array (
       'id' => 9,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Chilling',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    9 => 
-    array (
-      'id' => 10,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Venom',
-      'pvp_name' => 'Sigil of Venom (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    10 => 
-    array (
-      'id' => 11,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Paralyzation',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    11 => 
-    array (
-      'id' => 12,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Peril',
-      'pvp_name' => 'Sigil of Peril (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    12 => 
-    array (
-      'id' => 13,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Debility',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    13 => 
-    array (
-      'id' => 14,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Corruption',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    14 => 
-    array (
-      'id' => 15,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Stamina',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    15 => 
-    array (
-      'id' => 16,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Life',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    16 => 
-    array (
-      'id' => 17,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Restoration',
-      'pvx' => 6,
-      'is_profile' => false,
+      'name' => 'Mace',
     ),
     17 => 
     array (
       'id' => 18,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Benevolence',
-      'pvx' => 6,
-      'is_profile' => false,
+      'name' => 'Spear',
     ),
     18 => 
     array (
-      'id' => 19,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Bloodlust',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    19 => 
-    array (
-      'id' => 20,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Perception',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    20 => 
-    array (
-      'id' => 21,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Momentum',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    21 => 
-    array (
-      'id' => 22,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Luck',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    22 => 
-    array (
-      'id' => 23,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Demon Summoning',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    23 => 
-    array (
-      'id' => 24,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Celerity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    24 => 
-    array (
-      'id' => 25,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Speed',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    25 => 
-    array (
-      'id' => 26,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Bounty',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    26 => 
-    array (
-      'id' => 27,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Air',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    27 => 
-    array (
-      'id' => 28,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Earth',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    28 => 
-    array (
-      'id' => 29,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Fire',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    29 => 
-    array (
-      'id' => 30,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Ice',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    30 => 
-    array (
-      'id' => 31,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Blood',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    31 => 
-    array (
-      'id' => 32,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Strength',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    32 => 
-    array (
-      'id' => 33,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Frailty',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    33 => 
-    array (
-      'id' => 34,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Water',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    34 => 
-    array (
-      'id' => 35,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Intelligence',
-      'pvp_name' => 'Sigil of Intelligence (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    35 => 
-    array (
-      'id' => 36,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Doom',
-      'pvp_name' => 'Sigil of Doom (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    36 => 
-    array (
-      'id' => 37,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Geomancy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    37 => 
-    array (
-      'id' => 38,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Energy',
-      'pvp_name' => 'Sigil of Energy (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    38 => 
-    array (
-      'id' => 39,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Hydromancy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    39 => 
-    array (
-      'id' => 40,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Leeching',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    40 => 
-    array (
-      'id' => 41,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Battle',
-      'pvp_name' => 'Sigil of Battle (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    41 => 
-    array (
-      'id' => 42,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Renewal',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    42 => 
-    array (
-      'id' => 43,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Rage',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    43 => 
-    array (
-      'id' => 44,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Generosity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    44 => 
-    array (
-      'id' => 45,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Impact',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    45 => 
-    array (
-      'id' => 46,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Torment',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    46 => 
-    array (
-      'id' => 47,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Cleansing',
-      'pvp_name' => 'Sigil of Cleansing (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    47 => 
-    array (
-      'id' => 48,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Cruelty',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    48 => 
-    array (
-      'id' => 49,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Blight',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    49 => 
-    array (
-      'id' => 50,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Mischief',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    50 => 
-    array (
-      'id' => 51,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Incapacitation',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    51 => 
-    array (
-      'id' => 52,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Agility',
-      'pvp_name' => 'Sigil of Agility (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    52 => 
-    array (
-      'id' => 53,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Transference',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    53 => 
-    array (
-      'id' => 54,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Ruthlessness',
-      'pvp_name' => 'Sigil of Ruthlessness (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    54 => 
-    array (
-      'id' => 55,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Absorption',
-      'pvp_name' => 'Sigil of Absorption (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    55 => 
-    array (
-      'id' => 56,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Draining',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    56 => 
-    array (
-      'id' => 57,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Rending',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    57 => 
-    array (
-      'id' => 58,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Concentration',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    58 => 
-    array (
-      'id' => 59,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Annulment',
-      'pvp_name' => 'Sigil of Annulment (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    59 => 
-    array (
-      'id' => 60,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Compounding',
-      'pvp_name' => 'Sigil of Compounding (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    60 => 
-    array (
-      'id' => 61,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Confusion',
-      'pvp_name' => 'Sigil of Confusion (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    61 => 
-    array (
-      'id' => 62,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Courage',
-      'pvp_name' => 'Sigil of Courage (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    62 => 
-    array (
-      'id' => 63,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Enhancement',
-      'pvp_name' => 'Sigil of Enhancement (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    63 => 
-    array (
-      'id' => 64,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Escape',
-      'pvp_name' => 'Sigil of Escape (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    64 => 
-    array (
-      'id' => 65,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Exploitation',
-      'pvp_name' => 'Sigil of Exploitation (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    65 => 
-    array (
-      'id' => 66,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Exposure',
-      'pvp_name' => 'Sigil of Exposure (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    66 => 
-    array (
-      'id' => 67,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Fallibility',
-      'pvp_name' => 'Sigil of Fallibility (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    67 => 
-    array (
-      'id' => 68,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Misery',
-      'pvp_name' => 'Sigil of Misery (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    68 => 
-    array (
-      'id' => 69,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Opportunity',
-      'pvp_name' => 'Sigil of Opportunity (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    69 => 
-    array (
-      'id' => 70,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Purging',
-      'pvp_name' => 'Sigil of Purging (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    70 => 
-    array (
-      'id' => 71,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Revocation',
-      'pvp_name' => 'Sigil of Revocation (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    71 => 
-    array (
-      'id' => 72,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Savagery',
-      'pvp_name' => 'Sigil of Savagery (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    72 => 
-    array (
-      'id' => 73,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Separation',
-      'pvp_name' => 'Sigil of Separation (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    73 => 
-    array (
-      'id' => 74,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Stagnation',
-      'pvp_name' => 'Sigil of Stagnation (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    74 => 
-    array (
-      'id' => 75,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Nullification',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    75 => 
-    array (
-      'id' => 76,
-      'type' => 'Sigil',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Sigil of Purity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    76 => 
-    array (
-      'id' => 87,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Afflicted',
-      'pvp_name' => 'Rune of the Afflicted (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    77 => 
-    array (
-      'id' => 88,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Air',
-      'pvp_name' => 'Rune of Air (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    78 => 
-    array (
-      'id' => 89,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Balthazar',
-      'pvp_name' => 'Rune of Balthazar (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    79 => 
-    array (
-      'id' => 90,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Centaur',
-      'pvp_name' => 'Rune of the Centaur (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    80 => 
-    array (
-      'id' => 91,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Citadel',
-      'pvp_name' => 'Rune of the Citadel (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    81 => 
-    array (
-      'id' => 92,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Divinity',
-      'pvp_name' => 'Rune of Divinity (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    82 => 
-    array (
-      'id' => 93,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Dolyak',
-      'pvp_name' => 'Rune of the Dolyak (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    83 => 
-    array (
-      'id' => 94,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Dwayna',
-      'pvp_name' => 'Rune of Dwayna (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    84 => 
-    array (
-      'id' => 95,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Eagle',
-      'pvp_name' => 'Rune of the Eagle (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    85 => 
-    array (
-      'id' => 96,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Strength',
-      'pvp_name' => 'Rune of Strength (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    86 => 
-    array (
-      'id' => 97,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Fire',
-      'pvp_name' => 'Rune of Fire (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    87 => 
-    array (
-      'id' => 98,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Earth',
-      'pvp_name' => 'Rune of Earth (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    88 => 
-    array (
-      'id' => 99,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Flame Legion',
-      'pvp_name' => 'Rune of the Flame Legion (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    89 => 
-    array (
-      'id' => 100,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Flock',
-      'pvp_name' => 'Rune of the Flock (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    90 => 
-    array (
-      'id' => 101,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Krait',
-      'pvp_name' => 'Rune of the Krait (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    91 => 
-    array (
-      'id' => 102,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Grenth',
-      'pvp_name' => 'Rune of Grenth (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    92 => 
-    array (
-      'id' => 103,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Grove',
-      'pvp_name' => 'Rune of the Grove (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    93 => 
-    array (
-      'id' => 104,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Hoelbrak',
-      'pvp_name' => 'Rune of Hoelbrak (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    94 => 
-    array (
-      'id' => 105,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ice',
-      'pvp_name' => 'Rune of Ice (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    95 => 
-    array (
-      'id' => 106,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Infiltration',
-      'pvp_name' => 'Rune of Infiltration (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    96 => 
-    array (
-      'id' => 107,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Lich',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    97 => 
-    array (
-      'id' => 108,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Lyssa',
-      'pvp_name' => 'Rune of Lyssa (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    98 => 
-    array (
-      'id' => 109,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Melandru',
-      'pvp_name' => 'Rune of Melandru (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    99 => 
-    array (
-      'id' => 110,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Mercy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    100 => 
-    array (
-      'id' => 111,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ogre',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    101 => 
-    array (
-      'id' => 112,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Pack',
-      'pvp_name' => 'Rune of the Pack (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    102 => 
-    array (
-      'id' => 113,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Rage',
-      'pvp_name' => 'Rune of Rage (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    103 => 
-    array (
-      'id' => 114,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Rata Sum',
-      'pvp_name' => 'Rune of Rata Sum (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    104 => 
-    array (
-      'id' => 115,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Speed',
-      'pvp_name' => 'Rune of Speed (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    105 => 
-    array (
-      'id' => 116,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Undead',
-      'pvp_name' => 'Rune of the Undead (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    106 => 
-    array (
-      'id' => 117,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Vampirism',
-      'pvp_name' => 'Rune of Vampirism (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    107 => 
-    array (
-      'id' => 118,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Wurm',
-      'pvp_name' => 'Rune of the Wurm (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    108 => 
-    array (
-      'id' => 119,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Svanir',
-      'pvp_name' => 'Rune of Svanir (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    109 => 
-    array (
-      'id' => 120,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Necromancer',
-      'pvp_name' => 'Rune of the Necromancer (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    110 => 
-    array (
-      'id' => 121,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Mesmer',
-      'pvp_name' => 'Rune of the Mesmer (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    111 => 
-    array (
-      'id' => 122,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Engineer',
-      'pvp_name' => 'Rune of the Engineer (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    112 => 
-    array (
-      'id' => 123,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Ranger',
-      'pvp_name' => 'Rune of the Ranger (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    113 => 
-    array (
-      'id' => 124,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Elementalist',
-      'pvp_name' => 'Rune of the Elementalist (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    114 => 
-    array (
-      'id' => 125,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Thief',
-      'pvp_name' => 'Rune of the Thief (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    115 => 
-    array (
-      'id' => 126,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Warrior',
-      'pvp_name' => 'Rune of the Warrior (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    116 => 
-    array (
-      'id' => 127,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Guardian',
-      'pvp_name' => 'Rune of the Guardian (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    117 => 
-    array (
-      'id' => 128,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Trooper',
-      'pvp_name' => 'Rune of the Soldier (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    118 => 
-    array (
-      'id' => 129,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Adventurer',
-      'pvp_name' => 'Rune of Adventure (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    119 => 
-    array (
-      'id' => 130,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Brawler',
-      'pvp_name' => 'Rune of the Fighter (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    120 => 
-    array (
-      'id' => 131,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Scholar',
-      'pvp_name' => 'Rune of the Scholar (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    121 => 
-    array (
-      'id' => 132,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Water',
-      'pvp_name' => 'Rune of the Water (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    122 => 
-    array (
-      'id' => 133,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Monk',
-      'pvp_name' => 'Rune of the Monk (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    123 => 
-    array (
-      'id' => 134,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Nightmare',
-      'pvp_name' => 'Rune of the Nightmare (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    124 => 
-    array (
-      'id' => 135,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Forgeman',
-      'pvp_name' => 'Rune of the Forge (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    125 => 
-    array (
-      'id' => 136,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Baelfire',
-      'pvp_name' => 'Rune of the Baelfire (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    126 => 
-    array (
-      'id' => 137,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Sanctuary',
-      'pvp_name' => 'Rune of Sanctuary (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    127 => 
-    array (
-      'id' => 138,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Orr',
-      'pvp_name' => 'Rune of Orr (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    128 => 
-    array (
-      'id' => 139,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Exuberance',
-      'pvp_name' => 'Rune of Exuberance (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    129 => 
-    array (
-      'id' => 140,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Perplexity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    130 => 
-    array (
-      'id' => 141,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Tormenting',
-      'pvp_name' => 'Rune of Tormenting (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    131 => 
-    array (
-      'id' => 142,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Mad King',
-      'pvp_name' => 'Rune of the Mad King (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    132 => 
-    array (
-      'id' => 143,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Scavenging',
-      'pvp_name' => 'Rune of Scavenging (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    133 => 
-    array (
-      'id' => 144,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Altruism',
-      'pvp_name' => 'Rune of Altruism (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    134 => 
-    array (
-      'id' => 145,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Aristocracy',
-      'pvp_name' => 'Rune of the Aristocracy (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    135 => 
-    array (
-      'id' => 146,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Traveler',
-      'pvp_name' => 'Rune of the Traveler (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    136 => 
-    array (
-      'id' => 147,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Privateer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    137 => 
-    array (
-      'id' => 148,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Golemancer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    138 => 
-    array (
-      'id' => 149,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Sunless',
-      'pvp_name' => 'Rune of the Sunless (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    139 => 
-    array (
-      'id' => 150,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Resistance',
-      'pvp_name' => 'Rune of Resistance (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    140 => 
-    array (
-      'id' => 151,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Evasion',
-      'pvp_name' => 'Rune of Evasion (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    141 => 
-    array (
-      'id' => 152,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Trapper',
-      'pvp_name' => 'Rune of the Trapper (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    142 => 
-    array (
-      'id' => 153,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Radiance',
-      'pvp_name' => 'Rune of Radiance (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    143 => 
-    array (
-      'id' => 154,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Snowfall',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    144 => 
-    array (
-      'id' => 155,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Defender',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    145 => 
-    array (
-      'id' => 156,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Durability',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    146 => 
-    array (
-      'id' => 157,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Leadership',
-      'pvp_name' => 'Rune of Leadership (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    147 => 
-    array (
-      'id' => 158,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Surging',
-      'pvp_name' => 'Rune of Surging (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    148 => 
-    array (
-      'id' => 159,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Berserker',
-      'pvp_name' => 'Rune of the Berserker (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    149 => 
-    array (
-      'id' => 160,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Chronomancer',
-      'pvp_name' => 'Rune of the Chronomancer (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    150 => 
-    array (
-      'id' => 161,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Daredevil',
-      'pvp_name' => 'Rune of the Daredevil (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    151 => 
-    array (
-      'id' => 162,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Dragonhunter',
-      'pvp_name' => 'Rune of the Dragonhunter (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    152 => 
-    array (
-      'id' => 163,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Druid',
-      'pvp_name' => 'Rune of the Druid (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    153 => 
-    array (
-      'id' => 164,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Herald',
-      'pvp_name' => 'Rune of the Herald (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    154 => 
-    array (
-      'id' => 165,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Reaper',
-      'pvp_name' => 'Rune of the Reaper (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    155 => 
-    array (
-      'id' => 166,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Revenant',
-      'pvp_name' => 'Rune of the Revenant (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    156 => 
-    array (
-      'id' => 167,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Scrapper',
-      'pvp_name' => 'Rune of the Scrapper (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    157 => 
-    array (
-      'id' => 168,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Tempest',
-      'pvp_name' => 'Rune of the Tempest (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    158 => 
-    array (
-      'id' => 169,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Thorns',
-      'pvp_name' => 'Rune of Thorns (PvP)',
-      'pvx' => 7,
-      'is_profile' => false,
-    ),
-    159 => 
-    array (
-      'id' => 170,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of the Lynx',
-      'pvp_name' => 'Rune of the Lynx (PvP)',
-      'pvx' => 1,
-      'is_profile' => false,
-    ),
-    160 => 
-    array (
-      'id' => 171,
-      'type' => 'Rune',
-      'rarity' => 'Exotic',
-      'name' => 'Superior Rune of Antitoxin',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    161 => 
-    array (
-      'id' => 205,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Malign Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    162 => 
-    array (
-      'id' => 206,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Mighty Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    163 => 
-    array (
-      'id' => 207,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Precise Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    164 => 
-    array (
-      'id' => 208,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Malign +5 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    165 => 
-    array (
-      'id' => 209,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Mighty +5 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    166 => 
-    array (
-      'id' => 210,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Precise +5 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    167 => 
-    array (
-      'id' => 211,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Malign WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    168 => 
-    array (
-      'id' => 212,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Mighty WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    169 => 
-    array (
-      'id' => 213,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Precise WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    170 => 
-    array (
-      'id' => 214,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Healing Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    171 => 
-    array (
-      'id' => 215,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Resilient Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    172 => 
-    array (
-      'id' => 216,
-      'type' => 'Infusion',
-      'rarity' => 'Common',
-      'name' => 'Vital Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    173 => 
-    array (
-      'id' => 217,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Healing +5 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    174 => 
-    array (
-      'id' => 218,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Resilient +5 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    175 => 
-    array (
-      'id' => 219,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Vital +5 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    176 => 
-    array (
-      'id' => 220,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Healing WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    177 => 
-    array (
-      'id' => 221,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Resilient WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    178 => 
-    array (
-      'id' => 222,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Vital WvW Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    179 => 
-    array (
-      'id' => 223,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Gilded Enrichment',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    180 => 
-    array (
-      'id' => 224,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Magical Enrichment',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    181 => 
-    array (
-      'id' => 225,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Experienced Enrichment',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    182 => 
-    array (
-      'id' => 226,
-      'type' => 'Infusion',
-      'rarity' => 'Fine',
-      'name' => 'Karmic Enrichment',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    183 => 
-    array (
-      'id' => 228,
-      'type' => 'Infusion',
-      'rarity' => 'Masterwork',
-      'name' => 'Malign +7 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    184 => 
-    array (
-      'id' => 229,
-      'type' => 'Infusion',
-      'rarity' => 'Masterwork',
-      'name' => 'Mighty +7 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    185 => 
-    array (
-      'id' => 230,
-      'type' => 'Infusion',
-      'rarity' => 'Masterwork',
-      'name' => 'Precise +7 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    186 => 
-    array (
-      'id' => 231,
-      'type' => 'Infusion',
-      'rarity' => 'Masterwork',
-      'name' => 'Healing +7 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    187 => 
-    array (
-      'id' => 232,
-      'type' => 'Infusion',
-      'rarity' => 'Masterwork',
-      'name' => 'Resilient +7 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    188 => 
-    array (
-      'id' => 233,
-      'type' => 'Infusion',
-      'rarity' => 'Masterwork',
-      'name' => 'Vital +7 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    189 => 
-    array (
-      'id' => 234,
-      'type' => 'Infusion',
-      'rarity' => 'Rare',
-      'name' => 'Malign +9 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    190 => 
-    array (
-      'id' => 235,
-      'type' => 'Infusion',
-      'rarity' => 'Rare',
-      'name' => 'Mighty +9 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    191 => 
-    array (
-      'id' => 236,
-      'type' => 'Infusion',
-      'rarity' => 'Rare',
-      'name' => 'Precise +9 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    192 => 
-    array (
-      'id' => 237,
-      'type' => 'Infusion',
-      'rarity' => 'Rare',
-      'name' => 'Healing +9 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    193 => 
-    array (
-      'id' => 238,
-      'type' => 'Infusion',
-      'rarity' => 'Rare',
-      'name' => 'Resilient +9 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    194 => 
-    array (
-      'id' => 239,
-      'type' => 'Infusion',
-      'rarity' => 'Rare',
-      'name' => 'Vital +9 Agony Infusion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    195 => 
-    array (
-      'id' => 240,
-      'type' => 'Doubloon',
-      'rarity' => 'Rare',
-      'name' => 'Copper Doubloon',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    196 => 
-    array (
-      'id' => 241,
-      'type' => 'Doubloon',
-      'rarity' => 'Rare',
-      'name' => 'Silver Doubloon',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    197 => 
-    array (
-      'id' => 242,
-      'type' => 'Doubloon',
-      'rarity' => 'Rare',
-      'name' => 'Gold Doubloon',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    198 => 
-    array (
-      'id' => 243,
-      'type' => 'Doubloon',
-      'rarity' => 'Rare',
-      'name' => 'Platinum Doubloon',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    199 => 
-    array (
-      'id' => 244,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Afflicted',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    200 => 
-    array (
-      'id' => 245,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Air',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    201 => 
-    array (
-      'id' => 246,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Balthazar',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    202 => 
-    array (
-      'id' => 247,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Centaur',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    203 => 
-    array (
-      'id' => 248,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Citadel',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    204 => 
-    array (
-      'id' => 249,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Divinity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    205 => 
-    array (
-      'id' => 250,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Dolyak',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    206 => 
-    array (
-      'id' => 251,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Dwayna',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    207 => 
-    array (
-      'id' => 252,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Eagle',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    208 => 
-    array (
-      'id' => 253,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Strength',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    209 => 
-    array (
-      'id' => 254,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Fire',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    210 => 
-    array (
-      'id' => 255,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Earth',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    211 => 
-    array (
-      'id' => 256,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Flame Legion',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    212 => 
-    array (
-      'id' => 257,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Flock',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    213 => 
-    array (
-      'id' => 258,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Krait',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    214 => 
-    array (
-      'id' => 259,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Grenth',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    215 => 
-    array (
-      'id' => 260,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Grove',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    216 => 
-    array (
-      'id' => 261,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Hoelbrak',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    217 => 
-    array (
-      'id' => 262,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Ice',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    218 => 
-    array (
-      'id' => 263,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Infiltration',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    219 => 
-    array (
-      'id' => 264,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Lich',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    220 => 
-    array (
-      'id' => 265,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Lyssa',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    221 => 
-    array (
-      'id' => 266,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Melandru',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    222 => 
-    array (
-      'id' => 267,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Mercy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    223 => 
-    array (
-      'id' => 268,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Ogre',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    224 => 
-    array (
-      'id' => 269,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Pack',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    225 => 
-    array (
-      'id' => 270,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Rage',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    226 => 
-    array (
-      'id' => 271,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Rata Sum',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    227 => 
-    array (
-      'id' => 272,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Speed',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    228 => 
-    array (
-      'id' => 273,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Undead',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    229 => 
-    array (
-      'id' => 274,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Vampirism',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    230 => 
-    array (
-      'id' => 275,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Wurm',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    231 => 
-    array (
-      'id' => 276,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Svanir',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    232 => 
-    array (
-      'id' => 277,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Necromancer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    233 => 
-    array (
-      'id' => 278,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Mesmer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    234 => 
-    array (
-      'id' => 279,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Engineer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    235 => 
-    array (
-      'id' => 280,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Ranger',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    236 => 
-    array (
-      'id' => 281,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Elementalist',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    237 => 
-    array (
-      'id' => 282,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Thief',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    238 => 
-    array (
-      'id' => 283,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Warrior',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    239 => 
-    array (
-      'id' => 284,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Guardian',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    240 => 
-    array (
-      'id' => 285,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Trooper',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    241 => 
-    array (
-      'id' => 286,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Adventurer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    242 => 
-    array (
-      'id' => 287,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Brawler',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    243 => 
-    array (
-      'id' => 288,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Scholar',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    244 => 
-    array (
-      'id' => 289,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Water',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    245 => 
-    array (
-      'id' => 290,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Monk',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    246 => 
-    array (
-      'id' => 291,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Nightmare',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    247 => 
-    array (
-      'id' => 292,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Forgeman',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    248 => 
-    array (
-      'id' => 293,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Baelfire',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    249 => 
-    array (
-      'id' => 294,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Sanctuary',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    250 => 
-    array (
-      'id' => 295,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Orr',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    251 => 
-    array (
-      'id' => 296,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Exuberance',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    252 => 
-    array (
-      'id' => 297,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Perplexity',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    253 => 
-    array (
-      'id' => 298,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Tormenting',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    254 => 
-    array (
-      'id' => 299,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Mad King',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    255 => 
-    array (
-      'id' => 300,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Scavenging',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    256 => 
-    array (
-      'id' => 301,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Altruism',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    257 => 
-    array (
-      'id' => 302,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Aristocracy',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    258 => 
-    array (
-      'id' => 303,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Traveler',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    259 => 
-    array (
-      'id' => 304,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Privateer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    260 => 
-    array (
-      'id' => 305,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of the Golemancer',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    261 => 
-    array (
-      'id' => 306,
-      'type' => 'Rune',
-      'rarity' => 'Rare',
-      'name' => 'Major Rune of Snowfall',
-      'pvx' => 6,
-      'is_profile' => false,
-    ),
-    262 => 
-    array (
-      'id' => 1,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Soldier',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    263 => 
-    array (
-      'id' => 2,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Shaman',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    264 => 
-    array (
-      'id' => 3,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Rabid',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    265 => 
-    array (
-      'id' => 4,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Magi',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    266 => 
-    array (
-      'id' => 5,
-      'type' => 'Crest',
-      'rarity' => 'Rare',
-      'name' => 'Crest of the Assassin',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    267 => 
-    array (
-      'id' => 6,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Ruby Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    268 => 
-    array (
-      'id' => 7,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Beryl Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    269 => 
-    array (
-      'id' => 8,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Emerald Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    270 => 
-    array (
-      'id' => 9,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Coral Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    271 => 
-    array (
-      'id' => 10,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Chrysocola Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    272 => 
-    array (
-      'id' => 11,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Sapphire Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    273 => 
-    array (
-      'id' => 12,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Opal Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    274 => 
-    array (
       'id' => 14,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Agate Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    275 => 
-    array (
-      'id' => 15,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Black Diamond',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    276 => 
-    array (
-      'id' => 16,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Freshwater Pearl',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    277 => 
-    array (
-      'id' => 17,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Ebony Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    278 => 
-    array (
-      'id' => 18,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Moonstone Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    279 => 
-    array (
-      'id' => 19,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Maguuma Burl',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    280 => 
-    array (
-      'id' => 20,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Maguuma Lily',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    281 => 
-    array (
-      'id' => 21,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Flax Blossom',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    282 => 
-    array (
-      'id' => 22,
-      'type' => 'Gemstone',
-      'rarity' => 'Rare',
-      'name' => 'Azurite Orb',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    283 => 
-    array (
-      'id' => 23,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Ruby Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    284 => 
-    array (
-      'id' => 24,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Beryl Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    285 => 
-    array (
-      'id' => 25,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Emerald Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    286 => 
-    array (
-      'id' => 26,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Coral Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    287 => 
-    array (
-      'id' => 27,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Chrysocola Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    288 => 
-    array (
-      'id' => 28,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Sapphire Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    289 => 
-    array (
-      'id' => 29,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Opal Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    290 => 
-    array (
-      'id' => 30,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Azurite Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    291 => 
-    array (
-      'id' => 31,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Snowflake',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    292 => 
-    array (
-      'id' => 32,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Charged Quartz Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    293 => 
-    array (
-      'id' => 33,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Watchwork Sprocket',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    294 => 
-    array (
-      'id' => 34,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Ambrite Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    295 => 
-    array (
-      'id' => 35,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Charged Ambrite Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    296 => 
-    array (
-      'id' => 36,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Burl Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    297 => 
-    array (
-      'id' => 37,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Ebony Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    298 => 
-    array (
-      'id' => 38,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Agate Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    299 => 
-    array (
-      'id' => 39,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Freshwater Pearl Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    300 => 
-    array (
-      'id' => 40,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Lily Blossom',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    301 => 
-    array (
-      'id' => 41,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Flax Blossom',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    302 => 
-    array (
-      'id' => 42,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Black Diamond Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    303 => 
-    array (
-      'id' => 43,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Moonstone Jewel',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-    304 => 
-    array (
-      'id' => 44,
-      'type' => 'Jewel',
-      'rarity' => 'Exotic',
-      'name' => 'Exquisite Passion Flower',
-      'pvx' => 6,
-      'is_profile' => true,
-    ),
-  ),
-  'traits' => 
-  array (
-    0 => 
-    array (
-      'id' => 3,
-      'name' => 'Empowering Flame',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    1 => 
-    array (
-      'id' => 516,
-      'name' => 'Zealot\'s Speed',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    2 => 
-    array (
-      'id' => 772,
-      'name' => 'Evasive Powder Keg',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    3 => 
-    array (
-      'id' => 1033,
-      'name' => 'Mirage Cloak',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    4 => 
-    array (
-      'id' => 273,
-      'name' => 'Tail Wind',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    5 => 
-    array (
-      'id' => 533,
-      'name' => 'Justice is Blind',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    6 => 
-    array (
-      'id' => 1045,
-      'name' => 'Mutilate Defenses',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    7 => 
-    array (
-      'id' => 22,
-      'name' => 'Zephyr\'s Speed',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    8 => 
-    array (
-      'id' => 798,
-      'name' => 'Sharpshooter',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    9 => 
-    array (
-      'id' => 1057,
-      'name' => 'Rampant Vex',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    10 => 
-    array (
-      'id' => 292,
-      'name' => 'Natural Vigor',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    11 => 
-    array (
-      'id' => 42,
-      'name' => 'Stone Flesh',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    12 => 
-    array (
-      'id' => 554,
-      'name' => 'Valorous Defense',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    13 => 
-    array (
-      'id' => 1069,
-      'name' => 'Enduring Recovery',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    14 => 
-    array (
-      'id' => 823,
-      'name' => 'Cleansing Synergy',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    15 => 
-    array (
-      'id' => 1081,
-      'name' => 'Disarming Riposte',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    16 => 
-    array (
-      'id' => 314,
-      'name' => 'Rejuvenation',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    17 => 
-    array (
-      'id' => 61,
-      'name' => 'Soothing Mist',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    18 => 
-    array (
-      'id' => 573,
-      'name' => 'Vigorous Precision',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    19 => 
-    array (
-      'id' => 1093,
-      'name' => 'Invoker\'s Rage',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    20 => 
-    array (
-      'id' => 81,
-      'name' => 'Arcane Fury',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    21 => 
-    array (
-      'id' => 1105,
-      'name' => 'Crystal Harbinger',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    22 => 
-    array (
-      'id' => 339,
-      'name' => 'Pack Alpha',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    23 => 
-    array (
-      'id' => 595,
-      'name' => 'Inspired Virtue',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    24 => 
-    array (
-      'id' => 851,
-      'name' => 'Hidden Flask',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    25 => 
-    array (
-      'id' => 1117,
-      'name' => 'Ambush Commander',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    26 => 
-    array (
-      'id' => 98,
-      'name' => 'Singularity',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    27 => 
-    array (
-      'id' => 874,
-      'name' => 'Optimized Activation',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    28 => 
-    array (
-      'id' => 619,
-      'name' => 'Virtuous Action',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    29 => 
-    array (
-      'id' => 365,
-      'name' => 'Celestial Being',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    30 => 
-    array (
-      'id' => 110,
-      'name' => 'Weaver',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    31 => 
-    array (
-      'id' => 631,
-      'name' => 'Purity of Word',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    32 => 
-    array (
-      'id' => 377,
-      'name' => 'Elevated Bond',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    33 => 
-    array (
-      'id' => 124,
-      'name' => 'Reckless Dodge',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    34 => 
-    array (
-      'id' => 895,
-      'name' => 'Function Gyro',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    35 => 
-    array (
-      'id' => 645,
-      'name' => 'Serpent\'s Touch',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    36 => 
-    array (
-      'id' => 391,
-      'name' => 'Reaper\'s Might',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    37 => 
-    array (
-      'id' => 908,
-      'name' => 'Photon Projector',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    38 => 
-    array (
-      'id' => 146,
-      'name' => 'Furious Burst',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    39 => 
-    array (
-      'id' => 922,
-      'name' => 'Illusion of Vulnerability',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    40 => 
-    array (
-      'id' => 667,
-      'name' => 'Keen Observer',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    41 => 
-    array (
-      'id' => 412,
-      'name' => 'Barbed Precision',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    42 => 
-    array (
-      'id' => 168,
-      'name' => 'Thick Skin',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    43 => 
-    array (
-      'id' => 942,
-      'name' => 'Critical Infusion',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    44 => 
-    array (
-      'id' => 431,
-      'name' => 'Armored Shroud',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    45 => 
-    array (
-      'id' => 687,
-      'name' => 'Merciful Ambush',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    46 => 
-    array (
-      'id' => 187,
-      'name' => 'Determined Revival',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    47 => 
-    array (
-      'id' => 961,
-      'name' => 'Metaphysical Rejuvenation',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    48 => 
-    array (
-      'id' => 451,
-      'name' => 'Mark of Evasion',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    49 => 
-    array (
-      'id' => 708,
-      'name' => 'Expeditious Dodger',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    50 => 
-    array (
-      'id' => 206,
-      'name' => 'Versatile Rage',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    51 => 
-    array (
-      'id' => 981,
-      'name' => 'Mender\'s Purity',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    52 => 
-    array (
-      'id' => 472,
-      'name' => 'Gluttony',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    53 => 
-    array (
-      'id' => 728,
-      'name' => 'Kleptomaniac',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    54 => 
-    array (
-      'id' => 225,
-      'name' => 'Primal Rage',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    55 => 
-    array (
-      'id' => 490,
-      'name' => 'Shroud Knight',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    56 => 
-    array (
-      'id' => 746,
-      'name' => 'Physical Supremacy',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    57 => 
-    array (
-      'id' => 1002,
-      'name' => 'Illusionary Retribution',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    58 => 
-    array (
-      'id' => 237,
-      'name' => 'Spellbreaker\'s Conviction',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    59 => 
-    array (
-      'id' => 502,
-      'name' => 'Mantle of Sand',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    60 => 
-    array (
-      'id' => 758,
-      'name' => 'Deadeye\'s Gaze',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    61 => 
-    array (
-      'id' => 251,
-      'name' => 'Opening Strike',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    62 => 
-    array (
-      'id' => 1021,
-      'name' => 'Time Splitter',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => true,
-      'major' => false,
-      'tier' => 1,
-      'number' => 0,
-    ),
-    63 => 
-    array (
-      'id' => 4,
-      'name' => 'Sunspot',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    64 => 
-    array (
-      'id' => 517,
-      'name' => 'Symbolic Exposure',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    65 => 
-    array (
-      'id' => 774,
-      'name' => 'Steel-Packed Powder',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    66 => 
-    array (
-      'id' => 1034,
-      'name' => 'Nomad\'s Endurance',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    67 => 
-    array (
-      'id' => 274,
-      'name' => 'Furious Grip',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    68 => 
-    array (
-      'id' => 534,
-      'name' => 'Renewed Justice',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    69 => 
-    array (
-      'id' => 1046,
-      'name' => 'Targeted Destruction',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    70 => 
-    array (
-      'id' => 23,
-      'name' => 'Electric Discharge',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    71 => 
-    array (
-      'id' => 799,
-      'name' => 'Hematic Focus',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    72 => 
-    array (
-      'id' => 1058,
-      'name' => 'Opportune Extraction',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    73 => 
-    array (
-      'id' => 293,
-      'name' => 'Companion\'s Defense',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    74 => 
-    array (
-      'id' => 43,
-      'name' => 'Earthen Blast',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    75 => 
-    array (
-      'id' => 555,
-      'name' => 'Courageous Return',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    76 => 
-    array (
-      'id' => 1070,
-      'name' => 'Unwavering Avoidance',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    77 => 
-    array (
-      'id' => 824,
-      'name' => 'Heal Resonator',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    78 => 
-    array (
-      'id' => 1082,
-      'name' => 'Hardened Foundation',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    79 => 
-    array (
-      'id' => 315,
-      'name' => 'Fortifying Bond',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    80 => 
-    array (
-      'id' => 62,
-      'name' => 'Healing Ripple',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    81 => 
-    array (
-      'id' => 574,
-      'name' => 'Selfless Daring',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    82 => 
-    array (
-      'id' => 1094,
-      'name' => 'Ferocious Aggression',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    83 => 
-    array (
-      'id' => 80,
-      'name' => 'Elemental Attunement',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    84 => 
-    array (
-      'id' => 1106,
-      'name' => 'Vigorous Persistence',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    85 => 
-    array (
-      'id' => 340,
-      'name' => 'Loud Whistle',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    86 => 
-    array (
-      'id' => 596,
-      'name' => 'Virtue of Retribution',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    87 => 
-    array (
-      'id' => 852,
-      'name' => 'Transmute',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    88 => 
-    array (
-      'id' => 1118,
-      'name' => 'Endless Enmity',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    89 => 
-    array (
-      'id' => 99,
-      'name' => 'Speedy Conduit',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    90 => 
-    array (
-      'id' => 875,
-      'name' => 'Mechanized Deployment',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    91 => 
-    array (
-      'id' => 620,
-      'name' => 'Defender\'s Dogma',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    92 => 
-    array (
-      'id' => 366,
-      'name' => 'Live Vicariously',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    93 => 
-    array (
-      'id' => 111,
-      'name' => 'Elemental Refreshment',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    94 => 
-    array (
-      'id' => 632,
-      'name' => 'Swift Scholar',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    95 => 
-    array (
-      'id' => 378,
-      'name' => 'Furious Strength',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    96 => 
-    array (
-      'id' => 125,
-      'name' => 'Building Momentum',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    97 => 
-    array (
-      'id' => 896,
-      'name' => 'Decisive Renown',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    98 => 
-    array (
-      'id' => 646,
-      'name' => 'Lotus Poison',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    99 => 
-    array (
-      'id' => 392,
-      'name' => 'Death\'s Embrace',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    100 => 
-    array (
-      'id' => 909,
-      'name' => 'Heat Therapy',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    101 => 
-    array (
-      'id' => 147,
-      'name' => 'Deep Strikes',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    102 => 
-    array (
-      'id' => 923,
-      'name' => 'Dazzling',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    103 => 
-    array (
-      'id' => 668,
-      'name' => 'Unrelenting Strikes',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    104 => 
-    array (
-      'id' => 413,
-      'name' => 'Furious Demise',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    105 => 
-    array (
-      'id' => 169,
-      'name' => 'Adrenal Health',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    106 => 
-    array (
-      'id' => 943,
-      'name' => 'Sharper Images',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    107 => 
-    array (
-      'id' => 432,
-      'name' => 'Soul Comprehension',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    108 => 
-    array (
-      'id' => 688,
-      'name' => 'Meld with Shadows',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    109 => 
-    array (
-      'id' => 189,
-      'name' => 'Reviver\'s Might',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    110 => 
-    array (
-      'id' => 962,
-      'name' => 'Illusionary Membrane',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    111 => 
-    array (
-      'id' => 453,
-      'name' => 'Vampiric',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    112 => 
-    array (
-      'id' => 709,
-      'name' => 'Feline Grace',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    113 => 
-    array (
-      'id' => 207,
-      'name' => 'Fast Hands',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    114 => 
-    array (
-      'id' => 983,
-      'name' => 'Inspiring Distortion',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    115 => 
-    array (
-      'id' => 473,
-      'name' => 'Last Gasp',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    116 => 
-    array (
-      'id' => 729,
-      'name' => 'Preparedness',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    117 => 
-    array (
-      'id' => 226,
-      'name' => 'Always Angry',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    118 => 
-    array (
-      'id' => 1001,
-      'name' => 'Illusionist\'s Celerity',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    119 => 
-    array (
-      'id' => 491,
-      'name' => 'Shivers of Dread',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    120 => 
-    array (
-      'id' => 748,
-      'name' => 'Driven Fortitude',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    121 => 
-    array (
-      'id' => 238,
-      'name' => 'Dispelling Force',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    122 => 
-    array (
-      'id' => 503,
-      'name' => 'Sand Sage',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    123 => 
-    array (
-      'id' => 759,
-      'name' => 'Renewing Gaze',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    124 => 
-    array (
-      'id' => 252,
-      'name' => 'Alpha Focus',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    125 => 
-    array (
-      'id' => 1022,
-      'name' => 'Flow of Time',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => true,
-      'major' => false,
-      'tier' => 2,
-      'number' => 0,
-    ),
-    126 => 
-    array (
-      'id' => 5,
-      'name' => 'Burning Rage',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    127 => 
-    array (
-      'id' => 518,
-      'name' => 'Symbolic Power',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    128 => 
-    array (
-      'id' => 775,
-      'name' => 'Shaped Charge',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    129 => 
-    array (
-      'id' => 1035,
-      'name' => 'Speed of Sand',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    130 => 
-    array (
-      'id' => 275,
-      'name' => 'Hunter\'s Tactics',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    131 => 
-    array (
-      'id' => 535,
-      'name' => 'Radiant Power',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    132 => 
-    array (
-      'id' => 1047,
-      'name' => 'Focused Siphoning',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    133 => 
-    array (
-      'id' => 24,
-      'name' => 'Weak Spot',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    134 => 
-    array (
-      'id' => 800,
-      'name' => 'Serrated Steel',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    135 => 
-    array (
-      'id' => 1059,
-      'name' => 'Yearning Empowerment',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    136 => 
-    array (
-      'id' => 294,
-      'name' => 'Rugged Growth',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    137 => 
-    array (
-      'id' => 44,
-      'name' => 'Geomancer\'s Defense',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    138 => 
-    array (
-      'id' => 556,
-      'name' => 'Might of the Protector',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    139 => 
-    array (
-      'id' => 1071,
-      'name' => 'Determined Resolution',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    140 => 
-    array (
-      'id' => 825,
-      'name' => 'Energy Amplifier',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    141 => 
-    array (
-      'id' => 1083,
-      'name' => 'Serene Rejuvenation',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    142 => 
-    array (
-      'id' => 316,
-      'name' => 'Lingering Magic',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    143 => 
-    array (
-      'id' => 63,
-      'name' => 'Aquatic Benevolence',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    144 => 
-    array (
-      'id' => 575,
-      'name' => 'Purity of Body',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    145 => 
-    array (
-      'id' => 1095,
-      'name' => 'Empty Vessel',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    146 => 
-    array (
-      'id' => 82,
-      'name' => 'Elemental Enchantment',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    147 => 
-    array (
-      'id' => 1107,
-      'name' => 'Envoy of Sustenance',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    148 => 
-    array (
-      'id' => 341,
-      'name' => 'Pet\'s Prowess',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    149 => 
-    array (
-      'id' => 597,
-      'name' => 'Power of the Virtuous',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    150 => 
-    array (
-      'id' => 853,
-      'name' => 'Alchemical Tinctures',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    151 => 
-    array (
-      'id' => 1119,
-      'name' => 'Brutal Momentum',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    152 => 
-    array (
-      'id' => 100,
-      'name' => 'Hardy Conduit',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    153 => 
-    array (
-      'id' => 876,
-      'name' => 'Excessive Energy',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    154 => 
-    array (
-      'id' => 621,
-      'name' => 'Pure of Sight',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    155 => 
-    array (
-      'id' => 367,
-      'name' => 'Natural Mender',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    156 => 
-    array (
-      'id' => 112,
-      'name' => 'Elemental Polyphony',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    157 => 
-    array (
-      'id' => 633,
-      'name' => 'Imbued Haste',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    158 => 
-    array (
-      'id' => 379,
-      'name' => 'Twice as Vicious',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    159 => 
-    array (
-      'id' => 126,
-      'name' => 'Stick and Move',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    160 => 
-    array (
-      'id' => 897,
-      'name' => 'Impact Savant',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    161 => 
-    array (
-      'id' => 647,
-      'name' => 'Exposed Weakness',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    162 => 
-    array (
-      'id' => 395,
-      'name' => 'Siphoned Power',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    163 => 
-    array (
-      'id' => 910,
-      'name' => 'Laser\'s Edge',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    164 => 
-    array (
-      'id' => 148,
-      'name' => 'Bloodlust',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    165 => 
-    array (
-      'id' => 924,
-      'name' => 'Fragility',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    166 => 
-    array (
-      'id' => 669,
-      'name' => 'Ferocious Strikes',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    167 => 
-    array (
-      'id' => 414,
-      'name' => 'Target the Weak',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    168 => 
-    array (
-      'id' => 170,
-      'name' => 'Spiked Armor',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    169 => 
-    array (
-      'id' => 944,
-      'name' => 'Master Fencer',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    170 => 
-    array (
-      'id' => 433,
-      'name' => 'Beyond the Veil',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    171 => 
-    array (
-      'id' => 689,
-      'name' => 'Resilience of Shadows',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    172 => 
-    array (
-      'id' => 188,
-      'name' => 'Inspiring Presence',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    173 => 
-    array (
-      'id' => 963,
-      'name' => 'Chaotic Persistence',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    174 => 
-    array (
-      'id' => 454,
-      'name' => 'Last Rites',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    175 => 
-    array (
-      'id' => 710,
-      'name' => 'Endless Stamina',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    176 => 
-    array (
-      'id' => 208,
-      'name' => 'Versatile Power',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    177 => 
-    array (
-      'id' => 984,
-      'name' => 'Healing Prism',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    178 => 
-    array (
-      'id' => 474,
-      'name' => 'Strength of Undeath',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    179 => 
-    array (
-      'id' => 730,
-      'name' => 'Lead Attacks',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    180 => 
-    array (
-      'id' => 227,
-      'name' => 'Fatal Frenzy',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    181 => 
-    array (
-      'id' => 747,
-      'name' => 'Endurance Thief',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    182 => 
-    array (
-      'id' => 1003,
-      'name' => 'Master of Misdirection',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    183 => 
-    array (
-      'id' => 492,
-      'name' => 'Cold Shoulder',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    184 => 
-    array (
-      'id' => 239,
-      'name' => 'Attacker\'s Insight',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    185 => 
-    array (
-      'id' => 504,
-      'name' => 'Blood as Sand',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    186 => 
-    array (
-      'id' => 760,
-      'name' => 'Perfectionist',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    187 => 
-    array (
-      'id' => 253,
-      'name' => 'Precise Strike',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    188 => 
-    array (
-      'id' => 1023,
-      'name' => 'Time Marches On',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => true,
-      'major' => false,
-      'tier' => 3,
-      'number' => 0,
-    ),
-    189 => 
-    array (
-      'id' => 1025,
-      'name' => 'Delayed Reactions',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    190 => 
-    array (
-      'id' => 7,
-      'name' => 'Burning Precision',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    191 => 
-    array (
-      'id' => 1036,
-      'name' => 'Self-Deception',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    192 => 
-    array (
-      'id' => 528,
-      'name' => 'Wrathful Spirit',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    193 => 
-    array (
-      'id' => 785,
-      'name' => 'Grenadier',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    194 => 
-    array (
-      'id' => 279,
-      'name' => 'Sharpened Edges',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    195 => 
-    array (
-      'id' => 28,
-      'name' => 'Zephyr\'s Boon',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    196 => 
-    array (
-      'id' => 1053,
-      'name' => 'Ferocious Strikes',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    197 => 
-    array (
-      'id' => 542,
-      'name' => 'Inner Fire',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    198 => 
-    array (
-      'id' => 801,
-      'name' => 'Chemical Rounds',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    199 => 
-    array (
-      'id' => 1060,
-      'name' => 'Replenishing Despair',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    200 => 
-    array (
-      'id' => 299,
-      'name' => 'Soften the Fall',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    201 => 
-    array (
-      'id' => 560,
-      'name' => 'Strength of the Fallen',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    202 => 
-    array (
-      'id' => 1072,
-      'name' => 'Planar Protection',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    203 => 
-    array (
-      'id' => 55,
-      'name' => 'Earth\'s Embrace',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    204 => 
-    array (
-      'id' => 1084,
-      'name' => 'Nourishing Roots',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    205 => 
-    array (
-      'id' => 317,
-      'name' => 'Bountiful Hunter',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    206 => 
-    array (
-      'id' => 577,
-      'name' => 'Invigorated Bulwark',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    207 => 
-    array (
-      'id' => 838,
-      'name' => 'Over Shield',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    208 => 
-    array (
-      'id' => 1096,
-      'name' => 'Cruel Repercussion',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    209 => 
-    array (
-      'id' => 77,
-      'name' => 'Soothing Ice',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    210 => 
-    array (
-      'id' => 1108,
-      'name' => 'Swift Gale',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    211 => 
-    array (
-      'id' => 86,
-      'name' => 'Arcane Precision',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    212 => 
-    array (
-      'id' => 345,
-      'name' => 'Go for the Eyes',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    213 => 
-    array (
-      'id' => 861,
-      'name' => 'Invigorating Speed',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    214 => 
-    array (
-      'id' => 1120,
-      'name' => 'Ashen Demeanor',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    215 => 
-    array (
-      'id' => 101,
-      'name' => 'Gale Song',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    216 => 
-    array (
-      'id' => 613,
-      'name' => 'Unscathed Contender',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    217 => 
-    array (
-      'id' => 622,
-      'name' => 'Piercing Light',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    218 => 
-    array (
-      'id' => 368,
-      'name' => 'Druidic Clarity',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    219 => 
-    array (
-      'id' => 113,
-      'name' => 'Superior Elements',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    220 => 
-    array (
-      'id' => 634,
-      'name' => 'Unrelenting Criticism',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    221 => 
-    array (
-      'id' => 380,
-      'name' => 'Fresh Reinforcement',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    222 => 
-    array (
-      'id' => 894,
-      'name' => 'Static Discharge',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    223 => 
-    array (
-      'id' => 127,
-      'name' => 'Brave Stride',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    224 => 
-    array (
-      'id' => 898,
-      'name' => 'Shocking Speed',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    225 => 
-    array (
-      'id' => 649,
-      'name' => 'Dagger Training',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    226 => 
-    array (
-      'id' => 911,
-      'name' => 'Light Density Amplifier',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    227 => 
-    array (
-      'id' => 400,
-      'name' => 'Spiteful Talisman',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    228 => 
-    array (
-      'id' => 149,
-      'name' => 'Wounding Precision',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    229 => 
-    array (
-      'id' => 417,
-      'name' => 'Terrifying Descent',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    230 => 
-    array (
-      'id' => 930,
-      'name' => 'Confounding Suggestions',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    231 => 
-    array (
-      'id' => 676,
-      'name' => 'Assassin\'s Fury',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    232 => 
-    array (
-      'id' => 175,
-      'name' => 'Shield Master',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    233 => 
-    array (
-      'id' => 691,
-      'name' => 'Last Refuge',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    234 => 
-    array (
-      'id' => 955,
-      'name' => 'Phantasmal Fury',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    235 => 
-    array (
-      'id' => 444,
-      'name' => 'Flesh of the Master',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    236 => 
-    array (
-      'id' => 193,
-      'name' => 'Leg Specialist',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    237 => 
-    array (
-      'id' => 972,
-      'name' => 'Descent into Madness',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    238 => 
-    array (
-      'id' => 720,
-      'name' => 'Instant Reflexes',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    239 => 
-    array (
-      'id' => 209,
-      'name' => 'Crack Shot',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    240 => 
-    array (
-      'id' => 469,
-      'name' => 'Ritual of Life',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    241 => 
-    array (
-      'id' => 990,
-      'name' => 'Medic\'s Feedback',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    242 => 
-    array (
-      'id' => 736,
-      'name' => 'Uncatchable',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    243 => 
-    array (
-      'id' => 228,
-      'name' => 'Smash Brawler',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    244 => 
-    array (
-      'id' => 484,
-      'name' => 'Unyielding Blast',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    245 => 
-    array (
-      'id' => 493,
-      'name' => 'Augury of Death',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    246 => 
-    array (
-      'id' => 749,
-      'name' => 'Havoc Mastery',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    247 => 
-    array (
-      'id' => 240,
-      'name' => 'Pure Strike',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    248 => 
-    array (
-      'id' => 1012,
-      'name' => 'Compounding Power',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    249 => 
-    array (
-      'id' => 505,
-      'name' => 'Abrasive Grit',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    250 => 
-    array (
-      'id' => 761,
-      'name' => 'Revealed Malice',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    251 => 
-    array (
-      'id' => 254,
-      'name' => 'Stoneform',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 1,
-    ),
-    252 => 
-    array (
-      'id' => 258,
-      'name' => 'Hunter\'s Gaze',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    253 => 
-    array (
-      'id' => 1026,
-      'name' => 'Time Catches Up',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    254 => 
-    array (
-      'id' => 519,
-      'name' => 'Fiery Wrath',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    255 => 
-    array (
-      'id' => 8,
-      'name' => 'Conjurer',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    256 => 
-    array (
-      'id' => 1037,
-      'name' => 'Renewing Oasis',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    257 => 
-    array (
-      'id' => 786,
-      'name' => 'Blasting Zone',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    258 => 
-    array (
-      'id' => 281,
-      'name' => 'Primal Reflexes',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    259 => 
-    array (
-      'id' => 1049,
-      'name' => 'Vicious Lacerations',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    260 => 
-    array (
-      'id' => 539,
-      'name' => 'Right-Hand Strength',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    261 => 
-    array (
-      'id' => 802,
-      'name' => 'Heavy Armor Exploit',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    262 => 
-    array (
-      'id' => 37,
-      'name' => 'One with Air',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    263 => 
-    array (
-      'id' => 1061,
-      'name' => 'Demonic Defiance',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    264 => 
-    array (
-      'id' => 47,
-      'name' => 'Serrated Stones',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    265 => 
-    array (
-      'id' => 303,
-      'name' => 'Oakheart Salve',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    266 => 
-    array (
-      'id' => 561,
-      'name' => 'Smiter\'s Boon',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    267 => 
-    array (
-      'id' => 1073,
-      'name' => 'Close Quarters',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    268 => 
-    array (
-      'id' => 826,
-      'name' => 'Automated Medical Response',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    269 => 
-    array (
-      'id' => 1085,
-      'name' => 'Blinding Truths',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    270 => 
-    array (
-      'id' => 318,
-      'name' => 'Instinctive Reaction',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    271 => 
-    array (
-      'id' => 580,
-      'name' => 'Protective Reviver',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    272 => 
-    array (
-      'id' => 69,
-      'name' => 'Piercing Shards',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    273 => 
-    array (
-      'id' => 1097,
-      'name' => 'Cleansing Channel',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    274 => 
-    array (
-      'id' => 1109,
-      'name' => 'Radiant Revival',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    275 => 
-    array (
-      'id' => 346,
-      'name' => 'Potent Ally',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    276 => 
-    array (
-      'id' => 94,
-      'name' => 'Renewing Stamina',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    277 => 
-    array (
-      'id' => 862,
-      'name' => 'Protection Injection',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    278 => 
-    array (
-      'id' => 608,
-      'name' => 'Retaliatory Subconscious',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    279 => 
-    array (
-      'id' => 1121,
-      'name' => 'Blood Fury',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    280 => 
-    array (
-      'id' => 102,
-      'name' => 'Latent Stamina',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    281 => 
-    array (
-      'id' => 877,
-      'name' => 'Reactive Lenses',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    282 => 
-    array (
-      'id' => 369,
-      'name' => 'Cultivated Synergy',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    283 => 
-    array (
-      'id' => 114,
-      'name' => 'Elemental Pursuit',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    284 => 
-    array (
-      'id' => 627,
-      'name' => 'Dulled Senses',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    285 => 
-    array (
-      'id' => 635,
-      'name' => 'Liberator\'s Vow',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    286 => 
-    array (
-      'id' => 381,
-      'name' => 'Live Fast',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    287 => 
-    array (
-      'id' => 139,
-      'name' => 'Restorative Strength',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    288 => 
-    array (
-      'id' => 907,
-      'name' => 'Perfectly Weighted',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    289 => 
-    array (
-      'id' => 912,
-      'name' => 'Prismatic Converter',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    290 => 
-    array (
-      'id' => 657,
-      'name' => 'Mug',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    291 => 
-    array (
-      'id' => 405,
-      'name' => 'Spiteful Renewal',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    292 => 
-    array (
-      'id' => 150,
-      'name' => 'Signet Mastery',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    293 => 
-    array (
-      'id' => 418,
-      'name' => 'Plague Sending',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    294 => 
-    array (
-      'id' => 678,
-      'name' => 'Signets of Power',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    295 => 
-    array (
-      'id' => 934,
-      'name' => 'Empowered Illusions',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    296 => 
-    array (
-      'id' => 174,
-      'name' => 'Dogged March',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    297 => 
-    array (
-      'id' => 692,
-      'name' => 'Concealed Defeat',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    298 => 
-    array (
-      'id' => 951,
-      'name' => 'Desperate Decoy',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    299 => 
-    array (
-      'id' => 446,
-      'name' => 'Shrouded Removal',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    300 => 
-    array (
-      'id' => 966,
-      'name' => 'Illusionary Defense',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    301 => 
-    array (
-      'id' => 203,
-      'name' => 'Quick Breathing',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    302 => 
-    array (
-      'id' => 460,
-      'name' => 'Quickening Thirst',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    303 => 
-    array (
-      'id' => 725,
-      'name' => 'Vigorous Recovery',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    304 => 
-    array (
-      'id' => 220,
-      'name' => 'Warrior\'s Sprint',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    305 => 
-    array (
-      'id' => 737,
-      'name' => 'Burst of Agility',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    306 => 
-    array (
-      'id' => 994,
-      'name' => 'Restorative Mantras',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    307 => 
-    array (
-      'id' => 229,
-      'name' => 'Last Blaze',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    308 => 
-    array (
-      'id' => 485,
-      'name' => 'Soul Marks',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    309 => 
-    array (
-      'id' => 1005,
-      'name' => 'Persistence of Memory',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    310 => 
-    array (
-      'id' => 494,
-      'name' => 'Chilling Nova',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    311 => 
-    array (
-      'id' => 750,
-      'name' => 'Weakening Strikes',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    312 => 
-    array (
-      'id' => 241,
-      'name' => 'Guard Counter',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    313 => 
-    array (
-      'id' => 506,
-      'name' => 'Fell Beacon',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    314 => 
-    array (
-      'id' => 762,
-      'name' => 'Iron Sight',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 2,
-    ),
-    315 => 
-    array (
-      'id' => 1024,
-      'name' => 'All\'s Well That Ends Well',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    316 => 
-    array (
-      'id' => 11,
-      'name' => 'Burning Fire',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    317 => 
-    array (
-      'id' => 1038,
-      'name' => 'Riddle of Sand',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    318 => 
-    array (
-      'id' => 529,
-      'name' => 'Zealous Scepter',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    319 => 
-    array (
-      'id' => 787,
-      'name' => 'Glass Cannon',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    320 => 
-    array (
-      'id' => 1050,
-      'name' => 'Jade Echo',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    321 => 
-    array (
-      'id' => 287,
-      'name' => 'Trapper\'s Expertise',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    322 => 
-    array (
-      'id' => 544,
-      'name' => 'Healer\'s Retribution',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    323 => 
-    array (
-      'id' => 803,
-      'name' => 'High Caliber',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    324 => 
-    array (
-      'id' => 38,
-      'name' => 'Ferocious Winds',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    325 => 
-    array (
-      'id' => 1062,
-      'name' => 'Venom Enhancement',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    326 => 
-    array (
-      'id' => 300,
-      'name' => 'Taste for Danger',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    327 => 
-    array (
-      'id' => 562,
-      'name' => 'Focus Mastery',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    328 => 
-    array (
-      'id' => 1074,
-      'name' => 'Improved Aggression',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    329 => 
-    array (
-      'id' => 56,
-      'name' => 'Elemental Shielding',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    330 => 
-    array (
-      'id' => 829,
-      'name' => 'Autodefense Bomb Dispenser',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    331 => 
-    array (
-      'id' => 1086,
-      'name' => 'Tranquil Balance',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    332 => 
-    array (
-      'id' => 319,
-      'name' => 'Allies\' Aid',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    333 => 
-    array (
-      'id' => 581,
-      'name' => 'Protector\'s Impact',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    334 => 
-    array (
-      'id' => 70,
-      'name' => 'Stop, Drop, and Roll',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    335 => 
-    array (
-      'id' => 1098,
-      'name' => 'Fierce Infusion',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    336 => 
-    array (
-      'id' => 1110,
-      'name' => 'Hardening Persistence',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    337 => 
-    array (
-      'id' => 87,
-      'name' => 'Arcane Abatement',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    338 => 
-    array (
-      'id' => 599,
-      'name' => 'Master of Consecrations',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    339 => 
-    array (
-      'id' => 855,
-      'name' => 'Health Insurance',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    340 => 
-    array (
-      'id' => 1122,
-      'name' => 'Wrought-Iron Will',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    341 => 
-    array (
-      'id' => 103,
-      'name' => 'Unstable Conduit',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    342 => 
-    array (
-      'id' => 363,
-      'name' => 'Resounding Timbre',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    343 => 
-    array (
-      'id' => 624,
-      'name' => 'Soaring Devastation',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    344 => 
-    array (
-      'id' => 370,
-      'name' => 'Primal Echoes',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    345 => 
-    array (
-      'id' => 115,
-      'name' => 'Master\'s Fortitude',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    346 => 
-    array (
-      'id' => 891,
-      'name' => 'Power Wrench',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    347 => 
-    array (
-      'id' => 636,
-      'name' => 'Archivist of Whispers',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    348 => 
-    array (
-      'id' => 382,
-      'name' => 'Unstoppable Union',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    349 => 
-    array (
-      'id' => 900,
-      'name' => 'Recovery Matrix',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    350 => 
-    array (
-      'id' => 137,
-      'name' => 'Peak Performance',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    351 => 
-    array (
-      'id' => 913,
-      'name' => 'Solar Focusing Lens',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    352 => 
-    array (
-      'id' => 658,
-      'name' => 'Trapper\'s Respite',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    353 => 
-    array (
-      'id' => 406,
-      'name' => 'Bitter Chill',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    354 => 
-    array (
-      'id' => 155,
-      'name' => 'Opportunist',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    355 => 
-    array (
-      'id' => 671,
-      'name' => 'Twin Fangs',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    356 => 
-    array (
-      'id' => 421,
-      'name' => 'Chilling Darkness',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    357 => 
-    array (
-      'id' => 939,
-      'name' => 'Rending Shatter',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    358 => 
-    array (
-      'id' => 178,
-      'name' => 'Cull the Weak',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    359 => 
-    array (
-      'id' => 435,
-      'name' => 'Putrid Defense',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    360 => 
-    array (
-      'id' => 956,
-      'name' => 'Duelist\'s Discipline',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    361 => 
-    array (
-      'id' => 703,
-      'name' => 'Shadow\'s Embrace',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    362 => 
-    array (
-      'id' => 196,
-      'name' => 'Empowered',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    363 => 
-    array (
-      'id' => 455,
-      'name' => 'Blood Bond',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    364 => 
-    array (
-      'id' => 973,
-      'name' => 'Master of Manipulation',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    365 => 
-    array (
-      'id' => 723,
-      'name' => 'Pain Response',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    366 => 
-    array (
-      'id' => 478,
-      'name' => 'Speed of Shadows',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    367 => 
-    array (
-      'id' => 223,
-      'name' => 'Vengeful Return',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    368 => 
-    array (
-      'id' => 996,
-      'name' => 'Persisting Images',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    369 => 
-    array (
-      'id' => 741,
-      'name' => 'Thrill of the Crime',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    370 => 
-    array (
-      'id' => 230,
-      'name' => 'Savage Instinct',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    371 => 
-    array (
-      'id' => 1004,
-      'name' => 'The Pledge',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    372 => 
-    array (
-      'id' => 495,
-      'name' => 'Relentless Pursuit',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    373 => 
-    array (
-      'id' => 751,
-      'name' => 'Brawler\'s Tenacity',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    374 => 
-    array (
-      'id' => 242,
-      'name' => 'No Escape',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    375 => 
-    array (
-      'id' => 507,
-      'name' => 'Nourishing Rot',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    376 => 
-    array (
-      'id' => 763,
-      'name' => 'One in the Chamber',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    377 => 
-    array (
-      'id' => 255,
-      'name' => 'Clarion Bond',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 1,
-      'number' => 3,
-    ),
-    378 => 
-    array (
-      'id' => 1027,
-      'name' => 'Danger Time',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    379 => 
-    array (
-      'id' => 9,
-      'name' => 'Pyromancer\'s Training',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    380 => 
-    array (
-      'id' => 270,
-      'name' => 'Brutish Seals',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    381 => 
-    array (
-      'id' => 527,
-      'name' => 'Binding Jeopardy',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    382 => 
-    array (
-      'id' => 1039,
-      'name' => 'Shards of Glass',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    383 => 
-    array (
-      'id' => 276,
-      'name' => 'Spotter',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    384 => 
-    array (
-      'id' => 788,
-      'name' => 'Aim-Assisted Rocket',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    385 => 
-    array (
-      'id' => 1051,
-      'name' => 'Malicious Reprisal',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    386 => 
-    array (
-      'id' => 545,
-      'name' => 'Wrath of Justice',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    387 => 
-    array (
-      'id' => 34,
-      'name' => 'Inscription',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    388 => 
-    array (
-      'id' => 804,
-      'name' => 'Pinpoint Distribution',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    389 => 
-    array (
-      'id' => 1063,
-      'name' => 'Bolstered Anguish',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    390 => 
-    array (
-      'id' => 302,
-      'name' => 'Ambidexterity',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    391 => 
-    array (
-      'id' => 1075,
-      'name' => 'Eye for an Eye',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    392 => 
-    array (
-      'id' => 53,
-      'name' => 'Strength of Stone',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    393 => 
-    array (
-      'id' => 568,
-      'name' => 'Stalwart Defender',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    394 => 
-    array (
-      'id' => 830,
-      'name' => 'Experimental Turrets',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    395 => 
-    array (
-      'id' => 1087,
-      'name' => 'Tranquil Benediction',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    396 => 
-    array (
-      'id' => 321,
-      'name' => 'Evasive Purity',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    397 => 
-    array (
-      'id' => 67,
-      'name' => 'Soothing Disruption',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    398 => 
-    array (
-      'id' => 585,
-      'name' => 'Honorable Staff',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    399 => 
-    array (
-      'id' => 1099,
-      'name' => 'Equilibrium',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    400 => 
-    array (
-      'id' => 85,
-      'name' => 'Arcane Resurrection',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    401 => 
-    array (
-      'id' => 1111,
-      'name' => 'Bolster Fortifications',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    402 => 
-    array (
-      'id' => 344,
-      'name' => 'Wilting Strike',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    403 => 
-    array (
-      'id' => 856,
-      'name' => 'Inversion Enzyme',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    404 => 
-    array (
-      'id' => 611,
-      'name' => 'Virtuous Solace',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    405 => 
-    array (
-      'id' => 1123,
-      'name' => 'Sudden Reversal',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    406 => 
-    array (
-      'id' => 104,
-      'name' => 'Tempestuous Aria',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    407 => 
-    array (
-      'id' => 625,
-      'name' => 'Hunter\'s Determination',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    408 => 
-    array (
-      'id' => 371,
-      'name' => 'Celestial Shadow',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    409 => 
-    array (
-      'id' => 116,
-      'name' => 'Weaver\'s Prowess',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    410 => 
-    array (
-      'id' => 886,
-      'name' => 'Streamlined Kits',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    411 => 
-    array (
-      'id' => 637,
-      'name' => 'Weighty Terms',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    412 => 
-    array (
-      'id' => 383,
-      'name' => 'Second Skin',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    413 => 
-    array (
-      'id' => 129,
-      'name' => 'Body Blow',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    414 => 
-    array (
-      'id' => 901,
-      'name' => 'Rapid Regeneration',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    415 => 
-    array (
-      'id' => 399,
-      'name' => 'Chill of Death',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    416 => 
-    array (
-      'id' => 914,
-      'name' => 'Crystal Configuration: Storm',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    417 => 
-    array (
-      'id' => 659,
-      'name' => 'Deadly Trapper',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    418 => 
-    array (
-      'id' => 154,
-      'name' => 'Unsuspecting Foe',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    419 => 
-    array (
-      'id' => 670,
-      'name' => 'Sundering Strikes',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    420 => 
-    array (
-      'id' => 422,
-      'name' => 'Master of Corruption',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    421 => 
-    array (
-      'id' => 936,
-      'name' => 'Shattered Concentration',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    422 => 
-    array (
-      'id' => 945,
-      'name' => 'Blinding Dissipation',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    423 => 
-    array (
-      'id' => 179,
-      'name' => 'Defy Pain',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    424 => 
-    array (
-      'id' => 445,
-      'name' => 'Necromantic Corruption',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    425 => 
-    array (
-      'id' => 701,
-      'name' => 'Shadow Protector',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    426 => 
-    array (
-      'id' => 456,
-      'name' => 'Life from Death',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    427 => 
-    array (
-      'id' => 712,
-      'name' => 'Guarded Initiation',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    428 => 
-    array (
-      'id' => 201,
-      'name' => 'Shrug It Off',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    429 => 
-    array (
-      'id' => 975,
-      'name' => 'Mirror of Anguish',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    430 => 
-    array (
-      'id' => 210,
-      'name' => 'Inspiring Battle Standard',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    431 => 
-    array (
-      'id' => 991,
-      'name' => 'Warden\'s Feedback',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    432 => 
-    array (
-      'id' => 740,
-      'name' => 'Bountiful Theft',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    433 => 
-    array (
-      'id' => 231,
-      'name' => 'Blood Reaction',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    434 => 
-    array (
-      'id' => 489,
-      'name' => 'Spectral Mastery',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    435 => 
-    array (
-      'id' => 1006,
-      'name' => 'Shattered Strength',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    436 => 
-    array (
-      'id' => 496,
-      'name' => 'Soul Eater',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    437 => 
-    array (
-      'id' => 752,
-      'name' => 'Staff Master',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    438 => 
-    array (
-      'id' => 243,
-      'name' => 'Loss Aversion',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    439 => 
-    array (
-      'id' => 508,
-      'name' => 'Desert Empowerment',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    440 => 
-    array (
-      'id' => 764,
-      'name' => 'Silent Scope',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 4,
-    ),
-    441 => 
-    array (
-      'id' => 260,
-      'name' => 'Steady Focus',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    442 => 
-    array (
-      'id' => 1028,
-      'name' => 'Illusionary Reversion',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    443 => 
-    array (
-      'id' => 526,
-      'name' => 'Zealous Blade',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    444 => 
-    array (
-      'id' => 1040,
-      'name' => 'Mirage Mantle',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    445 => 
-    array (
-      'id' => 18,
-      'name' => 'One with Fire',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    446 => 
-    array (
-      'id' => 277,
-      'name' => 'Strider\'s Defense',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    447 => 
-    array (
-      'id' => 789,
-      'name' => 'Big Boomer',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    448 => 
-    array (
-      'id' => 26,
-      'name' => 'Aeromancer\'s Training',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    449 => 
-    array (
-      'id' => 1052,
-      'name' => 'Nefarious Momentum',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    450 => 
-    array (
-      'id' => 551,
-      'name' => 'Radiant Fire',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    451 => 
-    array (
-      'id' => 296,
-      'name' => 'Refined Toxins',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    452 => 
-    array (
-      'id' => 1064,
-      'name' => 'Abyssal Chill',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    453 => 
-    array (
-      'id' => 811,
-      'name' => 'Skilled Marksman',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    454 => 
-    array (
-      'id' => 558,
-      'name' => 'Strength in Numbers',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    455 => 
-    array (
-      'id' => 1076,
-      'name' => 'Retaliatory Evasion',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    456 => 
-    array (
-      'id' => 57,
-      'name' => 'Rock Solid',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    457 => 
-    array (
-      'id' => 827,
-      'name' => 'Soothing Detonation',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    458 => 
-    array (
-      'id' => 1088,
-      'name' => 'Eluding Nullification',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    459 => 
-    array (
-      'id' => 66,
-      'name' => 'Cleansing Wave',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    460 => 
-    array (
-      'id' => 322,
-      'name' => 'Spirited Arrival',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    461 => 
-    array (
-      'id' => 579,
-      'name' => 'Pure of Heart',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    462 => 
-    array (
-      'id' => 1100,
-      'name' => 'Rapid Flow',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    463 => 
-    array (
-      'id' => 83,
-      'name' => 'Elemental Contingency',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    464 => 
-    array (
-      'id' => 1112,
-      'name' => 'Shared Empowerment',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    465 => 
-    array (
-      'id' => 347,
-      'name' => 'Two-Handed Training',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    466 => 
-    array (
-      'id' => 868,
-      'name' => 'Self-Regulating Defenses',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    467 => 
-    array (
-      'id' => 1124,
-      'name' => 'Heartpiercer',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    468 => 
-    array (
-      'id' => 615,
-      'name' => 'Absolute Resolution',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    469 => 
-    array (
-      'id' => 105,
-      'name' => 'Invigorating Torrents',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    470 => 
-    array (
-      'id' => 878,
-      'name' => 'Lock On',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    471 => 
-    array (
-      'id' => 623,
-      'name' => 'Zealot\'s Aggression',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    472 => 
-    array (
-      'id' => 372,
-      'name' => 'Verdant Etching',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    473 => 
-    array (
-      'id' => 117,
-      'name' => 'Swift Revenge',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    474 => 
-    array (
-      'id' => 638,
-      'name' => 'Stalwart Speed',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    475 => 
-    array (
-      'id' => 128,
-      'name' => 'Forceful Greatsword',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    476 => 
-    array (
-      'id' => 384,
-      'name' => 'Essence of Speed',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    477 => 
-    array (
-      'id' => 902,
-      'name' => 'Expert Examination',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    478 => 
-    array (
-      'id' => 396,
-      'name' => 'Rending Shroud',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    479 => 
-    array (
-      'id' => 652,
-      'name' => 'Panic Strike',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    480 => 
-    array (
-      'id' => 915,
-      'name' => 'Crystal Configuration: Eclipse',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    481 => 
-    array (
-      'id' => 925,
-      'name' => 'Blurred Inscriptions',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    482 => 
-    array (
-      'id' => 159,
-      'name' => 'Rending Strikes',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    483 => 
-    array (
-      'id' => 415,
-      'name' => 'Path of Corruption',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    484 => 
-    array (
-      'id' => 682,
-      'name' => 'Practiced Tolerance',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    485 => 
-    array (
-      'id' => 946,
-      'name' => 'Evasive Mirror',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    486 => 
-    array (
-      'id' => 180,
-      'name' => 'Armored Attack',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    487 => 
-    array (
-      'id' => 696,
-      'name' => 'Hidden Thief',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    488 => 
-    array (
-      'id' => 441,
-      'name' => 'Reaper\'s Protection',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    489 => 
-    array (
-      'id' => 964,
-      'name' => 'Chaotic Transference',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    490 => 
-    array (
-      'id' => 197,
-      'name' => 'Burning Arrows',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    491 => 
-    array (
-      'id' => 711,
-      'name' => 'Swindler\'s Equilibrium',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    492 => 
-    array (
-      'id' => 457,
-      'name' => 'Banshee\'s Wail',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    493 => 
-    array (
-      'id' => 218,
-      'name' => 'Destruction of the Empowered',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    494 => 
-    array (
-      'id' => 995,
-      'name' => 'Restorative Illusions',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    495 => 
-    array (
-      'id' => 487,
-      'name' => 'Vital Persistence',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    496 => 
-    array (
-      'id' => 232,
-      'name' => 'Heat the Soul',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    497 => 
-    array (
-      'id' => 745,
-      'name' => 'Trickster',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    498 => 
-    array (
-      'id' => 497,
-      'name' => 'Chilling Victory',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    499 => 
-    array (
-      'id' => 753,
-      'name' => 'Escapist\'s Absolution',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    500 => 
-    array (
-      'id' => 244,
-      'name' => 'Slow Counter',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    501 => 
-    array (
-      'id' => 1018,
-      'name' => 'Phantasmal Haste',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    502 => 
-    array (
-      'id' => 509,
-      'name' => 'Sadistic Searing',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    503 => 
-    array (
-      'id' => 765,
-      'name' => 'Unforgiving',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 5,
-    ),
-    504 => 
-    array (
-      'id' => 256,
-      'name' => 'Moment of Clarity',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    505 => 
-    array (
-      'id' => 1029,
-      'name' => 'Improved Alacrity',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    506 => 
-    array (
-      'id' => 777,
-      'name' => 'Short Fuse',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    507 => 
-    array (
-      'id' => 525,
-      'name' => 'Kindled Zeal',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    508 => 
-    array (
-      'id' => 17,
-      'name' => 'Power Overwhelming',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    509 => 
-    array (
-      'id' => 1041,
-      'name' => 'Mirrored Axes',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    510 => 
-    array (
-      'id' => 278,
-      'name' => 'Hidden Barbs',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    511 => 
-    array (
-      'id' => 1048,
-      'name' => 'Assassin\'s Presence',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    512 => 
-    array (
-      'id' => 32,
-      'name' => 'Tempest Defense',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    513 => 
-    array (
-      'id' => 546,
-      'name' => 'Retribution',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    514 => 
-    array (
-      'id' => 805,
-      'name' => 'No Scope',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    515 => 
-    array (
-      'id' => 1065,
-      'name' => 'Spontaneous Destruction',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    516 => 
-    array (
-      'id' => 557,
-      'name' => 'Communal Defenses',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    517 => 
-    array (
-      'id' => 48,
-      'name' => 'Geomancer\'s Training',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    518 => 
-    array (
-      'id' => 308,
-      'name' => 'Shared Anguish',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    519 => 
-    array (
-      'id' => 1077,
-      'name' => 'Dwarven Battle Training',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    520 => 
-    array (
-      'id' => 1089,
-      'name' => 'Invoking Harmony',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    521 => 
-    array (
-      'id' => 323,
-      'name' => 'Windborne Notes',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    522 => 
-    array (
-      'id' => 76,
-      'name' => 'Aquamancer\'s Training',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    523 => 
-    array (
-      'id' => 844,
-      'name' => 'Mecha Legs',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    524 => 
-    array (
-      'id' => 1101,
-      'name' => 'Incensed Response',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    525 => 
-    array (
-      'id' => 590,
-      'name' => 'Empowering Might',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    526 => 
-    array (
-      'id' => 1113,
-      'name' => 'Harmonize Continuity',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    527 => 
-    array (
-      'id' => 93,
-      'name' => 'Final Shielding',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    528 => 
-    array (
-      'id' => 353,
-      'name' => 'Natural Healing',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    529 => 
-    array (
-      'id' => 869,
-      'name' => 'Backpack Regenerator',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    530 => 
-    array (
-      'id' => 1125,
-      'name' => 'All for One',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    531 => 
-    array (
-      'id' => 616,
-      'name' => 'Glacial Heart',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    532 => 
-    array (
-      'id' => 106,
-      'name' => 'Harmonious Conduit',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    533 => 
-    array (
-      'id' => 879,
-      'name' => 'Takedown Round',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    534 => 
-    array (
-      'id' => 626,
-      'name' => 'Bulwark',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    535 => 
-    array (
-      'id' => 373,
-      'name' => 'Natural Stride',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    536 => 
-    array (
-      'id' => 118,
-      'name' => 'Bolstered Elements',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    537 => 
-    array (
-      'id' => 639,
-      'name' => 'Legendary Lore',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    538 => 
-    array (
-      'id' => 385,
-      'name' => 'Predator\'s Cunning',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    539 => 
-    array (
-      'id' => 132,
-      'name' => 'Great Fortitude',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    540 => 
-    array (
-      'id' => 903,
-      'name' => 'Mass Momentum',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    541 => 
-    array (
-      'id' => 648,
-      'name' => 'Revealed Training',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    542 => 
-    array (
-      'id' => 397,
-      'name' => 'Unholy Fervor',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    543 => 
-    array (
-      'id' => 916,
-      'name' => 'Crystal Configuration: Zephyr',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    544 => 
-    array (
-      'id' => 926,
-      'name' => 'Furious Interruption',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    545 => 
-    array (
-      'id' => 416,
-      'name' => 'Terror',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    546 => 
-    array (
-      'id' => 165,
-      'name' => 'Blademaster',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    547 => 
-    array (
-      'id' => 679,
-      'name' => 'Ankle Shots',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    548 => 
-    array (
-      'id' => 434,
-      'name' => 'Deadly Strength',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    549 => 
-    array (
-      'id' => 184,
-      'name' => 'Sundering Mace',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    550 => 
-    array (
-      'id' => 958,
-      'name' => 'Fencer\'s Finesse',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    551 => 
-    array (
-      'id' => 705,
-      'name' => 'Leeching Venoms',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    552 => 
-    array (
-      'id' => 195,
-      'name' => 'Empower Allies',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    553 => 
-    array (
-      'id' => 717,
-      'name' => 'Hard to Catch',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    554 => 
-    array (
-      'id' => 464,
-      'name' => 'Vampiric Presence',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    555 => 
-    array (
-      'id' => 978,
-      'name' => 'Chaotic Dampening',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    556 => 
-    array (
-      'id' => 212,
-      'name' => 'Brawler\'s Recovery',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    557 => 
-    array (
-      'id' => 985,
-      'name' => 'Protected Phantasms',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    558 => 
-    array (
-      'id' => 732,
-      'name' => 'Pressure Striking',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    559 => 
-    array (
-      'id' => 483,
-      'name' => 'Fear of Death',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    560 => 
-    array (
-      'id' => 233,
-      'name' => 'Dead or Alive',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    561 => 
-    array (
-      'id' => 1008,
-      'name' => 'Maim the Disillusioned',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    562 => 
-    array (
-      'id' => 498,
-      'name' => 'Decimate Defenses',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    563 => 
-    array (
-      'id' => 754,
-      'name' => 'Impacting Disruption',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    564 => 
-    array (
-      'id' => 245,
-      'name' => 'Sun and Moon Style',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    565 => 
-    array (
-      'id' => 510,
-      'name' => 'Unending Corruption',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    566 => 
-    array (
-      'id' => 766,
-      'name' => 'Peripheral Vision',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 2,
-      'number' => 6,
-    ),
-    567 => 
-    array (
-      'id' => 1031,
-      'name' => 'Lost Time',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    568 => 
-    array (
-      'id' => 520,
-      'name' => 'Eternal Armory',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    569 => 
-    array (
-      'id' => 10,
-      'name' => 'Persisting Flames',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    570 => 
-    array (
-      'id' => 269,
-      'name' => 'Predator\'s Onslaught',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    571 => 
-    array (
-      'id' => 1042,
-      'name' => 'Infinite Horizon',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    572 => 
-    array (
-      'id' => 790,
-      'name' => 'Orbital Command',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    573 => 
-    array (
-      'id' => 536,
-      'name' => 'Amplified Wrath',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    574 => 
-    array (
-      'id' => 283,
-      'name' => 'Quick Draw',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    575 => 
-    array (
-      'id' => 1054,
-      'name' => 'Swift Termination',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    576 => 
-    array (
-      'id' => 36,
-      'name' => 'Bolt to the Heart',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    577 => 
-    array (
-      'id' => 809,
-      'name' => 'Juggernaut',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    578 => 
-    array (
-      'id' => 1066,
-      'name' => 'Diabolic Inferno',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    579 => 
-    array (
-      'id' => 50,
-      'name' => 'Diamond Skin',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    580 => 
-    array (
-      'id' => 307,
-      'name' => 'Empathic Bond',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    581 => 
-    array (
-      'id' => 563,
-      'name' => 'Altruistic Healing',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    582 => 
-    array (
-      'id' => 1078,
-      'name' => 'Vicious Reprisal',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    583 => 
-    array (
-      'id' => 831,
-      'name' => 'Advanced Turrets',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    584 => 
-    array (
-      'id' => 1090,
-      'name' => 'Selfless Amplification',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    585 => 
-    array (
-      'id' => 73,
-      'name' => 'Cleansing Water',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    586 => 
-    array (
-      'id' => 329,
-      'name' => 'Nature\'s Vengeance',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    587 => 
-    array (
-      'id' => 588,
-      'name' => 'Pure of Voice',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    588 => 
-    array (
-      'id' => 1102,
-      'name' => 'Roiling Mists',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    589 => 
-    array (
-      'id' => 343,
-      'name' => 'Beastly Warden',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    590 => 
-    array (
-      'id' => 90,
-      'name' => 'Evasive Arcana',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    591 => 
-    array (
-      'id' => 1114,
-      'name' => 'Elder\'s Force',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    592 => 
-    array (
-      'id' => 603,
-      'name' => 'Permeating Wrath',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    593 => 
-    array (
-      'id' => 867,
-      'name' => 'HGH',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    594 => 
-    array (
-      'id' => 1126,
-      'name' => 'Vindication',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    595 => 
-    array (
-      'id' => 107,
-      'name' => 'Imbued Melodies',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    596 => 
-    array (
-      'id' => 880,
-      'name' => 'Kinetic Battery',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    597 => 
-    array (
-      'id' => 628,
-      'name' => 'Hunter\'s Fortification',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    598 => 
-    array (
-      'id' => 374,
-      'name' => 'Grace of the Land',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    599 => 
-    array (
-      'id' => 119,
-      'name' => 'Elements of Rage',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    600 => 
-    array (
-      'id' => 640,
-      'name' => 'Stoic Demeanor',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    601 => 
-    array (
-      'id' => 386,
-      'name' => 'Eternal Bond',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    602 => 
-    array (
-      'id' => 904,
-      'name' => 'Adaptive Armor',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    603 => 
-    array (
-      'id' => 138,
-      'name' => 'Berserker\'s Power',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    604 => 
-    array (
-      'id' => 654,
-      'name' => 'Potent Poison',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    605 => 
-    array (
-      'id' => 404,
-      'name' => 'Signets of Suffering',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    606 => 
-    array (
-      'id' => 917,
-      'name' => 'Thermal Release Valve',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    607 => 
-    array (
-      'id' => 152,
-      'name' => 'Burst Precision',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    608 => 
-    array (
-      'id' => 672,
-      'name' => 'No Quarter',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    609 => 
-    array (
-      'id' => 932,
-      'name' => 'Imagined Burden',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    610 => 
-    array (
-      'id' => 423,
-      'name' => 'Weakening Shroud',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    611 => 
-    array (
-      'id' => 177,
-      'name' => 'Last Stand',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    612 => 
-    array (
-      'id' => 950,
-      'name' => 'Superiority Complex',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    613 => 
-    array (
-      'id' => 697,
-      'name' => 'Cloaked in Shadow',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    614 => 
-    array (
-      'id' => 443,
-      'name' => 'Death Nova',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    615 => 
-    array (
-      'id' => 191,
-      'name' => 'Powerful Synergy',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    616 => 
-    array (
-      'id' => 971,
-      'name' => 'Chaotic Interruption',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    617 => 
-    array (
-      'id' => 211,
-      'name' => 'Axe Mastery',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    618 => 
-    array (
-      'id' => 467,
-      'name' => 'Vampiric Rituals',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    619 => 
-    array (
-      'id' => 724,
-      'name' => 'Assassin\'s Reward',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    620 => 
-    array (
-      'id' => 986,
-      'name' => 'Mental Defense',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    621 => 
-    array (
-      'id' => 731,
-      'name' => 'Quick Pockets',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    622 => 
-    array (
-      'id' => 479,
-      'name' => 'Foot in the Grave',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    623 => 
-    array (
-      'id' => 234,
-      'name' => 'Bloody Roar',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    624 => 
-    array (
-      'id' => 1010,
-      'name' => 'Phantasmal Force',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    625 => 
-    array (
-      'id' => 499,
-      'name' => 'Blighter\'s Boon',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    626 => 
-    array (
-      'id' => 755,
-      'name' => 'Lotus Training',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    627 => 
-    array (
-      'id' => 246,
-      'name' => 'Enchantment Collapse',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    628 => 
-    array (
-      'id' => 511,
-      'name' => 'Sand Savant',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    629 => 
-    array (
-      'id' => 767,
-      'name' => 'Maleficent Seven',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 7,
-    ),
-    630 => 
-    array (
-      'id' => 512,
-      'name' => 'Demonic Lore',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    631 => 
-    array (
-      'id' => 768,
-      'name' => 'Be Quick or Be Killed',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    632 => 
-    array (
-      'id' => 264,
-      'name' => 'Remorseless',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    633 => 
-    array (
-      'id' => 1032,
-      'name' => 'Seize the Moment',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    634 => 
-    array (
-      'id' => 521,
-      'name' => 'Shattered Aegis',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    635 => 
-    array (
-      'id' => 14,
-      'name' => 'Pyromancer\'s Puissance',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    636 => 
-    array (
-      'id' => 782,
-      'name' => 'Shrapnel',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    637 => 
-    array (
-      'id' => 1043,
-      'name' => 'Elusive Mind',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    638 => 
-    array (
-      'id' => 284,
-      'name' => 'Light on your Feet',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    639 => 
-    array (
-      'id' => 30,
-      'name' => 'Fresh Air',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    640 => 
-    array (
-      'id' => 1055,
-      'name' => 'Dismantle Fortifications',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    641 => 
-    array (
-      'id' => 548,
-      'name' => 'Perfect Inscriptions',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    642 => 
-    array (
-      'id' => 1067,
-      'name' => 'Maniacal Persistence',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    643 => 
-    array (
-      'id' => 813,
-      'name' => 'Modified Ammunition',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    644 => 
-    array (
-      'id' => 564,
-      'name' => 'Monk\'s Focus',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    645 => 
-    array (
-      'id' => 311,
-      'name' => 'Wilderness Knowledge',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    646 => 
-    array (
-      'id' => 1079,
-      'name' => 'Versed in Stone',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    647 => 
-    array (
-      'id' => 58,
-      'name' => 'Written in Stone',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    648 => 
-    array (
-      'id' => 64,
-      'name' => 'Powerful Aura',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    649 => 
-    array (
-      'id' => 832,
-      'name' => 'Bunker Down',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    650 => 
-    array (
-      'id' => 1091,
-      'name' => 'Natural Abundance',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    651 => 
-    array (
-      'id' => 330,
-      'name' => 'Protective Ward',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    652 => 
-    array (
-      'id' => 589,
-      'name' => 'Writ of Persistence',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    653 => 
-    array (
-      'id' => 1103,
-      'name' => 'Charged Mists',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    654 => 
-    array (
-      'id' => 89,
-      'name' => 'Elemental Surge',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    655 => 
-    array (
-      'id' => 857,
-      'name' => 'Stimulant Supplier',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    656 => 
-    array (
-      'id' => 1115,
-      'name' => 'Soothing Bastion',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    657 => 
-    array (
-      'id' => 604,
-      'name' => 'Battle Presence',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    658 => 
-    array (
-      'id' => 358,
-      'name' => 'Zephyr\'s Speed',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    659 => 
-    array (
-      'id' => 1127,
-      'name' => 'Lasting Legacy',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    660 => 
-    array (
-      'id' => 108,
-      'name' => 'Lucid Singularity',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    661 => 
-    array (
-      'id' => 884,
-      'name' => 'Adrenal Implant',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    662 => 
-    array (
-      'id' => 629,
-      'name' => 'Heavy Light',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    663 => 
-    array (
-      'id' => 375,
-      'name' => 'Lingering Light',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    664 => 
-    array (
-      'id' => 120,
-      'name' => 'Unravel Hexes',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    665 => 
-    array (
-      'id' => 641,
-      'name' => 'Quickfire',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    666 => 
-    array (
-      'id' => 131,
-      'name' => 'Might Makes Right',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    667 => 
-    array (
-      'id' => 387,
-      'name' => 'Leader of the Pack',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    668 => 
-    array (
-      'id' => 905,
-      'name' => 'Final Salvo',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    669 => 
-    array (
-      'id' => 403,
-      'name' => 'Close to Death',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    670 => 
-    array (
-      'id' => 662,
-      'name' => 'Improvisation',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    671 => 
-    array (
-      'id' => 918,
-      'name' => 'Enhanced Capacity Storage Unit',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    672 => 
-    array (
-      'id' => 161,
-      'name' => 'Furious',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    673 => 
-    array (
-      'id' => 933,
-      'name' => 'Mental Anguish',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    674 => 
-    array (
-      'id' => 424,
-      'name' => 'Parasitic Contagion',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    675 => 
-    array (
-      'id' => 172,
-      'name' => 'Cleansing Ire',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    676 => 
-    array (
-      'id' => 684,
-      'name' => 'Hidden Killer',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    677 => 
-    array (
-      'id' => 947,
-      'name' => 'Ineptitude',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    678 => 
-    array (
-      'id' => 436,
-      'name' => 'Corrupter\'s Fervor',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    679 => 
-    array (
-      'id' => 702,
-      'name' => 'Shadow\'s Rejuvenation',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    680 => 
-    array (
-      'id' => 200,
-      'name' => 'Vigorous Shouts',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    681 => 
-    array (
-      'id' => 969,
-      'name' => 'Prismatic Understanding',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    682 => 
-    array (
-      'id' => 458,
-      'name' => 'Unholy Martyr',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    683 => 
-    array (
-      'id' => 719,
-      'name' => 'Upper Hand',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    684 => 
-    array (
-      'id' => 213,
-      'name' => 'Heightened Focus',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    685 => 
-    array (
-      'id' => 987,
-      'name' => 'Illusionary Inspiration',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    686 => 
-    array (
-      'id' => 480,
-      'name' => 'Death Perception',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    687 => 
-    array (
-      'id' => 743,
-      'name' => 'Sleight of Hand',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    688 => 
-    array (
-      'id' => 235,
-      'name' => 'King of Fires',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    689 => 
-    array (
-      'id' => 1007,
-      'name' => 'Master of Fragmentation',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    690 => 
-    array (
-      'id' => 500,
-      'name' => 'Deathly Chill',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    691 => 
-    array (
-      'id' => 757,
-      'name' => 'Unhindered Combatant',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    692 => 
-    array (
-      'id' => 247,
-      'name' => 'Revenge Counter',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 8,
-    ),
-    693 => 
-    array (
-      'id' => 257,
-      'name' => 'Lead the Wind',
-      'specialization_id' => 15,
-      'specialization' => 'Marksmanship',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    694 => 
-    array (
-      'id' => 513,
-      'name' => 'Feed from Corruption',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    695 => 
-    array (
-      'id' => 769,
-      'name' => 'Fire for Effect',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    696 => 
-    array (
-      'id' => 1030,
-      'name' => 'Chronophantasma',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    697 => 
-    array (
-      'id' => 522,
-      'name' => 'Symbolic Avenger',
-      'specialization_id' => 29,
-      'specialization' => 'Zeal',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    698 => 
-    array (
-      'id' => 15,
-      'name' => 'Blinding Ashes',
-      'specialization_id' => 1,
-      'specialization' => 'Fire',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    699 => 
-    array (
-      'id' => 1044,
-      'name' => 'Dune Cloak',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    700 => 
-    array (
-      'id' => 791,
-      'name' => 'Minesweeper',
-      'specialization_id' => 43,
-      'specialization' => 'Explosives',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    701 => 
-    array (
-      'id' => 25,
-      'name' => 'Lightning Rod',
-      'specialization_id' => 2,
-      'specialization' => 'Air',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    702 => 
-    array (
-      'id' => 537,
-      'name' => 'Righteous Instincts',
-      'specialization_id' => 30,
-      'specialization' => 'Radiance',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    703 => 
-    array (
-      'id' => 285,
-      'name' => 'Vicious Quarry',
-      'specialization_id' => 16,
-      'specialization' => 'Skirmishing',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    704 => 
-    array (
-      'id' => 1056,
-      'name' => 'Assassin\'s Annihilation',
-      'specialization_id' => 61,
-      'specialization' => 'Devastation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    705 => 
-    array (
-      'id' => 295,
-      'name' => 'Poison Master',
-      'specialization_id' => 17,
-      'specialization' => 'Wilderness Survival',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    706 => 
-    array (
-      'id' => 1068,
-      'name' => 'Pulsating Pestilence',
-      'specialization_id' => 57,
-      'specialization' => 'Corruption',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    707 => 
-    array (
-      'id' => 45,
-      'name' => 'Stone Heart',
-      'specialization_id' => 3,
-      'specialization' => 'Earth',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    708 => 
-    array (
-      'id' => 814,
-      'name' => 'Incendiary Powder',
-      'specialization_id' => 44,
-      'specialization' => 'Firearms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    709 => 
-    array (
-      'id' => 1080,
-      'name' => 'Steadfast Rejuvenation',
-      'specialization_id' => 58,
-      'specialization' => 'Retribution',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    710 => 
-    array (
-      'id' => 570,
-      'name' => 'Retributive Armor',
-      'specialization_id' => 31,
-      'specialization' => 'Valor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    711 => 
-    array (
-      'id' => 828,
-      'name' => 'Medical Dispersion Field',
-      'specialization_id' => 45,
-      'specialization' => 'Inventions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    712 => 
-    array (
-      'id' => 65,
-      'name' => 'Soothing Power',
-      'specialization_id' => 4,
-      'specialization' => 'Water',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    713 => 
-    array (
-      'id' => 578,
-      'name' => 'Force of Will',
-      'specialization_id' => 32,
-      'specialization' => 'Honor',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    714 => 
-    array (
-      'id' => 1092,
-      'name' => 'Momentary Pacification',
-      'specialization_id' => 59,
-      'specialization' => 'Salvation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    715 => 
-    array (
-      'id' => 331,
-      'name' => 'Invigorating Bond',
-      'specialization_id' => 18,
-      'specialization' => 'Nature Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    716 => 
-    array (
-      'id' => 1104,
-      'name' => 'Shrouding Mists',
-      'specialization_id' => 60,
-      'specialization' => 'Invocation',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    717 => 
-    array (
-      'id' => 342,
-      'name' => 'Honed Axes',
-      'specialization_id' => 19,
-      'specialization' => 'Beastmastery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    718 => 
-    array (
-      'id' => 602,
-      'name' => 'Indomitable Courage',
-      'specialization_id' => 33,
-      'specialization' => 'Virtues',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    719 => 
-    array (
-      'id' => 858,
-      'name' => 'Iron Blooded',
-      'specialization_id' => 46,
-      'specialization' => 'Alchemy',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    720 => 
-    array (
-      'id' => 91,
-      'name' => 'Bountiful Power',
-      'specialization_id' => 5,
-      'specialization' => 'Arcane',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    721 => 
-    array (
-      'id' => 1116,
-      'name' => 'Enhanced Bulwark',
-      'specialization_id' => 62,
-      'specialization' => 'Herald',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    722 => 
-    array (
-      'id' => 1128,
-      'name' => 'Righteous Rebel',
-      'specialization_id' => 63,
-      'specialization' => 'Renegade',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    723 => 
-    array (
-      'id' => 109,
-      'name' => 'Elemental Bastion',
-      'specialization_id' => 6,
-      'specialization' => 'Tempest',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    724 => 
-    array (
-      'id' => 881,
-      'name' => 'Gadgeteer',
-      'specialization_id' => 47,
-      'specialization' => 'Tools',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    725 => 
-    array (
-      'id' => 630,
-      'name' => 'Big Game Hunter',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    726 => 
-    array (
-      'id' => 376,
-      'name' => 'Ancient Seeds',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    727 => 
-    array (
-      'id' => 121,
-      'name' => 'Invigorating Strikes',
-      'specialization_id' => 7,
-      'specialization' => 'Weaver',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    728 => 
-    array (
-      'id' => 642,
-      'name' => 'Loremaster',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    729 => 
-    array (
-      'id' => 388,
-      'name' => 'Oppressive Superiority',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    730 => 
-    array (
-      'id' => 134,
-      'name' => 'Merciless Hammer',
-      'specialization_id' => 8,
-      'specialization' => 'Strength',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    731 => 
-    array (
-      'id' => 906,
-      'name' => 'Applied Force',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    732 => 
-    array (
-      'id' => 402,
-      'name' => 'Spiteful Spirit',
-      'specialization_id' => 22,
-      'specialization' => 'Spite',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    733 => 
-    array (
-      'id' => 660,
-      'name' => 'Executioner',
-      'specialization_id' => 36,
-      'specialization' => 'Deadly Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    734 => 
-    array (
-      'id' => 151,
-      'name' => 'Dual Wielding',
-      'specialization_id' => 9,
-      'specialization' => 'Arms',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    735 => 
-    array (
-      'id' => 919,
-      'name' => 'Photonic Blasting Module',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    736 => 
-    array (
-      'id' => 927,
-      'name' => 'Power Block',
-      'specialization_id' => 50,
-      'specialization' => 'Domination',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    737 => 
-    array (
-      'id' => 673,
-      'name' => 'Invigorating Precision',
-      'specialization_id' => 37,
-      'specialization' => 'Critical Strikes',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    738 => 
-    array (
-      'id' => 426,
-      'name' => 'Lingering Curse',
-      'specialization_id' => 23,
-      'specialization' => 'Curses',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    739 => 
-    array (
-      'id' => 171,
-      'name' => 'Rousing Resilience',
-      'specialization_id' => 10,
-      'specialization' => 'Defense',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    740 => 
-    array (
-      'id' => 437,
-      'name' => 'Unholy Sanctuary',
-      'specialization_id' => 24,
-      'specialization' => 'Death Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    741 => 
-    array (
-      'id' => 952,
-      'name' => 'Deceptive Evasion',
-      'specialization_id' => 51,
-      'specialization' => 'Dueling',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    742 => 
-    array (
-      'id' => 190,
-      'name' => 'Phalanx Strength',
-      'specialization_id' => 11,
-      'specialization' => 'Tactics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    743 => 
-    array (
-      'id' => 704,
-      'name' => 'Rending Shade',
-      'specialization_id' => 38,
-      'specialization' => 'Shadow Arts',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    744 => 
-    array (
-      'id' => 965,
-      'name' => 'Bountiful Disillusionment',
-      'specialization_id' => 52,
-      'specialization' => 'Chaos',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    745 => 
-    array (
-      'id' => 713,
-      'name' => 'Don\'t Stop',
-      'specialization_id' => 39,
-      'specialization' => 'Acrobatics',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    746 => 
-    array (
-      'id' => 463,
-      'name' => 'Transfusion',
-      'specialization_id' => 25,
-      'specialization' => 'Blood Magic',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    747 => 
-    array (
-      'id' => 217,
-      'name' => 'Burst Mastery',
-      'specialization_id' => 12,
-      'specialization' => 'Discipline',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    748 => 
-    array (
-      'id' => 475,
-      'name' => 'Dhuumfire',
-      'specialization_id' => 26,
-      'specialization' => 'Soul Reaping',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    749 => 
-    array (
-      'id' => 733,
-      'name' => 'Bewildering Ambush',
-      'specialization_id' => 40,
-      'specialization' => 'Trickery',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    750 => 
-    array (
-      'id' => 993,
-      'name' => 'Temporal Enchanter',
-      'specialization_id' => 53,
-      'specialization' => 'Inspiration',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    751 => 
-    array (
-      'id' => 236,
-      'name' => 'Eternal Champion',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    752 => 
-    array (
-      'id' => 1009,
-      'name' => 'Malicious Sorcery',
-      'specialization_id' => 54,
-      'specialization' => 'Illusions',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    753 => 
-    array (
-      'id' => 756,
-      'name' => 'Bounding Dodger',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    754 => 
-    array (
-      'id' => 501,
-      'name' => 'Reaper\'s Onslaught',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
-    ),
-    755 => 
-    array (
-      'id' => 248,
-      'name' => 'Magebane Tether',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
-      'minor' => false,
-      'major' => true,
-      'tier' => 3,
-      'number' => 9,
+      'name' => 'Shield',
     ),
   ),
   'pets' => 
@@ -19011,7 +4117,7 @@
     51 => 
     array (
       'id' => 54,
-      'name' => 'Murrelow',
+      'name' => 'Murellow',
       'family' => 'Ursine',
       'terrestrial' => true,
       'aquatic' => true,
@@ -19476,11 +4582,12 @@
       'group' => 'Utility skills',
       'type' => 'Cantrip',
       'pvx' => 7,
+      'terrestrial_version' => true,
     ),
     31 => 
     array (
       'id' => 219,
-      'name' => 'Conjure Flame Axe',
+      'name' => 'Lightning Flash',
       'profession_id' => 1,
       'profession' => 'Elementalist',
       'race_id' => false,
@@ -19488,13 +4595,14 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Conjure',
+      'type' => 'Cantrip',
       'pvx' => 7,
+      'aquatic_version' => true,
     ),
     32 => 
     array (
-      'id' => 226,
-      'name' => 'Conjure Frost Bow',
+      'id' => 220,
+      'name' => 'Conjure Flame Axe',
       'profession_id' => 1,
       'profession' => 'Elementalist',
       'race_id' => false,
@@ -19507,8 +4615,8 @@
     ),
     33 => 
     array (
-      'id' => 232,
-      'name' => 'Conjure Lightning Hammer',
+      'id' => 227,
+      'name' => 'Conjure Frost Bow',
       'profession_id' => 1,
       'profession' => 'Elementalist',
       'race_id' => false,
@@ -19521,8 +4629,8 @@
     ),
     34 => 
     array (
-      'id' => 240,
-      'name' => 'Conjure Earth Shield',
+      'id' => 233,
+      'name' => 'Conjure Lightning Hammer',
       'profession_id' => 1,
       'profession' => 'Elementalist',
       'race_id' => false,
@@ -19535,7 +4643,21 @@
     ),
     35 => 
     array (
-      'id' => 248,
+      'id' => 241,
+      'name' => 'Conjure Earth Shield',
+      'profession_id' => 1,
+      'profession' => 'Elementalist',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Conjure',
+      'pvx' => 7,
+    ),
+    36 => 
+    array (
+      'id' => 249,
       'name' => 'Glyph of Elementals',
       'profession_id' => 1,
       'profession' => 'Elementalist',
@@ -19547,9 +4669,9 @@
       'type' => 'Glyph',
       'pvx' => 7,
     ),
-    36 => 
+    37 => 
     array (
-      'id' => 257,
+      'id' => 258,
       'name' => '"Rebound!"',
       'profession_id' => 1,
       'profession' => 'Elementalist',
@@ -19561,9 +4683,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    37 => 
+    38 => 
     array (
-      'id' => 258,
+      'id' => 259,
       'name' => 'Weave Self',
       'profession_id' => 1,
       'profession' => 'Elementalist',
@@ -19575,9 +4697,9 @@
       'type' => 'Stance',
       'pvx' => 7,
     ),
-    38 => 
+    39 => 
     array (
-      'id' => 260,
+      'id' => 261,
       'name' => 'Conjure Fiery Greatsword',
       'profession_id' => 1,
       'profession' => 'Elementalist',
@@ -19589,9 +4711,9 @@
       'type' => 'Conjure',
       'pvx' => 7,
     ),
-    39 => 
+    40 => 
     array (
-      'id' => 266,
+      'id' => 267,
       'name' => 'Tornado',
       'profession_id' => 1,
       'profession' => 'Elementalist',
@@ -19604,9 +4726,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    40 => 
+    41 => 
     array (
-      'id' => 272,
+      'id' => 273,
       'name' => 'Whirlpool',
       'profession_id' => 1,
       'profession' => 'Elementalist',
@@ -19619,9 +4741,9 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    41 => 
+    42 => 
     array (
-      'id' => 373,
+      'id' => 374,
       'name' => '"To the Limit!"',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -19633,9 +4755,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    42 => 
+    43 => 
     array (
-      'id' => 374,
+      'id' => 375,
       'name' => 'Mending',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -19647,9 +4769,9 @@
       'type' => '',
       'pvx' => 7,
     ),
-    43 => 
+    44 => 
     array (
-      'id' => 375,
+      'id' => 376,
       'name' => 'Defiant Stance',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -19661,9 +4783,9 @@
       'type' => 'Stance',
       'pvx' => 7,
     ),
-    44 => 
+    45 => 
     array (
-      'id' => 376,
+      'id' => 377,
       'name' => 'Blood Reckoning',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -19675,9 +4797,9 @@
       'type' => 'Rage',
       'pvx' => 7,
     ),
-    45 => 
+    46 => 
     array (
-      'id' => 377,
+      'id' => 378,
       'name' => 'Natural Healing',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -19689,9 +4811,9 @@
       'type' => 'Meditation',
       'pvx' => 7,
     ),
-    46 => 
+    47 => 
     array (
-      'id' => 378,
+      'id' => 379,
       'name' => 'Healing Signet',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -19703,24 +4825,10 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    47 => 
-    array (
-      'id' => 379,
-      'name' => 'Kick',
-      'profession_id' => 2,
-      'profession' => 'Warrior',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Physical',
-      'pvx' => 7,
-    ),
     48 => 
     array (
       'id' => 380,
-      'name' => 'Throw Bolas',
+      'name' => 'Kick',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19734,7 +4842,7 @@
     49 => 
     array (
       'id' => 381,
-      'name' => 'Bull\'s Charge',
+      'name' => 'Throw Bolas',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19748,7 +4856,7 @@
     50 => 
     array (
       'id' => 382,
-      'name' => 'Stomp',
+      'name' => 'Bull\'s Charge',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19762,21 +4870,21 @@
     51 => 
     array (
       'id' => 383,
-      'name' => 'Outrage',
+      'name' => 'Stomp',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 13,
-      'specialization' => 'Berserker',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Rage',
+      'type' => 'Physical',
       'pvx' => 7,
     ),
     52 => 
     array (
       'id' => 384,
-      'name' => 'Shattering Blow',
+      'name' => 'Outrage',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19790,7 +4898,7 @@
     53 => 
     array (
       'id' => 385,
-      'name' => 'Sundering Leap',
+      'name' => 'Shattering Blow',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19804,7 +4912,7 @@
     54 => 
     array (
       'id' => 386,
-      'name' => 'Wild Blow',
+      'name' => 'Sundering Leap',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19818,21 +4926,21 @@
     55 => 
     array (
       'id' => 387,
-      'name' => 'Featherfoot Grace',
+      'name' => 'Wild Blow',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 14,
-      'specialization' => 'Spellbreaker',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
       'group' => 'Utility skills',
-      'type' => 'Meditation',
+      'type' => 'Rage',
       'pvx' => 7,
     ),
     56 => 
     array (
       'id' => 388,
-      'name' => 'Sight beyond Sight',
+      'name' => 'Featherfoot Grace',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19846,7 +4954,7 @@
     57 => 
     array (
       'id' => 389,
-      'name' => 'Imminent Threat',
+      'name' => 'Sight beyond Sight',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19860,7 +4968,7 @@
     58 => 
     array (
       'id' => 390,
-      'name' => 'Break Enchantments',
+      'name' => 'Imminent Threat',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19874,21 +4982,21 @@
     59 => 
     array (
       'id' => 391,
-      'name' => 'Signet of Might',
+      'name' => 'Break Enchantments',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
       'group' => 'Utility skills',
-      'type' => 'Signet',
+      'type' => 'Meditation',
       'pvx' => 7,
     ),
     60 => 
     array (
       'id' => 392,
-      'name' => 'Signet of Fury',
+      'name' => 'Signet of Might',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19902,7 +5010,7 @@
     61 => 
     array (
       'id' => 393,
-      'name' => 'Signet of Stamina',
+      'name' => 'Signet of Fury',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19916,7 +5024,7 @@
     62 => 
     array (
       'id' => 394,
-      'name' => 'Dolyak Signet',
+      'name' => 'Signet of Stamina',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19930,7 +5038,7 @@
     63 => 
     array (
       'id' => 395,
-      'name' => '"For Great Justice!"',
+      'name' => 'Dolyak Signet',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19938,13 +5046,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Shout',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     64 => 
     array (
       'id' => 396,
-      'name' => '"Shake It Off!"',
+      'name' => '"For Great Justice!"',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19957,8 +5065,8 @@
     ),
     65 => 
     array (
-      'id' => 398,
-      'name' => '"On My Mark!"',
+      'id' => 397,
+      'name' => '"Shake It Off!"',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19972,7 +5080,7 @@
     66 => 
     array (
       'id' => 399,
-      'name' => '"Fear Me!"',
+      'name' => '"On My Mark!"',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19986,7 +5094,7 @@
     67 => 
     array (
       'id' => 400,
-      'name' => 'Banner of Discipline',
+      'name' => '"Fear Me!"',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -19994,13 +5102,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Banner',
+      'type' => 'Shout',
       'pvx' => 7,
     ),
     68 => 
     array (
-      'id' => 406,
-      'name' => 'Banner of Strength',
+      'id' => 401,
+      'name' => 'Banner of Discipline',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -20013,8 +5121,8 @@
     ),
     69 => 
     array (
-      'id' => 412,
-      'name' => 'Banner of Defense',
+      'id' => 407,
+      'name' => 'Banner of Strength',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -20027,8 +5135,8 @@
     ),
     70 => 
     array (
-      'id' => 418,
-      'name' => 'Banner of Tactics',
+      'id' => 413,
+      'name' => 'Banner of Defense',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -20041,8 +5149,8 @@
     ),
     71 => 
     array (
-      'id' => 424,
-      'name' => 'Berserker Stance',
+      'id' => 419,
+      'name' => 'Banner of Tactics',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -20050,13 +5158,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Stance',
+      'type' => 'Banner',
       'pvx' => 7,
     ),
     72 => 
     array (
       'id' => 425,
-      'name' => 'Endure Pain',
+      'name' => 'Berserker Stance',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -20070,7 +5178,7 @@
     73 => 
     array (
       'id' => 426,
-      'name' => 'Balanced Stance',
+      'name' => 'Endure Pain',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -20084,7 +5192,7 @@
     74 => 
     array (
       'id' => 427,
-      'name' => 'Frenzy',
+      'name' => 'Balanced Stance',
       'profession_id' => 2,
       'profession' => 'Warrior',
       'race_id' => false,
@@ -20098,6 +5206,20 @@
     75 => 
     array (
       'id' => 428,
+      'name' => 'Frenzy',
+      'profession_id' => 2,
+      'profession' => 'Warrior',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Stance',
+      'pvx' => 7,
+    ),
+    76 => 
+    array (
+      'id' => 429,
       'name' => 'Battle Standard',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -20109,9 +5231,9 @@
       'type' => 'Banner',
       'pvx' => 7,
     ),
-    76 => 
+    77 => 
     array (
-      'id' => 434,
+      'id' => 435,
       'name' => 'Signet of Rage',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -20123,9 +5245,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    77 => 
+    78 => 
     array (
-      'id' => 435,
+      'id' => 436,
       'name' => 'Head Butt',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -20137,9 +5259,9 @@
       'type' => 'Rage',
       'pvx' => 7,
     ),
-    78 => 
+    79 => 
     array (
-      'id' => 436,
+      'id' => 437,
       'name' => 'Winds of Disenchantment',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -20151,9 +5273,9 @@
       'type' => 'Meditation',
       'pvx' => 7,
     ),
-    79 => 
+    80 => 
     array (
-      'id' => 437,
+      'id' => 438,
       'name' => 'Rampage',
       'profession_id' => 2,
       'profession' => 'Warrior',
@@ -20165,9 +5287,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    80 => 
+    81 => 
     array (
-      'id' => 518,
+      'id' => 519,
       'name' => 'Troll Unguent',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20179,9 +5301,9 @@
       'type' => 'Survival',
       'pvx' => 7,
     ),
-    81 => 
+    82 => 
     array (
-      'id' => 519,
+      'id' => 520,
       'name' => 'Water Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20193,9 +5315,9 @@
       'type' => 'Spirit',
       'pvx' => 7,
     ),
-    82 => 
+    83 => 
     array (
-      'id' => 521,
+      'id' => 522,
       'name' => 'Glyph of Rejuvenation',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20207,9 +5329,9 @@
       'type' => 'Glyph',
       'pvx' => 7,
     ),
-    83 => 
+    84 => 
     array (
-      'id' => 524,
+      'id' => 525,
       'name' => 'Bear Stance',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20221,9 +5343,9 @@
       'type' => 'Stance',
       'pvx' => 7,
     ),
-    84 => 
+    85 => 
     array (
-      'id' => 525,
+      'id' => 526,
       'name' => 'Healing Spring',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20235,9 +5357,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    85 => 
+    86 => 
     array (
-      'id' => 526,
+      'id' => 527,
       'name' => '"We heal as one!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20249,24 +5371,10 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    86 => 
-    array (
-      'id' => 527,
-      'name' => 'Storm Spirit',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Spirit',
-      'pvx' => 7,
-    ),
     87 => 
     array (
-      'id' => 529,
-      'name' => 'Frost Spirit',
+      'id' => 528,
+      'name' => 'Storm Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20279,8 +5387,8 @@
     ),
     88 => 
     array (
-      'id' => 531,
-      'name' => 'Stone Spirit',
+      'id' => 530,
+      'name' => 'Frost Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20293,8 +5401,8 @@
     ),
     89 => 
     array (
-      'id' => 533,
-      'name' => 'Sun Spirit',
+      'id' => 532,
+      'name' => 'Stone Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20307,22 +5415,22 @@
     ),
     90 => 
     array (
-      'id' => 535,
-      'name' => 'Glyph of Alignment',
+      'id' => 534,
+      'name' => 'Sun Spirit',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 20,
-      'specialization' => 'Druid',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Glyph',
+      'type' => 'Spirit',
       'pvx' => 7,
     ),
     91 => 
     array (
-      'id' => 538,
-      'name' => 'Glyph of Equality',
+      'id' => 536,
+      'name' => 'Glyph of Alignment',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20335,8 +5443,8 @@
     ),
     92 => 
     array (
-      'id' => 541,
-      'name' => 'Glyph of the Tides',
+      'id' => 539,
+      'name' => 'Glyph of Equality',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20349,8 +5457,8 @@
     ),
     93 => 
     array (
-      'id' => 544,
-      'name' => 'Glyph of Empowerment',
+      'id' => 542,
+      'name' => 'Glyph of the Tides',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20363,22 +5471,22 @@
     ),
     94 => 
     array (
-      'id' => 547,
-      'name' => 'Dolyak Stance',
+      'id' => 545,
+      'name' => 'Glyph of Empowerment',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 21,
-      'specialization' => 'Soulbeast',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
       'group' => 'Utility skills',
-      'type' => 'Stance',
+      'type' => 'Glyph',
       'pvx' => 7,
     ),
     95 => 
     array (
       'id' => 548,
-      'name' => 'Griffon Stance',
+      'name' => 'Dolyak Stance',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20392,7 +5500,7 @@
     96 => 
     array (
       'id' => 549,
-      'name' => 'Moa Stance',
+      'name' => 'Griffon Stance',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20406,7 +5514,7 @@
     97 => 
     array (
       'id' => 550,
-      'name' => 'Vulture Stance',
+      'name' => 'Moa Stance',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20420,21 +5528,21 @@
     98 => 
     array (
       'id' => 551,
-      'name' => 'Viper\'s Nest',
+      'name' => 'Vulture Stance',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
       'group' => 'Utility skills',
-      'type' => 'Trap',
+      'type' => 'Stance',
       'pvx' => 7,
     ),
     99 => 
     array (
       'id' => 552,
-      'name' => 'Spike Trap',
+      'name' => 'Viper\'s Nest',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20448,6 +5556,36 @@
     100 => 
     array (
       'id' => 553,
+      'name' => 'Spike Trap',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Trap',
+      'pvx' => 7,
+      'terrestrial_version' => true,
+    ),
+    101 => 
+    array (
+      'id' => 554,
+      'name' => 'Spike Trap',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Trap',
+      'pvx' => 7,
+      'aquatic_version' => true,
+    ),
+    102 => 
+    array (
+      'id' => 555,
       'name' => 'Flame Trap',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20459,9 +5597,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    101 => 
+    103 => 
     array (
-      'id' => 554,
+      'id' => 556,
       'name' => 'Frost Trap',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20473,38 +5611,10 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    102 => 
-    array (
-      'id' => 555,
-      'name' => 'Signet of Renewal',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Signet',
-      'pvx' => 7,
-    ),
-    103 => 
-    array (
-      'id' => 556,
-      'name' => 'Signet of the Hunt',
-      'profession_id' => 3,
-      'profession' => 'Ranger',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Signet',
-      'pvx' => 7,
-    ),
     104 => 
     array (
       'id' => 557,
-      'name' => 'Signet of Stone',
+      'name' => 'Signet of Renewal',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20518,7 +5628,7 @@
     105 => 
     array (
       'id' => 558,
-      'name' => 'Signet of the Wild',
+      'name' => 'Signet of the Hunt',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20532,7 +5642,7 @@
     106 => 
     array (
       'id' => 559,
-      'name' => 'Muddy Terrain',
+      'name' => 'Signet of Stone',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20540,13 +5650,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Survival',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     107 => 
     array (
       'id' => 560,
-      'name' => 'Quickening Zephyr',
+      'name' => 'Signet of the Wild',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20554,13 +5664,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Survival',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     108 => 
     array (
       'id' => 561,
-      'name' => 'Lightning Reflexes',
+      'name' => 'Muddy Terrain',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20574,7 +5684,7 @@
     109 => 
     array (
       'id' => 562,
-      'name' => 'Sharpening Stone',
+      'name' => 'Quickening Zephyr',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20588,7 +5698,7 @@
     110 => 
     array (
       'id' => 563,
-      'name' => '"Sick \'Em!"',
+      'name' => 'Lightning Reflexes',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20596,13 +5706,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Shout',
+      'type' => 'Survival',
       'pvx' => 7,
     ),
     111 => 
     array (
       'id' => 564,
-      'name' => '"Protect Me!"',
+      'name' => 'Sharpening Stone',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20610,13 +5720,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Shout',
+      'type' => 'Survival',
       'pvx' => 7,
     ),
     112 => 
     array (
       'id' => 565,
-      'name' => '"Guard!"',
+      'name' => '"Sick \'Em!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20630,7 +5740,7 @@
     113 => 
     array (
       'id' => 566,
-      'name' => '"Search and Rescue!"',
+      'name' => '"Protect Me!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
       'race_id' => false,
@@ -20644,6 +5754,34 @@
     114 => 
     array (
       'id' => 567,
+      'name' => '"Guard!"',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Shout',
+      'pvx' => 7,
+    ),
+    115 => 
+    array (
+      'id' => 568,
+      'name' => '"Search and Rescue!"',
+      'profession_id' => 3,
+      'profession' => 'Ranger',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Shout',
+      'pvx' => 7,
+    ),
+    116 => 
+    array (
+      'id' => 569,
       'name' => 'Spirit of Nature',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20655,9 +5793,9 @@
       'type' => 'Spirit',
       'pvx' => 7,
     ),
-    115 => 
+    117 => 
     array (
-      'id' => 569,
+      'id' => 571,
       'name' => 'Glyph of Unity',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20669,9 +5807,9 @@
       'type' => 'Glyph',
       'pvx' => 7,
     ),
-    116 => 
+    118 => 
     array (
-      'id' => 572,
+      'id' => 574,
       'name' => 'One Wolf Pack',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20683,9 +5821,9 @@
       'type' => 'Stance',
       'pvx' => 7,
     ),
-    117 => 
+    119 => 
     array (
-      'id' => 573,
+      'id' => 575,
       'name' => 'Entangle',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20697,9 +5835,9 @@
       'type' => 'Survival',
       'pvx' => 7,
     ),
-    118 => 
+    120 => 
     array (
-      'id' => 574,
+      'id' => 576,
       'name' => '"Strength of the pack!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -20711,9 +5849,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    119 => 
+    121 => 
     array (
-      'id' => 654,
+      'id' => 660,
       'name' => 'Summon Blood Fiend',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -20725,9 +5863,9 @@
       'type' => 'Minion',
       'pvx' => 7,
     ),
-    120 => 
+    122 => 
     array (
-      'id' => 656,
+      'id' => 662,
       'name' => '"Your Soul Is Mine!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -20739,9 +5877,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    121 => 
+    123 => 
     array (
-      'id' => 657,
+      'id' => 663,
       'name' => 'Sand Flare',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -20753,9 +5891,9 @@
       'type' => 'Punishment',
       'pvx' => 7,
     ),
-    122 => 
+    124 => 
     array (
-      'id' => 658,
+      'id' => 664,
       'name' => 'Signet of Vampirism',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -20767,9 +5905,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    123 => 
+    125 => 
     array (
-      'id' => 659,
+      'id' => 665,
       'name' => 'Consume Conditions',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -20781,9 +5919,9 @@
       'type' => 'Corruption',
       'pvx' => 7,
     ),
-    124 => 
+    126 => 
     array (
-      'id' => 660,
+      'id' => 666,
       'name' => 'Well of Blood',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -20795,38 +5933,10 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    125 => 
-    array (
-      'id' => 661,
-      'name' => 'Well of Suffering',
-      'profession_id' => 4,
-      'profession' => 'Necromancer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Well',
-      'pvx' => 7,
-    ),
-    126 => 
-    array (
-      'id' => 662,
-      'name' => 'Well of Corruption',
-      'profession_id' => 4,
-      'profession' => 'Necromancer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Well',
-      'pvx' => 7,
-    ),
     127 => 
     array (
-      'id' => 663,
-      'name' => 'Well of Power',
+      'id' => 667,
+      'name' => 'Well of Suffering',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -20839,8 +5949,8 @@
     ),
     128 => 
     array (
-      'id' => 664,
-      'name' => 'Well of Darkness',
+      'id' => 668,
+      'name' => 'Well of Corruption',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -20853,36 +5963,36 @@
     ),
     129 => 
     array (
-      'id' => 665,
-      'name' => '"Nothing Can Save You!"',
+      'id' => 669,
+      'name' => 'Well of Power',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Shout',
+      'type' => 'Well',
       'pvx' => 7,
     ),
     130 => 
     array (
-      'id' => 666,
-      'name' => '"Rise!"',
+      'id' => 670,
+      'name' => 'Well of Darkness',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 27,
-      'specialization' => 'Reaper',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Shout',
+      'type' => 'Well',
       'pvx' => 7,
     ),
     131 => 
     array (
-      'id' => 667,
-      'name' => '"Suffer!"',
+      'id' => 671,
+      'name' => '"Nothing Can Save You!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -20895,8 +6005,8 @@
     ),
     132 => 
     array (
-      'id' => 668,
-      'name' => '"You Are All Weaklings!"',
+      'id' => 672,
+      'name' => '"Rise!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -20909,36 +6019,36 @@
     ),
     133 => 
     array (
-      'id' => 669,
-      'name' => 'Trail of Anguish',
+      'id' => 673,
+      'name' => '"Suffer!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
       'group' => 'Utility skills',
-      'type' => 'Punishment',
+      'type' => 'Shout',
       'pvx' => 7,
     ),
     134 => 
     array (
-      'id' => 670,
-      'name' => 'Dessicate',
+      'id' => 674,
+      'name' => '"You Are All Weaklings!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 28,
-      'specialization' => 'Scourge',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
       'group' => 'Utility skills',
-      'type' => 'Punishment',
+      'type' => 'Shout',
       'pvx' => 7,
     ),
     135 => 
     array (
-      'id' => 671,
-      'name' => 'Sand Swell',
+      'id' => 675,
+      'name' => 'Trail of Anguish',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -20951,8 +6061,8 @@
     ),
     136 => 
     array (
-      'id' => 672,
-      'name' => 'Serpent Siphon',
+      'id' => 676,
+      'name' => 'Dessicate',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -20965,36 +6075,36 @@
     ),
     137 => 
     array (
-      'id' => 673,
-      'name' => 'Summon Bone Minions',
+      'id' => 677,
+      'name' => 'Sand Swell',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
       'group' => 'Utility skills',
-      'type' => 'Minion',
+      'type' => 'Punishment',
       'pvx' => 7,
     ),
     138 => 
     array (
-      'id' => 675,
-      'name' => 'Summon Bone Fiend',
+      'id' => 678,
+      'name' => 'Serpent Siphon',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
       'group' => 'Utility skills',
-      'type' => 'Minion',
+      'type' => 'Punishment',
       'pvx' => 7,
     ),
     139 => 
     array (
-      'id' => 677,
-      'name' => 'Summon Shadow Fiend',
+      'id' => 679,
+      'name' => 'Summon Bone Minions',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21007,8 +6117,8 @@
     ),
     140 => 
     array (
-      'id' => 679,
-      'name' => 'Summon Flesh Wurm',
+      'id' => 681,
+      'name' => 'Summon Bone Fiend',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21021,8 +6131,8 @@
     ),
     141 => 
     array (
-      'id' => 681,
-      'name' => 'Signet of Spite',
+      'id' => 683,
+      'name' => 'Summon Shadow Fiend',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21030,13 +6140,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Signet',
+      'type' => 'Minion',
       'pvx' => 7,
     ),
     142 => 
     array (
-      'id' => 682,
-      'name' => 'Signet of the Locust',
+      'id' => 685,
+      'name' => 'Summon Flesh Wurm',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21044,13 +6154,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Signet',
+      'type' => 'Minion',
       'pvx' => 7,
     ),
     143 => 
     array (
-      'id' => 683,
-      'name' => 'Plague Signet',
+      'id' => 687,
+      'name' => 'Signet of Spite',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21063,8 +6173,8 @@
     ),
     144 => 
     array (
-      'id' => 684,
-      'name' => 'Signet of Undeath',
+      'id' => 688,
+      'name' => 'Signet of the Locust',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21077,8 +6187,8 @@
     ),
     145 => 
     array (
-      'id' => 685,
-      'name' => 'Spectral Grasp',
+      'id' => 689,
+      'name' => 'Plague Signet',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21086,13 +6196,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Spectral',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     146 => 
     array (
-      'id' => 686,
-      'name' => 'Spectral Armor',
+      'id' => 690,
+      'name' => 'Signet of Undeath',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21100,13 +6210,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Spectral',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     147 => 
     array (
-      'id' => 687,
-      'name' => 'Spectral Wall',
+      'id' => 691,
+      'name' => 'Spectral Grasp',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21119,8 +6229,8 @@
     ),
     148 => 
     array (
-      'id' => 688,
-      'name' => 'Spectral Walk',
+      'id' => 692,
+      'name' => 'Spectral Armor',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21133,8 +6243,8 @@
     ),
     149 => 
     array (
-      'id' => 690,
-      'name' => 'Corrosive Poison Cloud',
+      'id' => 693,
+      'name' => 'Spectral Wall',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21142,13 +6252,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Corruption',
+      'type' => 'Spectral',
       'pvx' => 7,
     ),
     150 => 
     array (
-      'id' => 691,
-      'name' => 'Blood Is Power',
+      'id' => 694,
+      'name' => 'Spectral Walk',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21156,13 +6266,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Corruption',
+      'type' => 'Spectral',
       'pvx' => 7,
     ),
     151 => 
     array (
-      'id' => 692,
-      'name' => 'Epidemic',
+      'id' => 696,
+      'name' => 'Corrosive Poison Cloud',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21175,8 +6285,8 @@
     ),
     152 => 
     array (
-      'id' => 693,
-      'name' => 'Corrupt Boon',
+      'id' => 697,
+      'name' => 'Blood Is Power',
       'profession_id' => 4,
       'profession' => 'Necromancer',
       'race_id' => false,
@@ -21189,7 +6299,35 @@
     ),
     153 => 
     array (
-      'id' => 694,
+      'id' => 698,
+      'name' => 'Epidemic',
+      'profession_id' => 4,
+      'profession' => 'Necromancer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Corruption',
+      'pvx' => 7,
+    ),
+    154 => 
+    array (
+      'id' => 699,
+      'name' => 'Corrupt Boon',
+      'profession_id' => 4,
+      'profession' => 'Necromancer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Corruption',
+      'pvx' => 7,
+    ),
+    155 => 
+    array (
+      'id' => 700,
       'name' => 'Summon Flesh Golem',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -21201,9 +6339,9 @@
       'type' => 'Minion',
       'pvx' => 7,
     ),
-    154 => 
+    156 => 
     array (
-      'id' => 696,
+      'id' => 702,
       'name' => 'Plaguelands',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -21215,9 +6353,9 @@
       'type' => 'Corruption',
       'pvx' => 7,
     ),
-    155 => 
+    157 => 
     array (
-      'id' => 700,
+      'id' => 706,
       'name' => '"Chilled to the Bone!"',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -21229,9 +6367,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    156 => 
+    158 => 
     array (
-      'id' => 701,
+      'id' => 707,
       'name' => 'Ghastly Breach',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -21243,9 +6381,9 @@
       'type' => 'Punishment',
       'pvx' => 7,
     ),
-    157 => 
+    159 => 
     array (
-      'id' => 702,
+      'id' => 708,
       'name' => 'Lich Form',
       'profession_id' => 4,
       'profession' => 'Necromancer',
@@ -21257,9 +6395,9 @@
       'type' => 'Spectral',
       'pvx' => 7,
     ),
-    158 => 
+    160 => 
     array (
-      'id' => 803,
+      'id' => 811,
       'name' => 'Shelter',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21271,9 +6409,9 @@
       'type' => '',
       'pvx' => 7,
     ),
-    159 => 
+    161 => 
     array (
-      'id' => 804,
+      'id' => 812,
       'name' => 'Signet of Resolve',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21285,9 +6423,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    160 => 
+    162 => 
     array (
-      'id' => 805,
+      'id' => 813,
       'name' => 'Purification',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21299,9 +6437,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    161 => 
+    163 => 
     array (
-      'id' => 806,
+      'id' => 814,
       'name' => 'Mantra of Solace',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21313,9 +6451,9 @@
       'type' => 'Mantra',
       'pvx' => 7,
     ),
-    162 => 
+    164 => 
     array (
-      'id' => 809,
+      'id' => 817,
       'name' => 'Litany of Wrath',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21327,9 +6465,9 @@
       'type' => 'Meditation',
       'pvx' => 7,
     ),
-    163 => 
+    165 => 
     array (
-      'id' => 810,
+      'id' => 818,
       'name' => '"Receive the Light!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21341,38 +6479,10 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    164 => 
-    array (
-      'id' => 811,
-      'name' => 'Hammer of Wisdom',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Spirit Weapon',
-      'pvx' => 7,
-    ),
-    165 => 
-    array (
-      'id' => 813,
-      'name' => 'Sword of Justice',
-      'profession_id' => 5,
-      'profession' => 'Guardian',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Spirit Weapon',
-      'pvx' => 7,
-    ),
     166 => 
     array (
-      'id' => 815,
-      'name' => 'Bow of Truth',
+      'id' => 819,
+      'name' => 'Hammer of Wisdom',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21385,8 +6495,8 @@
     ),
     167 => 
     array (
-      'id' => 817,
-      'name' => 'Shield of the Avenger',
+      'id' => 821,
+      'name' => 'Sword of Justice',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21399,36 +6509,36 @@
     ),
     168 => 
     array (
-      'id' => 819,
-      'name' => 'Fragments of Faith',
+      'id' => 823,
+      'name' => 'Bow of Truth',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Trap',
+      'type' => 'Spirit Weapon',
       'pvx' => 7,
     ),
     169 => 
     array (
-      'id' => 821,
-      'name' => 'Light\'s Judgement',
+      'id' => 825,
+      'name' => 'Shield of the Avenger',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 34,
-      'specialization' => 'Dragonhunter',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Trap',
+      'type' => 'Spirit Weapon',
       'pvx' => 7,
     ),
     170 => 
     array (
-      'id' => 822,
-      'name' => 'Test of Faith',
+      'id' => 827,
+      'name' => 'Fragments of Faith',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21441,8 +6551,8 @@
     ),
     171 => 
     array (
-      'id' => 823,
-      'name' => 'Procession of Blades',
+      'id' => 829,
+      'name' => 'Light\'s Judgment',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21455,36 +6565,36 @@
     ),
     172 => 
     array (
-      'id' => 824,
-      'name' => 'Mantra of Potence',
+      'id' => 830,
+      'name' => 'Test of Faith',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
       'group' => 'Utility skills',
-      'type' => 'Mantra',
+      'type' => 'Trap',
       'pvx' => 7,
     ),
     173 => 
     array (
-      'id' => 827,
-      'name' => 'Mantra of Flame',
+      'id' => 831,
+      'name' => 'Procession of Blades',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 35,
-      'specialization' => 'Firebrand',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
       'group' => 'Utility skills',
-      'type' => 'Mantra',
+      'type' => 'Trap',
       'pvx' => 7,
     ),
     174 => 
     array (
-      'id' => 830,
-      'name' => 'Mantra of Truth',
+      'id' => 832,
+      'name' => 'Mantra of Potence',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21497,8 +6607,8 @@
     ),
     175 => 
     array (
-      'id' => 833,
-      'name' => 'Mantra of Lore',
+      'id' => 835,
+      'name' => 'Mantra of Flame',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21511,36 +6621,36 @@
     ),
     176 => 
     array (
-      'id' => 836,
-      'name' => 'Bane Signet',
+      'id' => 838,
+      'name' => 'Mantra of Truth',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
       'group' => 'Utility skills',
-      'type' => 'Signet',
+      'type' => 'Mantra',
       'pvx' => 7,
     ),
     177 => 
     array (
-      'id' => 837,
-      'name' => 'Signet of Judgment',
+      'id' => 841,
+      'name' => 'Mantra of Lore',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
       'group' => 'Utility skills',
-      'type' => 'Signet',
+      'type' => 'Mantra',
       'pvx' => 7,
     ),
     178 => 
     array (
-      'id' => 838,
-      'name' => 'Signet of Wrath',
+      'id' => 844,
+      'name' => 'Bane Signet',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21553,8 +6663,8 @@
     ),
     179 => 
     array (
-      'id' => 839,
-      'name' => 'Signet of Mercy',
+      'id' => 845,
+      'name' => 'Signet of Judgment',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21567,8 +6677,8 @@
     ),
     180 => 
     array (
-      'id' => 840,
-      'name' => '"Retreat!"',
+      'id' => 846,
+      'name' => 'Signet of Wrath',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21576,13 +6686,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Shout',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     181 => 
     array (
-      'id' => 841,
-      'name' => '"Stand Your Ground!"',
+      'id' => 847,
+      'name' => 'Signet of Mercy',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21590,13 +6700,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Shout',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     182 => 
     array (
-      'id' => 842,
-      'name' => '"Save Yourselves!"',
+      'id' => 848,
+      'name' => '"Retreat!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21609,8 +6719,8 @@
     ),
     183 => 
     array (
-      'id' => 843,
-      'name' => '"Hold the Line!"',
+      'id' => 849,
+      'name' => '"Stand Your Ground!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21623,8 +6733,8 @@
     ),
     184 => 
     array (
-      'id' => 844,
-      'name' => 'Wall of Reflection',
+      'id' => 850,
+      'name' => '"Save Yourselves!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21632,13 +6742,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Consecration',
+      'type' => 'Shout',
       'pvx' => 7,
     ),
     185 => 
     array (
-      'id' => 845,
-      'name' => 'Hallowed Ground',
+      'id' => 851,
+      'name' => '"Hold the Line!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21646,13 +6756,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Consecration',
+      'type' => 'Shout',
       'pvx' => 7,
     ),
     186 => 
     array (
-      'id' => 846,
-      'name' => 'Purging Flames',
+      'id' => 852,
+      'name' => 'Wall of Reflection',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21665,8 +6775,8 @@
     ),
     187 => 
     array (
-      'id' => 847,
-      'name' => 'Smite Condition',
+      'id' => 853,
+      'name' => 'Hallowed Ground',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21674,13 +6784,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Meditation',
+      'type' => 'Consecration',
       'pvx' => 7,
     ),
     188 => 
     array (
-      'id' => 848,
-      'name' => 'Contemplation of Purity',
+      'id' => 854,
+      'name' => 'Purging Flames',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21688,13 +6798,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Meditation',
+      'type' => 'Consecration',
       'pvx' => 7,
     ),
     189 => 
     array (
-      'id' => 849,
-      'name' => 'Judge\'s Intervention',
+      'id' => 855,
+      'name' => 'Smite Condition',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21707,8 +6817,8 @@
     ),
     190 => 
     array (
-      'id' => 850,
-      'name' => 'Merciful Intervention',
+      'id' => 856,
+      'name' => 'Contemplation of Purity',
       'profession_id' => 5,
       'profession' => 'Guardian',
       'race_id' => false,
@@ -21721,7 +6831,35 @@
     ),
     191 => 
     array (
-      'id' => 851,
+      'id' => 857,
+      'name' => 'Judge\'s Intervention',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Meditation',
+      'pvx' => 7,
+    ),
+    192 => 
+    array (
+      'id' => 858,
+      'name' => 'Merciful Intervention',
+      'profession_id' => 5,
+      'profession' => 'Guardian',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Meditation',
+      'pvx' => 7,
+    ),
+    193 => 
+    array (
+      'id' => 859,
       'name' => 'Sanctuary',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21733,9 +6871,9 @@
       'type' => 'Consecration',
       'pvx' => 7,
     ),
-    192 => 
+    194 => 
     array (
-      'id' => 852,
+      'id' => 860,
       'name' => 'Renewed Focus',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21747,9 +6885,9 @@
       'type' => 'Meditation',
       'pvx' => 7,
     ),
-    193 => 
+    195 => 
     array (
-      'id' => 853,
+      'id' => 861,
       'name' => '"Feel My Wrath!"',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21761,9 +6899,9 @@
       'type' => 'Shout',
       'pvx' => 7,
     ),
-    194 => 
+    196 => 
     array (
-      'id' => 854,
+      'id' => 862,
       'name' => 'Dragon\'s Maw',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21775,9 +6913,9 @@
       'type' => 'Trap',
       'pvx' => 7,
     ),
-    195 => 
+    197 => 
     array (
-      'id' => 855,
+      'id' => 863,
       'name' => 'Mantra of Liberation',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21789,9 +6927,9 @@
       'type' => 'Mantra',
       'pvx' => 7,
     ),
-    196 => 
+    198 => 
     array (
-      'id' => 864,
+      'id' => 872,
       'name' => 'Signet of Courage',
       'profession_id' => 5,
       'profession' => 'Guardian',
@@ -21803,9 +6941,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    197 => 
+    199 => 
     array (
-      'id' => 968,
+      'id' => 983,
       'name' => 'Hide in Shadows',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -21817,9 +6955,9 @@
       'type' => 'Deception',
       'pvx' => 7,
     ),
-    198 => 
+    200 => 
     array (
-      'id' => 969,
+      'id' => 984,
       'name' => 'Skelk Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -21831,9 +6969,9 @@
       'type' => 'Venom',
       'pvx' => 7,
     ),
-    199 => 
+    201 => 
     array (
-      'id' => 970,
+      'id' => 985,
       'name' => 'Withdraw',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -21845,9 +6983,9 @@
       'type' => 'Trick',
       'pvx' => 7,
     ),
-    200 => 
+    202 => 
     array (
-      'id' => 971,
+      'id' => 986,
       'name' => 'Channeled Vigor',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -21859,9 +6997,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    201 => 
+    203 => 
     array (
-      'id' => 972,
+      'id' => 987,
       'name' => 'Malicious Restoration',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -21873,9 +7011,9 @@
       'type' => 'Cantrip',
       'pvx' => 7,
     ),
-    202 => 
+    204 => 
     array (
-      'id' => 973,
+      'id' => 988,
       'name' => 'Signet of Malice',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -21887,38 +7025,10 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    203 => 
-    array (
-      'id' => 974,
-      'name' => 'Spider Venom',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Venom',
-      'pvx' => 7,
-    ),
-    204 => 
-    array (
-      'id' => 975,
-      'name' => 'Skale Venom',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Venom',
-      'pvx' => 7,
-    ),
     205 => 
     array (
-      'id' => 976,
-      'name' => 'Ice Drake Venom',
+      'id' => 989,
+      'name' => 'Spider Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -21931,8 +7041,8 @@
     ),
     206 => 
     array (
-      'id' => 977,
-      'name' => 'Devourer Venom',
+      'id' => 990,
+      'name' => 'Skale Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -21945,36 +7055,36 @@
     ),
     207 => 
     array (
-      'id' => 978,
-      'name' => 'Bandit\'s Defense',
+      'id' => 991,
+      'name' => 'Ice Drake Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Physical',
+      'type' => 'Venom',
       'pvx' => 7,
     ),
     208 => 
     array (
-      'id' => 980,
-      'name' => 'Distracting Daggers',
+      'id' => 992,
+      'name' => 'Devourer Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 41,
-      'specialization' => 'Daredevil',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Physical',
+      'type' => 'Venom',
       'pvx' => 7,
     ),
     209 => 
     array (
-      'id' => 982,
-      'name' => 'Fist Flurry',
+      'id' => 993,
+      'name' => 'Bandit\'s Defense',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -21987,8 +7097,8 @@
     ),
     210 => 
     array (
-      'id' => 984,
-      'name' => 'Impairing Daggers',
+      'id' => 995,
+      'name' => 'Distracting Daggers',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22001,36 +7111,36 @@
     ),
     211 => 
     array (
-      'id' => 985,
-      'name' => 'Shadow Gust',
+      'id' => 997,
+      'name' => 'Fist Flurry',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
       'group' => 'Utility skills',
-      'type' => 'Cantrip',
+      'type' => 'Physical',
       'pvx' => 7,
     ),
     212 => 
     array (
-      'id' => 986,
-      'name' => 'Binding Shadow',
+      'id' => 999,
+      'name' => 'Impairing Daggers',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 42,
-      'specialization' => 'Deadeye',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
       'group' => 'Utility skills',
-      'type' => 'Cantrip',
+      'type' => 'Physical',
       'pvx' => 7,
     ),
     213 => 
     array (
-      'id' => 987,
-      'name' => 'Shadow Flare',
+      'id' => 1000,
+      'name' => 'Shadow Gust',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22043,8 +7153,8 @@
     ),
     214 => 
     array (
-      'id' => 989,
-      'name' => 'Mercy',
+      'id' => 1001,
+      'name' => 'Binding Shadow',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22057,36 +7167,36 @@
     ),
     215 => 
     array (
-      'id' => 990,
-      'name' => 'Tripwire',
+      'id' => 1002,
+      'name' => 'Shadow Flare',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
       'group' => 'Utility skills',
-      'type' => 'Trap',
+      'type' => 'Cantrip',
       'pvx' => 7,
     ),
     216 => 
     array (
-      'id' => 991,
-      'name' => 'Needle Trap',
+      'id' => 1004,
+      'name' => 'Mercy',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
       'group' => 'Utility skills',
-      'type' => 'Trap',
+      'type' => 'Cantrip',
       'pvx' => 7,
     ),
     217 => 
     array (
-      'id' => 992,
-      'name' => 'Ambush',
+      'id' => 1005,
+      'name' => 'Tripwire',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22099,8 +7209,8 @@
     ),
     218 => 
     array (
-      'id' => 993,
-      'name' => 'Shadow Trap',
+      'id' => 1006,
+      'name' => 'Needle Trap',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22113,8 +7223,8 @@
     ),
     219 => 
     array (
-      'id' => 995,
-      'name' => 'Signet of Agility',
+      'id' => 1007,
+      'name' => 'Ambush',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22122,13 +7232,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Signet',
+      'type' => 'Trap',
       'pvx' => 7,
     ),
     220 => 
     array (
-      'id' => 996,
-      'name' => 'Assassin\'s Signet',
+      'id' => 1008,
+      'name' => 'Shadow Trap',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22136,13 +7246,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Signet',
+      'type' => 'Trap',
       'pvx' => 7,
     ),
     221 => 
     array (
-      'id' => 997,
-      'name' => 'Infiltrator\'s Signet',
+      'id' => 1011,
+      'name' => 'Signet of Agility',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22155,8 +7265,8 @@
     ),
     222 => 
     array (
-      'id' => 998,
-      'name' => 'Signet of Shadows',
+      'id' => 1012,
+      'name' => 'Assassin\'s Signet',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22169,7 +7279,35 @@
     ),
     223 => 
     array (
-      'id' => 999,
+      'id' => 1013,
+      'name' => 'Infiltrator\'s Signet',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Signet',
+      'pvx' => 7,
+    ),
+    224 => 
+    array (
+      'id' => 1014,
+      'name' => 'Signet of Shadows',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Signet',
+      'pvx' => 7,
+    ),
+    225 => 
+    array (
+      'id' => 1015,
       'name' => 'Shadowstep',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -22181,38 +7319,10 @@
       'type' => 'Deception',
       'pvx' => 7,
     ),
-    224 => 
-    array (
-      'id' => 1001,
-      'name' => 'Scorpion Wire',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Trick',
-      'pvx' => 7,
-    ),
-    225 => 
-    array (
-      'id' => 1002,
-      'name' => 'Roll for Initiative',
-      'profession_id' => 6,
-      'profession' => 'Thief',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Trick',
-      'pvx' => 7,
-    ),
     226 => 
     array (
-      'id' => 1003,
-      'name' => 'Haste',
+      'id' => 1017,
+      'name' => 'Scorpion Wire',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22225,8 +7335,8 @@
     ),
     227 => 
     array (
-      'id' => 1004,
-      'name' => 'Caltrops',
+      'id' => 1018,
+      'name' => 'Roll for Initiative',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22239,8 +7349,8 @@
     ),
     228 => 
     array (
-      'id' => 1005,
-      'name' => 'Smoke Screen',
+      'id' => 1019,
+      'name' => 'Haste',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22248,13 +7358,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Deception',
+      'type' => 'Trick',
       'pvx' => 7,
     ),
     229 => 
     array (
-      'id' => 1006,
-      'name' => 'Shadow Refuge',
+      'id' => 1020,
+      'name' => 'Caltrops',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22262,13 +7372,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Deception',
+      'type' => 'Trick',
       'pvx' => 7,
     ),
     230 => 
     array (
-      'id' => 1007,
-      'name' => 'Blinding Powder',
+      'id' => 1021,
+      'name' => 'Smoke Screen',
       'profession_id' => 6,
       'profession' => 'Thief',
       'race_id' => false,
@@ -22281,7 +7391,35 @@
     ),
     231 => 
     array (
-      'id' => 1008,
+      'id' => 1022,
+      'name' => 'Shadow Refuge',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Deception',
+      'pvx' => 7,
+    ),
+    232 => 
+    array (
+      'id' => 1023,
+      'name' => 'Blinding Powder',
+      'profession_id' => 6,
+      'profession' => 'Thief',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Deception',
+      'pvx' => 7,
+    ),
+    233 => 
+    array (
+      'id' => 1024,
       'name' => 'Thieves Guild',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -22293,9 +7431,9 @@
       'type' => 'Deception',
       'pvx' => 7,
     ),
-    232 => 
+    234 => 
     array (
-      'id' => 1009,
+      'id' => 1025,
       'name' => 'Dagger Storm',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -22307,9 +7445,9 @@
       'type' => 'Trick',
       'pvx' => 7,
     ),
-    233 => 
+    235 => 
     array (
-      'id' => 1010,
+      'id' => 1026,
       'name' => 'Impact Strike',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -22321,9 +7459,9 @@
       'type' => 'Physical',
       'pvx' => 7,
     ),
-    234 => 
+    236 => 
     array (
-      'id' => 1013,
+      'id' => 1029,
       'name' => 'Shadow Meld',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -22335,9 +7473,9 @@
       'type' => 'Cantrip',
       'pvx' => 7,
     ),
-    235 => 
+    237 => 
     array (
-      'id' => 1014,
+      'id' => 1030,
       'name' => 'Basilisk Venom',
       'profession_id' => 6,
       'profession' => 'Thief',
@@ -22349,9 +7487,9 @@
       'type' => 'Venom',
       'pvx' => 7,
     ),
-    236 => 
+    238 => 
     array (
-      'id' => 1063,
+      'id' => 1080,
       'name' => 'Elixir H',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22363,9 +7501,9 @@
       'type' => 'Elixir',
       'pvx' => 7,
     ),
-    237 => 
+    239 => 
     array (
-      'id' => 1065,
+      'id' => 1082,
       'name' => 'A.E.D.',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22377,9 +7515,9 @@
       'type' => 'Gadget',
       'pvx' => 7,
     ),
-    238 => 
+    240 => 
     array (
-      'id' => 1067,
+      'id' => 1084,
       'name' => 'Med Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22391,9 +7529,9 @@
       'type' => 'Engineering Kit',
       'pvx' => 7,
     ),
-    239 => 
+    241 => 
     array (
-      'id' => 1074,
+      'id' => 1095,
       'name' => 'Medic Gyro',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22405,9 +7543,9 @@
       'type' => 'Gyro',
       'pvx' => 7,
     ),
-    240 => 
+    242 => 
     array (
-      'id' => 1077,
+      'id' => 1098,
       'name' => 'Coolant Blast',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22419,9 +7557,9 @@
       'type' => 'Exceed',
       'pvx' => 7,
     ),
-    241 => 
+    243 => 
     array (
-      'id' => 1079,
+      'id' => 1100,
       'name' => 'Healing Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22433,9 +7571,9 @@
       'type' => 'Turret',
       'pvx' => 7,
     ),
-    242 => 
+    244 => 
     array (
-      'id' => 1083,
+      'id' => 1104,
       'name' => 'Rifle Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22448,9 +7586,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    243 => 
+    245 => 
     array (
-      'id' => 1087,
+      'id' => 1108,
       'name' => 'Harpoon Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22463,38 +7601,10 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    244 => 
-    array (
-      'id' => 1091,
-      'name' => 'Flame Turret',
-      'profession_id' => 7,
-      'profession' => 'Engineer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Turret',
-      'pvx' => 7,
-    ),
-    245 => 
-    array (
-      'id' => 1095,
-      'name' => 'Net Turret',
-      'profession_id' => 7,
-      'profession' => 'Engineer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Turret',
-      'pvx' => 7,
-    ),
     246 => 
     array (
-      'id' => 1099,
-      'name' => 'Thumper Turret',
+      'id' => 1112,
+      'name' => 'Flame Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22507,8 +7617,8 @@
     ),
     247 => 
     array (
-      'id' => 1103,
-      'name' => 'Rocket Turret',
+      'id' => 1116,
+      'name' => 'Net Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22521,36 +7631,36 @@
     ),
     248 => 
     array (
-      'id' => 1107,
-      'name' => 'Blast Gyro Tag',
+      'id' => 1120,
+      'name' => 'Thumper Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Gyro',
+      'type' => 'Turret',
       'pvx' => 7,
     ),
     249 => 
     array (
-      'id' => 1110,
-      'name' => 'Bulwark Gyro',
+      'id' => 1124,
+      'name' => 'Rocket Turret',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 48,
-      'specialization' => 'Scrapper',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Gyro',
+      'type' => 'Turret',
       'pvx' => 7,
     ),
     250 => 
     array (
-      'id' => 1113,
-      'name' => 'Purge Gyro',
+      'id' => 1128,
+      'name' => 'Blast Gyro Tag',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22563,8 +7673,8 @@
     ),
     251 => 
     array (
-      'id' => 1116,
-      'name' => 'Shredder Gyro',
+      'id' => 1131,
+      'name' => 'Bulwark Gyro',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22577,36 +7687,36 @@
     ),
     252 => 
     array (
-      'id' => 1119,
-      'name' => 'Laser Disk',
+      'id' => 1134,
+      'name' => 'Purge Gyro',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
       'group' => 'Utility skills',
-      'type' => 'Exceed',
+      'type' => 'Gyro',
       'pvx' => 7,
     ),
     253 => 
     array (
-      'id' => 1121,
-      'name' => 'Hard Light Arena',
+      'id' => 1137,
+      'name' => 'Shredder Gyro',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 49,
-      'specialization' => 'Holosmith',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
       'group' => 'Utility skills',
-      'type' => 'Exceed',
+      'type' => 'Gyro',
       'pvx' => 7,
     ),
     254 => 
     array (
-      'id' => 1123,
-      'name' => 'Spectrum Shield',
+      'id' => 1140,
+      'name' => 'Laser Disk',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22619,8 +7729,8 @@
     ),
     255 => 
     array (
-      'id' => 1125,
-      'name' => 'Photon Wall',
+      'id' => 1142,
+      'name' => 'Hard Light Arena',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22633,36 +7743,36 @@
     ),
     256 => 
     array (
-      'id' => 1128,
-      'name' => 'Elixir B',
+      'id' => 1144,
+      'name' => 'Spectrum Shield',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
       'group' => 'Utility skills',
-      'type' => 'Elixir',
+      'type' => 'Exceed',
       'pvx' => 7,
     ),
     257 => 
     array (
-      'id' => 1130,
-      'name' => 'Elixir U',
+      'id' => 1146,
+      'name' => 'Photon Wall',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
       'group' => 'Utility skills',
-      'type' => 'Elixir',
+      'type' => 'Exceed',
       'pvx' => 7,
     ),
     258 => 
     array (
-      'id' => 1132,
-      'name' => 'Elixir S',
+      'id' => 1149,
+      'name' => 'Elixir B',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22675,8 +7785,8 @@
     ),
     259 => 
     array (
-      'id' => 1134,
-      'name' => 'Elixir C',
+      'id' => 1151,
+      'name' => 'Elixir U',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22689,8 +7799,8 @@
     ),
     260 => 
     array (
-      'id' => 1136,
-      'name' => 'Elixir R',
+      'id' => 1153,
+      'name' => 'Elixir S',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22703,8 +7813,8 @@
     ),
     261 => 
     array (
-      'id' => 1138,
-      'name' => 'Grenade Kit',
+      'id' => 1155,
+      'name' => 'Elixir C',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22712,13 +7822,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Engineering Kit',
+      'type' => 'Elixir',
       'pvx' => 7,
     ),
     262 => 
     array (
-      'id' => 1145,
-      'name' => 'Throw Mine',
+      'id' => 1157,
+      'name' => 'Elixir R',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22726,13 +7836,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Gadget',
+      'type' => 'Elixir',
       'pvx' => 7,
     ),
     263 => 
     array (
-      'id' => 1150,
-      'name' => 'Bomb Kit',
+      'id' => 1159,
+      'name' => 'Grenade Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22745,8 +7855,8 @@
     ),
     264 => 
     array (
-      'id' => 1157,
-      'name' => 'Flamethrower',
+      'id' => 1166,
+      'name' => 'Throw Mine',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22754,13 +7864,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Engineering Kit',
+      'type' => 'Gadget',
       'pvx' => 7,
     ),
     265 => 
     array (
-      'id' => 1165,
-      'name' => 'Elixir Gun',
+      'id' => 1171,
+      'name' => 'Bomb Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22773,8 +7883,8 @@
     ),
     266 => 
     array (
-      'id' => 1172,
-      'name' => 'Tool Kit',
+      'id' => 1178,
+      'name' => 'Flamethrower',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22787,8 +7897,8 @@
     ),
     267 => 
     array (
-      'id' => 1181,
-      'name' => 'Utility Goggles',
+      'id' => 1186,
+      'name' => 'Elixir Gun',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22796,13 +7906,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Gadget',
+      'type' => 'Engineering Kit',
       'pvx' => 7,
     ),
     268 => 
     array (
-      'id' => 1183,
-      'name' => 'Rocket Boots',
+      'id' => 1193,
+      'name' => 'Tool Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22810,13 +7920,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Gadget',
+      'type' => 'Engineering Kit',
       'pvx' => 7,
     ),
     269 => 
     array (
-      'id' => 1185,
-      'name' => 'Personal Battering Ram',
+      'id' => 1202,
+      'name' => 'Utility Goggles',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22829,8 +7939,8 @@
     ),
     270 => 
     array (
-      'id' => 1187,
-      'name' => 'Slick Shoes',
+      'id' => 1204,
+      'name' => 'Rocket Boots',
       'profession_id' => 7,
       'profession' => 'Engineer',
       'race_id' => false,
@@ -22843,7 +7953,51 @@
     ),
     271 => 
     array (
-      'id' => 1189,
+      'id' => 1206,
+      'name' => 'Personal Battering Ram',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Gadget',
+      'pvx' => 7,
+    ),
+    272 => 
+    array (
+      'id' => 1208,
+      'name' => 'Slick Shoes',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Gadget',
+      'pvx' => 7,
+      'terrestrial_version' => true,
+    ),
+    273 => 
+    array (
+      'id' => 1210,
+      'name' => 'Slick Shoes',
+      'profession_id' => 7,
+      'profession' => 'Engineer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Gadget',
+      'pvx' => 7,
+      'aquatic_version' => true,
+    ),
+    274 => 
+    array (
+      'id' => 1212,
       'name' => 'Supply Crate',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22856,9 +8010,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    272 => 
+    275 => 
     array (
-      'id' => 1193,
+      'id' => 1216,
       'name' => 'Supply Crate',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22871,9 +8025,9 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    273 => 
+    276 => 
     array (
-      'id' => 1197,
+      'id' => 1220,
       'name' => 'Sneak Gyro',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22885,9 +8039,9 @@
       'type' => 'Gyro',
       'pvx' => 7,
     ),
-    274 => 
+    277 => 
     array (
-      'id' => 1200,
+      'id' => 1223,
       'name' => 'Prime Light Beam',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22899,9 +8053,9 @@
       'type' => 'Exceed',
       'pvx' => 7,
     ),
-    275 => 
+    278 => 
     array (
-      'id' => 1201,
+      'id' => 1224,
       'name' => 'Elite Mortar Kit',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22913,9 +8067,9 @@
       'type' => 'Engineering Kit',
       'pvx' => 7,
     ),
-    276 => 
+    279 => 
     array (
-      'id' => 1208,
+      'id' => 1231,
       'name' => 'Elixir X',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22928,9 +8082,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    277 => 
+    280 => 
     array (
-      'id' => 1222,
+      'id' => 1245,
       'name' => 'Elixir X',
       'profession_id' => 7,
       'profession' => 'Engineer',
@@ -22943,9 +8097,9 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    278 => 
+    281 => 
     array (
-      'id' => 1301,
+      'id' => 1325,
       'name' => 'Ether Feast',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -22957,9 +8111,9 @@
       'type' => '',
       'pvx' => 7,
     ),
-    279 => 
+    282 => 
     array (
-      'id' => 1302,
+      'id' => 1326,
       'name' => 'Mirror',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -22971,9 +8125,9 @@
       'type' => 'Manipulation',
       'pvx' => 7,
     ),
-    280 => 
+    283 => 
     array (
-      'id' => 1303,
+      'id' => 1327,
       'name' => 'Well of Eternity',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -22985,9 +8139,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    281 => 
+    284 => 
     array (
-      'id' => 1304,
+      'id' => 1328,
       'name' => 'False Oasis',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -22999,9 +8153,9 @@
       'type' => 'Deception',
       'pvx' => 7,
     ),
-    282 => 
+    285 => 
     array (
-      'id' => 1306,
+      'id' => 1330,
       'name' => 'Signet of the Ether',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23013,9 +8167,9 @@
       'type' => 'Signet',
       'pvx' => 7,
     ),
-    283 => 
+    286 => 
     array (
-      'id' => 1307,
+      'id' => 1331,
       'name' => 'Mantra of Recovery',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23027,52 +8181,10 @@
       'type' => 'Mantra',
       'pvx' => 7,
     ),
-    284 => 
-    array (
-      'id' => 1309,
-      'name' => 'Signet of Inspiration',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Signet',
-      'pvx' => 7,
-    ),
-    285 => 
-    array (
-      'id' => 1310,
-      'name' => 'Signet of Domination',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Signet',
-      'pvx' => 7,
-    ),
-    286 => 
-    array (
-      'id' => 1311,
-      'name' => 'Signet of Midnight',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Signet',
-      'pvx' => 7,
-    ),
     287 => 
     array (
-      'id' => 1312,
-      'name' => 'Signet of Illusions',
+      'id' => 1333,
+      'name' => 'Signet of Inspiration',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23085,50 +8197,50 @@
     ),
     288 => 
     array (
-      'id' => 1313,
-      'name' => 'Well of Action',
+      'id' => 1334,
+      'name' => 'Signet of Domination',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Well',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     289 => 
     array (
-      'id' => 1314,
-      'name' => 'Well of Calamity',
+      'id' => 1335,
+      'name' => 'Signet of Midnight',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Well',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     290 => 
     array (
-      'id' => 1315,
-      'name' => 'Well of Precognition',
+      'id' => 1336,
+      'name' => 'Signet of Illusions',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 55,
-      'specialization' => 'Chronomancer',
+      'specialization_id' => false,
+      'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Well',
+      'type' => 'Signet',
       'pvx' => 7,
     ),
     291 => 
     array (
-      'id' => 1316,
-      'name' => 'Well of Recall',
+      'id' => 1337,
+      'name' => 'Well of Action',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23141,50 +8253,50 @@
     ),
     292 => 
     array (
-      'id' => 1317,
-      'name' => 'Mirage Advance',
+      'id' => 1338,
+      'name' => 'Well of Calamity',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
       'group' => 'Utility skills',
-      'type' => 'Deception',
+      'type' => 'Well',
       'pvx' => 7,
     ),
     293 => 
     array (
-      'id' => 1319,
-      'name' => 'Sand through Glass',
+      'id' => 1339,
+      'name' => 'Well of Precognition',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
       'group' => 'Utility skills',
-      'type' => 'Deception',
+      'type' => 'Well',
       'pvx' => 7,
     ),
     294 => 
     array (
-      'id' => 1321,
-      'name' => 'Crystal Sands',
+      'id' => 1340,
+      'name' => 'Well of Recall',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => 56,
-      'specialization' => 'Mirage',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
       'group' => 'Utility skills',
-      'type' => 'Deception',
+      'type' => 'Well',
       'pvx' => 7,
     ),
     295 => 
     array (
-      'id' => 1323,
-      'name' => 'Illusionary Ambush',
+      'id' => 1341,
+      'name' => 'Mirage Advance',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23197,50 +8309,50 @@
     ),
     296 => 
     array (
-      'id' => 1324,
-      'name' => 'Mantra of Pain',
+      'id' => 1343,
+      'name' => 'Sand through Glass',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
       'group' => 'Utility skills',
-      'type' => 'Mantra',
+      'type' => 'Deception',
       'pvx' => 7,
     ),
     297 => 
     array (
-      'id' => 1326,
-      'name' => 'Mantra of Distraction',
+      'id' => 1345,
+      'name' => 'Crystal Sands',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
       'group' => 'Utility skills',
-      'type' => 'Mantra',
+      'type' => 'Deception',
       'pvx' => 7,
     ),
     298 => 
     array (
-      'id' => 1328,
-      'name' => 'Mantra of Resolve',
+      'id' => 1347,
+      'name' => 'Illusionary Ambush',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
       'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
       'group' => 'Utility skills',
-      'type' => 'Mantra',
+      'type' => 'Deception',
       'pvx' => 7,
     ),
     299 => 
     array (
-      'id' => 1330,
-      'name' => 'Mantra of Concentration',
+      'id' => 1348,
+      'name' => 'Mantra of Pain',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23253,8 +8365,8 @@
     ),
     300 => 
     array (
-      'id' => 1332,
-      'name' => 'Blink',
+      'id' => 1350,
+      'name' => 'Mantra of Distraction',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23262,13 +8374,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Manipulation',
+      'type' => 'Mantra',
       'pvx' => 7,
     ),
     301 => 
     array (
-      'id' => 1333,
-      'name' => 'Arcane Thievery',
+      'id' => 1352,
+      'name' => 'Mantra of Resolve',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23276,13 +8388,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Manipulation',
+      'type' => 'Mantra',
       'pvx' => 7,
     ),
     302 => 
     array (
-      'id' => 1334,
-      'name' => 'Illusion of Life',
+      'id' => 1354,
+      'name' => 'Mantra of Concentration',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23290,13 +8402,13 @@
       'specialization_id' => false,
       'specialization' => '',
       'group' => 'Utility skills',
-      'type' => 'Manipulation',
+      'type' => 'Mantra',
       'pvx' => 7,
     ),
     303 => 
     array (
-      'id' => 1335,
-      'name' => 'Mimic',
+      'id' => 1356,
+      'name' => 'Blink',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23309,7 +8421,49 @@
     ),
     304 => 
     array (
-      'id' => 1337,
+      'id' => 1357,
+      'name' => 'Arcane Thievery',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Manipulation',
+      'pvx' => 7,
+    ),
+    305 => 
+    array (
+      'id' => 1358,
+      'name' => 'Illusion of Life',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Manipulation',
+      'pvx' => 7,
+    ),
+    306 => 
+    array (
+      'id' => 1359,
+      'name' => 'Mimic',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Manipulation',
+      'pvx' => 7,
+    ),
+    307 => 
+    array (
+      'id' => 1361,
       'name' => 'Phantasmal Disenchanter',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23321,9 +8475,9 @@
       'type' => 'Phantasm',
       'pvx' => 7,
     ),
-    305 => 
+    308 => 
     array (
-      'id' => 1338,
+      'id' => 1362,
       'name' => 'Decoy',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23335,9 +8489,9 @@
       'type' => 'Clone',
       'pvx' => 7,
     ),
-    306 => 
+    309 => 
     array (
-      'id' => 1339,
+      'id' => 1363,
       'name' => 'Phantasmal Defender',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23349,9 +8503,9 @@
       'type' => 'Phantasm',
       'pvx' => 7,
     ),
-    307 => 
+    310 => 
     array (
-      'id' => 1340,
+      'id' => 1364,
       'name' => 'Mirror Images',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23363,52 +8517,10 @@
       'type' => 'Clone',
       'pvx' => 7,
     ),
-    308 => 
-    array (
-      'id' => 1341,
-      'name' => 'Null Field',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Glamour',
-      'pvx' => 7,
-    ),
-    309 => 
-    array (
-      'id' => 1342,
-      'name' => 'Feedback',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Glamour',
-      'pvx' => 7,
-    ),
-    310 => 
-    array (
-      'id' => 1343,
-      'name' => 'Portal Entre',
-      'profession_id' => 8,
-      'profession' => 'Mesmer',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Utility skills',
-      'type' => 'Glamour',
-      'pvx' => 7,
-    ),
     311 => 
     array (
-      'id' => 1345,
-      'name' => 'Veil',
+      'id' => 1365,
+      'name' => 'Null Field',
       'profession_id' => 8,
       'profession' => 'Mesmer',
       'race_id' => false,
@@ -23421,7 +8533,49 @@
     ),
     312 => 
     array (
-      'id' => 1346,
+      'id' => 1366,
+      'name' => 'Feedback',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Glamour',
+      'pvx' => 7,
+    ),
+    313 => 
+    array (
+      'id' => 1367,
+      'name' => 'Portal Entre',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Glamour',
+      'pvx' => 7,
+    ),
+    314 => 
+    array (
+      'id' => 1369,
+      'name' => 'Veil',
+      'profession_id' => 8,
+      'profession' => 'Mesmer',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Utility skills',
+      'type' => 'Glamour',
+      'pvx' => 7,
+    ),
+    315 => 
+    array (
+      'id' => 1370,
       'name' => 'Signet of Humility',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23434,9 +8588,9 @@
       'pvx' => 7,
       'terrestrial_version' => true,
     ),
-    313 => 
+    316 => 
     array (
-      'id' => 1347,
+      'id' => 1371,
       'name' => 'Signet of Humility',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23449,9 +8603,9 @@
       'pvx' => 7,
       'aquatic_version' => true,
     ),
-    314 => 
+    317 => 
     array (
-      'id' => 1348,
+      'id' => 1372,
       'name' => 'Gravity Well',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23463,9 +8617,9 @@
       'type' => 'Well',
       'pvx' => 7,
     ),
-    315 => 
+    318 => 
     array (
-      'id' => 1349,
+      'id' => 1373,
       'name' => 'Jaunt',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23477,9 +8631,9 @@
       'type' => 'Deception',
       'pvx' => 7,
     ),
-    316 => 
+    319 => 
     array (
-      'id' => 1350,
+      'id' => 1374,
       'name' => 'Time Warp',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23491,9 +8645,9 @@
       'type' => 'Glamour',
       'pvx' => 7,
     ),
-    317 => 
+    320 => 
     array (
-      'id' => 1351,
+      'id' => 1375,
       'name' => 'Mass Invisibility',
       'profession_id' => 8,
       'profession' => 'Mesmer',
@@ -23505,52 +8659,10 @@
       'type' => 'Manipulation',
       'pvx' => 7,
     ),
-    318 => 
-    array (
-      'id' => 1352,
-      'name' => 'Legendary Dwarf Stance',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => '',
-      'type' => 'Legend',
-      'pvx' => 7,
-    ),
-    319 => 
-    array (
-      'id' => 1353,
-      'name' => 'Legendary Demon Stance',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => '',
-      'type' => 'Legend',
-      'pvx' => 7,
-    ),
-    320 => 
-    array (
-      'id' => 1354,
-      'name' => 'Legendary Centaur Stance',
-      'profession_id' => 9,
-      'profession' => 'Revenant',
-      'race_id' => false,
-      'race' => '',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => '',
-      'type' => 'Legend',
-      'pvx' => 7,
-    ),
     321 => 
     array (
-      'id' => 1355,
-      'name' => 'Legendary Assassin Stance',
+      'id' => 1376,
+      'name' => 'Legendary Dwarf Stance',
       'profession_id' => 9,
       'profession' => 'Revenant',
       'race_id' => false,
@@ -23563,7 +8675,49 @@
     ),
     322 => 
     array (
-      'id' => 1356,
+      'id' => 1377,
+      'name' => 'Legendary Demon Stance',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => '',
+      'type' => 'Legend',
+      'pvx' => 7,
+    ),
+    323 => 
+    array (
+      'id' => 1378,
+      'name' => 'Legendary Centaur Stance',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => '',
+      'type' => 'Legend',
+      'pvx' => 7,
+    ),
+    324 => 
+    array (
+      'id' => 1379,
+      'name' => 'Legendary Assassin Stance',
+      'profession_id' => 9,
+      'profession' => 'Revenant',
+      'race_id' => false,
+      'race' => '',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => '',
+      'type' => 'Legend',
+      'pvx' => 7,
+    ),
+    325 => 
+    array (
+      'id' => 1380,
       'name' => 'Legendary Dragon Stance',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23575,9 +8729,9 @@
       'type' => 'Legend',
       'pvx' => 7,
     ),
-    323 => 
+    326 => 
     array (
-      'id' => 1359,
+      'id' => 1383,
       'name' => 'Legendary Renegade Stance',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23589,9 +8743,9 @@
       'type' => 'Legend',
       'pvx' => 7,
     ),
-    324 => 
+    327 => 
     array (
-      'id' => 1416,
+      'id' => 1441,
       'name' => 'Soothing Stone',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23603,9 +8757,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    325 => 
+    328 => 
     array (
-      'id' => 1417,
+      'id' => 1442,
       'name' => 'Empowering Misery',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23617,9 +8771,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    326 => 
+    329 => 
     array (
-      'id' => 1418,
+      'id' => 1443,
       'name' => 'Project Tranquility',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23631,9 +8785,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    327 => 
+    330 => 
     array (
-      'id' => 1420,
+      'id' => 1445,
       'name' => 'Facet of Light',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23645,9 +8799,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    328 => 
+    331 => 
     array (
-      'id' => 1422,
+      'id' => 1447,
       'name' => 'Breakrazor\'s Bastion',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23659,9 +8813,9 @@
       'type' => 'Legendary Renegade',
       'pvx' => 7,
     ),
-    329 => 
+    332 => 
     array (
-      'id' => 1423,
+      'id' => 1448,
       'name' => 'Enchanted Daggers',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23673,9 +8827,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    330 => 
+    333 => 
     array (
-      'id' => 1424,
+      'id' => 1449,
       'name' => 'Inspiring Reinforcement',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23687,9 +8841,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    331 => 
+    334 => 
     array (
-      'id' => 1425,
+      'id' => 1450,
       'name' => 'Forced Engagement',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23701,9 +8855,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    332 => 
+    335 => 
     array (
-      'id' => 1426,
+      'id' => 1451,
       'name' => 'Vengeful Hammers',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23715,9 +8869,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    333 => 
+    336 => 
     array (
-      'id' => 1428,
+      'id' => 1453,
       'name' => 'Pain Absorption',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23729,9 +8883,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    334 => 
+    337 => 
     array (
-      'id' => 1429,
+      'id' => 1454,
       'name' => 'Banish Enchantment',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23743,9 +8897,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    335 => 
+    338 => 
     array (
-      'id' => 1430,
+      'id' => 1455,
       'name' => 'Unyielding Anguish',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23757,9 +8911,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    336 => 
+    339 => 
     array (
-      'id' => 1431,
+      'id' => 1456,
       'name' => 'Protective Solace',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23771,9 +8925,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    337 => 
+    340 => 
     array (
-      'id' => 1433,
+      'id' => 1458,
       'name' => 'Natural Harmony',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23785,9 +8939,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    338 => 
+    341 => 
     array (
-      'id' => 1434,
+      'id' => 1459,
       'name' => 'Purifying Essence',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23799,9 +8953,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    339 => 
+    342 => 
     array (
-      'id' => 1435,
+      'id' => 1460,
       'name' => 'Facet of Darkness',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23813,9 +8967,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    340 => 
+    343 => 
     array (
-      'id' => 1437,
+      'id' => 1462,
       'name' => 'Facet of Elements',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23827,9 +8981,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    341 => 
+    344 => 
     array (
-      'id' => 1439,
+      'id' => 1464,
       'name' => 'Facet of Strength',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23841,9 +8995,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    342 => 
+    345 => 
     array (
-      'id' => 1441,
+      'id' => 1466,
       'name' => 'Razorclaw\'s Rage',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23855,9 +9009,9 @@
       'type' => 'Legendary Renegade',
       'pvx' => 7,
     ),
-    343 => 
+    346 => 
     array (
-      'id' => 1442,
+      'id' => 1467,
       'name' => 'Icerazor\'s Ire',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23869,9 +9023,9 @@
       'type' => 'Legendary Renegade',
       'pvx' => 7,
     ),
-    344 => 
+    347 => 
     array (
-      'id' => 1443,
+      'id' => 1468,
       'name' => 'Darkrazor\'s Daring',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23883,9 +9037,9 @@
       'type' => 'Legendary Renegade',
       'pvx' => 7,
     ),
-    345 => 
+    348 => 
     array (
-      'id' => 1444,
+      'id' => 1469,
       'name' => 'Riposting Shadows',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23897,9 +9051,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    346 => 
+    349 => 
     array (
-      'id' => 1445,
+      'id' => 1470,
       'name' => 'Phase Traversal',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23911,9 +9065,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    347 => 
+    350 => 
     array (
-      'id' => 1446,
+      'id' => 1471,
       'name' => 'Impossible Odds',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23925,9 +9079,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    348 => 
+    351 => 
     array (
-      'id' => 1447,
+      'id' => 1472,
       'name' => 'Rite of the Great Dwarf',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23939,9 +9093,9 @@
       'type' => 'Legendary Dwarf',
       'pvx' => 7,
     ),
-    349 => 
+    352 => 
     array (
-      'id' => 1448,
+      'id' => 1473,
       'name' => 'Embrace the Darkness',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23953,9 +9107,9 @@
       'type' => 'Legendary Demon',
       'pvx' => 7,
     ),
-    350 => 
+    353 => 
     array (
-      'id' => 1450,
+      'id' => 1475,
       'name' => 'Energy Expulsion',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23967,9 +9121,9 @@
       'type' => 'Legendary Centaur',
       'pvx' => 7,
     ),
-    351 => 
+    354 => 
     array (
-      'id' => 1451,
+      'id' => 1476,
       'name' => 'Facet of Chaos',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23981,9 +9135,9 @@
       'type' => 'Legendary Dragon',
       'pvx' => 7,
     ),
-    352 => 
+    355 => 
     array (
-      'id' => 1453,
+      'id' => 1478,
       'name' => 'Soulcleave\'s Summit',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -23995,9 +9149,9 @@
       'type' => 'Legendary Renegade',
       'pvx' => 7,
     ),
-    353 => 
+    356 => 
     array (
-      'id' => 1455,
+      'id' => 1480,
       'name' => 'Jade Winds',
       'profession_id' => 9,
       'profession' => 'Revenant',
@@ -24009,9 +9163,9 @@
       'type' => 'Legendary Assassin',
       'pvx' => 7,
     ),
-    354 => 
+    357 => 
     array (
-      'id' => 1456,
+      'id' => 1481,
       'name' => 'Prayer to Dwayna',
       'profession_id' => false,
       'profession' => '',
@@ -24023,9 +9177,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    355 => 
+    358 => 
     array (
-      'id' => 1458,
+      'id' => 1483,
       'name' => 'Prayer to Kormir',
       'profession_id' => false,
       'profession' => '',
@@ -24037,9 +9191,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    356 => 
+    359 => 
     array (
-      'id' => 1460,
+      'id' => 1485,
       'name' => 'Prayer to Lyssa',
       'profession_id' => false,
       'profession' => '',
@@ -24051,9 +9205,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    357 => 
+    360 => 
     array (
-      'id' => 1462,
+      'id' => 1487,
       'name' => 'Reaper of Grenth',
       'profession_id' => false,
       'profession' => '',
@@ -24065,9 +9219,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    358 => 
+    361 => 
     array (
-      'id' => 1463,
+      'id' => 1488,
       'name' => 'Hounds of Balthazar',
       'profession_id' => false,
       'profession' => '',
@@ -24079,9 +9233,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    359 => 
+    362 => 
     array (
-      'id' => 1464,
+      'id' => 1489,
       'name' => 'Avatar of Melandru',
       'profession_id' => false,
       'profession' => '',
@@ -24093,9 +9247,9 @@
       'type' => 'Transform',
       'pvx' => 6,
     ),
-    360 => 
+    363 => 
     array (
-      'id' => 1470,
+      'id' => 1495,
       'name' => 'Shrapnel Mine',
       'profession_id' => false,
       'profession' => '',
@@ -24107,9 +9261,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    361 => 
+    364 => 
     array (
-      'id' => 1472,
+      'id' => 1497,
       'name' => 'Hidden Pistol',
       'profession_id' => false,
       'profession' => '',
@@ -24121,9 +9275,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    362 => 
+    365 => 
     array (
-      'id' => 1474,
+      'id' => 1499,
       'name' => 'Battle Roar',
       'profession_id' => false,
       'profession' => '',
@@ -24135,9 +9289,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    363 => 
+    366 => 
     array (
-      'id' => 1476,
+      'id' => 1501,
       'name' => 'Artillery Barrage',
       'profession_id' => false,
       'profession' => '',
@@ -24149,9 +9303,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    364 => 
+    367 => 
     array (
-      'id' => 1477,
+      'id' => 1502,
       'name' => 'Warband Support',
       'profession_id' => false,
       'profession' => '',
@@ -24163,9 +9317,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    365 => 
+    368 => 
     array (
-      'id' => 1478,
+      'id' => 1503,
       'name' => 'Charrzooka',
       'profession_id' => false,
       'profession' => '',
@@ -24177,9 +9331,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    366 => 
+    369 => 
     array (
-      'id' => 1484,
+      'id' => 1509,
       'name' => 'Pain Inverter',
       'profession_id' => false,
       'profession' => '',
@@ -24191,9 +9345,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    367 => 
+    370 => 
     array (
-      'id' => 1486,
+      'id' => 1511,
       'name' => 'Radiation Field',
       'profession_id' => false,
       'profession' => '',
@@ -24205,9 +9359,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    368 => 
+    371 => 
     array (
-      'id' => 1488,
+      'id' => 1513,
       'name' => 'Technobabble',
       'profession_id' => false,
       'profession' => '',
@@ -24219,9 +9373,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    369 => 
+    372 => 
     array (
-      'id' => 1490,
+      'id' => 1515,
       'name' => 'Summon D-Series Golem',
       'profession_id' => false,
       'profession' => '',
@@ -24233,9 +9387,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    370 => 
+    373 => 
     array (
-      'id' => 1491,
+      'id' => 1516,
       'name' => 'Summon 7-Series Golem',
       'profession_id' => false,
       'profession' => '',
@@ -24247,9 +9401,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    371 => 
+    374 => 
     array (
-      'id' => 1492,
+      'id' => 1517,
       'name' => 'Summon Power Suit',
       'profession_id' => false,
       'profession' => '',
@@ -24261,9 +9415,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    372 => 
+    375 => 
     array (
-      'id' => 1498,
+      'id' => 1523,
       'name' => 'Call Owl',
       'profession_id' => false,
       'profession' => '',
@@ -24275,9 +9429,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    373 => 
+    376 => 
     array (
-      'id' => 1500,
+      'id' => 1525,
       'name' => 'Call Wurm',
       'profession_id' => false,
       'profession' => '',
@@ -24289,52 +9443,10 @@
       'type' => '',
       'pvx' => 6,
     ),
-    374 => 
-    array (
-      'id' => 1502,
-      'name' => 'Become the Bear',
-      'profession_id' => false,
-      'profession' => '',
-      'race_id' => 3,
-      'race' => 'Norn',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Elite skills',
-      'type' => 'Transform',
-      'pvx' => 6,
-    ),
-    375 => 
-    array (
-      'id' => 1509,
-      'name' => 'Become the Snow Leopard',
-      'profession_id' => false,
-      'profession' => '',
-      'race_id' => 3,
-      'race' => 'Norn',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Elite skills',
-      'type' => 'Transform',
-      'pvx' => 6,
-    ),
-    376 => 
-    array (
-      'id' => 1515,
-      'name' => 'Become the Raven',
-      'profession_id' => false,
-      'profession' => '',
-      'race_id' => 3,
-      'race' => 'Norn',
-      'specialization_id' => false,
-      'specialization' => '',
-      'group' => 'Elite skills',
-      'type' => 'Transform',
-      'pvx' => 6,
-    ),
     377 => 
     array (
-      'id' => 1522,
-      'name' => 'Become the Wolf',
+      'id' => 1527,
+      'name' => 'Become the Bear',
       'profession_id' => false,
       'profession' => '',
       'race_id' => 3,
@@ -24347,7 +9459,49 @@
     ),
     378 => 
     array (
-      'id' => 1529,
+      'id' => 1534,
+      'name' => 'Become the Snow Leopard',
+      'profession_id' => false,
+      'profession' => '',
+      'race_id' => 3,
+      'race' => 'Norn',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Elite skills',
+      'type' => 'Transform',
+      'pvx' => 6,
+    ),
+    379 => 
+    array (
+      'id' => 1540,
+      'name' => 'Become the Raven',
+      'profession_id' => false,
+      'profession' => '',
+      'race_id' => 3,
+      'race' => 'Norn',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Elite skills',
+      'type' => 'Transform',
+      'pvx' => 6,
+    ),
+    380 => 
+    array (
+      'id' => 1547,
+      'name' => 'Become the Wolf',
+      'profession_id' => false,
+      'profession' => '',
+      'race_id' => 3,
+      'race' => 'Norn',
+      'specialization_id' => false,
+      'specialization' => '',
+      'group' => 'Elite skills',
+      'type' => 'Transform',
+      'pvx' => 6,
+    ),
+    381 => 
+    array (
+      'id' => 1554,
       'name' => 'Healing Seed',
       'profession_id' => false,
       'profession' => '',
@@ -24359,9 +9513,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    379 => 
+    382 => 
     array (
-      'id' => 1531,
+      'id' => 1556,
       'name' => 'Grasping Vines',
       'profession_id' => false,
       'profession' => '',
@@ -24373,9 +9527,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    380 => 
+    383 => 
     array (
-      'id' => 1533,
+      'id' => 1558,
       'name' => 'Seed Turret',
       'profession_id' => false,
       'profession' => '',
@@ -24387,9 +9541,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    381 => 
+    384 => 
     array (
-      'id' => 1536,
+      'id' => 1561,
       'name' => 'Take Root',
       'profession_id' => false,
       'profession' => '',
@@ -24401,9 +9555,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    382 => 
+    385 => 
     array (
-      'id' => 1537,
+      'id' => 1562,
       'name' => 'Summon Sylvan Hound',
       'profession_id' => false,
       'profession' => '',
@@ -24415,9 +9569,9 @@
       'type' => '',
       'pvx' => 6,
     ),
-    383 => 
+    386 => 
     array (
-      'id' => 1538,
+      'id' => 1563,
       'name' => 'Summon Druid Spirit',
       'profession_id' => false,
       'profession' => '',
@@ -26132,6 +11286,15421 @@
         7 => 1127,
         8 => 1128,
       ),
+    ),
+  ),
+  'buffs' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'name' => 'Potent Master Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'name' => 'Toxic Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'name' => 'Hylek Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    3 => 
+    array (
+      'id' => 4,
+      'name' => 'Maintenance Oil Station',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    4 => 
+    array (
+      'id' => 5,
+      'name' => 'Bountiful Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    5 => 
+    array (
+      'id' => 6,
+      'name' => 'Furious Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    6 => 
+    array (
+      'id' => 7,
+      'name' => 'Magnanimous Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    7 => 
+    array (
+      'id' => 8,
+      'name' => 'Corsair Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    8 => 
+    array (
+      'id' => 9,
+      'name' => 'Peppermint Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    9 => 
+    array (
+      'id' => 10,
+      'name' => 'Holographic Super Drumstick',
+      'type' => 'Oil',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    10 => 
+    array (
+      'id' => 11,
+      'name' => 'Master Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    11 => 
+    array (
+      'id' => 12,
+      'name' => 'Quality Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    12 => 
+    array (
+      'id' => 13,
+      'name' => 'Artisan Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    13 => 
+    array (
+      'id' => 14,
+      'name' => 'Standard Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    14 => 
+    array (
+      'id' => 15,
+      'name' => 'Journeyman Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    15 => 
+    array (
+      'id' => 16,
+      'name' => 'Apprentice Maintenance Oil',
+      'type' => 'Oil',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    16 => 
+    array (
+      'id' => 17,
+      'name' => 'Rough Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    17 => 
+    array (
+      'id' => 18,
+      'name' => 'Simple Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    18 => 
+    array (
+      'id' => 19,
+      'name' => 'Standard Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    19 => 
+    array (
+      'id' => 20,
+      'name' => 'Quality Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    20 => 
+    array (
+      'id' => 21,
+      'name' => 'Hardened Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    21 => 
+    array (
+      'id' => 22,
+      'name' => 'Superior Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    22 => 
+    array (
+      'id' => 23,
+      'name' => 'Toxic Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    23 => 
+    array (
+      'id' => 24,
+      'name' => 'Ogre Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    24 => 
+    array (
+      'id' => 25,
+      'name' => 'Sharpening Stone Station',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    25 => 
+    array (
+      'id' => 26,
+      'name' => 'Bountiful Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    26 => 
+    array (
+      'id' => 27,
+      'name' => 'Furious Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    27 => 
+    array (
+      'id' => 28,
+      'name' => 'Magnanimous Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    28 => 
+    array (
+      'id' => 29,
+      'name' => 'Corsair Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    29 => 
+    array (
+      'id' => 30,
+      'name' => 'Tin of Fruitcake',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    30 => 
+    array (
+      'id' => 31,
+      'name' => 'Holographic Super Cheese',
+      'type' => 'Sharpen',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    31 => 
+    array (
+      'id' => 32,
+      'name' => 'Potent Superior Sharpening Stone',
+      'type' => 'Sharpen',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    32 => 
+    array (
+      'id' => 33,
+      'name' => 'Potent Master Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    33 => 
+    array (
+      'id' => 34,
+      'name' => 'Toxic Focusing Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    34 => 
+    array (
+      'id' => 35,
+      'name' => 'Krait Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    35 => 
+    array (
+      'id' => 36,
+      'name' => 'Tuning Crystal Station',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    36 => 
+    array (
+      'id' => 37,
+      'name' => 'Bountiful Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    37 => 
+    array (
+      'id' => 38,
+      'name' => 'Furious Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    38 => 
+    array (
+      'id' => 39,
+      'name' => 'Magnanimous Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    39 => 
+    array (
+      'id' => 40,
+      'name' => 'Corsair Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    40 => 
+    array (
+      'id' => 41,
+      'name' => 'Tuning Icicle',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    41 => 
+    array (
+      'id' => 42,
+      'name' => 'Holographic Super Apple',
+      'type' => 'Crystal',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    42 => 
+    array (
+      'id' => 43,
+      'name' => 'Master Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    43 => 
+    array (
+      'id' => 44,
+      'name' => 'Quality Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    44 => 
+    array (
+      'id' => 45,
+      'name' => 'Artisan Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    45 => 
+    array (
+      'id' => 46,
+      'name' => 'Standard Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    46 => 
+    array (
+      'id' => 47,
+      'name' => 'Journeyman Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    47 => 
+    array (
+      'id' => 48,
+      'name' => 'Apprentice Tuning Crystal',
+      'type' => 'Crystal',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    48 => 
+    array (
+      'id' => 49,
+      'name' => 'Writ of Masterful Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    49 => 
+    array (
+      'id' => 50,
+      'name' => 'Writ of Masterful Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    50 => 
+    array (
+      'id' => 51,
+      'name' => 'Writ of Masterful Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    51 => 
+    array (
+      'id' => 52,
+      'name' => 'Writ of Learned Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    52 => 
+    array (
+      'id' => 53,
+      'name' => 'Writ of Learned Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    53 => 
+    array (
+      'id' => 54,
+      'name' => 'Writ of Learned Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    54 => 
+    array (
+      'id' => 55,
+      'name' => 'Writ of Calculated Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    55 => 
+    array (
+      'id' => 56,
+      'name' => 'Writ of Calculated Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    56 => 
+    array (
+      'id' => 57,
+      'name' => 'Writ of Calculated Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    57 => 
+    array (
+      'id' => 58,
+      'name' => 'Writ of Studied Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    58 => 
+    array (
+      'id' => 59,
+      'name' => 'Writ of Studied Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    59 => 
+    array (
+      'id' => 60,
+      'name' => 'Writ of Studied Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    60 => 
+    array (
+      'id' => 61,
+      'name' => 'Writ of Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    61 => 
+    array (
+      'id' => 62,
+      'name' => 'Writ of Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    62 => 
+    array (
+      'id' => 63,
+      'name' => 'Writ of Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    63 => 
+    array (
+      'id' => 64,
+      'name' => 'Writ of Basic Strength',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    64 => 
+    array (
+      'id' => 65,
+      'name' => 'Writ of Basic Malice',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    65 => 
+    array (
+      'id' => 66,
+      'name' => 'Writ of Basic Accuracy',
+      'type' => 'Writ',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    66 => 
+    array (
+      'id' => 67,
+      'name' => 'Onion Ring',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    67 => 
+    array (
+      'id' => 68,
+      'name' => 'Cinnamon Apple',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    68 => 
+    array (
+      'id' => 69,
+      'name' => 'Bowl of Apple Sauce',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    69 => 
+    array (
+      'id' => 70,
+      'name' => 'Beetletun Omelette',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    70 => 
+    array (
+      'id' => 71,
+      'name' => 'Meat Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    71 => 
+    array (
+      'id' => 72,
+      'name' => 'Blueberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    72 => 
+    array (
+      'id' => 73,
+      'name' => 'Strawberries and Biscuits',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    73 => 
+    array (
+      'id' => 74,
+      'name' => 'Lemon Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    74 => 
+    array (
+      'id' => 75,
+      'name' => 'Strawberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    75 => 
+    array (
+      'id' => 76,
+      'name' => 'Candy Corn Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    76 => 
+    array (
+      'id' => 77,
+      'name' => 'Clam Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    77 => 
+    array (
+      'id' => 78,
+      'name' => 'Caramel',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    78 => 
+    array (
+      'id' => 79,
+      'name' => 'Caramel Apple',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    79 => 
+    array (
+      'id' => 80,
+      'name' => 'Candied Apple',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    80 => 
+    array (
+      'id' => 81,
+      'name' => 'Chocolate Banana',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    81 => 
+    array (
+      'id' => 82,
+      'name' => 'Strawberry Ghost',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    82 => 
+    array (
+      'id' => 83,
+      'name' => 'Chocolate Cherry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    83 => 
+    array (
+      'id' => 84,
+      'name' => 'Chocolate Orange',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    84 => 
+    array (
+      'id' => 85,
+      'name' => 'Chocolate Raspberry Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    85 => 
+    array (
+      'id' => 86,
+      'name' => 'Chocolate Omnomberry Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    86 => 
+    array (
+      'id' => 87,
+      'name' => 'Cherry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    87 => 
+    array (
+      'id' => 88,
+      'name' => 'Ginger Pear Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    88 => 
+    array (
+      'id' => 89,
+      'name' => 'Glazed Pear Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    89 => 
+    array (
+      'id' => 90,
+      'name' => 'Peach Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    90 => 
+    array (
+      'id' => 91,
+      'name' => 'Glazed Peach Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    91 => 
+    array (
+      'id' => 92,
+      'name' => 'Dragonfly Cupcake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    92 => 
+    array (
+      'id' => 93,
+      'name' => 'Omnomberry Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    93 => 
+    array (
+      'id' => 94,
+      'name' => 'Yam Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    94 => 
+    array (
+      'id' => 95,
+      'name' => 'Chickpea Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    95 => 
+    array (
+      'id' => 96,
+      'name' => 'Eggplant Fritter',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    96 => 
+    array (
+      'id' => 97,
+      'name' => 'Cup of Lotus Fries',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    97 => 
+    array (
+      'id' => 98,
+      'name' => 'Spicy Pumpkin Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    98 => 
+    array (
+      'id' => 99,
+      'name' => 'Cherry Almond Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    99 => 
+    array (
+      'id' => 100,
+      'name' => 'Piece of Candy Corn Almond Brittle',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    100 => 
+    array (
+      'id' => 101,
+      'name' => 'Orange Coconut Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    101 => 
+    array (
+      'id' => 102,
+      'name' => 'Raspberry Peach Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    102 => 
+    array (
+      'id' => 103,
+      'name' => 'Omnomberry Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    103 => 
+    array (
+      'id' => 104,
+      'name' => 'Cooked Fish Steak',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    104 => 
+    array (
+      'id' => 105,
+      'name' => 'Cup of Potato Fries',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    105 => 
+    array (
+      'id' => 106,
+      'name' => 'Mashed Potato',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    106 => 
+    array (
+      'id' => 107,
+      'name' => 'Bowl of Outrider Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 24,
+      'pvx' => 6,
+    ),
+    107 => 
+    array (
+      'id' => 108,
+      'name' => 'Turnip Casserole',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    108 => 
+    array (
+      'id' => 109,
+      'name' => 'Bowl of Mashed Yams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    109 => 
+    array (
+      'id' => 110,
+      'name' => 'Bowl of Spiced Mashed Yams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    110 => 
+    array (
+      'id' => 111,
+      'name' => 'Roasted Rutabaga',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    111 => 
+    array (
+      'id' => 112,
+      'name' => 'Roasted Parsnip',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    112 => 
+    array (
+      'id' => 113,
+      'name' => 'Bowl of Roasted Lotus Root',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    113 => 
+    array (
+      'id' => 114,
+      'name' => 'Cooked Crawdad',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    114 => 
+    array (
+      'id' => 115,
+      'name' => 'Slice of Buttered Toast',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    115 => 
+    array (
+      'id' => 116,
+      'name' => 'Cheese Triangle',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    116 => 
+    array (
+      'id' => 117,
+      'name' => 'Slice of Cinnamon Toast',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    117 => 
+    array (
+      'id' => 118,
+      'name' => 'Slice of Garlic Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    118 => 
+    array (
+      'id' => 119,
+      'name' => 'Loaf of Rosemary Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    119 => 
+    array (
+      'id' => 120,
+      'name' => 'Slice of Spiced Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    120 => 
+    array (
+      'id' => 121,
+      'name' => 'Loaf of Tarragon Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    121 => 
+    array (
+      'id' => 122,
+      'name' => 'Loaf of Saffron Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    122 => 
+    array (
+      'id' => 124,
+      'name' => 'Bowl of Wurm Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    123 => 
+    array (
+      'id' => 125,
+      'name' => 'Jug of Autumn Nectar',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    124 => 
+    array (
+      'id' => 126,
+      'name' => 'Bowl of Basic Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    125 => 
+    array (
+      'id' => 127,
+      'name' => 'Bowl of Simple Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    126 => 
+    array (
+      'id' => 128,
+      'name' => 'Moa Egg Omelet',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 13,
+      'pvx' => 6,
+    ),
+    127 => 
+    array (
+      'id' => 129,
+      'name' => 'Spinach Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    128 => 
+    array (
+      'id' => 130,
+      'name' => 'Bowl of Clam Chowder',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    129 => 
+    array (
+      'id' => 131,
+      'name' => 'Bowl of Dilled Clam Chowder',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    130 => 
+    array (
+      'id' => 132,
+      'name' => 'Bowl of Chickpea and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    131 => 
+    array (
+      'id' => 133,
+      'name' => 'Bowl of Poultry and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    132 => 
+    array (
+      'id' => 134,
+      'name' => 'Bowl of Lemongrass Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    133 => 
+    array (
+      'id' => 135,
+      'name' => 'Fried Oysters',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    134 => 
+    array (
+      'id' => 136,
+      'name' => 'Oysters Gnashblade',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    135 => 
+    array (
+      'id' => 137,
+      'name' => 'Oysters with Zesty Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    136 => 
+    array (
+      'id' => 138,
+      'name' => 'Fried Oyster Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    137 => 
+    array (
+      'id' => 139,
+      'name' => 'Oysters with Cocktail Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    138 => 
+    array (
+      'id' => 140,
+      'name' => 'Oysters with Pesto Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    139 => 
+    array (
+      'id' => 141,
+      'name' => 'Oysters with Spicy Sauce',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    140 => 
+    array (
+      'id' => 142,
+      'name' => 'Bowl of Red Meat Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    141 => 
+    array (
+      'id' => 143,
+      'name' => 'Strip of Dolyak Jerky',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    142 => 
+    array (
+      'id' => 144,
+      'name' => 'Bowl of Simple Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    143 => 
+    array (
+      'id' => 145,
+      'name' => 'Bowl of Onion Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    144 => 
+    array (
+      'id' => 146,
+      'name' => 'Poached Griffon Egg',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 18,
+      'pvx' => 6,
+    ),
+    145 => 
+    array (
+      'id' => 147,
+      'name' => 'Bowl of Hearty Red Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    146 => 
+    array (
+      'id' => 148,
+      'name' => 'Bowl of Herbed Meat Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    147 => 
+    array (
+      'id' => 149,
+      'name' => 'Bowl of Meat and Cabbage Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    148 => 
+    array (
+      'id' => 150,
+      'name' => 'Bowl of Cabbage Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    149 => 
+    array (
+      'id' => 151,
+      'name' => 'Bowl of Spiced Meat and Cabbage Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    150 => 
+    array (
+      'id' => 152,
+      'name' => 'Bowl of Meat and Winter Vegetable Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    151 => 
+    array (
+      'id' => 153,
+      'name' => 'Bowl of Orrian Truffle and Meat Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    152 => 
+    array (
+      'id' => 154,
+      'name' => 'Seraph Standard Ration',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    153 => 
+    array (
+      'id' => 155,
+      'name' => 'Stick of Cotton Candy',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    154 => 
+    array (
+      'id' => 156,
+      'name' => 'Apple Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    155 => 
+    array (
+      'id' => 157,
+      'name' => 'Bowl of Gelatinous Ooze Custard',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    156 => 
+    array (
+      'id' => 158,
+      'name' => 'Apple Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    157 => 
+    array (
+      'id' => 159,
+      'name' => 'Bowl of Candy Corn Custard',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    158 => 
+    array (
+      'id' => 160,
+      'name' => 'Heart-Shaped Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    159 => 
+    array (
+      'id' => 161,
+      'name' => 'Kastaz Roasted Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 17,
+      'pvx' => 6,
+    ),
+    160 => 
+    array (
+      'id' => 162,
+      'name' => 'Banana Cream Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    161 => 
+    array (
+      'id' => 163,
+      'name' => 'Shiverpeak Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    162 => 
+    array (
+      'id' => 164,
+      'name' => 'Grape Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    163 => 
+    array (
+      'id' => 165,
+      'name' => 'Pirate Hard Tack',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 41,
+      'pvx' => 6,
+    ),
+    164 => 
+    array (
+      'id' => 166,
+      'name' => 'Pumpkin Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    165 => 
+    array (
+      'id' => 167,
+      'name' => 'Raspberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    166 => 
+    array (
+      'id' => 168,
+      'name' => 'Glazed Pumpkin Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    167 => 
+    array (
+      'id' => 169,
+      'name' => 'Peach Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    168 => 
+    array (
+      'id' => 170,
+      'name' => 'Mango Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    169 => 
+    array (
+      'id' => 171,
+      'name' => 'Dragon\'s Revelry Starcake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    170 => 
+    array (
+      'id' => 172,
+      'name' => 'Grilled Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    171 => 
+    array (
+      'id' => 173,
+      'name' => 'Poultry Piccata',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    172 => 
+    array (
+      'id' => 174,
+      'name' => 'Strip of Venison Jerky',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    173 => 
+    array (
+      'id' => 175,
+      'name' => 'Sage Stuffed Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    174 => 
+    array (
+      'id' => 176,
+      'name' => 'Dilled Poultry Piccata',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    175 => 
+    array (
+      'id' => 177,
+      'name' => 'Plate of Citrus Poultry with Almonds',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    176 => 
+    array (
+      'id' => 178,
+      'name' => 'Tarragon Stuffed Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    177 => 
+    array (
+      'id' => 179,
+      'name' => 'Dragonfish Candy',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    178 => 
+    array (
+      'id' => 180,
+      'name' => 'Plates of Lemongrass Poultry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    179 => 
+    array (
+      'id' => 181,
+      'name' => 'Rabbit Offering',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    180 => 
+    array (
+      'id' => 182,
+      'name' => 'Slice of Watermelon',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    181 => 
+    array (
+      'id' => 183,
+      'name' => 'Bowl of Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    182 => 
+    array (
+      'id' => 184,
+      'name' => 'Bowl of Bean Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    183 => 
+    array (
+      'id' => 185,
+      'name' => 'Bowl of Avocado Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    184 => 
+    array (
+      'id' => 186,
+      'name' => 'Bowl of Chickpea Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    185 => 
+    array (
+      'id' => 187,
+      'name' => 'Bowl of Mango Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    186 => 
+    array (
+      'id' => 188,
+      'name' => 'Bowl of Fire Salsa',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    187 => 
+    array (
+      'id' => 189,
+      'name' => 'Rice Ball',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    188 => 
+    array (
+      'id' => 190,
+      'name' => 'T-Bone Steak',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    189 => 
+    array (
+      'id' => 191,
+      'name' => 'Grilled Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    190 => 
+    array (
+      'id' => 192,
+      'name' => 'Eda\'s Apple Pie',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    191 => 
+    array (
+      'id' => 193,
+      'name' => 'Bowl of Cold Wurm Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    192 => 
+    array (
+      'id' => 194,
+      'name' => 'Spicy Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    193 => 
+    array (
+      'id' => 195,
+      'name' => 'Roasted Meaty Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    194 => 
+    array (
+      'id' => 196,
+      'name' => 'Pepper Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    195 => 
+    array (
+      'id' => 197,
+      'name' => 'Stick of Mystery Meat',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    196 => 
+    array (
+      'id' => 198,
+      'name' => 'Blessing Of Bear',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 41,
+      'pvx' => 6,
+    ),
+    197 => 
+    array (
+      'id' => 199,
+      'name' => 'Filet of Sesame Roasted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    198 => 
+    array (
+      'id' => 200,
+      'name' => 'Griffon Egg Omelet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 47,
+      'pvx' => 6,
+    ),
+    199 => 
+    array (
+      'id' => 201,
+      'name' => 'Plate of Coriander Crusted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    200 => 
+    array (
+      'id' => 202,
+      'name' => 'Plate of Steak and Asparagus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    201 => 
+    array (
+      'id' => 203,
+      'name' => 'Plate of Truffle Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    202 => 
+    array (
+      'id' => 204,
+      'name' => 'Spicy Lime Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    203 => 
+    array (
+      'id' => 205,
+      'name' => 'Plate of Citrus Clove Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    204 => 
+    array (
+      'id' => 206,
+      'name' => 'Spicier Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    205 => 
+    array (
+      'id' => 207,
+      'name' => 'Plate of Fire Flank Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    206 => 
+    array (
+      'id' => 208,
+      'name' => 'Filet of Rosemary Roasted Meat',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    207 => 
+    array (
+      'id' => 209,
+      'name' => 'Plate of Roast Meat with Mint Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    208 => 
+    array (
+      'id' => 210,
+      'name' => 'Plate of Roast Meat with Braised Leeks',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    209 => 
+    array (
+      'id' => 211,
+      'name' => 'Plate of Orrian Steak Frittes',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    210 => 
+    array (
+      'id' => 212,
+      'name' => 'Bowl of Marjory\'s Experimental Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    211 => 
+    array (
+      'id' => 213,
+      'name' => 'Grilled Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    212 => 
+    array (
+      'id' => 214,
+      'name' => 'Veggie Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    213 => 
+    array (
+      'id' => 215,
+      'name' => 'Cheese Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    214 => 
+    array (
+      'id' => 216,
+      'name' => 'Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    215 => 
+    array (
+      'id' => 217,
+      'name' => 'Sweet Bean Bun',
+      'type' => 'Food',
+      'rarity' => 'Exotic',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    216 => 
+    array (
+      'id' => 218,
+      'name' => 'Mushroom Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    217 => 
+    array (
+      'id' => 219,
+      'name' => 'Bowl of Fly Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    218 => 
+    array (
+      'id' => 220,
+      'name' => 'Fancy Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    219 => 
+    array (
+      'id' => 221,
+      'name' => 'Super Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    220 => 
+    array (
+      'id' => 222,
+      'name' => 'Koi Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    221 => 
+    array (
+      'id' => 223,
+      'name' => 'Rare Veggie Pizza',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    222 => 
+    array (
+      'id' => 224,
+      'name' => 'Prickly Pear Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    223 => 
+    array (
+      'id' => 225,
+      'name' => 'Bowl of Cactus Fruit Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    224 => 
+    array (
+      'id' => 226,
+      'name' => 'Grilled Portobello Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    225 => 
+    array (
+      'id' => 227,
+      'name' => 'Bowl of Mushroom Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    226 => 
+    array (
+      'id' => 228,
+      'name' => 'Bowl of Mushroom and Asparagus Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    227 => 
+    array (
+      'id' => 229,
+      'name' => 'Bowl of Truffle Risotto',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    228 => 
+    array (
+      'id' => 230,
+      'name' => 'Bowl of Creamy Portobello Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    229 => 
+    array (
+      'id' => 231,
+      'name' => 'Bowl of Fancy Creamy Mushroom Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    230 => 
+    array (
+      'id' => 232,
+      'name' => 'Bowl of Snow Truffle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    231 => 
+    array (
+      'id' => 233,
+      'name' => 'Bowl of Orrian Truffle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    232 => 
+    array (
+      'id' => 234,
+      'name' => 'Spinach Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    233 => 
+    array (
+      'id' => 235,
+      'name' => 'Deluxe Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    234 => 
+    array (
+      'id' => 236,
+      'name' => 'Horseradish Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    235 => 
+    array (
+      'id' => 237,
+      'name' => 'Spicy Cheeseburger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    236 => 
+    array (
+      'id' => 238,
+      'name' => 'Fancy Truffle Burger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    237 => 
+    array (
+      'id' => 239,
+      'name' => 'Hamburger',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    238 => 
+    array (
+      'id' => 240,
+      'name' => 'Bowl of Meaty Wurm Surprise',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    239 => 
+    array (
+      'id' => 241,
+      'name' => 'Bowl of Green Bean Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    240 => 
+    array (
+      'id' => 242,
+      'name' => 'Bowl of Simple Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    241 => 
+    array (
+      'id' => 243,
+      'name' => 'Cheeseburger',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    242 => 
+    array (
+      'id' => 244,
+      'name' => 'White Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    243 => 
+    array (
+      'id' => 245,
+      'name' => 'Bowl of Meat and Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    244 => 
+    array (
+      'id' => 246,
+      'name' => 'Chocolate Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    245 => 
+    array (
+      'id' => 247,
+      'name' => 'Bowl of Chili and Avocado',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    246 => 
+    array (
+      'id' => 248,
+      'name' => 'Bowl of Spiced Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    247 => 
+    array (
+      'id' => 249,
+      'name' => 'Bowl of Spicy Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    248 => 
+    array (
+      'id' => 250,
+      'name' => 'Bowl of Fire Meat Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    249 => 
+    array (
+      'id' => 251,
+      'name' => 'Chocolate Cherry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    250 => 
+    array (
+      'id' => 252,
+      'name' => 'Orange Coconut Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    251 => 
+    array (
+      'id' => 253,
+      'name' => 'Chocolate Raspberry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    252 => 
+    array (
+      'id' => 254,
+      'name' => 'Chocolate Omnomberry Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    253 => 
+    array (
+      'id' => 255,
+      'name' => 'Bowl of Vegetable Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    254 => 
+    array (
+      'id' => 256,
+      'name' => 'Bowl of Simple Vegetable Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    255 => 
+    array (
+      'id' => 257,
+      'name' => 'Bowl of Tomato Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    256 => 
+    array (
+      'id' => 258,
+      'name' => 'Bowl of Ice Wurm Bisque',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    257 => 
+    array (
+      'id' => 259,
+      'name' => 'Bowl of Beet and Bean Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    258 => 
+    array (
+      'id' => 260,
+      'name' => 'Bowl of Basic Vegetable Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    259 => 
+    array (
+      'id' => 261,
+      'name' => 'Bowl of Simple Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    260 => 
+    array (
+      'id' => 262,
+      'name' => 'Bowl of Fancy Bean Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    261 => 
+    array (
+      'id' => 263,
+      'name' => 'Bowl of Zucchini Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    262 => 
+    array (
+      'id' => 264,
+      'name' => 'Bowl of Degun Shun Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 46,
+      'pvx' => 6,
+    ),
+    263 => 
+    array (
+      'id' => 265,
+      'name' => 'Bowl of Spiced Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    264 => 
+    array (
+      'id' => 266,
+      'name' => 'Bowl of Spicy Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    265 => 
+    array (
+      'id' => 267,
+      'name' => 'Bowl of Fire Veggie Chili',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    266 => 
+    array (
+      'id' => 268,
+      'name' => 'Bowl of Skalefin Soup',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    267 => 
+    array (
+      'id' => 269,
+      'name' => 'Bowl of Tomato Zucchini Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    268 => 
+    array (
+      'id' => 270,
+      'name' => 'Bowl of Cauliflower Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    269 => 
+    array (
+      'id' => 271,
+      'name' => 'Minotaur Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    270 => 
+    array (
+      'id' => 272,
+      'name' => 'Bowl of Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    271 => 
+    array (
+      'id' => 273,
+      'name' => 'Bowl of Curry Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    272 => 
+    array (
+      'id' => 274,
+      'name' => 'Bowl of Yam Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    273 => 
+    array (
+      'id' => 275,
+      'name' => 'Bowl of Pumpkin Bisque',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    274 => 
+    array (
+      'id' => 276,
+      'name' => 'Bowl of Potato and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    275 => 
+    array (
+      'id' => 277,
+      'name' => 'Bowl of Fancy Potato and Leek Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    276 => 
+    array (
+      'id' => 278,
+      'name' => 'Bowl of Herbed Vegetable Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    277 => 
+    array (
+      'id' => 279,
+      'name' => 'Bowl of Kale Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    278 => 
+    array (
+      'id' => 280,
+      'name' => 'Bowl of Chickpea Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    279 => 
+    array (
+      'id' => 281,
+      'name' => 'Bowl of Artichoke Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    280 => 
+    array (
+      'id' => 282,
+      'name' => 'Bowl of Curry Pumpkin Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    281 => 
+    array (
+      'id' => 283,
+      'name' => 'Grumble Cake',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    282 => 
+    array (
+      'id' => 284,
+      'name' => 'Loaf of Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    283 => 
+    array (
+      'id' => 285,
+      'name' => 'Buttermilk Biscuit',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    284 => 
+    array (
+      'id' => 286,
+      'name' => 'Cinnamon Pinwheel',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    285 => 
+    array (
+      'id' => 287,
+      'name' => 'Bowl of Dolyak Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    286 => 
+    array (
+      'id' => 288,
+      'name' => 'Loaf of Banana Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    287 => 
+    array (
+      'id' => 289,
+      'name' => 'Loaf of Walnut Sticky Bread',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 17,
+      'pvx' => 6,
+    ),
+    288 => 
+    array (
+      'id' => 290,
+      'name' => 'Curry Bun',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 23,
+      'pvx' => 6,
+    ),
+    289 => 
+    array (
+      'id' => 291,
+      'name' => 'Loaf of Zucchini Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    290 => 
+    array (
+      'id' => 292,
+      'name' => 'Slice of Pumpkin Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    291 => 
+    array (
+      'id' => 293,
+      'name' => 'Loaf of Raspberry Peach Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    292 => 
+    array (
+      'id' => 294,
+      'name' => 'Loaf of Omnomberry Bread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    293 => 
+    array (
+      'id' => 295,
+      'name' => 'Passion Fruit Soufflé',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    294 => 
+    array (
+      'id' => 296,
+      'name' => 'Plate of Pasta with Tomato Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    295 => 
+    array (
+      'id' => 297,
+      'name' => 'Meatball',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    296 => 
+    array (
+      'id' => 298,
+      'name' => 'Meatball Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    297 => 
+    array (
+      'id' => 299,
+      'name' => 'Bowl of Grilled Bananas with Passion Fruit Sauce',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    298 => 
+    array (
+      'id' => 300,
+      'name' => 'Bowl of Krytan Meatball Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    299 => 
+    array (
+      'id' => 301,
+      'name' => 'Bowl of Pesto Pasta Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    300 => 
+    array (
+      'id' => 302,
+      'name' => 'Bowl of Poultry Tarragon Pasta',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    301 => 
+    array (
+      'id' => 303,
+      'name' => 'Bowl of Truffle Ravioli',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    302 => 
+    array (
+      'id' => 304,
+      'name' => 'Bowl of Salad a la Consortium',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    303 => 
+    array (
+      'id' => 305,
+      'name' => 'Passion Fruit Coconut Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    304 => 
+    array (
+      'id' => 306,
+      'name' => 'Stuffed Artichoke with Tropical Dressing',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    305 => 
+    array (
+      'id' => 307,
+      'name' => 'Bowl of Tropical Mousse',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    306 => 
+    array (
+      'id' => 308,
+      'name' => 'Bowl of Refugee\'s Beet Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    307 => 
+    array (
+      'id' => 309,
+      'name' => 'Blueberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    308 => 
+    array (
+      'id' => 310,
+      'name' => 'Sugar Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    309 => 
+    array (
+      'id' => 311,
+      'name' => 'Apple Passion Fruit Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    310 => 
+    array (
+      'id' => 312,
+      'name' => 'Strawberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    311 => 
+    array (
+      'id' => 313,
+      'name' => 'Bowl of Front Line Stew',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    312 => 
+    array (
+      'id' => 314,
+      'name' => 'Passion Fruit Bar',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    313 => 
+    array (
+      'id' => 315,
+      'name' => 'Delicious Rice Ball',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    314 => 
+    array (
+      'id' => 316,
+      'name' => 'Cherry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    315 => 
+    array (
+      'id' => 317,
+      'name' => 'Blackberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    316 => 
+    array (
+      'id' => 318,
+      'name' => 'Peach Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    317 => 
+    array (
+      'id' => 319,
+      'name' => 'Omnomberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    318 => 
+    array (
+      'id' => 320,
+      'name' => 'Chocolate Chip Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    319 => 
+    array (
+      'id' => 321,
+      'name' => 'Candy Corn Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    320 => 
+    array (
+      'id' => 322,
+      'name' => 'Chocolate Mint Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    321 => 
+    array (
+      'id' => 323,
+      'name' => 'Chocolate Raspberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    322 => 
+    array (
+      'id' => 324,
+      'name' => 'Glazed Chocolate Raspberry Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    323 => 
+    array (
+      'id' => 325,
+      'name' => 'Spicy Chocolate Cookie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    324 => 
+    array (
+      'id' => 326,
+      'name' => 'Cherry Passion Fruit Cake',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 45,
+      'pvx' => 6,
+    ),
+    325 => 
+    array (
+      'id' => 327,
+      'name' => 'Orange Passion Fruit Tart',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 60,
+      'pvx' => 6,
+    ),
+    326 => 
+    array (
+      'id' => 328,
+      'name' => 'Raspberry Passion Fruit Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    327 => 
+    array (
+      'id' => 329,
+      'name' => 'Bowl of Tropical Fruit Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    328 => 
+    array (
+      'id' => 330,
+      'name' => 'Bowl of Poultry Stock',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    329 => 
+    array (
+      'id' => 331,
+      'name' => 'Bowl of Poultry Noodle Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    330 => 
+    array (
+      'id' => 332,
+      'name' => 'Bowl of Savory Spinach and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    331 => 
+    array (
+      'id' => 333,
+      'name' => 'Bowl of Herbed Poultry Stock',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    332 => 
+    array (
+      'id' => 334,
+      'name' => 'Bowl of Kale and Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    333 => 
+    array (
+      'id' => 335,
+      'name' => 'Bowl of Hearty Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    334 => 
+    array (
+      'id' => 336,
+      'name' => 'Bowl of Saffron-scented Poultry Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    335 => 
+    array (
+      'id' => 337,
+      'name' => 'Bowl of Chocolate Chip Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    336 => 
+    array (
+      'id' => 338,
+      'name' => 'Bowl of Candy Corn Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    337 => 
+    array (
+      'id' => 339,
+      'name' => 'Bowl of Blueberry Chocolate Chunk Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    338 => 
+    array (
+      'id' => 340,
+      'name' => 'Bowl of Ginger-Lime Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    339 => 
+    array (
+      'id' => 341,
+      'name' => 'Bowl of Mint Chocolate Chip Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    340 => 
+    array (
+      'id' => 342,
+      'name' => 'Bowl of Peach Raspberry Swirl Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    341 => 
+    array (
+      'id' => 343,
+      'name' => 'Kralkachocolate Bar',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    342 => 
+    array (
+      'id' => 344,
+      'name' => 'Bowl of Saffron-Mango Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    343 => 
+    array (
+      'id' => 345,
+      'name' => 'Blueberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    344 => 
+    array (
+      'id' => 346,
+      'name' => 'Strawberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    345 => 
+    array (
+      'id' => 347,
+      'name' => 'Cherry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    346 => 
+    array (
+      'id' => 348,
+      'name' => 'Blackberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    347 => 
+    array (
+      'id' => 349,
+      'name' => 'Mixed Berry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    348 => 
+    array (
+      'id' => 350,
+      'name' => 'Slice of Candied Dragon Roll',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    349 => 
+    array (
+      'id' => 351,
+      'name' => 'Omnomberry Pie',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    350 => 
+    array (
+      'id' => 352,
+      'name' => 'Omnomberry Ghost',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    351 => 
+    array (
+      'id' => 353,
+      'name' => 'Chili Pepper Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    352 => 
+    array (
+      'id' => 354,
+      'name' => 'Stuffed Pepper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    353 => 
+    array (
+      'id' => 355,
+      'name' => 'Stuffed Zucchini',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    354 => 
+    array (
+      'id' => 356,
+      'name' => 'Bowl of Hummus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    355 => 
+    array (
+      'id' => 357,
+      'name' => 'Roasted Artichoke',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    356 => 
+    array (
+      'id' => 358,
+      'name' => 'Ghost Pepper Popper',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    357 => 
+    array (
+      'id' => 359,
+      'name' => 'Bowl of Sauteed Carrots',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    358 => 
+    array (
+      'id' => 360,
+      'name' => 'Celebratory Steak',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    359 => 
+    array (
+      'id' => 361,
+      'name' => 'Bowl of Ettin Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 13,
+      'pvx' => 6,
+    ),
+    360 => 
+    array (
+      'id' => 362,
+      'name' => 'Bowl of Garlic Spinach Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 15,
+      'pvx' => 6,
+    ),
+    361 => 
+    array (
+      'id' => 363,
+      'name' => 'Bowl of Sauteed Zucchini with Nutmeg',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    362 => 
+    array (
+      'id' => 364,
+      'name' => 'Handful of Trail Mix',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    363 => 
+    array (
+      'id' => 365,
+      'name' => 'Bowl of Cauliflower Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    364 => 
+    array (
+      'id' => 366,
+      'name' => 'Bowl of Eggplant Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 70,
+      'pvx' => 6,
+    ),
+    365 => 
+    array (
+      'id' => 367,
+      'name' => 'Bowl of Truffle Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    366 => 
+    array (
+      'id' => 368,
+      'name' => 'Bowl of Simple Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    367 => 
+    array (
+      'id' => 369,
+      'name' => 'Bowl of Avocado Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    368 => 
+    array (
+      'id' => 370,
+      'name' => 'Bowl of Eggplant Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    369 => 
+    array (
+      'id' => 371,
+      'name' => 'Bowl of Lotus Stirfry',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    370 => 
+    array (
+      'id' => 372,
+      'name' => 'Glass of Melon Juice',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    371 => 
+    array (
+      'id' => 373,
+      'name' => 'Bowl of Blueberry Apple Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    372 => 
+    array (
+      'id' => 374,
+      'name' => 'Bowl of Strawberry Apple Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    373 => 
+    array (
+      'id' => 375,
+      'name' => 'Bowl of Cherry Vanilla Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 30,
+      'pvx' => 6,
+    ),
+    374 => 
+    array (
+      'id' => 376,
+      'name' => 'Bowl of Blackberry Pear Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    375 => 
+    array (
+      'id' => 377,
+      'name' => 'Raspberry Peach Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    376 => 
+    array (
+      'id' => 378,
+      'name' => 'Mined Edible Root',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 68,
+      'pvx' => 6,
+    ),
+    377 => 
+    array (
+      'id' => 379,
+      'name' => 'Omnomberry Compote',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    378 => 
+    array (
+      'id' => 380,
+      'name' => 'Bowl of Simple Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 5,
+      'pvx' => 6,
+    ),
+    379 => 
+    array (
+      'id' => 381,
+      'name' => 'Bowl of Ascalonian Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    380 => 
+    array (
+      'id' => 382,
+      'name' => 'Bowl of Coleslaw',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    381 => 
+    array (
+      'id' => 383,
+      'name' => 'Bowl of Cabbage and Chickpea Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    382 => 
+    array (
+      'id' => 384,
+      'name' => 'Bowl of Asparagus and Sage Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    383 => 
+    array (
+      'id' => 385,
+      'name' => 'Bowl of Seaweed Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    384 => 
+    array (
+      'id' => 386,
+      'name' => 'Experimental Remnant',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    385 => 
+    array (
+      'id' => 387,
+      'name' => 'Marinated Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    386 => 
+    array (
+      'id' => 388,
+      'name' => 'Sage Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 20,
+      'pvx' => 6,
+    ),
+    387 => 
+    array (
+      'id' => 389,
+      'name' => 'Triktiki Omelet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 33,
+      'pvx' => 6,
+    ),
+    388 => 
+    array (
+      'id' => 390,
+      'name' => 'Divinity Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 35,
+      'pvx' => 6,
+    ),
+    389 => 
+    array (
+      'id' => 391,
+      'name' => 'Bowl of Tasty Wurm Stew',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 50,
+      'pvx' => 6,
+    ),
+    390 => 
+    array (
+      'id' => 392,
+      'name' => 'Eztlitl Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    391 => 
+    array (
+      'id' => 393,
+      'name' => 'Spicy Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 65,
+      'pvx' => 6,
+    ),
+    392 => 
+    array (
+      'id' => 394,
+      'name' => 'Saffron Stuffed Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    393 => 
+    array (
+      'id' => 395,
+      'name' => 'Steamed Red Dumpling',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    394 => 
+    array (
+      'id' => 396,
+      'name' => 'Moa Haunch',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 0,
+      'pvx' => 6,
+    ),
+    395 => 
+    array (
+      'id' => 397,
+      'name' => 'Spicy Meat Kabob',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 10,
+      'pvx' => 6,
+    ),
+    396 => 
+    array (
+      'id' => 398,
+      'name' => 'Pepper Steak Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 25,
+      'pvx' => 6,
+    ),
+    397 => 
+    array (
+      'id' => 399,
+      'name' => 'Sesame Roasted Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 40,
+      'pvx' => 6,
+    ),
+    398 => 
+    array (
+      'id' => 400,
+      'name' => 'Plate of Coriander Crusted Meat Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    399 => 
+    array (
+      'id' => 401,
+      'name' => 'Plate of Steak and Asparagus Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 75,
+      'pvx' => 6,
+    ),
+    400 => 
+    array (
+      'id' => 402,
+      'name' => 'Dragon\'s Breath Bun',
+      'type' => 'Food',
+      'rarity' => 'Common',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    401 => 
+    array (
+      'id' => 403,
+      'name' => 'Plate of Truffle Steak Dinner',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    402 => 
+    array (
+      'id' => 404,
+      'name' => 'Bowl of Garlic Kale Sautee',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    403 => 
+    array (
+      'id' => 405,
+      'name' => 'Bowl of Sweet and Spicy Butternut Squash Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    404 => 
+    array (
+      'id' => 406,
+      'name' => 'Bowl of Zesty Turnip Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    405 => 
+    array (
+      'id' => 407,
+      'name' => 'Carrot Soufflé',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    406 => 
+    array (
+      'id' => 408,
+      'name' => 'Mushroom Loaf',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    407 => 
+    array (
+      'id' => 409,
+      'name' => 'Plate of Frostgorge Clams',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    408 => 
+    array (
+      'id' => 410,
+      'name' => 'Plate of Spicy Herbed Chicken',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    409 => 
+    array (
+      'id' => 411,
+      'name' => 'Spicy Marinated Mushroom',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    410 => 
+    array (
+      'id' => 413,
+      'name' => 'Bowl of Cactus Soup',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    411 => 
+    array (
+      'id' => 414,
+      'name' => 'Bowl of Black Pepper Cactus Salad',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    412 => 
+    array (
+      'id' => 415,
+      'name' => 'Bowl of Nopalitos Sauté',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    413 => 
+    array (
+      'id' => 416,
+      'name' => 'Loaf of Candy Cactus Cornbread',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    414 => 
+    array (
+      'id' => 417,
+      'name' => 'Spring Roll',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    415 => 
+    array (
+      'id' => 418,
+      'name' => 'Fried Golden Dumpling',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    416 => 
+    array (
+      'id' => 419,
+      'name' => 'Jerk Poultry and Nopal Flatbread Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    417 => 
+    array (
+      'id' => 420,
+      'name' => 'Jerk Poultry Flatbread Sandwich',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    418 => 
+    array (
+      'id' => 421,
+      'name' => 'Cheesy Cassava Roll',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    419 => 
+    array (
+      'id' => 422,
+      'name' => 'Slice of Allspice Cake with Ice Cream',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    420 => 
+    array (
+      'id' => 423,
+      'name' => 'Slice of Allspice Cake',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    421 => 
+    array (
+      'id' => 424,
+      'name' => 'Plate of Mussels Gnashblade',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    422 => 
+    array (
+      'id' => 425,
+      'name' => 'Bowl of Curry Mussel Soup',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    423 => 
+    array (
+      'id' => 426,
+      'name' => 'Piece of Undersea Wurm Sushi',
+      'type' => 'Food',
+      'rarity' => 'Exotic',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    424 => 
+    array (
+      'id' => 427,
+      'name' => 'Bowl of Passion Fruit Tapioca Pudding',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    425 => 
+    array (
+      'id' => 428,
+      'name' => 'Bowl of Tapioca Pudding',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    426 => 
+    array (
+      'id' => 429,
+      'name' => 'Bowl of Sawgill Mushroom Risotto',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 55,
+      'pvx' => 6,
+    ),
+    427 => 
+    array (
+      'id' => 430,
+      'name' => 'Bowl of Prickly Pear Tapioca Pudding',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    428 => 
+    array (
+      'id' => 431,
+      'name' => 'Flatbread',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    429 => 
+    array (
+      'id' => 432,
+      'name' => 'Bowl of Chocolate Tapioca Pudding',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    430 => 
+    array (
+      'id' => 433,
+      'name' => 'Bowl of Mussel Soup',
+      'type' => 'Food',
+      'rarity' => 'Rare',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    431 => 
+    array (
+      'id' => 434,
+      'name' => 'Bowl of Lemongrass Mussel Pasta',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    432 => 
+    array (
+      'id' => 435,
+      'name' => 'Plate of Jerk Poultry',
+      'type' => 'Food',
+      'rarity' => 'Masterwork',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    433 => 
+    array (
+      'id' => 436,
+      'name' => 'Prickly Pear Stuffed Nopal',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    434 => 
+    array (
+      'id' => 437,
+      'name' => 'Bowl of Prickly Pear Sorbet',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    435 => 
+    array (
+      'id' => 438,
+      'name' => 'Bowl of Sweet and Spicy Beans',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+    436 => 
+    array (
+      'id' => 439,
+      'name' => 'Plate of Roasted Cactus',
+      'type' => 'Food',
+      'rarity' => 'Fine',
+      'level' => 80,
+      'pvx' => 6,
+    ),
+  ),
+  'upgrades' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Agony',
+      'pvp_name' => 'Sigil of Agony (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Smoldering',
+      'pvp_name' => 'Sigil of Smoldering (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Hobbling',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    3 => 
+    array (
+      'id' => 4,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Accuracy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    4 => 
+    array (
+      'id' => 5,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Force',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    5 => 
+    array (
+      'id' => 6,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of the Night',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    6 => 
+    array (
+      'id' => 7,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Bursting',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    7 => 
+    array (
+      'id' => 8,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Malice',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    8 => 
+    array (
+      'id' => 9,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Chilling',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    9 => 
+    array (
+      'id' => 10,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Venom',
+      'pvp_name' => 'Sigil of Venom (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    10 => 
+    array (
+      'id' => 11,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Paralyzation',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    11 => 
+    array (
+      'id' => 12,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Peril',
+      'pvp_name' => 'Sigil of Peril (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    12 => 
+    array (
+      'id' => 13,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Debility',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    13 => 
+    array (
+      'id' => 14,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Corruption',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    14 => 
+    array (
+      'id' => 15,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Stamina',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    15 => 
+    array (
+      'id' => 16,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Life',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    16 => 
+    array (
+      'id' => 17,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Restoration',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    17 => 
+    array (
+      'id' => 18,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Benevolence',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    18 => 
+    array (
+      'id' => 19,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Bloodlust',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    19 => 
+    array (
+      'id' => 20,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Perception',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    20 => 
+    array (
+      'id' => 21,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Momentum',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    21 => 
+    array (
+      'id' => 22,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Luck',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    22 => 
+    array (
+      'id' => 23,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Demon Summoning',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    23 => 
+    array (
+      'id' => 24,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Celerity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    24 => 
+    array (
+      'id' => 25,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Speed',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    25 => 
+    array (
+      'id' => 26,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Bounty',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    26 => 
+    array (
+      'id' => 27,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Air',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    27 => 
+    array (
+      'id' => 28,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Earth',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    28 => 
+    array (
+      'id' => 29,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Fire',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    29 => 
+    array (
+      'id' => 30,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Ice',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    30 => 
+    array (
+      'id' => 31,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Blood',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    31 => 
+    array (
+      'id' => 32,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Strength',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    32 => 
+    array (
+      'id' => 33,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Frailty',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    33 => 
+    array (
+      'id' => 34,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Water',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    34 => 
+    array (
+      'id' => 35,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Intelligence',
+      'pvp_name' => 'Sigil of Intelligence (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    35 => 
+    array (
+      'id' => 36,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Doom',
+      'pvp_name' => 'Sigil of Doom (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    36 => 
+    array (
+      'id' => 37,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Geomancy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    37 => 
+    array (
+      'id' => 38,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Energy',
+      'pvp_name' => 'Sigil of Energy (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    38 => 
+    array (
+      'id' => 39,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Hydromancy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    39 => 
+    array (
+      'id' => 40,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Leeching',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    40 => 
+    array (
+      'id' => 41,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Battle',
+      'pvp_name' => 'Sigil of Battle (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    41 => 
+    array (
+      'id' => 42,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Renewal',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    42 => 
+    array (
+      'id' => 43,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Rage',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    43 => 
+    array (
+      'id' => 44,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Generosity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    44 => 
+    array (
+      'id' => 45,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Impact',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    45 => 
+    array (
+      'id' => 46,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Torment',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    46 => 
+    array (
+      'id' => 47,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Cleansing',
+      'pvp_name' => 'Sigil of Cleansing (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    47 => 
+    array (
+      'id' => 48,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Cruelty',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    48 => 
+    array (
+      'id' => 49,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Blight',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    49 => 
+    array (
+      'id' => 50,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Mischief',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    50 => 
+    array (
+      'id' => 51,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Incapacitation',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    51 => 
+    array (
+      'id' => 52,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Agility',
+      'pvp_name' => 'Sigil of Agility (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    52 => 
+    array (
+      'id' => 53,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Transference',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    53 => 
+    array (
+      'id' => 54,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Ruthlessness',
+      'pvp_name' => 'Sigil of Ruthlessness (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    54 => 
+    array (
+      'id' => 55,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Absorption',
+      'pvp_name' => 'Sigil of Absorption (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    55 => 
+    array (
+      'id' => 56,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Draining',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    56 => 
+    array (
+      'id' => 57,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Rending',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    57 => 
+    array (
+      'id' => 58,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Concentration',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    58 => 
+    array (
+      'id' => 59,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Annulment',
+      'pvp_name' => 'Sigil of Annulment (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    59 => 
+    array (
+      'id' => 60,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Compounding',
+      'pvp_name' => 'Sigil of Compounding (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    60 => 
+    array (
+      'id' => 61,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Confusion',
+      'pvp_name' => 'Sigil of Confusion (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    61 => 
+    array (
+      'id' => 62,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Courage',
+      'pvp_name' => 'Sigil of Courage (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    62 => 
+    array (
+      'id' => 63,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Enhancement',
+      'pvp_name' => 'Sigil of Enhancement (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    63 => 
+    array (
+      'id' => 64,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Escape',
+      'pvp_name' => 'Sigil of Escape (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    64 => 
+    array (
+      'id' => 65,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Exploitation',
+      'pvp_name' => 'Sigil of Exploitation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    65 => 
+    array (
+      'id' => 66,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Exposure',
+      'pvp_name' => 'Sigil of Exposure (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    66 => 
+    array (
+      'id' => 67,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Fallibility',
+      'pvp_name' => 'Sigil of Fallibility (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    67 => 
+    array (
+      'id' => 68,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Misery',
+      'pvp_name' => 'Sigil of Misery (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    68 => 
+    array (
+      'id' => 69,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Opportunity',
+      'pvp_name' => 'Sigil of Opportunity (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    69 => 
+    array (
+      'id' => 70,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Purging',
+      'pvp_name' => 'Sigil of Purging (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    70 => 
+    array (
+      'id' => 71,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Revocation',
+      'pvp_name' => 'Sigil of Revocation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    71 => 
+    array (
+      'id' => 72,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Savagery',
+      'pvp_name' => 'Sigil of Savagery (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    72 => 
+    array (
+      'id' => 73,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Separation',
+      'pvp_name' => 'Sigil of Separation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    73 => 
+    array (
+      'id' => 74,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Stagnation',
+      'pvp_name' => 'Sigil of Stagnation (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    74 => 
+    array (
+      'id' => 75,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Severance',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    75 => 
+    array (
+      'id' => 76,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Frenzy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    76 => 
+    array (
+      'id' => 77,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of the Stars',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    77 => 
+    array (
+      'id' => 78,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Nullification',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    78 => 
+    array (
+      'id' => 79,
+      'type' => 'Sigil',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Sigil of Purity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    79 => 
+    array (
+      'id' => 90,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Afflicted',
+      'pvp_name' => 'Rune of the Afflicted (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    80 => 
+    array (
+      'id' => 91,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Air',
+      'pvp_name' => 'Rune of Air (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    81 => 
+    array (
+      'id' => 92,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Balthazar',
+      'pvp_name' => 'Rune of Balthazar (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    82 => 
+    array (
+      'id' => 93,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Centaur',
+      'pvp_name' => 'Rune of the Centaur (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    83 => 
+    array (
+      'id' => 94,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Citadel',
+      'pvp_name' => 'Rune of the Citadel (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    84 => 
+    array (
+      'id' => 95,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Divinity',
+      'pvp_name' => 'Rune of Divinity (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    85 => 
+    array (
+      'id' => 96,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Dolyak',
+      'pvp_name' => 'Rune of the Dolyak (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    86 => 
+    array (
+      'id' => 97,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Dwayna',
+      'pvp_name' => 'Rune of Dwayna (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    87 => 
+    array (
+      'id' => 98,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Eagle',
+      'pvp_name' => 'Rune of the Eagle (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    88 => 
+    array (
+      'id' => 99,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Strength',
+      'pvp_name' => 'Rune of Strength (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    89 => 
+    array (
+      'id' => 100,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Fire',
+      'pvp_name' => 'Rune of Fire (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    90 => 
+    array (
+      'id' => 101,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Earth',
+      'pvp_name' => 'Rune of Earth (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    91 => 
+    array (
+      'id' => 102,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Flame Legion',
+      'pvp_name' => 'Rune of the Flame Legion (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    92 => 
+    array (
+      'id' => 103,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Flock',
+      'pvp_name' => 'Rune of the Flock (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    93 => 
+    array (
+      'id' => 104,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Krait',
+      'pvp_name' => 'Rune of the Krait (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    94 => 
+    array (
+      'id' => 105,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Grenth',
+      'pvp_name' => 'Rune of Grenth (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    95 => 
+    array (
+      'id' => 106,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Grove',
+      'pvp_name' => 'Rune of the Grove (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    96 => 
+    array (
+      'id' => 107,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Hoelbrak',
+      'pvp_name' => 'Rune of Hoelbrak (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    97 => 
+    array (
+      'id' => 108,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Ice',
+      'pvp_name' => 'Rune of Ice (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    98 => 
+    array (
+      'id' => 109,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Infiltration',
+      'pvp_name' => 'Rune of Infiltration (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    99 => 
+    array (
+      'id' => 110,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Lich',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    100 => 
+    array (
+      'id' => 111,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Lyssa',
+      'pvp_name' => 'Rune of Lyssa (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    101 => 
+    array (
+      'id' => 112,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Melandru',
+      'pvp_name' => 'Rune of Melandru (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    102 => 
+    array (
+      'id' => 113,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Mercy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    103 => 
+    array (
+      'id' => 114,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Ogre',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    104 => 
+    array (
+      'id' => 115,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Pack',
+      'pvp_name' => 'Rune of the Pack (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    105 => 
+    array (
+      'id' => 116,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Rage',
+      'pvp_name' => 'Rune of Rage (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    106 => 
+    array (
+      'id' => 117,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Rata Sum',
+      'pvp_name' => 'Rune of Rata Sum (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    107 => 
+    array (
+      'id' => 118,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Speed',
+      'pvp_name' => 'Rune of Speed (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    108 => 
+    array (
+      'id' => 119,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Undead',
+      'pvp_name' => 'Rune of the Undead (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    109 => 
+    array (
+      'id' => 120,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Vampirism',
+      'pvp_name' => 'Rune of Vampirism (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    110 => 
+    array (
+      'id' => 121,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Wurm',
+      'pvp_name' => 'Rune of the Wurm (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    111 => 
+    array (
+      'id' => 122,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Svanir',
+      'pvp_name' => 'Rune of Svanir (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    112 => 
+    array (
+      'id' => 123,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Necromancer',
+      'pvp_name' => 'Rune of the Necromancer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    113 => 
+    array (
+      'id' => 124,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Mesmer',
+      'pvp_name' => 'Rune of the Mesmer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    114 => 
+    array (
+      'id' => 125,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Engineer',
+      'pvp_name' => 'Rune of the Engineer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    115 => 
+    array (
+      'id' => 126,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Ranger',
+      'pvp_name' => 'Rune of the Ranger (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    116 => 
+    array (
+      'id' => 127,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Elementalist',
+      'pvp_name' => 'Rune of the Elementalist (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    117 => 
+    array (
+      'id' => 128,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Thief',
+      'pvp_name' => 'Rune of the Thief (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    118 => 
+    array (
+      'id' => 129,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Warrior',
+      'pvp_name' => 'Rune of the Warrior (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    119 => 
+    array (
+      'id' => 130,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Guardian',
+      'pvp_name' => 'Rune of the Guardian (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    120 => 
+    array (
+      'id' => 131,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Trooper',
+      'pvp_name' => 'Rune of the Soldier (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    121 => 
+    array (
+      'id' => 132,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Adventurer',
+      'pvp_name' => 'Rune of Adventure (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    122 => 
+    array (
+      'id' => 133,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Brawler',
+      'pvp_name' => 'Rune of the Fighter (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    123 => 
+    array (
+      'id' => 134,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Scholar',
+      'pvp_name' => 'Rune of the Scholar (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    124 => 
+    array (
+      'id' => 135,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Water',
+      'pvp_name' => 'Rune of the Water (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    125 => 
+    array (
+      'id' => 136,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Monk',
+      'pvp_name' => 'Rune of the Monk (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    126 => 
+    array (
+      'id' => 137,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Nightmare',
+      'pvp_name' => 'Rune of the Nightmare (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    127 => 
+    array (
+      'id' => 138,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Forgeman',
+      'pvp_name' => 'Rune of the Forge (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    128 => 
+    array (
+      'id' => 139,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Baelfire',
+      'pvp_name' => 'Rune of the Baelfire (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    129 => 
+    array (
+      'id' => 140,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Sanctuary',
+      'pvp_name' => 'Rune of Sanctuary (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    130 => 
+    array (
+      'id' => 141,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Orr',
+      'pvp_name' => 'Rune of Orr (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    131 => 
+    array (
+      'id' => 142,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Exuberance',
+      'pvp_name' => 'Rune of Exuberance (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    132 => 
+    array (
+      'id' => 143,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Perplexity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    133 => 
+    array (
+      'id' => 144,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Tormenting',
+      'pvp_name' => 'Rune of Tormenting (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    134 => 
+    array (
+      'id' => 145,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Mad King',
+      'pvp_name' => 'Rune of the Mad King (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    135 => 
+    array (
+      'id' => 146,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Scavenging',
+      'pvp_name' => 'Rune of Scavenging (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    136 => 
+    array (
+      'id' => 147,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Altruism',
+      'pvp_name' => 'Rune of Altruism (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    137 => 
+    array (
+      'id' => 148,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Aristocracy',
+      'pvp_name' => 'Rune of the Aristocracy (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    138 => 
+    array (
+      'id' => 149,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Traveler',
+      'pvp_name' => 'Rune of the Traveler (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    139 => 
+    array (
+      'id' => 150,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Privateer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    140 => 
+    array (
+      'id' => 151,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Golemancer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    141 => 
+    array (
+      'id' => 152,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Sunless',
+      'pvp_name' => 'Rune of the Sunless (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    142 => 
+    array (
+      'id' => 153,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Resistance',
+      'pvp_name' => 'Rune of Resistance (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    143 => 
+    array (
+      'id' => 154,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Evasion',
+      'pvp_name' => 'Rune of Evasion (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    144 => 
+    array (
+      'id' => 155,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Trapper',
+      'pvp_name' => 'Rune of the Trapper (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    145 => 
+    array (
+      'id' => 156,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Radiance',
+      'pvp_name' => 'Rune of Radiance (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    146 => 
+    array (
+      'id' => 157,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Snowfall',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    147 => 
+    array (
+      'id' => 158,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Defender',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    148 => 
+    array (
+      'id' => 159,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Durability',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    149 => 
+    array (
+      'id' => 160,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Leadership',
+      'pvp_name' => 'Rune of Leadership (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    150 => 
+    array (
+      'id' => 161,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Surging',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    151 => 
+    array (
+      'id' => 162,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Berserker',
+      'pvp_name' => 'Rune of the Berserker (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    152 => 
+    array (
+      'id' => 163,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Chronomancer',
+      'pvp_name' => 'Rune of the Chronomancer (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    153 => 
+    array (
+      'id' => 164,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Daredevil',
+      'pvp_name' => 'Rune of the Daredevil (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    154 => 
+    array (
+      'id' => 165,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Dragonhunter',
+      'pvp_name' => 'Rune of the Dragonhunter (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    155 => 
+    array (
+      'id' => 166,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Druid',
+      'pvp_name' => 'Rune of the Druid (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    156 => 
+    array (
+      'id' => 167,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Herald',
+      'pvp_name' => 'Rune of the Herald (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    157 => 
+    array (
+      'id' => 168,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Reaper',
+      'pvp_name' => 'Rune of the Reaper (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    158 => 
+    array (
+      'id' => 169,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Revenant',
+      'pvp_name' => 'Rune of the Revenant (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    159 => 
+    array (
+      'id' => 170,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Scrapper',
+      'pvp_name' => 'Rune of the Scrapper (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    160 => 
+    array (
+      'id' => 171,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Tempest',
+      'pvp_name' => 'Rune of the Tempest (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    161 => 
+    array (
+      'id' => 172,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Thorns',
+      'pvp_name' => 'Rune of Thorns (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    162 => 
+    array (
+      'id' => 173,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Weaver',
+      'pvp_name' => 'Rune of the Weaver (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    163 => 
+    array (
+      'id' => 174,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Spellbreaker',
+      'pvp_name' => 'Rune of the Spellbreaker (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    164 => 
+    array (
+      'id' => 175,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Soulbeast',
+      'pvp_name' => 'Rune of the Soulbeast (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    165 => 
+    array (
+      'id' => 176,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Scourge',
+      'pvp_name' => 'Rune of the Scourge (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    166 => 
+    array (
+      'id' => 177,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Firebrand',
+      'pvp_name' => 'Rune of the Firebrand (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    167 => 
+    array (
+      'id' => 178,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Deadeye',
+      'pvp_name' => 'Rune of the Deadeye (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    168 => 
+    array (
+      'id' => 179,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Holosmith',
+      'pvp_name' => 'Rune of the Holosmith (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    169 => 
+    array (
+      'id' => 180,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Mirage',
+      'pvp_name' => 'Rune of the Mirage (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    170 => 
+    array (
+      'id' => 181,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Renegade',
+      'pvp_name' => 'Rune of the Renegade (PvP)',
+      'pvx' => 7,
+      'is_profile' => false,
+    ),
+    171 => 
+    array (
+      'id' => 182,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Rebirth',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    172 => 
+    array (
+      'id' => 183,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Cavalier',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    173 => 
+    array (
+      'id' => 184,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Nature\'s Bounty',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    174 => 
+    array (
+      'id' => 185,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Stars',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    175 => 
+    array (
+      'id' => 186,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of the Lynx',
+      'pvp_name' => 'Rune of the Lynx (PvP)',
+      'pvx' => 1,
+      'is_profile' => false,
+    ),
+    176 => 
+    array (
+      'id' => 187,
+      'type' => 'Rune',
+      'rarity' => 'Exotic',
+      'name' => 'Superior Rune of Antitoxin',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    177 => 
+    array (
+      'id' => 227,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Malign Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    178 => 
+    array (
+      'id' => 228,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Mighty Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    179 => 
+    array (
+      'id' => 229,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Precise Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    180 => 
+    array (
+      'id' => 230,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Malign +5 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    181 => 
+    array (
+      'id' => 231,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Mighty +5 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    182 => 
+    array (
+      'id' => 232,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Precise +5 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    183 => 
+    array (
+      'id' => 233,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Malign WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    184 => 
+    array (
+      'id' => 234,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Mighty WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    185 => 
+    array (
+      'id' => 235,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Precise WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    186 => 
+    array (
+      'id' => 236,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Healing Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    187 => 
+    array (
+      'id' => 237,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Resilient Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    188 => 
+    array (
+      'id' => 238,
+      'type' => 'Infusion',
+      'rarity' => 'Common',
+      'name' => 'Vital Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    189 => 
+    array (
+      'id' => 239,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Healing +5 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    190 => 
+    array (
+      'id' => 240,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Resilient +5 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    191 => 
+    array (
+      'id' => 241,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Vital +5 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    192 => 
+    array (
+      'id' => 242,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Healing WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    193 => 
+    array (
+      'id' => 243,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Resilient WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    194 => 
+    array (
+      'id' => 244,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Vital WvW Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    195 => 
+    array (
+      'id' => 245,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Gilded Enrichment',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    196 => 
+    array (
+      'id' => 246,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Magical Enrichment',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    197 => 
+    array (
+      'id' => 247,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Experienced Enrichment',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    198 => 
+    array (
+      'id' => 248,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Karmic Enrichment',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    199 => 
+    array (
+      'id' => 250,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Mystical +5 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    200 => 
+    array (
+      'id' => 251,
+      'type' => 'Infusion',
+      'rarity' => 'Fine',
+      'name' => 'Spiteful +5 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    201 => 
+    array (
+      'id' => 252,
+      'type' => 'Infusion',
+      'rarity' => 'Masterwork',
+      'name' => 'Mystical +7 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    202 => 
+    array (
+      'id' => 253,
+      'type' => 'Infusion',
+      'rarity' => 'Masterwork',
+      'name' => 'Spiteful +7 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    203 => 
+    array (
+      'id' => 254,
+      'type' => 'Infusion',
+      'rarity' => 'Masterwork',
+      'name' => 'Malign +7 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    204 => 
+    array (
+      'id' => 255,
+      'type' => 'Infusion',
+      'rarity' => 'Masterwork',
+      'name' => 'Mighty +7 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    205 => 
+    array (
+      'id' => 256,
+      'type' => 'Infusion',
+      'rarity' => 'Masterwork',
+      'name' => 'Precise +7 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    206 => 
+    array (
+      'id' => 257,
+      'type' => 'Infusion',
+      'rarity' => 'Masterwork',
+      'name' => 'Healing +7 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    207 => 
+    array (
+      'id' => 258,
+      'type' => 'Infusion',
+      'rarity' => 'Masterwork',
+      'name' => 'Resilient +7 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    208 => 
+    array (
+      'id' => 259,
+      'type' => 'Infusion',
+      'rarity' => 'Masterwork',
+      'name' => 'Vital +7 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    209 => 
+    array (
+      'id' => 260,
+      'type' => 'Infusion',
+      'rarity' => 'Rare',
+      'name' => 'Mystical +9 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    210 => 
+    array (
+      'id' => 261,
+      'type' => 'Infusion',
+      'rarity' => 'Rare',
+      'name' => 'Spiteful +9 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    211 => 
+    array (
+      'id' => 262,
+      'type' => 'Infusion',
+      'rarity' => 'Rare',
+      'name' => 'Malign +9 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    212 => 
+    array (
+      'id' => 263,
+      'type' => 'Infusion',
+      'rarity' => 'Rare',
+      'name' => 'Mighty +9 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    213 => 
+    array (
+      'id' => 264,
+      'type' => 'Infusion',
+      'rarity' => 'Rare',
+      'name' => 'Precise +9 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    214 => 
+    array (
+      'id' => 265,
+      'type' => 'Infusion',
+      'rarity' => 'Rare',
+      'name' => 'Healing +9 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    215 => 
+    array (
+      'id' => 266,
+      'type' => 'Infusion',
+      'rarity' => 'Rare',
+      'name' => 'Resilient +9 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    216 => 
+    array (
+      'id' => 267,
+      'type' => 'Infusion',
+      'rarity' => 'Rare',
+      'name' => 'Vital +9 Agony Infusion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    217 => 
+    array (
+      'id' => 268,
+      'type' => 'Doubloon',
+      'rarity' => 'Rare',
+      'name' => 'Copper Doubloon',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    218 => 
+    array (
+      'id' => 269,
+      'type' => 'Doubloon',
+      'rarity' => 'Rare',
+      'name' => 'Silver Doubloon',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    219 => 
+    array (
+      'id' => 270,
+      'type' => 'Doubloon',
+      'rarity' => 'Rare',
+      'name' => 'Gold Doubloon',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    220 => 
+    array (
+      'id' => 271,
+      'type' => 'Doubloon',
+      'rarity' => 'Rare',
+      'name' => 'Platinum Doubloon',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    221 => 
+    array (
+      'id' => 272,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Afflicted',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    222 => 
+    array (
+      'id' => 273,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Air',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    223 => 
+    array (
+      'id' => 274,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Balthazar',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    224 => 
+    array (
+      'id' => 275,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Centaur',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    225 => 
+    array (
+      'id' => 276,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Citadel',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    226 => 
+    array (
+      'id' => 277,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Divinity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    227 => 
+    array (
+      'id' => 278,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Dolyak',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    228 => 
+    array (
+      'id' => 279,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Dwayna',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    229 => 
+    array (
+      'id' => 280,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Eagle',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    230 => 
+    array (
+      'id' => 281,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Strength',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    231 => 
+    array (
+      'id' => 282,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Fire',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    232 => 
+    array (
+      'id' => 283,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Earth',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    233 => 
+    array (
+      'id' => 284,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Flame Legion',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    234 => 
+    array (
+      'id' => 285,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Flock',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    235 => 
+    array (
+      'id' => 286,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Krait',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    236 => 
+    array (
+      'id' => 287,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Grenth',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    237 => 
+    array (
+      'id' => 288,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Grove',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    238 => 
+    array (
+      'id' => 289,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Hoelbrak',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    239 => 
+    array (
+      'id' => 290,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Ice',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    240 => 
+    array (
+      'id' => 291,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Infiltration',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    241 => 
+    array (
+      'id' => 292,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Lich',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    242 => 
+    array (
+      'id' => 293,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Lyssa',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    243 => 
+    array (
+      'id' => 294,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Melandru',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    244 => 
+    array (
+      'id' => 295,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Mercy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    245 => 
+    array (
+      'id' => 296,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Ogre',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    246 => 
+    array (
+      'id' => 297,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Pack',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    247 => 
+    array (
+      'id' => 298,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Rage',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    248 => 
+    array (
+      'id' => 299,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Rata Sum',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    249 => 
+    array (
+      'id' => 300,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Speed',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    250 => 
+    array (
+      'id' => 301,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Undead',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    251 => 
+    array (
+      'id' => 302,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Vampirism',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    252 => 
+    array (
+      'id' => 303,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Wurm',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    253 => 
+    array (
+      'id' => 304,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Svanir',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    254 => 
+    array (
+      'id' => 305,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Necromancer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    255 => 
+    array (
+      'id' => 306,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Mesmer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    256 => 
+    array (
+      'id' => 307,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Engineer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    257 => 
+    array (
+      'id' => 308,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Ranger',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    258 => 
+    array (
+      'id' => 309,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Elementalist',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    259 => 
+    array (
+      'id' => 310,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Thief',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    260 => 
+    array (
+      'id' => 311,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Warrior',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    261 => 
+    array (
+      'id' => 312,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Guardian',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    262 => 
+    array (
+      'id' => 313,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Trooper',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    263 => 
+    array (
+      'id' => 314,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Adventurer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    264 => 
+    array (
+      'id' => 315,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Brawler',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    265 => 
+    array (
+      'id' => 316,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Scholar',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    266 => 
+    array (
+      'id' => 317,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Water',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    267 => 
+    array (
+      'id' => 318,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Monk',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    268 => 
+    array (
+      'id' => 319,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Nightmare',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    269 => 
+    array (
+      'id' => 320,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Forgeman',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    270 => 
+    array (
+      'id' => 321,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Baelfire',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    271 => 
+    array (
+      'id' => 322,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Sanctuary',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    272 => 
+    array (
+      'id' => 323,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Orr',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    273 => 
+    array (
+      'id' => 324,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Exuberance',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    274 => 
+    array (
+      'id' => 325,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Perplexity',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    275 => 
+    array (
+      'id' => 326,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Tormenting',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    276 => 
+    array (
+      'id' => 327,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Mad King',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    277 => 
+    array (
+      'id' => 328,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Scavenging',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    278 => 
+    array (
+      'id' => 329,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Altruism',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    279 => 
+    array (
+      'id' => 330,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Aristocracy',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    280 => 
+    array (
+      'id' => 331,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Traveler',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    281 => 
+    array (
+      'id' => 332,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Privateer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    282 => 
+    array (
+      'id' => 333,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of the Golemancer',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    283 => 
+    array (
+      'id' => 334,
+      'type' => 'Rune',
+      'rarity' => 'Rare',
+      'name' => 'Major Rune of Snowfall',
+      'pvx' => 6,
+      'is_profile' => false,
+    ),
+    284 => 
+    array (
+      'id' => 1,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Soldier',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    285 => 
+    array (
+      'id' => 2,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Shaman',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    286 => 
+    array (
+      'id' => 3,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Rabid',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    287 => 
+    array (
+      'id' => 4,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Magi',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    288 => 
+    array (
+      'id' => 5,
+      'type' => 'Crest',
+      'rarity' => 'Rare',
+      'name' => 'Crest of the Assassin',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    289 => 
+    array (
+      'id' => 6,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Ruby Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    290 => 
+    array (
+      'id' => 7,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Beryl Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    291 => 
+    array (
+      'id' => 8,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Emerald Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    292 => 
+    array (
+      'id' => 9,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Coral Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    293 => 
+    array (
+      'id' => 10,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Chrysocola Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    294 => 
+    array (
+      'id' => 11,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Sapphire Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    295 => 
+    array (
+      'id' => 12,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Opal Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    296 => 
+    array (
+      'id' => 14,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Agate Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    297 => 
+    array (
+      'id' => 15,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Black Diamond',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    298 => 
+    array (
+      'id' => 16,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Freshwater Pearl',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    299 => 
+    array (
+      'id' => 17,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Ebony Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    300 => 
+    array (
+      'id' => 18,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Moonstone Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    301 => 
+    array (
+      'id' => 19,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Maguuma Burl',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    302 => 
+    array (
+      'id' => 20,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Maguuma Lily',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    303 => 
+    array (
+      'id' => 21,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Flax Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    304 => 
+    array (
+      'id' => 22,
+      'type' => 'Gemstone',
+      'rarity' => 'Rare',
+      'name' => 'Azurite Orb',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    305 => 
+    array (
+      'id' => 23,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Ruby Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    306 => 
+    array (
+      'id' => 24,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Beryl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    307 => 
+    array (
+      'id' => 25,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Emerald Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    308 => 
+    array (
+      'id' => 26,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Coral Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    309 => 
+    array (
+      'id' => 27,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Chrysocola Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    310 => 
+    array (
+      'id' => 28,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Sapphire Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    311 => 
+    array (
+      'id' => 29,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Opal Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    312 => 
+    array (
+      'id' => 30,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Azurite Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    313 => 
+    array (
+      'id' => 31,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Snowflake',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    314 => 
+    array (
+      'id' => 32,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Charged Quartz Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    315 => 
+    array (
+      'id' => 33,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Watchwork Sprocket',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    316 => 
+    array (
+      'id' => 34,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Ambrite Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    317 => 
+    array (
+      'id' => 35,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Charged Ambrite Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    318 => 
+    array (
+      'id' => 36,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Burl Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    319 => 
+    array (
+      'id' => 37,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Ebony Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    320 => 
+    array (
+      'id' => 38,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Agate Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    321 => 
+    array (
+      'id' => 39,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Freshwater Pearl',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    322 => 
+    array (
+      'id' => 40,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Lily Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    323 => 
+    array (
+      'id' => 41,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Flax Blossom',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    324 => 
+    array (
+      'id' => 42,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Black Diamond Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    325 => 
+    array (
+      'id' => 43,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Moonstone Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    326 => 
+    array (
+      'id' => 44,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Brandspark Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    327 => 
+    array (
+      'id' => 45,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Mournstone',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    328 => 
+    array (
+      'id' => 46,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Sunset Jewel',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    329 => 
+    array (
+      'id' => 47,
+      'type' => 'Jewel',
+      'rarity' => 'Exotic',
+      'name' => 'Exquisite Passion Flower',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+  ),
+  'races' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'name' => 'Human',
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'name' => 'Charr',
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'name' => 'Norn',
+    ),
+    3 => 
+    array (
+      'id' => 5,
+      'name' => 'Sylvari',
+    ),
+    4 => 
+    array (
+      'id' => 4,
+      'name' => 'Asura',
+    ),
+  ),
+  'professions' => 
+  array (
+    0 => 
+    array (
+      'id' => 4,
+      'name' => 'Necromancer',
+    ),
+    1 => 
+    array (
+      'id' => 3,
+      'name' => 'Ranger',
+    ),
+    2 => 
+    array (
+      'id' => 8,
+      'name' => 'Mesmer',
+    ),
+    3 => 
+    array (
+      'id' => 6,
+      'name' => 'Thief',
+    ),
+    4 => 
+    array (
+      'id' => 7,
+      'name' => 'Engineer',
+    ),
+    5 => 
+    array (
+      'id' => 5,
+      'name' => 'Guardian',
+    ),
+    6 => 
+    array (
+      'id' => 9,
+      'name' => 'Revenant',
+    ),
+    7 => 
+    array (
+      'id' => 2,
+      'name' => 'Warrior',
+    ),
+    8 => 
+    array (
+      'id' => 1,
+      'name' => 'Elementalist',
+    ),
+  ),
+  'traits' => 
+  array (
+    0 => 
+    array (
+      'id' => 3,
+      'name' => 'Empowering Flame',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    1 => 
+    array (
+      'id' => 516,
+      'name' => 'Zealot\'s Speed',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    2 => 
+    array (
+      'id' => 772,
+      'name' => 'Evasive Powder Keg',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    3 => 
+    array (
+      'id' => 1033,
+      'name' => 'Mirage Cloak',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    4 => 
+    array (
+      'id' => 273,
+      'name' => 'Tail Wind',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    5 => 
+    array (
+      'id' => 533,
+      'name' => 'Justice is Blind',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    6 => 
+    array (
+      'id' => 1045,
+      'name' => 'Expose Defenses',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    7 => 
+    array (
+      'id' => 22,
+      'name' => 'Zephyr\'s Speed',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    8 => 
+    array (
+      'id' => 798,
+      'name' => 'Sharpshooter',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    9 => 
+    array (
+      'id' => 1057,
+      'name' => 'Rampant Vex',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    10 => 
+    array (
+      'id' => 292,
+      'name' => 'Natural Vigor',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    11 => 
+    array (
+      'id' => 42,
+      'name' => 'Stone Flesh',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    12 => 
+    array (
+      'id' => 554,
+      'name' => 'Valorous Defense',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    13 => 
+    array (
+      'id' => 1069,
+      'name' => 'Enduring Recovery',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    14 => 
+    array (
+      'id' => 823,
+      'name' => 'Cleansing Synergy',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    15 => 
+    array (
+      'id' => 1081,
+      'name' => 'Disarming Riposte',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    16 => 
+    array (
+      'id' => 314,
+      'name' => 'Rejuvenation',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    17 => 
+    array (
+      'id' => 61,
+      'name' => 'Soothing Mist',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    18 => 
+    array (
+      'id' => 573,
+      'name' => 'Vigorous Precision',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    19 => 
+    array (
+      'id' => 1093,
+      'name' => 'Invoker\'s Rage',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    20 => 
+    array (
+      'id' => 81,
+      'name' => 'Arcane Prowess',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    21 => 
+    array (
+      'id' => 1105,
+      'name' => 'Crystal Harbinger',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    22 => 
+    array (
+      'id' => 339,
+      'name' => 'Pack Alpha',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    23 => 
+    array (
+      'id' => 595,
+      'name' => 'Inspired Virtue',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    24 => 
+    array (
+      'id' => 851,
+      'name' => 'Hidden Flask',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    25 => 
+    array (
+      'id' => 1117,
+      'name' => 'Ambush Commander',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    26 => 
+    array (
+      'id' => 98,
+      'name' => 'Singularity',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    27 => 
+    array (
+      'id' => 874,
+      'name' => 'Optimized Activation',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    28 => 
+    array (
+      'id' => 619,
+      'name' => 'Virtuous Action',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    29 => 
+    array (
+      'id' => 365,
+      'name' => 'Celestial Being',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    30 => 
+    array (
+      'id' => 110,
+      'name' => 'Weaver',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    31 => 
+    array (
+      'id' => 631,
+      'name' => 'Purity of Word',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    32 => 
+    array (
+      'id' => 377,
+      'name' => 'Elevated Bond',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    33 => 
+    array (
+      'id' => 124,
+      'name' => 'Reckless Dodge',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    34 => 
+    array (
+      'id' => 895,
+      'name' => 'Function Gyro',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    35 => 
+    array (
+      'id' => 645,
+      'name' => 'Serpent\'s Touch',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    36 => 
+    array (
+      'id' => 391,
+      'name' => 'Reaper\'s Might',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    37 => 
+    array (
+      'id' => 908,
+      'name' => 'Photon Projector',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    38 => 
+    array (
+      'id' => 146,
+      'name' => 'Furious Burst',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    39 => 
+    array (
+      'id' => 922,
+      'name' => 'Illusion of Vulnerability',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    40 => 
+    array (
+      'id' => 667,
+      'name' => 'Keen Observer',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    41 => 
+    array (
+      'id' => 412,
+      'name' => 'Barbed Precision',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    42 => 
+    array (
+      'id' => 168,
+      'name' => 'Thick Skin',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    43 => 
+    array (
+      'id' => 942,
+      'name' => 'Critical Infusion',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    44 => 
+    array (
+      'id' => 431,
+      'name' => 'Armored Shroud',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    45 => 
+    array (
+      'id' => 687,
+      'name' => 'Merciful Ambush',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    46 => 
+    array (
+      'id' => 187,
+      'name' => 'Determined Revival',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    47 => 
+    array (
+      'id' => 961,
+      'name' => 'Metaphysical Rejuvenation',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    48 => 
+    array (
+      'id' => 451,
+      'name' => 'Mark of Evasion',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    49 => 
+    array (
+      'id' => 708,
+      'name' => 'Expeditious Dodger',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    50 => 
+    array (
+      'id' => 206,
+      'name' => 'Versatile Rage',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    51 => 
+    array (
+      'id' => 981,
+      'name' => 'Mender\'s Purity',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    52 => 
+    array (
+      'id' => 472,
+      'name' => 'Gluttony',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    53 => 
+    array (
+      'id' => 728,
+      'name' => 'Kleptomaniac',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    54 => 
+    array (
+      'id' => 225,
+      'name' => 'Primal Rage',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    55 => 
+    array (
+      'id' => 490,
+      'name' => 'Shroud Knight',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    56 => 
+    array (
+      'id' => 746,
+      'name' => 'Physical Supremacy',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    57 => 
+    array (
+      'id' => 1002,
+      'name' => 'Cry of Pain',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    58 => 
+    array (
+      'id' => 237,
+      'name' => 'Spellbreaker\'s Conviction',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    59 => 
+    array (
+      'id' => 502,
+      'name' => 'Mantle of Sand',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    60 => 
+    array (
+      'id' => 758,
+      'name' => 'Deadeye\'s Gaze',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    61 => 
+    array (
+      'id' => 251,
+      'name' => 'Opening Strike',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    62 => 
+    array (
+      'id' => 1021,
+      'name' => 'Time Splitter',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => true,
+      'major' => false,
+      'tier' => 1,
+      'number' => 0,
+    ),
+    63 => 
+    array (
+      'id' => 4,
+      'name' => 'Sunspot',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    64 => 
+    array (
+      'id' => 517,
+      'name' => 'Symbolic Exposure',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    65 => 
+    array (
+      'id' => 774,
+      'name' => 'Steel-Packed Powder',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    66 => 
+    array (
+      'id' => 1034,
+      'name' => 'Nomad\'s Endurance',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    67 => 
+    array (
+      'id' => 274,
+      'name' => 'Furious Grip',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    68 => 
+    array (
+      'id' => 534,
+      'name' => 'Renewed Justice',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    69 => 
+    array (
+      'id' => 1046,
+      'name' => 'Targeted Destruction',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    70 => 
+    array (
+      'id' => 23,
+      'name' => 'Electric Discharge',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    71 => 
+    array (
+      'id' => 799,
+      'name' => 'Hematic Focus',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    72 => 
+    array (
+      'id' => 1058,
+      'name' => 'Opportune Extraction',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    73 => 
+    array (
+      'id' => 293,
+      'name' => 'Companion\'s Defense',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    74 => 
+    array (
+      'id' => 43,
+      'name' => 'Earthen Blast',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    75 => 
+    array (
+      'id' => 555,
+      'name' => 'Courageous Return',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    76 => 
+    array (
+      'id' => 1070,
+      'name' => 'Unwavering Avoidance',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    77 => 
+    array (
+      'id' => 824,
+      'name' => 'Reconstruction Enclosure',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    78 => 
+    array (
+      'id' => 1082,
+      'name' => 'Hardened Foundation',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    79 => 
+    array (
+      'id' => 315,
+      'name' => 'Fortifying Bond',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    80 => 
+    array (
+      'id' => 62,
+      'name' => 'Healing Ripple',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    81 => 
+    array (
+      'id' => 574,
+      'name' => 'Selfless Daring',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    82 => 
+    array (
+      'id' => 1094,
+      'name' => 'Ferocious Aggression',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    83 => 
+    array (
+      'id' => 80,
+      'name' => 'Elemental Attunement',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    84 => 
+    array (
+      'id' => 1106,
+      'name' => 'Vigorous Persistence',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    85 => 
+    array (
+      'id' => 340,
+      'name' => 'Loud Whistle',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    86 => 
+    array (
+      'id' => 596,
+      'name' => 'Virtue of Retribution',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    87 => 
+    array (
+      'id' => 852,
+      'name' => 'Transmute',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    88 => 
+    array (
+      'id' => 1118,
+      'name' => 'Endless Enmity',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    89 => 
+    array (
+      'id' => 99,
+      'name' => 'Speedy Conduit',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    90 => 
+    array (
+      'id' => 875,
+      'name' => 'Mechanized Deployment',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    91 => 
+    array (
+      'id' => 620,
+      'name' => 'Defender\'s Dogma',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    92 => 
+    array (
+      'id' => 366,
+      'name' => 'Live Vicariously',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    93 => 
+    array (
+      'id' => 111,
+      'name' => 'Elemental Refreshment',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    94 => 
+    array (
+      'id' => 632,
+      'name' => 'Swift Scholar',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    95 => 
+    array (
+      'id' => 378,
+      'name' => 'Furious Strength',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    96 => 
+    array (
+      'id' => 125,
+      'name' => 'Building Momentum',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    97 => 
+    array (
+      'id' => 896,
+      'name' => 'Decisive Renown',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    98 => 
+    array (
+      'id' => 646,
+      'name' => 'Lotus Poison',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    99 => 
+    array (
+      'id' => 392,
+      'name' => 'Death\'s Embrace',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    100 => 
+    array (
+      'id' => 909,
+      'name' => 'Heat Therapy',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    101 => 
+    array (
+      'id' => 147,
+      'name' => 'Deep Strikes',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    102 => 
+    array (
+      'id' => 923,
+      'name' => 'Dazzling',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    103 => 
+    array (
+      'id' => 668,
+      'name' => 'Unrelenting Strikes',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    104 => 
+    array (
+      'id' => 413,
+      'name' => 'Furious Demise',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    105 => 
+    array (
+      'id' => 169,
+      'name' => 'Adrenal Health',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    106 => 
+    array (
+      'id' => 943,
+      'name' => 'Sharper Images',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    107 => 
+    array (
+      'id' => 432,
+      'name' => 'Soul Comprehension',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    108 => 
+    array (
+      'id' => 688,
+      'name' => 'Meld with Shadows',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    109 => 
+    array (
+      'id' => 189,
+      'name' => 'Reviver\'s Might',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    110 => 
+    array (
+      'id' => 962,
+      'name' => 'Illusionary Membrane',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    111 => 
+    array (
+      'id' => 453,
+      'name' => 'Vampiric',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    112 => 
+    array (
+      'id' => 709,
+      'name' => 'Feline Grace',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    113 => 
+    array (
+      'id' => 207,
+      'name' => 'Fast Hands',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    114 => 
+    array (
+      'id' => 983,
+      'name' => 'Inspiring Distortion',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    115 => 
+    array (
+      'id' => 473,
+      'name' => 'Last Gasp',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    116 => 
+    array (
+      'id' => 729,
+      'name' => 'Preparedness',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    117 => 
+    array (
+      'id' => 226,
+      'name' => 'Always Angry',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    118 => 
+    array (
+      'id' => 1001,
+      'name' => 'Compounding Power',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    119 => 
+    array (
+      'id' => 491,
+      'name' => 'Shivers of Dread',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    120 => 
+    array (
+      'id' => 748,
+      'name' => 'Driven Fortitude',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    121 => 
+    array (
+      'id' => 238,
+      'name' => 'Dispelling Force',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    122 => 
+    array (
+      'id' => 503,
+      'name' => 'Sand Sage',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    123 => 
+    array (
+      'id' => 759,
+      'name' => 'Renewing Gaze',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    124 => 
+    array (
+      'id' => 252,
+      'name' => 'Alpha Focus',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    125 => 
+    array (
+      'id' => 1022,
+      'name' => 'Flow of Time',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => true,
+      'major' => false,
+      'tier' => 2,
+      'number' => 0,
+    ),
+    126 => 
+    array (
+      'id' => 5,
+      'name' => 'Burning Rage',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    127 => 
+    array (
+      'id' => 518,
+      'name' => 'Symbolic Power',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    128 => 
+    array (
+      'id' => 775,
+      'name' => 'Shaped Charge',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    129 => 
+    array (
+      'id' => 1035,
+      'name' => 'Speed of Sand',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    130 => 
+    array (
+      'id' => 275,
+      'name' => 'Hunter\'s Tactics',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    131 => 
+    array (
+      'id' => 535,
+      'name' => 'Radiant Power',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    132 => 
+    array (
+      'id' => 1047,
+      'name' => 'Focused Siphoning',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    133 => 
+    array (
+      'id' => 24,
+      'name' => 'Raging Storm',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    134 => 
+    array (
+      'id' => 800,
+      'name' => 'Serrated Steel',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    135 => 
+    array (
+      'id' => 1059,
+      'name' => 'Yearning Empowerment',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    136 => 
+    array (
+      'id' => 294,
+      'name' => 'Rugged Growth',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    137 => 
+    array (
+      'id' => 44,
+      'name' => 'Geomancer\'s Defense',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    138 => 
+    array (
+      'id' => 556,
+      'name' => 'Might of the Protector',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    139 => 
+    array (
+      'id' => 1071,
+      'name' => 'Determined Resolution',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    140 => 
+    array (
+      'id' => 825,
+      'name' => 'Energy Amplifier',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    141 => 
+    array (
+      'id' => 1083,
+      'name' => 'Serene Rejuvenation',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    142 => 
+    array (
+      'id' => 316,
+      'name' => 'Lingering Magic',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    143 => 
+    array (
+      'id' => 63,
+      'name' => 'Aquatic Benevolence',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    144 => 
+    array (
+      'id' => 575,
+      'name' => 'Purity of Body',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    145 => 
+    array (
+      'id' => 1095,
+      'name' => 'Empty Vessel',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    146 => 
+    array (
+      'id' => 82,
+      'name' => 'Elemental Enchantment',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    147 => 
+    array (
+      'id' => 1107,
+      'name' => 'Envoy of Sustenance',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    148 => 
+    array (
+      'id' => 341,
+      'name' => 'Pet\'s Prowess',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    149 => 
+    array (
+      'id' => 597,
+      'name' => 'Power of the Virtuous',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    150 => 
+    array (
+      'id' => 853,
+      'name' => 'Compounding Chemicals',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    151 => 
+    array (
+      'id' => 1119,
+      'name' => 'Brutal Momentum',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    152 => 
+    array (
+      'id' => 100,
+      'name' => 'Hardy Conduit',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    153 => 
+    array (
+      'id' => 876,
+      'name' => 'Excessive Energy',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    154 => 
+    array (
+      'id' => 621,
+      'name' => 'Pure of Sight',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    155 => 
+    array (
+      'id' => 367,
+      'name' => 'Natural Mender',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    156 => 
+    array (
+      'id' => 112,
+      'name' => 'Elemental Polyphony',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    157 => 
+    array (
+      'id' => 633,
+      'name' => 'Imbued Haste',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    158 => 
+    array (
+      'id' => 379,
+      'name' => 'Twice as Vicious',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    159 => 
+    array (
+      'id' => 126,
+      'name' => 'Pinnacle of Strength',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    160 => 
+    array (
+      'id' => 897,
+      'name' => 'Impact Savant',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    161 => 
+    array (
+      'id' => 647,
+      'name' => 'Exposed Weakness',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    162 => 
+    array (
+      'id' => 395,
+      'name' => 'Siphoned Power',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    163 => 
+    array (
+      'id' => 910,
+      'name' => 'Laser\'s Edge',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    164 => 
+    array (
+      'id' => 148,
+      'name' => 'Bloodlust',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    165 => 
+    array (
+      'id' => 924,
+      'name' => 'Fragility',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    166 => 
+    array (
+      'id' => 669,
+      'name' => 'Ferocious Strikes',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    167 => 
+    array (
+      'id' => 414,
+      'name' => 'Target the Weak',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    168 => 
+    array (
+      'id' => 170,
+      'name' => 'Spiked Armor',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    169 => 
+    array (
+      'id' => 944,
+      'name' => 'Master Fencer',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    170 => 
+    array (
+      'id' => 433,
+      'name' => 'Beyond the Veil',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    171 => 
+    array (
+      'id' => 689,
+      'name' => 'Resilience of Shadows',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    172 => 
+    array (
+      'id' => 188,
+      'name' => 'Inspiring Presence',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    173 => 
+    array (
+      'id' => 963,
+      'name' => 'Chaotic Persistence',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    174 => 
+    array (
+      'id' => 454,
+      'name' => 'Last Rites',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    175 => 
+    array (
+      'id' => 710,
+      'name' => 'Endless Stamina',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    176 => 
+    array (
+      'id' => 208,
+      'name' => 'Versatile Power',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    177 => 
+    array (
+      'id' => 984,
+      'name' => 'Healing Prism',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    178 => 
+    array (
+      'id' => 474,
+      'name' => 'Strength of Undeath',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    179 => 
+    array (
+      'id' => 730,
+      'name' => 'Lead Attacks',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    180 => 
+    array (
+      'id' => 227,
+      'name' => 'Fatal Frenzy',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    181 => 
+    array (
+      'id' => 747,
+      'name' => 'Endurance Thief',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    182 => 
+    array (
+      'id' => 1003,
+      'name' => 'Master of Misdirection',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    183 => 
+    array (
+      'id' => 492,
+      'name' => 'Cold Shoulder',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    184 => 
+    array (
+      'id' => 239,
+      'name' => 'Attacker\'s Insight',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    185 => 
+    array (
+      'id' => 504,
+      'name' => 'Blood as Sand',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    186 => 
+    array (
+      'id' => 760,
+      'name' => 'Iron Sight',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    187 => 
+    array (
+      'id' => 253,
+      'name' => 'Precise Strike',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    188 => 
+    array (
+      'id' => 1023,
+      'name' => 'Time Marches On',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => true,
+      'major' => false,
+      'tier' => 3,
+      'number' => 0,
+    ),
+    189 => 
+    array (
+      'id' => 1025,
+      'name' => 'Delayed Reactions',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    190 => 
+    array (
+      'id' => 7,
+      'name' => 'Burning Precision',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    191 => 
+    array (
+      'id' => 1036,
+      'name' => 'Self-Deception',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    192 => 
+    array (
+      'id' => 528,
+      'name' => 'Wrathful Spirit',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    193 => 
+    array (
+      'id' => 785,
+      'name' => 'Grenadier',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    194 => 
+    array (
+      'id' => 279,
+      'name' => 'Sharpened Edges',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    195 => 
+    array (
+      'id' => 28,
+      'name' => 'Zephyr\'s Boon',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    196 => 
+    array (
+      'id' => 1053,
+      'name' => 'Ferocious Strikes',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    197 => 
+    array (
+      'id' => 542,
+      'name' => 'Inner Fire',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    198 => 
+    array (
+      'id' => 801,
+      'name' => 'Chemical Rounds',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    199 => 
+    array (
+      'id' => 1060,
+      'name' => 'Replenishing Despair',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    200 => 
+    array (
+      'id' => 299,
+      'name' => 'Soften the Fall',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    201 => 
+    array (
+      'id' => 560,
+      'name' => 'Strength of the Fallen',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    202 => 
+    array (
+      'id' => 1072,
+      'name' => 'Planar Protection',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    203 => 
+    array (
+      'id' => 55,
+      'name' => 'Earth\'s Embrace',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    204 => 
+    array (
+      'id' => 1084,
+      'name' => 'Nourishing Roots',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    205 => 
+    array (
+      'id' => 317,
+      'name' => 'Bountiful Hunter',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    206 => 
+    array (
+      'id' => 577,
+      'name' => 'Invigorated Bulwark',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    207 => 
+    array (
+      'id' => 838,
+      'name' => 'Over Shield',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    208 => 
+    array (
+      'id' => 1096,
+      'name' => 'Cleansing Channel',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    209 => 
+    array (
+      'id' => 77,
+      'name' => 'Soothing Ice',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    210 => 
+    array (
+      'id' => 1108,
+      'name' => 'Swift Gale',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    211 => 
+    array (
+      'id' => 86,
+      'name' => 'Arcane Precision',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    212 => 
+    array (
+      'id' => 345,
+      'name' => 'Go for the Eyes',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    213 => 
+    array (
+      'id' => 861,
+      'name' => 'Invigorating Speed',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    214 => 
+    array (
+      'id' => 1120,
+      'name' => 'Ashen Demeanor',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    215 => 
+    array (
+      'id' => 101,
+      'name' => 'Gale Song',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    216 => 
+    array (
+      'id' => 613,
+      'name' => 'Unscathed Contender',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    217 => 
+    array (
+      'id' => 622,
+      'name' => 'Piercing Light',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    218 => 
+    array (
+      'id' => 368,
+      'name' => 'Druidic Clarity',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    219 => 
+    array (
+      'id' => 113,
+      'name' => 'Superior Elements',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    220 => 
+    array (
+      'id' => 634,
+      'name' => 'Unrelenting Criticism',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    221 => 
+    array (
+      'id' => 380,
+      'name' => 'Fresh Reinforcement',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    222 => 
+    array (
+      'id' => 894,
+      'name' => 'Static Discharge',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    223 => 
+    array (
+      'id' => 127,
+      'name' => 'Brave Stride',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    224 => 
+    array (
+      'id' => 898,
+      'name' => 'Shocking Speed',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    225 => 
+    array (
+      'id' => 649,
+      'name' => 'Dagger Training',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    226 => 
+    array (
+      'id' => 911,
+      'name' => 'Light Density Amplifier',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    227 => 
+    array (
+      'id' => 400,
+      'name' => 'Spiteful Talisman',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    228 => 
+    array (
+      'id' => 149,
+      'name' => 'Wounding Precision',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    229 => 
+    array (
+      'id' => 417,
+      'name' => 'Terrifying Descent',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    230 => 
+    array (
+      'id' => 930,
+      'name' => 'Confounding Suggestions',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    231 => 
+    array (
+      'id' => 676,
+      'name' => 'Assassin\'s Fury',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    232 => 
+    array (
+      'id' => 175,
+      'name' => 'Shield Master',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    233 => 
+    array (
+      'id' => 691,
+      'name' => 'Last Refuge',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    234 => 
+    array (
+      'id' => 955,
+      'name' => 'Phantasmal Fury',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    235 => 
+    array (
+      'id' => 444,
+      'name' => 'Flesh of the Master',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    236 => 
+    array (
+      'id' => 193,
+      'name' => 'Leg Specialist',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    237 => 
+    array (
+      'id' => 972,
+      'name' => 'Descent into Madness',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    238 => 
+    array (
+      'id' => 720,
+      'name' => 'Instant Reflexes',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    239 => 
+    array (
+      'id' => 209,
+      'name' => 'Crack Shot',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    240 => 
+    array (
+      'id' => 469,
+      'name' => 'Ritual of Life',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    241 => 
+    array (
+      'id' => 990,
+      'name' => 'Medic\'s Feedback',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    242 => 
+    array (
+      'id' => 736,
+      'name' => 'Uncatchable',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    243 => 
+    array (
+      'id' => 228,
+      'name' => 'Smash Brawler',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    244 => 
+    array (
+      'id' => 484,
+      'name' => 'Unyielding Blast',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    245 => 
+    array (
+      'id' => 493,
+      'name' => 'Augury of Death',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    246 => 
+    array (
+      'id' => 749,
+      'name' => 'Havoc Mastery',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    247 => 
+    array (
+      'id' => 240,
+      'name' => 'Pure Strike',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    248 => 
+    array (
+      'id' => 1012,
+      'name' => 'Shatter Storm',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    249 => 
+    array (
+      'id' => 505,
+      'name' => 'Abrasive Grit',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    250 => 
+    array (
+      'id' => 761,
+      'name' => 'Malicious Intent',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    251 => 
+    array (
+      'id' => 254,
+      'name' => 'Stoneform',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 1,
+    ),
+    252 => 
+    array (
+      'id' => 258,
+      'name' => 'Hunter\'s Gaze',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    253 => 
+    array (
+      'id' => 1026,
+      'name' => 'Time Catches Up',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    254 => 
+    array (
+      'id' => 519,
+      'name' => 'Fiery Wrath',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    255 => 
+    array (
+      'id' => 8,
+      'name' => 'Conjurer',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    256 => 
+    array (
+      'id' => 1037,
+      'name' => 'Renewing Oasis',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    257 => 
+    array (
+      'id' => 786,
+      'name' => 'Blasting Zone',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    258 => 
+    array (
+      'id' => 281,
+      'name' => 'Primal Reflexes',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    259 => 
+    array (
+      'id' => 1049,
+      'name' => 'Vicious Lacerations',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    260 => 
+    array (
+      'id' => 539,
+      'name' => 'Right-Hand Strength',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    261 => 
+    array (
+      'id' => 802,
+      'name' => 'Sanguine Array',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    262 => 
+    array (
+      'id' => 37,
+      'name' => 'One with Air',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    263 => 
+    array (
+      'id' => 1061,
+      'name' => 'Demonic Defiance',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    264 => 
+    array (
+      'id' => 47,
+      'name' => 'Serrated Stones',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    265 => 
+    array (
+      'id' => 303,
+      'name' => 'Oakheart Salve',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    266 => 
+    array (
+      'id' => 561,
+      'name' => 'Smiter\'s Boon',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    267 => 
+    array (
+      'id' => 1073,
+      'name' => 'Close Quarters',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    268 => 
+    array (
+      'id' => 826,
+      'name' => 'Automated Medical Response',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    269 => 
+    array (
+      'id' => 1085,
+      'name' => 'Blinding Truths',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    270 => 
+    array (
+      'id' => 318,
+      'name' => 'Instinctive Reaction',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    271 => 
+    array (
+      'id' => 580,
+      'name' => 'Protective Reviver',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    272 => 
+    array (
+      'id' => 69,
+      'name' => 'Piercing Shards',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    273 => 
+    array (
+      'id' => 1097,
+      'name' => 'Forceful Persistence',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    274 => 
+    array (
+      'id' => 1109,
+      'name' => 'Radiant Revival',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    275 => 
+    array (
+      'id' => 346,
+      'name' => 'Potent Ally',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    276 => 
+    array (
+      'id' => 94,
+      'name' => 'Renewing Stamina',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    277 => 
+    array (
+      'id' => 862,
+      'name' => 'Protection Injection',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    278 => 
+    array (
+      'id' => 608,
+      'name' => 'Retaliatory Subconscious',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    279 => 
+    array (
+      'id' => 1121,
+      'name' => 'Blood Fury',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    280 => 
+    array (
+      'id' => 102,
+      'name' => 'Latent Stamina',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    281 => 
+    array (
+      'id' => 877,
+      'name' => 'Reactive Lenses',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    282 => 
+    array (
+      'id' => 369,
+      'name' => 'Cultivated Synergy',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    283 => 
+    array (
+      'id' => 114,
+      'name' => 'Elemental Pursuit',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    284 => 
+    array (
+      'id' => 627,
+      'name' => 'Dulled Senses',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    285 => 
+    array (
+      'id' => 635,
+      'name' => 'Liberator\'s Vow',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    286 => 
+    array (
+      'id' => 381,
+      'name' => 'Live Fast',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    287 => 
+    array (
+      'id' => 139,
+      'name' => 'Restorative Strength',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    288 => 
+    array (
+      'id' => 907,
+      'name' => 'Perfectly Weighted',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    289 => 
+    array (
+      'id' => 912,
+      'name' => 'Prismatic Converter',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    290 => 
+    array (
+      'id' => 657,
+      'name' => 'Mug',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    291 => 
+    array (
+      'id' => 405,
+      'name' => 'Spiteful Renewal',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    292 => 
+    array (
+      'id' => 150,
+      'name' => 'Signet Mastery',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    293 => 
+    array (
+      'id' => 418,
+      'name' => 'Plague Sending',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    294 => 
+    array (
+      'id' => 678,
+      'name' => 'Signets of Power',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    295 => 
+    array (
+      'id' => 934,
+      'name' => 'Empowered Illusions',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    296 => 
+    array (
+      'id' => 174,
+      'name' => 'Dogged March',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    297 => 
+    array (
+      'id' => 692,
+      'name' => 'Concealed Defeat',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    298 => 
+    array (
+      'id' => 951,
+      'name' => 'Desperate Decoy',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    299 => 
+    array (
+      'id' => 446,
+      'name' => 'Shrouded Removal',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    300 => 
+    array (
+      'id' => 966,
+      'name' => 'Illusionary Defense',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    301 => 
+    array (
+      'id' => 203,
+      'name' => 'Quick Breathing',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    302 => 
+    array (
+      'id' => 460,
+      'name' => 'Quickening Thirst',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    303 => 
+    array (
+      'id' => 725,
+      'name' => 'Vigorous Recovery',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    304 => 
+    array (
+      'id' => 220,
+      'name' => 'Warrior\'s Sprint',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    305 => 
+    array (
+      'id' => 737,
+      'name' => 'Burst of Agility',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    306 => 
+    array (
+      'id' => 994,
+      'name' => 'Restorative Mantras',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    307 => 
+    array (
+      'id' => 229,
+      'name' => 'Last Blaze',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    308 => 
+    array (
+      'id' => 485,
+      'name' => 'Soul Marks',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    309 => 
+    array (
+      'id' => 1005,
+      'name' => 'Persistence of Memory',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    310 => 
+    array (
+      'id' => 494,
+      'name' => 'Chilling Nova',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    311 => 
+    array (
+      'id' => 750,
+      'name' => 'Weakening Strikes',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    312 => 
+    array (
+      'id' => 241,
+      'name' => 'Guard Counter',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    313 => 
+    array (
+      'id' => 506,
+      'name' => 'Fell Beacon',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    314 => 
+    array (
+      'id' => 762,
+      'name' => 'Collateral Damage',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 2,
+    ),
+    315 => 
+    array (
+      'id' => 1024,
+      'name' => 'All\'s Well That Ends Well',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    316 => 
+    array (
+      'id' => 11,
+      'name' => 'Burning Fire',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    317 => 
+    array (
+      'id' => 1038,
+      'name' => 'Riddle of Sand',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    318 => 
+    array (
+      'id' => 529,
+      'name' => 'Zealous Scepter',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    319 => 
+    array (
+      'id' => 787,
+      'name' => 'Glass Cannon',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    320 => 
+    array (
+      'id' => 1050,
+      'name' => 'Jade Echo',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    321 => 
+    array (
+      'id' => 287,
+      'name' => 'Trapper\'s Expertise',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    322 => 
+    array (
+      'id' => 544,
+      'name' => 'Healer\'s Retribution',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    323 => 
+    array (
+      'id' => 803,
+      'name' => 'High Caliber',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    324 => 
+    array (
+      'id' => 38,
+      'name' => 'Ferocious Winds',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    325 => 
+    array (
+      'id' => 1062,
+      'name' => 'Venom Enhancement',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    326 => 
+    array (
+      'id' => 300,
+      'name' => 'Taste for Danger',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    327 => 
+    array (
+      'id' => 562,
+      'name' => 'Focus Mastery',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    328 => 
+    array (
+      'id' => 1074,
+      'name' => 'Improved Aggression',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    329 => 
+    array (
+      'id' => 56,
+      'name' => 'Elemental Shielding',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    330 => 
+    array (
+      'id' => 829,
+      'name' => 'Autodefense Bomb Dispenser',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    331 => 
+    array (
+      'id' => 1086,
+      'name' => 'Tranquil Balance',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    332 => 
+    array (
+      'id' => 319,
+      'name' => 'Allies\' Aid',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    333 => 
+    array (
+      'id' => 581,
+      'name' => 'Protector\'s Impact',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    334 => 
+    array (
+      'id' => 70,
+      'name' => 'Stop, Drop, and Roll',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    335 => 
+    array (
+      'id' => 1098,
+      'name' => 'Fierce Infusion',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    336 => 
+    array (
+      'id' => 1110,
+      'name' => 'Hardening Persistence',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    337 => 
+    array (
+      'id' => 87,
+      'name' => 'Arcane Abatement',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    338 => 
+    array (
+      'id' => 599,
+      'name' => 'Master of Consecrations',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    339 => 
+    array (
+      'id' => 855,
+      'name' => 'Health Insurance',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    340 => 
+    array (
+      'id' => 1122,
+      'name' => 'Wrought-Iron Will',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    341 => 
+    array (
+      'id' => 103,
+      'name' => 'Unstable Conduit',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    342 => 
+    array (
+      'id' => 363,
+      'name' => 'Resounding Timbre',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    343 => 
+    array (
+      'id' => 624,
+      'name' => 'Soaring Devastation',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    344 => 
+    array (
+      'id' => 370,
+      'name' => 'Primal Echoes',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    345 => 
+    array (
+      'id' => 115,
+      'name' => 'Master\'s Fortitude',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    346 => 
+    array (
+      'id' => 891,
+      'name' => 'Power Wrench',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    347 => 
+    array (
+      'id' => 636,
+      'name' => 'Archivist of Whispers',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    348 => 
+    array (
+      'id' => 382,
+      'name' => 'Unstoppable Union',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    349 => 
+    array (
+      'id' => 900,
+      'name' => 'Recovery Matrix',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    350 => 
+    array (
+      'id' => 137,
+      'name' => 'Peak Performance',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    351 => 
+    array (
+      'id' => 913,
+      'name' => 'Solar Focusing Lens',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    352 => 
+    array (
+      'id' => 658,
+      'name' => 'Trapper\'s Respite',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    353 => 
+    array (
+      'id' => 406,
+      'name' => 'Bitter Chill',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    354 => 
+    array (
+      'id' => 155,
+      'name' => 'Opportunist',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    355 => 
+    array (
+      'id' => 671,
+      'name' => 'Twin Fangs',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    356 => 
+    array (
+      'id' => 421,
+      'name' => 'Chilling Darkness',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    357 => 
+    array (
+      'id' => 939,
+      'name' => 'Rending Shatter',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    358 => 
+    array (
+      'id' => 178,
+      'name' => 'Cull the Weak',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    359 => 
+    array (
+      'id' => 435,
+      'name' => 'Putrid Defense',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    360 => 
+    array (
+      'id' => 956,
+      'name' => 'Duelist\'s Discipline',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    361 => 
+    array (
+      'id' => 703,
+      'name' => 'Shadow\'s Embrace',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    362 => 
+    array (
+      'id' => 196,
+      'name' => 'Empowered',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    363 => 
+    array (
+      'id' => 455,
+      'name' => 'Blood Bond',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    364 => 
+    array (
+      'id' => 973,
+      'name' => 'Master of Manipulation',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    365 => 
+    array (
+      'id' => 723,
+      'name' => 'Pain Response',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    366 => 
+    array (
+      'id' => 478,
+      'name' => 'Speed of Shadows',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    367 => 
+    array (
+      'id' => 223,
+      'name' => 'Vengeful Return',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    368 => 
+    array (
+      'id' => 996,
+      'name' => 'Sympathetic Visage',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    369 => 
+    array (
+      'id' => 741,
+      'name' => 'Thrill of the Crime',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    370 => 
+    array (
+      'id' => 230,
+      'name' => 'Savage Instinct',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    371 => 
+    array (
+      'id' => 1004,
+      'name' => 'The Pledge',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    372 => 
+    array (
+      'id' => 495,
+      'name' => 'Relentless Pursuit',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    373 => 
+    array (
+      'id' => 751,
+      'name' => 'Brawler\'s Tenacity',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    374 => 
+    array (
+      'id' => 242,
+      'name' => 'No Escape',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    375 => 
+    array (
+      'id' => 507,
+      'name' => 'Nourishing Ashes',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    376 => 
+    array (
+      'id' => 763,
+      'name' => 'One in the Chamber',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    377 => 
+    array (
+      'id' => 255,
+      'name' => 'Clarion Bond',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 1,
+      'number' => 3,
+    ),
+    378 => 
+    array (
+      'id' => 1027,
+      'name' => 'Danger Time',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    379 => 
+    array (
+      'id' => 9,
+      'name' => 'Pyromancer\'s Training',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    380 => 
+    array (
+      'id' => 270,
+      'name' => 'Brutish Seals',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    381 => 
+    array (
+      'id' => 527,
+      'name' => 'Binding Jeopardy',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    382 => 
+    array (
+      'id' => 1039,
+      'name' => 'Desert Distortion',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    383 => 
+    array (
+      'id' => 276,
+      'name' => 'Spotter',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    384 => 
+    array (
+      'id' => 788,
+      'name' => 'Aim-Assisted Rocket',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    385 => 
+    array (
+      'id' => 1051,
+      'name' => 'Malicious Reprisal',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    386 => 
+    array (
+      'id' => 545,
+      'name' => 'Wrath of Justice',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    387 => 
+    array (
+      'id' => 34,
+      'name' => 'Inscription',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    388 => 
+    array (
+      'id' => 804,
+      'name' => 'Pinpoint Distribution',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    389 => 
+    array (
+      'id' => 1063,
+      'name' => 'Bolstered Anguish',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    390 => 
+    array (
+      'id' => 302,
+      'name' => 'Ambidexterity',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    391 => 
+    array (
+      'id' => 1075,
+      'name' => 'Eye for an Eye',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    392 => 
+    array (
+      'id' => 53,
+      'name' => 'Strength of Stone',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    393 => 
+    array (
+      'id' => 568,
+      'name' => 'Stalwart Defender',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    394 => 
+    array (
+      'id' => 830,
+      'name' => 'Experimental Turrets',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    395 => 
+    array (
+      'id' => 1087,
+      'name' => 'Tranquil Benediction',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    396 => 
+    array (
+      'id' => 321,
+      'name' => 'Evasive Purity',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    397 => 
+    array (
+      'id' => 67,
+      'name' => 'Soothing Disruption',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    398 => 
+    array (
+      'id' => 585,
+      'name' => 'Honorable Staff',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    399 => 
+    array (
+      'id' => 1099,
+      'name' => 'Spirit Boon',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    400 => 
+    array (
+      'id' => 85,
+      'name' => 'Arcane Resurrection',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    401 => 
+    array (
+      'id' => 1111,
+      'name' => 'Bolster Fortifications',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    402 => 
+    array (
+      'id' => 344,
+      'name' => 'Wilting Strike',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    403 => 
+    array (
+      'id' => 856,
+      'name' => 'Comeback Cure',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    404 => 
+    array (
+      'id' => 611,
+      'name' => 'Virtuous Solace',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    405 => 
+    array (
+      'id' => 1123,
+      'name' => 'Sudden Reversal',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    406 => 
+    array (
+      'id' => 104,
+      'name' => 'Tempestuous Aria',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    407 => 
+    array (
+      'id' => 625,
+      'name' => 'Hunter\'s Determination',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    408 => 
+    array (
+      'id' => 371,
+      'name' => 'Celestial Shadow',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    409 => 
+    array (
+      'id' => 116,
+      'name' => 'Weaver\'s Prowess',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    410 => 
+    array (
+      'id' => 886,
+      'name' => 'Streamlined Kits',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    411 => 
+    array (
+      'id' => 637,
+      'name' => 'Weighty Terms',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    412 => 
+    array (
+      'id' => 383,
+      'name' => 'Second Skin',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    413 => 
+    array (
+      'id' => 129,
+      'name' => 'Body Blow',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    414 => 
+    array (
+      'id' => 901,
+      'name' => 'Rapid Regeneration',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    415 => 
+    array (
+      'id' => 399,
+      'name' => 'Chill of Death',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    416 => 
+    array (
+      'id' => 914,
+      'name' => 'Crystal Configuration: Storm',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    417 => 
+    array (
+      'id' => 659,
+      'name' => 'Deadly Trapper',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    418 => 
+    array (
+      'id' => 154,
+      'name' => 'Unsuspecting Foe',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    419 => 
+    array (
+      'id' => 670,
+      'name' => 'Sundering Shade',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    420 => 
+    array (
+      'id' => 422,
+      'name' => 'Master of Corruption',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    421 => 
+    array (
+      'id' => 936,
+      'name' => 'Shattered Concentration',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    422 => 
+    array (
+      'id' => 945,
+      'name' => 'Blinding Dissipation',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    423 => 
+    array (
+      'id' => 179,
+      'name' => 'Defy Pain',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    424 => 
+    array (
+      'id' => 445,
+      'name' => 'Necromantic Corruption',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    425 => 
+    array (
+      'id' => 701,
+      'name' => 'Shadow Protector',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    426 => 
+    array (
+      'id' => 456,
+      'name' => 'Life from Death',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    427 => 
+    array (
+      'id' => 712,
+      'name' => 'Guarded Initiation',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    428 => 
+    array (
+      'id' => 201,
+      'name' => 'Shrug It Off',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    429 => 
+    array (
+      'id' => 975,
+      'name' => 'Mirror of Anguish',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    430 => 
+    array (
+      'id' => 210,
+      'name' => 'Inspiring Battle Standard',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    431 => 
+    array (
+      'id' => 991,
+      'name' => 'Warden\'s Feedback',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    432 => 
+    array (
+      'id' => 740,
+      'name' => 'Bountiful Theft',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    433 => 
+    array (
+      'id' => 231,
+      'name' => 'Blood Reaction',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    434 => 
+    array (
+      'id' => 489,
+      'name' => 'Spectral Mastery',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    435 => 
+    array (
+      'id' => 1006,
+      'name' => 'Escape Artist',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    436 => 
+    array (
+      'id' => 496,
+      'name' => 'Soul Eater',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    437 => 
+    array (
+      'id' => 752,
+      'name' => 'Staff Master',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    438 => 
+    array (
+      'id' => 243,
+      'name' => 'Loss Aversion',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    439 => 
+    array (
+      'id' => 508,
+      'name' => 'Desert Empowerment',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    440 => 
+    array (
+      'id' => 764,
+      'name' => 'Silent Scope',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 4,
+    ),
+    441 => 
+    array (
+      'id' => 260,
+      'name' => 'Farsighted',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    442 => 
+    array (
+      'id' => 1028,
+      'name' => 'Illusionary Reversion',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    443 => 
+    array (
+      'id' => 526,
+      'name' => 'Zealous Blade',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    444 => 
+    array (
+      'id' => 1040,
+      'name' => 'Mirage Mantle',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    445 => 
+    array (
+      'id' => 18,
+      'name' => 'One with Fire',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    446 => 
+    array (
+      'id' => 277,
+      'name' => 'Strider\'s Defense',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    447 => 
+    array (
+      'id' => 789,
+      'name' => 'Big Boomer',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    448 => 
+    array (
+      'id' => 26,
+      'name' => 'Aeromancer\'s Training',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    449 => 
+    array (
+      'id' => 1052,
+      'name' => 'Nefarious Momentum',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    450 => 
+    array (
+      'id' => 551,
+      'name' => 'Radiant Fire',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    451 => 
+    array (
+      'id' => 296,
+      'name' => 'Refined Toxins',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    452 => 
+    array (
+      'id' => 1064,
+      'name' => 'Abyssal Chill',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    453 => 
+    array (
+      'id' => 811,
+      'name' => 'Thermal Vision',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    454 => 
+    array (
+      'id' => 558,
+      'name' => 'Strength in Numbers',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    455 => 
+    array (
+      'id' => 1076,
+      'name' => 'Retaliatory Evasion',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    456 => 
+    array (
+      'id' => 57,
+      'name' => 'Rock Solid',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    457 => 
+    array (
+      'id' => 827,
+      'name' => 'Soothing Detonation',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    458 => 
+    array (
+      'id' => 1088,
+      'name' => 'Eluding Nullification',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    459 => 
+    array (
+      'id' => 66,
+      'name' => 'Cleansing Wave',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    460 => 
+    array (
+      'id' => 322,
+      'name' => 'Spirited Arrival',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    461 => 
+    array (
+      'id' => 579,
+      'name' => 'Pure of Heart',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    462 => 
+    array (
+      'id' => 1100,
+      'name' => 'Rapid Flow',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    463 => 
+    array (
+      'id' => 83,
+      'name' => 'Elemental Contingency',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    464 => 
+    array (
+      'id' => 1112,
+      'name' => 'Shared Empowerment',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    465 => 
+    array (
+      'id' => 347,
+      'name' => 'Two-Handed Training',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    466 => 
+    array (
+      'id' => 868,
+      'name' => 'Self-Regulating Defenses',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    467 => 
+    array (
+      'id' => 1124,
+      'name' => 'Heartpiercer',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    468 => 
+    array (
+      'id' => 615,
+      'name' => 'Absolute Resolution',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    469 => 
+    array (
+      'id' => 105,
+      'name' => 'Invigorating Torrents',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    470 => 
+    array (
+      'id' => 878,
+      'name' => 'Lock On',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    471 => 
+    array (
+      'id' => 623,
+      'name' => 'Zealot\'s Aggression',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    472 => 
+    array (
+      'id' => 372,
+      'name' => 'Verdant Etching',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    473 => 
+    array (
+      'id' => 117,
+      'name' => 'Swift Revenge',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    474 => 
+    array (
+      'id' => 638,
+      'name' => 'Stalwart Speed',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    475 => 
+    array (
+      'id' => 128,
+      'name' => 'Forceful Greatsword',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    476 => 
+    array (
+      'id' => 384,
+      'name' => 'Essence of Speed',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    477 => 
+    array (
+      'id' => 902,
+      'name' => 'Expert Examination',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    478 => 
+    array (
+      'id' => 396,
+      'name' => 'Awaken the Pain',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    479 => 
+    array (
+      'id' => 652,
+      'name' => 'Panic Strike',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    480 => 
+    array (
+      'id' => 915,
+      'name' => 'Crystal Configuration: Eclipse',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    481 => 
+    array (
+      'id' => 925,
+      'name' => 'Blurred Inscriptions',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    482 => 
+    array (
+      'id' => 159,
+      'name' => 'Sundering Burst',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    483 => 
+    array (
+      'id' => 415,
+      'name' => 'Path of Corruption',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    484 => 
+    array (
+      'id' => 682,
+      'name' => 'Practiced Tolerance',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    485 => 
+    array (
+      'id' => 946,
+      'name' => 'Evasive Mirror',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    486 => 
+    array (
+      'id' => 180,
+      'name' => 'Armored Attack',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    487 => 
+    array (
+      'id' => 696,
+      'name' => 'Hidden Thief',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    488 => 
+    array (
+      'id' => 441,
+      'name' => 'Reaper\'s Protection',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    489 => 
+    array (
+      'id' => 964,
+      'name' => 'Chaotic Transference',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    490 => 
+    array (
+      'id' => 197,
+      'name' => 'Burning Arrows',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    491 => 
+    array (
+      'id' => 711,
+      'name' => 'Swindler\'s Equilibrium',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    492 => 
+    array (
+      'id' => 457,
+      'name' => 'Banshee\'s Wail',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    493 => 
+    array (
+      'id' => 218,
+      'name' => 'Destruction of the Empowered',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    494 => 
+    array (
+      'id' => 995,
+      'name' => 'Restorative Illusions',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    495 => 
+    array (
+      'id' => 487,
+      'name' => 'Vital Persistence',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    496 => 
+    array (
+      'id' => 232,
+      'name' => 'Heat the Soul',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    497 => 
+    array (
+      'id' => 745,
+      'name' => 'Trickster',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    498 => 
+    array (
+      'id' => 497,
+      'name' => 'Chilling Victory',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    499 => 
+    array (
+      'id' => 753,
+      'name' => 'Escapist\'s Absolution',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    500 => 
+    array (
+      'id' => 244,
+      'name' => 'Slow Counter',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    501 => 
+    array (
+      'id' => 1018,
+      'name' => 'Phantasmal Haste',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    502 => 
+    array (
+      'id' => 509,
+      'name' => 'Sadistic Searing',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    503 => 
+    array (
+      'id' => 765,
+      'name' => 'Payback',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 5,
+    ),
+    504 => 
+    array (
+      'id' => 256,
+      'name' => 'Moment of Clarity',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    505 => 
+    array (
+      'id' => 1029,
+      'name' => 'Improved Alacrity',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    506 => 
+    array (
+      'id' => 777,
+      'name' => 'Short Fuse',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    507 => 
+    array (
+      'id' => 525,
+      'name' => 'Kindled Zeal',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    508 => 
+    array (
+      'id' => 17,
+      'name' => 'Power Overwhelming',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    509 => 
+    array (
+      'id' => 1041,
+      'name' => 'Mirrored Axes',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    510 => 
+    array (
+      'id' => 278,
+      'name' => 'Hidden Barbs',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    511 => 
+    array (
+      'id' => 1048,
+      'name' => 'Assassin\'s Presence',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    512 => 
+    array (
+      'id' => 32,
+      'name' => 'Tempest Defense',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    513 => 
+    array (
+      'id' => 546,
+      'name' => 'Retribution',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    514 => 
+    array (
+      'id' => 805,
+      'name' => 'No Scope',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    515 => 
+    array (
+      'id' => 1065,
+      'name' => 'Spontaneous Destruction',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    516 => 
+    array (
+      'id' => 557,
+      'name' => 'Communal Defenses',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    517 => 
+    array (
+      'id' => 48,
+      'name' => 'Geomancer\'s Training',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    518 => 
+    array (
+      'id' => 308,
+      'name' => 'Shared Anguish',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    519 => 
+    array (
+      'id' => 1077,
+      'name' => 'Dwarven Battle Training',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    520 => 
+    array (
+      'id' => 1089,
+      'name' => 'Invoking Harmony',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    521 => 
+    array (
+      'id' => 323,
+      'name' => 'Windborne Notes',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    522 => 
+    array (
+      'id' => 76,
+      'name' => 'Aquamancer\'s Training',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    523 => 
+    array (
+      'id' => 844,
+      'name' => 'Mecha Legs',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    524 => 
+    array (
+      'id' => 1101,
+      'name' => 'Incensed Response',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    525 => 
+    array (
+      'id' => 590,
+      'name' => 'Empowering Might',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    526 => 
+    array (
+      'id' => 1113,
+      'name' => 'Harmonize Continuity',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    527 => 
+    array (
+      'id' => 93,
+      'name' => 'Final Shielding',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    528 => 
+    array (
+      'id' => 353,
+      'name' => 'Natural Healing',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    529 => 
+    array (
+      'id' => 869,
+      'name' => 'Backpack Regenerator',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    530 => 
+    array (
+      'id' => 1125,
+      'name' => 'All for One',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    531 => 
+    array (
+      'id' => 616,
+      'name' => 'Glacial Heart',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    532 => 
+    array (
+      'id' => 106,
+      'name' => 'Harmonious Conduit',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    533 => 
+    array (
+      'id' => 879,
+      'name' => 'Takedown Round',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    534 => 
+    array (
+      'id' => 626,
+      'name' => 'Bulwark',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    535 => 
+    array (
+      'id' => 373,
+      'name' => 'Natural Stride',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    536 => 
+    array (
+      'id' => 118,
+      'name' => 'Bolstered Elements',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    537 => 
+    array (
+      'id' => 639,
+      'name' => 'Legendary Lore',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    538 => 
+    array (
+      'id' => 385,
+      'name' => 'Predator\'s Cunning',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    539 => 
+    array (
+      'id' => 132,
+      'name' => 'Great Fortitude',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    540 => 
+    array (
+      'id' => 903,
+      'name' => 'Mass Momentum',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    541 => 
+    array (
+      'id' => 648,
+      'name' => 'Revealed Training',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    542 => 
+    array (
+      'id' => 397,
+      'name' => 'Dread',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    543 => 
+    array (
+      'id' => 916,
+      'name' => 'Crystal Configuration: Zephyr',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    544 => 
+    array (
+      'id' => 926,
+      'name' => 'Furious Interruption',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    545 => 
+    array (
+      'id' => 416,
+      'name' => 'Terror',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    546 => 
+    array (
+      'id' => 165,
+      'name' => 'Blademaster',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    547 => 
+    array (
+      'id' => 679,
+      'name' => 'Ankle Shots',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    548 => 
+    array (
+      'id' => 434,
+      'name' => 'Deadly Strength',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    549 => 
+    array (
+      'id' => 184,
+      'name' => 'Sundering Mace',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    550 => 
+    array (
+      'id' => 958,
+      'name' => 'Fencer\'s Finesse',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    551 => 
+    array (
+      'id' => 705,
+      'name' => 'Leeching Venoms',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    552 => 
+    array (
+      'id' => 195,
+      'name' => 'Empower Allies',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    553 => 
+    array (
+      'id' => 717,
+      'name' => 'Hard to Catch',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    554 => 
+    array (
+      'id' => 464,
+      'name' => 'Vampiric Presence',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    555 => 
+    array (
+      'id' => 978,
+      'name' => 'Chaotic Dampening',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    556 => 
+    array (
+      'id' => 212,
+      'name' => 'Brawler\'s Recovery',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    557 => 
+    array (
+      'id' => 985,
+      'name' => 'Protected Phantasms',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    558 => 
+    array (
+      'id' => 732,
+      'name' => 'Pressure Striking',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    559 => 
+    array (
+      'id' => 483,
+      'name' => 'Fear of Death',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    560 => 
+    array (
+      'id' => 233,
+      'name' => 'Dead or Alive',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    561 => 
+    array (
+      'id' => 1008,
+      'name' => 'Maim the Disillusioned',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    562 => 
+    array (
+      'id' => 498,
+      'name' => 'Decimate Defenses',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    563 => 
+    array (
+      'id' => 754,
+      'name' => 'Impacting Disruption',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    564 => 
+    array (
+      'id' => 245,
+      'name' => 'Sun and Moon Style',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    565 => 
+    array (
+      'id' => 510,
+      'name' => 'Unending Corruption',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    566 => 
+    array (
+      'id' => 766,
+      'name' => 'Premeditation',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 2,
+      'number' => 6,
+    ),
+    567 => 
+    array (
+      'id' => 1031,
+      'name' => 'Lost Time',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    568 => 
+    array (
+      'id' => 520,
+      'name' => 'Eternal Armory',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    569 => 
+    array (
+      'id' => 10,
+      'name' => 'Persisting Flames',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    570 => 
+    array (
+      'id' => 269,
+      'name' => 'Predator\'s Onslaught',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    571 => 
+    array (
+      'id' => 1042,
+      'name' => 'Infinite Horizon',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    572 => 
+    array (
+      'id' => 790,
+      'name' => 'Orbital Command',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    573 => 
+    array (
+      'id' => 536,
+      'name' => 'Amplified Wrath',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    574 => 
+    array (
+      'id' => 283,
+      'name' => 'Quick Draw',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    575 => 
+    array (
+      'id' => 1054,
+      'name' => 'Swift Termination',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    576 => 
+    array (
+      'id' => 36,
+      'name' => 'Bolt to the Heart',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    577 => 
+    array (
+      'id' => 809,
+      'name' => 'Juggernaut',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    578 => 
+    array (
+      'id' => 1066,
+      'name' => 'Diabolic Inferno',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    579 => 
+    array (
+      'id' => 50,
+      'name' => 'Diamond Skin',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    580 => 
+    array (
+      'id' => 307,
+      'name' => 'Empathic Bond',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    581 => 
+    array (
+      'id' => 563,
+      'name' => 'Altruistic Healing',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    582 => 
+    array (
+      'id' => 1078,
+      'name' => 'Vicious Reprisal',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    583 => 
+    array (
+      'id' => 831,
+      'name' => 'Anticorrosion Plating',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    584 => 
+    array (
+      'id' => 1090,
+      'name' => 'Selfless Amplification',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    585 => 
+    array (
+      'id' => 73,
+      'name' => 'Cleansing Water',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    586 => 
+    array (
+      'id' => 329,
+      'name' => 'Nature\'s Vengeance',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    587 => 
+    array (
+      'id' => 588,
+      'name' => 'Pure of Voice',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    588 => 
+    array (
+      'id' => 1102,
+      'name' => 'Song of the Mists',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    589 => 
+    array (
+      'id' => 343,
+      'name' => 'Beastly Warden',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    590 => 
+    array (
+      'id' => 90,
+      'name' => 'Evasive Arcana',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    591 => 
+    array (
+      'id' => 1114,
+      'name' => 'Elder\'s Force',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    592 => 
+    array (
+      'id' => 603,
+      'name' => 'Permeating Wrath',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    593 => 
+    array (
+      'id' => 867,
+      'name' => 'HGH',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    594 => 
+    array (
+      'id' => 1126,
+      'name' => 'Vindication',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    595 => 
+    array (
+      'id' => 107,
+      'name' => 'Imbued Melodies',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    596 => 
+    array (
+      'id' => 880,
+      'name' => 'Kinetic Battery',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    597 => 
+    array (
+      'id' => 628,
+      'name' => 'Hunter\'s Fortification',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    598 => 
+    array (
+      'id' => 374,
+      'name' => 'Grace of the Land',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    599 => 
+    array (
+      'id' => 119,
+      'name' => 'Elements of Rage',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    600 => 
+    array (
+      'id' => 640,
+      'name' => 'Stoic Demeanor',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    601 => 
+    array (
+      'id' => 386,
+      'name' => 'Eternal Bond',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    602 => 
+    array (
+      'id' => 904,
+      'name' => 'Adaptive Armor',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    603 => 
+    array (
+      'id' => 138,
+      'name' => 'Berserker\'s Power',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    604 => 
+    array (
+      'id' => 654,
+      'name' => 'Potent Poison',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    605 => 
+    array (
+      'id' => 404,
+      'name' => 'Signets of Suffering',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    606 => 
+    array (
+      'id' => 917,
+      'name' => 'Thermal Release Valve',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    607 => 
+    array (
+      'id' => 152,
+      'name' => 'Burst Precision',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    608 => 
+    array (
+      'id' => 672,
+      'name' => 'No Quarter',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    609 => 
+    array (
+      'id' => 932,
+      'name' => 'Imagined Burden',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    610 => 
+    array (
+      'id' => 423,
+      'name' => 'Weakening Shroud',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    611 => 
+    array (
+      'id' => 177,
+      'name' => 'Last Stand',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    612 => 
+    array (
+      'id' => 950,
+      'name' => 'Superiority Complex',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    613 => 
+    array (
+      'id' => 697,
+      'name' => 'Cloaked in Shadow',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    614 => 
+    array (
+      'id' => 443,
+      'name' => 'Death Nova',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    615 => 
+    array (
+      'id' => 191,
+      'name' => 'Powerful Synergy',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    616 => 
+    array (
+      'id' => 971,
+      'name' => 'Chaotic Interruption',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    617 => 
+    array (
+      'id' => 211,
+      'name' => 'Axe Mastery',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    618 => 
+    array (
+      'id' => 467,
+      'name' => 'Vampiric Rituals',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    619 => 
+    array (
+      'id' => 724,
+      'name' => 'Assassin\'s Reward',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    620 => 
+    array (
+      'id' => 986,
+      'name' => 'Mental Defense',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    621 => 
+    array (
+      'id' => 731,
+      'name' => 'Quick Pockets',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    622 => 
+    array (
+      'id' => 479,
+      'name' => 'Foot in the Grave',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    623 => 
+    array (
+      'id' => 234,
+      'name' => 'Bloody Roar',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    624 => 
+    array (
+      'id' => 1010,
+      'name' => 'Phantasmal Force',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    625 => 
+    array (
+      'id' => 499,
+      'name' => 'Blighter\'s Boon',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    626 => 
+    array (
+      'id' => 755,
+      'name' => 'Lotus Training',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    627 => 
+    array (
+      'id' => 246,
+      'name' => 'Enchantment Collapse',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    628 => 
+    array (
+      'id' => 511,
+      'name' => 'Sand Savant',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    629 => 
+    array (
+      'id' => 767,
+      'name' => 'Maleficent Seven',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 7,
+    ),
+    630 => 
+    array (
+      'id' => 512,
+      'name' => 'Demonic Lore',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    631 => 
+    array (
+      'id' => 768,
+      'name' => 'Be Quick or Be Killed',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    632 => 
+    array (
+      'id' => 264,
+      'name' => 'Remorseless',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    633 => 
+    array (
+      'id' => 1032,
+      'name' => 'Seize the Moment',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    634 => 
+    array (
+      'id' => 521,
+      'name' => 'Shattered Aegis',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    635 => 
+    array (
+      'id' => 14,
+      'name' => 'Pyromancer\'s Puissance',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    636 => 
+    array (
+      'id' => 782,
+      'name' => 'Shrapnel',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    637 => 
+    array (
+      'id' => 1043,
+      'name' => 'Elusive Mind',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    638 => 
+    array (
+      'id' => 284,
+      'name' => 'Light on your Feet',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    639 => 
+    array (
+      'id' => 30,
+      'name' => 'Fresh Air',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    640 => 
+    array (
+      'id' => 1055,
+      'name' => 'Brutality',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    641 => 
+    array (
+      'id' => 548,
+      'name' => 'Perfect Inscriptions',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    642 => 
+    array (
+      'id' => 1067,
+      'name' => 'Maniacal Persistence',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    643 => 
+    array (
+      'id' => 813,
+      'name' => 'Modified Ammunition',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    644 => 
+    array (
+      'id' => 564,
+      'name' => 'Monk\'s Focus',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    645 => 
+    array (
+      'id' => 311,
+      'name' => 'Wilderness Knowledge',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    646 => 
+    array (
+      'id' => 1079,
+      'name' => 'Versed in Stone',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    647 => 
+    array (
+      'id' => 58,
+      'name' => 'Written in Stone',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    648 => 
+    array (
+      'id' => 64,
+      'name' => 'Powerful Aura',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    649 => 
+    array (
+      'id' => 832,
+      'name' => 'Bunker Down',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    650 => 
+    array (
+      'id' => 1091,
+      'name' => 'Natural Abundance',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    651 => 
+    array (
+      'id' => 330,
+      'name' => 'Protective Ward',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    652 => 
+    array (
+      'id' => 589,
+      'name' => 'Writ of Persistence',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    653 => 
+    array (
+      'id' => 1103,
+      'name' => 'Charged Mists',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    654 => 
+    array (
+      'id' => 89,
+      'name' => 'Elemental Surge',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    655 => 
+    array (
+      'id' => 857,
+      'name' => 'Purity of Purpose',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    656 => 
+    array (
+      'id' => 1115,
+      'name' => 'Soothing Bastion',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    657 => 
+    array (
+      'id' => 604,
+      'name' => 'Battle Presence',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    658 => 
+    array (
+      'id' => 358,
+      'name' => 'Zephyr\'s Speed',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    659 => 
+    array (
+      'id' => 1127,
+      'name' => 'Lasting Legacy',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    660 => 
+    array (
+      'id' => 108,
+      'name' => 'Lucid Singularity',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    661 => 
+    array (
+      'id' => 884,
+      'name' => 'Adrenal Implant',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    662 => 
+    array (
+      'id' => 629,
+      'name' => 'Heavy Light',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    663 => 
+    array (
+      'id' => 375,
+      'name' => 'Lingering Light',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    664 => 
+    array (
+      'id' => 120,
+      'name' => 'Woven Stride',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    665 => 
+    array (
+      'id' => 641,
+      'name' => 'Quickfire',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    666 => 
+    array (
+      'id' => 131,
+      'name' => 'Might Makes Right',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    667 => 
+    array (
+      'id' => 387,
+      'name' => 'Leader of the Pack',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    668 => 
+    array (
+      'id' => 905,
+      'name' => 'Final Salvo',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    669 => 
+    array (
+      'id' => 403,
+      'name' => 'Close to Death',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    670 => 
+    array (
+      'id' => 662,
+      'name' => 'Improvisation',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    671 => 
+    array (
+      'id' => 918,
+      'name' => 'Enhanced Capacity Storage Unit',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    672 => 
+    array (
+      'id' => 161,
+      'name' => 'Furious',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    673 => 
+    array (
+      'id' => 933,
+      'name' => 'Mental Anguish',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    674 => 
+    array (
+      'id' => 424,
+      'name' => 'Parasitic Contagion',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    675 => 
+    array (
+      'id' => 172,
+      'name' => 'Cleansing Ire',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    676 => 
+    array (
+      'id' => 684,
+      'name' => 'Hidden Killer',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    677 => 
+    array (
+      'id' => 947,
+      'name' => 'Ineptitude',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    678 => 
+    array (
+      'id' => 436,
+      'name' => 'Corrupter\'s Fervor',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    679 => 
+    array (
+      'id' => 702,
+      'name' => 'Shadow\'s Rejuvenation',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    680 => 
+    array (
+      'id' => 200,
+      'name' => 'Vigorous Shouts',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    681 => 
+    array (
+      'id' => 969,
+      'name' => 'Prismatic Understanding',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    682 => 
+    array (
+      'id' => 458,
+      'name' => 'Unholy Martyr',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    683 => 
+    array (
+      'id' => 719,
+      'name' => 'Upper Hand',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    684 => 
+    array (
+      'id' => 213,
+      'name' => 'Heightened Focus',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    685 => 
+    array (
+      'id' => 987,
+      'name' => 'Illusionary Inspiration',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    686 => 
+    array (
+      'id' => 480,
+      'name' => 'Death Perception',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    687 => 
+    array (
+      'id' => 743,
+      'name' => 'Sleight of Hand',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    688 => 
+    array (
+      'id' => 235,
+      'name' => 'King of Fires',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    689 => 
+    array (
+      'id' => 1007,
+      'name' => 'Master of Fragmentation',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    690 => 
+    array (
+      'id' => 500,
+      'name' => 'Deathly Chill',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    691 => 
+    array (
+      'id' => 757,
+      'name' => 'Unhindered Combatant',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    692 => 
+    array (
+      'id' => 247,
+      'name' => 'Revenge Counter',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 8,
+    ),
+    693 => 
+    array (
+      'id' => 257,
+      'name' => 'Lead the Wind',
+      'specialization_id' => 15,
+      'specialization' => 'Marksmanship',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    694 => 
+    array (
+      'id' => 513,
+      'name' => 'Feed from Corruption',
+      'specialization_id' => 28,
+      'specialization' => 'Scourge',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    695 => 
+    array (
+      'id' => 769,
+      'name' => 'Fire for Effect',
+      'specialization_id' => 42,
+      'specialization' => 'Deadeye',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    696 => 
+    array (
+      'id' => 1030,
+      'name' => 'Chronophantasma',
+      'specialization_id' => 55,
+      'specialization' => 'Chronomancer',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    697 => 
+    array (
+      'id' => 522,
+      'name' => 'Symbolic Avenger',
+      'specialization_id' => 29,
+      'specialization' => 'Zeal',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    698 => 
+    array (
+      'id' => 15,
+      'name' => 'Blinding Ashes',
+      'specialization_id' => 1,
+      'specialization' => 'Fire',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    699 => 
+    array (
+      'id' => 1044,
+      'name' => 'Dune Cloak',
+      'specialization_id' => 56,
+      'specialization' => 'Mirage',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    700 => 
+    array (
+      'id' => 791,
+      'name' => 'Minesweeper',
+      'specialization_id' => 43,
+      'specialization' => 'Explosives',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    701 => 
+    array (
+      'id' => 25,
+      'name' => 'Lightning Rod',
+      'specialization_id' => 2,
+      'specialization' => 'Air',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    702 => 
+    array (
+      'id' => 537,
+      'name' => 'Righteous Instincts',
+      'specialization_id' => 30,
+      'specialization' => 'Radiance',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    703 => 
+    array (
+      'id' => 285,
+      'name' => 'Vicious Quarry',
+      'specialization_id' => 16,
+      'specialization' => 'Skirmishing',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    704 => 
+    array (
+      'id' => 1056,
+      'name' => 'Assassin\'s Annihilation',
+      'specialization_id' => 61,
+      'specialization' => 'Devastation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    705 => 
+    array (
+      'id' => 295,
+      'name' => 'Poison Master',
+      'specialization_id' => 17,
+      'specialization' => 'Wilderness Survival',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    706 => 
+    array (
+      'id' => 1068,
+      'name' => 'Pulsating Pestilence',
+      'specialization_id' => 57,
+      'specialization' => 'Corruption',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    707 => 
+    array (
+      'id' => 45,
+      'name' => 'Stone Heart',
+      'specialization_id' => 3,
+      'specialization' => 'Earth',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    708 => 
+    array (
+      'id' => 814,
+      'name' => 'Incendiary Powder',
+      'specialization_id' => 44,
+      'specialization' => 'Firearms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    709 => 
+    array (
+      'id' => 1080,
+      'name' => 'Steadfast Rejuvenation',
+      'specialization_id' => 58,
+      'specialization' => 'Retribution',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    710 => 
+    array (
+      'id' => 570,
+      'name' => 'Tenacious Defense',
+      'specialization_id' => 31,
+      'specialization' => 'Valor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    711 => 
+    array (
+      'id' => 828,
+      'name' => 'Medical Dispersion Field',
+      'specialization_id' => 45,
+      'specialization' => 'Inventions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    712 => 
+    array (
+      'id' => 65,
+      'name' => 'Soothing Power',
+      'specialization_id' => 4,
+      'specialization' => 'Water',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    713 => 
+    array (
+      'id' => 578,
+      'name' => 'Force of Will',
+      'specialization_id' => 32,
+      'specialization' => 'Honor',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    714 => 
+    array (
+      'id' => 1092,
+      'name' => 'Momentary Pacification',
+      'specialization_id' => 59,
+      'specialization' => 'Salvation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    715 => 
+    array (
+      'id' => 331,
+      'name' => 'Invigorating Bond',
+      'specialization_id' => 18,
+      'specialization' => 'Nature Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    716 => 
+    array (
+      'id' => 1104,
+      'name' => 'Roiling Mists',
+      'specialization_id' => 60,
+      'specialization' => 'Invocation',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    717 => 
+    array (
+      'id' => 342,
+      'name' => 'Honed Axes',
+      'specialization_id' => 19,
+      'specialization' => 'Beastmastery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    718 => 
+    array (
+      'id' => 602,
+      'name' => 'Indomitable Courage',
+      'specialization_id' => 33,
+      'specialization' => 'Virtues',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    719 => 
+    array (
+      'id' => 858,
+      'name' => 'Iron Blooded',
+      'specialization_id' => 46,
+      'specialization' => 'Alchemy',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    720 => 
+    array (
+      'id' => 91,
+      'name' => 'Bountiful Power',
+      'specialization_id' => 5,
+      'specialization' => 'Arcane',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    721 => 
+    array (
+      'id' => 1116,
+      'name' => 'Enhanced Bulwark',
+      'specialization_id' => 62,
+      'specialization' => 'Herald',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    722 => 
+    array (
+      'id' => 1128,
+      'name' => 'Righteous Rebel',
+      'specialization_id' => 63,
+      'specialization' => 'Renegade',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    723 => 
+    array (
+      'id' => 109,
+      'name' => 'Elemental Bastion',
+      'specialization_id' => 6,
+      'specialization' => 'Tempest',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    724 => 
+    array (
+      'id' => 881,
+      'name' => 'Gadgeteer',
+      'specialization_id' => 47,
+      'specialization' => 'Tools',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    725 => 
+    array (
+      'id' => 630,
+      'name' => 'Big Game Hunter',
+      'specialization_id' => 34,
+      'specialization' => 'Dragonhunter',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    726 => 
+    array (
+      'id' => 376,
+      'name' => 'Ancient Seeds',
+      'specialization_id' => 20,
+      'specialization' => 'Druid',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    727 => 
+    array (
+      'id' => 121,
+      'name' => 'Invigorating Strikes',
+      'specialization_id' => 7,
+      'specialization' => 'Weaver',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    728 => 
+    array (
+      'id' => 642,
+      'name' => 'Loremaster',
+      'specialization_id' => 35,
+      'specialization' => 'Firebrand',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    729 => 
+    array (
+      'id' => 388,
+      'name' => 'Oppressive Superiority',
+      'specialization_id' => 21,
+      'specialization' => 'Soulbeast',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    730 => 
+    array (
+      'id' => 134,
+      'name' => 'Merciless Hammer',
+      'specialization_id' => 8,
+      'specialization' => 'Strength',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    731 => 
+    array (
+      'id' => 906,
+      'name' => 'Applied Force',
+      'specialization_id' => 48,
+      'specialization' => 'Scrapper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    732 => 
+    array (
+      'id' => 402,
+      'name' => 'Spiteful Spirit',
+      'specialization_id' => 22,
+      'specialization' => 'Spite',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    733 => 
+    array (
+      'id' => 660,
+      'name' => 'Executioner',
+      'specialization_id' => 36,
+      'specialization' => 'Deadly Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    734 => 
+    array (
+      'id' => 151,
+      'name' => 'Dual Wielding',
+      'specialization_id' => 9,
+      'specialization' => 'Arms',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    735 => 
+    array (
+      'id' => 919,
+      'name' => 'Photonic Blasting Module',
+      'specialization_id' => 49,
+      'specialization' => 'Holosmith',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    736 => 
+    array (
+      'id' => 927,
+      'name' => 'Power Block',
+      'specialization_id' => 50,
+      'specialization' => 'Domination',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    737 => 
+    array (
+      'id' => 673,
+      'name' => 'Invigorating Precision',
+      'specialization_id' => 37,
+      'specialization' => 'Critical Strikes',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    738 => 
+    array (
+      'id' => 426,
+      'name' => 'Lingering Curse',
+      'specialization_id' => 23,
+      'specialization' => 'Curses',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    739 => 
+    array (
+      'id' => 171,
+      'name' => 'Rousing Resilience',
+      'specialization_id' => 10,
+      'specialization' => 'Defense',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    740 => 
+    array (
+      'id' => 437,
+      'name' => 'Unholy Sanctuary',
+      'specialization_id' => 24,
+      'specialization' => 'Death Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    741 => 
+    array (
+      'id' => 952,
+      'name' => 'Deceptive Evasion',
+      'specialization_id' => 51,
+      'specialization' => 'Dueling',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    742 => 
+    array (
+      'id' => 190,
+      'name' => 'Phalanx Strength',
+      'specialization_id' => 11,
+      'specialization' => 'Tactics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    743 => 
+    array (
+      'id' => 704,
+      'name' => 'Rending Shade',
+      'specialization_id' => 38,
+      'specialization' => 'Shadow Arts',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    744 => 
+    array (
+      'id' => 965,
+      'name' => 'Bountiful Disillusionment',
+      'specialization_id' => 52,
+      'specialization' => 'Chaos',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    745 => 
+    array (
+      'id' => 713,
+      'name' => 'Don\'t Stop',
+      'specialization_id' => 39,
+      'specialization' => 'Acrobatics',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    746 => 
+    array (
+      'id' => 463,
+      'name' => 'Transfusion',
+      'specialization_id' => 25,
+      'specialization' => 'Blood Magic',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    747 => 
+    array (
+      'id' => 217,
+      'name' => 'Burst Mastery',
+      'specialization_id' => 12,
+      'specialization' => 'Discipline',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    748 => 
+    array (
+      'id' => 475,
+      'name' => 'Dhuumfire',
+      'specialization_id' => 26,
+      'specialization' => 'Soul Reaping',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    749 => 
+    array (
+      'id' => 733,
+      'name' => 'Bewildering Ambush',
+      'specialization_id' => 40,
+      'specialization' => 'Trickery',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    750 => 
+    array (
+      'id' => 993,
+      'name' => 'Temporal Enchanter',
+      'specialization_id' => 53,
+      'specialization' => 'Inspiration',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    751 => 
+    array (
+      'id' => 236,
+      'name' => 'Eternal Champion',
+      'specialization_id' => 13,
+      'specialization' => 'Berserker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    752 => 
+    array (
+      'id' => 1009,
+      'name' => 'Malicious Sorcery',
+      'specialization_id' => 54,
+      'specialization' => 'Illusions',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    753 => 
+    array (
+      'id' => 756,
+      'name' => 'Bounding Dodger',
+      'specialization_id' => 41,
+      'specialization' => 'Daredevil',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    754 => 
+    array (
+      'id' => 501,
+      'name' => 'Reaper\'s Onslaught',
+      'specialization_id' => 27,
+      'specialization' => 'Reaper',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
+    ),
+    755 => 
+    array (
+      'id' => 248,
+      'name' => 'Magebane Tether',
+      'specialization_id' => 14,
+      'specialization' => 'Spellbreaker',
+      'minor' => false,
+      'major' => true,
+      'tier' => 3,
+      'number' => 9,
     ),
   ),
 );

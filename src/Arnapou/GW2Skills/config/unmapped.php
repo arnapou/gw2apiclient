@@ -1,47 +1,4 @@
 <?php return array (
-  'pets' => 
-  array (
-    0 => 
-    array (
-      'id' => 21,
-      'name' => 'Cheetah',
-      'family' => 'Feline',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    1 => 
-    array (
-      'id' => 25,
-      'name' => 'Sand Lion',
-      'family' => 'Feline',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    2 => 
-    array (
-      'id' => 28,
-      'name' => 'Rock Gazelle',
-      'family' => 'Gazelle',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    3 => 
-    array (
-      'id' => 29,
-      'name' => 'Fanged Iboga',
-      'family' => 'Iboga',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-    4 => 
-    array (
-      'id' => 30,
-      'name' => 'Jacaranda',
-      'family' => 'Jacaranda',
-      'terrestrial' => true,
-      'aquatic' => false,
-    ),
-  ),
   'buffs' => 
   array (
     0 => 
@@ -55,7 +12,7 @@
     ),
     1 => 
     array (
-      'id' => 22,
+      'id' => 25,
       'name' => 'Sharpening Stone Station',
       'type' => 'Sharpen',
       'rarity' => 'Masterwork',
@@ -64,7 +21,7 @@
     ),
     2 => 
     array (
-      'id' => 30,
+      'id' => 36,
       'name' => 'Tuning Crystal Station',
       'type' => 'Crystal',
       'rarity' => 'Masterwork',
@@ -73,7 +30,7 @@
     ),
     3 => 
     array (
-      'id' => 61,
+      'id' => 70,
       'name' => 'Beetletun Omelette',
       'type' => 'Food',
       'rarity' => 'Fine',
@@ -82,7 +39,7 @@
     ),
     4 => 
     array (
-      'id' => 189,
+      'id' => 198,
       'name' => 'Blessing Of Bear',
       'type' => 'Food',
       'rarity' => 'Common',
@@ -108,7 +65,7 @@
     ),
     1 => 
     array (
-      'id' => 563,
+      'id' => 565,
       'name' => '"Sick \'Em!"',
       'profession_id' => 3,
       'profession' => 'Ranger',
@@ -275,7 +232,7 @@
     ),
     15 => 
     array (
-      'id' => 170,
+      'id' => 186,
       'type' => 'Rune',
       'rarity' => 'Exotic',
       'name' => 'Superior Rune of the Lynx',
@@ -285,7 +242,7 @@
     ),
     16 => 
     array (
-      'id' => 205,
+      'id' => 227,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Malign Infusion',
@@ -294,7 +251,7 @@
     ),
     17 => 
     array (
-      'id' => 206,
+      'id' => 228,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Mighty Infusion',
@@ -303,7 +260,7 @@
     ),
     18 => 
     array (
-      'id' => 207,
+      'id' => 229,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Precise Infusion',
@@ -312,7 +269,7 @@
     ),
     19 => 
     array (
-      'id' => 214,
+      'id' => 236,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Healing Infusion',
@@ -321,7 +278,7 @@
     ),
     20 => 
     array (
-      'id' => 215,
+      'id' => 237,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Resilient Infusion',
@@ -330,12 +287,145 @@
     ),
     21 => 
     array (
-      'id' => 216,
+      'id' => 238,
       'type' => 'Infusion',
       'rarity' => 'Common',
       'name' => 'Vital Infusion',
       'pvx' => 6,
       'is_profile' => false,
+    ),
+  ),
+  'items' => 
+  array (
+    0 => 
+    array (
+      'id' => 81,
+      'type' => 'Back',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    1 => 
+    array (
+      'id' => 125,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Bringer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    2 => 
+    array (
+      'id' => 150,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    3 => 
+    array (
+      'id' => 162,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Bringer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    4 => 
+    array (
+      'id' => 187,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Weapon',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    5 => 
+    array (
+      'id' => 200,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Bringer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    6 => 
+    array (
+      'id' => 224,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    7 => 
+    array (
+      'id' => 237,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Bringer',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    8 => 
+    array (
+      'id' => 261,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Armor',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    9 => 
+    array (
+      'id' => 299,
+      'type' => '',
+      'rarity' => 'Exotic',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    10 => 
+    array (
+      'id' => 340,
+      'type' => '',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'group' => 'Trinket',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
+    ),
+    11 => 
+    array (
+      'id' => 383,
+      'type' => 'Back',
+      'rarity' => 'Ascended',
+      'name' => '',
+      'stats_class' => 'Plaguedoctor',
+      'pvx' => 6,
+      'is_profile' => true,
     ),
   ),
 );

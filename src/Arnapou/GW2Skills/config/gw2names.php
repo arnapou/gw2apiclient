@@ -18,6 +18,7 @@
       '+20 agony infusion' => 49443,
       '+21 agony infusion' => 49444,
       '+22 agony infusion' => 49445,
+      '+23 agony infusion' => 49446,
       '+28 agony infusion' => 49451,
       '+3 agony infusion' => 49426,
       '+4 agony infusion' => 49427,
@@ -26,8 +27,22 @@
       '+7 agony infusion' => 49430,
       '+8 agony infusion' => 49431,
       '+9 agony infusion' => 49432,
-      'moto\'s unstable bauble infusion: blue' => 78090,
-      'moto\'s unstable bauble infusion: red' => 78097,
+      'moto\'s unstable bauble infusion: blue' => 86571,
+      'moto\'s unstable bauble infusion: red' => 86453,
+      'swim speed infusion +16' => 87497,
+      'swim-speed infusion +10' => 87528,
+      'swim-speed infusion +11' => 87518,
+      'swim-speed infusion +12' => 87493,
+      'swim-speed infusion +13' => 87503,
+      'swim-speed infusion +14' => 87526,
+      'swim-speed infusion +15' => 87496,
+      'swim-speed infusion +17' => 87508,
+      'swim-speed infusion +18' => 87516,
+      'swim-speed infusion +19' => 87532,
+      'swim-speed infusion +20' => 87495,
+      'swim-speed infusion +21' => 87525,
+      'swim-speed infusion +22' => 87511,
+      'swim-speed infusion +23' => 87512,
     ),
     'basic' => 
     array (
@@ -46,11 +61,11 @@
       'berserker\'s jewel' => 21093,
       'brandspark jewel' => 84765,
       'carrion jewel' => 21164,
-      'celestial infusion (blue)' => 81878,
-      'celestial infusion (red)' => 82062,
+      'celestial infusion (blue)' => 86347,
+      'celestial infusion (red)' => 85833,
       'celestial jewel' => 21169,
       'chak egg sac' => 72021,
-      'chak infusion' => 81840,
+      'chak infusion' => 85668,
       'cleric\'s jewel' => 21094,
       'exquisite agate jewel' => 75435,
       'exquisite ambrite jewel' => 66671,
@@ -74,19 +89,21 @@
       'exquisite sapphire jewel' => 24499,
       'exquisite snowflake' => 38143,
       'exquisite watchwork sprocket' => 49823,
-      'ghostly infusion' => 77394,
-      'liquid aurillium infusion' => 81975,
-      'phospholuminescent infusion' => 79674,
-      'poly-luminescent undulating infusion (black)' => 82039,
-      'poly-luminescent undulating infusion (green)' => 81727,
-      'poly-luminescent undulating infusion (orange)' => 81911,
-      'poly-luminescent undulating infusion (teal)' => 81959,
+      'festive confetti infusion' => 85900,
+      'ghostly infusion' => 85945,
+      'liquid aurillium infusion' => 86291,
+      'mournstone' => 82495,
+      'phospholuminescent infusion' => 85885,
+      'poly-luminescent undulating infusion (black)' => 85974,
+      'poly-luminescent undulating infusion (green)' => 85682,
+      'poly-luminescent undulating infusion (orange)' => 86310,
+      'poly-luminescent undulating infusion (teal)' => 86068,
       'poly-luminescent undulating refractor (black)' => 67375,
       'poly-luminescent undulating refractor (green)' => 67370,
       'poly-luminescent undulating refractor (orange)' => 67372,
       'poly-luminescent undulating refractor (teal)' => 79647,
       'preserved queen bee' => 77594,
-      'queen bee infusion' => 81897,
+      'queen bee infusion' => 86303,
       'rabid jewel' => 21165,
       'rampager\'s jewel' => 21166,
       'rune of adventure' => 21213,
@@ -187,7 +204,9 @@
       'sigil of torment' => 65223,
       'sigil of venom' => 21127,
       'sigil of water' => 21148,
+      'snow diamond infusion' => 86704,
       'soldier\'s jewel' => 21163,
+      'sunset jewel' => 84581,
       'superior rune of altruism' => 38206,
       'superior rune of antitoxin' => 48907,
       'superior rune of balthazar' => 24765,
@@ -223,10 +242,12 @@
       'superior rune of the baelfire' => 24854,
       'superior rune of the berserker' => 71425,
       'superior rune of the brawler' => 24833,
+      'superior rune of the cavalier' => 83367,
       'superior rune of the centaur' => 24788,
       'superior rune of the chronomancer' => 73399,
       'superior rune of the citadel' => 24741,
       'superior rune of the daredevil' => 72852,
+      'superior rune of the deadeye' => 82791,
       'superior rune of the defender' => 67912,
       'superior rune of the dolyak' => 24699,
       'superior rune of the dragonhunter' => 74978,
@@ -236,6 +257,7 @@
       'superior rune of the elementalist' => 24800,
       'superior rune of the engineer' => 24812,
       'superior rune of the fire' => 24747,
+      'superior rune of the firebrand' => 83338,
       'superior rune of the flame legion' => 24797,
       'superior rune of the flock' => 24696,
       'superior rune of the forgeman' => 24851,
@@ -243,11 +265,13 @@
       'superior rune of the grove' => 24735,
       'superior rune of the guardian' => 24824,
       'superior rune of the herald' => 76100,
+      'superior rune of the holosmith' => 82633,
       'superior rune of the ice' => 24753,
       'superior rune of the krait' => 24762,
       'superior rune of the lich' => 24688,
       'superior rune of the mad king' => 36044,
       'superior rune of the mesmer' => 24803,
+      'superior rune of the mirage' => 84127,
       'superior rune of the mists' => 38021,
       'superior rune of the monk' => 24842,
       'superior rune of the necromancer' => 24806,
@@ -259,9 +283,14 @@
       'superior rune of the rata sum' => 24726,
       'superior rune of the reaper' => 70829,
       'superior rune of the rebirth' => 84171,
+      'superior rune of the renegade' => 83502,
       'superior rune of the revenant' => 69370,
       'superior rune of the scholar' => 24836,
+      'superior rune of the scourge' => 83663,
       'superior rune of the scrapper' => 71276,
+      'superior rune of the soulbeast' => 83964,
+      'superior rune of the spellbreaker' => 84749,
+      'superior rune of the stars' => 85713,
       'superior rune of the sunless' => 47908,
       'superior rune of the tempest' => 76166,
       'superior rune of the thief' => 24818,
@@ -271,6 +300,7 @@
       'superior rune of the undead' => 24757,
       'superior rune of the warrior' => 24821,
       'superior rune of the water' => 24839,
+      'superior rune of the weaver' => 83423,
       'superior rune of the wurm' => 24791,
       'superior rune of thorns' => 72912,
       'superior rune of tormenting' => 44956,
@@ -307,6 +337,7 @@
       'superior sigil of fire' => 24548,
       'superior sigil of force' => 24615,
       'superior sigil of frailty' => 24567,
+      'superior sigil of frenzy' => 82876,
       'superior sigil of generosity' => 38294,
       'superior sigil of geomancy' => 24605,
       'superior sigil of ghost slaying' => 24809,
@@ -347,6 +378,7 @@
       'superior sigil of stamina' => 24592,
       'superior sigil of strength' => 24562,
       'superior sigil of the night' => 36053,
+      'superior sigil of the stars' => 86170,
       'superior sigil of torment' => 48911,
       'superior sigil of transference' => 74326,
       'superior sigil of undead slaying' => 24642,
@@ -355,7 +387,7 @@
       'superior sigil of wrath' => 24667,
       'valkyrie\'s jewel' => 21168,
       'vial of liquid aurillium' => 76063,
-      'winter\'s heart infusion' => 80063,
+      'winter\'s heart infusion' => 85734,
     ),
     'fine' => 
     array (
@@ -368,9 +400,11 @@
       'carnelian lump' => 24472,
       'carnelian nugget' => 24469,
       'chrysocola shard' => 24870,
+      'concentration wvw infusion' => 86986,
       'coral chunk' => 24874,
       'emerald shard' => 24871,
       'experienced enrichment' => 39330,
+      'expertise wvw infusion' => 87218,
       'garnet pebble' => 24464,
       'gilded enrichment' => 39331,
       'healing +5 agony infusion' => 39616,
@@ -390,6 +424,7 @@
       'mark of the stout' => 24890,
       'mighty +5 agony infusion' => 39620,
       'mighty wvw infusion' => 43254,
+      'mystical +5 agony infusion' => 86338,
       'opal shard' => 24875,
       'pearl' => 24500,
       'peridot lump' => 24504,
@@ -403,6 +438,7 @@
       'simple infusion' => 37137,
       'spinel lump' => 24526,
       'spinel nugget' => 64655,
+      'spiteful +5 agony infusion' => 85971,
       'sunstone lump' => 24503,
       'sunstone nugget' => 24471,
       'talisman of lingering' => 24525,
@@ -417,6 +453,8 @@
       'versatile bounteous infusion' => 37140,
       'vital +5 agony infusion' => 39618,
       'vital wvw infusion' => 43252,
+      'wvw reward track enrichment' => 87398,
+      'wxp enrichment' => 87417,
     ),
     'masterwork' => 
     array (
@@ -584,6 +622,7 @@
       'minor sigil of venom' => 24631,
       'minor sigil of water' => 24549,
       'minor sigil of wrath' => 24669,
+      'mystical +7 agony infusion' => 85881,
       'opal crystal' => 24521,
       'ornate beryl jewel' => 24883,
       'ornate chrysocola jewel' => 24878,
@@ -603,6 +642,7 @@
       'seal of the rabid' => 24892,
       'seal of the shaman' => 24893,
       'seal of the soldier' => 24894,
+      'spiteful +7 agony infusion' => 86150,
       'vital +7 agony infusion' => 37134,
     ),
     'rare' => 
@@ -653,6 +693,17 @@
       'emerald orb' => 24515,
       'flax blossom' => 74988,
       'freshwater pearl' => 76179,
+      'glyph of bounty' => 87462,
+      'glyph of flight' => 87433,
+      'glyph of industry' => 87432,
+      'glyph of the forester' => 87550,
+      'glyph of the leatherworker' => 87473,
+      'glyph of the prospector' => 87534,
+      'glyph of the scavenger' => 87442,
+      'glyph of the tailor' => 87407,
+      'glyph of the unbound' => 87428,
+      'glyph of the watchknight' => 87438,
+      'glyph of volatility' => 87698,
       'gold doubloon' => 24772,
       'healing +9 agony infusion' => 37125,
       'maguuma burl' => 72315,
@@ -783,6 +834,7 @@
       'malign +9 agony infusion' => 37130,
       'mighty +9 agony infusion' => 37131,
       'moonstone orb' => 72504,
+      'mystical +9 agony infusion' => 86180,
       'opal orb' => 24522,
       'platinum doubloon' => 24773,
       'precise +9 agony infusion' => 37132,
@@ -790,6 +842,7 @@
       'ruby orb' => 24508,
       'sapphire orb' => 24516,
       'silver doubloon' => 24502,
+      'spiteful +9 agony infusion' => 86113,
       'vital +9 agony infusion' => 37136,
     ),
   ),
@@ -921,17 +974,17 @@
     3 => 
     array (
       'charged mists' => 1791,
-      'cleansing channel' => 1761,
-      'cruel repercussion' => 1732,
+      'cleansing channel' => 1732,
       'empty vessel' => 1769,
-      'equilibrium' => 1774,
       'ferocious aggression' => 1758,
       'fierce infusion' => 1784,
+      'forceful persistence' => 1761,
       'incensed response' => 1781,
       'invoker\'s rage' => 1778,
       'rapid flow' => 1760,
-      'roiling mists' => 1749,
-      'shrouding mists' => 1719,
+      'roiling mists' => 1719,
+      'song of the mists' => 1749,
+      'spirit boon' => 1774,
     ),
     4 => 
     array (
@@ -944,9 +997,9 @@
       'merciless hammer' => 1440,
       'might makes right' => 1454,
       'peak performance' => 1444,
+      'pinnacle of strength' => 1453,
       'reckless dodge' => 1446,
       'restorative strength' => 1451,
-      'stick and move' => 1453,
     ),
     5 => 
     array (
@@ -1000,6 +1053,7 @@
       'alpha focus' => 1009,
       'brutish seals' => 1001,
       'clarion bond' => 986,
+      'farsighted' => 1000,
       'hunter\'s gaze' => 1014,
       'lead the wind' => 1698,
       'moment of clarity' => 1070,
@@ -1007,7 +1061,6 @@
       'precise strike' => 1011,
       'predator\'s onslaught' => 996,
       'remorseless' => 1015,
-      'steady focus' => 1000,
       'stoneform' => 1021,
     ),
     9 => 
@@ -1078,11 +1131,11 @@
       'focus mastery' => 633,
       'might of the protector' => 583,
       'monk\'s focus' => 586,
-      'retributive armor' => 589,
       'smiter\'s boon' => 581,
       'stalwart defender' => 580,
       'strength in numbers' => 584,
       'strength of the fallen' => 588,
+      'tenacious defense' => 589,
       'valorous defense' => 582,
     ),
     14 => 
@@ -1104,12 +1157,12 @@
     array (
       'assassin\'s annihilation' => 1754,
       'assassin\'s presence' => 1802,
-      'dismantle fortifications' => 1800,
+      'brutality' => 1800,
+      'expose defenses' => 1808,
       'ferocious strikes' => 1776,
       'focused siphoning' => 1792,
       'jade echo' => 1755,
       'malicious reprisal' => 1786,
-      'mutilate defenses' => 1808,
       'nefarious momentum' => 1765,
       'swift termination' => 1715,
       'targeted destruction' => 1724,
@@ -1229,18 +1282,18 @@
       'medic\'s feedback' => 756,
       'mender\'s purity' => 757,
       'mental defense' => 2005,
-      'persisting images' => 744,
       'protected phantasms' => 1980,
       'restorative illusions' => 740,
       'restorative mantras' => 738,
+      'sympathetic visage' => 744,
       'temporal enchanter' => 752,
       'warden\'s feedback' => 751,
     ),
     24 => 
     array (
-      'compounding power' => 721,
-      'illusionary retribution' => 734,
-      'illusionist\'s celerity' => 723,
+      'compounding power' => 723,
+      'cry of pain' => 734,
+      'escape artist' => 722,
       'maim the disillusioned' => 1690,
       'malicious sorcery' => 753,
       'master of fragmentation' => 2035,
@@ -1248,7 +1301,7 @@
       'persistence of memory' => 1869,
       'phantasmal force' => 733,
       'phantasmal haste' => 729,
-      'shattered strength' => 722,
+      'shatter storm' => 721,
       'the pledge' => 691,
     ),
     25 => 
@@ -1314,17 +1367,17 @@
     ),
     29 => 
     array (
-      'alchemical tinctures' => 413,
       'backpack regenerator' => 470,
+      'comeback cure' => 520,
+      'compounding chemicals' => 413,
       'health insurance' => 521,
       'hgh' => 473,
       'hidden flask' => 468,
-      'inversion enzyme' => 520,
       'invigorating speed' => 396,
       'iron blooded' => 1854,
       'protection injection' => 509,
+      'purity of purpose' => 1871,
       'self-regulating defenses' => 469,
-      'stimulant supplier' => 1871,
       'transmute' => 487,
     ),
     30 => 
@@ -1414,7 +1467,7 @@
       'no quarter' => 1904,
       'practiced tolerance' => 1272,
       'signets of power' => 1267,
-      'sundering strikes' => 1170,
+      'sundering shade' => 1170,
       'twin fangs' => 1268,
       'unrelenting strikes' => 1210,
     ),
@@ -1428,16 +1481,16 @@
       'furious' => 1346,
       'furious burst' => 1342,
       'opportunist' => 1334,
-      'rending strikes' => 1316,
       'signet mastery' => 1344,
+      'sundering burst' => 1316,
       'unsuspecting foe' => 1315,
       'wounding precision' => 1455,
     ),
     37 => 
     array (
       'arcane abatement' => 1487,
-      'arcane fury' => 268,
       'arcane precision' => 253,
+      'arcane prowess' => 268,
       'arcane resurrection' => 265,
       'bountiful power' => 1511,
       'elemental attunement' => 264,
@@ -1451,7 +1504,6 @@
     38 => 
     array (
       'chemical rounds' => 1878,
-      'heavy armor exploit' => 1930,
       'hematic focus' => 536,
       'high caliber' => 1914,
       'incendiary powder' => 433,
@@ -1459,9 +1511,10 @@
       'modified ammunition' => 526,
       'no scope' => 1923,
       'pinpoint distribution' => 1984,
+      'sanguine array' => 1930,
       'serrated steel' => 516,
       'sharpshooter' => 515,
-      'skilled marksman' => 2006,
+      'thermal vision' => 2006,
     ),
     39 => 
     array (
@@ -1504,8 +1557,8 @@
       'inscription' => 229,
       'lightning rod' => 1672,
       'one with air' => 224,
+      'raging storm' => 223,
       'tempest defense' => 1502,
-      'weak spot' => 223,
       'zephyr\'s boon' => 227,
       'zephyr\'s speed' => 221,
     ),
@@ -1587,17 +1640,17 @@
     ),
     47 => 
     array (
-      'advanced turrets' => 472,
+      'anticorrosion plating' => 472,
       'autodefense bomb dispenser' => 507,
       'automated medical response' => 1901,
       'bunker down' => 1680,
       'cleansing synergy' => 518,
       'energy amplifier' => 519,
       'experimental turrets' => 1678,
-      'heal resonator' => 508,
       'mecha legs' => 445,
       'medical dispersion field' => 1916,
       'over shield' => 394,
+      'reconstruction enclosure' => 508,
       'soothing detonation' => 1834,
     ),
     48 => 
@@ -1679,18 +1732,18 @@
     ),
     53 => 
     array (
+      'awaken the pain' => 829,
       'bitter chill' => 1863,
       'chill of death' => 899,
       'close to death' => 853,
       'death\'s embrace' => 915,
+      'dread' => 909,
       'reaper\'s might' => 913,
-      'rending shroud' => 829,
       'signets of suffering' => 919,
       'siphoned power' => 917,
       'spiteful renewal' => 916,
       'spiteful spirit' => 903,
       'spiteful talisman' => 914,
-      'unholy fervor' => 909,
     ),
     54 => 
     array (
@@ -1735,9 +1788,9 @@
       'superior elements' => 2177,
       'swift revenge' => 2061,
       'sword proficiency' => 2149,
-      'unravel hexes' => 2090,
       'weaver' => 2109,
       'weaver\'s prowess' => 2180,
+      'woven stride' => 2090,
     ),
     57 => 
     array (
@@ -1758,22 +1811,23 @@
     58 => 
     array (
       'be quick or be killed' => 2093,
+      'collateral damage' => 2173,
       'deadeye\'s gaze' => 2171,
       'fire for effect' => 2146,
-      'iron sight' => 2173,
+      'iron sight' => 2084,
       'maleficent seven' => 2111,
+      'malicious intent' => 2145,
       'one in the chamber' => 2136,
-      'perfectionist' => 2084,
-      'peripheral vision' => 2160,
+      'payback' => 2078,
+      'premeditation' => 2160,
       'renewing gaze' => 2172,
-      'revealed malice' => 2145,
       'rifle proficiency' => 2129,
       'silent scope' => 2118,
-      'unforgiving' => 2078,
     ),
     59 => 
     array (
       'axe proficiency' => 2087,
+      'desert distortion' => 2178,
       'dune cloak' => 2169,
       'elusive mind' => 2113,
       'infinite horizon' => 2070,
@@ -1784,7 +1838,6 @@
       'renewing oasis' => 2082,
       'riddle of sand' => 2110,
       'self-deception' => 2141,
-      'shards of glass' => 2178,
       'speed of sand' => 2117,
     ),
     60 => 
@@ -1796,7 +1849,7 @@
       'feed from corruption' => 2080,
       'fell beacon' => 2074,
       'mantle of sand' => 2147,
-      'nourishing rot' => 2102,
+      'nourishing ashes' => 2102,
       'sadistic searing' => 2067,
       'sand sage' => 2121,
       'sand savant' => 2112,
@@ -1865,6 +1918,7 @@
     'artisan tuning crystal' => 9472,
     'ash legion spy kit' => 8686,
     'assassin pill' => 2,
+    'avocado smoothie' => 87029,
     'bag of simple cat food' => 84429,
     'banana cream pie' => 12230,
     'bear offering' => 8536,
@@ -1886,6 +1940,7 @@
     'bountiful sharpening stone' => 67531,
     'bountiful tuning crystal' => 67522,
     'bovine potion' => 8691,
+    'bowl of "elon red"' => 82541,
     'bowl of apple sauce' => 12308,
     'bowl of artichoke soup' => 12450,
     'bowl of ascalonian salad' => 12196,
@@ -1987,11 +2042,13 @@
     'bowl of poultry and leek soup' => 12444,
     'bowl of poultry and winter vegetable soup' => 12443,
     'bowl of poultry noodle soup' => 12204,
+    'bowl of poultry satay' => 87076,
     'bowl of poultry stock' => 12202,
     'bowl of poultry tarragon pasta' => 12424,
     'bowl of prickly pear sorbet' => 66539,
     'bowl of prickly pear tapioca pudding' => 76135,
     'bowl of pumpkin bisque' => 12410,
+    'bowl of red lentil soup' => 83955,
     'bowl of red meat stock' => 12199,
     'bowl of refugee\'s beet soup' => 41562,
     'bowl of roasted lotus root' => 12475,
@@ -2017,6 +2074,7 @@
     'bowl of spiced mashed yams' => 12284,
     'bowl of spiced meat and cabbage stew' => 12407,
     'bowl of spiced meat chili' => 12409,
+    'bowl of spiced red lentil stew' => 83345,
     'bowl of spiced veggie chili' => 12408,
     'bowl of spicy meat chili' => 12447,
     'bowl of spicy veggie chili' => 12446,
@@ -2119,15 +2177,19 @@
     'complete bloodstone breakfast' => 68407,
     'cooked crawdad' => 8533,
     'cooked fish steak' => 8534,
+    'corsair maintenance oil' => 86016,
+    'corsair sharpening stone' => 86378,
+    'corsair tuning crystal' => 86287,
     'crab cake' => 8595,
     'crab food' => 8633,
     'crunchy firefly snack' => 8510,
     'crunchy grasshopper' => 72664,
+    'cup of light-roasted coffee' => 82642,
     'cup of lotus fries' => 12472,
     'cup of potato fries' => 12184,
     'cupcake' => 8518,
     'curry bun' => 8572,
-    'delicate snowflake' => 38131,
+    'debbie\'s cake' => 88101,
     'delicious cave spore' => 8611,
     'delicious rice ball' => 68634,
     'deluxe burger' => 12208,
@@ -2273,6 +2335,7 @@
     'glazed pear tart' => 36080,
     'glazed pumpkin pie' => 36079,
     'glory booster' => 21268,
+    'golem swarm potion' => 87631,
     'grape pie' => 12322,
     'grawl snack' => 8552,
     'grawl snowman potion' => 8640,
@@ -2291,6 +2354,10 @@
     'hardened sharpening stone' => 9440,
     'healing salve' => 8637,
     'heart-shaped cookie' => 8500,
+    'holographic super apple' => 87336,
+    'holographic super cake' => 87367,
+    'holographic super cheese' => 87358,
+    'holographic super drumstick' => 87329,
     'honeypot ant' => 73409,
     'horseradish burger' => 12390,
     'hylek maintenance oil' => 67184,
@@ -2422,6 +2489,8 @@
     'pile of golden sand' => 70628,
     'pile of pink sand' => 71176,
     'pirate hard tack' => 8634,
+    'pitcher of desert-spiced coffee' => 83545,
+    'plate of beef rendang' => 86997,
     'plate of bloodstone waffles' => 68408,
     'plate of citrus clove meat' => 12393,
     'plate of citrus poultry with almonds' => 12389,
@@ -2441,6 +2510,7 @@
     'plate of spicy herbed chicken' => 41567,
     'plate of steak and asparagus' => 12430,
     'plate of steak and asparagus dinner' => 12432,
+    'plate of sugar rib roast' => 83622,
     'plate of sweet curried mussels' => 79488,
     'plate of truffle steak' => 12467,
     'plate of truffle steak dinner' => 12469,
@@ -2568,6 +2638,8 @@
     'raspberry pie' => 12264,
     'raven offering' => 8542,
     'red bean cake' => 8575,
+    'red lentil and flatbread feast' => 82657,
+    'red-lentil saobosa' => 84550,
     'refurbished toy' => 77616,
     'rice ball' => 12145,
     'roasted aloe seed' => 8582,
@@ -2589,6 +2661,7 @@
     'sharpening skull' => 67368,
     'shiverpeak popper' => 8607,
     'shiverpeak ration' => 8618,
+    'show of support: highjump ranch' => 83613,
     'simple sharpening stone' => 64110,
     'slice of allspice cake' => 75126,
     'slice of allspice cake with ice cream' => 76359,
@@ -2626,19 +2699,6 @@
     'steamed red dumpling' => 68635,
     'stick of cotton candy' => 8584,
     'stick of mystery meat' => 8527,
-    'story unlock: bitterfrost frontier' => 79846,
-    'story unlock: echoes of the past' => 67776,
-    'story unlock: entanglement' => 66871,
-    'story unlock: flashpoint' => 81162,
-    'story unlock: gates of maguuma' => 66873,
-    'story unlock: out of the shadows' => 79550,
-    'story unlock: point of no return' => 68496,
-    'story unlock: rising flames' => 79584,
-    'story unlock: seeds of truth' => 68039,
-    'story unlock: tangled paths' => 67967,
-    'story unlock: the dragon\'s reach, part 1' => 66872,
-    'story unlock: the dragon\'s reach, part 2' => 66870,
-    'story unlock: the head of the snake' => 80868,
     'stranglebloom heart' => 8588,
     'strawberries and biscuits' => 12226,
     'strawberry cookie' => 12345,
@@ -2701,6 +2761,8 @@
     'thesis on studied malice' => 77106,
     'thesis on studied speed' => 72532,
     'thesis on studied strength' => 70845,
+    'threat report: missing sacred text' => 83171,
+    'threat report: thermoptic flux readings' => 83591,
     'tin of fruitcake' => 77569,
     'tonic of the moletariate' => 8898,
     'toxic focusing crystal' => 48917,
@@ -2787,6 +2849,8 @@
     'winter music score' => 77620,
     'winterberry pie' => 79748,
     'winterberry sorbet' => 79776,
+    'wish for freedom' => 82531,
+    'wish for truth' => 83389,
     'wolf offering' => 8532,
     'writ of accuracy' => 72291,
     'writ of basic accuracy' => 73595,
@@ -3706,7 +3770,7 @@
       array (
         0 => 'bowl of avocado salsa',
       ),
-      '+2% Damage While Moving | 36% to Gain Swiftness on Kill' => 
+      '+2% Damage While Moving | 36% Chance to Gain Swiftness on Kill' => 
       array (
         0 => 'bowl of coleslaw',
       ),
@@ -4373,7 +4437,7 @@
       array (
         0 => 'spicy marinated mushroom',
       ),
-      '+100 vitality | +70 power' => 
+      '+100 Vitality | +70 Power' => 
       array (
         0 => 'mushroom loaf',
       ),
@@ -4756,33 +4820,73 @@
       array (
         0 => 'magnanimous maintenance oil',
       ),
-      '+10% Damage Reduction | +70 Expertise' => 
+      '+70 Expertise | -10% Incoming Damage' => 
       array (
         0 => 'oysters gnashblade',
       ),
-      '+10% Damage Reduction' => 
+      '-10% Incoming Damage' => 
       array (
         0 => 'fried oysters',
       ),
-      '+10% Damage Reduction | +70 Healing Power' => 
+      '+70 Healing Power | -10% Incoming Damage' => 
       array (
         0 => 'oysters with pesto sauce',
       ),
-      '+10% Damage Reduction | +70 Ferocity' => 
+      '+70 Ferocity | -10% Incoming Damage' => 
       array (
         0 => 'oysters with zesty sauce',
       ),
-      '+10% Damage Reduction | +70 Power' => 
+      '+70 Power | -10% Incoming Damage' => 
       array (
         0 => 'fried oyster sandwich',
       ),
-      '+10% Damage Reduction | +70 Condition Damage' => 
+      '+70 Condition Damage | -10% Incoming Damage' => 
       array (
         0 => 'oysters with spicy sauce',
       ),
-      '+10% Damage Reduction | +70 Precision' => 
+      '+70 Precision | -10% Incoming Damage' => 
       array (
         0 => 'oysters with cocktail sauce',
+      ),
+      'Gain Concentration Equal to 3% of Your Toughness | Gain Expertise Equal to 3% of Your Toughness' => 
+      array (
+        0 => 'corsair maintenance oil',
+      ),
+      'Gain Condition Damage Equal to 3% of Your Toughness | Gain Expertise Equal to 3% of Your Toughness' => 
+      array (
+        0 => 'corsair tuning crystal',
+      ),
+      'Gain Expertise Equal to 3% of Your Toughness | Gain Power Equal to 3% of Your Toughness' => 
+      array (
+        0 => 'corsair sharpening stone',
+      ),
+      '+60 Ferocity | +80 Power' => 
+      array (
+        0 => 'avocado smoothie',
+      ),
+      '+100 Healing | +70 Concentration' => 
+      array (
+        0 => 'bowl of poultry satay',
+      ),
+      '+100 Condition Damage | +70 Expertise' => 
+      array (
+        0 => 'plate of beef rendang',
+      ),
+      'Gain Concentration Equal to 3% of Your Precision | Gain Healing Power Equal to 8% of Your Concentration' => 
+      array (
+        0 => 'holographic super drumstick',
+      ),
+      'Gain Concentration Equal to 3% of Your Precision | Gain Condition Damage Equal to 8% of Your Concentration' => 
+      array (
+        0 => 'holographic super apple',
+      ),
+      'Gain Concentration Equal to 3% of Your Precision | Gain Power Equal to 8% of Your Concentration' => 
+      array (
+        0 => 'holographic super cheese',
+      ),
+      '+30% to Endurance Regeneration | Gain Health Every Second' => 
+      array (
+        0 => 'holographic super cake',
       ),
     ),
     'byname' => 
@@ -5056,7 +5160,7 @@
       'bowl of salsa' => '+20% Downed Health',
       'bowl of tasty wurm stew' => '+120 Condition Damage for 30 Seconds on Kill | +50 Precision',
       'bowl of avocado salsa' => '+50% Downed Health | +6% Damage while Downed',
-      'bowl of coleslaw' => '+2% Damage While Moving | 36% to Gain Swiftness on Kill',
+      'bowl of coleslaw' => '+2% Damage While Moving | 36% Chance to Gain Swiftness on Kill',
       'bowl of sauteed zucchini with nutmeg' => '+40 Ferocity | 50% Chance to Gain Might on Kill',
       'bowl of degun shun stew' => '+30 Ferocity | Day: 12% Chance to Burn on Critical Hit | Night: 12% Chance to Steal Life on Critical Hit',
       'bowl of tomato soup' => '+30 Precision',
@@ -5274,7 +5378,7 @@
       'spicy marinated mushroom' => '+100 power | +70 toughness',
       'plate of frostgorge clams' => '+100 Toughness | +70 Precision',
       'bowl of garlic kale sautee' => '+100 Expertise | +70 Condition Damage',
-      'mushroom loaf' => '+100 vitality | +70 power',
+      'mushroom loaf' => '+100 Vitality | +70 Power',
       'plate of spicy herbed chicken' => '+100 toughness | +70 power',
       'bowl of zesty turnip soup' => '+100 vitality',
       'bowl of sweet and spicy butternut squash soup' => '+100 Power | +70 Ferocity',
@@ -5464,14 +5568,24 @@
       'magnanimous sharpening stone' => 'Gain Power Equal to 3% of Your Toughness | Gain Power Equal to 3% of Your Vitality',
       'magnanimous tuning crystal' => 'Gain Condition Damage Equal to 3% of Your Toughness | Gain Condition Damage Equal to 3% of Your Vitality',
       'magnanimous maintenance oil' => 'Gain Concentration Equal to 3% of Your Toughness | Gain Concentration Equal to 3% of Your Vitality',
-      'oysters gnashblade' => '+10% Damage Reduction | +70 Expertise',
-      'fried oysters' => '+10% Damage Reduction',
-      'oysters with pesto sauce' => '+10% Damage Reduction | +70 Healing Power',
-      'oysters with zesty sauce' => '+10% Damage Reduction | +70 Ferocity',
-      'fried oyster sandwich' => '+10% Damage Reduction | +70 Power',
-      'oysters with spicy sauce' => '+10% Damage Reduction | +70 Condition Damage',
-      'oysters with cocktail sauce' => '+10% Damage Reduction | +70 Precision',
+      'oysters gnashblade' => '+70 Expertise | -10% Incoming Damage',
+      'fried oysters' => '-10% Incoming Damage',
+      'oysters with pesto sauce' => '+70 Healing Power | -10% Incoming Damage',
+      'oysters with zesty sauce' => '+70 Ferocity | -10% Incoming Damage',
+      'fried oyster sandwich' => '+70 Power | -10% Incoming Damage',
+      'oysters with spicy sauce' => '+70 Condition Damage | -10% Incoming Damage',
+      'oysters with cocktail sauce' => '+70 Precision | -10% Incoming Damage',
       'bag of simple cat food' => '+30 Vitality',
+      'corsair maintenance oil' => 'Gain Concentration Equal to 3% of Your Toughness | Gain Expertise Equal to 3% of Your Toughness',
+      'corsair tuning crystal' => 'Gain Condition Damage Equal to 3% of Your Toughness | Gain Expertise Equal to 3% of Your Toughness',
+      'corsair sharpening stone' => 'Gain Expertise Equal to 3% of Your Toughness | Gain Power Equal to 3% of Your Toughness',
+      'avocado smoothie' => '+60 Ferocity | +80 Power',
+      'bowl of poultry satay' => '+100 Healing | +70 Concentration',
+      'plate of beef rendang' => '+100 Condition Damage | +70 Expertise',
+      'holographic super drumstick' => 'Gain Concentration Equal to 3% of Your Precision | Gain Healing Power Equal to 8% of Your Concentration',
+      'holographic super apple' => 'Gain Concentration Equal to 3% of Your Precision | Gain Condition Damage Equal to 8% of Your Concentration',
+      'holographic super cheese' => 'Gain Concentration Equal to 3% of Your Precision | Gain Power Equal to 8% of Your Concentration',
+      'holographic super cake' => '+30% to Endurance Regeneration | Gain Health Every Second',
     ),
   ),
   'skills' => 
@@ -5489,6 +5603,10 @@
       'bite' => 
       array (
         0 => 10372,
+      ),
+      'blinding roar' => 
+      array (
+        0 => 42180,
       ),
       'blinding slash' => 
       array (
@@ -5542,14 +5660,6 @@
       array (
         0 => 31459,
       ),
-      'continuum shift' => 
-      array (
-        0 => 30747,
-      ),
-      'continuum split' => 
-      array (
-        0 => 29830,
-      ),
       'crippling shield' => 
       array (
         0 => 5746,
@@ -5557,10 +5667,6 @@
       'crippling swipe' => 
       array (
         0 => 12421,
-      ),
-      'cry of frustration' => 
-      array (
-        0 => 10190,
       ),
       'dash' => 
       array (
@@ -5572,22 +5678,9 @@
         0 => 12708,
         1 => 12709,
       ),
-      'deactivate photon forge' => 
-      array (
-        0 => 41123,
-        1 => 45219,
-      ),
       'deadly venom' => 
       array (
         0 => 12731,
-      ),
-      'distortion' => 
-      array (
-        0 => 10192,
-      ),
-      'diversion' => 
-      array (
-        0 => 10287,
       ),
       'eat egg' => 
       array (
@@ -5605,10 +5698,6 @@
       array (
         0 => 12685,
       ),
-      'engage photon forge' => 
-      array (
-        0 => 42938,
-      ),
       'essence sap' => 
       array (
         0 => 31438,
@@ -5616,6 +5705,10 @@
       'executioner\'s scythe' => 
       array (
         0 => 30558,
+      ),
+      'fang grapple' => 
+      array (
+        0 => 41156,
       ),
       'feeding frenzy' => 
       array (
@@ -5670,13 +5763,13 @@
       array (
         0 => 12430,
       ),
+      'head toss' => 
+      array (
+        0 => 43636,
+      ),
       'healing seed' => 
       array (
         0 => 1139,
-      ),
-      'holoforge overheated' => 
-      array (
-        0 => 44386,
       ),
       'howl' => 
       array (
@@ -5722,6 +5815,14 @@
       array (
         0 => 12715,
       ),
+      'invoke lightning' => 
+      array (
+        0 => 5725,
+      ),
+      'jacaranda\'s embrace' => 
+      array (
+        0 => 44980,
+      ),
       'kick' => 
       array (
         0 => 14488,
@@ -5756,10 +5857,6 @@
       array (
         0 => 5625,
       ),
-      'lightning storm' => 
-      array (
-        0 => 5725,
-      ),
       'lightning swing' => 
       array (
         0 => 5726,
@@ -5791,10 +5888,6 @@
       'mighty roar' => 
       array (
         0 => 12658,
-      ),
-      'mind wrack' => 
-      array (
-        0 => 10191,
       ),
       'oakheart swipe' => 
       array (
@@ -5883,6 +5976,10 @@
       'roar of the forest' => 
       array (
         0 => 12376,
+      ),
+      'savannah strike' => 
+      array (
+        0 => 42963,
       ),
       'screech' => 
       array (
@@ -6495,6 +6592,10 @@
       array (
         0 => 5568,
       ),
+      'frost storm' => 
+      array (
+        0 => 5723,
+      ),
       'frost volley' => 
       array (
         0 => 5720,
@@ -6644,8 +6745,7 @@
       ),
       'ice storm' => 
       array (
-        0 => 5723,
-        1 => 5735,
+        0 => 5735,
       ),
       'ice wall' => 
       array (
@@ -6691,6 +6791,7 @@
       'lightning flash' => 
       array (
         0 => 5536,
+        1 => 50447,
       ),
       'lightning orb' => 
       array (
@@ -7052,6 +7153,7 @@
       'signet of water' => 
       array (
         0 => 5570,
+        1 => 49056,
       ),
       'smoke bomb' => 
       array (
@@ -7290,6 +7392,10 @@
       array (
         0 => 1175,
       ),
+      'bandage blast' => 
+      array (
+        0 => 29547,
+      ),
       'bandage self' => 
       array (
         0 => 29772,
@@ -7372,6 +7478,14 @@
       array (
         0 => 6175,
       ),
+      'bright slash' => 
+      array (
+        0 => 45756,
+      ),
+      'bright slash—storm' => 
+      array (
+        0 => 42475,
+      ),
       'brutal swipe' => 
       array (
         0 => 12433,
@@ -7404,6 +7518,10 @@
       array (
         0 => 12417,
       ),
+      'capture line' => 
+      array (
+        0 => 50380,
+      ),
       'cauterize' => 
       array (
         0 => 43845,
@@ -7424,6 +7542,10 @@
       array (
         0 => 5980,
       ),
+      'cleansing field' => 
+      array (
+        0 => 49045,
+      ),
       'concussion bomb' => 
       array (
         0 => 5822,
@@ -7435,6 +7557,15 @@
       'coolant blast' => 
       array (
         0 => 40507,
+      ),
+      'corona burst' => 
+      array (
+        0 => 44530,
+      ),
+      'deactivate photon forge' => 
+      array (
+        0 => 41123,
+        1 => 45219,
       ),
       'debris tornado' => 
       array (
@@ -7628,6 +7759,10 @@
       array (
         0 => 30307,
       ),
+      'engage photon forge' => 
+      array (
+        0 => 42938,
+      ),
       'equalizing blow' => 
       array (
         0 => 30489,
@@ -7693,6 +7828,14 @@
       array (
         0 => 5927,
       ),
+      'flash cutter' => 
+      array (
+        0 => 45890,
+      ),
+      'flash cutter—storm' => 
+      array (
+        0 => 41684,
+      ),
       'flash grenade' => 
       array (
         0 => 5808,
@@ -7723,6 +7866,10 @@
       'frost fan' => 
       array (
         0 => 5568,
+      ),
+      'frost storm' => 
+      array (
+        0 => 5723,
       ),
       'frost volley' => 
       array (
@@ -7821,6 +7968,18 @@
       array (
         0 => 6003,
       ),
+      'holo leap' => 
+      array (
+        0 => 42965,
+      ),
+      'holoforge overheated' => 
+      array (
+        0 => 44386,
+      ),
+      'holographic shockwave' => 
+      array (
+        0 => 42521,
+      ),
       'homing torpedo' => 
       array (
         0 => 6148,
@@ -7829,13 +7988,13 @@
       array (
         0 => 12363,
       ),
-      'ice storm' => 
-      array (
-        0 => 5723,
-      ),
       'incendiary ammo' => 
       array (
         0 => 5977,
+      ),
+      'infusion bomb' => 
+      array (
+        0 => 50444,
       ),
       'invigorating roar' => 
       array (
@@ -7864,6 +8023,14 @@
       'leafy bandage' => 
       array (
         0 => 12465,
+      ),
+      'light strike' => 
+      array (
+        0 => 44588,
+      ),
+      'light strike—storm' => 
+      array (
+        0 => 44260,
       ),
       'magnet' => 
       array (
@@ -7971,6 +8138,10 @@
       array (
         0 => 5811,
         1 => 29991,
+      ),
+      'photon blitz' => 
+      array (
+        0 => 45783,
       ),
       'photon wall' => 
       array (
@@ -8106,6 +8277,8 @@
       array (
         0 => 5910,
         1 => 29522,
+        2 => 50438,
+        3 => 50441,
       ),
       'rocket charge' => 
       array (
@@ -8171,6 +8344,8 @@
       array (
         0 => 5825,
         1 => 30828,
+        2 => 50472,
+        3 => 50491,
       ),
       'smack' => 
       array (
@@ -8320,7 +8495,7 @@
       ),
       'throw bandages' => 
       array (
-        0 => 29547,
+        0 => 49088,
       ),
       'throw junk' => 
       array (
@@ -8430,6 +8605,10 @@
       'vine shield' => 
       array (
         0 => 12463,
+      ),
+      'vital burst' => 
+      array (
+        0 => 49082,
       ),
       'warband support' => 
       array (
@@ -8543,6 +8722,8 @@
       array (
         0 => 9175,
         1 => 43565,
+        2 => 46600,
+        3 => 46750,
       ),
       'brilliance' => 
       array (
@@ -8618,6 +8799,10 @@
       'detonate flame blast' => 
       array (
         0 => 17260,
+      ),
+      'detonate light' => 
+      array (
+        0 => 50399,
       ),
       'detonate orb of light' => 
       array (
@@ -8736,6 +8921,10 @@
       array (
         0 => 5568,
       ),
+      'frost storm' => 
+      array (
+        0 => 5723,
+      ),
       'frost volley' => 
       array (
         0 => 5720,
@@ -8795,13 +8984,13 @@
         0 => 30628,
         1 => 30629,
       ),
-      'ice storm' => 
-      array (
-        0 => 5723,
-      ),
       'judge\'s intervention' => 
       array (
         0 => 9247,
+      ),
+      'judgment of light' => 
+      array (
+        0 => 50392,
       ),
       'lava axe' => 
       array (
@@ -8811,7 +9000,7 @@
       array (
         0 => 9080,
       ),
-      'light of judgment' => 
+      'light ball' => 
       array (
         0 => 9205,
       ),
@@ -8895,10 +9084,6 @@
       'pain inverter' => 
       array (
         0 => 12320,
-      ),
-      'pillar of light' => 
-      array (
-        0 => 9208,
       ),
       'plague of darkness' => 
       array (
@@ -9144,10 +9329,6 @@
       array (
         0 => 9189,
       ),
-      'spear wall' => 
-      array (
-        0 => 9192,
-      ),
       'stow tome' => 
       array (
         0 => 41380,
@@ -9213,6 +9394,10 @@
       array (
         0 => 9095,
       ),
+      'symbol of light' => 
+      array (
+        0 => 9208,
+      ),
       'symbol of protection' => 
       array (
         0 => 9161,
@@ -9220,6 +9405,10 @@
       'symbol of punishment' => 
       array (
         0 => 9090,
+      ),
+      'symbol of spears' => 
+      array (
+        0 => 9192,
       ),
       'symbol of swiftness' => 
       array (
@@ -9480,6 +9669,14 @@
       array (
         0 => 10168,
       ),
+      'continuum shift' => 
+      array (
+        0 => 30747,
+      ),
+      'continuum split' => 
+      array (
+        0 => 29830,
+      ),
       'counter blade' => 
       array (
         0 => 10358,
@@ -9487,6 +9684,10 @@
       'counterspell' => 
       array (
         0 => 10314,
+      ),
+      'cry of frustration' => 
+      array (
+        0 => 10190,
       ),
       'crystal sands' => 
       array (
@@ -9515,6 +9716,14 @@
       'detonate flame blast' => 
       array (
         0 => 17260,
+      ),
+      'distortion' => 
+      array (
+        0 => 10192,
+      ),
+      'diversion' => 
+      array (
+        0 => 10287,
       ),
       'double lava axe' => 
       array (
@@ -9649,6 +9858,10 @@
       array (
         0 => 5568,
       ),
+      'frost storm' => 
+      array (
+        0 => 5723,
+      ),
       'frost volley' => 
       array (
         0 => 5720,
@@ -9685,10 +9898,6 @@
       array (
         0 => 12363,
       ),
-      'ice storm' => 
-      array (
-        0 => 5723,
-      ),
       'illusion of drowning' => 
       array (
         0 => 10260,
@@ -9710,10 +9919,6 @@
       array (
         0 => 10173,
       ),
-      'illusionary mariner' => 
-      array (
-        0 => 10251,
-      ),
       'illusionary riposte' => 
       array (
         0 => 10280,
@@ -9722,13 +9927,13 @@
       array (
         0 => 10220,
       ),
-      'illusionary whaler' => 
-      array (
-        0 => 10328,
-      ),
       'imaginary axes' => 
       array (
         0 => 44321,
+      ),
+      'imminent voyage' => 
+      array (
+        0 => 10327,
       ),
       'into the void' => 
       array (
@@ -9810,9 +10015,15 @@
       array (
         0 => 10218,
       ),
+      'mind wrack' => 
+      array (
+        0 => 10191,
+        1 => 49068,
+      ),
       'mirage advance' => 
       array (
         0 => 42851,
+        1 => 50419,
       ),
       'mirage mirror' => 
       array (
@@ -9857,6 +10068,7 @@
       'null field' => 
       array (
         0 => 10203,
+        1 => 50440,
       ),
       'pain inverter' => 
       array (
@@ -9882,6 +10094,10 @@
       array (
         0 => 10189,
       ),
+      'phantasmal mariner' => 
+      array (
+        0 => 10251,
+      ),
       'phantasmal rogue' => 
       array (
         0 => 10224,
@@ -9897,6 +10113,10 @@
       'phantasmal warlock' => 
       array (
         0 => 10216,
+      ),
+      'phantasmal whaler' => 
+      array (
+        0 => 10328,
       ),
       'phase retreat' => 
       array (
@@ -10060,10 +10280,6 @@
       array (
         0 => 10219,
       ),
-      'spinning revenge' => 
-      array (
-        0 => 10327,
-      ),
       'split surge' => 
       array (
         0 => 44241,
@@ -10129,6 +10345,7 @@
       'veil' => 
       array (
         0 => 10187,
+        1 => 50414,
       ),
       'vortex' => 
       array (
@@ -10530,6 +10747,10 @@
       array (
         0 => 5568,
       ),
+      'frost storm' => 
+      array (
+        0 => 5723,
+      ),
       'frost volley' => 
       array (
         0 => 5720,
@@ -10601,10 +10822,6 @@
       'hounds of balthazar' => 
       array (
         0 => 12363,
-      ),
-      'ice storm' => 
-      array (
-        0 => 5723,
       ),
       'infusing terror' => 
       array (
@@ -11292,10 +11509,6 @@
       array (
         0 => 41837,
       ),
-      'dart' => 
-      array (
-        0 => 12557,
-      ),
       'deadly delivery' => 
       array (
         0 => 44278,
@@ -11363,10 +11576,6 @@
       'entangling web' => 
       array (
         0 => 44097,
-      ),
-      'evasive strike' => 
-      array (
-        0 => 12556,
       ),
       'explosive lava axe' => 
       array (
@@ -11444,6 +11653,10 @@
       'frost spirit' => 
       array (
         0 => 12497,
+      ),
+      'frost storm' => 
+      array (
+        0 => 5723,
       ),
       'frost trap' => 
       array (
@@ -11565,10 +11778,6 @@
       array (
         0 => 12573,
       ),
-      'ice storm' => 
-      array (
-        0 => 5723,
-      ),
       'ink blast' => 
       array (
         0 => 12530,
@@ -11624,6 +11833,7 @@
         1 => 12525,
         2 => 41406,
         3 => 44514,
+        4 => 46629,
       ),
       'mercy shot' => 
       array (
@@ -11904,6 +12114,7 @@
       array (
         0 => 12476,
         1 => 12534,
+        2 => 51395,
       ),
       'spirit of nature' => 
       array (
@@ -11967,6 +12178,10 @@
       array (
         0 => 12498,
       ),
+      'surging maw' => 
+      array (
+        0 => 12557,
+      ),
       'swipe' => 
       array (
         0 => 12432,
@@ -12016,6 +12231,10 @@
       'thunderclap' => 
       array (
         0 => 12485,
+      ),
+      'toxic strike' => 
+      array (
+        0 => 12556,
       ),
       'troll unguent' => 
       array (
@@ -12151,6 +12370,11 @@
       'darkrazor\'s daring' => 
       array (
         0 => 41220,
+      ),
+      'deathstrike' => 
+      array (
+        0 => 27074,
+        1 => 28625,
       ),
       'debilitating slam' => 
       array (
@@ -12357,6 +12581,10 @@
       array (
         0 => 5568,
       ),
+      'frost storm' => 
+      array (
+        0 => 5723,
+      ),
       'frost volley' => 
       array (
         0 => 5720,
@@ -12368,10 +12596,6 @@
       'glue bomb' => 
       array (
         0 => 5939,
-      ),
-      'grasping shadow' => 
-      array (
-        0 => 27074,
       ),
       'hammer bolt' => 
       array (
@@ -12388,10 +12612,6 @@
       'heroic command' => 
       array (
         0 => 44076,
-      ),
-      'ice storm' => 
-      array (
-        0 => 5723,
       ),
       'icerazor\'s ire' => 
       array (
@@ -12412,6 +12632,7 @@
       'inspiring reinforcement' => 
       array (
         0 => 28516,
+        1 => 50383,
       ),
       'jade winds' => 
       array (
@@ -12464,6 +12685,10 @@
       array (
         0 => 27066,
       ),
+      'mistsfire' => 
+      array (
+        0 => 50395,
+      ),
       'mortar shot' => 
       array (
         0 => 30371,
@@ -12510,6 +12735,10 @@
         0 => 30885,
         1 => 30886,
       ),
+      'portal fire' => 
+      array (
+        0 => 50456,
+      ),
       'precision strike' => 
       array (
         0 => 29233,
@@ -12548,6 +12777,10 @@
       array (
         0 => 42949,
       ),
+      'reckoning blast' => 
+      array (
+        0 => 50410,
+      ),
       'rejuvenating assault' => 
       array (
         0 => 29002,
@@ -12571,6 +12804,10 @@
       'rift containment' => 
       array (
         0 => 28930,
+      ),
+      'rift of pain' => 
+      array (
+        0 => 50390,
       ),
       'rift slash' => 
       array (
@@ -12659,6 +12896,10 @@
       'temporal rift' => 
       array (
         0 => 28409,
+      ),
+      'torrential mists' => 
+      array (
+        0 => 50483,
       ),
       'unrelenting assault' => 
       array (
@@ -12846,10 +13087,6 @@
       array (
         0 => 13116,
       ),
-      'cursed bullet' => 
-      array (
-        0 => 44087,
-      ),
       'dagger storm' => 
       array (
         0 => 13085,
@@ -12876,7 +13113,7 @@
       ),
       'death\'s judgment' => 
       array (
-        0 => 40436,
+        0 => 44087,
       ),
       'death\'s retreat' => 
       array (
@@ -13054,6 +13291,10 @@
       array (
         0 => 5568,
       ),
+      'frost storm' => 
+      array (
+        0 => 5723,
+      ),
       'frost volley' => 
       array (
         0 => 5720,
@@ -13102,6 +13343,10 @@
       array (
         0 => 30210,
       ),
+      'hooked spear' => 
+      array (
+        0 => 50379,
+      ),
       'hounds of balthazar' => 
       array (
         0 => 12363,
@@ -13109,10 +13354,6 @@
       'ice drake venom' => 
       array (
         0 => 13096,
-      ),
-      'ice storm' => 
-      array (
-        0 => 5723,
       ),
       'impact strike' => 
       array (
@@ -13163,9 +13404,33 @@
       array (
         0 => 13108,
       ),
+      'malicious backstab' => 
+      array (
+        0 => 50481,
+      ),
+      'malicious deadly strike' => 
+      array (
+        0 => 50417,
+      ),
       'malicious restoration' => 
       array (
         0 => 45088,
+      ),
+      'malicious ripper' => 
+      array (
+        0 => 50449,
+      ),
+      'malicious sneak attack' => 
+      array (
+        0 => 50466,
+      ),
+      'malicious surprise shot' => 
+      array (
+        0 => 50451,
+      ),
+      'malicious tactical strike' => 
+      array (
+        0 => 50484,
       ),
       'maul' => 
       array (
@@ -13424,7 +13689,8 @@
       ),
       'sniper\'s cover' => 
       array (
-        0 => 45218,
+        0 => 40436,
+        1 => 45218,
       ),
       'spider venom' => 
       array (
@@ -13717,6 +13983,10 @@
         0 => 14408,
         1 => 14573,
       ),
+      'barbed pull' => 
+      array (
+        0 => 14448,
+      ),
       'battle roar' => 
       array (
         0 => 12338,
@@ -13786,7 +14056,6 @@
       'brutal shot' => 
       array (
         0 => 14395,
-        1 => 14466,
       ),
       'brutal strike' => 
       array (
@@ -14063,6 +14332,10 @@
       array (
         0 => 5568,
       ),
+      'frost storm' => 
+      array (
+        0 => 5723,
+      ),
       'frost volley' => 
       array (
         0 => 5720,
@@ -14119,10 +14392,6 @@
       array (
         0 => 14363,
       ),
-      'harpoon pull' => 
-      array (
-        0 => 14448,
-      ),
       'head butt' => 
       array (
         0 => 30343,
@@ -14154,10 +14423,6 @@
       'hundred blades' => 
       array (
         0 => 14554,
-      ),
-      'ice storm' => 
-      array (
-        0 => 5723,
       ),
       'imminent threat' => 
       array (
@@ -14301,6 +14566,10 @@
       'punch' => 
       array (
         0 => 14463,
+      ),
+      'puncture shot' => 
+      array (
+        0 => 14466,
       ),
       'radiation field' => 
       array (
@@ -14600,17 +14869,22 @@
   'pvp_items' => 
   array (
     'assassin amulet' => 4,
+    'avatar amulet' => 41,
     'barbarian amulet' => 7,
     'berserker amulet' => 8,
     'carrion amulet' => 9,
     'cavalier amulet' => 5,
+    'celestial amulet' => 1,
     'deadshot amulet' => 39,
     'demolisher amulet' => 34,
     'destroyer amulet' => 35,
     'diviner amulet' => 33,
+    'grieving amulet' => 43,
+    'harrier amulet' => 42,
     'knight amulet' => 12,
     'magi amulet' => 10,
     'marauder amulet' => 20,
+    'marshal amulet' => 44,
     'mender amulet' => 29,
     'paladin amulet' => 30,
     'rabid amulet' => 13,
@@ -14618,9 +14892,11 @@
     'sage amulet' => 31,
     'seeker amulet' => 36,
     'sinister amulet' => 22,
+    'swashbuckler amulet' => 45,
     'valkyrie amulet' => 18,
     'viper amulet' => 28,
     'wanderer amulet' => 25,
+    'wizard amulet' => 40,
   ),
   'pets' => 
   array (
@@ -14637,14 +14913,17 @@
     'brown bear' => 5,
     'carrion devourer' => 6,
     'cave spider' => 35,
+    'cheetah' => 54,
     'eagle' => 31,
     'electric wyvern' => 48,
+    'fanged iboga' => 61,
     'fern hound' => 22,
     'fire wyvern' => 51,
     'forest spider' => 33,
     'hawk' => 44,
     'hyena' => 28,
     'ice drake' => 18,
+    'jacaranda' => 57,
     'jaguar' => 11,
     'jungle spider' => 34,
     'jungle stalker' => 1,
@@ -14663,7 +14942,9 @@
     'red moa' => 17,
     'reef drake' => 45,
     'river drake' => 19,
+    'rock gazelle' => 59,
     'salamander drake' => 7,
+    'sand lion' => 55,
     'shark' => 21,
     'siamoth' => 38,
     'smokescale' => 46,
