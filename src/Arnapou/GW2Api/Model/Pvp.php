@@ -65,7 +65,7 @@ class Pvp extends AbstractObject
         if (isset($data['aggregate'])) {
             $this->aggregate = new PvpStats($this->getEnvironment(), $data['aggregate']);
         }
-        if (isset($data['ladders']) && is_array($data['ladders'])) {
+        if (isset($data['ladders']) && \is_array($data['ladders'])) {
             $this->ladders = [];
             foreach ($data['ladders'] as $key => $ladder) {
                 $this->ladders[$key] = new PvpStats($this->getEnvironment(), $ladder);
@@ -83,7 +83,7 @@ class Pvp extends AbstractObject
             $this->standings = [];
             $env             = $this->getEnvironment();
             $data            = $env->getClientVersion2()->apiPvpStandings();
-            if (is_array($data)) {
+            if (\is_array($data)) {
                 foreach ($data as $item) {
                     $this->standings[] = new PvpStanding($env, $item);
                 }
@@ -115,7 +115,7 @@ class Pvp extends AbstractObject
      */
     public function getLadderStats($key)
     {
-        if (!array_key_exists($key, $this->ladders)) {
+        if (!\array_key_exists($key, $this->ladders)) {
             return null;
         }
         return $this->ladders[$key];
@@ -175,7 +175,7 @@ class Pvp extends AbstractObject
         if (!isset($this->professions)) {
             $professions       = $this->getData('professions');
             $this->professions = [];
-            if (!empty($professions) && is_array($professions)) {
+            if (!empty($professions) && \is_array($professions)) {
                 $env = $this->getEnvironment();
                 foreach ($professions as $profession => $data) {
                     $data['profession']                     = [

@@ -36,10 +36,10 @@ class PvpHero extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['skins']) && is_array($data['skins'])) {
+        if (isset($data['skins']) && \is_array($data['skins'])) {
             foreach ($data['skins'] as $item) {
                 $skin = new PvpHeroSkin($this->getEnvironment(), $item);
-                $skin->setUnlocked(in_array($item['id'], $this->unlocked));
+                $skin->setUnlocked(\in_array($item['id'], $this->unlocked));
                 $this->skins[] = $skin;
             }
         }

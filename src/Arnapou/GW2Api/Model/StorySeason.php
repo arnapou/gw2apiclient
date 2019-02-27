@@ -23,7 +23,7 @@ class StorySeason extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['stories']) && is_array($data['stories'])) {
+        if (isset($data['stories']) && \is_array($data['stories'])) {
             foreach ($data['stories'] as $id) {
                 $this->stories[] = new Story($this->getEnvironment(), $id);
             }

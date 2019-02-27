@@ -55,7 +55,7 @@ class Wardrobe extends AbstractObject
      */
     public function getCount()
     {
-        return count($this->unlockedSkins);
+        return \count($this->unlockedSkins);
     }
 
     

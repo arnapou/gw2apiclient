@@ -279,7 +279,7 @@ class Item extends AbstractStoredObject
      */
     public function hasFlag($flag)
     {
-        return in_array($flag, (array)$this->getFlags());
+        return \in_array($flag, (array)$this->getFlags());
     }
 
     /**
@@ -298,7 +298,7 @@ class Item extends AbstractStoredObject
      */
     public function hasGameType($type)
     {
-        return in_array($type, (array)$this->getGameTypes());
+        return \in_array($type, (array)$this->getGameTypes());
     }
 
     /**
@@ -317,7 +317,7 @@ class Item extends AbstractStoredObject
      */
     public function hasRestriction($restriction)
     {
-        return in_array($restriction, (array)$this->getRestrictions());
+        return \in_array($restriction, (array)$this->getRestrictions());
     }
 
     /**
@@ -481,9 +481,9 @@ class Item extends AbstractStoredObject
     {
         $attributes = [];
         $array      = $this->getData(['details', 'infix_upgrade', 'attributes']);
-        if (is_array($array)) {
+        if (\is_array($array)) {
             foreach ($array as $key => $value) {
-                if (is_array($value) && isset($value['attribute'], $value['modifier'])) {
+                if (\is_array($value) && isset($value['attribute'], $value['modifier'])) {
                     $attributes[$value['attribute']] = $value['modifier'];
                 } else {
                     $attributes[$key] = $value;
@@ -559,7 +559,7 @@ class Item extends AbstractStoredObject
         if (empty($buff)) {
             $buff = $this->getData(['details', 'bonuses']);
         }
-        if (is_array($buff)) {
+        if (\is_array($buff)) {
             return implode("\n", $buff);
         }
         return $buff;

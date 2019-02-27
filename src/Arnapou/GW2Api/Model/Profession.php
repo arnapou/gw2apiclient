@@ -30,27 +30,27 @@ class Profession extends AbstractStoredObject
 
         $env = $this->getEnvironment();
 
-        if (isset($data['specializations']) && is_array($data['specializations'])) {
+        if (isset($data['specializations']) && \is_array($data['specializations'])) {
             foreach ($data['specializations'] as $id) {
                 $this->specializations[] = new Specialization($env, $id);
             }
         }
 
-        if (isset($data['weapons']) && is_array($data['weapons'])) {
+        if (isset($data['weapons']) && \is_array($data['weapons'])) {
             foreach ($data['weapons'] as $type => $item) {
                 $item['type']    = $type;
                 $this->weapons[] = new ProfessionWeapon($env, $item);
             }
         }
 
-        if (isset($data['training']) && is_array($data['training'])) {
+        if (isset($data['training']) && \is_array($data['training'])) {
             foreach ($data['training'] as $item) {
                 $obj                           = new ProfessionTraining($env, $item);
                 $this->training[$obj->getId()] = $obj;
             }
         }
 
-        if (isset($data['skills']) && is_array($data['skills'])) {
+        if (isset($data['skills']) && \is_array($data['skills'])) {
             foreach ($data['skills'] as $item) {
                 $obj                         = new ProfessionSkill($env, $item);
                 $this->skills[$obj->getId()] = $obj;

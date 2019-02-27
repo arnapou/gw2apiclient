@@ -30,7 +30,7 @@ class Mastery extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['levels']) && is_array($data['levels'])) {
+        if (isset($data['levels']) && \is_array($data['levels'])) {
             $env = $this->getEnvironment();
             foreach ($data['levels'] as $item) {
                 $this->levels[] = new MasteryLevel($env, $item);
@@ -50,7 +50,7 @@ class Mastery extends AbstractStoredObject
 
     public function isUnlocked()
     {
-        return $this->unlocked + 1 >= count($this->levels) ? true : false;
+        return $this->unlocked + 1 >= \count($this->levels) ? true : false;
     }
 
     public function getSpentPoints()

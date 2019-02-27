@@ -60,7 +60,7 @@ class BuildTemplate
      */
     public function getTraitsFromCharacter(Character $character, $mode)
     {
-        if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
+        if (!\in_array($mode, ['pve', 'pvp', 'wvw'])) {
             throw new Exception('Mode not supported');
         }
 
@@ -105,10 +105,10 @@ class BuildTemplate
         if (!isset($this->classToId[$profession])) {
             throw new Exception('Profession not found');
         }
-        if (count($speIds) !== 3) {
+        if (\count($speIds) !== 3) {
             throw new Exception('Param $speIds should be an array int[3]');
         }
-        if (count($traitIds) !== 9) {
+        if (\count($traitIds) !== 9) {
             throw new Exception('Param $traitIds should be an array int[9]');
         }
         $professionId = $this->classToId[$profession];
@@ -137,7 +137,7 @@ class BuildTemplate
      */
     public function getSkillsFromCharacter(Character $character, $mode)
     {
-        if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
+        if (!\in_array($mode, ['pve', 'pvp', 'wvw'])) {
             throw new Exception('Mode not supported');
         }
 
@@ -177,10 +177,10 @@ class BuildTemplate
         if (!isset($this->classToId[$profession])) {
             throw new Exception('Profession not found');
         }
-        if (count($landIds) !== 5) {
+        if (\count($landIds) !== 5) {
             throw new Exception('Param $landIds should be an array int[5]');
         }
-        if (count($waterIds) !== 5) {
+        if (\count($waterIds) !== 5) {
             throw new Exception('Param $waterIds should be an array int[5]');
         }
         $professionId = $this->classToId[$profession];
@@ -209,7 +209,7 @@ class BuildTemplate
     {
         $hex    = dechex($int);
         $length = 2 * $octets;
-        $nbchar = strlen($hex);
+        $nbchar = \strlen($hex);
         if ($nbchar < $length) {
             $hex = str_repeat('0', $length - $nbchar) . $hex;
         }

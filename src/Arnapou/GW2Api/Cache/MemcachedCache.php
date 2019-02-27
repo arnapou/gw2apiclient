@@ -22,7 +22,7 @@ class MemcachedCache implements CacheInterface
 
     public function __construct($server = 'localhost', $port = 11211)
     {
-        if (!extension_loaded('memcached')) {
+        if (!\extension_loaded('memcached')) {
             throw new Exception('The memcached PHP extension is not loaded.');
         }
         $this->memcached = new \Memcached();

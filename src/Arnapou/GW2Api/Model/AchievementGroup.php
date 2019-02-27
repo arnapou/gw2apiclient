@@ -45,7 +45,7 @@ class AchievementGroup extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['categories']) && is_array($data['categories'])) {
+        if (isset($data['categories']) && \is_array($data['categories'])) {
             foreach ($data['categories'] as $id) {
                 $this->categories[$id] = new AchievementCategory($this->getEnvironment(), $id);
             }

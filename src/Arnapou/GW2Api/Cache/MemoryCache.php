@@ -20,7 +20,7 @@ class MemoryCache implements CacheInterface
 
     public function exists($key)
     {
-        if (array_key_exists($key, $this->memory)) {
+        if (\array_key_exists($key, $this->memory)) {
             return true;
         }
         return $this->cache->exists($key);
@@ -28,7 +28,7 @@ class MemoryCache implements CacheInterface
 
     public function get($key)
     {
-        if (array_key_exists($key, $this->memory)) {
+        if (\array_key_exists($key, $this->memory)) {
             return $this->memory[$key];
         }
         return null;

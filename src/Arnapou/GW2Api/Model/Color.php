@@ -48,7 +48,7 @@ class Color extends AbstractStoredObject
     public function getBaseRgbHex()
     {
         $rgb = $this->getBaseRgb();
-        if (is_array($rgb)) {
+        if (\is_array($rgb)) {
             return '#' . sprintf('%02x%02x%02x', $rgb[0], $rgb[1], $rgb[2]);
         }
         return '#000000';
@@ -115,7 +115,7 @@ class Color extends AbstractStoredObject
     public function getCategoryRgbHex($category)
     {
         $rgb = $this->getCategoryRgb($category);
-        if (is_array($rgb)) {
+        if (\is_array($rgb)) {
             return '#' . sprintf('%02x%02x%02x', $rgb[0], $rgb[1], $rgb[2]);
         }
         return '#000000';

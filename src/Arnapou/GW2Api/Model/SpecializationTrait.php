@@ -73,7 +73,7 @@ class SpecializationTrait extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['skills']) && is_array($data['skills'])) {
+        if (isset($data['skills']) && \is_array($data['skills'])) {
             foreach ($data['skills'] as $item) {
                 if (isset($item['id'])) {
                     $this->skills[] = new Skill($this->getEnvironment(), $item['id']);

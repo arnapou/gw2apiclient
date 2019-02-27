@@ -33,7 +33,7 @@ class ProfessionWeapon extends AbstractObject
         parent::setData($data);
 
         $env = $this->getEnvironment();
-        if (isset($data['skills']) && is_array($data['skills'])) {
+        if (isset($data['skills']) && \is_array($data['skills'])) {
             foreach ($data['skills'] as $item) {
                 $this->skills[] = new ProfessionWeaponSkill($env, $item);
             }

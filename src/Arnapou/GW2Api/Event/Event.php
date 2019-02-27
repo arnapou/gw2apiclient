@@ -16,14 +16,14 @@ class Event implements \ArrayAccess, \IteratorAggregate
 
     public function __construct($array = null)
     {
-        if (is_array($array)) {
+        if (\is_array($array)) {
             $this->data = $array;
         }
     }
 
     public function offsetExists($offset)
     {
-        return array_key_exists($offset, $this->data);
+        return \array_key_exists($offset, $this->data);
     }
 
     public function offsetGet($offset)

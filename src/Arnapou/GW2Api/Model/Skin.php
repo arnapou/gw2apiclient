@@ -59,7 +59,7 @@ class Skin extends AbstractStoredObject
      */
     public function hasFlag($flag)
     {
-        return in_array($flag, (array)$this->getFlags());
+        return \in_array($flag, (array)$this->getFlags());
     }
 
     /**
@@ -78,7 +78,7 @@ class Skin extends AbstractStoredObject
      */
     public function hasRestriction($restriction)
     {
-        return in_array($restriction, (array)$this->getRestrictions());
+        return \in_array($restriction, (array)$this->getRestrictions());
     }
 
     /**

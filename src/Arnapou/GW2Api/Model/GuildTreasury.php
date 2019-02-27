@@ -29,7 +29,7 @@ class GuildTreasury extends AbstractObject
             ]);
         }
 
-        if (isset($data['needed_by']) && is_array($data['needed_by'])) {
+        if (isset($data['needed_by']) && \is_array($data['needed_by'])) {
             foreach ($data['needed_by'] as $item) {
                 if (isset($item['upgrade_id'])) {
                     $item['upgrade'] = new GuildUpgrade($env, $item['upgrade_id']);

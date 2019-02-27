@@ -18,7 +18,7 @@ class RaidWing extends AbstractObject
     {
         parent::setData($data);
 
-        if (isset($data['events']) && is_array($data['events'])) {
+        if (isset($data['events']) && \is_array($data['events'])) {
             $env = $this->getEnvironment();
             foreach ($data['events'] as $event) {
                 if (isset($event['id'])) {

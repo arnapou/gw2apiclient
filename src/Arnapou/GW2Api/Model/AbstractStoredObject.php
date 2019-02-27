@@ -39,7 +39,7 @@ abstract class AbstractStoredObject extends AbstractObject
             if ($this->objectId) {
                 $env     = $this->getEnvironment();
                 $storage = $env->getStorage();
-                $client  = call_user_func([$env, 'getClientVersion' . $this->clientVersion]);
+                $client  = \call_user_func([$env, 'getClientVersion' . $this->clientVersion]);
                 $method  = $this->getApiMethod();
                 $data    = $storage->get($env->getLang(), $this->getApiName(), $this->objectId, [$client, $method]);
                 $this->setData($data);

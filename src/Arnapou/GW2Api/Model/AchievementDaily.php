@@ -80,7 +80,7 @@ class AchievementDaily extends AbstractObject
      */
     public function requireGuildWars2()
     {
-        return in_array(Account::GAME_ACCESS_CORE, $this->getRequiredAccess());
+        return \in_array(Account::GAME_ACCESS_CORE, $this->getRequiredAccess());
     }
 
     /**
@@ -89,6 +89,6 @@ class AchievementDaily extends AbstractObject
      */
     public function requireHeartOfThorns()
     {
-        return in_array(Account::GAME_ACCESS_HOT, $this->getRequiredAccess());
+        return \in_array(Account::GAME_ACCESS_HOT, $this->getRequiredAccess());
     }
 }

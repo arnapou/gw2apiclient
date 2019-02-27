@@ -43,7 +43,7 @@ function chatlink_item($item, $skin = 0, $upgrade1 = 0, $upgrade2 = 0, $quantity
     }
     $hex = function ($id) {
         $h = dechex((int)$id);
-        $n = 6 - strlen($h);
+        $n = 6 - \strlen($h);
         $s = ($n > 0 ? str_repeat('0', $n) : '') . $h;
         return $s[4] . $s[5] . $s[2] . $s[3] . $s[0] . $s[1];
     };
@@ -101,7 +101,7 @@ function get_mongo_database_error(MongoDatabase $mongoDB)
 function is_two_handed_weapon($item)
 {
     if ($item) {
-        return in_array($item->getSubType(), [
+        return \in_array($item->getSubType(), [
             Item::SUBTYPE_WEAPON_GREATSWORD,
             Item::SUBTYPE_WEAPON_HAMMER,
             Item::SUBTYPE_WEAPON_LONGBOW,
@@ -137,12 +137,12 @@ function url_append($url, $params)
         return $url;
     }
     foreach ($params as $key => $param) {
-        if (is_array($param)) {
+        if (\is_array($param)) {
             $params[$key] = implode(',', $param);
         }
     }
     $url .= (strpos($url, '?') === false) ? '?' : '&';
-    if (is_array($params)) {
+    if (\is_array($params)) {
         $url .= http_build_query($params);
     } else {
         $url .= (string)$params;
@@ -188,8 +188,8 @@ function json_decode($json)
 function attributes_to_statname($attributes)
 {
     $flatten = '';
-    if (is_array($attributes)) {
-        if (count($attributes) >= 7) {
+    if (\is_array($attributes)) {
+        if (\count($attributes) >= 7) {
             return 'Celestial';
         }
         $attrs = [];

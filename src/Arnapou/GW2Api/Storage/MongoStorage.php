@@ -12,8 +12,8 @@ namespace Arnapou\GW2Api\Storage;
 
 use Arnapou\GW2Api\Exception\WrongMongoDatabaseException;
 use MongoDB\BSON\UTCDateTime as MongoDate;
-use MongoDB\Database as MongoDatabase;
 use MongoDB\Collection as MongoCollection;
+use MongoDB\Database as MongoDatabase;
 
 class MongoStorage extends AbstractStorage
 {
@@ -101,7 +101,7 @@ class MongoStorage extends AbstractStorage
                 parent::set($lang, $name, $document['key'], $document['data']);
             }
             $remain = array_diff_key($this->prepared[$key], $this->cached[$key]);
-            if (empty($remain) || count($ids) == count($remain) + count($found)) {
+            if (empty($remain) || \count($ids) == \count($remain) + \count($found)) {
                 break;
             } else {
                 $ids = $remain;

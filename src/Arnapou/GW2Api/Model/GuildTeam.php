@@ -47,7 +47,7 @@ class GuildTeam extends AbstractObject
         parent::setData($data);
 
         $env = $this->getEnvironment();
-        if (isset($data['members']) && is_array($data['members'])) {
+        if (isset($data['members']) && \is_array($data['members'])) {
             foreach ($data['members'] as $item) {
                 $this->members[] = new GuildTeamMember($env, $item);
             }
@@ -58,7 +58,7 @@ class GuildTeam extends AbstractObject
         if (isset($data['aggregate'])) {
             $this->aggregate = new PvpStats($env, $data['aggregate']);
         }
-        if (isset($data['games']) && is_array($data['games'])) {
+        if (isset($data['games']) && \is_array($data['games'])) {
             foreach ($data['games'] as $item) {
                 $this->games[] = new PvpGame($env, $item);
             }
@@ -66,7 +66,7 @@ class GuildTeam extends AbstractObject
                 return -strcmp($a->getDateEnded(), $b->getDateEnded());
             });
         }
-        if (isset($data['ladders']) && is_array($data['ladders'])) {
+        if (isset($data['ladders']) && \is_array($data['ladders'])) {
             $this->ladders = [];
             foreach ($data['ladders'] as $key => $ladder) {
                 $this->ladders[$key] = new PvpStats($this->getEnvironment(), $ladder);
@@ -108,7 +108,7 @@ class GuildTeam extends AbstractObject
      */
     public function getLadderStats($key)
     {
-        if (!array_key_exists($key, $this->ladders)) {
+        if (!\array_key_exists($key, $this->ladders)) {
             return null;
         }
         return $this->ladders[$key];

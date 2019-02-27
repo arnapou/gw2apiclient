@@ -180,31 +180,31 @@ class Character extends AbstractObject
         if (isset($data['title'])) {
             $this->title = new Title($this->getEnvironment(), $data['title']);
         }
-        if (isset($data['backstory']) && is_array($data['backstory'])) {
+        if (isset($data['backstory']) && \is_array($data['backstory'])) {
             foreach ($data['backstory'] as $id) {
                 $this->backstory[] = new BackstoryAnswer($this->getEnvironment(), $id);
             }
         }
-        if (isset($data['crafting']) && is_array($data['crafting'])) {
+        if (isset($data['crafting']) && \is_array($data['crafting'])) {
             foreach ($data['crafting'] as $item) {
                 if (isset($item['discipline'])) {
                     $this->crafting[] = new Crafting($this->getEnvironment(), $item);
                 }
             }
         }
-        if (isset($data['bags']) && is_array($data['bags'])) {
+        if (isset($data['bags']) && \is_array($data['bags'])) {
             foreach ($data['bags'] as $item) {
                 $this->bags[] = new Bag($this->getEnvironment(), $item);
             }
         }
-        if (isset($data['equipment']) && is_array($data['equipment'])) {
+        if (isset($data['equipment']) && \is_array($data['equipment'])) {
             foreach ($data['equipment'] as $item) {
                 if (isset($item['slot'])) {
                     $this->equipments[$item['slot']] = new Equipment($this->getEnvironment(), $item);
                 }
             }
         }
-        if (!empty($data['wvw_abilities']) && is_array($data['wvw_abilities'])) {
+        if (!empty($data['wvw_abilities']) && \is_array($data['wvw_abilities'])) {
             foreach ($data['wvw_abilities'] as $item) {
                 if (isset($item['id'])) {
                     $wvwAbility = new WvwAbility($this->getEnvironment(), $item['id']);
@@ -312,7 +312,7 @@ class Character extends AbstractObject
     {
         $data = [];
         foreach ($this->getEquipments() as $slot => $item) {
-            if (in_array($slot, [self::SLOT_AXE, self::SLOT_PICK, self::SLOT_SICKLE])) {
+            if (\in_array($slot, [self::SLOT_AXE, self::SLOT_PICK, self::SLOT_SICKLE])) {
                 $key = $item->getSubType();
             } else {
                 $key = $item->getType() == Item::TYPE_BACK ? self::SLOT_BACKPACK : $item->getSubType();
@@ -324,8 +324,8 @@ class Character extends AbstractObject
         foreach ($this->getBags() as $bag) {
             foreach ($bag->getInventorySlots() as $item) {
                 if (empty($item) ||
-                    !in_array($item->getRarity(), $allowedRarities) ||
-                    !in_array($item->getType(), $allowedTypes)
+                    !\in_array($item->getRarity(), $allowedRarities) ||
+                    !\in_array($item->getType(), $allowedTypes)
                 ) {
                     continue;
                 }
@@ -442,7 +442,7 @@ class Character extends AbstractObject
         if (!isset($this->training)) {
             $this->training = [];
             $charTraining   = $this->getData('training');
-            if (is_array($charTraining)) {
+            if (\is_array($charTraining)) {
                 $profession = $this->getProfession(true);
                 if ($profession) {
                     $profTraining = $profession->getTraining();
@@ -539,7 +539,7 @@ class Character extends AbstractObject
      */
     public function getEquipmentWeapon1($set = 'A')
     {
-        if (!in_array($set, ['A', 'B'])) {
+        if (!\in_array($set, ['A', 'B'])) {
             throw new Exception('Set should be either "A" or "B"');
         }
         if ($set == 'A') {
@@ -569,7 +569,7 @@ class Character extends AbstractObject
      */
     public function getEquipmentWeapon2($set = 'A')
     {
-        if (!in_array($set, ['A', 'B'])) {
+        if (!\in_array($set, ['A', 'B'])) {
             throw new Exception('Set should be either "A" or "B"');
         }
         if ($set == 'A') {
@@ -679,7 +679,7 @@ class Character extends AbstractObject
             $attributes['Armor']  += $attributes[Item::ATTRIBUTE_THOUGHNESS];
             $attributes['Health'] = 0;
             foreach ($healthMap as $map) {
-                if (in_array($profession, $map['professions'])) {
+                if (\in_array($profession, $map['professions'])) {
                     for ($i = 0; $i < $level; $i++) {
                         $attributes['Health'] += $map['levels'][$i];
                     }

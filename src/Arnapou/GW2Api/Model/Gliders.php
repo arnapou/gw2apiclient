@@ -92,7 +92,7 @@ class Gliders extends AbstractObject
      */
     public function getCount()
     {
-        return count($this->unlocked);
+        return \count($this->unlocked);
     }
 
     /**

@@ -252,7 +252,7 @@ class Environment
      */
     public function setLang($lang)
     {
-        if (!in_array($lang, [self::LANG_DE, self::LANG_EN, self::LANG_ES, self::LANG_FR, self::LANG_KO, self::LANG_ZH])) {
+        if (!\in_array($lang, [self::LANG_DE, self::LANG_EN, self::LANG_ES, self::LANG_FR, self::LANG_KO, self::LANG_ZH])) {
             throw new Exception('Wrong lang parameter.');
         }
         $this->lang = $lang;

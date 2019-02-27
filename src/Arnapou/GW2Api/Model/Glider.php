@@ -28,13 +28,13 @@ class Glider extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['unlock_items']) && is_array($data['unlock_items'])) {
+        if (isset($data['unlock_items']) && \is_array($data['unlock_items'])) {
             foreach ($data['unlock_items'] as $id) {
                 $this->unlockItems[] = new Item($this->getEnvironment(), $id);
             }
         }
 
-        if (isset($data['default_dyes']) && is_array($data['default_dyes'])) {
+        if (isset($data['default_dyes']) && \is_array($data['default_dyes'])) {
             foreach ($data['default_dyes'] as $id) {
                 $this->defaultDyes[] = new Color($this->getEnvironment(), $id);
             }

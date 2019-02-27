@@ -101,7 +101,7 @@ class Guild extends AbstractObject
     public function hasEmblem()
     {
         $emblem = $this->getEmblem();
-        if (!is_array($emblem) || empty($emblem)) {
+        if (!\is_array($emblem) || empty($emblem)) {
             return false;
         }
         return true;
@@ -116,7 +116,7 @@ class Guild extends AbstractObject
         if (empty($this->log) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildLog($this->getId());
-            if (!empty($data) && is_array($data)) {
+            if (!empty($data) && \is_array($data)) {
                 foreach ($data as $item) {
                     $obj                      = new GuildLog($env, $item);
                     $this->log[$obj->getId()] = $obj;
@@ -135,7 +135,7 @@ class Guild extends AbstractObject
         if (empty($this->treasury) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildTreasury($this->getId());
-            if (!empty($data) && is_array($data)) {
+            if (!empty($data) && \is_array($data)) {
                 foreach ($data as $item) {
                     $this->treasury[] = new GuildTreasury($env, $item);
                 }
@@ -183,7 +183,7 @@ class Guild extends AbstractObject
         if (empty($this->teams) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildTeams($this->getId());
-            if (!empty($data) && is_array($data)) {
+            if (!empty($data) && \is_array($data)) {
                 foreach ($data as $item) {
                     $obj           = new GuildTeam($env, $item);
                     $this->teams[] = $obj;
@@ -202,7 +202,7 @@ class Guild extends AbstractObject
         if (empty($this->members) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildMembers($this->getId());
-            if (!empty($data) && is_array($data)) {
+            if (!empty($data) && \is_array($data)) {
                 foreach ($data as $item) {
                     $obj                          = new GuildMember($env, $item);
                     $this->members[$obj->getId()] = $obj;
@@ -241,7 +241,7 @@ class Guild extends AbstractObject
         if (empty($this->upgrades) && $this->isLeader()) {
             $env = $this->getEnvironment();
             $ids = $this->getUpgradeIds();
-            if (!empty($ids) && is_array($ids)) {
+            if (!empty($ids) && \is_array($ids)) {
                 foreach ($ids as $id) {
                     $obj                           = new GuildUpgrade($env, $id);
                     $this->upgrades[$obj->getId()] = $obj;
@@ -263,7 +263,7 @@ class Guild extends AbstractObject
         if (empty($this->ranks) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildRanks($this->getId());
-            if (!empty($data) && is_array($data)) {
+            if (!empty($data) && \is_array($data)) {
                 foreach ($data as $item) {
                     $obj                        = new GuildRank($env, $item);
                     $this->ranks[$obj->getId()] = $obj;
@@ -290,7 +290,7 @@ class Guild extends AbstractObject
         if (empty($this->stash) && $this->isLeader()) {
             $env  = $this->getEnvironment();
             $data = $env->getClientVersion2()->apiGuildStash($this->getId());
-            if (!empty($data) && is_array($data)) {
+            if (!empty($data) && \is_array($data)) {
                 foreach ($data as $item) {
                     $this->stash[] = new GuildStash($env, $item);
                 }

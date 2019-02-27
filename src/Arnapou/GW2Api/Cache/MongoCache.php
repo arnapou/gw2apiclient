@@ -12,8 +12,8 @@ namespace Arnapou\GW2Api\Cache;
 
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Exception\WrongMongoDatabaseException;
-use MongoDB\Database as MongoDatabase;
 use MongoDB\Collection as MongoCollection;
+use MongoDB\Database as MongoDatabase;
 
 class MongoCache implements CacheInterface
 {

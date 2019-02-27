@@ -183,7 +183,7 @@ abstract class AbstractClientVersion
                     if (!empty($flags)) {
                         $flagFound = false;
                         foreach ($api['flags'] as $flag) {
-                            if (in_array($flag, $flags)) {
+                            if (\in_array($flag, $flags)) {
                                 $flagFound = true;
                             }
                         }
@@ -210,13 +210,13 @@ abstract class AbstractClientVersion
     {
         $letters = array_map('trim', array_map('strtolower', explode(',', $apiLetters)));
         $flags   = [];
-        if (in_array('l', $letters)) {
+        if (\in_array('l', $letters)) {
             $flags[] = self::API_FLAG_LOCALE_AWARE;
         }
-        if (in_array('d', $letters)) {
+        if (\in_array('d', $letters)) {
             $flags[] = self::API_FLAG_DISABLED;
         }
-        if (in_array('a', $letters)) {
+        if (\in_array('a', $letters)) {
             $flags[] = self::API_FLAG_REQUIRE_AUTH;
         }
         if (strpos($apiUrl, ':') === false) {

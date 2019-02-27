@@ -37,7 +37,7 @@ class BankVault extends AbstractObject
     {
         parent::setData($data);
 
-        if (isset($data['items']) && is_array($data['items'])) {
+        if (isset($data['items']) && \is_array($data['items'])) {
             foreach ($data['items'] as $item) {
                 $this->inventorySlots[] = new InventorySlot($this->getEnvironment(), $item);
             }

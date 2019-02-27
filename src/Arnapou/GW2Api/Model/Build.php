@@ -46,7 +46,7 @@ class Build extends AbstractObject
     {
         parent::setData($data);
 
-        if (isset($data['specializations']) && is_array($data['specializations'])) {
+        if (isset($data['specializations']) && \is_array($data['specializations'])) {
             foreach ($data['specializations'] as $spedata) {
                 $this->specializations[] = new SpecializationLine($this->getEnvironment(), $spedata);
             }
@@ -58,18 +58,18 @@ class Build extends AbstractObject
             if (isset($data['skills']['elite'])) {
                 $this->skills['elite'] = new Skill($this->getEnvironment(), $data['skills']['elite']);
             }
-            if (isset($data['skills']['utilities']) && is_array($data['skills']['utilities'])) {
+            if (isset($data['skills']['utilities']) && \is_array($data['skills']['utilities'])) {
                 foreach ($data['skills']['utilities'] as $id) {
                     $this->skills['utilities'][] = new Skill($this->getEnvironment(), $id);
                 }
             }
-            if (isset($data['skills']['legends']) && is_array($data['skills']['legends'])) {
+            if (isset($data['skills']['legends']) && \is_array($data['skills']['legends'])) {
                 foreach ($data['skills']['legends'] as $id) {
                     $this->skills['legends'][] = new Legend($this->getEnvironment(), $id);
                 }
             }
             foreach ($this->skills['pets'] as $type => $tmp) {
-                if (isset($data['skills']['pets'], $data['skills']['pets'][$type]) && is_array($data['skills']['pets'][$type])) {
+                if (isset($data['skills']['pets'], $data['skills']['pets'][$type]) && \is_array($data['skills']['pets'][$type])) {
                     foreach ($data['skills']['pets'][$type] as $id) {
                         $this->skills['pets'][$type][] = new Pet($this->getEnvironment(), $id);
                     }

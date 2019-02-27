@@ -65,7 +65,7 @@ class BackstoryQuestion extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['answers']) && is_array($data['answers'])) {
+        if (isset($data['answers']) && \is_array($data['answers'])) {
             foreach ($data['answers'] as $id) {
                 $this->answers[] = new BackstoryAnswer($this->getEnvironment(), $id);
             }

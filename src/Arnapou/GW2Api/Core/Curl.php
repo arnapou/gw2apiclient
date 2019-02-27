@@ -140,7 +140,7 @@ class Curl
     {
         curl_setopt($this->curl, CURLOPT_POST, 1);
         if (!empty($data)) {
-            if (is_array($data)) {
+            if (\is_array($data)) {
                 curl_setopt($this->curl, CURLOPT_POSTFIELDS, http_build_query($data));
             } else {
                 curl_setopt($this->curl, CURLOPT_POSTFIELDS, (string)$data);

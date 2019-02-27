@@ -15,8 +15,8 @@ use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Model\Build;
 use Arnapou\GW2Api\Model\Character;
-use Arnapou\GW2Api\Model\Item;
 use Arnapou\GW2Api\Model\InventorySlot;
+use Arnapou\GW2Api\Model\Item;
 
 /* * ********************************************************************** *
  *                                                                          *
@@ -507,7 +507,7 @@ class LinkBuilder
                 $selected = $spe->getTraitsIds();
                 $ids      = [$mapSpecializations[$spe->getId()], 'false', 'false', 'false'];
                 foreach ($spe->getMajorTraits() as $trait) {
-                    if (in_array($trait->getId(), $selected) && isset($mapTraits[$trait->getId()])) {
+                    if (\in_array($trait->getId(), $selected) && isset($mapTraits[$trait->getId()])) {
                         $ids[$trait->getTier()] = $mapTraits[$trait->getId()];
                     }
                 }
@@ -630,7 +630,7 @@ class LinkBuilder
                     return $url;
                 }
             }
-            if (!in_array($mode, ['pve', 'pvp', 'wvw'])) {
+            if (!\in_array($mode, ['pve', 'pvp', 'wvw'])) {
                 throw new Exception('Mode not supported');
             }
             $build = $character->getBuild($mode);

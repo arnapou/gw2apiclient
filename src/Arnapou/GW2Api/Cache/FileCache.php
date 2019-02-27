@@ -10,10 +10,10 @@
 
 namespace Arnapou\GW2Api\Cache;
 
-use FilesystemIterator;
-use RecursiveIteratorIterator;
-use RecursiveDirectoryIterator;
 use Arnapou\GW2Api\Exception\Exception;
+use FilesystemIterator;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 
 class FileCache implements CacheInterface
 {
@@ -54,7 +54,7 @@ class FileCache implements CacheInterface
             throw new Exception('The FileCache path is not writable.');
         }
         $this->cachePath               = rtrim(rtrim($path, '\\'), '/');
-        $this->opcacheInvalidateExists = function_exists('opcache_invalidate');
+        $this->opcacheInvalidateExists = \function_exists('opcache_invalidate');
     }
 
     /**
@@ -155,7 +155,7 @@ class FileCache implements CacheInterface
         $content  .= "/* key = $key */\n";
         $content  .= "\$expires = $expiration;" . ($expiration != 0 ? ' // ' . date('Y-m-d H:i:s', $expiration) : '') . "\n";
         $content  .= '$data = ' . var_export($value, true) . ";\n";
-        $this->directoryCreateIfNotExists(dirname($filename));
+        $this->directoryCreateIfNotExists(\dirname($filename));
         file_put_contents($filename, $content, LOCK_EX);
         if ($this->opcacheInvalidateExists) {
             opcache_invalidate($filename, true);
@@ -170,7 +170,7 @@ class FileCache implements CacheInterface
     protected function directoryCreateIfNotExists($path)
     {
         if (!empty($path) && !is_dir($path)) {
-            $dir = dirname($path);
+            $dir = \dirname($path);
             $this->directoryCreateIfNotExists($dir);
             if (!is_writable($dir)) {
                 throw new Exception('Directory "' . $dir . '" is not writable.');

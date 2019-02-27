@@ -18,7 +18,7 @@ class Dungeon extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['paths']) && is_array($data['paths'])) {
+        if (isset($data['paths']) && \is_array($data['paths'])) {
             $env = $this->getEnvironment();
             $i   = 0;
             foreach ($data['paths'] as $path) {

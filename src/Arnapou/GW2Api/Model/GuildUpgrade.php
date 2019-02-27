@@ -31,14 +31,14 @@ class GuildUpgrade extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['prerequisites']) && is_array($data['prerequisites'])) {
+        if (isset($data['prerequisites']) && \is_array($data['prerequisites'])) {
             $env = $this->getEnvironment();
             foreach ($data['prerequisites'] as $id) {
                 $this->prerequisites[] = new GuildUpgrade($env, $id);
             }
         }
 
-        if (isset($data['costs']) && is_array($data['costs'])) {
+        if (isset($data['costs']) && \is_array($data['costs'])) {
             $env = $this->getEnvironment();
             foreach ($data['costs'] as $item) {
                 $this->costs[] = new GuildUpgradeCost($env, $item);

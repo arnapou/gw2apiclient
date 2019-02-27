@@ -68,12 +68,12 @@ class InventorySlot extends AbstractObject
     {
         parent::setData($data);
 
-        if (isset($data['upgrades']) && is_array($data['upgrades'])) {
+        if (isset($data['upgrades']) && \is_array($data['upgrades'])) {
             foreach ($data['upgrades'] as $id) {
                 $this->upgrades[] = new Item($this->getEnvironment(), $id);
             }
         }
-        if (isset($data['infusions']) && is_array($data['infusions'])) {
+        if (isset($data['infusions']) && \is_array($data['infusions'])) {
             foreach ($data['infusions'] as $id) {
                 $this->infusions[] = new Item($this->getEnvironment(), $id);
             }

@@ -628,7 +628,7 @@ class Client
                 if (isset($row['data']['name'], $row['data']['professions'])) {
                     $name        = strtolower($row['data']['name']);
                     $professions = $row['data']['professions'];
-                    if (empty($professions) || !is_array($professions)) {
+                    if (empty($professions) || !\is_array($professions)) {
                         $professions = [''];
                     }
                     foreach ($professions as $profession) {
@@ -704,7 +704,7 @@ class Client
             // it happens if the requestor has not the right to access gw2 skills api
             return;
         }
-        if (!is_array($data)) {
+        if (!\is_array($data)) {
             throw new RequestException('GW2 Skills data is not a valid array');
         }
         $filename = $this->files['alldata'];

@@ -47,11 +47,11 @@ class EventListener
         if (isset($this->events[$eventName])) {
             if ($event === null) {
                 foreach ($this->events[$eventName] as $callable) {
-                    call_user_func($callable);
+                    \call_user_func($callable);
                 }
             } elseif ($event instanceof Event) {
                 foreach ($this->events[$eventName] as $callable) {
-                    call_user_func($callable, $event);
+                    \call_user_func($callable, $event);
                 }
             } else {
                 throw new \BadMethodCallException('Argument $event should be a valid Arnapou\GW2Api\Event\Event object');

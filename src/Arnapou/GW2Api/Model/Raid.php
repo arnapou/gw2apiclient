@@ -18,7 +18,7 @@ class Raid extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['wings']) && is_array($data['wings'])) {
+        if (isset($data['wings']) && \is_array($data['wings'])) {
             $env = $this->getEnvironment();
             $i   = 0;
             foreach ($data['wings'] as $wing) {

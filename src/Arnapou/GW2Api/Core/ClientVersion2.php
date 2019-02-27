@@ -34,7 +34,7 @@ class ClientVersion2 extends AbstractClientVersion
             $requestedIds = [];
             foreach ($ids as $id) {
                 $item = $cache->get($cachePrefix . '/' . $id);
-                if (!empty($item) && is_array($item)) {
+                if (!empty($item) && \is_array($item)) {
                     $cached[] = $item;
                 } else {
                     $requestedIds[] = $id;
@@ -72,16 +72,16 @@ class ClientVersion2 extends AbstractClientVersion
      */
     protected function request($url, $parameters = [], $headers = [])
     {
-        if (isset($parameters['ids']) && is_array($parameters['ids']) && !empty($parameters['ids'])) {
+        if (isset($parameters['ids']) && \is_array($parameters['ids']) && !empty($parameters['ids'])) {
             $cachePrefix = __CLASS__ . $url;
             $results     = [];
             $ids         = $parameters['ids'];
             $cached      = $this->preRequestSmartCaching($cachePrefix, $ids);
-            $length      = strlen(implode('xxx', $ids));
+            $length      = \strlen(implode('xxx', $ids));
             $chunkNb     = ceil($length / $this->maxRequestIdsLength);
 
             if ($chunkNb) {
-                $chunkSize = ceil(count($ids) / $chunkNb);
+                $chunkSize = ceil(\count($ids) / $chunkNb);
                 $chunks    = array_chunk($ids, $chunkSize > 200 ? 200 : $chunkSize); // max 200 for chunk size
 
                 foreach ($chunks as $chunk) {
@@ -683,7 +683,7 @@ class ClientVersion2 extends AbstractClientVersion
      */
     public function apiGuildUpgrades($ids = null)
     {
-        if (is_string($ids) && preg_match('!^([A-Z0-9]+-)+[A-Z0-9]+$!si', $ids)) {
+        if (\is_string($ids) && preg_match('!^([A-Z0-9]+-)+[A-Z0-9]+$!si', $ids)) {
             return $this->requestAccessToken('guild/' . $ids . '/upgrades');
         }
         return $this->request('guild/upgrades', empty($ids) ? [] : ['ids' => $ids]);

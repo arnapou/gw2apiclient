@@ -22,7 +22,7 @@ class PvpSeason extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['divisions']) && is_array($data['divisions'])) {
+        if (isset($data['divisions']) && \is_array($data['divisions'])) {
             $env = $this->getEnvironment();
             foreach ($data['divisions'] as $item) {
                 $this->divisions[] = new PvpDivision($env, $item);

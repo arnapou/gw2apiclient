@@ -266,12 +266,12 @@ class Skill extends AbstractStoredObject
         if (isset($data['next_chain'])) {
             $this->nextChain = new Skill($this->getEnvironment(), $data['next_chain']);
         }
-        if (isset($data['transform_skills']) && is_array($data['transform_skills'])) {
+        if (isset($data['transform_skills']) && \is_array($data['transform_skills'])) {
             foreach ($data['transform_skills'] as $id) {
                 $this->transformSkills[] = new Skill($this->getEnvironment(), $id);
             }
         }
-        if (isset($data['bundle_skills']) && is_array($data['bundle_skills'])) {
+        if (isset($data['bundle_skills']) && \is_array($data['bundle_skills'])) {
             foreach ($data['bundle_skills'] as $id) {
                 $this->bundleSkills[] = new Skill($this->getEnvironment(), $id);
             }

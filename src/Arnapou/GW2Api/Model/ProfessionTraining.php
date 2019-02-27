@@ -33,7 +33,7 @@ class ProfessionTraining extends AbstractObject
         parent::setData($data);
 
         $env = $this->getEnvironment();
-        if (isset($data['track']) && is_array($data['track'])) {
+        if (isset($data['track']) && \is_array($data['track'])) {
             foreach ($data['track'] as $item) {
                 $this->track[] = new ProfessionTrainingTrackElement($env, $item);
             }

@@ -94,7 +94,7 @@ class HomeCats extends AbstractObject implements \IteratorAggregate
      */
     public function getCount()
     {
-        return count($this->unlocked);
+        return \count($this->unlocked);
     }
 
     /**

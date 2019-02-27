@@ -42,7 +42,7 @@ class Bag extends InventorySlot
         if (isset($data['id'])) {
             $this->item = new Item($this->getEnvironment(), $data['id']);
         }
-        if (isset($data['inventory']) && is_array($data['inventory'])) {
+        if (isset($data['inventory']) && \is_array($data['inventory'])) {
             foreach ($data['inventory'] as $item) {
                 $this->inventorySlots[] = new InventorySlot($this->getEnvironment(), $item);
             }

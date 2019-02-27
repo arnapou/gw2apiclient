@@ -26,7 +26,7 @@ class PvpEquipment extends AbstractObject
         if (isset($data['rune'])) {
             $this->rune = new Item($this->getEnvironment(), $data['rune']);
         }
-        if (isset($data['sigils']) && is_array($data['sigils'])) {
+        if (isset($data['sigils']) && \is_array($data['sigils'])) {
             foreach ($data['sigils'] as $id) {
                 $this->sigils[] = new Item($this->getEnvironment(), $id);
             }

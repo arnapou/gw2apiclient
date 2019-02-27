@@ -58,7 +58,7 @@ class Story extends AbstractStoredObject
      */
     public function hasFlag($flag)
     {
-        return in_array($flag, (array)$this->getFlags());
+        return \in_array($flag, (array)$this->getFlags());
     }
 
     public function getApiName()

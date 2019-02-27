@@ -46,7 +46,7 @@ class GuildStash extends AbstractObject
     {
         parent::setData($data);
 
-        if (isset($data['inventory']) && is_array($data['inventory'])) {
+        if (isset($data['inventory']) && \is_array($data['inventory'])) {
             $env = $this->getEnvironment();
             foreach ($data['inventory'] as $item) {
                 $this->inventorySlots[] = new InventorySlot($env, $item);

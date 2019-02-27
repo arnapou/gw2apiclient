@@ -36,7 +36,7 @@ class Legend extends AbstractStoredObject
         if (isset($data['elite'])) {
             $this->skills['elite'] = new Skill($this->getEnvironment(), $data['elite']);
         }
-        if (isset($data['utilities']) && is_array($data['utilities'])) {
+        if (isset($data['utilities']) && \is_array($data['utilities'])) {
             foreach ($data['utilities'] as $id) {
                 $this->skills['utilities'][] = new Skill($this->getEnvironment(), $id);
             }

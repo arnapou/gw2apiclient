@@ -25,7 +25,7 @@ class Outfit extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['unlock_items']) && is_array($data['unlock_items'])) {
+        if (isset($data['unlock_items']) && \is_array($data['unlock_items'])) {
             foreach ($data['unlock_items'] as $id) {
                 $this->unlockItems[] = new Item($this->getEnvironment(), $id);
             }

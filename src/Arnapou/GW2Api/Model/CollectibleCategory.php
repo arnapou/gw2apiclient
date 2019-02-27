@@ -39,7 +39,7 @@ class CollectibleCategory extends AbstractObject
             $this->material = new Material($env, $data['id']);
             $ids            = $this->material->getItemIds();
 
-            if (isset($data['items']) && is_array($data['items']) && !empty($ids) && is_array($ids)) {
+            if (isset($data['items']) && \is_array($data['items']) && !empty($ids) && \is_array($ids)) {
                 $items = array_combine($ids, $ids);
                 foreach ($data['items'] as $item) {
                     if (isset($item['id'], $item['count'], $items[$item['id']])) {

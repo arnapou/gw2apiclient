@@ -42,7 +42,7 @@ class SpecializationLine extends AbstractObject
         if (isset($data['id'])) {
             $this->specialization = new Specialization($this->getEnvironment(), $data['id']);
         }
-        if (isset($data['traits']) && is_array($data['traits'])) {
+        if (isset($data['traits']) && \is_array($data['traits'])) {
             foreach ($data['traits'] as $id) {
                 $this->traits[] = new SpecializationTrait($this->getEnvironment(), $id);
             }
@@ -94,9 +94,9 @@ class SpecializationLine extends AbstractObject
         $ids     = $this->getTraitsIds();
         $traits  = [];
         $objects = $this->getMajorTraits();
-        if (is_array($objects)) {
+        if (\is_array($objects)) {
             foreach ($objects as $trait) {
-                if (in_array($trait->getId(), $ids)) {
+                if (\in_array($trait->getId(), $ids)) {
                     $traits[] = $trait;
                 }
             }

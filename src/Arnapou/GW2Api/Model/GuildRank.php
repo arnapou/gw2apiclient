@@ -27,13 +27,13 @@ class GuildRank extends AbstractObject
         parent::setData($data);
 
         $env = $this->getEnvironment();
-        if (isset($data['permissions']) && is_array($data['permissions'])) {
+        if (isset($data['permissions']) && \is_array($data['permissions'])) {
             $this->permissionIds = $data['permissions'];
         }
         $allIds = $this->getAllPermissionIds();
         foreach ($allIds as $id) {
             $perm = new GuildPermission($env, $id);
-            $perm->setUnlocked(in_array($id, $this->permissionIds));
+            $perm->setUnlocked(\in_array($id, $this->permissionIds));
             $this->permissions[] = $perm;
         }
         usort($this->permissions, function ($a, $b) {
@@ -59,7 +59,7 @@ class GuildRank extends AbstractObject
         $env = $this->getEnvironment();
         if (!isset(self::$ALL_PERMISSIONS_IDS)) {
             $ids = $env->getClientVersion2()->apiGuildPermissions();
-            if (!empty($ids) && is_array($ids)) {
+            if (!empty($ids) && \is_array($ids)) {
                 self::$ALL_PERMISSIONS_IDS = $ids;
             }
         }

@@ -50,7 +50,7 @@ class Achievement extends AbstractStoredObject
     {
         parent::setData($data);
 
-        if (isset($data['rewards']) && is_array($data['rewards'])) {
+        if (isset($data['rewards']) && \is_array($data['rewards'])) {
             $env = $this->getEnvironment();
             foreach ($data['rewards'] as $item) {
                 if (isset($item['type'], $item['id'])) {
@@ -64,7 +64,7 @@ class Achievement extends AbstractStoredObject
             }
         }
 
-        if (isset($data['bits']) && is_array($data['bits'])) {
+        if (isset($data['bits']) && \is_array($data['bits'])) {
             $env = $this->getEnvironment();
             foreach ($data['bits'] as $item) {
                 if (isset($item['type'], $item['id'])) {
@@ -149,7 +149,7 @@ class Achievement extends AbstractStoredObject
      */
     public function hasFlag($flag)
     {
-        return in_array($flag, (array)$this->getFlags());
+        return \in_array($flag, (array)$this->getFlags());
     }
 
     /**

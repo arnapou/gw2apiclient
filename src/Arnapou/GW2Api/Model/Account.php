@@ -10,11 +10,11 @@
 
 namespace Arnapou\GW2Api\Model;
 
+use Arnapou\GW2Api\Environment;
 use Arnapou\GW2Api\Exception\ApiUnavailableException;
 use Arnapou\GW2Api\Exception\Exception;
 use Arnapou\GW2Api\Exception\InvalidTokenException;
 use Arnapou\GW2Api\Exception\MissingPermissionException;
-use Arnapou\GW2Api\Environment;
 
 class Account extends AbstractObject
 {
@@ -281,7 +281,7 @@ class Account extends AbstractObject
         if (!isset($tokenInfo['id'])) {
             throw new InvalidTokenException('Invalid token.');
         }
-        if (!isset($tokenInfo['permissions']) || !is_array($tokenInfo)) {
+        if (!isset($tokenInfo['permissions']) || !\is_array($tokenInfo)) {
             throw new InvalidTokenException('Token info permission is missing, a weird bug occurs.');
         }
         sort($tokenInfo['permissions']);
@@ -763,7 +763,7 @@ class Account extends AbstractObject
                 try {
                     $data = $env->getClientVersion2()->apiGuild($id);
                     if (isset($data['id'])) {
-                        if (in_array($id, $leaderIds)) {
+                        if (\in_array($id, $leaderIds)) {
                             $data['x-leader'] = true;
                         }
                         $this->guilds[] = new Guild($env, $data);
@@ -950,7 +950,7 @@ class Account extends AbstractObject
      */
     public function hasPermission($permission)
     {
-        return in_array($permission, $this->dataTokenInfo['permissions']);
+        return \in_array($permission, $this->dataTokenInfo['permissions']);
     }
 
     /**
@@ -970,7 +970,7 @@ class Account extends AbstractObject
                      $dungeon) {
                 foreach ($dungeon->getPaths() as /* @var $path DungeonPath */
                          $path) {
-                    if (in_array($path->getId(), $pathIds)) {
+                    if (\in_array($path->getId(), $pathIds)) {
                         $path->setUnlocked(true);
                     }
                 }
@@ -998,7 +998,7 @@ class Account extends AbstractObject
                          $wing) {
                     foreach ($wing->getEvents() as /* @var $event RaidWingEvent */
                              $event) {
-                        if (in_array($event->getId(), $eventIds)) {
+                        if (\in_array($event->getId(), $eventIds)) {
                             $event->setUnlocked(true);
                         }
                     }

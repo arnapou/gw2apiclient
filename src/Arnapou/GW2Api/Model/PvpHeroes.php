@@ -52,7 +52,7 @@ class PvpHeroes extends AbstractObject
         }
         foreach ($this->heroes as /* @var $hero PvpHero */
                  $hero) {
-            $this->total += count($hero->getSkins());
+            $this->total += \count($hero->getSkins());
         }
         uasort($this->mailcarriers, function (PvpHero $hero1, PvpHero $hero2) {
             $n1 = $hero1->getName();
@@ -82,7 +82,7 @@ class PvpHeroes extends AbstractObject
      */
     public function getCount()
     {
-        return count($this->unlocked);
+        return \count($this->unlocked);
     }
 
     /**

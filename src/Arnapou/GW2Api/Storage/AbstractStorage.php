@@ -101,7 +101,7 @@ abstract class AbstractStorage implements StorageInterface
         if (isset($this->recursivePreparedLogic[$name])) {
             foreach ($this->recursivePreparedLogic[$name] as $logic) {
                 if (isset($data[$logic['key']])) {
-                    if (is_array($data[$logic['key']])) {
+                    if (\is_array($data[$logic['key']])) {
                         foreach ($data[$logic['key']] as $itemid) {
                             $this->prepare($lang, $logic['collection'], $itemid);
                         }
@@ -129,15 +129,15 @@ abstract class AbstractStorage implements StorageInterface
 
     protected function loadFromFallback($lang, $name, $fallback, $ids)
     {
-        if ($fallback && is_callable($fallback) && !empty($ids)) {
+        if ($fallback && \is_callable($fallback) && !empty($ids)) {
             try {
-                $items = call_user_func($fallback, array_values($ids));
+                $items = \call_user_func($fallback, array_values($ids));
             } catch (AllIdsProvidedAreInvalidException $ex) {
                 $items = [];
             } catch (\Exception $ex) {
                 $items = null;
             }
-            if (is_array($items)) {
+            if (\is_array($items)) {
                 $receivedIds = [];
                 foreach ($items as $item) {
                     if (isset($item['id'])) {
