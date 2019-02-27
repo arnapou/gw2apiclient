@@ -32,7 +32,7 @@ class GuildUpgradeCost extends AbstractObject
         if (isset($data['item_id'])) {
             $this->item = new InventorySlot($this->getEnvironment(), [
                 'id'    => $data['item_id'],
-                'count' => isset($data['count']) ? $data['count'] : 1,
+                'count' => $data['count'] ?? 1,
             ]);
         }
     }

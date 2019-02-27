@@ -175,7 +175,7 @@ function json_decode($json)
             JSON_ERROR_INF_OR_NAN       => 'Inf or NaN',
             JSON_ERROR_UNSUPPORTED_TYPE => 'Unsupported type.',
         ];
-        throw new JsonException('Json error : ' . (isset($errors[$jsonLastError]) ? $errors[$jsonLastError] : 'Unknown error'));
+        throw new JsonException('Json error : ' . ($errors[$jsonLastError] ?? 'Unknown error'));
     }
     return $array;
 }

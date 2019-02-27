@@ -274,7 +274,7 @@ class Character extends AbstractObject
     public function getBuild($type)
     {
         $builds = $this->getBuilds();
-        return isset($builds[$type]) ? $builds[$type] : null;
+        return $builds[$type] ?? null;
     }
 
     /**

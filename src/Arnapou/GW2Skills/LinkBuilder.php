@@ -81,7 +81,7 @@ class LinkBuilder
     {
         $map = $this->getClient()->getMap('races');
         $key = strtolower($character->getRace());
-        return isset($map[$key]) ? $map[$key] : '0';
+        return $map[$key] ?? '0';
     }
 
     /**
@@ -93,7 +93,7 @@ class LinkBuilder
     {
         $map = $this->getClient()->getMap('professions');
         $key = strtolower($character->getData('profession'));
-        return isset($map[$key]) ? $map[$key] : '0';
+        return $map[$key] ?? '0';
     }
 
     /**
@@ -115,7 +115,7 @@ class LinkBuilder
                 $parts[] = '0';
             } else {
                 $key     = strtolower($equipment ? $equipment->getSubType() : '');
-                $parts[] = isset($map[$key]) ? $map[$key] : '0';
+                $parts[] = $map[$key] ?? '0';
             }
         }
         $return[] = implode('.', $parts);
@@ -129,7 +129,7 @@ class LinkBuilder
                 $parts[] = '0';
             } else {
                 $key     = strtolower($equipment ? $equipment->getSubType() : '');
-                $parts[] = isset($map[$key]) ? $map[$key] : '0';
+                $parts[] = $map[$key] ?? '0';
             }
         }
         $return[] = implode('.', $parts);
@@ -161,8 +161,8 @@ class LinkBuilder
                 $parts[] = '0.0';
             } else {
                 $infusions = $equipment->getInfusions();
-                $parts[]   = $this->getMappedInfusion($mode, $map, isset($infusions[0]) ? $infusions[0] : null)
-                    . '.' . $this->getMappedInfusion($mode, $map, isset($infusions[1]) ? $infusions[1] : null);
+                $parts[]   = $this->getMappedInfusion($mode, $map, $infusions[0] ?? null)
+                    . '.' . $this->getMappedInfusion($mode, $map, $infusions[1] ?? null);
             }
         }
         $return[] = implode('.', $parts);
@@ -180,7 +180,7 @@ class LinkBuilder
                 $parts[] = '0';
             } else {
                 $infusions = $equipment->getInfusions();
-                $parts[]   = $this->getMappedInfusion($mode, $map, isset($infusions[0]) ? $infusions[0] : null);
+                $parts[]   = $this->getMappedInfusion($mode, $map, $infusions[0] ?? null);
             }
         }
         $return[] = implode('.', $parts);
@@ -227,7 +227,7 @@ class LinkBuilder
             $pvp        = $character->getPvpEquipment();
             if ($pvp && $pvp->getRune()) {
                 $rune = $pvp->getRune();
-                $part = $this->getMappedUpgrade($mode, $mapUpgrade, isset($rune) ? $rune : null)
+                $part = $this->getMappedUpgrade($mode, $mapUpgrade, $rune ?? null)
                     . '.0.0';
             } else {
                 $part = '0.0.0.0';
@@ -249,7 +249,7 @@ class LinkBuilder
                     $parts[] = '0.0.0.0';
                 } else {
                     $upgrades = $equipment->getUpgrades();
-                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
+                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, $upgrades[0] ?? null)
                         . '.' . $this->getMappedStat($mode, $mapStats, $equipment);
                 }
             }
@@ -297,7 +297,7 @@ class LinkBuilder
                     $parts[] = '0.0.0.0';
                 } else {
                     $upgrades = $equipment->getUpgrades();
-                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
+                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, $upgrades[0] ?? null)
                         . '.' . $this->getMappedStat($mode, $mapStats, $equipment);
                 }
             }
@@ -317,10 +317,10 @@ class LinkBuilder
             $mapUpgrade = $this->getClient()->getMap('upgrades');
             $pvp        = $character->getPvpEquipment();
             $sigils     = $pvp ? $pvp->getSigils() : [];
-            $sigil1     = isset($sigils[0]) ? $sigils[0] : null;
-            $sigil2     = isset($sigils[1]) ? $sigils[1] : null;
-            $sigil3     = isset($sigils[2]) ? $sigils[2] : null;
-            $sigil4     = isset($sigils[3]) ? $sigils[3] : null;
+            $sigil1     = $sigils[0] ?? null;
+            $sigil2     = $sigils[1] ?? null;
+            $sigil3     = $sigils[2] ?? null;
+            $sigil4     = $sigils[3] ?? null;
             $weapons    = [];
             $weaponA1   = $character->getEquipmentWeapon1('A');
             $weaponB1   = $character->getEquipmentWeapon1('B');
@@ -363,9 +363,9 @@ class LinkBuilder
                     $parts[] = '0.0.0.0.0.0';
                 } else {
                     $upgrades = $equipment->getUpgrades();
-                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[0]) ? $upgrades[0] : null)
+                    $parts[]  = $this->getMappedUpgrade($mode, $mapUpgrade, $upgrades[0] ?? null)
                         . '.' . $this->getMappedStat($mode, $mapStats, $equipment)
-                        . '.' . $this->getMappedUpgrade($mode, $mapUpgrade, isset($upgrades[1]) ? $upgrades[1] : null);
+                        . '.' . $this->getMappedUpgrade($mode, $mapUpgrade, $upgrades[1] ?? null);
                 }
             }
             return implode(':', $parts);

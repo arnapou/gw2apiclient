@@ -40,7 +40,7 @@ class HomeNodes extends AbstractObject implements \IteratorAggregate
     {
         parent::setData($data);
 
-        $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
+        $this->unlocked = $data['unlocked'] ?? [];
     }
 
     

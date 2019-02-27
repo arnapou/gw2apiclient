@@ -34,7 +34,7 @@ return PhpCsFixer\Config::create()
         'short_scalar_cast'                     => true,
         'single_quote'                          => true,
         'standardize_not_equals'                => true,
-//        'ternary_to_null_coalescing'            => true, // php 7+
+        'ternary_to_null_coalescing'            => true,
         'trailing_comma_in_multiline_array'     => true,
         'native_function_invocation'            => ['include' => ['@compiler_optimized']],
         'ordered_imports'                       => ['sort_algorithm' => 'alpha'],

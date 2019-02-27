@@ -40,7 +40,7 @@ class Outfits extends AbstractObject
     {
         parent::setData($data);
 
-        $this->unlocked = isset($data['unlocked']) ? $data['unlocked'] : [];
+        $this->unlocked = $data['unlocked'] ?? [];
     }
 
     

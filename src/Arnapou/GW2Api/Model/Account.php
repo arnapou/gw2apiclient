@@ -598,7 +598,7 @@ class Account extends AbstractObject
             foreach ($env->getClientVersion2()->apiMaterials() as $materialId) {
                 $this->collectibles[] = new CollectibleCategory($env, [
                     'id'    => $materialId,
-                    'items' => isset($items[$materialId]) ? $items[$materialId] : [],
+                    'items' => $items[$materialId] ?? [],
                 ]);
             }
 

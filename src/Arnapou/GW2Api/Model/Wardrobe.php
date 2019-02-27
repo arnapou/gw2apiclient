@@ -46,7 +46,7 @@ class Wardrobe extends AbstractObject
     {
         parent::setData($data);
 
-        $this->unlockedSkins = isset($data['unlocked']) ? $data['unlocked'] : [];
+        $this->unlockedSkins = $data['unlocked'] ?? [];
     }
 
     /**

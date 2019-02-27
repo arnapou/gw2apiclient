@@ -110,7 +110,7 @@ class Build extends AbstractObject
         } elseif ($number >= 7 and $number <= 9) {
             $utilities = $this->getSkillUtilities();
             $index     = $number - 7;
-            return isset($utilities[$index]) ? $utilities[$index] : null;
+            return $utilities[$index] ?? null;
         } elseif ($number == 0) {
             return $this->getSkillElite();
         }
