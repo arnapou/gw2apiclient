@@ -3,9 +3,7 @@ GW2 Api Client
 
 This project can be used to request GW2 api through PHP.
 
-It is currently used by http://gw2tool.net/
-
-The classes I wrote are very robust : retries when the api is not well responding, it manages long list of ids while manking several request and returning to you the whole response, and so on.
+The classes I wrote are robust : retries when the api is not well responding, it manages long list of ids (making several requests and returning to you the whole response), and so on.
 
 
 ### Init objects

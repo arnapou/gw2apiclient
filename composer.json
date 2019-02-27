@@ -9,6 +9,11 @@
             "homepage": "http://arnapou.net"
         }
     ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        }
+    },
     "require": {
         "php": ">=7.0",
         "mongodb/mongodb": "1.0"
