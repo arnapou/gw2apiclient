@@ -1,6 +1,7 @@
 {
     "name": "arnapou/gw2apiclient",
     "description": "Arnapou GW2 API Client",
+    "license": "MIT",
     "authors": [
         {
             "name": "Arnaud Buathier",
@@ -18,6 +19,9 @@
             "Arnapou\\GW2Skills\\": "src/Arnapou/GW2Skills/",
             "Arnapou\\DeltaConnected\\": "src/Arnapou/DeltaConnected/"
         },
-        "files": ["src/Arnapou/GW2Api/functions.php"]
-    }
+        "files": [
+            "src/Arnapou/GW2Api/functions.php"
+        ]
+    },
+    "minimum-stability": "dev"
 }
